@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transformer-native-t3d"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "hilbertcurve>=2,<3",
+    "trimesh>=4,<5",
+    "Pillow>=10",
+    "torch>=2.0",
+    "transformers>=4.30"
+]
+
+[project.scripts]
+t3d = "t3d.cli:main"
+t3d-generate = "t3d.generate:main"
+t3d-export = "t3d.export:main"
+
+[project.optional-dependencies]
+research = ["fast-simplification==0.2.0"]
+
+
+[tool.setuptools.packages.find]
+include = ["t3d*"]

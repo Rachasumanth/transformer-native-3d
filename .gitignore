@@ -1,0 +1,43 @@
+# Python build and environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs and runtime traces
+*.log
+.langgraph/
+state/
+
+# Secrets and credentials
+*.key
+*.pem
+kaggle.json
+.env
+.env.*
+
+# Large binaries, models, and archives
+*.pt
+*.glb
+*.t3d
+*.zip
+*.bin
+*.tar.gz
+*.whl
+*.docx
+
+# Artifacts and experiment dumps
+artifacts/
+kaggle-*/
+generation-quality-report.json
