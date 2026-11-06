@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/tree-plateau-dark",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/tree-plateau-dark.glb",
+  "sha256": "c598155374b71d2edd2cb8b1b63a0ba446b6bac1d2ed430dc3741087ba42d4c3",
+  "bytes": 16308,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

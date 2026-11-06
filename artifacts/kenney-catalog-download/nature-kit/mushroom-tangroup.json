@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/mushroom-tangroup",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/mushroom-tangroup.glb",
+  "sha256": "2dc979485f164d7dce34329096271f44e0c9ea329c104251d94bcfbc8f8fe05e",
+  "bytes": 14956,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

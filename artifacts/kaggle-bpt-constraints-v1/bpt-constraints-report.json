@@ -1,0 +1,73 @@
+{
+  "source_sha256": "51c6f2f6517c996a45f6fe64144468c40f2da9eb8129c23d928b2bb0f90017c1",
+  "training_source_sha256": "e669da90c8b223552d8037b9b1a073baee50d5c07d98c2b09a612a350800a8b8",
+  "checkpoint_sha256": "0fc7ae8510aa7a74995dca1e6955b240091b083b031230eca2f3afe04781d399",
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "cases": {
+    "Avocado": {
+      "split": "validation",
+      "unconstrained": {
+        "stop_reason": "context_limit",
+        "tokens": 15604,
+        "decodable": false,
+        "reason": "Fan contains a degenerate triangle"
+      },
+      "constrained": {
+        "stop_reason": "context_limit",
+        "geometry_tokens": 15604,
+        "decodable": false,
+        "reason": "Truncated block/offset pair"
+      }
+    },
+    "Box": {
+      "split": "control",
+      "unconstrained": {
+        "stop_reason": "context_limit",
+        "tokens": 15604,
+        "decodable": false,
+        "reason": "Fan contains a degenerate triangle"
+      },
+      "constrained": {
+        "stop_reason": "eos",
+        "geometry_tokens": 12907,
+        "decodable": true,
+        "faces": 7174,
+        "vertices": 3412
+      }
+    },
+    "Duck": {
+      "split": "train",
+      "unconstrained": {
+        "stop_reason": "context_limit",
+        "tokens": 15604,
+        "decodable": false,
+        "reason": "Fan contains a degenerate triangle"
+      },
+      "constrained": {
+        "stop_reason": "context_limit",
+        "geometry_tokens": 15604,
+        "decodable": true,
+        "faces": 8802,
+        "vertices": 4299
+      }
+    },
+    "FoodLime": {
+      "split": "train",
+      "unconstrained": {
+        "stop_reason": "context_limit",
+        "tokens": 15604,
+        "decodable": false,
+        "reason": "Fan contains a degenerate triangle"
+      },
+      "constrained": {
+        "stop_reason": "eos",
+        "geometry_tokens": 10088,
+        "decodable": true,
+        "faces": 5560,
+        "vertices": 2689
+      }
+    }
+  },
+  "scope": "Same weights and conditions as multiasset v1; grammar masking only; no retraining"
+}

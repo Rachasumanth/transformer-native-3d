@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/pot",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/pot.glb",
+  "sha256": "2a7fef212e994a570dca50cb21d73b62fe9d8b6618339ee29fa2e0e4be8909b3",
+  "bytes": 29640,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/crops-leafsstagea",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/crops-leafsstagea.glb",
+  "sha256": "f30d55780aa6668316a272eac8ea908e981d16fea7dc4fd1de4e68aa8170cee2",
+  "bytes": 7144,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

@@ -1,0 +1,5 @@
+{
+  "object": ["a detailed 3D object with recognizable shape and materials", "a rendered 3D asset of a real object"],
+  "primitive": ["a simple geometric 3D primitive such as a cube or sphere", "a plain flat plane or a simple 3D shape"],
+  "noisy_scan": ["a noisy broken 3D photogrammetry scan with scattered fragments", "a low quality incomplete 3D scan"]
+}

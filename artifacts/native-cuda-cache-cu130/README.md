@@ -1,0 +1,1 @@
+Private Kaggle GPU build cache for pinned CuMesh, FlexGEMM and nvdiffrast wheels. Built on Kaggle Python 3.13.16 / PyTorch 2.11.0+cu130 / CUDA 13.0 with T4 sm_75. Each wheel is hash-checked against its receipt. Source repositories and licenses are retained in the receipts.

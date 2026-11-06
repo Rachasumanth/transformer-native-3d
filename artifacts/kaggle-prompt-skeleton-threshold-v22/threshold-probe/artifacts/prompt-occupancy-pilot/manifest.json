@@ -1,0 +1,103 @@
+{
+  "scope": "Four small source assets, hand-written class prompts, animal training family and RiggedFigure validation; not a caption corpus or held-out benchmark",
+  "grid": 16,
+  "assets": [
+    {
+      "name": "Corgi",
+      "split": "train",
+      "prompt": "a 3D model of a corgi dog",
+      "source_sha256": "95cd2c4d53d70ee9dd2e1329dcb6de7d4a725301d504a4f2f00ecb34dc1a0851",
+      "data_sha256": "8cabdf8498b6178b888f1bafcd3c2bf0958436ae1d0918773f2e3324259eaf7d",
+      "file": "Corgi.npz",
+      "normalization": {
+        "center": [
+          0.0,
+          197.43458746354756,
+          20.507171320396125
+        ],
+        "scale": 0.0022657471547687636
+      },
+      "surface_count": 973,
+      "bone_count": 81,
+      "bone_samples_outside_grid": 0,
+      "bone_outside_bbox": 0,
+      "bone_outside_enclosed": 1,
+      "voxelization_seconds": 1.8693977770017227,
+      "license": "CC0-1.0",
+      "source": "https://github.com/Ariescar/gobkit-free-assets/tree/main/animal"
+    },
+    {
+      "name": "Bat",
+      "split": "train",
+      "prompt": "a 3D model of a bat",
+      "source_sha256": "1a4317609094c64d3f751adb9150df628aaf7902f7440174afcb642c30e0e072",
+      "data_sha256": "7132ed26a9632a291802e5957826803044979b09faf2c1d72f7820646e9de6d9",
+      "file": "Bat.npz",
+      "normalization": {
+        "center": [
+          1.52587890625e-05,
+          250.736113835135,
+          4.238469012650498
+        ],
+        "scale": 0.0014729457115015335
+      },
+      "surface_count": 377,
+      "bone_count": 49,
+      "bone_samples_outside_grid": 0,
+      "bone_outside_bbox": 0,
+      "bone_outside_enclosed": 0,
+      "voxelization_seconds": 0.8157634539966239,
+      "license": "CC0-1.0",
+      "source": "https://github.com/Ariescar/gobkit-free-assets/tree/main/animal"
+    },
+    {
+      "name": "Shark",
+      "split": "train",
+      "prompt": "a 3D model of a shark",
+      "source_sha256": "0fc450c99f0fd9f2e5d774ef58cd42b8d8d927bed138444254204b366595dc42",
+      "data_sha256": "f527d883ede6cd8fe3ea8d522601029eb73f820c5b2c3a3caad58ee4324360cd",
+      "file": "Shark.npz",
+      "normalization": {
+        "center": [
+          0.0,
+          257.54416273655755,
+          -28.444392919620327
+        ],
+        "scale": 0.0014445613022860862
+      },
+      "surface_count": 400,
+      "bone_count": 52,
+      "bone_samples_outside_grid": 0,
+      "bone_outside_bbox": 0,
+      "bone_outside_enclosed": 0,
+      "voxelization_seconds": 0.8465821969948593,
+      "license": "CC0-1.0",
+      "source": "https://github.com/Ariescar/gobkit-free-assets/tree/main/animal"
+    },
+    {
+      "name": "RiggedFigure",
+      "split": "validation",
+      "prompt": "a 3D model of a humanoid figure",
+      "source_sha256": "d6be85417d3e256861ee733eea6916093a7af7c79c16366181fd8abcaeb38cf5",
+      "data_sha256": "841bbce6ffdddcf678bb01a4a46510c451b8dadf6a8bd53e0ecc4156dc0ed60e",
+      "file": "RiggedFigure.npz",
+      "normalization": {
+        "center": [
+          2.1688586482326855e-08,
+          0.724959918077254,
+          0.03202974489869451
+        ],
+        "scale": 0.6896932277073022
+      },
+      "surface_count": 236,
+      "bone_count": 43,
+      "bone_samples_outside_grid": 0,
+      "bone_outside_bbox": 0,
+      "bone_outside_enclosed": 0,
+      "voxelization_seconds": 0.5369675900001312,
+      "license": "CC-BY-4.0",
+      "attribution": "Cesium, 2017",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/RiggedFigure"
+    }
+  ]
+}

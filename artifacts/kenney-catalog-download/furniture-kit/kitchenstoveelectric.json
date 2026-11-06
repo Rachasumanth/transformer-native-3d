@@ -1,0 +1,10 @@
+{
+  "id": "furniture-kit/kitchenstoveelectric",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/furniture-kit/kitchenstoveelectric.glb",
+  "sha256": "cf646b960d7dfed1fac27898ff6de1f0671cfa33beecbed06ead7d0684517392",
+  "bytes": 18604,
+  "group": "furniture-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/furniture-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "furniture-kit/bathroomsinksquare",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/furniture-kit/bathroomsinksquare.glb",
+  "sha256": "360853c822f268e7267c62ef20cf646f170a13d76254cc0804a1d397a4a3ea67",
+  "bytes": 15108,
+  "group": "furniture-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/furniture-kit"
+}

@@ -1,0 +1,51 @@
+{
+  "scope": "Core skinned GLB packer round-trip; flat placeholder PBR, no source material or animation transfer",
+  "method": "Pack imported node-default vertices, dense source weights, and joint hierarchy; decode with independent project GLB importer",
+  "assets": [
+    {
+      "asset": "RiggedSimple",
+      "source": "/home/sumanth/transformer native 3d model format/artifacts/rigged-inputs/RiggedSimple/RiggedSimple.glb",
+      "source_sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401",
+      "output_file": "/home/sumanth/transformer native 3d model format/artifacts/rigged-inputs/glb-export-roundtrip/RiggedSimple.glb",
+      "output_sha256": "b25358f5b21a708ffbf7b148b2129056704032d5709c7b674990df975e007ba0",
+      "vertices": 160,
+      "faces": 188,
+      "joints": 2,
+      "maximum_vertex_error": 2.8696055198729198e-08,
+      "maximum_joint_error": 0.0,
+      "maximum_weight_error": 0.0,
+      "maximum_bind_palette_identity_delta": 9.947598300641403e-14,
+      "animation_count": 0
+    },
+    {
+      "asset": "CesiumMan",
+      "source": "/home/sumanth/transformer native 3d model format/artifacts/rigged-inputs/CesiumMan/CesiumMan.glb",
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "output_file": "/home/sumanth/transformer native 3d model format/artifacts/rigged-inputs/glb-export-roundtrip/CesiumMan.glb",
+      "output_sha256": "a0571b484eacf511d25a241d6caee465fc53a09475cfcedc4006660c45e11309",
+      "vertices": 3273,
+      "faces": 4672,
+      "joints": 19,
+      "maximum_vertex_error": 9.206603368561161e-08,
+      "maximum_joint_error": 0.0,
+      "maximum_weight_error": 2.505854823642295e-08,
+      "maximum_bind_palette_identity_delta": 5.016782411715326e-08,
+      "animation_count": 0
+    },
+    {
+      "asset": "Fox",
+      "source": "/home/sumanth/transformer native 3d model format/artifacts/rigged-inputs/Fox/Fox.glb",
+      "source_sha256": "d97044e701822bac5a62696459b27d7b375aada5de8574ed4362edbba94771f7",
+      "output_file": "/home/sumanth/transformer native 3d model format/artifacts/rigged-inputs/glb-export-roundtrip/Fox.glb",
+      "output_sha256": "406ac8067d8e462fcd8423c6a61e20a20b410ec63622a5a1c22ae60075e268f6",
+      "vertices": 1728,
+      "faces": 576,
+      "joints": 24,
+      "maximum_vertex_error": 4.444332162734099e-06,
+      "maximum_joint_error": 0.0,
+      "maximum_weight_error": 9.086120744683512e-12,
+      "maximum_bind_palette_identity_delta": 1.8616466306298207e-06,
+      "animation_count": 0
+    }
+  ]
+}

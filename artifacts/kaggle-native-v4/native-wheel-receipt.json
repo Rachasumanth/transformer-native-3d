@@ -1,0 +1,10 @@
+{
+  "upstream_commit": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+  "wheel": "o_voxel-0.0.1-cp313-cp313-linux_x86_64.whl",
+  "sha256": "c674b532ea1e5ce78ecf20100c55353fc61c35c82950580196b71c7dffc458b5",
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "cxx11_abi": true,
+  "architectures": "7.5"
+}

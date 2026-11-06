@@ -1,0 +1,217 @@
+{
+  "occupancy_level_weights": [
+    4.0,
+    2.0,
+    1.0,
+    1.0
+  ],
+  "scope": "Continuation from 30 to 600 steps on one 32-cubed training asset; validation asset previously inspected; posterior-mean free occupancy is not generation",
+  "device": "Tesla T4",
+  "manifest_sha256": "71c951b5f8e401ba4aea615f8cc08eeb52b9babb74e9cdef1f8f3ddce0c8d6e0",
+  "initial_checkpoint_sha256": "03a4b6cfbbb9a923db38bba7b3ee5262e3238f579ce9c30a4ca4810e09a5dbd1",
+  "final_checkpoint_sha256": "24c72eab40d66129e603f0267dd96f213e3901c6268ef6c4030277278bbdcc87",
+  "elapsed_seconds": 132.21795137499998,
+  "rows": [
+    {
+      "step": 30,
+      "cases": {
+        "train": {
+          "teacher_forced_loss": {
+            "total": 1.6470657587051392,
+            "attribute": 0.9523191452026367,
+            "occupancy": 0.6947466135025024,
+            "kl": 0.005732007324695587
+          },
+          "weighted_teacher_forced_loss": {
+            "total": 1.6463744640350342,
+            "attribute": 0.9523191452026367,
+            "occupancy": 0.6940552592277527,
+            "kl": 0.005732007324695587
+          },
+          "free_occupancy": {
+            "target": 1991,
+            "predicted": 2214,
+            "intersection": 122,
+            "precision": 0.05510388437217705,
+            "recall": 0.06127574083375188,
+            "iou": 0.0298799902032819
+          }
+        },
+        "validation": {
+          "teacher_forced_loss": {
+            "total": 1.6508300304412842,
+            "attribute": 0.95525723695755,
+            "occupancy": 0.6955727338790894,
+            "kl": 0.005105313379317522
+          },
+          "weighted_teacher_forced_loss": {
+            "total": 1.6492948532104492,
+            "attribute": 0.95525723695755,
+            "occupancy": 0.694037675857544,
+            "kl": 0.005105313379317522
+          },
+          "free_occupancy": {
+            "target": 1904,
+            "predicted": 2206,
+            "intersection": 91,
+            "precision": 0.041251133272892114,
+            "recall": 0.04779411764705882,
+            "iou": 0.022642448370241354
+          }
+        }
+      }
+    },
+    {
+      "step": 100,
+      "cases": {
+        "train": {
+          "teacher_forced_loss": {
+            "total": 1.5763345956802368,
+            "attribute": 0.889087975025177,
+            "occupancy": 0.6872464418411255,
+            "kl": 0.1690959930419922
+          },
+          "weighted_teacher_forced_loss": {
+            "total": 1.5696005821228027,
+            "attribute": 0.889087975025177,
+            "occupancy": 0.6805124878883362,
+            "kl": 0.1690959930419922
+          },
+          "free_occupancy": {
+            "target": 1991,
+            "predicted": 1034,
+            "intersection": 83,
+            "precision": 0.08027079303675048,
+            "recall": 0.04168759417378202,
+            "iou": 0.02821210061182869
+          }
+        },
+        "validation": {
+          "teacher_forced_loss": {
+            "total": 1.5933305025100708,
+            "attribute": 0.9017668962478638,
+            "occupancy": 0.6915635466575623,
+            "kl": 0.10621537268161774
+          },
+          "weighted_teacher_forced_loss": {
+            "total": 1.588035225868225,
+            "attribute": 0.9017668962478638,
+            "occupancy": 0.6862682700157166,
+            "kl": 0.10621537268161774
+          },
+          "free_occupancy": {
+            "target": 1904,
+            "predicted": 1221,
+            "intersection": 91,
+            "precision": 0.07452907452907453,
+            "recall": 0.04779411764705882,
+            "iou": 0.02999340804218853
+          }
+        }
+      },
+      "checkpoint_sha256": "1d53489ad5a469aed63b36933f742b84d49093829c98b2171dbbd87ce8b04ad3"
+    },
+    {
+      "step": 300,
+      "cases": {
+        "train": {
+          "teacher_forced_loss": {
+            "total": 1.3394718170166016,
+            "attribute": 0.7795495986938477,
+            "occupancy": 0.5599192380905151,
+            "kl": 2.9673025608062744
+          },
+          "weighted_teacher_forced_loss": {
+            "total": 1.2219088077545166,
+            "attribute": 0.7795495986938477,
+            "occupancy": 0.4423561990261078,
+            "kl": 2.9673025608062744
+          },
+          "free_occupancy": {
+            "target": 1991,
+            "predicted": 3228,
+            "intersection": 559,
+            "precision": 0.17317224287484512,
+            "recall": 0.28076343545956806,
+            "iou": 0.11995708154506438
+          }
+        },
+        "validation": {
+          "teacher_forced_loss": {
+            "total": 1.5014301538467407,
+            "attribute": 0.8499961495399475,
+            "occupancy": 0.6514317393302917,
+            "kl": 2.276275634765625
+          },
+          "weighted_teacher_forced_loss": {
+            "total": 1.4625214338302612,
+            "attribute": 0.8499961495399475,
+            "occupancy": 0.6125229597091675,
+            "kl": 2.276275634765625
+          },
+          "free_occupancy": {
+            "target": 1904,
+            "predicted": 3201,
+            "intersection": 494,
+            "precision": 0.1543267728834739,
+            "recall": 0.25945378151260506,
+            "iou": 0.1071351116894383
+          }
+        }
+      },
+      "checkpoint_sha256": "ed607662237c8bb1e6148d59157bb9e934e46789d392742b4887b94e53e4ae8e"
+    },
+    {
+      "step": 600,
+      "cases": {
+        "train": {
+          "teacher_forced_loss": {
+            "total": 1.0392920970916748,
+            "attribute": 0.6664386987686157,
+            "occupancy": 0.3728436231613159,
+            "kl": 9.72291374206543
+          },
+          "weighted_teacher_forced_loss": {
+            "total": 0.8834087252616882,
+            "attribute": 0.6664386987686157,
+            "occupancy": 0.21696029603481293,
+            "kl": 9.72291374206543
+          },
+          "free_occupancy": {
+            "target": 1991,
+            "predicted": 1986,
+            "intersection": 835,
+            "precision": 0.4204431017119839,
+            "recall": 0.4193872425916625,
+            "iou": 0.26575429662635264
+          },
+          "reconstruction_sha256": "15a03a0e64edd00ab3a04cec8a019eca52cb181521509a94b33aac73e7f7a759"
+        },
+        "validation": {
+          "teacher_forced_loss": {
+            "total": 2.279055595397949,
+            "attribute": 1.5365653038024902,
+            "occupancy": 0.7424826622009277,
+            "kl": 7.698397636413574
+          },
+          "weighted_teacher_forced_loss": {
+            "total": 2.3164196014404297,
+            "attribute": 1.5365653038024902,
+            "occupancy": 0.7798465490341187,
+            "kl": 7.698397636413574
+          },
+          "free_occupancy": {
+            "target": 1904,
+            "predicted": 2030,
+            "intersection": 483,
+            "precision": 0.23793103448275862,
+            "recall": 0.2536764705882353,
+            "iou": 0.13995943204868155
+          },
+          "reconstruction_sha256": "b761c5e7a6107f44d3fb73fff95f078a7d69dfe4866099dbdcbda64eeee9c296"
+        }
+      }
+    }
+  ],
+  "source_sha256": "5bfea7b38b665ad216c62f407ad69067a89dd7d46608176c3577f79933028027"
+}

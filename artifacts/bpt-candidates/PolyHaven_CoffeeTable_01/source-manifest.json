@@ -1,0 +1,51 @@
+{
+  "source": "Poly Haven public API",
+  "asset_id": "CoffeeTable_01",
+  "asset_name": "Coffee Table 01",
+  "authors": [
+    "Fernando Quinn"
+  ],
+  "polycount_reported": 10404,
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "asset_page": "https://polyhaven.com/a/CoffeeTable_01",
+  "model_resolution": "1k glTF geometry/material references; included 1k textures",
+  "source_model_hash": "edc6d675027952fdddc0cf03be30f8354abc2338",
+  "files": [
+    {
+      "path": "CoffeeTable_01_1k.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/CoffeeTable_01/CoffeeTable_01_1k.gltf",
+      "size_bytes": 3182,
+      "api_md5": "5a981114987ebd1d7033dee542803988",
+      "sha256": "c0b7ce378fc13886c220236941b4d258389d252e337297dc89505b80e43617fb"
+    },
+    {
+      "path": "textures/CoffeeTable_01_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/CoffeeTable_01/CoffeeTable_01_nor_gl_1k.jpg",
+      "size_bytes": 168414,
+      "api_md5": "40c14c4e129b068fa1b4987a7dbbbf9d",
+      "sha256": "0aa55f510be698c7c0e2c0c2deff2a4e892a9343da98bb901daa84e104883de7"
+    },
+    {
+      "path": "textures/CoffeeTable_01_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/CoffeeTable_01/CoffeeTable_01_diff_1k.jpg",
+      "size_bytes": 196775,
+      "api_md5": "9c52acf206cb7912f9c7fd74edcd5b48",
+      "sha256": "170967df5c50342bb5f0273d1fb99f22cef80a0e7f50264e16dec75d1b2830ba"
+    },
+    {
+      "path": "textures/CoffeeTable_01_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/CoffeeTable_01/CoffeeTable_01_arm_1k.jpg",
+      "size_bytes": 194521,
+      "api_md5": "78551ee723828bb20937897745c58ff5",
+      "sha256": "b8d7dfe15a11ba361919840f00f360d1133f985ff4321b2e891cf941eb5b51c0"
+    },
+    {
+      "path": "CoffeeTable_01.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/CoffeeTable_01/CoffeeTable_01.bin",
+      "size_bytes": 394920,
+      "api_md5": "a8815aecc367e1efd401cd644d679899",
+      "sha256": "1b047e37723ad62b6a204465b22b9fd40936957cee255f20ee65312db227fb11"
+    }
+  ]
+}

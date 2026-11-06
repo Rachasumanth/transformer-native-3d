@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/statue-block",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/statue-block.glb",
+  "sha256": "5caa9f4d0ede962d36f78355b73e59c88e4c978ba4ef44e6df6e52d484c60bac",
+  "bytes": 11252,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

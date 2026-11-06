@@ -1,0 +1,10 @@
+{
+  "id": "space-kit/terrain-ramp",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/space-kit/terrain-ramp.glb",
+  "sha256": "9171061212ee5aa9a74393c9f657a89a5b19d675766a43c88d5d91df6e507dea",
+  "bytes": 2224,
+  "group": "space-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/space-kit"
+}

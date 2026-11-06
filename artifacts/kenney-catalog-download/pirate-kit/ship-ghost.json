@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/ship-ghost",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/ship-ghost.glb",
+  "sha256": "71ce5b2d85b4ded2509aaf984b54cdb514e4d70ac2ef7aaf2dbd35a8df0fc563",
+  "bytes": 165636,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

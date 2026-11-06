@@ -1,0 +1,16 @@
+{
+  "scope": "Blender Cycles visual inspection; normalized source left, v14 center, fan-patch right; not an HDRI benchmark",
+  "times_seconds": [
+    0.04166661947965622,
+    0.5312499646097422,
+    1.020833309739828,
+    1.510416654869914,
+    2.0
+  ],
+  "frames_per_second": 24,
+  "inputs": [
+    "artifacts/rigged-inputs/CesiumMan/CesiumMan.glb",
+    "artifacts/kaggle-textured-rig-export-v14/posed-comparison/candidate-animated.glb",
+    "artifacts/kaggle-textured-rig-export-v14/fan-patch-posed/candidate-animated.glb"
+  ]
+}

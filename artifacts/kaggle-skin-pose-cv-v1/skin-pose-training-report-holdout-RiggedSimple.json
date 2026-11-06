@@ -1,0 +1,232 @@
+{
+  "source_sha256": "111507df606fa4e2b475ee69daa29879d4ea840b98089e9b2bf039aa8d4cbf3f",
+  "manifest_sha256": "1ab35fa09abea93f86158443c1a0856c983ffbb4b9b37912bdecb8c61ca8327f",
+  "device": "Tesla T4",
+  "config": {
+    "width": 64,
+    "heads": 4,
+    "layers": 2,
+    "frequencies": 4
+  },
+  "seed": 31,
+  "steps": 1200,
+  "train_pose_count": 20,
+  "validation_pose_count": 5,
+  "train_assets": [
+    "CesiumMan",
+    "Fox"
+  ],
+  "validation_assets": [
+    "RiggedSimple"
+  ],
+  "scope": "Three-asset animated SkinAE integration pilot; one source asset per split; not a representative rig corpus",
+  "best_step": 100,
+  "best_validation": {
+    "RiggedSimple": {
+      "split": "validation",
+      "poses": 5,
+      "kl": 0.14980411231517793,
+      "uniform_kl": 0.3182910978794098,
+      "mean_absolute_weight_error": 0.20559890568256378,
+      "dominant_joint_accuracy": 0.90625
+    }
+  },
+  "history": [
+    {
+      "step": 100,
+      "validation": {
+        "RiggedSimple": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.14980411231517793,
+          "uniform_kl": 0.3182910978794098,
+          "mean_absolute_weight_error": 0.20559890568256378,
+          "dominant_joint_accuracy": 0.90625
+        }
+      },
+      "training_loss": 0.2153611034154892
+    },
+    {
+      "step": 200,
+      "validation": {
+        "RiggedSimple": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.29531881809234617,
+          "uniform_kl": 0.3182910978794098,
+          "mean_absolute_weight_error": 0.3195271730422974,
+          "dominant_joint_accuracy": 0.6953125
+        }
+      },
+      "training_loss": 0.1567452847957611
+    },
+    {
+      "step": 300,
+      "validation": {
+        "RiggedSimple": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.3104697823524475,
+          "uniform_kl": 0.3182910978794098,
+          "mean_absolute_weight_error": 0.33048656582832336,
+          "dominant_joint_accuracy": 0.7578125
+        }
+      },
+      "training_loss": 0.09989874064922333
+    },
+    {
+      "step": 400,
+      "validation": {
+        "RiggedSimple": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.3154893398284912,
+          "uniform_kl": 0.3182910978794098,
+          "mean_absolute_weight_error": 0.3324029088020325,
+          "dominant_joint_accuracy": 0.2509765625
+        }
+      },
+      "training_loss": 0.1262381672859192
+    },
+    {
+      "step": 500,
+      "validation": {
+        "RiggedSimple": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.32282279133796693,
+          "uniform_kl": 0.3182910978794098,
+          "mean_absolute_weight_error": 0.3371780216693878,
+          "dominant_joint_accuracy": 0.2509765625
+        }
+      },
+      "training_loss": 0.11712317168712616
+    },
+    {
+      "step": 600,
+      "validation": {
+        "RiggedSimple": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.3134687662124634,
+          "uniform_kl": 0.3182910978794098,
+          "mean_absolute_weight_error": 0.33071160316467285,
+          "dominant_joint_accuracy": 0.2509765625
+        }
+      },
+      "training_loss": 0.11704086512327194
+    },
+    {
+      "step": 700,
+      "validation": {
+        "RiggedSimple": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.312459659576416,
+          "uniform_kl": 0.3182910978794098,
+          "mean_absolute_weight_error": 0.3306925594806671,
+          "dominant_joint_accuracy": 0.2509765625
+        }
+      },
+      "training_loss": 0.040932901203632355
+    },
+    {
+      "step": 800,
+      "validation": {
+        "RiggedSimple": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.3007673978805542,
+          "uniform_kl": 0.3182910978794098,
+          "mean_absolute_weight_error": 0.3225355863571167,
+          "dominant_joint_accuracy": 0.53125
+        }
+      },
+      "training_loss": 0.03258608281612396
+    },
+    {
+      "step": 900,
+      "validation": {
+        "RiggedSimple": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.29136947393417356,
+          "uniform_kl": 0.3182910978794098,
+          "mean_absolute_weight_error": 0.3176846444606781,
+          "dominant_joint_accuracy": 0.9150390625
+        }
+      },
+      "training_loss": 0.09120260924100876
+    },
+    {
+      "step": 1000,
+      "validation": {
+        "RiggedSimple": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.3169469952583313,
+          "uniform_kl": 0.3182910978794098,
+          "mean_absolute_weight_error": 0.3337541937828064,
+          "dominant_joint_accuracy": 0.2509765625
+        }
+      },
+      "training_loss": 0.03136996179819107
+    },
+    {
+      "step": 1100,
+      "validation": {
+        "RiggedSimple": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.3207718670368195,
+          "uniform_kl": 0.3182910978794098,
+          "mean_absolute_weight_error": 0.3364000618457794,
+          "dominant_joint_accuracy": 0.2509765625
+        }
+      },
+      "training_loss": 0.10567520558834076
+    },
+    {
+      "step": 1200,
+      "validation": {
+        "RiggedSimple": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.2962822258472443,
+          "uniform_kl": 0.3182910978794098,
+          "mean_absolute_weight_error": 0.3203364372253418,
+          "dominant_joint_accuracy": 0.7216796875
+        }
+      },
+      "training_loss": 0.032817523926496506
+    }
+  ],
+  "checkpoint_sha256": "95bc334058ada68c97800fcd5c3c83998059a03ea1d69e9e033a6c20ac4439a7",
+  "frozen": true,
+  "initial": {
+    "RiggedSimple": {
+      "split": "validation",
+      "poses": 5,
+      "kl": 0.32059102654457095,
+      "uniform_kl": 0.3182910978794098,
+      "mean_absolute_weight_error": 0.3371458053588867,
+      "dominant_joint_accuracy": 0.2509765625
+    },
+    "CesiumMan": {
+      "split": "train",
+      "poses": 5,
+      "kl": 2.3144289016723634,
+      "uniform_kl": 2.318995714187622,
+      "mean_absolute_weight_error": 0.09026000797748565,
+      "dominant_joint_accuracy": 0.040234375
+    },
+    "Fox": {
+      "split": "train",
+      "poses": 15,
+      "kl": 2.6203784942626953,
+      "uniform_kl": 2.629746913909912,
+      "mean_absolute_weight_error": 0.07544786036014557,
+      "dominant_joint_accuracy": 0.13170572916666667
+    }
+  }
+}

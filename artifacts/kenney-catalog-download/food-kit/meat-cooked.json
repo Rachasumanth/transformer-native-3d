@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/meat-cooked",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/meat-cooked.glb",
+  "sha256": "e3e056eff17a1b21bf140c916492ecbaebd02ac414b77a4fa5b9363c6c0dc53e",
+  "bytes": 21284,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

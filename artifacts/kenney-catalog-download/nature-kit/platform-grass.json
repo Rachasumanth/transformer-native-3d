@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/platform-grass",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/platform-grass.glb",
+  "sha256": "74105fc9912c97e7809264dd69621863e0ddfd6ab92136f05918eda436ee898b",
+  "bytes": 12568,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

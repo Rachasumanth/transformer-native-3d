@@ -1,0 +1,32 @@
+{
+  "asset": "Duck",
+  "source_sha256": "65bf938f54d6073e619e76e007820bbf980cdc3dc0daec0d94830ffc4ae54ab5",
+  "samples_per_direction": 1024,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "tolerance": 0.01,
+  "scope": "Small sampled source-relative comparison after explicit 128-bin cleanup; not feature preservation or corpus evidence",
+  "metrics": [
+    {
+      "mean_distance": 0.0012901800394735656,
+      "fscore": 1.0,
+      "boundary_edges": 6,
+      "nonmanifold_edges": 4
+    },
+    {
+      "mean_distance": 0.0013200171741863161,
+      "fscore": 1.0,
+      "boundary_edges": 6,
+      "nonmanifold_edges": 4
+    },
+    {
+      "mean_distance": 0.0012907598962164594,
+      "fscore": 1.0,
+      "boundary_edges": 6,
+      "nonmanifold_edges": 4
+    }
+  ]
+}

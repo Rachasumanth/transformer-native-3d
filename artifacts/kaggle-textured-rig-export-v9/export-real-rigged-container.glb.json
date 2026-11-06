@@ -1,0 +1,53 @@
+{
+  "device": "cuda:0",
+  "device_name": "Tesla T4",
+  "active_voxels": 918,
+  "extracted_faces": 1818,
+  "uv_faces": 1818,
+  "stages": [
+    {
+      "stage": "input",
+      "vertices": 918,
+      "faces": 1818
+    },
+    {
+      "stage": "initial_holes",
+      "vertices": 918,
+      "faces": 1818
+    },
+    {
+      "stage": "coarse",
+      "vertices": 984,
+      "faces": 1818
+    },
+    {
+      "stage": "final",
+      "vertices": 984,
+      "faces": 1818
+    }
+  ],
+  "texture_size": 128,
+  "valid_texels": 10270,
+  "source_up": "y",
+  "alpha_mode": "OPAQUE",
+  "remesh": false,
+  "skinned": true,
+  "joint_count": 19,
+  "skinae_checkpoint_sha256": "4e2ca11172898021c1cd99f7292d4b012f87b0d7b423879f1e65bb59aa29d84b",
+  "skin_influence_audit": {
+    "max_influences": 16,
+    "max_influences_before": 19,
+    "max_influences_after": 16,
+    "truncated_rows": 1531,
+    "mean_discarded_mass": 0.0001246423313459846,
+    "maximum_discarded_mass": 0.002319314476828427,
+    "maximum_row_sum_error": 4.440892098500626e-16
+  },
+  "joint_tolerance": 0.0078125,
+  "total_seconds": 3.829862057000014,
+  "glb_bytes": 229768,
+  "glb_sha256": "6f672bafcc462befb75e5c03352eed65ada6cc09b2365ad86a6f19f2ad34cc87",
+  "input_sha256": "e5b0971fa987cd5e1a4b31e9faf22fe1136a9b7f83aa8718d5f99450bc85c69f",
+  "bpt_token_count": 0,
+  "geometry_track": "raw Track A"
+}

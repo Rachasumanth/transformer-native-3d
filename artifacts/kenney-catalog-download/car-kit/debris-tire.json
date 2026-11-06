@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/debris-tire",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/debris-tire.glb",
+  "sha256": "e317a2f02728e8b514b6f740d2b47546f305fac3971f7d9ea47a0527e340c62b",
+  "bytes": 38948,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

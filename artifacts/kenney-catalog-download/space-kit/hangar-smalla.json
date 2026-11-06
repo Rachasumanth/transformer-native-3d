@@ -1,0 +1,10 @@
+{
+  "id": "space-kit/hangar-smalla",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/space-kit/hangar-smalla.glb",
+  "sha256": "66cc1f91e0db1dd2c7ec79fa8cf3f3adf703291679c33c293ebd19da45bd53f7",
+  "bytes": 18860,
+  "group": "space-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/space-kit"
+}

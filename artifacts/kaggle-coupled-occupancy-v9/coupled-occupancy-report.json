@@ -1,0 +1,59 @@
+{
+  "scope": "Synthetic coupled occupancy CUDA integration probe; not a trained generator or geometric bone-containment benchmark",
+  "device": "Tesla T4",
+  "steps": 8,
+  "history": [
+    {
+      "occupancy": 2.3022303581237793,
+      "skeleton_occupancy": 1.02923583984375,
+      "geometry": 1.9729335308074951,
+      "material": 2.294667959213257
+    },
+    {
+      "occupancy": 1.9245705604553223,
+      "skeleton_occupancy": 1.0442931652069092,
+      "geometry": 1.9660003185272217,
+      "material": 1.9491615295410156
+    },
+    {
+      "occupancy": 1.8656842708587646,
+      "skeleton_occupancy": 0.9087031483650208,
+      "geometry": 2.040536403656006,
+      "material": 2.0126872062683105
+    },
+    {
+      "occupancy": 1.3956470489501953,
+      "skeleton_occupancy": 0.8669531941413879,
+      "geometry": 2.170311212539673,
+      "material": 1.8382537364959717
+    },
+    {
+      "occupancy": 1.6160948276519775,
+      "skeleton_occupancy": 0.8400481343269348,
+      "geometry": 2.0834429264068604,
+      "material": 1.9996331930160522
+    },
+    {
+      "occupancy": 1.0704618692398071,
+      "skeleton_occupancy": 0.8307371735572815,
+      "geometry": 1.848933458328247,
+      "material": 2.000877618789673
+    },
+    {
+      "occupancy": 1.2895197868347168,
+      "skeleton_occupancy": 0.7907692193984985,
+      "geometry": 1.978880763053894,
+      "material": 2.004394054412842
+    },
+    {
+      "occupancy": 1.3983241319656372,
+      "skeleton_occupancy": 0.9498850107192993,
+      "geometry": 1.8114986419677734,
+      "material": 1.7279361486434937
+    }
+  ],
+  "adapter_gradient_nonzero": true,
+  "generated_shape_count": 40,
+  "generated_skeleton_count": 10,
+  "skeleton_support_contained": true
+}

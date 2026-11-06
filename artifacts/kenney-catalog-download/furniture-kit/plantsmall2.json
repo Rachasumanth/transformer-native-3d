@@ -1,0 +1,10 @@
+{
+  "id": "furniture-kit/plantsmall2",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/furniture-kit/plantsmall2.glb",
+  "sha256": "d7c8ff42c66dd4f9238a73570549813d1ca6c5f6f661d7af9cb764c4fce314b9",
+  "bytes": 12996,
+  "group": "furniture-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/furniture-kit"
+}

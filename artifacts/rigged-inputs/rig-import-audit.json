@@ -1,0 +1,62 @@
+{
+  "RiggedSimple": {
+    "source_sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401",
+    "vertices": 160,
+    "faces": 188,
+    "joints": 2,
+    "roots": 1,
+    "maximum_weight_correction": 2.9802322387695312e-08,
+    "normalized_mesh_min": [
+      -0.10928777093401752,
+      -0.5,
+      -0.10928774813481049
+    ],
+    "normalized_mesh_max": [
+      0.10928777093401752,
+      0.5,
+      0.10928774813481049
+    ],
+    "normalization_roundtrip_max": 2.220446049250313e-16,
+    "pose": "node defaults; animation tracks not sampled"
+  },
+  "CesiumMan": {
+    "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+    "vertices": 3273,
+    "faces": 4672,
+    "joints": 19,
+    "roots": 1,
+    "maximum_weight_correction": 8.940696716308594e-08,
+    "normalized_mesh_min": [
+      -0.3777748878751255,
+      -0.49999999999999994,
+      -0.1035325759310357
+    ],
+    "normalized_mesh_max": [
+      0.3777748878751255,
+      0.5,
+      0.1035325759310357
+    ],
+    "normalization_roundtrip_max": 5.551115123125783e-17,
+    "pose": "node defaults; animation tracks not sampled"
+  },
+  "Fox": {
+    "source_sha256": "d97044e701822bac5a62696459b27d7b375aada5de8574ed4362edbba94771f7",
+    "vertices": 1728,
+    "faces": 576,
+    "joints": 24,
+    "roots": 1,
+    "maximum_weight_correction": 5.960464477539063e-08,
+    "normalized_mesh_min": [
+      -0.08139044122379674,
+      -0.2553936482030078,
+      -0.5
+    ],
+    "normalized_mesh_max": [
+      0.08139044122379674,
+      0.25539364820300786,
+      0.5
+    ],
+    "normalization_roundtrip_max": 1.4210854715202004e-14,
+    "pose": "node defaults; animation tracks not sampled"
+  }
+}

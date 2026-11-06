@@ -1,0 +1,10 @@
+{
+  "id": "furniture-kit/wallwindow",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/furniture-kit/wallwindow.glb",
+  "sha256": "166a10fddb8a78d942bc2791186913f7015dfee8501d20efd7a7b8f196fc5c3e",
+  "bytes": 10744,
+  "group": "furniture-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/furniture-kit"
+}

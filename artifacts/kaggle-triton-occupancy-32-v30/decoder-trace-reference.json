@@ -1,0 +1,132 @@
+{
+  "scope": "One 30-step checkpoint and two previously inspected assets; free decoder at threshold .5, posterior means; not generation",
+  "checkpoint_sha256": "840e61beb28df6892d42b95f794e5acc3df7ee5204cea654e4c4eaaafe8d7332",
+  "manifest_sha256": "71c951b5f8e401ba4aea615f8cc08eeb52b9babb74e9cdef1f8f3ddce0c8d6e0",
+  "execution_backend": "reference",
+  "rows": [
+    {
+      "split": "train",
+      "asset": "khronos-avocado",
+      "stages": [
+        {
+          "downsample": 8,
+          "parents": 8,
+          "predicted": 28,
+          "target": 28,
+          "true_positive": 28,
+          "false_positive": 0,
+          "false_negative": 0,
+          "missed_unreachable": 0,
+          "missed_reachable": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "stage": 0
+        },
+        {
+          "downsample": 4,
+          "parents": 28,
+          "predicted": 116,
+          "target": 113,
+          "true_positive": 111,
+          "false_positive": 5,
+          "false_negative": 2,
+          "missed_unreachable": 0,
+          "missed_reachable": 2,
+          "precision": 0.9568965517241379,
+          "recall": 0.9823008849557522,
+          "stage": 1
+        },
+        {
+          "downsample": 2,
+          "parents": 116,
+          "predicted": 495,
+          "target": 498,
+          "true_positive": 379,
+          "false_positive": 116,
+          "false_negative": 119,
+          "missed_unreachable": 9,
+          "missed_reachable": 110,
+          "precision": 0.7656565656565657,
+          "recall": 0.7610441767068273,
+          "stage": 2
+        },
+        {
+          "downsample": 1,
+          "parents": 495,
+          "predicted": 1839,
+          "target": 1991,
+          "true_positive": 871,
+          "false_positive": 968,
+          "false_negative": 1120,
+          "missed_unreachable": 448,
+          "missed_reachable": 672,
+          "precision": 0.47362697117998914,
+          "recall": 0.43746860873932697,
+          "stage": 3
+        }
+      ]
+    },
+    {
+      "split": "validation",
+      "asset": "khronos-waterbottle",
+      "stages": [
+        {
+          "downsample": 8,
+          "parents": 8,
+          "predicted": 28,
+          "target": 16,
+          "true_positive": 16,
+          "false_positive": 12,
+          "false_negative": 0,
+          "missed_unreachable": 0,
+          "missed_reachable": 0,
+          "precision": 0.5714285714285714,
+          "recall": 1.0,
+          "stage": 0
+        },
+        {
+          "downsample": 4,
+          "parents": 28,
+          "predicted": 121,
+          "target": 96,
+          "true_positive": 88,
+          "false_positive": 33,
+          "false_negative": 8,
+          "missed_unreachable": 0,
+          "missed_reachable": 8,
+          "precision": 0.7272727272727273,
+          "recall": 0.9166666666666666,
+          "stage": 1
+        },
+        {
+          "downsample": 2,
+          "parents": 121,
+          "predicted": 497,
+          "target": 464,
+          "true_positive": 243,
+          "false_positive": 254,
+          "false_negative": 221,
+          "missed_unreachable": 31,
+          "missed_reachable": 190,
+          "precision": 0.48893360160965793,
+          "recall": 0.5237068965517241,
+          "stage": 2
+        },
+        {
+          "downsample": 1,
+          "parents": 497,
+          "predicted": 1929,
+          "target": 1904,
+          "true_positive": 482,
+          "false_positive": 1447,
+          "false_negative": 1422,
+          "missed_unreachable": 889,
+          "missed_reachable": 533,
+          "precision": 0.2498703991705547,
+          "recall": 0.25315126050420167,
+          "stage": 3
+        }
+      ]
+    }
+  ]
+}

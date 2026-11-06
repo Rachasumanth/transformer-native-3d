@@ -1,0 +1,77 @@
+{
+  "source_sha256": "5f982e4fb6281f3eca805c88887ed59404f7c0a3d50512545878e2510818cc3a",
+  "scope": "Exact-weld k-ring deletion diagnostics; no patch or GLB changes",
+  "rings": [
+    {
+      "ring": 0,
+      "removed_faces": 12,
+      "remaining_nonmanifold_edges": 0,
+      "boundary_edges": 24,
+      "boundary_vertex_degrees": {
+        "2": 12,
+        "4": 6
+      },
+      "boundary_components": [
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "ring": 1,
+      "removed_faces": 66,
+      "remaining_nonmanifold_edges": 0,
+      "boundary_edges": 28,
+      "boundary_vertex_degrees": {
+        "2": 28
+      },
+      "boundary_components": [
+        9,
+        9,
+        10
+      ]
+    },
+    {
+      "ring": 2,
+      "removed_faces": 148,
+      "remaining_nonmanifold_edges": 0,
+      "boundary_edges": 54,
+      "boundary_vertex_degrees": {
+        "2": 54
+      },
+      "boundary_components": [
+        18,
+        18,
+        18
+      ]
+    },
+    {
+      "ring": 3,
+      "removed_faces": 274,
+      "remaining_nonmanifold_edges": 0,
+      "boundary_edges": 72,
+      "boundary_vertex_degrees": {
+        "2": 72
+      },
+      "boundary_components": [
+        24,
+        23,
+        25
+      ]
+    },
+    {
+      "ring": 4,
+      "removed_faces": 441,
+      "remaining_nonmanifold_edges": 0,
+      "boundary_edges": 91,
+      "boundary_vertex_degrees": {
+        "2": 91
+      },
+      "boundary_components": [
+        33,
+        35,
+        23
+      ]
+    }
+  ]
+}

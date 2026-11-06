@@ -1,0 +1,21 @@
+{
+  "kaggle_kernel": "sumu143/transformer-native-3d-rigged-export-probe",
+  "kaggle_version": 8,
+  "source_bundle_sha256": "95b45d7b89b60184971e017de31890e31dc78274f3597a79b440cb204e73147a",
+  "input_dataset": "sumu143/transformer-native-3d-textured-rig-inputs",
+  "failure": "All 33 focused tests passed. The textured real-rig export reached GLB skin packing, where decoded dense SkinAE weights exceeded the 16-influence limit supported by the packer.",
+  "files": {
+    "export-build.log": {
+      "sha256": "3d15eee0689101678a51f8eee6ae79b0e5010e1f728fd2723f83404a36460ae0",
+      "bytes": 943
+    },
+    "rigged-export-tests.log": {
+      "sha256": "0aff53eca94bba0c4dd35a3d10d16aac6e0bc517647c959c2a2efc3db9274561",
+      "bytes": 4822
+    },
+    "transformer-native-3d-rigged-export-probe.log": {
+      "sha256": "e43b8f371b56cf59c49ce98602c08e1163ad18d407aebc53d8c8581eb75929c5",
+      "bytes": 39145
+    }
+  }
+}

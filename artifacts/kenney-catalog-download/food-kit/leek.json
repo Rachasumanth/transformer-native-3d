@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/leek",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/leek.glb",
+  "sha256": "dd7f14d51b9858be5e2814e1123f306fee45a33df6f53e58ca633634372b5e99",
+  "bytes": 27388,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/tool-paddle",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/tool-paddle.glb",
+  "sha256": "5d733ee6002b87d6a6dbb4dcf820f7b524538247bdf515d4d048e5ca6746a0bf",
+  "bytes": 16952,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

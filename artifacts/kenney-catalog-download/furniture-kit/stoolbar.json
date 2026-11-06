@@ -1,0 +1,10 @@
+{
+  "id": "furniture-kit/stoolbar",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/furniture-kit/stoolbar.glb",
+  "sha256": "a86167a9f92401a61fec7e509ad089ecc552d0f299743add3aeb919acb24e341",
+  "bytes": 11816,
+  "group": "furniture-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/furniture-kit"
+}

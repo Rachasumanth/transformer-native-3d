@@ -1,0 +1,10 @@
+{
+  "title": "Transformer Native 3D Trace Checkpoints",
+  "id": "sumu143/transformer-native-3d-trace-checkpoints",
+  "licenses": [
+    {
+      "name": "other"
+    }
+  ],
+  "description": "Private diagnostic checkpoints for occupancy trace comparison."
+}

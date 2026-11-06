@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/cliff-blockslope-stone",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/cliff-blockslope-stone.glb",
+  "sha256": "88fbc6e54df6bff3793dd4b296471173220e0f88800c7cb744ce9747150a4c5b",
+  "bytes": 6724,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

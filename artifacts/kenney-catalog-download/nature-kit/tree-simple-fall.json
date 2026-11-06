@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/tree-simple-fall",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/tree-simple-fall.glb",
+  "sha256": "00e79a1c6bb936a7fecdeeff716ebca00f3914a931d2ec9389b07b0b6f8c3a2d",
+  "bytes": 6496,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

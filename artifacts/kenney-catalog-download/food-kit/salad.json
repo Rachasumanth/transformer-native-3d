@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/salad",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/salad.glb",
+  "sha256": "7b07e347c9cec3b026746532b1fb596b57fa826754c6905d3348728077871ca9",
+  "bytes": 27940,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

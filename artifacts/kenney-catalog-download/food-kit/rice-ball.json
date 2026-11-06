@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/rice-ball",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/rice-ball.glb",
+  "sha256": "0e24ee04b4f9de39acbd09dccad2c4ce493e75a97378abf763f59f33ab67209f",
+  "bytes": 16948,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "asset": "Corgi",
+    "baseline": 0.01245534951799994,
+    "deformation": 0.012246993719967887,
+    "relative_improvement": 0.016728217681161617
+  },
+  {
+    "asset": "Bat",
+    "baseline": 0.0180782246714722,
+    "deformation": 0.01796371896414123,
+    "relative_improvement": 0.006333902217271592
+  },
+  {
+    "asset": "Shark",
+    "baseline": 0.011405955955800936,
+    "deformation": 0.01148150041528544,
+    "relative_improvement": -0.006623246642126768
+  }
+]

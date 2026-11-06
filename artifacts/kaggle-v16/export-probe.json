@@ -1,0 +1,21 @@
+{
+  "source_sha256": "f5777014916193eb5411929f0139e10e03f98888e2db9ef5b99d3749c5f59f60",
+  "dependencies": {
+    "FlexGEMM": [
+      "https://github.com/JeffreyXiang/FlexGEMM.git",
+      "6dd94a859c26ee8246888502eada3dd8ad85532e"
+    ],
+    "nvdiffrast": [
+      "https://github.com/NVlabs/nvdiffrast.git",
+      "253ac4fcea7de5f396371124af597e6cc957bfae"
+    ]
+  },
+  "device": "Tesla T4",
+  "affine_sampling_passed": true,
+  "valid_texels": 15624,
+  "valid_texel_max_error": 2.384185791015625e-07,
+  "glb_bytes": 15108,
+  "glb_faces": 186,
+  "alpha_mode": "BLEND",
+  "scope": "analytic cube, constant sparse PBR and independent affine sampler oracle; no rendered fidelity claim"
+}

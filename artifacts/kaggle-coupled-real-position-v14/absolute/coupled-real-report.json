@@ -1,0 +1,213 @@
+{
+  "absolute_coords": true,
+  "scope": "One CesiumMan training asset; 128-to-16 surface occupancy and sampled bind skeleton segments; no held-out data and no image/text conditioning",
+  "device": "Tesla T4",
+  "steps": 200,
+  "seed": 43,
+  "before": {
+    "by_seed": [
+      {
+        "seed": 4301,
+        "shape": {
+          "predicted": 1280,
+          "target": 226,
+          "intersection": 83,
+          "iou": 0.05832747716092762
+        },
+        "skeleton": {
+          "predicted": 402,
+          "target": 39,
+          "intersection": 5,
+          "iou": 0.011467889908256881
+        }
+      },
+      {
+        "seed": 4302,
+        "shape": {
+          "predicted": 1307,
+          "target": 226,
+          "intersection": 65,
+          "iou": 0.04427792915531335
+        },
+        "skeleton": {
+          "predicted": 402,
+          "target": 39,
+          "intersection": 3,
+          "iou": 0.00684931506849315
+        }
+      },
+      {
+        "seed": 4303,
+        "shape": {
+          "predicted": 1223,
+          "target": 226,
+          "intersection": 63,
+          "iou": 0.045454545454545456
+        },
+        "skeleton": {
+          "predicted": 389,
+          "target": 39,
+          "intersection": 5,
+          "iou": 0.01182033096926714
+        }
+      },
+      {
+        "seed": 4304,
+        "shape": {
+          "predicted": 1275,
+          "target": 226,
+          "intersection": 69,
+          "iou": 0.04818435754189944
+        },
+        "skeleton": {
+          "predicted": 390,
+          "target": 39,
+          "intersection": 3,
+          "iou": 0.007042253521126761
+        }
+      },
+      {
+        "seed": 4305,
+        "shape": {
+          "predicted": 1261,
+          "target": 226,
+          "intersection": 73,
+          "iou": 0.051626591230551626
+        },
+        "skeleton": {
+          "predicted": 413,
+          "target": 39,
+          "intersection": 4,
+          "iou": 0.008928571428571428
+        }
+      }
+    ],
+    "mean_shape_iou": 0.0495741801086475,
+    "mean_skeleton_iou": 0.009221672179143072
+  },
+  "after": {
+    "by_seed": [
+      {
+        "seed": 4301,
+        "shape": {
+          "predicted": 104,
+          "target": 226,
+          "intersection": 7,
+          "iou": 0.021671826625386997
+        },
+        "skeleton": {
+          "predicted": 5,
+          "target": 39,
+          "intersection": 0,
+          "iou": 0.0
+        }
+      },
+      {
+        "seed": 4302,
+        "shape": {
+          "predicted": 93,
+          "target": 226,
+          "intersection": 9,
+          "iou": 0.02903225806451613
+        },
+        "skeleton": {
+          "predicted": 4,
+          "target": 39,
+          "intersection": 0,
+          "iou": 0.0
+        }
+      },
+      {
+        "seed": 4303,
+        "shape": {
+          "predicted": 101,
+          "target": 226,
+          "intersection": 5,
+          "iou": 0.015527950310559006
+        },
+        "skeleton": {
+          "predicted": 5,
+          "target": 39,
+          "intersection": 0,
+          "iou": 0.0
+        }
+      },
+      {
+        "seed": 4304,
+        "shape": {
+          "predicted": 106,
+          "target": 226,
+          "intersection": 6,
+          "iou": 0.018404907975460124
+        },
+        "skeleton": {
+          "predicted": 3,
+          "target": 39,
+          "intersection": 0,
+          "iou": 0.0
+        }
+      },
+      {
+        "seed": 4305,
+        "shape": {
+          "predicted": 134,
+          "target": 226,
+          "intersection": 11,
+          "iou": 0.03151862464183381
+        },
+        "skeleton": {
+          "predicted": 4,
+          "target": 39,
+          "intersection": 0,
+          "iou": 0.0
+        }
+      }
+    ],
+    "mean_shape_iou": 0.023231113523551217,
+    "mean_skeleton_iou": 0.0
+  },
+  "history": [
+    {
+      "step": 25,
+      "shape_loss": 0.3102111220359802,
+      "skeleton_loss": 0.20296841859817505
+    },
+    {
+      "step": 50,
+      "shape_loss": 0.5956761837005615,
+      "skeleton_loss": 0.41701221466064453
+    },
+    {
+      "step": 75,
+      "shape_loss": 0.12693001329898834,
+      "skeleton_loss": 0.07976537942886353
+    },
+    {
+      "step": 100,
+      "shape_loss": 0.2087174355983734,
+      "skeleton_loss": 0.06023295968770981
+    },
+    {
+      "step": 125,
+      "shape_loss": 0.24806733429431915,
+      "skeleton_loss": 0.0788077712059021
+    },
+    {
+      "step": 150,
+      "shape_loss": 0.18993917107582092,
+      "skeleton_loss": 0.0556919202208519
+    },
+    {
+      "step": 175,
+      "shape_loss": 0.26540815830230713,
+      "skeleton_loss": 0.11283588409423828
+    },
+    {
+      "step": 200,
+      "shape_loss": 0.0750320702791214,
+      "skeleton_loss": 0.035218968987464905
+    }
+  ],
+  "checkpoint_sha256": "0aa91c5a2243676e17b5b303eba242b6f7d952284a9597003281f6add44e5212",
+  "source_sha256": "5a6761bcdeb8cd7d07491e49b538ea52db728eb868d8f5509c5cafff20ec387c"
+}

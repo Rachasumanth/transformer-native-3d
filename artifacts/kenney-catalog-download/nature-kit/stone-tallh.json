@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/stone-tallh",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/stone-tallh.glb",
+  "sha256": "e00d9e5219f8caed495eb1594fa6eb39c9c9df7d4950e5b1945a89e0375cda00",
+  "bytes": 7364,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

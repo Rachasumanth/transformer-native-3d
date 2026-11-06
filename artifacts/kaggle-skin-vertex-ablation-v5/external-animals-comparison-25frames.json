@@ -1,0 +1,56 @@
+[
+  {
+    "asset": "Corgi",
+    "fold": "CesiumMan",
+    "baseline": 0.018692391743610613,
+    "deformation": 0.013680494607996673
+  },
+  {
+    "asset": "Corgi",
+    "fold": "Fox",
+    "baseline": 0.0174369738615644,
+    "deformation": 0.017916979621056803
+  },
+  {
+    "asset": "Corgi",
+    "fold": "RiggedSimple",
+    "baseline": 0.02934880600988256,
+    "deformation": 0.021288728580937014
+  },
+  {
+    "asset": "Bat",
+    "fold": "CesiumMan",
+    "baseline": 0.021383002960281595,
+    "deformation": 0.01871006799651664
+  },
+  {
+    "asset": "Bat",
+    "fold": "Fox",
+    "baseline": 0.025819625477942632,
+    "deformation": 0.023051853369741266
+  },
+  {
+    "asset": "Bat",
+    "fold": "RiggedSimple",
+    "baseline": 0.030913995765241585,
+    "deformation": 0.025603749382409634
+  },
+  {
+    "asset": "Shark",
+    "fold": "CesiumMan",
+    "baseline": 0.014349382375026127,
+    "deformation": 0.01196141658261941
+  },
+  {
+    "asset": "Shark",
+    "fold": "Fox",
+    "baseline": 0.014912212032921882,
+    "deformation": 0.015122936702050303
+  },
+  {
+    "asset": "Shark",
+    "fold": "RiggedSimple",
+    "baseline": 0.02023144440116823,
+    "deformation": 0.014372056443888231
+  }
+]

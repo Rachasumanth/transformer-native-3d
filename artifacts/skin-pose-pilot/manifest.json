@@ -1,0 +1,126 @@
+{
+  "version": 2,
+  "scope": "Three-asset animated SkinAE integration pilot; one source asset per split; not a representative rig corpus",
+  "sampling": "1024 area-uniform surface samples from node-default pose, barycentric skin weights retained across posed frames; five evenly spaced times per animation; one shared normalization per asset",
+  "split_policy": "RiggedSimple and CesiumMan train; Fox asset-held-out validation; no animation frame crosses source split",
+  "assets": [
+    {
+      "name": "RiggedSimple",
+      "split": "train",
+      "file": "RiggedSimple-poses.npz",
+      "sha256": "011b0e0a30e2dad39598c424a89bde47fe645365a1d87c040895b0d35f32b0fb",
+      "source_sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401",
+      "samples": 1024,
+      "poses": 5,
+      "joints": 2,
+      "faces": 188,
+      "animations": [
+        {
+          "animation_index": 0,
+          "name": null,
+          "times": [
+            0.04166661947965622,
+            0.5520832184702158,
+            1.0624998174607754,
+            1.572916416451335,
+            2.0833330154418945
+          ]
+        }
+      ],
+      "normalization": {
+        "center": [
+          -5.218048215738236e-15,
+          2.434097448045236e-07,
+          -2.0861626381929455e-07
+        ],
+        "scale": 0.10928777093401539
+      }
+    },
+    {
+      "name": "CesiumMan",
+      "split": "train",
+      "file": "CesiumMan-poses.npz",
+      "sha256": "453dca923f300cfdc4a562a13cb11f854f86bb094d3455cfec7b30a68e4af475",
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "samples": 1024,
+      "poses": 5,
+      "joints": 19,
+      "faces": 4672,
+      "animations": [
+        {
+          "animation_index": 0,
+          "name": null,
+          "times": [
+            0.04166661947965622,
+            0.5312499646097422,
+            1.020833309739828,
+            1.510416654869914,
+            2.0
+          ]
+        }
+      ],
+      "normalization": {
+        "center": [
+          -6.53480239920512e-08,
+          0.7532751040569674,
+          0.02497701394774722
+        ],
+        "scale": 0.6637680165409462
+      }
+    },
+    {
+      "name": "Fox",
+      "split": "validation",
+      "file": "Fox-poses.npz",
+      "sha256": "12af3d23fc2ca685a157ce7375c851c169289404c7501c79a5b6c966582ddc10",
+      "source_sha256": "d97044e701822bac5a62696459b27d7b375aada5de8574ed4362edbba94771f7",
+      "samples": 1024,
+      "poses": 15,
+      "joints": 24,
+      "faces": 576,
+      "animations": [
+        {
+          "animation_index": 0,
+          "name": "Survey",
+          "times": [
+            0.0,
+            0.8541666865348816,
+            1.7083333730697632,
+            2.5625000596046448,
+            3.4166667461395264
+          ]
+        },
+        {
+          "animation_index": 1,
+          "name": "Walk",
+          "times": [
+            0.0,
+            0.1770833283662796,
+            0.3541666567325592,
+            0.5312499850988388,
+            0.7083333134651184
+          ]
+        },
+        {
+          "animation_index": 2,
+          "name": "Run",
+          "times": [
+            0.0,
+            0.28958332538604736,
+            0.5791666507720947,
+            0.8687499761581421,
+            1.1583333015441895
+          ]
+        }
+      ],
+      "normalization": {
+        "center": [
+          -6.378095989134636e-07,
+          39.392726731703334,
+          -10.735073004654097
+        ],
+        "scale": 0.00646329413711845
+      }
+    }
+  ]
+}

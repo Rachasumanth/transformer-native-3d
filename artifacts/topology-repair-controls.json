@@ -1,0 +1,61 @@
+{
+  "scope": "Seven source assets; geometry-only, not reconstructed outputs, no rendering or self-intersection verification",
+  "assets": [
+    {
+      "asset": "Lantern",
+      "source": "artifacts/native-inputs/Lantern.glb",
+      "sha256": "a79458c4b02d695187a952f23a63b8bf278e7bc3d316a3c2a314f2d6974181f1",
+      "status": "rejected",
+      "reason": "Open input mesh is unsupported"
+    },
+    {
+      "asset": "WaterBottle",
+      "source": "artifacts/native-inputs/WaterBottle.glb",
+      "sha256": "b337e526fd6a162013c2984aeec163f5fbb4f717252724dfc3f3458bd51df94b",
+      "status": "rejected",
+      "reason": "Open input mesh is unsupported"
+    },
+    {
+      "asset": "Avocado",
+      "source": "artifacts/native-inputs/Avocado.glb",
+      "sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "status": "rejected",
+      "reason": "Open input mesh is unsupported"
+    },
+    {
+      "asset": "RiggedFigure",
+      "source": "artifacts/rigged-candidates/RiggedFigure/RiggedFigure.glb",
+      "sha256": "d6be85417d3e256861ee733eea6916093a7af7c79c16366181fd8abcaeb38cf5",
+      "status": "accepted",
+      "seconds": 0.011877413002366666,
+      "input_faces": 256,
+      "output_faces": 256,
+      "duplicate_faces_removed": 0,
+      "region_faces_removed": 0,
+      "added_faces": 0,
+      "min_double_area": 0.0007699769489698476,
+      "near_degenerate_faces": 0
+    },
+    {
+      "asset": "Corgi",
+      "source": "artifacts/rigged-candidates/Corgi/Corgi.glb",
+      "sha256": "95cd2c4d53d70ee9dd2e1329dcb6de7d4a725301d504a4f2f00ecb34dc1a0851",
+      "status": "rejected",
+      "reason": "Open input mesh is unsupported"
+    },
+    {
+      "asset": "Bat",
+      "source": "artifacts/rigged-candidates/Bat/Bat.glb",
+      "sha256": "1a4317609094c64d3f751adb9150df628aaf7902f7440174afcb642c30e0e072",
+      "status": "rejected",
+      "reason": "Open input mesh is unsupported"
+    },
+    {
+      "asset": "Shark",
+      "source": "artifacts/rigged-candidates/Shark/Shark.glb",
+      "sha256": "0fc450c99f0fd9f2e5d774ef58cd42b8d8d927bed138444254204b366595dc42",
+      "status": "rejected",
+      "reason": "Open input mesh is unsupported"
+    }
+  ]
+}

@@ -1,0 +1,858 @@
+{
+  "source_sha256": "2396b21e9e73b2fc45f82490ac01975b4a9367a5fe2f1f1dbd9307f9d29af61f",
+  "dependencies": {
+    "CuMesh": [
+      "https://github.com/JeffreyXiang/CuMesh.git",
+      "12289e1062f0603f2f0d0771b02e1395d247f26f"
+    ],
+    "FlexGEMM": [
+      "https://github.com/JeffreyXiang/FlexGEMM.git",
+      "6dd94a859c26ee8246888502eada3dd8ad85532e"
+    ],
+    "nvdiffrast": [
+      "https://github.com/NVlabs/nvdiffrast.git",
+      "253ac4fcea7de5f396371124af597e6cc957bfae"
+    ]
+  },
+  "device": "Tesla T4",
+  "affine_sampling_passed": true,
+  "valid_texels": 15624,
+  "valid_texel_max_error": 2.384185791015625e-07,
+  "full_atlas_max_error": 2.384185791015625e-07,
+  "gradient_baking_max_error": 0.0,
+  "raster_chunk_parity_passed": true,
+  "glb_bytes": 14372,
+  "glb_faces": 186,
+  "alpha_mode": "BLEND",
+  "cli_audit": {
+    "device": "cuda:0",
+    "device_name": "Tesla T4",
+    "active_voxels": 152,
+    "extracted_faces": 300,
+    "uv_faces": 200,
+    "stages": [
+      {
+        "stage": "input",
+        "vertices": 152,
+        "faces": 300
+      },
+      {
+        "stage": "initial_holes",
+        "vertices": 152,
+        "faces": 300
+      },
+      {
+        "stage": "coarse",
+        "vertices": 152,
+        "faces": 300
+      },
+      {
+        "stage": "final",
+        "vertices": 102,
+        "faces": 200
+      }
+    ],
+    "texture_size": 128,
+    "valid_texels": 15624,
+    "source_up": "z",
+    "alpha_mode": "BLEND",
+    "remesh": false,
+    "skinned": false,
+    "joint_count": 0,
+    "skinae_checkpoint_sha256": null,
+    "skin_influence_audit": null,
+    "joint_tolerance": null,
+    "total_seconds": 2.196553867999995,
+    "glb_bytes": 10028,
+    "glb_sha256": "490dcf5437dac1eb730bf0a801908c37a7519d7f375de0641e7fb77eb87e3396",
+    "input_sha256": "750ddaeb0ab5e85273475077fd5e411c7352a9e009e2e92505de867e988a1745",
+    "bpt_token_count": 0,
+    "geometry_track": "raw Track A"
+  },
+  "cli_closed_outward_topology": {
+    "components": [
+      {
+        "faces": 200,
+        "closed": true,
+        "signed_volume": 0.21570347027199924,
+        "flipped_faces": 0
+      }
+    ],
+    "flipped_faces": 0,
+    "outward_closed_components": true
+  },
+  "rigged_cli": {
+    "audit": {
+      "device": "cuda:0",
+      "device_name": "Tesla T4",
+      "active_voxels": 152,
+      "extracted_faces": 300,
+      "uv_faces": 186,
+      "stages": [
+        {
+          "stage": "input",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "initial_holes",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "coarse",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "final",
+          "vertices": 95,
+          "faces": 186
+        }
+      ],
+      "texture_size": 128,
+      "valid_texels": 15624,
+      "source_up": "z",
+      "alpha_mode": "BLEND",
+      "remesh": false,
+      "skinned": true,
+      "joint_count": 3,
+      "skinae_checkpoint_sha256": "b252aea57713efba096d2c9005bbc3b398662c462cac76ec37d6faf31899b1fe",
+      "skin_influence_audit": {
+        "max_influences": 16,
+        "max_influences_before": 3,
+        "max_influences_after": 3,
+        "truncated_rows": 43,
+        "mean_discarded_mass": 3.203999332810855e-17,
+        "maximum_discarded_mass": 1.1102230246251565e-16,
+        "maximum_row_sum_error": 0.0
+      },
+      "joint_tolerance": 1e-06,
+      "total_seconds": 0.23436509000001138,
+      "glb_bytes": 18436,
+      "glb_sha256": "277509556c90d228c79af9e6d3c13a20634b5a549189a4b1aea64fda615f34ba"
+    },
+    "vertices": 149,
+    "faces": 186,
+    "joint_count": 3,
+    "maximum_weight_sum_error": 1.1102230246251565e-16,
+    "glb_bytes": 18436,
+    "glb_sha256": "277509556c90d228c79af9e6d3c13a20634b5a549189a4b1aea64fda615f34ba",
+    "scope": "Synthetic skinned cube through extraction, CuMesh cleanup/UV, PBR bake, SkinAE decode and GLB reload; no source-rig quality claim"
+  },
+  "real_rig_cli": {
+    "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+    "source_vertices": 3273,
+    "source_faces": 4672,
+    "source_joints": 19,
+    "normalization_scale": 0.6637680165409462,
+    "active_voxels": 14764,
+    "source_to_recovered_joint_ids": [
+      10,
+      8,
+      6,
+      18,
+      16,
+      14,
+      12,
+      1,
+      2,
+      4,
+      3,
+      0,
+      11,
+      13,
+      15,
+      17,
+      5,
+      7,
+      9
+    ],
+    "vertices": 5873,
+    "faces": 9312,
+    "weight_mae": 0.034291424775919094,
+    "weight_kl": 0.4264944798697619,
+    "source_topology": {
+      "valid": true,
+      "samples": 512,
+      "tolerance": 0.01,
+      "seed": 0,
+      "mean_distance": 1.641648060522968e-17,
+      "reference_to_prediction": 1.6744855210854018e-17,
+      "prediction_to_reference": 1.6088105999605345e-17,
+      "precision": 1.0,
+      "recall": 1.0,
+      "fscore": 1.0,
+      "triangles": 4672,
+      "boundary_edges": 0,
+      "boundary_edge_length": 0.0,
+      "mean_boundary_edge_length": 0.0,
+      "nonmanifold_edges": 0
+    },
+    "surface_comparison": {
+      "valid": true,
+      "samples": 512,
+      "tolerance": 0.01,
+      "seed": 0,
+      "mean_distance": 5.832922149538478e-05,
+      "reference_to_prediction": 5.845707086243433e-05,
+      "prediction_to_reference": 5.820137212833524e-05,
+      "precision": 1.0,
+      "recall": 1.0,
+      "fscore": 1.0,
+      "triangles": 9312,
+      "boundary_edges": 0,
+      "boundary_edge_length": 0.0,
+      "mean_boundary_edge_length": 0.0,
+      "nonmanifold_edges": 15
+    },
+    "strict_remesh": {
+      "audit": {
+        "device": "cuda:0",
+        "device_name": "Tesla T4",
+        "active_voxels": 14764,
+        "extracted_faces": 29552,
+        "uv_faces": 8891,
+        "stages": [
+          {
+            "stage": "input",
+            "vertices": 14764,
+            "faces": 29552
+          },
+          {
+            "stage": "initial_holes",
+            "vertices": 14764,
+            "faces": 29552
+          },
+          {
+            "stage": "narrow_band_remesh",
+            "vertices": 27628,
+            "faces": 55264
+          },
+          {
+            "stage": "remesh_simplify",
+            "vertices": 4442,
+            "faces": 8888
+          },
+          {
+            "stage": "remesh_cleanup",
+            "vertices": 4464,
+            "faces": 8891
+          }
+        ],
+        "texture_size": 2048,
+        "valid_texels": 2224514,
+        "source_up": "y",
+        "alpha_mode": "OPAQUE",
+        "remesh": true,
+        "skinned": true,
+        "joint_count": 19,
+        "skinae_checkpoint_sha256": "b252aea57713efba096d2c9005bbc3b398662c462cac76ec37d6faf31899b1fe",
+        "skin_influence_audit": {
+          "max_influences": 16,
+          "max_influences_before": 19,
+          "max_influences_after": 16,
+          "truncated_rows": 6564,
+          "mean_discarded_mass": 5.4308685288087536e-05,
+          "maximum_discarded_mass": 0.0012245829671735375,
+          "maximum_row_sum_error": 3.3306690738754696e-16
+        },
+        "joint_tolerance": 1e-06,
+        "total_seconds": 12.428569100999994,
+        "glb_bytes": 3566656,
+        "glb_sha256": "9e5d2b41103e92ae7b61bb01a3668e925a211ef10aeda50ab47750ca18c999b3"
+      },
+      "vertices": 6564,
+      "faces": 8891,
+      "joint_count": 19,
+      "surface_comparison": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.0008486970766603229,
+        "reference_to_prediction": 0.000600077559025584,
+        "prediction_to_reference": 0.0010973165942950616,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 8891,
+        "boundary_edges": 1,
+        "boundary_edge_length": 0.006343716075683934,
+        "mean_boundary_edge_length": 0.006343716075683934,
+        "nonmanifold_edges": 9
+      },
+      "pbr_texture_audit": {
+        "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+        "output_sha256": "9e5d2b41103e92ae7b61bb01a3668e925a211ef10aeda50ab47750ca18c999b3",
+        "source_face_count": 4672,
+        "output_face_count": 8891,
+        "source_materials": [
+          {
+            "base_color_factor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallic_factor": 0.0,
+            "roughness_factor": 1.0,
+            "alpha_mode": "OPAQUE",
+            "base_color_texture": {
+              "shape": [
+                1024,
+                1024,
+                4
+              ],
+              "min": 0.0,
+              "max": 1.0,
+              "channel_std": [
+                0.24789247861064154,
+                0.16102917439087516,
+                0.24131998903349658
+              ],
+              "unique_rgb_count": 16762
+            },
+            "metallic_roughness_texture": null
+          }
+        ],
+        "output_materials": [
+          {
+            "base_color_factor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallic_factor": 1.0,
+            "roughness_factor": 1.0,
+            "alpha_mode": "OPAQUE",
+            "base_color_texture": {
+              "shape": [
+                2048,
+                2048,
+                4
+              ],
+              "min": 0.07450980693101883,
+              "max": 1.0,
+              "channel_std": [
+                0.23401485674475542,
+                0.1534235426536563,
+                0.21307514576348557
+              ],
+              "unique_rgb_count": 72740
+            },
+            "metallic_roughness_texture": {
+              "shape": [
+                2048,
+                2048,
+                4
+              ],
+              "min": 0.0,
+              "max": 1.0,
+              "channel_std": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unique_rgb_count": 1
+            }
+          }
+        ],
+        "source_face_material_ids": [
+          0
+        ],
+        "output_face_material_ids": [
+          0
+        ],
+        "scope": "Structural texture retention and variation only; not a rendered material-fidelity metric."
+      },
+      "material_fidelity_audit": {
+        "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+        "output_sha256": "9e5d2b41103e92ae7b61bb01a3668e925a211ef10aeda50ab47750ca18c999b3",
+        "samples": 4096,
+        "seed": 0,
+        "source_projection_distance_mean": 0.001106278484624215,
+        "source_projection_distance_p95": 0.002996541160194633,
+        "linear_pbr": {
+          "base_r": {
+            "mae": 0.049343249714558376,
+            "rmse": 0.12364958348446266,
+            "p95_absolute_error": 0.3107224408724064,
+            "psnr_db_peak_1": 18.156146844558194
+          },
+          "base_g": {
+            "mae": 0.038915304155371935,
+            "rmse": 0.09808793708039565,
+            "p95_absolute_error": 0.2419264308299108,
+            "psnr_db_peak_1": 20.167687983195282
+          },
+          "base_b": {
+            "mae": 0.03870457638077722,
+            "rmse": 0.10875428166687306,
+            "p95_absolute_error": 0.24360944753711422,
+            "psnr_db_peak_1": 19.271072716396816
+          },
+          "metallic": {
+            "mae": 0.0,
+            "rmse": 0.0,
+            "p95_absolute_error": 0.0,
+            "psnr_db_peak_1": null
+          },
+          "roughness": {
+            "mae": 1.6263032587282567e-18,
+            "rmse": 1.3437110265466432e-17,
+            "p95_absolute_error": 0.0,
+            "psnr_db_peak_1": 337.4338823796614
+          },
+          "alpha": {
+            "mae": 0.0,
+            "rmse": 0.0,
+            "p95_absolute_error": 0.0,
+            "psnr_db_peak_1": null
+          }
+        },
+        "scope": "Area-weighted output surface samples compared with source PBR at nearest source-surface points; attribute-space only, not rendered material fidelity."
+      },
+      "maximum_weight_sum_error": 4.440892098500626e-16,
+      "glb_bytes": 3566656,
+      "glb_sha256": "9e5d2b41103e92ae7b61bb01a3668e925a211ef10aeda50ab47750ca18c999b3"
+    },
+    "audit": {
+      "device": "cuda:0",
+      "device_name": "Tesla T4",
+      "active_voxels": 14764,
+      "extracted_faces": 29552,
+      "uv_faces": 9312,
+      "stages": [
+        {
+          "stage": "input",
+          "vertices": 14764,
+          "faces": 29552
+        },
+        {
+          "stage": "initial_holes",
+          "vertices": 14764,
+          "faces": 29552
+        },
+        {
+          "stage": "coarse",
+          "vertices": 13052,
+          "faces": 25984
+        },
+        {
+          "stage": "final",
+          "vertices": 4658,
+          "faces": 9312
+        }
+      ],
+      "texture_size": 2048,
+      "valid_texels": 2390378,
+      "source_up": "y",
+      "alpha_mode": "OPAQUE",
+      "remesh": false,
+      "skinned": true,
+      "joint_count": 19,
+      "skinae_checkpoint_sha256": "b252aea57713efba096d2c9005bbc3b398662c462cac76ec37d6faf31899b1fe",
+      "skin_influence_audit": {
+        "max_influences": 16,
+        "max_influences_before": 19,
+        "max_influences_after": 16,
+        "truncated_rows": 5873,
+        "mean_discarded_mass": 5.7133769350734e-05,
+        "maximum_discarded_mass": 0.0012457327438575305,
+        "maximum_row_sum_error": 3.3306690738754696e-16
+      },
+      "joint_tolerance": 1e-06,
+      "total_seconds": 12.13879536600001,
+      "glb_bytes": 3073688,
+      "glb_sha256": "e6a5b3b5eefc18bd96f5e453e3f9b49f3205c8486878bca250a8d6a055f87d3c"
+    },
+    "checksummed_container_cli": {
+      "container_sha256": "fa998a60b1b239e19785e5be83917643d43c20ff47606b831260326752d48363",
+      "audit": {
+        "device": "cuda:0",
+        "device_name": "Tesla T4",
+        "active_voxels": 14764,
+        "extracted_faces": 29552,
+        "uv_faces": 9328,
+        "stages": [
+          {
+            "stage": "input",
+            "vertices": 14764,
+            "faces": 29552
+          },
+          {
+            "stage": "initial_holes",
+            "vertices": 14764,
+            "faces": 29552
+          },
+          {
+            "stage": "coarse",
+            "vertices": 13039,
+            "faces": 25954
+          },
+          {
+            "stage": "final",
+            "vertices": 4674,
+            "faces": 9344
+          }
+        ],
+        "texture_size": 2048,
+        "valid_texels": 2334141,
+        "source_up": "y",
+        "alpha_mode": "OPAQUE",
+        "remesh": false,
+        "skinned": true,
+        "joint_count": 19,
+        "skinae_checkpoint_sha256": "b252aea57713efba096d2c9005bbc3b398662c462cac76ec37d6faf31899b1fe",
+        "skin_influence_audit": {
+          "max_influences": 16,
+          "max_influences_before": 19,
+          "max_influences_after": 16,
+          "truncated_rows": 5857,
+          "mean_discarded_mass": 5.510866397544467e-05,
+          "maximum_discarded_mass": 0.001244685004502477,
+          "maximum_row_sum_error": 4.440892098500626e-16
+        },
+        "joint_tolerance": 0.001953125,
+        "total_seconds": 13.378742192000004,
+        "glb_bytes": 3045516,
+        "glb_sha256": "e4c2d8d350a8975e261648962104d12911cfdbafc3bcc6c99912ef3695015dd9",
+        "input_sha256": "fa998a60b1b239e19785e5be83917643d43c20ff47606b831260326752d48363",
+        "bpt_token_count": 0,
+        "geometry_track": "raw Track A"
+      },
+      "vertices": 5857,
+      "faces": 9328,
+      "joint_count": 19,
+      "pbr_texture_audit": {
+        "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+        "output_sha256": "e4c2d8d350a8975e261648962104d12911cfdbafc3bcc6c99912ef3695015dd9",
+        "source_face_count": 4672,
+        "output_face_count": 9328,
+        "source_materials": [
+          {
+            "base_color_factor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallic_factor": 0.0,
+            "roughness_factor": 1.0,
+            "alpha_mode": "OPAQUE",
+            "base_color_texture": {
+              "shape": [
+                1024,
+                1024,
+                4
+              ],
+              "min": 0.0,
+              "max": 1.0,
+              "channel_std": [
+                0.24789247861064154,
+                0.16102917439087516,
+                0.24131998903349658
+              ],
+              "unique_rgb_count": 16762
+            },
+            "metallic_roughness_texture": null
+          }
+        ],
+        "output_materials": [
+          {
+            "base_color_factor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallic_factor": 1.0,
+            "roughness_factor": 1.0,
+            "alpha_mode": "OPAQUE",
+            "base_color_texture": {
+              "shape": [
+                2048,
+                2048,
+                4
+              ],
+              "min": 0.07058823853731155,
+              "max": 1.0,
+              "channel_std": [
+                0.23806195603713406,
+                0.15602074666641128,
+                0.2188785532116855
+              ],
+              "unique_rgb_count": 71213
+            },
+            "metallic_roughness_texture": {
+              "shape": [
+                2048,
+                2048,
+                4
+              ],
+              "min": 0.0,
+              "max": 1.0,
+              "channel_std": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unique_rgb_count": 1
+            }
+          }
+        ],
+        "source_face_material_ids": [
+          0
+        ],
+        "output_face_material_ids": [
+          0
+        ],
+        "scope": "Structural texture retention and variation only; not a rendered material-fidelity metric."
+      },
+      "material_fidelity_audit": {
+        "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+        "output_sha256": "e4c2d8d350a8975e261648962104d12911cfdbafc3bcc6c99912ef3695015dd9",
+        "samples": 4096,
+        "seed": 0,
+        "source_projection_distance_mean": 6.390951896754332e-05,
+        "source_projection_distance_p95": 0.00027258231889367736,
+        "linear_pbr": {
+          "base_r": {
+            "mae": 0.050065720644436505,
+            "rmse": 0.12268860594773036,
+            "p95_absolute_error": 0.31219235718209043,
+            "psnr_db_peak_1": 18.223915363845748
+          },
+          "base_g": {
+            "mae": 0.03909466003947822,
+            "rmse": 0.09555377676542473,
+            "p95_absolute_error": 0.24588164712715993,
+            "psnr_db_peak_1": 20.39504285538859
+          },
+          "base_b": {
+            "mae": 0.03799992033505862,
+            "rmse": 0.1028078336350057,
+            "p95_absolute_error": 0.24518373658417353,
+            "psnr_db_peak_1": 19.759475844005898
+          },
+          "metallic": {
+            "mae": 0.0,
+            "rmse": 0.0,
+            "p95_absolute_error": 0.0,
+            "psnr_db_peak_1": null
+          },
+          "roughness": {
+            "mae": 2.1412992906588713e-18,
+            "rmse": 1.541855951476335e-17,
+            "p95_absolute_error": 0.0,
+            "psnr_db_peak_1": 336.2391239705934
+          },
+          "alpha": {
+            "mae": 0.0,
+            "rmse": 0.0,
+            "p95_absolute_error": 0.0,
+            "psnr_db_peak_1": null
+          }
+        },
+        "scope": "Area-weighted output surface samples compared with source PBR at nearest source-surface points; attribute-space only, not rendered material fidelity."
+      },
+      "surface_comparison": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 6.012412666558656e-05,
+        "reference_to_prediction": 5.815201515086904e-05,
+        "prediction_to_reference": 6.209623818030408e-05,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 9328,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 8
+      },
+      "maximum_weight_sum_error": 2.220446049250313e-16,
+      "glb_bytes": 3045516,
+      "glb_sha256": "e4c2d8d350a8975e261648962104d12911cfdbafc3bcc6c99912ef3695015dd9"
+    },
+    "source_pbr": {
+      "material_count": 1,
+      "face_material_ids": [
+        0
+      ],
+      "voxel_pbr_min": [
+        0.06632476396847006,
+        0.1862066633484245,
+        0.00462785926984847,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "voxel_pbr_max": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        {
+          "base_color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallic": 0,
+          "roughness": 1,
+          "alpha_mode": "OPAQUE",
+          "has_base_texture": true,
+          "has_metallic_roughness_texture": false
+        }
+      ]
+    },
+    "pbr_texture_audit": {
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "output_sha256": "e6a5b3b5eefc18bd96f5e453e3f9b49f3205c8486878bca250a8d6a055f87d3c",
+      "source_face_count": 4672,
+      "output_face_count": 9312,
+      "source_materials": [
+        {
+          "base_color_factor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallic_factor": 0.0,
+          "roughness_factor": 1.0,
+          "alpha_mode": "OPAQUE",
+          "base_color_texture": {
+            "shape": [
+              1024,
+              1024,
+              4
+            ],
+            "min": 0.0,
+            "max": 1.0,
+            "channel_std": [
+              0.24789247861064154,
+              0.16102917439087516,
+              0.24131998903349658
+            ],
+            "unique_rgb_count": 16762
+          },
+          "metallic_roughness_texture": null
+        }
+      ],
+      "output_materials": [
+        {
+          "base_color_factor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallic_factor": 1.0,
+          "roughness_factor": 1.0,
+          "alpha_mode": "OPAQUE",
+          "base_color_texture": {
+            "shape": [
+              2048,
+              2048,
+              4
+            ],
+            "min": 0.07058823853731155,
+            "max": 1.0,
+            "channel_std": [
+              0.239589399685052,
+              0.15687850943907755,
+              0.2200351006246807
+            ],
+            "unique_rgb_count": 71888
+          },
+          "metallic_roughness_texture": {
+            "shape": [
+              2048,
+              2048,
+              4
+            ],
+            "min": 0.0,
+            "max": 1.0,
+            "channel_std": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "unique_rgb_count": 1
+          }
+        }
+      ],
+      "source_face_material_ids": [
+        0
+      ],
+      "output_face_material_ids": [
+        0
+      ],
+      "scope": "Structural texture retention and variation only; not a rendered material-fidelity metric."
+    },
+    "material_fidelity_audit": {
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "output_sha256": "e6a5b3b5eefc18bd96f5e453e3f9b49f3205c8486878bca250a8d6a055f87d3c",
+      "samples": 4096,
+      "seed": 0,
+      "source_projection_distance_mean": 6.21270621300022e-05,
+      "source_projection_distance_p95": 0.0002631982933484949,
+      "linear_pbr": {
+        "base_r": {
+          "mae": 0.051663040251470574,
+          "rmse": 0.12727248380065595,
+          "p95_absolute_error": 0.3142730854194873,
+          "psnr_db_peak_1": 17.905309605677747
+        },
+        "base_g": {
+          "mae": 0.040134259088692094,
+          "rmse": 0.09891117675905726,
+          "p95_absolute_error": 0.24116722244000333,
+          "psnr_db_peak_1": 20.09509262497703
+        },
+        "base_b": {
+          "mae": 0.03801753949583776,
+          "rmse": 0.10433396474690897,
+          "p95_absolute_error": 0.2311346002754459,
+          "psnr_db_peak_1": 19.631485777598094
+        },
+        "metallic": {
+          "mae": 0.0,
+          "rmse": 0.0,
+          "p95_absolute_error": 0.0,
+          "psnr_db_peak_1": null
+        },
+        "roughness": {
+          "mae": 1.6805133673525319e-18,
+          "rmse": 1.3659226309074518e-17,
+          "p95_absolute_error": 0.0,
+          "psnr_db_peak_1": 337.2914779885153
+        },
+        "alpha": {
+          "mae": 0.0,
+          "rmse": 0.0,
+          "p95_absolute_error": 0.0,
+          "psnr_db_peak_1": null
+        }
+      },
+      "scope": "Area-weighted output surface samples compared with source PBR at nearest source-surface points; attribute-space only, not rendered material fidelity."
+    },
+    "requested_grid_size": 128,
+    "requested_texture_size": 2048,
+    "glb_bytes": 3073688,
+    "glb_sha256": "e6a5b3b5eefc18bd96f5e453e3f9b49f3205c8486878bca250a8d6a055f87d3c",
+    "scope": "Real textured source rig through voxelization, sampled PBR rebaking, barycentric source-weight transfer, field/SkinAE export and bind-pose reload; structural texture audit only, no rendered material-fidelity or animation-transfer claim"
+  },
+  "scope": "analytic cube, constant sparse PBR and independent affine sampler oracle; no rendered fidelity claim"
+}

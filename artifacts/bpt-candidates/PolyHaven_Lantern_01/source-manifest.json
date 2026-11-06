@@ -1,0 +1,51 @@
+{
+  "source": "Poly Haven API",
+  "asset_id": "Lantern_01",
+  "asset_name": "Lantern 01",
+  "author": [
+    "Rajil Jose Macatangay"
+  ],
+  "polycount_reported": 33902,
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "asset_page": "https://polyhaven.com/a/Lantern_01",
+  "model_resolution": "1k glTF geometry/material references; 1k textures",
+  "source_model_hash": "e8a56bd66bee21140aa3272268bd207bac37a7e1",
+  "files": [
+    {
+      "path": "Lantern_01_1k.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/Lantern_01/Lantern_01_1k.gltf",
+      "size_bytes": 4866,
+      "api_md5": "61fbf9f6e215ab4ff1123d6cbfd337a6",
+      "sha256": "d3f8d7a7afec96d55d3b7f20c3e329c909d19d37047902a826bc157f77c27819"
+    },
+    {
+      "path": "textures/Lantern_01_brass_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/Lantern_01/Lantern_01_brass_arm_1k.jpg",
+      "size_bytes": 229054,
+      "api_md5": "cad411a300663678f546ed8b1c9b97f1",
+      "sha256": "479e7105b170713373fdcca0c2f7dcce81913990f60cd4cfba1631f80f550191"
+    },
+    {
+      "path": "Lantern_01.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/Lantern_01/Lantern_01.bin",
+      "size_bytes": 864852,
+      "api_md5": "857a868798e7e5f40d78c2d09e6f8ea0",
+      "sha256": "cb0c7eaaea361546201ba1c4324581ac7147c221851657b6e23d2f854beabe49"
+    },
+    {
+      "path": "textures/Lantern_01_brass_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/Lantern_01/Lantern_01_brass_nor_gl_1k.jpg",
+      "size_bytes": 180646,
+      "api_md5": "6d6805ac7932d9927f7ec817db77b5d5",
+      "sha256": "95f89554c659712c7591a2a3d61178c9c0c0ef2c26e133005f24e2366a10f9b8"
+    },
+    {
+      "path": "textures/Lantern_01_brass_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/Lantern_01/Lantern_01_brass_diff_1k.jpg",
+      "size_bytes": 140998,
+      "api_md5": "e8abf88b7ac60649c54c8d0a639f0713",
+      "sha256": "d19d4c9417719a89ad824ce3a142f38f5e58c47b8640edca5eacca66918b608e"
+    }
+  ]
+}

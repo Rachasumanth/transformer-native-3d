@@ -1,0 +1,13 @@
+{
+  "name": "nvdiffrast",
+  "url": "https://github.com/NVlabs/nvdiffrast.git",
+  "commit": "253ac4fcea7de5f396371124af597e6cc957bfae",
+  "wheel": "nvdiffrast-0.4.0-cp313-cp313-linux_x86_64.whl",
+  "sha256": "62cd626c38e0f30030bb136c7134b4e2cfdf932d1a37796c7928cab88ec36f40",
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "cxx11_abi": true,
+  "architectures": "7.5",
+  "max_jobs": "2"
+}

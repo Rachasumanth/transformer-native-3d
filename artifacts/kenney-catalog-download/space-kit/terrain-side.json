@@ -1,0 +1,10 @@
+{
+  "id": "space-kit/terrain-side",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/space-kit/terrain-side.glb",
+  "sha256": "f51223639675ae5d95581b11061c92494a0cf1a1960b65b8cc890a671986a15a",
+  "bytes": 1572,
+  "group": "space-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/space-kit"
+}

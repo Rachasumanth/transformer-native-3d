@@ -1,0 +1,57 @@
+{
+  "scope": "three-asset SkinAE integration pilot; node-default poses only; no research quality claim",
+  "sampling": "1024 area-uniform triangle samples per asset; barycentric skin weights; seed 17",
+  "assets": [
+    {
+      "name": "RiggedSimple",
+      "split": "train",
+      "file": "RiggedSimple.npz",
+      "sha256": "b3dd89003987bab00620c44d1af5009eb41ed4cb8910a650565613ac5fcbd19f",
+      "source_sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401",
+      "samples": 1024,
+      "joints": 2,
+      "normalization": {
+        "center": [
+          -5.218048215738236e-15,
+          2.434097448045236e-07,
+          -2.0861626381929455e-07
+        ],
+        "scale": 0.10928777093401539
+      }
+    },
+    {
+      "name": "CesiumMan",
+      "split": "train",
+      "file": "CesiumMan.npz",
+      "sha256": "03479f534964e878d924b618ca2fab38d6b613eba77e0637c51187700deaa766",
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "samples": 1024,
+      "joints": 19,
+      "normalization": {
+        "center": [
+          -6.53480239920512e-08,
+          0.7532751040569674,
+          0.02497701394774722
+        ],
+        "scale": 0.6637680165409462
+      }
+    },
+    {
+      "name": "Fox",
+      "split": "validation",
+      "file": "Fox.npz",
+      "sha256": "30d75dfe52ed3622c125eeff747d6a0cf80dbd18852043449b5c3ea2e31b664a",
+      "source_sha256": "d97044e701822bac5a62696459b27d7b375aada5de8574ed4362edbba94771f7",
+      "samples": 1024,
+      "joints": 24,
+      "normalization": {
+        "center": [
+          -6.378095989134636e-07,
+          39.392726731703334,
+          -10.735073004654097
+        ],
+        "scale": 0.00646329413711845
+      }
+    }
+  ]
+}

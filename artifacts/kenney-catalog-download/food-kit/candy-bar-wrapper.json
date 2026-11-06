@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/candy-bar-wrapper",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/candy-bar-wrapper.glb",
+  "sha256": "451565f78459d2597fd10c6a69a9a7fa689e68e4b978b6b5a4bf02e2c2fba582",
+  "bytes": 16856,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/egg-cooked",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/egg-cooked.glb",
+  "sha256": "758c766a483a8a2713c7a4bdda47ec06e30db6d10888d69455f59bf225189a03",
+  "bytes": 17500,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

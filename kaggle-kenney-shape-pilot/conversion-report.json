@@ -1,0 +1,368 @@
+{
+  "scope": "Shape-only conversion pilot; not curated, semantically deduplicated, or validated for quality",
+  "source_manifest_sha256": "8c017b7ade2af126bed127711f7f4adb9917d55995f3ef93a59f8cdd52f95ea8",
+  "grid": 32,
+  "accepted": [
+    {
+      "asset_id": "kenney-car-kit-debris-spoiler-b",
+      "voxels": 1072,
+      "source_faces": 88,
+      "removed_zero_area_faces": 0,
+      "extracted_triangles": 2140,
+      "center": [
+        0.0,
+        0.17499999701976776,
+        0.0
+      ],
+      "scale": 1.0,
+      "seconds": 2.73358661400016,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-car-kit-suv",
+      "voxels": 2806,
+      "source_faces": 2474,
+      "removed_zero_area_faces": 6,
+      "extracted_triangles": 5960,
+      "center": [
+        0.0,
+        0.6500000059604645,
+        4.665233321876627e-08
+      ],
+      "scale": 0.37037037662838923,
+      "seconds": 9.303246528999807,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-car-kit-wheel-truck",
+      "voxels": 4080,
+      "source_faces": 428,
+      "removed_zero_area_faces": 1,
+      "extracted_triangles": 8156,
+      "center": [
+        7.450580596923828e-09,
+        0.0,
+        0.0
+      ],
+      "scale": 1.6666666004392863,
+      "seconds": 9.755393725999966,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-food-kit-advocado-half",
+      "voxels": 2692,
+      "source_faces": 98,
+      "removed_zero_area_faces": 0,
+      "extracted_triangles": 5414,
+      "center": [
+        -0.02328079752624053,
+        0.10686985403299332,
+        0.0
+      ],
+      "scale": 4.678587844291786,
+      "seconds": 6.572652663999179,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-food-kit-cutting-board-japanese",
+      "voxels": 1964,
+      "source_faces": 104,
+      "removed_zero_area_faces": 2,
+      "extracted_triangles": 4106,
+      "center": [
+        0.0,
+        0.03999999910593033,
+        0.0
+      ],
+      "scale": 1.190476227644621,
+      "seconds": 5.098887687001479,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-food-kit-pear",
+      "voxels": 2590,
+      "source_faces": 136,
+      "removed_zero_area_faces": 0,
+      "extracted_triangles": 5140,
+      "center": [
+        0.0,
+        0.1353766918182373,
+        0.0
+      ],
+      "scale": 3.6933979792571825,
+      "seconds": 6.4838802160011255,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-food-kit-wine-white",
+      "voxels": 988,
+      "source_faces": 124,
+      "removed_zero_area_faces": 0,
+      "extracted_triangles": 2024,
+      "center": [
+        0.0,
+        0.3062000311911106,
+        0.0
+      ],
+      "scale": 1.525320169520921,
+      "seconds": 2.5000741999992897,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-furniture-kit-bathroomcabinet",
+      "voxels": 3876,
+      "source_faces": 64,
+      "removed_zero_area_faces": 0,
+      "extracted_triangles": 7934,
+      "center": [
+        0.3150000050663948,
+        0.19500000774860382,
+        -0.14499999488350324
+      ],
+      "scale": 2.5641024622142865,
+      "seconds": 9.142754411999704,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-furniture-kit-floorfull",
+      "voxels": 2048,
+      "source_faces": 12,
+      "removed_zero_area_faces": 0,
+      "extracted_triangles": 4092,
+      "center": [
+        0.5,
+        0.02500000037252903,
+        -0.5
+      ],
+      "scale": 1.0,
+      "seconds": 4.943393927000216,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-furniture-kit-plantsmall3",
+      "voxels": 3024,
+      "source_faces": 98,
+      "removed_zero_area_faces": 0,
+      "extracted_triangles": 6252,
+      "center": [
+        0.0,
+        0.07249999791383743,
+        0.0
+      ],
+      "scale": 6.896551922583841,
+      "seconds": 7.745947999999771,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-furniture-kit-washerdryerstacked",
+      "voxels": 2872,
+      "source_faces": 992,
+      "removed_zero_area_faces": 6,
+      "extracted_triangles": 5924,
+      "center": [
+        0.19500000774860382,
+        0.4699999988079071,
+        -0.15499999594056801
+      ],
+      "scale": 1.0638297899323061,
+      "seconds": 8.446530645000166,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-nature-kit-bed",
+      "voxels": 1590,
+      "source_faces": 268,
+      "removed_zero_area_faces": 4,
+      "extracted_triangles": 3184,
+      "center": [
+        -0.007286153733730316,
+        0.08686944544315334,
+        -0.0031648725271224976
+      ],
+      "scale": 1.3381043579552558,
+      "seconds": 4.108574632000455,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-nature-kit-fence-simple",
+      "voxels": 560,
+      "source_faces": 64,
+      "removed_zero_area_faces": 4,
+      "extracted_triangles": 1120,
+      "center": [
+        0.0,
+        0.12251364886760713,
+        -0.4650000035762787
+      ],
+      "scale": 1.0,
+      "seconds": 1.372088182999505,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-nature-kit-rock-tallj",
+      "voxels": 3209,
+      "source_faces": 42,
+      "removed_zero_area_faces": 0,
+      "extracted_triangles": 6414,
+      "center": [
+        0.0,
+        0.26000000238418575,
+        0.0
+      ],
+      "scale": 1.612903213401739,
+      "seconds": 8.335658550000517,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-thin-fall",
+      "voxels": 1076,
+      "source_faces": 228,
+      "removed_zero_area_faces": 0,
+      "extracted_triangles": 2162,
+      "center": [
+        0.0827685296535492,
+        0.6951489567756652,
+        0.056787386536598206
+      ],
+      "scale": 0.6710067771731849,
+      "seconds": 2.6898345070003415,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-space-kit-alien",
+      "voxels": 1956,
+      "source_faces": 292,
+      "removed_zero_area_faces": 7,
+      "extracted_triangles": 4042,
+      "center": [
+        2.0000000601530856,
+        0.4215919925553704,
+        1.5350000014901162
+      ],
+      "scale": 1.1859807671398739,
+      "seconds": 4.938399663000382,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-space-kit-machine-generatorlarge",
+      "voxels": 3092,
+      "source_faces": 126,
+      "removed_zero_area_faces": 4,
+      "extracted_triangles": 6180,
+      "center": [
+        2.0,
+        0.34150636196136475,
+        1.5
+      ],
+      "scale": 0.7692307974459868,
+      "seconds": 7.2412242099999276,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-space-kit-rail-corner",
+      "voxels": 576,
+      "source_faces": 130,
+      "removed_zero_area_faces": 2,
+      "extracted_triangles": 1036,
+      "center": [
+        1.9500000029802322,
+        0.125,
+        1.5499999970197678
+      ],
+      "scale": 1.111111103752513,
+      "seconds": 1.5108704379999836,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-space-kit-weapon-rifle",
+      "voxels": 1440,
+      "source_faces": 106,
+      "removed_zero_area_faces": 0,
+      "extracted_triangles": 2902,
+      "center": [
+        2.0,
+        0.13750000298023224,
+        1.5
+      ],
+      "scale": 2.0,
+      "seconds": 3.448637281999254,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-pirate-kit-barrel",
+      "voxels": 8208,
+      "source_faces": 148,
+      "removed_zero_area_faces": 0,
+      "extracted_triangles": 18004,
+      "center": [
+        0.0,
+        0.6145713329315186,
+        0.0
+      ],
+      "scale": 0.7484479841370506,
+      "seconds": 21.571845604999908,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-pirate-kit-grass-patch",
+      "voxels": 2937,
+      "source_faces": 360,
+      "removed_zero_area_faces": 0,
+      "extracted_triangles": 5870,
+      "center": [
+        0.006963223218917847,
+        0.23545971512794495,
+        -0.0063062310218811035
+      ],
+      "scale": 0.7617379897504267,
+      "seconds": 8.38823191099982,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-pirate-kit-ship-medium",
+      "voxels": 2994,
+      "source_faces": 1723,
+      "removed_zero_area_faces": 7,
+      "extracted_triangles": 6628,
+      "center": [
+        0.0,
+        4.981760025024414,
+        0.0
+      ],
+      "scale": 0.09433961924644257,
+      "seconds": 9.526405270000396,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "asset_id": "kenney-pirate-kit-tower-watch",
+      "voxels": 7300,
+      "source_faces": 248,
+      "removed_zero_area_faces": 12,
+      "extracted_triangles": 14808,
+      "center": [
+        0.0,
+        1.3925000429153442,
+        0.0
+      ],
+      "scale": 0.3279976452195423,
+      "seconds": 17.007117791999917,
+      "cleanup_policy": "normalized_zero_area"
+    },
+    {
+      "cleanup_policy": "normalized_and_grid_zero_area",
+      "asset_id": "kenney-car-kit-ambulance",
+      "voxels": 3216,
+      "source_faces": 2804,
+      "removed_zero_area_or_grid_collapsed_faces": 17,
+      "extracted_triangles": 6796,
+      "center": [
+        0.0,
+        0.9000000059604645,
+        -0.02499999999999991
+      ],
+      "scale": 0.3076923302644825,
+      "seconds": 10.311621032000403
+    }
+  ],
+  "rejected": []
+}

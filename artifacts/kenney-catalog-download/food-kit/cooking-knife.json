@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/cooking-knife",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/cooking-knife.glb",
+  "sha256": "2d7f7bd9543901ec61d1ef6f3b3d44c70de8755c2ba46a767692ca2d153734a3",
+  "bytes": 16116,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

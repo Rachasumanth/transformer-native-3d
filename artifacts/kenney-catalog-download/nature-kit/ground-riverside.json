@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/ground-riverside",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/ground-riverside.glb",
+  "sha256": "99d5d9f3d12fde4e34b7b341507dcb332bfc054351d4d01ccf35d8e9d0197155",
+  "bytes": 4544,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

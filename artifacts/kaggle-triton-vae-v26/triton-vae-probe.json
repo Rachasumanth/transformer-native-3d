@@ -1,0 +1,21 @@
+{
+  "scope": "One low-resolution prepared Avocado asset, tiny deterministic teacher-forced VAE; no optimizer step and no learned quality claim",
+  "device": "Tesla T4",
+  "manifest_sha256": "5aeb39db4177ceb91a89bf4d793a01aa8bb9630ee6bff5cc362f279aa4428dbb",
+  "active_voxels": 498,
+  "loss_reference": 1.6802964210510254,
+  "loss_experimental": 1.6802964210510254,
+  "worst_gradient_error": [
+    "from_latent.bias",
+    1.4901161193847656e-08
+  ],
+  "reference": {
+    "ms": 188.79144566667114,
+    "peak_extra_bytes": 1053696
+  },
+  "experimental": {
+    "ms": 161.65314566667158,
+    "peak_extra_bytes": 310272
+  },
+  "source_sha256": "0ef37cc49478da3965eb0dc24e30b4294efab8bca36ae6fcc4f2c18d362d709c"
+}

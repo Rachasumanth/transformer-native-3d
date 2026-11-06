@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/knife-block",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/knife-block.glb",
+  "sha256": "5d5112da7ae75fe1a4a2e858a7332f51ab460be17feacee4e1871e92ee5a9b1b",
+  "bytes": 30888,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

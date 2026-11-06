@@ -1,0 +1,13 @@
+{
+  "asset": "BrainStem",
+  "sha256": "ddda3a53b5c9771f992463034a430340ba2bac571e5869c723f7cba4976e9174",
+  "readme_sha256": "0ed81a9f099b7cfeb551fdf55598486622b86959a1a0885089092b2573e46fe9",
+  "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/BrainStem",
+  "skins": 1,
+  "animations": 1,
+  "extensions_required": [],
+  "vertices": 34159,
+  "faces": 61666,
+  "joints": 18,
+  "import": "ok"
+}

@@ -1,0 +1,50 @@
+{
+  "artifacts/posed-deformation/cesiumman-roundtrip-animated.glb.validator.json": {
+    "bytes": 1482,
+    "sha256": "c499b61166beb72e2b2bae0544b5d4f5cc772cdd043205f7a493bf6e9992de96"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-animated.glb.validator.json": {
+    "bytes": 1491,
+    "sha256": "6bfd1574e937abc668a6ed002513a94572b275a687386e8c381915fa68495579"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top1-animated.glb.validator.json": {
+    "bytes": 1496,
+    "sha256": "8428569988b5aebcdc811e7ae1a36d63c435dc8e1ba344f02ba3b6048e0beaa5"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top2-animated.glb.validator.json": {
+    "bytes": 1496,
+    "sha256": "ac2ad2746f4c4125e2eb1c9faa57a7b1678b83b67481fa489b991bc8a76ab81e"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top3-animated.glb.validator.json": {
+    "bytes": 1496,
+    "sha256": "8b99b2e475cbc33a4bc5a0440664399ed8c89d9fb2f057b0c9dc4c6e0113942d"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top4-animated.glb.validator.json": {
+    "bytes": 1496,
+    "sha256": "791124b4a4b950f286f3116f51d2bef17b5dcfaf7910e20c2b6d885d053ed3a1"
+  },
+  "artifacts/posed-deformation/export-real-rigged-animated.glb.validator.json": {
+    "bytes": 1496,
+    "sha256": "b932ab7de82a787067229159ad6c925c9c2a048734c5e62e66192f653b169acf"
+  },
+  "artifacts/posed-deformation/fox-run-animated.glb.validator.json": {
+    "bytes": 1469,
+    "sha256": "ee8f62e0162b10a4a6088d10fc403445b4e76ecdb06bb24e5595664f2bd19c02"
+  },
+  "artifacts/posed-deformation/fox-survey-animated.glb.validator.json": {
+    "bytes": 1472,
+    "sha256": "51e0e93e446937f192f283938d97d4915f4cef76040ea90a1e47e0fa4ee5bfea"
+  },
+  "artifacts/posed-deformation/fox-walk-animated.glb.validator.json": {
+    "bytes": 1470,
+    "sha256": "7411d17fb77b78d5efdb6e2ab8d68a03cf2fa6bcddb71f54f9017f9b9935803b"
+  },
+  "artifacts/posed-deformation/riggedsimple-roundtrip-animated.glb.validator.json": {
+    "bytes": 1482,
+    "sha256": "d4716d2b30623095f3a85bb6fc9782ed5debc105aa98cd2fb080a7002e29638a"
+  },
+  "artifacts/posed-deformation/animated-validator-summary.json": {
+    "bytes": 1371,
+    "sha256": "fa3e87ca219e6234dfcb38911578c94f624f8e8d265e19da964146f13b6b6322"
+  }
+}

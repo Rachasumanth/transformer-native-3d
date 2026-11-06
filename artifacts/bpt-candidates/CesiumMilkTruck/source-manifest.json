@@ -1,0 +1,17 @@
+[
+  {
+    "file": "CesiumMilkTruck.glb",
+    "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb",
+    "sha256": "09371b34608116de5842d23abe260bf11acf3e1554daf334a647eb566eee5c49"
+  },
+  {
+    "file": "README.md",
+    "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CesiumMilkTruck/README.md",
+    "sha256": "72795225ebbbbd09138dfe0a911fadd7b9dbaeddaf134175cc3c9546383be1cb"
+  },
+  {
+    "file": "LICENSE.md",
+    "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CesiumMilkTruck/LICENSE.md",
+    "sha256": "c9c4e1461cd68f9e806e0968593e5ea256cb79bd3efc7d1f5b79243d011208c4"
+  }
+]

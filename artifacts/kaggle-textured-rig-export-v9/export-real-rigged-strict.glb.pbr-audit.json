@@ -1,0 +1,85 @@
+{
+  "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+  "output_sha256": "e0a99bd462eae66699a3be9a714bbb903612ceaff0cf7e14a95c3f67de835db3",
+  "source_face_count": 4672,
+  "output_face_count": 3048,
+  "source_materials": [
+    {
+      "base_color_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallic_factor": 0.0,
+      "roughness_factor": 1.0,
+      "alpha_mode": "OPAQUE",
+      "base_color_texture": {
+        "shape": [
+          1024,
+          1024,
+          4
+        ],
+        "min": 0.0,
+        "max": 1.0,
+        "channel_std": [
+          0.24789247861064154,
+          0.16102917439087516,
+          0.24131998903349658
+        ],
+        "unique_rgb_count": 16762
+      },
+      "metallic_roughness_texture": null
+    }
+  ],
+  "output_materials": [
+    {
+      "base_color_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallic_factor": 1.0,
+      "roughness_factor": 1.0,
+      "alpha_mode": "OPAQUE",
+      "base_color_texture": {
+        "shape": [
+          128,
+          128,
+          4
+        ],
+        "min": 0.1411764770746231,
+        "max": 1.0,
+        "channel_std": [
+          0.15282847553498705,
+          0.1028911532352632,
+          0.12155253592536855
+        ],
+        "unique_rgb_count": 5162
+      },
+      "metallic_roughness_texture": {
+        "shape": [
+          128,
+          128,
+          4
+        ],
+        "min": 0.0,
+        "max": 1.0,
+        "channel_std": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "unique_rgb_count": 1
+      }
+    }
+  ],
+  "source_face_material_ids": [
+    0
+  ],
+  "output_face_material_ids": [
+    0
+  ],
+  "scope": "Structural texture retention and variation only; not a rendered material-fidelity metric."
+}

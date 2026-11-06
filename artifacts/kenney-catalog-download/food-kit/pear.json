@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/pear",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/pear.glb",
+  "sha256": "06fabbc0e5a9adeb36b208be4ab28190c41a4d24c28995500e9da51ef3269d73",
+  "bytes": 26296,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

@@ -1,0 +1,696 @@
+{
+  "scope": "Core glTF animation sampling and linear-blend skinning execution audit; not an external deformation-quality benchmark",
+  "sampling": "five evenly spaced times per animation over the union of sampler key ranges; shared node-default normalization per source asset",
+  "cases": [
+    {
+      "asset": "RiggedSimple",
+      "source": "/home/sumanth/transformer native 3d model format/artifacts/rigged-inputs/RiggedSimple/RiggedSimple.glb",
+      "source_sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401",
+      "geometry": {
+        "vertices": 160,
+        "faces": 188,
+        "joints": 2,
+        "topology": {
+          "boundary_edges": 128,
+          "nonmanifold_edges": 0
+        }
+      },
+      "animations": [
+        {
+          "index": 0,
+          "name": null,
+          "time_range": [
+            0.04166661947965622,
+            2.0833330154418945
+          ],
+          "channel_paths": [
+            "rotation",
+            "scale",
+            "translation"
+          ],
+          "interpolation": [
+            "LINEAR"
+          ],
+          "pose_count": 5,
+          "poses": [
+            {
+              "time": 0.04166661947965622,
+              "vertex_displacement_mean_from_first": 0.0,
+              "vertex_displacement_max_from_first": 0.0,
+              "joint_displacement_max_from_first": 0.0,
+              "bone_length_ratio_min": 1.0,
+              "bone_length_ratio_max": 1.0,
+              "bounds_min": [
+                -0.10928777093401752,
+                -0.5,
+                -0.10928774813481049
+              ],
+              "bounds_max": [
+                0.10928777093401752,
+                0.5000000004277838,
+                0.10928774813481049
+              ],
+              "topology": {
+                "boundary_edges": 128,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 0.5520832184702158,
+              "vertex_displacement_mean_from_first": 0.06158502156473714,
+              "vertex_displacement_max_from_first": 0.15306147238799475,
+              "joint_displacement_max_from_first": 2.2392077003872804e-09,
+              "bone_length_ratio_min": 1.0000000000326956,
+              "bone_length_ratio_max": 1.0000000000326956,
+              "bounds_min": [
+                -0.10928777093401752,
+                -0.5,
+                -0.10928774813481049
+              ],
+              "bounds_max": [
+                0.1974944862118572,
+                0.49253574750467355,
+                0.10928774813481049
+              ],
+              "topology": {
+                "boundary_edges": 128,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 1.0624998174607754,
+              "vertex_displacement_mean_from_first": 0.11701835840103655,
+              "vertex_displacement_max_from_first": 0.2908337385023183,
+              "joint_displacement_max_from_first": 4.478415400766679e-09,
+              "bone_length_ratio_min": 1.0000000000653915,
+              "bone_length_ratio_max": 1.0000000000653915,
+              "bounds_min": [
+                -0.10928777093401752,
+                -0.5,
+                -0.10928774813481049
+              ],
+              "bounds_max": [
+                0.31829796824198614,
+                0.44517971781934224,
+                0.10928774813481049
+              ],
+              "topology": {
+                "boundary_edges": 128,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 1.572916416451335,
+              "vertex_displacement_mean_from_first": 0.059121760612479,
+              "vertex_displacement_max_from_first": 0.14693936185803178,
+              "joint_displacement_max_from_first": 2.2392077003833393e-09,
+              "bone_length_ratio_min": 1.0000000000326956,
+              "bone_length_ratio_max": 1.0000000000326956,
+              "bounds_min": [
+                -0.10928777093401752,
+                -0.5,
+                -0.10928774813481049
+              ],
+              "bounds_max": [
+                0.1917795659640324,
+                0.4937395474380832,
+                0.10928774813481049
+              ],
+              "topology": {
+                "boundary_edges": 128,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 2.0833330154418945,
+              "vertex_displacement_mean_from_first": 0.0,
+              "vertex_displacement_max_from_first": 0.0,
+              "joint_displacement_max_from_first": 0.0,
+              "bone_length_ratio_min": 1.0,
+              "bone_length_ratio_max": 1.0,
+              "bounds_min": [
+                -0.10928777093401752,
+                -0.5,
+                -0.10928774813481049
+              ],
+              "bounds_max": [
+                0.10928777093401752,
+                0.5000000004277838,
+                0.10928774813481049
+              ],
+              "topology": {
+                "boundary_edges": 128,
+                "nonmanifold_edges": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "CesiumMan",
+      "source": "/home/sumanth/transformer native 3d model format/artifacts/rigged-inputs/CesiumMan/CesiumMan.glb",
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "geometry": {
+        "vertices": 3273,
+        "faces": 4672,
+        "joints": 19,
+        "topology": {
+          "boundary_edges": 1894,
+          "nonmanifold_edges": 0
+        }
+      },
+      "animations": [
+        {
+          "index": 0,
+          "name": null,
+          "time_range": [
+            0.04166661947965622,
+            2.0
+          ],
+          "channel_paths": [
+            "rotation",
+            "scale",
+            "translation"
+          ],
+          "interpolation": [
+            "LINEAR"
+          ],
+          "pose_count": 5,
+          "poses": [
+            {
+              "time": 0.04166661947965622,
+              "vertex_displacement_mean_from_first": 0.0,
+              "vertex_displacement_max_from_first": 0.0,
+              "joint_displacement_max_from_first": 0.0,
+              "bone_length_ratio_min": 1.0,
+              "bone_length_ratio_max": 1.0,
+              "bounds_min": [
+                -0.20610574593836134,
+                -0.5070658934347518,
+                -0.31301369365610515
+              ],
+              "bounds_max": [
+                0.1292059970629955,
+                0.46057886828011385,
+                0.28204656591785865
+              ],
+              "topology": {
+                "boundary_edges": 1894,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 0.5312499646097422,
+              "vertex_displacement_mean_from_first": 0.11439075085558333,
+              "vertex_displacement_max_from_first": 0.5008957222438915,
+              "joint_displacement_max_from_first": 0.3469163582653552,
+              "bone_length_ratio_min": 0.9999958460935372,
+              "bone_length_ratio_max": 1.000001396707315,
+              "bounds_min": [
+                -0.16395395310358865,
+                -0.485698301489753,
+                -0.2981184624479174
+              ],
+              "bounds_max": [
+                0.12771595679400333,
+                0.49403052665032626,
+                0.24238663328250568
+              ],
+              "topology": {
+                "boundary_edges": 1894,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 1.020833309739828,
+              "vertex_displacement_mean_from_first": 0.10172218717242909,
+              "vertex_displacement_max_from_first": 0.5536807770703427,
+              "joint_displacement_max_from_first": 0.44180709080413466,
+              "bone_length_ratio_min": 0.9999958096644653,
+              "bone_length_ratio_max": 1.000000849107633,
+              "bounds_min": [
+                -0.13381563428825746,
+                -0.5053157139974558,
+                -0.3498420535305145
+              ],
+              "bounds_max": [
+                0.1221448314130089,
+                0.46844794552053537,
+                0.28243875961757653
+              ],
+              "topology": {
+                "boundary_edges": 1894,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 1.510416654869914,
+              "vertex_displacement_mean_from_first": 0.06573987279035817,
+              "vertex_displacement_max_from_first": 0.29536811256475204,
+              "joint_displacement_max_from_first": 0.1659087186661508,
+              "bone_length_ratio_min": 0.9999916647474844,
+              "bone_length_ratio_max": 1.000000859002544,
+              "bounds_min": [
+                -0.18723691413439916,
+                -0.48685673441620786,
+                -0.2224326918701772
+              ],
+              "bounds_max": [
+                0.1366213107866792,
+                0.5014987459443885,
+                0.20456437925442378
+              ],
+              "topology": {
+                "boundary_edges": 1894,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 2.0,
+              "vertex_displacement_mean_from_first": 0.004392582573141707,
+              "vertex_displacement_max_from_first": 0.017582506250381956,
+              "joint_displacement_max_from_first": 0.011406356781278692,
+              "bone_length_ratio_min": 0.9999928957542803,
+              "bone_length_ratio_max": 1.0000013950835482,
+              "bounds_min": [
+                -0.20033469676103857,
+                -0.5055100473306147,
+                -0.3160805790765595
+              ],
+              "bounds_max": [
+                0.12899585823890702,
+                0.45685539002705106,
+                0.28999727480741394
+              ],
+              "topology": {
+                "boundary_edges": 1894,
+                "nonmanifold_edges": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "Fox",
+      "source": "/home/sumanth/transformer native 3d model format/artifacts/rigged-inputs/Fox/Fox.glb",
+      "source_sha256": "d97044e701822bac5a62696459b27d7b375aada5de8574ed4362edbba94771f7",
+      "geometry": {
+        "vertices": 1728,
+        "faces": 576,
+        "joints": 24,
+        "topology": {
+          "boundary_edges": 1728,
+          "nonmanifold_edges": 0
+        }
+      },
+      "animations": [
+        {
+          "index": 0,
+          "name": "Survey",
+          "time_range": [
+            0.0,
+            3.4166667461395264
+          ],
+          "channel_paths": [
+            "rotation",
+            "translation"
+          ],
+          "interpolation": [
+            "LINEAR"
+          ],
+          "pose_count": 5,
+          "poses": [
+            {
+              "time": 0.0,
+              "vertex_displacement_mean_from_first": 0.0,
+              "vertex_displacement_max_from_first": 0.0,
+              "joint_displacement_max_from_first": 0.0,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.0,
+              "bounds_min": [
+                -0.19325105417840557,
+                -0.25545138627631286,
+                -0.4757329035526692
+              ],
+              "bounds_max": [
+                0.07494408929190025,
+                0.2278268564901423,
+                0.4355479486435691
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 0.8541666865348816,
+              "vertex_displacement_mean_from_first": 0.03463033938029874,
+              "vertex_displacement_max_from_first": 0.2529299104913707,
+              "joint_displacement_max_from_first": 0.09405192460421576,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.0000000000000004,
+              "bounds_min": [
+                -0.07493901037426871,
+                -0.25545308423621144,
+                -0.4734578073944832
+              ],
+              "bounds_max": [
+                0.12293809113737068,
+                0.2424585919106599,
+                0.4996695263487675
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 1.7083333730697632,
+              "vertex_displacement_mean_from_first": 0.03390607744784663,
+              "vertex_displacement_max_from_first": 0.2657283644698563,
+              "joint_displacement_max_from_first": 0.0792153993568021,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.0050214732010672,
+              "bounds_min": [
+                -0.07495591610440305,
+                -0.25545119127449584,
+                -0.47974129783172953
+              ],
+              "bounds_max": [
+                0.11867436171712199,
+                0.24795385950864227,
+                0.5059508773309439
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 2.5625000596046448,
+              "vertex_displacement_mean_from_first": 0.021485254146899606,
+              "vertex_displacement_max_from_first": 0.21969462124387876,
+              "joint_displacement_max_from_first": 0.03585942621433669,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.0000000000000007,
+              "bounds_min": [
+                -0.11928040196269932,
+                -0.2554519124391757,
+                -0.4746667551157164
+              ],
+              "bounds_max": [
+                0.08139021178107875,
+                0.2565966985674205,
+                0.5138412370607587
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 3.4166667461395264,
+              "vertex_displacement_mean_from_first": 0.0,
+              "vertex_displacement_max_from_first": 0.0,
+              "joint_displacement_max_from_first": 0.0,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.0,
+              "bounds_min": [
+                -0.19325105417840557,
+                -0.25545138627631286,
+                -0.4757329035526692
+              ],
+              "bounds_max": [
+                0.07494408929190025,
+                0.2278268564901423,
+                0.4355479486435691
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "name": "Walk",
+          "time_range": [
+            0.0,
+            0.7083333134651184
+          ],
+          "channel_paths": [
+            "rotation",
+            "translation"
+          ],
+          "interpolation": [
+            "LINEAR"
+          ],
+          "pose_count": 5,
+          "poses": [
+            {
+              "time": 0.0,
+              "vertex_displacement_mean_from_first": 0.0,
+              "vertex_displacement_max_from_first": 0.0,
+              "joint_displacement_max_from_first": 0.0,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.0,
+              "bounds_min": [
+                -0.0816974173776093,
+                -0.25474064485296016,
+                -0.5495705920896442
+              ],
+              "bounds_max": [
+                0.0810820319361523,
+                0.24214743899381536,
+                0.5146660614466559
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 0.1770833283662796,
+              "vertex_displacement_mean_from_first": 0.04078832063271021,
+              "vertex_displacement_max_from_first": 0.1605847820544714,
+              "joint_displacement_max_from_first": 0.1543703573133014,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.0219267020878327,
+              "bounds_min": [
+                -0.07611038525490735,
+                -0.25845345982263584,
+                -0.5437262296154226
+              ],
+              "bounds_max": [
+                0.08664651889298962,
+                0.23314794636103095,
+                0.521783899037181
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 0.3541666567325592,
+              "vertex_displacement_mean_from_first": 0.08299748932431912,
+              "vertex_displacement_max_from_first": 0.27054537659196976,
+              "joint_displacement_max_from_first": 0.2585199274305682,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.0216990285521055,
+              "bounds_min": [
+                -0.0826234331718029,
+                -0.25377134908050036,
+                -0.5213545781736326
+              ],
+              "bounds_max": [
+                0.08015661894743693,
+                0.22603079951369104,
+                0.5221367843364809
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 0.5312499850988388,
+              "vertex_displacement_mean_from_first": 0.0781304977643213,
+              "vertex_displacement_max_from_first": 0.26652273146831945,
+              "joint_displacement_max_from_first": 0.25501407235435725,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.0344062160745642,
+              "bounds_min": [
+                -0.08019517236244392,
+                -0.2540110486970838,
+                -0.5549849236311997
+              ],
+              "bounds_max": [
+                0.08253971800456301,
+                0.21084816416402963,
+                0.522998553807789
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 0.7083333134651184,
+              "vertex_displacement_mean_from_first": 0.0,
+              "vertex_displacement_max_from_first": 0.0,
+              "joint_displacement_max_from_first": 0.0,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.0,
+              "bounds_min": [
+                -0.0816974173776093,
+                -0.25474064485296016,
+                -0.5495705920896442
+              ],
+              "bounds_max": [
+                0.0810820319361523,
+                0.24214743899381536,
+                0.5146660614466559
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "name": "Run",
+          "time_range": [
+            0.0,
+            1.1583333015441895
+          ],
+          "channel_paths": [
+            "rotation",
+            "translation"
+          ],
+          "interpolation": [
+            "LINEAR"
+          ],
+          "pose_count": 5,
+          "poses": [
+            {
+              "time": 0.0,
+              "vertex_displacement_mean_from_first": 0.0,
+              "vertex_displacement_max_from_first": 0.0,
+              "joint_displacement_max_from_first": 0.0,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.0,
+              "bounds_min": [
+                -0.09445915930604151,
+                -0.262777608388285,
+                -0.5196331672267093
+              ],
+              "bounds_max": [
+                0.09450542245383423,
+                0.22715206899433668,
+                0.5355990921732343
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 0.28958332538604736,
+              "vertex_displacement_mean_from_first": 0.1090282935289229,
+              "vertex_displacement_max_from_first": 0.4419499961916751,
+              "joint_displacement_max_from_first": 0.3245846666076915,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.0218711672295913,
+              "bounds_min": [
+                -0.08702861089991844,
+                -0.25894974143074695,
+                -0.5157849113451575
+              ],
+              "bounds_max": [
+                0.0883648302029822,
+                0.21732658863276286,
+                0.5552432242008438
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 0.5791666507720947,
+              "vertex_displacement_mean_from_first": 0.16554856480892713,
+              "vertex_displacement_max_from_first": 0.5709217886234401,
+              "joint_displacement_max_from_first": 0.5571562776621253,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.2133218821431178,
+              "bounds_min": [
+                -0.08555045222941941,
+                -0.27064587259910416,
+                -0.5539276059674537
+              ],
+              "bounds_max": [
+                0.09006642514898425,
+                0.23609400870342026,
+                0.5005782493736414
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 0.8687499761581421,
+              "vertex_displacement_mean_from_first": 0.1262773511146761,
+              "vertex_displacement_max_from_first": 0.4149969114181019,
+              "joint_displacement_max_from_first": 0.33918403380105977,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.3553670194832372,
+              "bounds_min": [
+                -0.10685655991975489,
+                -0.2602384184585668,
+                -0.5528435084692466
+              ],
+              "bounds_max": [
+                0.10975792247525232,
+                0.1752719281738701,
+                0.49652077422446383
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            },
+            {
+              "time": 1.1583333015441895,
+              "vertex_displacement_mean_from_first": 0.0,
+              "vertex_displacement_max_from_first": 0.0,
+              "joint_displacement_max_from_first": 0.0,
+              "bone_length_ratio_min": 0.0,
+              "bone_length_ratio_max": 1.0,
+              "bounds_min": [
+                -0.09445915930604151,
+                -0.262777608388285,
+                -0.5196331672267093
+              ],
+              "bounds_max": [
+                0.09450542245383423,
+                0.22715206899433668,
+                0.5355990921732343
+              ],
+              "topology": {
+                "boundary_edges": 1728,
+                "nonmanifold_edges": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "asset_id": "khronos-avocado",
+      "path": "avocado.t3d",
+      "sha256": "3f05eb5b411d47a0732c429ba53b444779d12033399f963141e28bc407abf84a",
+      "split": "train",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/Avocado",
+      "license": "CC0-1.0; Microsoft, 2017",
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "source_group": "khronos-avocado"
+    },
+    {
+      "asset_id": "khronos-waterbottle",
+      "path": "waterbottle.t3d",
+      "sha256": "d7ddcb2e9dc756efa83723b8e8909408b09625f3dc9f0ae3d16f85faaf7b6108",
+      "split": "validation",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/WaterBottle",
+      "license": "CC0-1.0; Microsoft, 2017",
+      "source_sha256": "b337e526fd6a162013c2984aeec163f5fbb4f717252724dfc3f3458bd51df94b",
+      "source_group": "khronos-waterbottle"
+    },
+    {
+      "asset_id": "corgi",
+      "path": "corgi.t3d",
+      "sha256": "5fa6c3e89c08d32e0764b7d13055e14d8c5be3062f616f2038bcb5759613464c",
+      "split": "train",
+      "source": "https://github.com/Ariescar/gobkit-free-assets/tree/main/animal",
+      "license": "CC0-1.0",
+      "source_sha256": "95cd2c4d53d70ee9dd2e1329dcb6de7d4a725301d504a4f2f00ecb34dc1a0851",
+      "source_group": "gobkit-animal"
+    },
+    {
+      "asset_id": "bat",
+      "path": "bat.t3d",
+      "sha256": "4164045b5bc560b40ac8959dd611390fe3f781de2e37e07cad752fdedd02163f",
+      "split": "train",
+      "source": "https://github.com/Ariescar/gobkit-free-assets/tree/main/animal",
+      "license": "CC0-1.0",
+      "source_sha256": "1a4317609094c64d3f751adb9150df628aaf7902f7440174afcb642c30e0e072",
+      "source_group": "gobkit-animal"
+    },
+    {
+      "asset_id": "shark",
+      "path": "shark.t3d",
+      "sha256": "c00307fc391090abc895fa5f20198aa202ac331309eca7e1d392f01e1361d43a",
+      "split": "train",
+      "source": "https://github.com/Ariescar/gobkit-free-assets/tree/main/animal",
+      "license": "CC0-1.0",
+      "source_sha256": "0fc450c99f0fd9f2e5d774ef58cd42b8d8d927bed138444254204b366595dc42",
+      "source_group": "gobkit-animal"
+    },
+    {
+      "asset_id": "riggedfigure",
+      "path": "riggedfigure.t3d",
+      "sha256": "f90ee720ec7e67ffb38b6a713ffa4faa380270877a9094bc985970169ae1db4e",
+      "split": "validation",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/RiggedFigure",
+      "license": "CC-BY-4.0; Cesium, 2017",
+      "source_sha256": "d6be85417d3e256861ee733eea6916093a7af7c79c16366181fd8abcaeb38cf5",
+      "source_group": "khronos-riggedfigure"
+    }
+  ]
+}

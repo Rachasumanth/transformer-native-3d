@@ -1,0 +1,667 @@
+{
+  "scope": "Explicit quantized-degenerate/duplicate face filtering; no in-place source modification",
+  "filter": "drop faces whose 128-bin quantized triangle has repeated vertices, zero quantized area, or duplicates an earlier unordered quantized face; measure default orientation and union over all 24 proper cube rotations",
+  "surface_metric": "1024 area-weighted samples each direction, exact CPU triangle BVH, tolerance 0.01; exploratory only",
+  "cases": [
+    {
+      "asset": "Avocado",
+      "cleanup_mode": "default_orientation",
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "source_faces": 682,
+      "retained_faces": 681,
+      "removed_faces": 1,
+      "removed_fraction": 0.001466275659824047,
+      "removal_breakdown": {
+        "bad_faces_any_orientation": 1,
+        "duplicate_quantized_faces": 0,
+        "orientations_checked": 1
+      },
+      "per_orientation_degenerate_counts": [
+        {
+          "collapsed": 0,
+          "collinear": 1
+        }
+      ],
+      "cleaned_quantization": {
+        "bins": 128,
+        "source_faces": 681,
+        "source_unique_positions": 363,
+        "quantized_unique_positions": 363,
+        "source_zero_area_faces": 0,
+        "source_tiny_faces_1e_8": 0,
+        "collapsed_faces": 0,
+        "collinear_faces": 0,
+        "eligible": true,
+        "max_abs_coordinate_error": 0.00390625,
+        "rms_coordinate_error": 0.0022876661143921367
+      },
+      "cube_rotation_preflight": {
+        "rotations_tested": 24,
+        "safe_rotations": 24,
+        "best_collapsed_faces": 0,
+        "best_collinear_faces": 0,
+        "best_total_degenerate_faces": 0
+      },
+      "tokens": 1550,
+      "compression_ratio": 0.25252525252525254,
+      "sequence_reduction": 0.7474747474747474,
+      "bpt_patches": 142,
+      "retained_oriented_faces_roundtrip": true,
+      "reproducible_data_artifact": "artifacts/bpt/cleaned_Avocado_default_orientation.npz",
+      "source_index_edge_topology": {
+        "boundary_edges": 124,
+        "nonmanifold_edges": 0
+      },
+      "quantized_retained_edge_topology": {
+        "boundary_edges": 41,
+        "nonmanifold_edges": 0
+      },
+      "decoded_edge_topology": {
+        "boundary_edges": 41,
+        "nonmanifold_edges": 0
+      },
+      "sampled_surface_metrics": {
+        "mean_distance": 0.0017045627973003902,
+        "fscore": 1.0,
+        "boundary_edges": 41,
+        "nonmanifold_edges": 0
+      }
+    },
+    {
+      "asset": "Avocado",
+      "cleanup_mode": "all_24_rotations",
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "source_faces": 682,
+      "retained_faces": 681,
+      "removed_faces": 1,
+      "removed_fraction": 0.001466275659824047,
+      "removal_breakdown": {
+        "bad_faces_any_orientation": 1,
+        "duplicate_quantized_faces": 0,
+        "orientations_checked": 24
+      },
+      "per_orientation_degenerate_counts": [
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        },
+        {
+          "collapsed": 0,
+          "collinear": 1
+        }
+      ],
+      "cleaned_quantization": {
+        "bins": 128,
+        "source_faces": 681,
+        "source_unique_positions": 363,
+        "quantized_unique_positions": 363,
+        "source_zero_area_faces": 0,
+        "source_tiny_faces_1e_8": 0,
+        "collapsed_faces": 0,
+        "collinear_faces": 0,
+        "eligible": true,
+        "max_abs_coordinate_error": 0.00390625,
+        "rms_coordinate_error": 0.0022876661143921367
+      },
+      "cube_rotation_preflight": {
+        "rotations_tested": 24,
+        "safe_rotations": 24,
+        "best_collapsed_faces": 0,
+        "best_collinear_faces": 0,
+        "best_total_degenerate_faces": 0
+      },
+      "tokens": 1550,
+      "compression_ratio": 0.25252525252525254,
+      "sequence_reduction": 0.7474747474747474,
+      "bpt_patches": 142,
+      "retained_oriented_faces_roundtrip": true,
+      "reproducible_data_artifact": "artifacts/bpt/cleaned_Avocado_all_24_rotations.npz",
+      "source_index_edge_topology": {
+        "boundary_edges": 124,
+        "nonmanifold_edges": 0
+      },
+      "quantized_retained_edge_topology": {
+        "boundary_edges": 41,
+        "nonmanifold_edges": 0
+      },
+      "decoded_edge_topology": {
+        "boundary_edges": 41,
+        "nonmanifold_edges": 0
+      },
+      "sampled_surface_metrics": {
+        "mean_distance": 0.0017045627973003902,
+        "fscore": 1.0,
+        "boundary_edges": 41,
+        "nonmanifold_edges": 0
+      }
+    },
+    {
+      "asset": "Box",
+      "cleanup_mode": "default_orientation",
+      "source_sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e",
+      "source_faces": 12,
+      "retained_faces": 12,
+      "removed_faces": 0,
+      "removed_fraction": 0.0,
+      "removal_breakdown": {
+        "bad_faces_any_orientation": 0,
+        "duplicate_quantized_faces": 0,
+        "orientations_checked": 1
+      },
+      "per_orientation_degenerate_counts": [
+        {
+          "collapsed": 0,
+          "collinear": 0
+        }
+      ],
+      "cleaned_quantization": {
+        "bins": 128,
+        "source_faces": 12,
+        "source_unique_positions": 8,
+        "quantized_unique_positions": 8,
+        "source_zero_area_faces": 0,
+        "source_tiny_faces_1e_8": 0,
+        "collapsed_faces": 0,
+        "collinear_faces": 0,
+        "eligible": true,
+        "max_abs_coordinate_error": 0.00390625,
+        "rms_coordinate_error": 0.00390625
+      },
+      "cube_rotation_preflight": {
+        "rotations_tested": 24,
+        "safe_rotations": 24,
+        "best_collapsed_faces": 0,
+        "best_collinear_faces": 0,
+        "best_total_degenerate_faces": 0
+      },
+      "tokens": 36,
+      "compression_ratio": 0.3333333333333333,
+      "sequence_reduction": 0.6666666666666667,
+      "bpt_patches": 3,
+      "retained_oriented_faces_roundtrip": true,
+      "reproducible_data_artifact": "artifacts/bpt/cleaned_Box_default_orientation.npz",
+      "source_index_edge_topology": {
+        "boundary_edges": 24,
+        "nonmanifold_edges": 0
+      },
+      "quantized_retained_edge_topology": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      "decoded_edge_topology": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      "sampled_surface_metrics": {
+        "mean_distance": 0.003910887229137346,
+        "fscore": 1.0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      }
+    },
+    {
+      "asset": "Box",
+      "cleanup_mode": "all_24_rotations",
+      "source_sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e",
+      "source_faces": 12,
+      "retained_faces": 12,
+      "removed_faces": 0,
+      "removed_fraction": 0.0,
+      "removal_breakdown": {
+        "bad_faces_any_orientation": 0,
+        "duplicate_quantized_faces": 0,
+        "orientations_checked": 24
+      },
+      "per_orientation_degenerate_counts": [
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        },
+        {
+          "collapsed": 0,
+          "collinear": 0
+        }
+      ],
+      "cleaned_quantization": {
+        "bins": 128,
+        "source_faces": 12,
+        "source_unique_positions": 8,
+        "quantized_unique_positions": 8,
+        "source_zero_area_faces": 0,
+        "source_tiny_faces_1e_8": 0,
+        "collapsed_faces": 0,
+        "collinear_faces": 0,
+        "eligible": true,
+        "max_abs_coordinate_error": 0.00390625,
+        "rms_coordinate_error": 0.00390625
+      },
+      "cube_rotation_preflight": {
+        "rotations_tested": 24,
+        "safe_rotations": 24,
+        "best_collapsed_faces": 0,
+        "best_collinear_faces": 0,
+        "best_total_degenerate_faces": 0
+      },
+      "tokens": 36,
+      "compression_ratio": 0.3333333333333333,
+      "sequence_reduction": 0.6666666666666667,
+      "bpt_patches": 3,
+      "retained_oriented_faces_roundtrip": true,
+      "reproducible_data_artifact": "artifacts/bpt/cleaned_Box_all_24_rotations.npz",
+      "source_index_edge_topology": {
+        "boundary_edges": 24,
+        "nonmanifold_edges": 0
+      },
+      "quantized_retained_edge_topology": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      "decoded_edge_topology": {
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      },
+      "sampled_surface_metrics": {
+        "mean_distance": 0.003910887229137346,
+        "fscore": 1.0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0
+      }
+    },
+    {
+      "asset": "PolyHaven_food_lime_01",
+      "cleanup_mode": "default_orientation",
+      "source_sha256": "d0a0e452a39fdd95b50b26689857931e30cc494913f2a93a6f6bdebdee76cd85",
+      "source_faces": 8100,
+      "retained_faces": 7949,
+      "removed_faces": 151,
+      "removed_fraction": 0.018641975308641975,
+      "removal_breakdown": {
+        "bad_faces_any_orientation": 151,
+        "duplicate_quantized_faces": 0,
+        "orientations_checked": 1
+      },
+      "per_orientation_degenerate_counts": [
+        {
+          "collapsed": 116,
+          "collinear": 35
+        }
+      ],
+      "cleaned_quantization": {
+        "bins": 128,
+        "source_faces": 7949,
+        "source_unique_positions": 4052,
+        "quantized_unique_positions": 3992,
+        "source_zero_area_faces": 0,
+        "source_tiny_faces_1e_8": 0,
+        "collapsed_faces": 0,
+        "collinear_faces": 0,
+        "eligible": true,
+        "max_abs_coordinate_error": 0.00390625,
+        "rms_coordinate_error": 0.0022571553360032416
+      },
+      "cube_rotation_preflight": {
+        "rotations_tested": 24,
+        "safe_rotations": 24,
+        "best_collapsed_faces": 0,
+        "best_collinear_faces": 0,
+        "best_total_degenerate_faces": 0
+      },
+      "tokens": 15603,
+      "compression_ratio": 0.21403292181069958,
+      "sequence_reduction": 0.7859670781893004,
+      "bpt_patches": 1698,
+      "retained_oriented_faces_roundtrip": true,
+      "reproducible_data_artifact": "artifacts/bpt/cleaned_PolyHaven_food_lime_01_default_orientation.npz",
+      "source_index_edge_topology": {
+        "boundary_edges": 642,
+        "nonmanifold_edges": 0
+      },
+      "quantized_retained_edge_topology": {
+        "boundary_edges": 95,
+        "nonmanifold_edges": 1
+      },
+      "decoded_edge_topology": {
+        "boundary_edges": 95,
+        "nonmanifold_edges": 1
+      },
+      "sampled_surface_metrics": {
+        "mean_distance": 0.0012772684579783282,
+        "fscore": 1.0,
+        "boundary_edges": 95,
+        "nonmanifold_edges": 1
+      }
+    },
+    {
+      "asset": "PolyHaven_food_lime_01",
+      "cleanup_mode": "all_24_rotations",
+      "source_sha256": "d0a0e452a39fdd95b50b26689857931e30cc494913f2a93a6f6bdebdee76cd85",
+      "source_faces": 8100,
+      "retained_faces": 7949,
+      "removed_faces": 151,
+      "removed_fraction": 0.018641975308641975,
+      "removal_breakdown": {
+        "bad_faces_any_orientation": 151,
+        "duplicate_quantized_faces": 0,
+        "orientations_checked": 24
+      },
+      "per_orientation_degenerate_counts": [
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        },
+        {
+          "collapsed": 116,
+          "collinear": 35
+        }
+      ],
+      "cleaned_quantization": {
+        "bins": 128,
+        "source_faces": 7949,
+        "source_unique_positions": 4052,
+        "quantized_unique_positions": 3992,
+        "source_zero_area_faces": 0,
+        "source_tiny_faces_1e_8": 0,
+        "collapsed_faces": 0,
+        "collinear_faces": 0,
+        "eligible": true,
+        "max_abs_coordinate_error": 0.00390625,
+        "rms_coordinate_error": 0.0022571553360032416
+      },
+      "cube_rotation_preflight": {
+        "rotations_tested": 24,
+        "safe_rotations": 24,
+        "best_collapsed_faces": 0,
+        "best_collinear_faces": 0,
+        "best_total_degenerate_faces": 0
+      },
+      "tokens": 15603,
+      "compression_ratio": 0.21403292181069958,
+      "sequence_reduction": 0.7859670781893004,
+      "bpt_patches": 1698,
+      "retained_oriented_faces_roundtrip": true,
+      "reproducible_data_artifact": "artifacts/bpt/cleaned_PolyHaven_food_lime_01_all_24_rotations.npz",
+      "source_index_edge_topology": {
+        "boundary_edges": 642,
+        "nonmanifold_edges": 0
+      },
+      "quantized_retained_edge_topology": {
+        "boundary_edges": 95,
+        "nonmanifold_edges": 1
+      },
+      "decoded_edge_topology": {
+        "boundary_edges": 95,
+        "nonmanifold_edges": 1
+      },
+      "sampled_surface_metrics": {
+        "mean_distance": 0.0012772684579783282,
+        "fscore": 1.0,
+        "boundary_edges": 95,
+        "nonmanifold_edges": 1
+      }
+    }
+  ]
+}

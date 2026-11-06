@@ -1,0 +1,79 @@
+[
+  {
+    "file": "cesiumman-roundtrip-animated.glb",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  {
+    "file": "cesiumman-v13-animated.glb",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  {
+    "file": "cesiumman-v13-top1-animated.glb",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  {
+    "file": "cesiumman-v13-top2-animated.glb",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  {
+    "file": "cesiumman-v13-top3-animated.glb",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  {
+    "file": "cesiumman-v13-top4-animated.glb",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  {
+    "file": "export-real-rigged-animated.glb",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  {
+    "file": "fox-run-animated.glb",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  {
+    "file": "fox-survey-animated.glb",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  {
+    "file": "fox-walk-animated.glb",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  {
+    "file": "riggedsimple-roundtrip-animated.glb",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  }
+]

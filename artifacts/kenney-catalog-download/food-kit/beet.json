@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/beet",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/beet.glb",
+  "sha256": "e5fb844a413b71d7bfec3c34bcf6fa14fcf1daa83f34ac8b700e3aa8c3f53bab",
+  "bytes": 21120,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

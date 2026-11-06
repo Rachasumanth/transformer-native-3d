@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/skewer-vegetables",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/skewer-vegetables.glb",
+  "sha256": "49ce112abc8d0a8f50e83788de4ce18bb094f9f92c8bafbfb27224aecfae8e07",
+  "bytes": 33184,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

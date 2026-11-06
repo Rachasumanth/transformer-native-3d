@@ -1,0 +1,20 @@
+[
+  {
+    "asset": "RiggedSimple",
+    "baseline_error": 0.033444088396777004,
+    "penalty_error": 0.03944587427888021,
+    "relative_improvement": -0.1794573023159931
+  },
+  {
+    "asset": "CesiumMan",
+    "baseline_error": 0.029869297556926678,
+    "penalty_error": 0.030478786647591405,
+    "relative_improvement": -0.02040520335314633
+  },
+  {
+    "asset": "Fox",
+    "baseline_error": 0.024707982047186647,
+    "penalty_error": 0.0228172088039197,
+    "relative_improvement": 0.07652479428129733
+  }
+]

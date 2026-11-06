@@ -1,0 +1,558 @@
+{
+  "foreground_weight": 8.0,
+  "scope": "Four small source assets, hand-written class prompts, animal training family and RiggedFigure validation; not a caption corpus or held-out benchmark; 300-step T4 integration pilot, train/validation prompts; prompt swaps share evaluation noise; no image conditioning",
+  "device": "Tesla T4",
+  "models": {
+    "image_model": "facebook/dinov2-small",
+    "image_revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+    "text_model": "openai/clip-vit-base-patch32",
+    "text_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268"
+  },
+  "manifest_sha256": "ff8ed48ca88117dc57e6545ac8587174adeaa205ee1efde379e174cbce3ee3d8",
+  "checkpoint_sha256": "c0bc8d48e9a710e0863d5254a1263b1c1d5d6e7b9c028f69c9735b209bc92b6c",
+  "history": [
+    {
+      "step": 25,
+      "asset": "Shark",
+      "shape_loss": 1.2890307903289795,
+      "skeleton_loss": 1.1823982000350952
+    },
+    {
+      "step": 50,
+      "asset": "Shark",
+      "shape_loss": 0.987466037273407,
+      "skeleton_loss": 0.4180004894733429
+    },
+    {
+      "step": 75,
+      "asset": "Bat",
+      "shape_loss": 0.8025279641151428,
+      "skeleton_loss": 0.33422377705574036
+    },
+    {
+      "step": 100,
+      "asset": "Bat",
+      "shape_loss": 0.9529842138290405,
+      "skeleton_loss": 0.41895031929016113
+    },
+    {
+      "step": 125,
+      "asset": "Bat",
+      "shape_loss": 0.839812695980072,
+      "skeleton_loss": 0.49167370796203613
+    },
+    {
+      "step": 150,
+      "asset": "Bat",
+      "shape_loss": 0.2645984888076782,
+      "skeleton_loss": 0.1936621218919754
+    },
+    {
+      "step": 175,
+      "asset": "Shark",
+      "shape_loss": 0.4312339127063751,
+      "skeleton_loss": 0.25138863921165466
+    },
+    {
+      "step": 200,
+      "asset": "Shark",
+      "shape_loss": 0.3612717390060425,
+      "skeleton_loss": 0.21495722234249115
+    },
+    {
+      "step": 225,
+      "asset": "Shark",
+      "shape_loss": 0.24802646040916443,
+      "skeleton_loss": 0.13614298403263092
+    },
+    {
+      "step": 250,
+      "asset": "Corgi",
+      "shape_loss": 0.18485648930072784,
+      "skeleton_loss": 0.11413278430700302
+    },
+    {
+      "step": 275,
+      "asset": "Shark",
+      "shape_loss": 0.3183784484863281,
+      "skeleton_loss": 0.15407569706439972
+    },
+    {
+      "step": 300,
+      "asset": "Corgi",
+      "shape_loss": 0.7321046590805054,
+      "skeleton_loss": 0.19568486511707306
+    }
+  ],
+  "evaluations": [
+    {
+      "asset": "Corgi",
+      "split": "train",
+      "evaluation_seed": 7301,
+      "results": {
+        "correct": {
+          "prompt": "a 3D model of a corgi dog",
+          "shape": {
+            "predicted": 2181,
+            "target": 973,
+            "intersection": 840,
+            "iou": 0.3630077787381158
+          },
+          "skeleton": {
+            "predicted": 519,
+            "target": 81,
+            "intersection": 42,
+            "iou": 0.07526881720430108
+          }
+        },
+        "different": {
+          "prompt": "a 3D model of a bat",
+          "shape": {
+            "predicted": 1340,
+            "target": 973,
+            "intersection": 618,
+            "iou": 0.36460176991150445
+          },
+          "skeleton": {
+            "predicted": 214,
+            "target": 81,
+            "intersection": 28,
+            "iou": 0.10486891385767791
+          }
+        }
+      },
+      "shape_prompt_difference": 841,
+      "skeleton_prompt_difference": 305
+    },
+    {
+      "asset": "Corgi",
+      "split": "train",
+      "evaluation_seed": 7401,
+      "results": {
+        "correct": {
+          "prompt": "a 3D model of a corgi dog",
+          "shape": {
+            "predicted": 2214,
+            "target": 973,
+            "intersection": 850,
+            "iou": 0.363714163457424
+          },
+          "skeleton": {
+            "predicted": 581,
+            "target": 81,
+            "intersection": 48,
+            "iou": 0.0781758957654723
+          }
+        },
+        "different": {
+          "prompt": "a 3D model of a bat",
+          "shape": {
+            "predicted": 1409,
+            "target": 973,
+            "intersection": 601,
+            "iou": 0.33745087029758564
+          },
+          "skeleton": {
+            "predicted": 228,
+            "target": 81,
+            "intersection": 28,
+            "iou": 0.099644128113879
+          }
+        }
+      },
+      "shape_prompt_difference": 805,
+      "skeleton_prompt_difference": 355
+    },
+    {
+      "asset": "Corgi",
+      "split": "train",
+      "evaluation_seed": 7501,
+      "results": {
+        "correct": {
+          "prompt": "a 3D model of a corgi dog",
+          "shape": {
+            "predicted": 2141,
+            "target": 973,
+            "intersection": 847,
+            "iou": 0.37362152624614026
+          },
+          "skeleton": {
+            "predicted": 495,
+            "target": 81,
+            "intersection": 51,
+            "iou": 0.09714285714285714
+          }
+        },
+        "different": {
+          "prompt": "a 3D model of a bat",
+          "shape": {
+            "predicted": 1361,
+            "target": 973,
+            "intersection": 603,
+            "iou": 0.3483535528596187
+          },
+          "skeleton": {
+            "predicted": 176,
+            "target": 81,
+            "intersection": 34,
+            "iou": 0.15246636771300448
+          }
+        }
+      },
+      "shape_prompt_difference": 780,
+      "skeleton_prompt_difference": 319
+    },
+    {
+      "asset": "Bat",
+      "split": "train",
+      "evaluation_seed": 7302,
+      "results": {
+        "correct": {
+          "prompt": "a 3D model of a bat",
+          "shape": {
+            "predicted": 1425,
+            "target": 377,
+            "intersection": 320,
+            "iou": 0.21592442645074225
+          },
+          "skeleton": {
+            "predicted": 266,
+            "target": 49,
+            "intersection": 26,
+            "iou": 0.08996539792387544
+          }
+        },
+        "different": {
+          "prompt": "a 3D model of a corgi dog",
+          "shape": {
+            "predicted": 2198,
+            "target": 377,
+            "intersection": 346,
+            "iou": 0.15522655899506504
+          },
+          "skeleton": {
+            "predicted": 606,
+            "target": 49,
+            "intersection": 30,
+            "iou": 0.048
+          }
+        }
+      },
+      "shape_prompt_difference": 773,
+      "skeleton_prompt_difference": 340
+    },
+    {
+      "asset": "Bat",
+      "split": "train",
+      "evaluation_seed": 7402,
+      "results": {
+        "correct": {
+          "prompt": "a 3D model of a bat",
+          "shape": {
+            "predicted": 1375,
+            "target": 377,
+            "intersection": 313,
+            "iou": 0.21751216122307157
+          },
+          "skeleton": {
+            "predicted": 182,
+            "target": 49,
+            "intersection": 30,
+            "iou": 0.14925373134328357
+          }
+        },
+        "different": {
+          "prompt": "a 3D model of a corgi dog",
+          "shape": {
+            "predicted": 2227,
+            "target": 377,
+            "intersection": 351,
+            "iou": 0.15579227696404793
+          },
+          "skeleton": {
+            "predicted": 480,
+            "target": 49,
+            "intersection": 39,
+            "iou": 0.07959183673469387
+          }
+        }
+      },
+      "shape_prompt_difference": 852,
+      "skeleton_prompt_difference": 298
+    },
+    {
+      "asset": "Bat",
+      "split": "train",
+      "evaluation_seed": 7502,
+      "results": {
+        "correct": {
+          "prompt": "a 3D model of a bat",
+          "shape": {
+            "predicted": 1339,
+            "target": 377,
+            "intersection": 323,
+            "iou": 0.23187365398420676
+          },
+          "skeleton": {
+            "predicted": 183,
+            "target": 49,
+            "intersection": 26,
+            "iou": 0.1262135922330097
+          }
+        },
+        "different": {
+          "prompt": "a 3D model of a corgi dog",
+          "shape": {
+            "predicted": 2123,
+            "target": 377,
+            "intersection": 354,
+            "iou": 0.16495806150978565
+          },
+          "skeleton": {
+            "predicted": 499,
+            "target": 49,
+            "intersection": 37,
+            "iou": 0.07240704500978473
+          }
+        }
+      },
+      "shape_prompt_difference": 784,
+      "skeleton_prompt_difference": 316
+    },
+    {
+      "asset": "Shark",
+      "split": "train",
+      "evaluation_seed": 7303,
+      "results": {
+        "correct": {
+          "prompt": "a 3D model of a shark",
+          "shape": {
+            "predicted": 1454,
+            "target": 400,
+            "intersection": 345,
+            "iou": 0.2286282306163022
+          },
+          "skeleton": {
+            "predicted": 166,
+            "target": 52,
+            "intersection": 32,
+            "iou": 0.17204301075268819
+          }
+        },
+        "different": {
+          "prompt": "a 3D model of a corgi dog",
+          "shape": {
+            "predicted": 2226,
+            "target": 400,
+            "intersection": 385,
+            "iou": 0.1717983043284248
+          },
+          "skeleton": {
+            "predicted": 511,
+            "target": 52,
+            "intersection": 43,
+            "iou": 0.08269230769230769
+          }
+        }
+      },
+      "shape_prompt_difference": 772,
+      "skeleton_prompt_difference": 347
+    },
+    {
+      "asset": "Shark",
+      "split": "train",
+      "evaluation_seed": 7403,
+      "results": {
+        "correct": {
+          "prompt": "a 3D model of a shark",
+          "shape": {
+            "predicted": 1233,
+            "target": 400,
+            "intersection": 327,
+            "iou": 0.2503828483920367
+          },
+          "skeleton": {
+            "predicted": 239,
+            "target": 52,
+            "intersection": 29,
+            "iou": 0.11068702290076336
+          }
+        },
+        "different": {
+          "prompt": "a 3D model of a corgi dog",
+          "shape": {
+            "predicted": 2053,
+            "target": 400,
+            "intersection": 374,
+            "iou": 0.17989417989417988
+          },
+          "skeleton": {
+            "predicted": 534,
+            "target": 52,
+            "intersection": 40,
+            "iou": 0.07326007326007326
+          }
+        }
+      },
+      "shape_prompt_difference": 820,
+      "skeleton_prompt_difference": 297
+    },
+    {
+      "asset": "Shark",
+      "split": "train",
+      "evaluation_seed": 7503,
+      "results": {
+        "correct": {
+          "prompt": "a 3D model of a shark",
+          "shape": {
+            "predicted": 1349,
+            "target": 400,
+            "intersection": 349,
+            "iou": 0.24928571428571428
+          },
+          "skeleton": {
+            "predicted": 160,
+            "target": 52,
+            "intersection": 26,
+            "iou": 0.13978494623655913
+          }
+        },
+        "different": {
+          "prompt": "a 3D model of a corgi dog",
+          "shape": {
+            "predicted": 2167,
+            "target": 400,
+            "intersection": 380,
+            "iou": 0.17375400091449475
+          },
+          "skeleton": {
+            "predicted": 448,
+            "target": 52,
+            "intersection": 31,
+            "iou": 0.06609808102345416
+          }
+        }
+      },
+      "shape_prompt_difference": 818,
+      "skeleton_prompt_difference": 288
+    },
+    {
+      "asset": "RiggedFigure",
+      "split": "validation",
+      "evaluation_seed": 7304,
+      "results": {
+        "correct": {
+          "prompt": "a 3D model of a humanoid figure",
+          "shape": {
+            "predicted": 1432,
+            "target": 236,
+            "intersection": 184,
+            "iou": 0.12398921832884097
+          },
+          "skeleton": {
+            "predicted": 172,
+            "target": 43,
+            "intersection": 10,
+            "iou": 0.04878048780487805
+          }
+        },
+        "different": {
+          "prompt": "a 3D model of a corgi dog",
+          "shape": {
+            "predicted": 2210,
+            "target": 236,
+            "intersection": 210,
+            "iou": 0.09391771019677997
+          },
+          "skeleton": {
+            "predicted": 429,
+            "target": 43,
+            "intersection": 18,
+            "iou": 0.039647577092511016
+          }
+        }
+      },
+      "shape_prompt_difference": 778,
+      "skeleton_prompt_difference": 257
+    },
+    {
+      "asset": "RiggedFigure",
+      "split": "validation",
+      "evaluation_seed": 7404,
+      "results": {
+        "correct": {
+          "prompt": "a 3D model of a humanoid figure",
+          "shape": {
+            "predicted": 1456,
+            "target": 236,
+            "intersection": 178,
+            "iou": 0.11756935270805813
+          },
+          "skeleton": {
+            "predicted": 264,
+            "target": 43,
+            "intersection": 15,
+            "iou": 0.05136986301369863
+          }
+        },
+        "different": {
+          "prompt": "a 3D model of a corgi dog",
+          "shape": {
+            "predicted": 2226,
+            "target": 236,
+            "intersection": 209,
+            "iou": 0.09276520195295163
+          },
+          "skeleton": {
+            "predicted": 570,
+            "target": 43,
+            "intersection": 25,
+            "iou": 0.04251700680272109
+          }
+        }
+      },
+      "shape_prompt_difference": 770,
+      "skeleton_prompt_difference": 306
+    },
+    {
+      "asset": "RiggedFigure",
+      "split": "validation",
+      "evaluation_seed": 7504,
+      "results": {
+        "correct": {
+          "prompt": "a 3D model of a humanoid figure",
+          "shape": {
+            "predicted": 1412,
+            "target": 236,
+            "intersection": 170,
+            "iou": 0.11502029769959404
+          },
+          "skeleton": {
+            "predicted": 215,
+            "target": 43,
+            "intersection": 12,
+            "iou": 0.04878048780487805
+          }
+        },
+        "different": {
+          "prompt": "a 3D model of a corgi dog",
+          "shape": {
+            "predicted": 2182,
+            "target": 236,
+            "intersection": 205,
+            "iou": 0.09263443289652055
+          },
+          "skeleton": {
+            "predicted": 512,
+            "target": 43,
+            "intersection": 20,
+            "iou": 0.037383177570093455
+          }
+        }
+      },
+      "shape_prompt_difference": 770,
+      "skeleton_prompt_difference": 297
+    }
+  ],
+  "source_sha256": "6899afb0e379608407afa6e7550bb19a3da12976fab01641c6856be3639f4a3c"
+}

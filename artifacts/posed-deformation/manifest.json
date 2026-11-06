@@ -1,0 +1,207 @@
+{
+  "artifacts/posed-deformation/cesiumman-roundtrip-animated.glb": {
+    "bytes": 302540,
+    "sha256": "4ca3fc81204b0ca541c2af22875c0ad2d1c5b608413202fc90c65a51d5cb5346"
+  },
+  "artifacts/posed-deformation/cesiumman-roundtrip-posed-deformation.json": {
+    "bytes": 15087,
+    "sha256": "7eae8e467fcfc91b66bd5f19795d30cd725e292ea1da8f9c4d7e60d999253d2f"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-animated.glb": {
+    "bytes": 3169916,
+    "sha256": "6d086793ae1f8b9568089c3e0bb7b18e87729c81bde958431cec691ba0d5a401"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-posed-deformation.json": {
+    "bytes": 15364,
+    "sha256": "4980f4cb7185dba2bb5d61b16d0f34f824df496f43099516a225584864c7d5ea"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top1-animated.glb": {
+    "bytes": 3169916,
+    "sha256": "ff6667ffff42984a2197a9fd56c14f88e6e75f51364a19716fd014bd28b24e34"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top1-posed-deformation.json": {
+    "bytes": 14875,
+    "sha256": "aaa55328e8e9e994bbb1be0fbf12e20916df1b1ed4349589aa0b477f07b16bf6"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top1.glb": {
+    "bytes": 3099284,
+    "sha256": "322aef44330b7643e98f071192de0e5e195bb3d24dfc6ab4b39c6a25ac8a21a4"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top1.glb.json": {
+    "bytes": 668,
+    "sha256": "d2e529e297ddebca2670186efc00ef6c79d0977e6346518ad3d5ae25fd084ae4"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top2-animated.glb": {
+    "bytes": 3169916,
+    "sha256": "2dcfc9a92508c9a68f642f4e8b1caa6e2640df9352ec41e2d71d02f81bc16db5"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top2-posed-deformation.json": {
+    "bytes": 15350,
+    "sha256": "c17088f045ce3830f428810a497fe2418fc50164c960dea1707a2b871e31dd46"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top2.glb": {
+    "bytes": 3099284,
+    "sha256": "f3f690f6b212839f27724a2798122322c66a804a858aeeabf445321a75387f09"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top2.glb.json": {
+    "bytes": 686,
+    "sha256": "56b07a5210587eb26b0a8db92d53b2182213c51270b3b668a5238e136405b76b"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top3-animated.glb": {
+    "bytes": 3169916,
+    "sha256": "ad3a0269f47506f074ae46fccfe51a2992b9fe579d94e1ece4c3c5d034c65e66"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top3-posed-deformation.json": {
+    "bytes": 15333,
+    "sha256": "1366d46eaf1b8ee9a94a31a09c35adda1ee3dcc08698ed3f3be9394fa4b97013"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top3.glb": {
+    "bytes": 3099284,
+    "sha256": "53d2a96ffaf123d4163d339f2230fdf034ac3fa8e3e75224943f2aa71d35a5a0"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top3.glb.json": {
+    "bytes": 688,
+    "sha256": "53856f2d1f7e55bcde71d5f07673575538db0dfa8395b4afb8ef61e9b82e171e"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top4-animated.glb": {
+    "bytes": 3169916,
+    "sha256": "a588a92fbda28023dd443e003f1448d2283fd5c2b09b4d5635f2c1f90785d18f"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top4-posed-deformation.json": {
+    "bytes": 15336,
+    "sha256": "8740a357604594e5ee4731415670a3730cd8cbbac4dc4f2cbc3d6c7810254ae9"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top4.glb": {
+    "bytes": 3099284,
+    "sha256": "ce56a9fd9d9f21b0b8fc0c76d857a292ff0753968269d3f3869871a291fd297e"
+  },
+  "artifacts/posed-deformation/cesiumman-v13-top4.glb.json": {
+    "bytes": 688,
+    "sha256": "6f2d2d7a9263d9ab634ecaa739386d03b18016c7c9f662c12810140cbf0b93ca"
+  },
+  "artifacts/posed-deformation/export-real-rigged-animated.glb": {
+    "bytes": 3169916,
+    "sha256": "6d086793ae1f8b9568089c3e0bb7b18e87729c81bde958431cec691ba0d5a401"
+  },
+  "artifacts/posed-deformation/fox-run-animated.glb": {
+    "bytes": 163608,
+    "sha256": "686a2270871f8a8d41073a65d7e9bcf380978a7961964963a956eb19e5a519d7"
+  },
+  "artifacts/posed-deformation/fox-run-posed-deformation.json": {
+    "bytes": 15239,
+    "sha256": "8f3f7da495361c929e769177b1e6d1a974e8765edce8f9d836e37794c65013f8"
+  },
+  "artifacts/posed-deformation/fox-survey-animated.glb": {
+    "bytes": 236020,
+    "sha256": "a550f5297704be5f650e2bd25806bde4feb880e52d4310fc5bce8e20a3c791d1"
+  },
+  "artifacts/posed-deformation/fox-survey-posed-deformation.json": {
+    "bytes": 15246,
+    "sha256": "91a2d038608a6166e47fe27f0b9a470452132a0512a5f97fdb66483b1d7f9eb6"
+  },
+  "artifacts/posed-deformation/fox-walk-animated.glb": {
+    "bytes": 154796,
+    "sha256": "9d365c2740b935f6aaed0f184a1492c2d0fc3a0e2ec896d19cbf17636a63a567"
+  },
+  "artifacts/posed-deformation/fox-walk-posed-deformation.json": {
+    "bytes": 15254,
+    "sha256": "8609b9f064ba4f34d9fa85f75f8349e8b4aab6a7e24708ed71d7aadb31fa41e0"
+  },
+  "artifacts/posed-deformation/riggedsimple-roundtrip-animated.glb": {
+    "bytes": 20992,
+    "sha256": "652c0bf498bd03f2d84d2d3f88da8728b0ce212f8b685735e5d5484d1f73500c"
+  },
+  "artifacts/posed-deformation/riggedsimple-roundtrip-posed-deformation.json": {
+    "bytes": 14420,
+    "sha256": "13a087d01e664441d08ec5ae37277c590ba8dd183ca3aff711b34add1e8a1bca"
+  },
+  "artifacts/rigged-inputs/CesiumMan/CesiumMan.glb": {
+    "bytes": 438044,
+    "sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9"
+  },
+  "artifacts/rigged-inputs/RiggedSimple/RiggedSimple.glb": {
+    "bytes": 15104,
+    "sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401"
+  },
+  "artifacts/rigged-inputs/Fox/Fox.glb": {
+    "bytes": 162852,
+    "sha256": "d97044e701822bac5a62696459b27d7b375aada5de8574ed4362edbba94771f7"
+  },
+  "artifacts/rigged-inputs/glb-export-roundtrip/RiggedSimple.glb": {
+    "bytes": 13264,
+    "sha256": "b25358f5b21a708ffbf7b148b2129056704032d5709c7b674990df975e007ba0"
+  },
+  "artifacts/rigged-inputs/glb-export-roundtrip/CesiumMan.glb": {
+    "bytes": 232040,
+    "sha256": "a0571b484eacf511d25a241d6caee465fc53a09475cfcedc4006660c45e11309"
+  },
+  "artifacts/rigged-inputs/glb-export-roundtrip/Fox.glb": {
+    "bytes": 103288,
+    "sha256": "406ac8067d8e462fcd8423c6a61e20a20b410ec63622a5a1c22ae60075e268f6"
+  },
+  "artifacts/kaggle-textured-rig-export-v13/export-real-rigged.glb": {
+    "bytes": 3099284,
+    "sha256": "52bebe3dc8c2675e028124bbd43d62db294f9661e9015f3953833fce62f6bff3"
+  },
+  "tools/audit_posed_deformation.py": {
+    "bytes": 14568,
+    "sha256": "e1efaaf5f7a9ab30e2723bb37e0867d7b3c0c5689e77b9ef578d881e66b98ee1"
+  },
+  "tools/probe_export.py": {
+    "bytes": 21812,
+    "sha256": "176abd378fc406c4803ff272c356536eeecddf02be0adb2376ed8d1d435952cb"
+  },
+  "tools/reweight_skin_glb.py": {
+    "bytes": 1240,
+    "sha256": "c775ada9fec75d31f7cd70e472998e1e340005ba94078d94c95810d83ef0db9f"
+  },
+  "t3d/animation.py": {
+    "bytes": 18066,
+    "sha256": "645b05747a7a167aa5508e20ef8d9c34b96685415cdeff288546c16fe45b6dec"
+  },
+  "t3d/glb.py": {
+    "bytes": 20830,
+    "sha256": "62edacd3404b9e3f236fca09b8fdc4d96218ac8338e25e070a808a4ae7f8c221"
+  },
+  "t3d/export.py": {
+    "bytes": 9680,
+    "sha256": "454b9f2797e0b769cf6cb972b89cd9764255a36002012009efff983faf7a4b67"
+  },
+  "t3d/import_rig.py": {
+    "bytes": 20881,
+    "sha256": "d0ea41cf73e2ec0863af87a02003234567172606542d3e73ac1107d600ae19c7"
+  },
+  "t3d/articulation.py": {
+    "bytes": 16722,
+    "sha256": "234e00c028a15ec11c52a154e1a992a1e84176f47ae8cbf3d121ff75ff952262"
+  },
+  "tests/test_animation.py": {
+    "bytes": 4388,
+    "sha256": "38ba6edcf7cabc7c3f20ef83062128ba550381d2f1adb628fab0431cc71a6ae3"
+  },
+  "tests/test_glb.py": {
+    "bytes": 6764,
+    "sha256": "6a690d16148ae7b84439d671e06b0ffb2730c960bc9a32c5507a7a349defe8c4"
+  },
+  "tests/test_import_rig.py": {
+    "bytes": 10781,
+    "sha256": "c41c9b56e27ca97efc9c61a684651f312decafd6cc6f60ca127abc94f1131720"
+  },
+  "tests/test_articulation.py": {
+    "bytes": 5714,
+    "sha256": "1f37953bdab5b314ab156c0d24f486739f45178fd4e5a180efa92e2d247458cb"
+  },
+  "docs/export.md": {
+    "bytes": 4864,
+    "sha256": "9e432609c20aa1132505cc61bcb3b96175871ac47dd07dc14047106ec49871cc"
+  },
+  "docs/glb.md": {
+    "bytes": 1904,
+    "sha256": "64f4c59035e0985c39b2908dc4afc149882f04c99d57b74d181f1916ff2bcc2b"
+  },
+  "docs/skin-ae.md": {
+    "bytes": 7266,
+    "sha256": "b41fd984cb906a5169c1817d0276a2c31019c5b1d3a3627b0443e303f6298e35"
+  },
+  "_scope": "Six retargeting cases, four influence-limited v13 variants, and same-topology packed round-trips for RiggedSimple, CesiumMan and Fox Survey/Walk/Run. Correspondence-based surface audit, not viewer or Khronos validation."
+}

@@ -1,0 +1,483 @@
+{
+  "scope": "two licensed integration assets at 16^3; no generalization claim",
+  "manifest_sha256": "5aeb39db4177ceb91a89bf4d793a01aa8bb9630ee6bff5cc362f279aa4428dbb",
+  "device": "Tesla T4",
+  "results": {
+    "shape": {
+      "train_asset": "khronos-avocado",
+      "validation_asset": "khronos-waterbottle",
+      "train_voxels": 498,
+      "validation_voxels": 464,
+      "steps": 200,
+      "train": [
+        {
+          "step": 1,
+          "loss": {
+            "total": 1.7181251049041748,
+            "attribute": 0.9535924196243286,
+            "occupancy": 0.7645326256752014,
+            "kl": 0.006598072126507759
+          }
+        },
+        {
+          "step": 10,
+          "loss": {
+            "total": 1.500817060470581,
+            "attribute": 0.8182095289230347,
+            "occupancy": 0.6826075911521912,
+            "kl": 0.05866289883852005
+          }
+        },
+        {
+          "step": 50,
+          "loss": {
+            "total": 1.094465970993042,
+            "attribute": 0.7320631742477417,
+            "occupancy": 0.3623937964439392,
+            "kl": 9.076995849609375
+          }
+        },
+        {
+          "step": 100,
+          "loss": {
+            "total": 0.7768344879150391,
+            "attribute": 0.5912739634513855,
+            "occupancy": 0.18547332286834717,
+            "kl": 87.18070983886719
+          }
+        },
+        {
+          "step": 200,
+          "loss": {
+            "total": 0.4677298665046692,
+            "attribute": 0.3771197497844696,
+            "occupancy": 0.09030211716890335,
+            "kl": 307.9932861328125
+          }
+        }
+      ],
+      "evaluations": [
+        {
+          "step": 1,
+          "train": {
+            "total": 1.5163624286651611,
+            "attribute": 0.813624918460846,
+            "occupancy": 0.7027375102043152,
+            "kl": 0.009454337880015373
+          },
+          "validation": {
+            "total": 1.5228416919708252,
+            "attribute": 0.8211329579353333,
+            "occupancy": 0.7017087936401367,
+            "kl": 0.00560979638248682
+          }
+        },
+        {
+          "step": 10,
+          "train": {
+            "total": 1.4927655458450317,
+            "attribute": 0.8015159368515015,
+            "occupancy": 0.6912494897842407,
+            "kl": 0.06516711413860321
+          },
+          "validation": {
+            "total": 1.5018819570541382,
+            "attribute": 0.8102806210517883,
+            "occupancy": 0.6916013360023499,
+            "kl": 0.022712213918566704
+          }
+        },
+        {
+          "step": 50,
+          "train": {
+            "total": 1.0822161436080933,
+            "attribute": 0.7288874983787537,
+            "occupancy": 0.3533187508583069,
+            "kl": 9.877493858337402
+          },
+          "validation": {
+            "total": 1.303653359413147,
+            "attribute": 0.8195470571517944,
+            "occupancy": 0.48410189151763916,
+            "kl": 4.424938678741455
+          }
+        },
+        {
+          "step": 100,
+          "train": {
+            "total": 0.7733548283576965,
+            "attribute": 0.589077353477478,
+            "occupancy": 0.18418775498867035,
+            "kl": 89.7259521484375
+          },
+          "validation": {
+            "total": 1.6889663934707642,
+            "attribute": 0.9396058320999146,
+            "occupancy": 0.7493152618408203,
+            "kl": 45.273529052734375
+          }
+        },
+        {
+          "step": 200,
+          "train": {
+            "total": 0.4639465808868408,
+            "attribute": 0.37366074323654175,
+            "occupancy": 0.0899762287735939,
+            "kl": 309.61334228515625
+          },
+          "validation": {
+            "total": 2.7078306674957275,
+            "attribute": 1.3591915369033813,
+            "occupancy": 1.3484716415405273,
+            "kl": 167.69483947753906
+          }
+        }
+      ],
+      "validation_before": {
+        "total": 1.5257222652435303,
+        "attribute": 0.8226527571678162,
+        "occupancy": 0.7030694484710693,
+        "kl": 0.0042923856526613235
+      },
+      "validation_after": {
+        "total": 2.7078306674957275,
+        "attribute": 1.3591915369033813,
+        "occupancy": 1.3484716415405273,
+        "kl": 167.69483947753906
+      }
+    },
+    "material": {
+      "train_asset": "khronos-avocado",
+      "validation_asset": "khronos-waterbottle",
+      "train_voxels": 498,
+      "validation_voxels": 464,
+      "steps": 200,
+      "train": [
+        {
+          "step": 1,
+          "loss": {
+            "total": 1.1088290214538574,
+            "attribute": 0.41054877638816833,
+            "occupancy": 0.6982802152633667,
+            "kl": 0.005883033387362957
+          }
+        },
+        {
+          "step": 10,
+          "loss": {
+            "total": 1.0917030572891235,
+            "attribute": 0.4002734422683716,
+            "occupancy": 0.6914294958114624,
+            "kl": 0.1016274243593216
+          }
+        },
+        {
+          "step": 50,
+          "loss": {
+            "total": 0.43125855922698975,
+            "attribute": 0.2519271969795227,
+            "occupancy": 0.17929673194885254,
+            "kl": 34.64100646972656
+          }
+        },
+        {
+          "step": 100,
+          "loss": {
+            "total": 0.16364382207393646,
+            "attribute": 0.11499834060668945,
+            "occupancy": 0.048432912677526474,
+            "kl": 212.56564331054688
+          }
+        },
+        {
+          "step": 200,
+          "loss": {
+            "total": 0.08190981298685074,
+            "attribute": 0.0768829733133316,
+            "occupancy": 0.004138205666095018,
+            "kl": 888.6278076171875
+          }
+        }
+      ],
+      "evaluations": [
+        {
+          "step": 1,
+          "train": {
+            "total": 1.0944242477416992,
+            "attribute": 0.40465718507766724,
+            "occupancy": 0.6897670030593872,
+            "kl": 0.005842435173690319
+          },
+          "validation": {
+            "total": 1.0478214025497437,
+            "attribute": 0.35542383790016174,
+            "occupancy": 0.6923975944519043,
+            "kl": 0.0066538420505821705
+          }
+        },
+        {
+          "step": 10,
+          "train": {
+            "total": 1.04986572265625,
+            "attribute": 0.3945627510547638,
+            "occupancy": 0.6553028225898743,
+            "kl": 0.14457400143146515
+          },
+          "validation": {
+            "total": 1.0273517370224,
+            "attribute": 0.35467731952667236,
+            "occupancy": 0.6726743578910828,
+            "kl": 0.0917043387889862
+          }
+        },
+        {
+          "step": 50,
+          "train": {
+            "total": 0.4223979115486145,
+            "attribute": 0.24765241146087646,
+            "occupancy": 0.17471006512641907,
+            "kl": 35.422401428222656
+          },
+          "validation": {
+            "total": 0.9710444211959839,
+            "attribute": 0.3289491534233093,
+            "occupancy": 0.6420726776123047,
+            "kl": 22.594514846801758
+          }
+        },
+        {
+          "step": 100,
+          "train": {
+            "total": 0.161624476313591,
+            "attribute": 0.11446477472782135,
+            "occupancy": 0.04694034904241562,
+            "kl": 219.35597229003906
+          },
+          "validation": {
+            "total": 1.8590221405029297,
+            "attribute": 0.28117769956588745,
+            "occupancy": 1.5776865482330322,
+            "kl": 157.8011932373047
+          }
+        },
+        {
+          "step": 200,
+          "train": {
+            "total": 0.08166008442640305,
+            "attribute": 0.07665423303842545,
+            "occupancy": 0.004118418321013451,
+            "kl": 887.4276123046875
+          },
+          "validation": {
+            "total": 3.936255931854248,
+            "attribute": 0.2678144574165344,
+            "occupancy": 3.667783260345459,
+            "kl": 658.1650390625
+          }
+        }
+      ],
+      "validation_before": {
+        "total": 1.0488388538360596,
+        "attribute": 0.3555460572242737,
+        "occupancy": 0.6932928562164307,
+        "kl": 0.006909169256687164
+      },
+      "validation_after": {
+        "total": 3.936255931854248,
+        "attribute": 0.2678144574165344,
+        "occupancy": 3.667783260345459,
+        "kl": 658.1650390625
+      }
+    }
+  },
+  "reconstruction": {
+    "train-teacher": {
+      "active_voxels": 498,
+      "reference_voxels": 498,
+      "latent_support": "posterior mean",
+      "support": "teacher",
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.014313960899470462,
+        "reference_to_prediction": 0.01343113703688174,
+        "prediction_to_reference": 0.015196784762059184,
+        "precision": 0.3359375,
+        "recall": 0.40234375,
+        "fscore": 0.3661541005291005,
+        "triangles": 792,
+        "boundary_edges": 328,
+        "nonmanifold_edges": 32
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    },
+    "train-predicted": {
+      "active_voxels": 512,
+      "reference_voxels": 498,
+      "latent_support": "posterior mean",
+      "support": "predicted",
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.019417680161891077,
+        "reference_to_prediction": 0.02086711580281151,
+        "prediction_to_reference": 0.017968244520970643,
+        "precision": 0.3359375,
+        "recall": 0.28515625,
+        "fscore": 0.3084709119496855,
+        "triangles": 570,
+        "boundary_edges": 321,
+        "nonmanifold_edges": 35
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    },
+    "validation-teacher": {
+      "active_voxels": 464,
+      "reference_voxels": 464,
+      "latent_support": "posterior mean",
+      "support": "teacher",
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.020956511095048973,
+        "reference_to_prediction": 0.022404993949550624,
+        "prediction_to_reference": 0.01950802824054732,
+        "precision": 0.27734375,
+        "recall": 0.18359375,
+        "fscore": 0.22093485169491525,
+        "triangles": 468,
+        "boundary_edges": 389,
+        "nonmanifold_edges": 29
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    },
+    "validation-predicted": {
+      "active_voxels": 506,
+      "reference_voxels": 464,
+      "latent_support": "posterior mean",
+      "support": "predicted",
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.0433650456560513,
+        "reference_to_prediction": 0.037803740486692224,
+        "prediction_to_reference": 0.04892635082541037,
+        "precision": 0.171875,
+        "recall": 0.125,
+        "fscore": 0.14473684210526316,
+        "triangles": 554,
+        "boundary_edges": 288,
+        "nonmanifold_edges": 28
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    }
+  },
+  "latent_storage": {
+    "train": {
+      "tokens": 1,
+      "shape_channels": 8,
+      "material_channels": 8,
+      "bytes": 448,
+      "checkpoint_sha256": {
+        "shape": "81c3b0145972e3da6d518c260991ad2080487d4e31397367fedc754e4aa5de8e",
+        "material": "b0e4ce1995f225bda269526e57ad15bb55f48238dcb53c7aa9a18fed7c15d2e4"
+      }
+    },
+    "validation": {
+      "tokens": 1,
+      "shape_channels": 8,
+      "material_channels": 8,
+      "bytes": 448,
+      "checkpoint_sha256": {
+        "shape": "81c3b0145972e3da6d518c260991ad2080487d4e31397367fedc754e4aa5de8e",
+        "material": "b0e4ce1995f225bda269526e57ad15bb55f48238dcb53c7aa9a18fed7c15d2e4"
+      }
+    }
+  },
+  "step50_reconstruction": {
+    "train-teacher": {
+      "active_voxels": 498,
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.02595599728479221,
+        "reference_to_prediction": 0.03538991547618283,
+        "prediction_to_reference": 0.016522079093401587,
+        "precision": 0.328125,
+        "recall": 0.109375,
+        "fscore": 0.1640625,
+        "triangles": 206,
+        "boundary_edges": 292,
+        "nonmanifold_edges": 0
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    },
+    "train-predicted": {
+      "active_voxels": 439,
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.12673884552253253,
+        "reference_to_prediction": 0.16188410006911147,
+        "prediction_to_reference": 0.0915935909759536,
+        "precision": 0.13671875,
+        "recall": 0.01171875,
+        "fscore": 0.02158717105263158,
+        "triangles": 30,
+        "boundary_edges": 54,
+        "nonmanifold_edges": 0
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    },
+    "validation-teacher": {
+      "active_voxels": 464,
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.032273409118275295,
+        "reference_to_prediction": 0.04415371818920294,
+        "prediction_to_reference": 0.02039310004734765,
+        "precision": 0.2421875,
+        "recall": 0.0703125,
+        "fscore": 0.108984375,
+        "triangles": 146,
+        "boundary_edges": 197,
+        "nonmanifold_edges": 1
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    },
+    "validation-predicted": {
+      "active_voxels": 436,
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.1219737064625596,
+        "reference_to_prediction": 0.15798571558784769,
+        "prediction_to_reference": 0.08596169733727152,
+        "precision": 0.07421875,
+        "recall": 0.0078125,
+        "fscore": 0.014136904761904762,
+        "triangles": 30,
+        "boundary_edges": 56,
+        "nonmanifold_edges": 0
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    }
+  }
+}

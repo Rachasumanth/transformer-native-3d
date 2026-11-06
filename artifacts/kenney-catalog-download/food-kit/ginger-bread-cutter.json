@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/ginger-bread-cutter",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/ginger-bread-cutter.glb",
+  "sha256": "261b1edf26e3e8d8cb1b01a54f8329c4c6db6e5acde22ebad1fd53063850371c",
+  "bytes": 22704,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

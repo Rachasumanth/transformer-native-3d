@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/ice-cream-scoop-chocolate",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/ice-cream-scoop-chocolate.glb",
+  "sha256": "c2b52795364b7cb44f04f70c253e581e94ad8030ce69ef62f291a7756fc21bde",
+  "bytes": 19756,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

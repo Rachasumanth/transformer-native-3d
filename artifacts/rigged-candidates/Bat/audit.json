@@ -1,0 +1,13 @@
+{
+  "asset": "Bat",
+  "sha256": "1a4317609094c64d3f751adb9150df628aaf7902f7440174afcb642c30e0e072",
+  "bytes": 63308,
+  "source": "https://github.com/Ariescar/gobkit-free-assets/tree/main/animal",
+  "license": "CC0-1.0",
+  "skins": 1,
+  "animations": 1,
+  "vertices": 359,
+  "faces": 376,
+  "joints": 16,
+  "import": "ok"
+}

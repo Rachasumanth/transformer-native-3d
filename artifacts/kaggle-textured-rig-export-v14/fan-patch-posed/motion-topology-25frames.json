@@ -1,0 +1,181 @@
+{
+  "scope": "25 sampled times, exact-position weld, topology only; no continuous-motion or visual guarantee",
+  "sha256": "20b1b64a51d3bab5d8cb90ed4cdeb4f9a1235fc9e1bba06663741b10e545732e",
+  "poses": [
+    {
+      "time": 0.04166661947965622,
+      "degenerate_faces": 0,
+      "min_area": 3.337134637378971e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 0.12326384335756302,
+      "degenerate_faces": 0,
+      "min_area": 2.925239260798836e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 0.20486107468605042,
+      "degenerate_faces": 0,
+      "min_area": 2.472832838006235e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 0.286458283662796,
+      "degenerate_faces": 0,
+      "min_area": 2.240884874936152e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 0.368055522441864,
+      "degenerate_faces": 0,
+      "min_area": 2.2031301433490642e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 0.4496527314186096,
+      "degenerate_faces": 0,
+      "min_area": 2.342100895264007e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 0.5312499403953552,
+      "degenerate_faces": 0,
+      "min_area": 2.566376865560688e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 0.6128472089767456,
+      "degenerate_faces": 0,
+      "min_area": 2.751329815012624e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 0.6944444179534912,
+      "degenerate_faces": 0,
+      "min_area": 2.869847898525661e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 0.7760416269302368,
+      "degenerate_faces": 0,
+      "min_area": 2.9377797124026955e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 0.8576388359069824,
+      "degenerate_faces": 0,
+      "min_area": 2.9599766716599343e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 0.9392361044883728,
+      "degenerate_faces": 0,
+      "min_area": 2.9687908103765485e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 1.0208332538604736,
+      "degenerate_faces": 0,
+      "min_area": 2.918572631591169e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 1.1024305820465088,
+      "degenerate_faces": 0,
+      "min_area": 2.78166829918265e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 1.1840277910232544,
+      "degenerate_faces": 0,
+      "min_area": 2.6927248860584884e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 1.265625,
+      "degenerate_faces": 0,
+      "min_area": 2.765895538416494e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 1.3472222089767456,
+      "degenerate_faces": 0,
+      "min_area": 3.0848741318524247e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 1.4288194179534912,
+      "degenerate_faces": 0,
+      "min_area": 3.5866079389204415e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 1.5104166269302368,
+      "degenerate_faces": 0,
+      "min_area": 3.9524018452900264e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 1.5920138359069824,
+      "degenerate_faces": 0,
+      "min_area": 3.9530913621909566e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 1.673611044883728,
+      "degenerate_faces": 0,
+      "min_area": 3.76058907103034e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 1.7552083730697632,
+      "degenerate_faces": 0,
+      "min_area": 3.5899476457935374e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 1.8368055820465088,
+      "degenerate_faces": 0,
+      "min_area": 3.4781557875633954e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 1.9184027910232544,
+      "degenerate_faces": 0,
+      "min_area": 3.4136558468381225e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "time": 2.0,
+      "degenerate_faces": 0,
+      "min_area": 3.4054732139780673e-07,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    }
+  ]
+}

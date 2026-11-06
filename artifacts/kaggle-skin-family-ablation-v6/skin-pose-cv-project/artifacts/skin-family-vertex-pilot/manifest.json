@@ -1,0 +1,231 @@
+{
+  "version": 2,
+  "scope": "Three original training rigs, Gobkit animal family held out for validation; area-weighted vertex samples, not a representative corpus",
+  "sampling": "1024 vertices sampled with face area weighting; shared normalization and exact original vertex skinning",
+  "split_policy": "Gobkit animal pack held out as a family; source hashes disjoint",
+  "assets": [
+    {
+      "name": "RiggedSimple",
+      "split": "train",
+      "file": "RiggedSimple-poses.npz",
+      "sha256": "ba4fbff8d2b261414aab728da9e7a789dbc6b7d9c8aa446f39702b432e554fc9",
+      "source_sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401",
+      "samples": 1024,
+      "poses": 5,
+      "joints": 2,
+      "faces": 188,
+      "animations": [
+        {
+          "animation_index": 0,
+          "name": null,
+          "times": [
+            0.04166661947965622,
+            0.5520832184702158,
+            1.0624998174607754,
+            1.572916416451335,
+            2.0833330154418945
+          ]
+        }
+      ],
+      "normalization": {
+        "center": [
+          -5.218048215738236e-15,
+          2.434097448045236e-07,
+          -2.0861626381929455e-07
+        ],
+        "scale": 0.10928777093401539
+      },
+      "max_interpolated_lbs_vs_posed_triangle": 0.0534894318838912,
+      "max_lbs_target_error": 6.583051377633195e-09
+    },
+    {
+      "name": "CesiumMan",
+      "split": "train",
+      "file": "CesiumMan-poses.npz",
+      "sha256": "2c0f4133c0f5df645a3e845d91a5129406215b016c2974c80d8f8daa7e31db61",
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "samples": 1024,
+      "poses": 5,
+      "joints": 19,
+      "faces": 4672,
+      "animations": [
+        {
+          "animation_index": 0,
+          "name": null,
+          "times": [
+            0.04166661947965622,
+            0.5312499646097422,
+            1.020833309739828,
+            1.510416654869914,
+            2.0
+          ]
+        }
+      ],
+      "normalization": {
+        "center": [
+          -6.53480239920512e-08,
+          0.7532751040569674,
+          0.02497701394774722
+        ],
+        "scale": 0.6637680165409462
+      },
+      "max_interpolated_lbs_vs_posed_triangle": 0.005605770160792119,
+      "max_lbs_target_error": 7.329834422363544e-08
+    },
+    {
+      "name": "Fox",
+      "split": "train",
+      "file": "Fox-poses.npz",
+      "sha256": "92f8433d1f9c85d79d4e881131b25c4be76cccda926207811d96b20eea8b02ca",
+      "source_sha256": "d97044e701822bac5a62696459b27d7b375aada5de8574ed4362edbba94771f7",
+      "samples": 1024,
+      "poses": 15,
+      "joints": 24,
+      "faces": 576,
+      "animations": [
+        {
+          "animation_index": 0,
+          "name": "Survey",
+          "times": [
+            0.0,
+            0.8541666865348816,
+            1.7083333730697632,
+            2.5625000596046448,
+            3.4166667461395264
+          ]
+        },
+        {
+          "animation_index": 1,
+          "name": "Walk",
+          "times": [
+            0.0,
+            0.1770833283662796,
+            0.3541666567325592,
+            0.5312499850988388,
+            0.7083333134651184
+          ]
+        },
+        {
+          "animation_index": 2,
+          "name": "Run",
+          "times": [
+            0.0,
+            0.28958332538604736,
+            0.5791666507720947,
+            0.8687499761581421,
+            1.1583333015441895
+          ]
+        }
+      ],
+      "normalization": {
+        "center": [
+          -6.378095989134636e-07,
+          39.392726731703334,
+          -10.735073004654097
+        ],
+        "scale": 0.00646329413711845
+      },
+      "max_interpolated_lbs_vs_posed_triangle": 0.042143913272453246,
+      "max_lbs_target_error": 1.95988149874451e-08
+    },
+    {
+      "name": "Corgi",
+      "split": "validation",
+      "file": "Corgi-poses.npz",
+      "sha256": "8ee9f65a1c73adac4dab23ac4e10adf83679fca8c373c1e14db08805e469730d",
+      "source_sha256": "95cd2c4d53d70ee9dd2e1329dcb6de7d4a725301d504a4f2f00ecb34dc1a0851",
+      "samples": 1024,
+      "poses": 5,
+      "joints": 16,
+      "faces": 508,
+      "animations": [
+        {
+          "animation_index": 0,
+          "name": "clip",
+          "times": [
+            0.0,
+            1.2395833730697632,
+            2.4791667461395264,
+            3.7187501192092896,
+            4.958333492279053
+          ]
+        }
+      ],
+      "normalization": {
+        "center": [
+          0.0,
+          197.43458746354756,
+          20.507171320396125
+        ],
+        "scale": 0.0022657471547687636
+      },
+      "max_lbs_target_error": 4.458205583648681e-16
+    },
+    {
+      "name": "Bat",
+      "split": "validation",
+      "file": "Bat-poses.npz",
+      "sha256": "d07cd239d4757f982672d227aaf1e7dda1b8ae3f7213f7b2586ca8ccc4526b2a",
+      "source_sha256": "1a4317609094c64d3f751adb9150df628aaf7902f7440174afcb642c30e0e072",
+      "samples": 1024,
+      "poses": 5,
+      "joints": 16,
+      "faces": 376,
+      "animations": [
+        {
+          "animation_index": 0,
+          "name": "clip",
+          "times": [
+            0.0,
+            1.2395833730697632,
+            2.4791667461395264,
+            3.7187501192092896,
+            4.958333492279053
+          ]
+        }
+      ],
+      "normalization": {
+        "center": [
+          1.52587890625e-05,
+          250.736113835135,
+          4.238469012650498
+        ],
+        "scale": 0.0014729457115015335
+      },
+      "max_lbs_target_error": 3.57874756446653e-16
+    },
+    {
+      "name": "Shark",
+      "split": "validation",
+      "file": "Shark-poses.npz",
+      "sha256": "710244a70d718033bae6f04128a22178768c5f6d025f47c3ac220dfe4f052995",
+      "source_sha256": "0fc450c99f0fd9f2e5d774ef58cd42b8d8d927bed138444254204b366595dc42",
+      "samples": 1024,
+      "poses": 5,
+      "joints": 16,
+      "faces": 286,
+      "animations": [
+        {
+          "animation_index": 0,
+          "name": "clip",
+          "times": [
+            0.0,
+            1.2395833730697632,
+            2.4791667461395264,
+            3.7187501192092896,
+            4.958333492279053
+          ]
+        }
+      ],
+      "normalization": {
+        "center": [
+          0.0,
+          257.54416273655755,
+          -28.444392919620327
+        ],
+        "scale": 0.0014445613022860862
+      },
+      "max_lbs_target_error": 2.830524433501838e-16
+    }
+  ]
+}

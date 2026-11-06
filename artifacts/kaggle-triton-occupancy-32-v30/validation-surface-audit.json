@@ -1,0 +1,22 @@
+{
+  "valid": true,
+  "samples": 128,
+  "tolerance": 0.01,
+  "seed": 71,
+  "mean_distance": 0.06296670612038968,
+  "reference_to_prediction": 0.07132891071871772,
+  "prediction_to_reference": 0.05460450152206163,
+  "precision": 0.1171875,
+  "recall": 0.015625,
+  "fscore": 0.027573529411764705,
+  "triangles": 328,
+  "boundary_edges": 455,
+  "boundary_edge_length": 14.358967172122858,
+  "mean_boundary_edge_length": 0.03155816960906123,
+  "nonmanifold_edges": 1,
+  "scope": "Sampled surface comparison against prepared voxelized reference, not original source mesh or research benchmark",
+  "reference_sha256": "d7ddcb2e9dc756efa83723b8e8909408b09625f3dc9f0ae3d16f85faaf7b6108",
+  "prediction_sha256": "46374f301a0e4f128a018b149b18c258a5062035794c9c8222ac5b60560ac26b",
+  "reference_triangles": 4172,
+  "prediction_triangles": 328
+}

@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/path-stonecircle",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/path-stonecircle.glb",
+  "sha256": "d3f2044acdaeb7100d82aca702207e9c2f198aa0f03b9aef79a714e3a4a563f5",
+  "bytes": 13100,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

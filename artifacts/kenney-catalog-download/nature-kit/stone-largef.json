@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/stone-largef",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/stone-largef.glb",
+  "sha256": "6fd7761da24e492b9e763cfc8ebb5f3c2bb33aa68fb0f320a8769ab71fcc6c9e",
+  "bytes": 7092,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/cooking-spoon",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/cooking-spoon.glb",
+  "sha256": "60cd80ef48dfecc0332d467b80a56f23c3f6daaceae124e5474eba7cda7dc307",
+  "bytes": 17540,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/cooking-spatula",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/cooking-spatula.glb",
+  "sha256": "9b77aaf4cd8f51c45117f8150f07a61dcc1741947bf20acaa2aadc45122ba1e9",
+  "bytes": 16880,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

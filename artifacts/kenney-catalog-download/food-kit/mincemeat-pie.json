@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/mincemeat-pie",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/mincemeat-pie.glb",
+  "sha256": "934329fcfdf6f05e5ab25fcbd366385b3f2079cddca3c906f5bbc0be43909d75",
+  "bytes": 23448,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

@@ -1,0 +1,62 @@
+{
+  "scope": "Uncalibrated CLIP cosine similarities, not decisions or verified quality labels",
+  "model": "openai/clip-vit-base-patch32",
+  "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "device": "cuda",
+  "render_manifest_sha256": "b7005fd22ed5b5a902eb0a62ccbb38c88b882665fb487413bfeaf2e2b27a426d",
+  "prompts_sha256": "bb13e44558bb804a7a7f4a17e0370ca07932129ce173d7e6ab2d41cf351a6b90",
+  "categories": {
+    "object": [
+      "a detailed 3D object with recognizable shape and materials",
+      "a rendered 3D asset of a real object"
+    ],
+    "primitive": [
+      "a simple geometric 3D primitive such as a cube or sphere",
+      "a plain flat plane or a simple 3D shape"
+    ],
+    "noisy_scan": [
+      "a noisy broken 3D photogrammetry scan with scattered fragments",
+      "a low quality incomplete 3D scan"
+    ]
+  },
+  "views": [
+    {
+      "image": "view-000-color.png",
+      "scores": {
+        "object": 0.2617352604866028,
+        "primitive": 0.2533794343471527,
+        "noisy_scan": 0.24348634481430054
+      }
+    },
+    {
+      "image": "view-001-color.png",
+      "scores": {
+        "object": 0.26859593391418457,
+        "primitive": 0.26101866364479065,
+        "noisy_scan": 0.244487464427948
+      }
+    },
+    {
+      "image": "view-002-color.png",
+      "scores": {
+        "object": 0.2533784508705139,
+        "primitive": 0.24952971935272217,
+        "noisy_scan": 0.23879596590995789
+      }
+    },
+    {
+      "image": "view-003-color.png",
+      "scores": {
+        "object": 0.260436475276947,
+        "primitive": 0.25370362401008606,
+        "noisy_scan": 0.24517741799354553
+      }
+    }
+  ],
+  "mean_scores": {
+    "object": 0.2610365152359009,
+    "primitive": 0.2544078528881073,
+    "noisy_scan": 0.242986798286438
+  },
+  "source_sha256": "a6db99380c6ebbef08c8ac9a73c5bbc8f9b4736d6b615b053acbdf3060a5056b"
+}

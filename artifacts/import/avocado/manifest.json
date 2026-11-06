@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "asset_id": "khronos-avocado",
+      "path": "avocado.t3d",
+      "sha256": "acd504a1f9d3b8a32425458e97340cd07e183e5fd988ee7b838567821fd7345e",
+      "split": "train",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/Avocado",
+      "license": "CC0-1.0; Microsoft, 2017 (upstream SOURCE.md)"
+    }
+  ]
+}

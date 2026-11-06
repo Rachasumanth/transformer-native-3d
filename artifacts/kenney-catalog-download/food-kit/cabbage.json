@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/cabbage",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/cabbage.glb",
+  "sha256": "30a5442c535bf6cf13f561565a9f8b1103ca346a071346f8eb924afe57638c18",
+  "bytes": 26100,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

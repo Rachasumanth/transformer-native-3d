@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/lemon",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/lemon.glb",
+  "sha256": "d00fa5f5bb3d2673ccbc6215f47a3477130d482a37f4ac7e37a773e7f98c5676",
+  "bytes": 22668,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

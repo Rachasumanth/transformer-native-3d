@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/sausage",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/sausage.glb",
+  "sha256": "5443dd6b1374d74db71ef57b769d6e6380141b4d085298b8724502cbc4525602",
+  "bytes": 20300,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

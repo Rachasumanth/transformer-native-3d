@@ -1,0 +1,878 @@
+{
+  "scope": "two licensed integration assets at 16^3; no generalization claim",
+  "manifest_sha256": "5aeb39db4177ceb91a89bf4d793a01aa8bb9630ee6bff5cc362f279aa4428dbb",
+  "device": "Tesla T4",
+  "results": {
+    "shape": {
+      "train_asset": "khronos-avocado",
+      "validation_asset": "khronos-waterbottle",
+      "train_voxels": 498,
+      "validation_voxels": 464,
+      "steps": 200,
+      "edge_positive_weight": null,
+      "render_weight": 0.1,
+      "train": [
+        {
+          "step": 1,
+          "loss": {
+            "total": 1.764851689338684,
+            "attribute": 0.9535924196243286,
+            "occupancy": 0.7645326256752014,
+            "kl": 0.006598072126507759,
+            "render": 0.4672662615776062
+          }
+        },
+        {
+          "step": 10,
+          "loss": {
+            "total": 1.5476561784744263,
+            "attribute": 0.8183450698852539,
+            "occupancy": 0.68265700340271,
+            "kl": 0.05845365673303604,
+            "render": 0.4665413796901703
+          }
+        },
+        {
+          "step": 50,
+          "loss": {
+            "total": 1.1432751417160034,
+            "attribute": 0.7325960993766785,
+            "occupancy": 0.36640802025794983,
+            "kl": 8.861886024475098,
+            "render": 0.4426220655441284
+          }
+        },
+        {
+          "step": 100,
+          "loss": {
+            "total": 0.839821994304657,
+            "attribute": 0.604427695274353,
+            "occupancy": 0.19088336825370789,
+            "kl": 79.29229736328125,
+            "render": 0.4443161189556122
+          }
+        },
+        {
+          "step": 200,
+          "loss": {
+            "total": 0.5748036503791809,
+            "attribute": 0.4210686683654785,
+            "occupancy": 0.10763993114233017,
+            "kl": 48.700828552246094,
+            "render": 0.4604637920856476
+          }
+        }
+      ],
+      "evaluations": [
+        {
+          "step": 1,
+          "train": {
+            "total": 1.5640640258789062,
+            "attribute": 0.8136320114135742,
+            "occupancy": 0.7027372121810913,
+            "kl": 0.009451120160520077,
+            "render": 0.4769483804702759
+          },
+          "validation": {
+            "total": 1.5561727285385132,
+            "attribute": 0.8211300373077393,
+            "occupancy": 0.701705276966095,
+            "kl": 0.005607726983726025,
+            "render": 0.33337491750717163
+          }
+        },
+        {
+          "step": 10,
+          "train": {
+            "total": 1.5404298305511475,
+            "attribute": 0.8015357851982117,
+            "occupancy": 0.6912591457366943,
+            "kl": 0.0649116039276123,
+            "render": 0.47634750604629517
+          },
+          "validation": {
+            "total": 1.5352004766464233,
+            "attribute": 0.8103312253952026,
+            "occupancy": 0.6915707588195801,
+            "kl": 0.02261171117424965,
+            "render": 0.33298438787460327
+          }
+        },
+        {
+          "step": 50,
+          "train": {
+            "total": 1.1312265396118164,
+            "attribute": 0.7300118207931519,
+            "occupancy": 0.3569932281970978,
+            "kl": 9.686391830444336,
+            "render": 0.442118763923645
+          },
+          "validation": {
+            "total": 1.339915156364441,
+            "attribute": 0.8203021883964539,
+            "occupancy": 0.48448675870895386,
+            "kl": 4.358113765716553,
+            "render": 0.35121798515319824
+          }
+        },
+        {
+          "step": 100,
+          "train": {
+            "total": 0.8383222222328186,
+            "attribute": 0.6040694117546082,
+            "occupancy": 0.18975289165973663,
+            "kl": 78.00811767578125,
+            "render": 0.44421905279159546
+          },
+          "validation": {
+            "total": 1.6718415021896362,
+            "attribute": 0.9198200702667236,
+            "occupancy": 0.7169545888900757,
+            "kl": 39.221595764160156,
+            "render": 0.3502761423587799
+          }
+        },
+        {
+          "step": 200,
+          "train": {
+            "total": 0.5718281865119934,
+            "attribute": 0.4188065528869629,
+            "occupancy": 0.10688704997301102,
+            "kl": 49.3759651184082,
+            "render": 0.4608522057533264
+          },
+          "validation": {
+            "total": 1.8237721920013428,
+            "attribute": 1.0238577127456665,
+            "occupancy": 0.7658988833427429,
+            "kl": 23.440380096435547,
+            "render": 0.33992114663124084
+          }
+        }
+      ],
+      "validation_before": {
+        "total": 1.5590139627456665,
+        "attribute": 0.8226527571678162,
+        "occupancy": 0.7030694484710693,
+        "kl": 0.0042923856526613235,
+        "render": 0.33291736245155334
+      },
+      "validation_after": {
+        "total": 1.8237721920013428,
+        "attribute": 1.0238577127456665,
+        "occupancy": 0.7658988833427429,
+        "kl": 23.440380096435547,
+        "render": 0.33992114663124084
+      }
+    },
+    "material": {
+      "train_asset": "khronos-avocado",
+      "validation_asset": "khronos-waterbottle",
+      "train_voxels": 498,
+      "validation_voxels": 464,
+      "steps": 200,
+      "edge_positive_weight": null,
+      "render_weight": 0.0,
+      "train": [
+        {
+          "step": 1,
+          "loss": {
+            "total": 1.1088290214538574,
+            "attribute": 0.41054877638816833,
+            "occupancy": 0.6982802152633667,
+            "kl": 0.005883033387362957
+          }
+        },
+        {
+          "step": 10,
+          "loss": {
+            "total": 1.0917030572891235,
+            "attribute": 0.4002734422683716,
+            "occupancy": 0.6914294958114624,
+            "kl": 0.1016274243593216
+          }
+        },
+        {
+          "step": 50,
+          "loss": {
+            "total": 0.43125855922698975,
+            "attribute": 0.2519271969795227,
+            "occupancy": 0.17929673194885254,
+            "kl": 34.64100646972656
+          }
+        },
+        {
+          "step": 100,
+          "loss": {
+            "total": 0.16364382207393646,
+            "attribute": 0.11499834060668945,
+            "occupancy": 0.048432912677526474,
+            "kl": 212.56564331054688
+          }
+        },
+        {
+          "step": 200,
+          "loss": {
+            "total": 0.08190981298685074,
+            "attribute": 0.0768829733133316,
+            "occupancy": 0.004138205666095018,
+            "kl": 888.6278076171875
+          }
+        }
+      ],
+      "evaluations": [
+        {
+          "step": 1,
+          "train": {
+            "total": 1.0944242477416992,
+            "attribute": 0.40465718507766724,
+            "occupancy": 0.6897670030593872,
+            "kl": 0.005842435173690319
+          },
+          "validation": {
+            "total": 1.0478214025497437,
+            "attribute": 0.35542383790016174,
+            "occupancy": 0.6923975944519043,
+            "kl": 0.0066538420505821705
+          }
+        },
+        {
+          "step": 10,
+          "train": {
+            "total": 1.04986572265625,
+            "attribute": 0.3945627510547638,
+            "occupancy": 0.6553028225898743,
+            "kl": 0.14457400143146515
+          },
+          "validation": {
+            "total": 1.0273517370224,
+            "attribute": 0.35467731952667236,
+            "occupancy": 0.6726743578910828,
+            "kl": 0.0917043387889862
+          }
+        },
+        {
+          "step": 50,
+          "train": {
+            "total": 0.4223979115486145,
+            "attribute": 0.24765241146087646,
+            "occupancy": 0.17471006512641907,
+            "kl": 35.422401428222656
+          },
+          "validation": {
+            "total": 0.9710444211959839,
+            "attribute": 0.3289491534233093,
+            "occupancy": 0.6420726776123047,
+            "kl": 22.594514846801758
+          }
+        },
+        {
+          "step": 100,
+          "train": {
+            "total": 0.161624476313591,
+            "attribute": 0.11446477472782135,
+            "occupancy": 0.04694034904241562,
+            "kl": 219.35597229003906
+          },
+          "validation": {
+            "total": 1.8590221405029297,
+            "attribute": 0.28117769956588745,
+            "occupancy": 1.5776865482330322,
+            "kl": 157.8011932373047
+          }
+        },
+        {
+          "step": 200,
+          "train": {
+            "total": 0.08166008442640305,
+            "attribute": 0.07665423303842545,
+            "occupancy": 0.004118418321013451,
+            "kl": 887.4276123046875
+          },
+          "validation": {
+            "total": 3.936255931854248,
+            "attribute": 0.2678144574165344,
+            "occupancy": 3.667783260345459,
+            "kl": 658.1650390625
+          }
+        }
+      ],
+      "validation_before": {
+        "total": 1.0488388538360596,
+        "attribute": 0.3555460572242737,
+        "occupancy": 0.6932928562164307,
+        "kl": 0.006909169256687164
+      },
+      "validation_after": {
+        "total": 3.936255931854248,
+        "attribute": 0.2678144574165344,
+        "occupancy": 3.667783260345459,
+        "kl": 658.1650390625
+      }
+    }
+  },
+  "reconstruction": {
+    "train-teacher": {
+      "active_voxels": 498,
+      "reference_voxels": 498,
+      "latent_support": "posterior mean",
+      "support": "teacher",
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.014705627057872149,
+        "reference_to_prediction": 0.013986122009981616,
+        "prediction_to_reference": 0.015425132105762681,
+        "precision": 0.34765625,
+        "recall": 0.375,
+        "fscore": 0.3608108108108108,
+        "triangles": 750,
+        "boundary_edges": 329,
+        "nonmanifold_edges": 29
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    },
+    "train-predicted": {
+      "active_voxels": 504,
+      "reference_voxels": 498,
+      "latent_support": "posterior mean",
+      "support": "predicted",
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.01834089641732013,
+        "reference_to_prediction": 0.021091731918206895,
+        "prediction_to_reference": 0.015590060916433363,
+        "precision": 0.41015625,
+        "recall": 0.27734375,
+        "fscore": 0.33092151988636365,
+        "triangles": 520,
+        "boundary_edges": 284,
+        "nonmanifold_edges": 22
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    },
+    "validation-teacher": {
+      "active_voxels": 464,
+      "reference_voxels": 464,
+      "latent_support": "posterior mean",
+      "support": "teacher",
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.021138541929786897,
+        "reference_to_prediction": 0.022598869600562392,
+        "prediction_to_reference": 0.019678214259011406,
+        "precision": 0.2265625,
+        "recall": 0.1875,
+        "fscore": 0.20518867924528303,
+        "triangles": 442,
+        "boundary_edges": 371,
+        "nonmanifold_edges": 28
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    },
+    "validation-predicted": {
+      "active_voxels": 505,
+      "reference_voxels": 464,
+      "latent_support": "posterior mean",
+      "support": "predicted",
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.04442568036137338,
+        "reference_to_prediction": 0.03657241493460597,
+        "prediction_to_reference": 0.05227894578814079,
+        "precision": 0.09765625,
+        "recall": 0.11328125,
+        "fscore": 0.1048900462962963,
+        "triangles": 498,
+        "boundary_edges": 280,
+        "nonmanifold_edges": 22
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    }
+  },
+  "latent_storage": {
+    "train": {
+      "tokens": 1,
+      "shape_channels": 8,
+      "material_channels": 8,
+      "bytes": 448,
+      "checkpoint_sha256": {
+        "shape": "50eb25502ab09929a96f9498d0eeac79c81553d40fd8ea25a2939cf1d6d94cc2",
+        "material": "fa391738d60c1664a27b6d025d683b3c2f1392cfa0d43392f3c0cba2fd516ff2"
+      }
+    },
+    "validation": {
+      "tokens": 1,
+      "shape_channels": 8,
+      "material_channels": 8,
+      "bytes": 448,
+      "checkpoint_sha256": {
+        "shape": "50eb25502ab09929a96f9498d0eeac79c81553d40fd8ea25a2939cf1d6d94cc2",
+        "material": "fa391738d60c1664a27b6d025d683b3c2f1392cfa0d43392f3c0cba2fd516ff2"
+      }
+    }
+  },
+  "step50_reconstruction": {
+    "train-teacher": {
+      "active_voxels": 498,
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.025956369570350864,
+        "reference_to_prediction": 0.03517101809786634,
+        "prediction_to_reference": 0.01674172104283539,
+        "precision": 0.31640625,
+        "recall": 0.11328125,
+        "fscore": 0.16683238636363637,
+        "triangles": 200,
+        "boundary_edges": 288,
+        "nonmanifold_edges": 0
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    },
+    "train-predicted": {
+      "active_voxels": 444,
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.10784650136454899,
+        "reference_to_prediction": 0.1291786712708051,
+        "prediction_to_reference": 0.08651433145829286,
+        "precision": 0.13671875,
+        "recall": 0.015625,
+        "fscore": 0.028044871794871796,
+        "triangles": 40,
+        "boundary_edges": 73,
+        "nonmanifold_edges": 1
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    },
+    "validation-teacher": {
+      "active_voxels": 464,
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.031862968856064044,
+        "reference_to_prediction": 0.04330135175374931,
+        "prediction_to_reference": 0.020424585958378788,
+        "precision": 0.29296875,
+        "recall": 0.078125,
+        "fscore": 0.12335526315789473,
+        "triangles": 148,
+        "boundary_edges": 200,
+        "nonmanifold_edges": 2
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    },
+    "validation-predicted": {
+      "active_voxels": 442,
+      "metrics": {
+        "valid": true,
+        "samples": 256,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.09740942823512216,
+        "reference_to_prediction": 0.1111802700847103,
+        "prediction_to_reference": 0.08363858638553404,
+        "precision": 0.0625,
+        "recall": 0.0078125,
+        "fscore": 0.013888888888888888,
+        "triangles": 44,
+        "boundary_edges": 82,
+        "nonmanifold_edges": 0
+      },
+      "reference": "decoded source .t3d mesh, not original GLB triangles"
+    }
+  },
+  "edge_threshold_sweep": {
+    "train": [
+      {
+        "edge_threshold": 0.35,
+        "occupancy_threshold": 0.5,
+        "active_voxels": 504,
+        "edge_counts": [
+          {
+            "axis": 0,
+            "true_positive": 47,
+            "false_positive": 81,
+            "false_negative": 85,
+            "precision": 0.3671875,
+            "recall": 0.3560606060606061
+          },
+          {
+            "axis": 1,
+            "true_positive": 85,
+            "false_positive": 61,
+            "false_negative": 25,
+            "precision": 0.5821917808219178,
+            "recall": 0.7727272727272727
+          },
+          {
+            "axis": 2,
+            "true_positive": 229,
+            "false_positive": 126,
+            "false_negative": 36,
+            "precision": 0.6450704225352113,
+            "recall": 0.8641509433962264
+          }
+        ],
+        "metrics": {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.01849994768557528,
+          "reference_to_prediction": 0.019366349604134508,
+          "prediction_to_reference": 0.01763354576701605,
+          "precision": 0.32421875,
+          "recall": 0.31640625,
+          "fscore": 0.32026486280487804,
+          "triangles": 624,
+          "boundary_edges": 278,
+          "nonmanifold_edges": 59
+        }
+      },
+      {
+        "edge_threshold": 0.5,
+        "occupancy_threshold": 0.5,
+        "active_voxels": 504,
+        "edge_counts": [
+          {
+            "axis": 0,
+            "true_positive": 27,
+            "false_positive": 48,
+            "false_negative": 105,
+            "precision": 0.36,
+            "recall": 0.20454545454545456
+          },
+          {
+            "axis": 1,
+            "true_positive": 77,
+            "false_positive": 38,
+            "false_negative": 33,
+            "precision": 0.6695652173913044,
+            "recall": 0.7
+          },
+          {
+            "axis": 2,
+            "true_positive": 210,
+            "false_positive": 76,
+            "false_negative": 55,
+            "precision": 0.7342657342657343,
+            "recall": 0.7924528301886793
+          }
+        ],
+        "metrics": {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.01834089641732013,
+          "reference_to_prediction": 0.021091731918206895,
+          "prediction_to_reference": 0.015590060916433363,
+          "precision": 0.41015625,
+          "recall": 0.27734375,
+          "fscore": 0.33092151988636365,
+          "triangles": 520,
+          "boundary_edges": 284,
+          "nonmanifold_edges": 22
+        }
+      },
+      {
+        "edge_threshold": 0.65,
+        "occupancy_threshold": 0.5,
+        "active_voxels": 504,
+        "edge_counts": [
+          {
+            "axis": 0,
+            "true_positive": 16,
+            "false_positive": 13,
+            "false_negative": 116,
+            "precision": 0.5517241379310345,
+            "recall": 0.12121212121212122
+          },
+          {
+            "axis": 1,
+            "true_positive": 59,
+            "false_positive": 27,
+            "false_negative": 51,
+            "precision": 0.686046511627907,
+            "recall": 0.5363636363636364
+          },
+          {
+            "axis": 2,
+            "true_positive": 183,
+            "false_positive": 42,
+            "false_negative": 82,
+            "precision": 0.8133333333333334,
+            "recall": 0.690566037735849
+          }
+        ],
+        "metrics": {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.020441318549988444,
+          "reference_to_prediction": 0.02396853485499505,
+          "prediction_to_reference": 0.016914102244981834,
+          "precision": 0.3984375,
+          "recall": 0.25390625,
+          "fscore": 0.3101609281437126,
+          "triangles": 438,
+          "boundary_edges": 301,
+          "nonmanifold_edges": 13
+        }
+      },
+      {
+        "edge_threshold": 0.8,
+        "occupancy_threshold": 0.5,
+        "active_voxels": 504,
+        "edge_counts": [
+          {
+            "axis": 0,
+            "true_positive": 11,
+            "false_positive": 5,
+            "false_negative": 121,
+            "precision": 0.6875,
+            "recall": 0.08333333333333333
+          },
+          {
+            "axis": 1,
+            "true_positive": 39,
+            "false_positive": 16,
+            "false_negative": 71,
+            "precision": 0.7090909090909091,
+            "recall": 0.35454545454545455
+          },
+          {
+            "axis": 2,
+            "true_positive": 140,
+            "false_positive": 24,
+            "false_negative": 125,
+            "precision": 0.8536585365853658,
+            "recall": 0.5283018867924528
+          }
+        ],
+        "metrics": {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.02375713308078735,
+          "reference_to_prediction": 0.030605687404154338,
+          "prediction_to_reference": 0.016908578757420363,
+          "precision": 0.3515625,
+          "recall": 0.2109375,
+          "fscore": 0.263671875,
+          "triangles": 324,
+          "boundary_edges": 263,
+          "nonmanifold_edges": 7
+        }
+      }
+    ],
+    "validation": [
+      {
+        "edge_threshold": 0.35,
+        "occupancy_threshold": 0.5,
+        "active_voxels": 505,
+        "edge_counts": [
+          {
+            "axis": 0,
+            "true_positive": 27,
+            "false_positive": 96,
+            "false_negative": 179,
+            "precision": 0.21951219512195122,
+            "recall": 0.13106796116504854
+          },
+          {
+            "axis": 1,
+            "true_positive": 20,
+            "false_positive": 125,
+            "false_negative": 70,
+            "precision": 0.13793103448275862,
+            "recall": 0.2222222222222222
+          },
+          {
+            "axis": 2,
+            "true_positive": 92,
+            "false_positive": 271,
+            "false_negative": 114,
+            "precision": 0.2534435261707989,
+            "recall": 0.44660194174757284
+          }
+        ],
+        "metrics": {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.04219168159366457,
+          "reference_to_prediction": 0.03525101362285139,
+          "prediction_to_reference": 0.04913234956447775,
+          "precision": 0.12890625,
+          "recall": 0.125,
+          "fscore": 0.12692307692307692,
+          "triangles": 616,
+          "boundary_edges": 283,
+          "nonmanifold_edges": 59
+        }
+      },
+      {
+        "edge_threshold": 0.5,
+        "occupancy_threshold": 0.5,
+        "active_voxels": 505,
+        "edge_counts": [
+          {
+            "axis": 0,
+            "true_positive": 16,
+            "false_positive": 40,
+            "false_negative": 190,
+            "precision": 0.2857142857142857,
+            "recall": 0.07766990291262135
+          },
+          {
+            "axis": 1,
+            "true_positive": 14,
+            "false_positive": 92,
+            "false_negative": 76,
+            "precision": 0.1320754716981132,
+            "recall": 0.15555555555555556
+          },
+          {
+            "axis": 2,
+            "true_positive": 75,
+            "false_positive": 204,
+            "false_negative": 131,
+            "precision": 0.26881720430107525,
+            "recall": 0.3640776699029126
+          }
+        ],
+        "metrics": {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.04442568036137338,
+          "reference_to_prediction": 0.03657241493460597,
+          "prediction_to_reference": 0.05227894578814079,
+          "precision": 0.09765625,
+          "recall": 0.11328125,
+          "fscore": 0.1048900462962963,
+          "triangles": 498,
+          "boundary_edges": 280,
+          "nonmanifold_edges": 22
+        }
+      },
+      {
+        "edge_threshold": 0.65,
+        "occupancy_threshold": 0.5,
+        "active_voxels": 505,
+        "edge_counts": [
+          {
+            "axis": 0,
+            "true_positive": 10,
+            "false_positive": 13,
+            "false_negative": 196,
+            "precision": 0.43478260869565216,
+            "recall": 0.04854368932038835
+          },
+          {
+            "axis": 1,
+            "true_positive": 10,
+            "false_positive": 60,
+            "false_negative": 80,
+            "precision": 0.14285714285714285,
+            "recall": 0.1111111111111111
+          },
+          {
+            "axis": 2,
+            "true_positive": 55,
+            "false_positive": 150,
+            "false_negative": 151,
+            "precision": 0.2682926829268293,
+            "recall": 0.2669902912621359
+          }
+        ],
+        "metrics": {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.0471849297024529,
+          "reference_to_prediction": 0.04255140983897611,
+          "prediction_to_reference": 0.05181844956592969,
+          "precision": 0.109375,
+          "recall": 0.09765625,
+          "fscore": 0.10318396226415094,
+          "triangles": 400,
+          "boundary_edges": 276,
+          "nonmanifold_edges": 10
+        }
+      },
+      {
+        "edge_threshold": 0.8,
+        "occupancy_threshold": 0.5,
+        "active_voxels": 505,
+        "edge_counts": [
+          {
+            "axis": 0,
+            "true_positive": 1,
+            "false_positive": 1,
+            "false_negative": 205,
+            "precision": 0.5,
+            "recall": 0.0048543689320388345
+          },
+          {
+            "axis": 1,
+            "true_positive": 7,
+            "false_positive": 33,
+            "false_negative": 83,
+            "precision": 0.175,
+            "recall": 0.07777777777777778
+          },
+          {
+            "axis": 2,
+            "true_positive": 28,
+            "false_positive": 100,
+            "false_negative": 178,
+            "precision": 0.21875,
+            "recall": 0.13592233009708737
+          }
+        ],
+        "metrics": {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.05635074204054777,
+          "reference_to_prediction": 0.05965931675289754,
+          "prediction_to_reference": 0.053042167328198,
+          "precision": 0.109375,
+          "recall": 0.08203125,
+          "fscore": 0.09375,
+          "triangles": 258,
+          "boundary_edges": 211,
+          "nonmanifold_edges": 3
+        }
+      }
+    ]
+  }
+}

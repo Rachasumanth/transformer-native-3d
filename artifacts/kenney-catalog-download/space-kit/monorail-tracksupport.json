@@ -1,0 +1,10 @@
+{
+  "id": "space-kit/monorail-tracksupport",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/space-kit/monorail-tracksupport.glb",
+  "sha256": "368af81dac43c6a678c855e17de2b20a7384e630d8ca1e1ef559a8dbe1c71cad",
+  "bytes": 12128,
+  "group": "space-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/space-kit"
+}

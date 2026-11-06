@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/tajine",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/tajine.glb",
+  "sha256": "4d915a8aeb94b5e44814d5a8ef596495f9cddb9779f98308837c042108ce4de2",
+  "bytes": 26380,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

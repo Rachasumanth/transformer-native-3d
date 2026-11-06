@@ -1,0 +1,10 @@
+{
+  "title": "Transformer Native 3D BPT Pilot",
+  "id": "sumu143/transformer-native-3d-bpt-pilot",
+  "licenses": [
+    {
+      "name": "other"
+    }
+  ],
+  "description": "Small BPT integration dataset. Duck and Food Lime training, Avocado validation, Box control. Four Y quarter-turns per asset. Quantization removes 2.75%, 1.86%, 0.15%, and 0% of source faces, respectively. Contains derived quantized meshes, sampled conditioning points and token streams. Duck is under SCEA Shared Source License 1.0, Box CC-BY-4.0, Avocado and Food Lime CC0. Preserved notices and source manifests are included. Not a representative corpus."
+}

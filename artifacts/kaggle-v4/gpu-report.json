@@ -1,0 +1,14 @@
+{
+  "source_sha256": "264db579da284d9a4af9f70d7bd1241a77e8afbbda3e510ba576c7f71df5dd7b",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "devices": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "unit_tests_passed": true,
+  "probe": "synthetic MLP CUDA optimization, not SC-VAE training",
+  "initial_loss": 1.0759646892547607,
+  "final_loss": 0.6450196504592896,
+  "steps": 30
+}

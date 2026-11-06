@@ -1,0 +1,51 @@
+{
+  "source": "Poly Haven public API",
+  "asset_id": "food_lime_01",
+  "asset_name": "Food Lime 01",
+  "authors": [
+    "Oliver Harries"
+  ],
+  "polycount_reported": 8100,
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "asset_page": "https://polyhaven.com/a/food_lime_01",
+  "model_resolution": "1k glTF geometry/material references; included 1k textures",
+  "source_model_hash": "b16ed297c671e83aed5f55fc1eb82f4b01976547",
+  "files": [
+    {
+      "path": "food_lime_01_1k.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/food_lime_01/food_lime_01_1k.gltf",
+      "size_bytes": 2696,
+      "api_md5": "1b24ddf8c097918e6e9c134c59bd852d",
+      "sha256": "a3287904a7b56acb806c00803b9c8e0b71163649e2c87a5db3d18ac23c68e3ce"
+    },
+    {
+      "path": "textures/food_lime_01_rough_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/food_lime_01/food_lime_01_rough_1k.jpg",
+      "size_bytes": 104346,
+      "api_md5": "35a46c889d58183885c945da9950d757",
+      "sha256": "d3cfc62bd5337f5bdafe5a07d8b550636b661c81a4f16e5221c43a0ceafe40fc"
+    },
+    {
+      "path": "textures/food_lime_01_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/food_lime_01/food_lime_01_nor_gl_1k.jpg",
+      "size_bytes": 132792,
+      "api_md5": "6faf3f2d419827472cb384d17c6a69aa",
+      "sha256": "badf6365c08a237dcb99dc881de4e697022db22d090496e9533aeb9216b30d6d"
+    },
+    {
+      "path": "food_lime_01.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/food_lime_01/food_lime_01.bin",
+      "size_bytes": 188600,
+      "api_md5": "6f5d8d5d07cc03d1a59b29bf3d85e977",
+      "sha256": "a504f452f8f94c3017e46e03851c4941efed4f5f4020afa3945fdf824d47aa8a"
+    },
+    {
+      "path": "textures/food_lime_01_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/food_lime_01/food_lime_01_diff_1k.jpg",
+      "size_bytes": 150868,
+      "api_md5": "c7499db31a1fec41e0378956dc2d65a2",
+      "sha256": "7091c1a130c317f13ff6c43c60b13d23b3303b687c90845f2d9d87e5bc043cc3"
+    }
+  ]
+}

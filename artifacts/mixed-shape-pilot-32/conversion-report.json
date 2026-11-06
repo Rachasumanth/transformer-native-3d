@@ -1,0 +1,62 @@
+{
+  "scope": "Small shape-only pilot; rigs and materials omitted; prior inspected assets, not a curated corpus",
+  "grid": 32,
+  "assets": [
+    {
+      "asset": "Corgi",
+      "voxels": 4253,
+      "faces": 508,
+      "prepared_sha256": "5fa6c3e89c08d32e0764b7d13055e14d8c5be3062f616f2038bcb5759613464c",
+      "source_sha256": "95cd2c4d53d70ee9dd2e1329dcb6de7d4a725301d504a4f2f00ecb34dc1a0851",
+      "center": [
+        0.0,
+        197.43458746354756,
+        20.507171320396125
+      ],
+      "scale": 0.0022657471547687636,
+      "seconds": 8.221034648000568
+    },
+    {
+      "asset": "Bat",
+      "voxels": 1480,
+      "faces": 376,
+      "prepared_sha256": "4164045b5bc560b40ac8959dd611390fe3f781de2e37e07cad752fdedd02163f",
+      "source_sha256": "1a4317609094c64d3f751adb9150df628aaf7902f7440174afcb642c30e0e072",
+      "center": [
+        1.52587890625e-05,
+        250.736113835135,
+        4.238469012650498
+      ],
+      "scale": 0.0014729457115015335,
+      "seconds": 2.7308672729996033
+    },
+    {
+      "asset": "Shark",
+      "voxels": 1618,
+      "faces": 286,
+      "prepared_sha256": "c00307fc391090abc895fa5f20198aa202ac331309eca7e1d392f01e1361d43a",
+      "source_sha256": "0fc450c99f0fd9f2e5d774ef58cd42b8d8d927bed138444254204b366595dc42",
+      "center": [
+        0.0,
+        257.54416273655755,
+        -28.444392919620327
+      ],
+      "scale": 0.0014445613022860862,
+      "seconds": 3.910244724000222
+    },
+    {
+      "asset": "RiggedFigure",
+      "voxels": 918,
+      "faces": 256,
+      "prepared_sha256": "f90ee720ec7e67ffb38b6a713ffa4faa380270877a9094bc985970169ae1db4e",
+      "source_sha256": "d6be85417d3e256861ee733eea6916093a7af7c79c16366181fd8abcaeb38cf5",
+      "center": [
+        2.1688586482326855e-08,
+        0.724959918077254,
+        0.03202974489869451
+      ],
+      "scale": 0.6896932277073022,
+      "seconds": 1.6962635189993307
+    }
+  ]
+}

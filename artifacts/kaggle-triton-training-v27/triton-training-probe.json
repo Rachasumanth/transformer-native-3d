@@ -1,0 +1,69 @@
+{
+  "scope": "Three paired stochastic updates and checkpoint resume on one 16-cubed prepared asset; no trained model quality claim",
+  "device": "Tesla T4",
+  "manifest_sha256": "5aeb39db4177ceb91a89bf4d793a01aa8bb9630ee6bff5cc362f279aa4428dbb",
+  "rows": [
+    {
+      "step": 1,
+      "reference": {
+        "total": 1.7109813690185547,
+        "attribute": 1.0315605401992798,
+        "occupancy": 0.6794208884239197,
+        "kl": 0.005027280189096928
+      },
+      "experimental": {
+        "total": 1.7109813690185547,
+        "attribute": 1.0315605401992798,
+        "occupancy": 0.6794208884239197,
+        "kl": 0.005027280189096928
+      },
+      "max_parameter_error": 2.9802322387695312e-08
+    },
+    {
+      "step": 2,
+      "reference": {
+        "total": 1.9600715637207031,
+        "attribute": 1.2790106534957886,
+        "occupancy": 0.6810609102249146,
+        "kl": 0.005148708820343018
+      },
+      "experimental": {
+        "total": 1.9600715637207031,
+        "attribute": 1.2790106534957886,
+        "occupancy": 0.6810609102249146,
+        "kl": 0.005148709751665592
+      },
+      "max_parameter_error": 2.9802322387695312e-08
+    },
+    {
+      "step": 3,
+      "reference": {
+        "total": 2.0956859588623047,
+        "attribute": 1.386143684387207,
+        "occupancy": 0.7095422744750977,
+        "kl": 0.005075640976428986
+      },
+      "experimental": {
+        "total": 2.0956859588623047,
+        "attribute": 1.386143684387207,
+        "occupancy": 0.7095422744750977,
+        "kl": 0.005075640976428986
+      },
+      "max_parameter_error": 2.9802322387695312e-08
+    }
+  ],
+  "resume_expected": {
+    "total": 2.061002731323242,
+    "attribute": 1.3653974533081055,
+    "occupancy": 0.6956051588058472,
+    "kl": 0.00498894602060318
+  },
+  "resume_actual": {
+    "total": 2.061002731323242,
+    "attribute": 1.3653974533081055,
+    "occupancy": 0.6956051588058472,
+    "kl": 0.00498894602060318
+  },
+  "restored_backend": "triton",
+  "source_sha256": "b8d7ecc5107355532966534865c3d6f7c6ac37d66c199dcb37dc9ac9e76c3009"
+}

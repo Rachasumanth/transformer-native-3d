@@ -1,0 +1,76 @@
+{
+  "source_sha256": "1519d5a19e540294aab6e4e24edc2b6ac2f3224fe05575e14fe334cef437f824",
+  "dependencies": {
+    "FlexGEMM": [
+      "https://github.com/JeffreyXiang/FlexGEMM.git",
+      "6dd94a859c26ee8246888502eada3dd8ad85532e"
+    ],
+    "nvdiffrast": [
+      "https://github.com/NVlabs/nvdiffrast.git",
+      "253ac4fcea7de5f396371124af597e6cc957bfae"
+    ]
+  },
+  "device": "Tesla T4",
+  "affine_sampling_passed": true,
+  "valid_texels": 15624,
+  "valid_texel_max_error": 2.384185791015625e-07,
+  "full_atlas_max_error": 2.384185791015625e-07,
+  "gradient_baking_max_error": 0.0,
+  "raster_chunk_parity_passed": true,
+  "glb_bytes": 14392,
+  "glb_faces": 186,
+  "alpha_mode": "BLEND",
+  "cli_audit": {
+    "device": "cuda:0",
+    "device_name": "Tesla T4",
+    "active_voxels": 152,
+    "extracted_faces": 300,
+    "uv_faces": 200,
+    "stages": [
+      {
+        "stage": "input",
+        "vertices": 152,
+        "faces": 300
+      },
+      {
+        "stage": "initial_holes",
+        "vertices": 152,
+        "faces": 300
+      },
+      {
+        "stage": "coarse",
+        "vertices": 152,
+        "faces": 300
+      },
+      {
+        "stage": "final",
+        "vertices": 102,
+        "faces": 200
+      }
+    ],
+    "texture_size": 128,
+    "valid_texels": 15624,
+    "source_up": "z",
+    "alpha_mode": "BLEND",
+    "remesh": false,
+    "total_seconds": 2.125548971999933,
+    "glb_bytes": 10048,
+    "glb_sha256": "5bc6d4cd7f982221e6ea96b70e7e5ee6da95c5cfcbabe9c78fff1dc021f4576d",
+    "input_sha256": "69f0ff9a4b608123fb5e9e51fb7af9d67578a6c87967b0f4a3212f0d1586a32e",
+    "bpt_token_count": 0,
+    "geometry_track": "raw Track A"
+  },
+  "cli_closed_outward_topology": {
+    "components": [
+      {
+        "faces": 200,
+        "closed": true,
+        "signed_volume": 0.2157055378857251,
+        "flipped_faces": 0
+      }
+    ],
+    "flipped_faces": 0,
+    "outward_closed_components": true
+  },
+  "scope": "analytic cube, constant sparse PBR and independent affine sampler oracle; no rendered fidelity claim"
+}

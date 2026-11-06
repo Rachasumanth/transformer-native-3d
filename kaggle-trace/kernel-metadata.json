@@ -1,0 +1,18 @@
+{
+  "id": "sumu143/transformer-native-3d-decoder-trace",
+  "title": "Transformer Native 3D Decoder Trace",
+  "code_file": "decoder-trace.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "sumu143/transformer-native-3d-pilot",
+    "sumu143/transformer-native-3d-trace-checkpoints"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "space-kit/terrain-ramplarge",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/space-kit/terrain-ramplarge.glb",
+  "sha256": "4655300cfdfb74242437010f45818ed953a368b5d2ca7524b0f80875ba14af2f",
+  "bytes": 2232,
+  "group": "space-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/space-kit"
+}

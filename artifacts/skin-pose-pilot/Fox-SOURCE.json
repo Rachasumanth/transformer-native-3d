@@ -1,0 +1,24 @@
+{
+  "urls": {
+    "README.md": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Fox/README.md",
+    "Fox.glb": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Fox/glTF-Binary/Fox.glb"
+  },
+  "sha256": {
+    "README.md": "cf767a7943b12f3af0ea14a1b18947a45ed7a03c3e722678df33854d97df0f88",
+    "Fox.glb": "d97044e701822bac5a62696459b27d7b375aada5de8574ed4362edbba94771f7"
+  },
+  "bytes": 162852,
+  "joint_counts": [
+    24
+  ],
+  "animations": 3,
+  "primitive_attributes": [
+    [
+      "JOINTS_0",
+      "POSITION",
+      "TEXCOORD_0",
+      "WEIGHTS_0"
+    ]
+  ],
+  "extensions_required": []
+}

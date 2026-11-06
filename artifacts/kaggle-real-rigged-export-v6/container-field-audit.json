@@ -1,0 +1,31 @@
+{
+  "container_sha256": "267ac514202dc843b1a249bafeb620e4b37236d97e4763d8a043a2e5bae60fa2",
+  "source_glb_sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401",
+  "curve": "z",
+  "grid_size": [
+    32,
+    32,
+    32
+  ],
+  "active_voxels": 584,
+  "skeleton_field_shape": [
+    584,
+    6
+  ],
+  "skin_embedding_shape": [
+    584,
+    4
+  ],
+  "cluster_tolerance": 0.0078125,
+  "inferred_joint_count": 2,
+  "inferred_parent_ids_in_source_order": [
+    -1,
+    0
+  ],
+  "source_parent_ids": [
+    -1,
+    0
+  ],
+  "parent_hierarchy_matches": true,
+  "max_joint_position_error": 3.369716894629764e-05
+}

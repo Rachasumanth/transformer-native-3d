@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/crops-dirtsingle",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/crops-dirtsingle.glb",
+  "sha256": "6d9df48fa8b691a949c053f56977e1134cd917ec7c8a936612d7fa1978dcce1d",
+  "bytes": 4196,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

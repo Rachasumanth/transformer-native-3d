@@ -1,0 +1,19 @@
+{
+  "RiggedSimple": {
+    "exact_duplicate_joint_input_groups": [],
+    "mean_kl_lower_bound_from_equal_logits": 0.0
+  },
+  "CesiumMan": {
+    "exact_duplicate_joint_input_groups": [],
+    "mean_kl_lower_bound_from_equal_logits": 0.0
+  },
+  "Fox": {
+    "exact_duplicate_joint_input_groups": [
+      [
+        0,
+        1
+      ]
+    ],
+    "mean_kl_lower_bound_from_equal_logits": 0.0
+  }
+}

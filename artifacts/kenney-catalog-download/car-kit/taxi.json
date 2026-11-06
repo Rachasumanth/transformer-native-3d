@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/taxi",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/taxi.glb",
+  "sha256": "c0ead3df92617dbca425e522003e80777cffc5f8987f664abab1363ff786704c",
+  "bytes": 187896,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

@@ -1,0 +1,112 @@
+{
+  "source_sha256": "51c6f2f6517c996a45f6fe64144468c40f2da9eb8129c23d928b2bb0f90017c1",
+  "checkpoint_sha256": "0fc7ae8510aa7a74995dca1e6955b240091b083b031230eca2f3afe04781d399",
+  "scope": "Independent decode, saved mesh parity, topology and sampled distance to cleaned quantized target",
+  "samples_per_direction": 256,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "fscore_tolerance": 0.01,
+  "limitations": "Sampling does not prove all-surface or sharp-feature fidelity; context-limit outputs are incomplete regardless of decodability",
+  "cases": {
+    "Avocado": {
+      "tokens": 15604,
+      "token_sha256": "1aa48a8650e4640da2257508e8bdb5d55b83429a8bdd40dad278e17d7fa39251",
+      "stop_reason": "context_limit",
+      "decodable": false,
+      "reason": "Truncated block/offset pair"
+    },
+    "Box": {
+      "tokens": 12907,
+      "token_sha256": "a8a20a8cb77f7526b93f6b89917585106aad92ad114961984538c4638d9a3216",
+      "stop_reason": "eos",
+      "decodable": true,
+      "vertices": 3412,
+      "faces": 7174,
+      "zero_area_faces": 0,
+      "duplicate_unoriented_faces": 446,
+      "sampled_target_comparison": [
+        {
+          "mean_distance": 0.20681990843027068,
+          "fscore": 0.0,
+          "boundary_edges": 5744,
+          "nonmanifold_edges": 835
+        },
+        {
+          "mean_distance": 0.20351799039323396,
+          "fscore": 0.0,
+          "boundary_edges": 5744,
+          "nonmanifold_edges": 835
+        },
+        {
+          "mean_distance": 0.2099265957030187,
+          "fscore": 0.0,
+          "boundary_edges": 5744,
+          "nonmanifold_edges": 835
+        }
+      ]
+    },
+    "Duck": {
+      "tokens": 15604,
+      "token_sha256": "35ffe773cc44eb197ddf28ca43c276cfe0404ec7ac2db2119f580ce5b10e19ea",
+      "stop_reason": "context_limit",
+      "decodable": true,
+      "vertices": 4299,
+      "faces": 8802,
+      "zero_area_faces": 0,
+      "duplicate_unoriented_faces": 464,
+      "sampled_target_comparison": [
+        {
+          "mean_distance": 0.0662520633495686,
+          "fscore": 0.09672004132231404,
+          "boundary_edges": 7235,
+          "nonmanifold_edges": 963
+        },
+        {
+          "mean_distance": 0.06348517646716648,
+          "fscore": 0.14688740079365079,
+          "boundary_edges": 7235,
+          "nonmanifold_edges": 963
+        },
+        {
+          "mean_distance": 0.06686550241820119,
+          "fscore": 0.15686515748031496,
+          "boundary_edges": 7235,
+          "nonmanifold_edges": 963
+        }
+      ]
+    },
+    "FoodLime": {
+      "tokens": 10088,
+      "token_sha256": "e297b2fdcfee7d6f600a4d3ca7033ae3bf10a32a39292231db681620e6dc5132",
+      "stop_reason": "eos",
+      "decodable": true,
+      "vertices": 2689,
+      "faces": 5560,
+      "zero_area_faces": 0,
+      "duplicate_unoriented_faces": 392,
+      "sampled_target_comparison": [
+        {
+          "mean_distance": 0.0730284939536295,
+          "fscore": 0.1469678217821782,
+          "boundary_edges": 4360,
+          "nonmanifold_edges": 699
+        },
+        {
+          "mean_distance": 0.07484219013652839,
+          "fscore": 0.09698275862068965,
+          "boundary_edges": 4360,
+          "nonmanifold_edges": 699
+        },
+        {
+          "mean_distance": 0.07734040532982123,
+          "fscore": 0.09925063775510204,
+          "boundary_edges": 4360,
+          "nonmanifold_edges": 699
+        }
+      ]
+    }
+  }
+}

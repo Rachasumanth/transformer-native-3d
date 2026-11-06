@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/wheel-tractor-back",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/wheel-tractor-back.glb",
+  "sha256": "149a8c575673f6be47d36d5065a2eeefef70896119cab62a3a75185d55540f3f",
+  "bytes": 49024,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

@@ -1,0 +1,117 @@
+{
+  "scope": "Track B exploratory locality and entropy; local BPT profile",
+  "definitions": {
+    "compression_ratio": "BPT token count / (9 * source face count)",
+    "ptme": "sum over token types of -count/raw-coordinate-count * log2(empirical token probability); bits per raw coordinate",
+    "avd": "mean, over emitted vertex occurrences with a full t-vertex history, of Euclidean distances to all previous t emitted vertex occurrences; dequantized coordinates in [-0.5, 0.5]"
+  },
+  "cases": [
+    {
+      "asset": "Box",
+      "provenance": "CC-BY 4.0 Khronos simple source control",
+      "source_faces_before_cleanup": 12,
+      "faces": 12,
+      "faces_removed": 0,
+      "tokens": 36,
+      "raw_coordinate_tokens": 108,
+      "compression_ratio": 0.3333333333333333,
+      "sequence_reduction": 0.6666666666666667,
+      "empirical_ptme_bits_per_raw_coordinate": 1.3064606485487904,
+      "avd_mean_distance_previous_vertices_by_context": {
+        "5": 1.1640898393901042,
+        "25": null,
+        "50": null
+      },
+      "emitted_vertex_occurrences": 18,
+      "unique_decoded_vertices": 8,
+      "bpt_patch_count": 3
+    },
+    {
+      "asset": "planar-grid",
+      "provenance": "synthetic open-surface fixture",
+      "source_faces_before_cleanup": 8192,
+      "faces": 8192,
+      "faces_removed": 0,
+      "tokens": 15888,
+      "raw_coordinate_tokens": 73728,
+      "compression_ratio": 0.21549479166666666,
+      "sequence_reduction": 0.7845052083333334,
+      "empirical_ptme_bits_per_raw_coordinate": 1.5143829643541629,
+      "avd_mean_distance_previous_vertices_by_context": {
+        "5": 0.03990798484945224,
+        "25": 0.0966165099602499,
+        "50": 0.16414357231248125
+      },
+      "emitted_vertex_occurrences": 12352,
+      "unique_decoded_vertices": 4225,
+      "bpt_patch_count": 2080
+    },
+    {
+      "asset": "icosphere",
+      "provenance": "synthetic closed-surface fixture",
+      "source_faces_before_cleanup": 20480,
+      "faces": 20480,
+      "faces_removed": 0,
+      "tokens": 35996,
+      "raw_coordinate_tokens": 184320,
+      "compression_ratio": 0.19529079861111112,
+      "sequence_reduction": 0.8047092013888889,
+      "empirical_ptme_bits_per_raw_coordinate": 2.293260954057226,
+      "avd_mean_distance_previous_vertices_by_context": {
+        "5": 0.2139146898662943,
+        "25": 0.3363758114756878,
+        "50": 0.3810857215533186
+      },
+      "emitted_vertex_occurrences": 27582,
+      "unique_decoded_vertices": 10242,
+      "bpt_patch_count": 3551
+    },
+    {
+      "asset": "Avocado",
+      "provenance": "CC0 Khronos source after removing one 128-bin-degenerate face, safe under 24 rotations",
+      "source_faces_before_cleanup": 682,
+      "faces": 681,
+      "faces_removed": 1,
+      "tokens": 1550,
+      "raw_coordinate_tokens": 6129,
+      "compression_ratio": 0.25289606787404145,
+      "sequence_reduction": 0.7471039321259585,
+      "empirical_ptme_bits_per_raw_coordinate": 2.1810373316240534,
+      "avd_mean_distance_previous_vertices_by_context": {
+        "5": 0.207353777384295,
+        "25": 0.350742138181899,
+        "50": 0.39417561049880756
+      },
+      "emitted_vertex_occurrences": 965,
+      "unique_decoded_vertices": 363,
+      "bpt_patch_count": 142
+    },
+    {
+      "asset": "PolyHaven_food_lime_01",
+      "provenance": "CC0 Poly Haven source after explicit 24-rotation quantization cleanup",
+      "source_faces_before_cleanup": 8100,
+      "faces": 7949,
+      "faces_removed": 151,
+      "tokens": 15603,
+      "raw_coordinate_tokens": 71541,
+      "compression_ratio": 0.21809871262632616,
+      "sequence_reduction": 0.7819012873736738,
+      "empirical_ptme_bits_per_raw_coordinate": 2.423733619116751,
+      "avd_mean_distance_previous_vertices_by_context": {
+        "5": 0.12397861276734433,
+        "25": 0.2876418005398955,
+        "50": 0.39214111522512035
+      },
+      "emitted_vertex_occurrences": 11345,
+      "unique_decoded_vertices": 3992,
+      "bpt_patch_count": 1698
+    }
+  ],
+  "mixed_fixture_aggregate": {
+    "case_count": 5,
+    "empirical_ptme_bits_per_raw_coordinate": 2.3515464102284733,
+    "compression_ratio": 0.2056809180944894,
+    "provenance": "exploratory mixed fixtures; not a representative corpus"
+  },
+  "fragmentation_note": "Center-token patch counts are reported; comparison with EdgeRunner subsequence counts is not validated."
+}

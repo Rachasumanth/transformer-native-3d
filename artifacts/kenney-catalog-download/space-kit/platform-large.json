@@ -1,0 +1,10 @@
+{
+  "id": "space-kit/platform-large",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/space-kit/platform-large.glb",
+  "sha256": "aa1fba20818bc1d623953794146d9f9ff0e0f025463b013e325b373deb9be6c4",
+  "bytes": 6272,
+  "group": "space-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/space-kit"
+}

@@ -1,0 +1,134 @@
+{
+  "source_sha256": "a7bfe7d666746200ba0853a66d87b6b7ab10f4964295f41c345ec74b9ab3b762",
+  "dependencies": {
+    "CuMesh": [
+      "https://github.com/JeffreyXiang/CuMesh.git",
+      "12289e1062f0603f2f0d0771b02e1395d247f26f"
+    ],
+    "FlexGEMM": [
+      "https://github.com/JeffreyXiang/FlexGEMM.git",
+      "6dd94a859c26ee8246888502eada3dd8ad85532e"
+    ],
+    "nvdiffrast": [
+      "https://github.com/NVlabs/nvdiffrast.git",
+      "253ac4fcea7de5f396371124af597e6cc957bfae"
+    ]
+  },
+  "device": "Tesla T4",
+  "affine_sampling_passed": true,
+  "valid_texels": 15624,
+  "valid_texel_max_error": 2.384185791015625e-07,
+  "full_atlas_max_error": 2.384185791015625e-07,
+  "gradient_baking_max_error": 0.0,
+  "raster_chunk_parity_passed": true,
+  "glb_bytes": 14372,
+  "glb_faces": 186,
+  "alpha_mode": "BLEND",
+  "cli_audit": {
+    "device": "cuda:0",
+    "device_name": "Tesla T4",
+    "active_voxels": 152,
+    "extracted_faces": 300,
+    "uv_faces": 200,
+    "stages": [
+      {
+        "stage": "input",
+        "vertices": 152,
+        "faces": 300
+      },
+      {
+        "stage": "initial_holes",
+        "vertices": 152,
+        "faces": 300
+      },
+      {
+        "stage": "coarse",
+        "vertices": 152,
+        "faces": 300
+      },
+      {
+        "stage": "final",
+        "vertices": 102,
+        "faces": 200
+      }
+    ],
+    "texture_size": 128,
+    "valid_texels": 15624,
+    "source_up": "z",
+    "alpha_mode": "BLEND",
+    "remesh": false,
+    "skinned": false,
+    "joint_count": 0,
+    "skinae_checkpoint_sha256": null,
+    "joint_tolerance": null,
+    "total_seconds": 2.3688061440000183,
+    "glb_bytes": 10028,
+    "glb_sha256": "6d7c0ad03756adc6a77c2739d3ef0fa9bc2e5a04c9312ee07813cb492d0b49a0",
+    "input_sha256": "750ddaeb0ab5e85273475077fd5e411c7352a9e009e2e92505de867e988a1745",
+    "bpt_token_count": 0,
+    "geometry_track": "raw Track A"
+  },
+  "cli_closed_outward_topology": {
+    "components": [
+      {
+        "faces": 200,
+        "closed": true,
+        "signed_volume": 0.21570347027199924,
+        "flipped_faces": 0
+      }
+    ],
+    "flipped_faces": 0,
+    "outward_closed_components": true
+  },
+  "rigged_cli": {
+    "audit": {
+      "device": "cuda:0",
+      "device_name": "Tesla T4",
+      "active_voxels": 152,
+      "extracted_faces": 300,
+      "uv_faces": 186,
+      "stages": [
+        {
+          "stage": "input",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "initial_holes",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "coarse",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "final",
+          "vertices": 95,
+          "faces": 186
+        }
+      ],
+      "texture_size": 128,
+      "valid_texels": 15624,
+      "source_up": "z",
+      "alpha_mode": "BLEND",
+      "remesh": false,
+      "skinned": true,
+      "joint_count": 3,
+      "skinae_checkpoint_sha256": "f73a7be776b6ac653f2e248d78307eeddea833ea0c5284011e7a92bf2543e9eb",
+      "joint_tolerance": 1e-06,
+      "total_seconds": 0.2561785449997842,
+      "glb_bytes": 18436,
+      "glb_sha256": "211dd7c94799dd2bdf54ae3b4fc5fd38a86c8bbc916182fcf281f2b0c6645e19"
+    },
+    "vertices": 149,
+    "faces": 186,
+    "joint_count": 3,
+    "maximum_weight_sum_error": 0.0,
+    "glb_bytes": 18436,
+    "glb_sha256": "211dd7c94799dd2bdf54ae3b4fc5fd38a86c8bbc916182fcf281f2b0c6645e19",
+    "scope": "Synthetic skinned cube through extraction, CuMesh cleanup/UV, PBR bake, SkinAE decode and GLB reload; no source-rig quality claim"
+  },
+  "scope": "analytic cube, constant sparse PBR and independent affine sampler oracle; no rendered fidelity claim"
+}

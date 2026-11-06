@@ -1,0 +1,30 @@
+{
+  "scope": "Single CesiumMan reconstructed export; asset used for checkpoint selection; surface metrics are not rendered quality",
+  "baseline": {
+    "retargeted_mean_distance": 0.017868058613024443,
+    "retargeted_fscore": 0.6032245100921685,
+    "oracle_weight_mean_distance": 0.0005171224973791475,
+    "oracle_weight_fscore": 1.0,
+    "rest_mean_distance": 0.051795804413683574,
+    "mean_distance_improvement": 0.03392774580065914,
+    "max_export_roundtrip_vertex_difference": 3.2536886271916643e-06,
+    "roundtrip_invalid_times": [],
+    "roundtrip_mean_distance": 0.01786765903990006,
+    "roundtrip_fscore": 0.6032245100921685
+  },
+  "candidate": {
+    "retargeted_mean_distance": 0.01648529999263626,
+    "retargeted_fscore": 0.6451153917042183,
+    "oracle_weight_mean_distance": 0.000524485431391064,
+    "oracle_weight_fscore": 1.0,
+    "rest_mean_distance": 0.05145737406840543,
+    "mean_distance_improvement": 0.034972074075769174,
+    "max_export_roundtrip_vertex_difference": 3.3844149666256707e-06,
+    "roundtrip_invalid_times": [],
+    "roundtrip_mean_distance": 0.01648578871786697,
+    "roundtrip_fscore": 0.6451153917042183
+  },
+  "candidate_valid": true,
+  "baseline_sha256": "52bebe3dc8c2675e028124bbd43d62db294f9661e9015f3953833fce62f6bff3",
+  "candidate_sha256": "16b15f7debd4f75cf933801d78635555e9c2ff0ca1a90784b327b3c9f194e5bf"
+}

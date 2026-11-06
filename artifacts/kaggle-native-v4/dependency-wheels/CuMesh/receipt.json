@@ -1,0 +1,14 @@
+{
+  "name": "CuMesh",
+  "url": "https://github.com/JeffreyXiang/CuMesh.git",
+  "commit": "12289e1062f0603f2f0d0771b02e1395d247f26f",
+  "wheel": "cumesh-0.0.1-cp313-cp313-linux_x86_64.whl",
+  "sha256": "dc7721f6c8954b48341924b205610081b8a3d44ff0c9cfa2529d7444f9812b09",
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "cxx11_abi": true,
+  "architectures": "7.5",
+  "max_jobs": "2",
+  "reused_from": "/kaggle/input/transformer-native-3d-cuda-wheels-cu130/cumesh-0.0.1-cp313-cp313-linux_x86_64.whl"
+}

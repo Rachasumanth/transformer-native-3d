@@ -1,0 +1,348 @@
+{
+  "scope": "Single training asset, 5 fixed noises, 200-step checkpoints; raw vs filled-predicted-shell masked skeleton; not generalization or quality benchmark",
+  "device": "Tesla T4",
+  "data_sha256": "7c5321ee9080f447fa31928e47a5b7f1a8560fdd2917de0225de1ef521b2e387",
+  "rows": [
+    {
+      "model": "position-baseline",
+      "seed": 4301,
+      "shape_voxels": 115,
+      "raw_skeleton": {
+        "predicted": 16,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_skeleton": {
+        "predicted": 2,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 14,
+      "target_outside_mask": 34
+    },
+    {
+      "model": "position-baseline",
+      "seed": 4302,
+      "shape_voxels": 100,
+      "raw_skeleton": {
+        "predicted": 19,
+        "intersection": 1,
+        "iou": 0.017543859649122806
+      },
+      "masked_skeleton": {
+        "predicted": 3,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 16,
+      "target_outside_mask": 34
+    },
+    {
+      "model": "position-baseline",
+      "seed": 4303,
+      "shape_voxels": 113,
+      "raw_skeleton": {
+        "predicted": 19,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_skeleton": {
+        "predicted": 3,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 16,
+      "target_outside_mask": 37
+    },
+    {
+      "model": "position-baseline",
+      "seed": 4304,
+      "shape_voxels": 125,
+      "raw_skeleton": {
+        "predicted": 15,
+        "intersection": 1,
+        "iou": 0.018867924528301886
+      },
+      "masked_skeleton": {
+        "predicted": 2,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 13,
+      "target_outside_mask": 36
+    },
+    {
+      "model": "position-baseline",
+      "seed": 4305,
+      "shape_voxels": 153,
+      "raw_skeleton": {
+        "predicted": 12,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_skeleton": {
+        "predicted": 4,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 8,
+      "target_outside_mask": 36
+    },
+    {
+      "model": "position-absolute",
+      "seed": 4301,
+      "shape_voxels": 104,
+      "raw_skeleton": {
+        "predicted": 23,
+        "intersection": 1,
+        "iou": 0.01639344262295082
+      },
+      "masked_skeleton": {
+        "predicted": 5,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 18,
+      "target_outside_mask": 37
+    },
+    {
+      "model": "position-absolute",
+      "seed": 4302,
+      "shape_voxels": 93,
+      "raw_skeleton": {
+        "predicted": 22,
+        "intersection": 1,
+        "iou": 0.016666666666666666
+      },
+      "masked_skeleton": {
+        "predicted": 4,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 18,
+      "target_outside_mask": 34
+    },
+    {
+      "model": "position-absolute",
+      "seed": 4303,
+      "shape_voxels": 101,
+      "raw_skeleton": {
+        "predicted": 20,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_skeleton": {
+        "predicted": 5,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 15,
+      "target_outside_mask": 39
+    },
+    {
+      "model": "position-absolute",
+      "seed": 4304,
+      "shape_voxels": 106,
+      "raw_skeleton": {
+        "predicted": 22,
+        "intersection": 1,
+        "iou": 0.016666666666666666
+      },
+      "masked_skeleton": {
+        "predicted": 3,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 19,
+      "target_outside_mask": 39
+    },
+    {
+      "model": "position-absolute",
+      "seed": 4305,
+      "shape_voxels": 134,
+      "raw_skeleton": {
+        "predicted": 14,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_skeleton": {
+        "predicted": 4,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 10,
+      "target_outside_mask": 38
+    },
+    {
+      "model": "foreground-baseline",
+      "seed": 4301,
+      "shape_voxels": 115,
+      "raw_skeleton": {
+        "predicted": 16,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_skeleton": {
+        "predicted": 2,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 14,
+      "target_outside_mask": 34
+    },
+    {
+      "model": "foreground-baseline",
+      "seed": 4302,
+      "shape_voxels": 100,
+      "raw_skeleton": {
+        "predicted": 19,
+        "intersection": 1,
+        "iou": 0.017543859649122806
+      },
+      "masked_skeleton": {
+        "predicted": 3,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 16,
+      "target_outside_mask": 34
+    },
+    {
+      "model": "foreground-baseline",
+      "seed": 4303,
+      "shape_voxels": 113,
+      "raw_skeleton": {
+        "predicted": 19,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_skeleton": {
+        "predicted": 3,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 16,
+      "target_outside_mask": 37
+    },
+    {
+      "model": "foreground-baseline",
+      "seed": 4304,
+      "shape_voxels": 125,
+      "raw_skeleton": {
+        "predicted": 15,
+        "intersection": 1,
+        "iou": 0.018867924528301886
+      },
+      "masked_skeleton": {
+        "predicted": 2,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 13,
+      "target_outside_mask": 36
+    },
+    {
+      "model": "foreground-baseline",
+      "seed": 4305,
+      "shape_voxels": 153,
+      "raw_skeleton": {
+        "predicted": 12,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_skeleton": {
+        "predicted": 4,
+        "intersection": 0,
+        "iou": 0.0
+      },
+      "masked_removed": 8,
+      "target_outside_mask": 36
+    },
+    {
+      "model": "foreground-weighted",
+      "seed": 4301,
+      "shape_voxels": 981,
+      "raw_skeleton": {
+        "predicted": 490,
+        "intersection": 20,
+        "iou": 0.03929273084479371
+      },
+      "masked_skeleton": {
+        "predicted": 429,
+        "intersection": 18,
+        "iou": 0.04
+      },
+      "masked_removed": 61,
+      "target_outside_mask": 2
+    },
+    {
+      "model": "foreground-weighted",
+      "seed": 4302,
+      "shape_voxels": 954,
+      "raw_skeleton": {
+        "predicted": 474,
+        "intersection": 15,
+        "iou": 0.030120481927710843
+      },
+      "masked_skeleton": {
+        "predicted": 432,
+        "intersection": 15,
+        "iou": 0.03289473684210526
+      },
+      "masked_removed": 42,
+      "target_outside_mask": 6
+    },
+    {
+      "model": "foreground-weighted",
+      "seed": 4303,
+      "shape_voxels": 885,
+      "raw_skeleton": {
+        "predicted": 472,
+        "intersection": 16,
+        "iou": 0.03232323232323232
+      },
+      "masked_skeleton": {
+        "predicted": 418,
+        "intersection": 16,
+        "iou": 0.036281179138321996
+      },
+      "masked_removed": 54,
+      "target_outside_mask": 3
+    },
+    {
+      "model": "foreground-weighted",
+      "seed": 4304,
+      "shape_voxels": 996,
+      "raw_skeleton": {
+        "predicted": 537,
+        "intersection": 24,
+        "iou": 0.043478260869565216
+      },
+      "masked_skeleton": {
+        "predicted": 482,
+        "intersection": 24,
+        "iou": 0.0482897384305835
+      },
+      "masked_removed": 55,
+      "target_outside_mask": 8
+    },
+    {
+      "model": "foreground-weighted",
+      "seed": 4305,
+      "shape_voxels": 1059,
+      "raw_skeleton": {
+        "predicted": 537,
+        "intersection": 16,
+        "iou": 0.02857142857142857
+      },
+      "masked_skeleton": {
+        "predicted": 502,
+        "intersection": 14,
+        "iou": 0.026565464895635674
+      },
+      "masked_removed": 35,
+      "target_outside_mask": 6
+    }
+  ],
+  "source_sha256": "74c9776a87d813589369c26c3cd416ea608d82039a57e09db9d4be8c55c2eabc"
+}

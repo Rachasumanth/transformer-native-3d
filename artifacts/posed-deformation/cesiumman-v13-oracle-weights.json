@@ -1,0 +1,16 @@
+{
+  "scope": "source-projected oracle control; requires source weights",
+  "influence_audit": {
+    "max_influences": 16,
+    "max_influences_before": 7,
+    "max_influences_after": 7,
+    "truncated_rows": 528,
+    "mean_discarded_mass": 1.1119307681256908e-17,
+    "maximum_discarded_mass": 3.3306690738754696e-16,
+    "maximum_row_sum_error": 3.3306690738754696e-16,
+    "vertex_count": 5851,
+    "joint_count": 19,
+    "skin_attribute_sets_before": 4,
+    "skin_attribute_sets_after": 2
+  }
+}

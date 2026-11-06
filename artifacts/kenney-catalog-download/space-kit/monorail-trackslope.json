@@ -1,0 +1,10 @@
+{
+  "id": "space-kit/monorail-trackslope",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/space-kit/monorail-trackslope.glb",
+  "sha256": "f6e10b5621c9caf2cc7b04d8b7d822a5e92e0d0bf0f25e417b38a3cd6498dbcb",
+  "bytes": 3764,
+  "group": "space-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/space-kit"
+}

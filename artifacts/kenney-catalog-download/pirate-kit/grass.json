@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/grass",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/grass.glb",
+  "sha256": "e75377a6d752be0e35e119714aed9b891020acb4b1957efec1bd63bbcb34d567",
+  "bytes": 19056,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

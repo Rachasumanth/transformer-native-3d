@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/sausage-half",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/sausage-half.glb",
+  "sha256": "0f9a42cb4845b6c4c70c66473ac42effc07dd5c360caa1d358f65233ce2281bc",
+  "bytes": 19596,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

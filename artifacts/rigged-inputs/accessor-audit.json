@@ -1,0 +1,26 @@
+{
+  "RiggedSimple": [
+    {
+      "vertices": 160,
+      "joints": 2,
+      "maximum_normalization_correction": 2.9802322387695312e-08,
+      "max_influences": 2
+    }
+  ],
+  "CesiumMan": [
+    {
+      "vertices": 3273,
+      "joints": 19,
+      "maximum_normalization_correction": 8.940696716308594e-08,
+      "max_influences": 4
+    }
+  ],
+  "Fox": [
+    {
+      "vertices": 1728,
+      "joints": 24,
+      "maximum_normalization_correction": 5.960464477539063e-08,
+      "max_influences": 4
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "scope": "Training pose corpus source weights; surface sample counts, not model predictions or deformation quality",
+  "assets": [
+    {
+      "asset": "RiggedSimple",
+      "vertices": 1024,
+      "joints": 2,
+      "mean_nonzero_gt_1e-4": 1.8935546875,
+      "fraction_top1_mass_ge_99pct": 0.12890625,
+      "mean_discarded_mass_top1": 0.16422896087169647,
+      "mean_discarded_mass_top2": 0.0,
+      "mean_discarded_mass_top3": 0.0,
+      "mean_discarded_mass_top4": 0.0
+    },
+    {
+      "asset": "CesiumMan",
+      "vertices": 1024,
+      "joints": 19,
+      "mean_nonzero_gt_1e-4": 3.38671875,
+      "fraction_top1_mass_ge_99pct": 0.0595703125,
+      "mean_discarded_mass_top1": 0.24551361799240112,
+      "mean_discarded_mass_top2": 0.06235892325639725,
+      "mean_discarded_mass_top3": 0.014528108760714531,
+      "mean_discarded_mass_top4": 0.0016478928737342358
+    },
+    {
+      "asset": "Fox",
+      "vertices": 1024,
+      "joints": 24,
+      "mean_nonzero_gt_1e-4": 2.3818359375,
+      "fraction_top1_mass_ge_99pct": 0.2041015625,
+      "mean_discarded_mass_top1": 0.2559526264667511,
+      "mean_discarded_mass_top2": 0.05197151005268097,
+      "mean_discarded_mass_top3": 0.002265344839543104,
+      "mean_discarded_mass_top4": 2.735760062932968e-09
+    }
+  ]
+}

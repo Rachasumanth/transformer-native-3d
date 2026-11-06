@@ -1,0 +1,51 @@
+{
+  "source": "Poly Haven public API",
+  "asset_id": "metal_toolbox",
+  "asset_name": "Metal Toolbox",
+  "authors": [
+    "Mateusz Sadek"
+  ],
+  "polycount_reported": 14228,
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "asset_page": "https://polyhaven.com/a/metal_toolbox",
+  "model_resolution": "1k glTF geometry/material references; included 1k textures",
+  "source_model_hash": "df0982cb97ade9651921bf5d76047a33a388118a",
+  "files": [
+    {
+      "path": "metal_toolbox_1k.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/metal_toolbox/metal_toolbox_1k.gltf",
+      "size_bytes": 10717,
+      "api_md5": "bffa3fc13c4599e731df432257f11e3a",
+      "sha256": "9b8d240f1e41e83119771a063e4f4b4bb9ddfefd47f9f5baeda998107aa135c5"
+    },
+    {
+      "path": "textures/metal_toolbox_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/metal_toolbox/metal_toolbox_nor_gl_1k.jpg",
+      "size_bytes": 572273,
+      "api_md5": "3e06f4331bd197819713b359af2b3eec",
+      "sha256": "7ba19a233bcfff9c3d95b62c3a992c8e19cb2d6355c98d6e12bdc756a8af44cf"
+    },
+    {
+      "path": "textures/metal_toolbox_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/metal_toolbox/metal_toolbox_diff_1k.jpg",
+      "size_bytes": 661804,
+      "api_md5": "63f1832b685c2e55594b6bb82739dacb",
+      "sha256": "21e1d21880e49db3fde0457d53b78a70db61234a201da9f0181dd0880b110473"
+    },
+    {
+      "path": "textures/metal_toolbox_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/metal_toolbox/metal_toolbox_arm_1k.jpg",
+      "size_bytes": 1033149,
+      "api_md5": "56cabca578fbafd172ab31b8f0a67a49",
+      "sha256": "97676b2324b105b710904b20bfdeb32bfce3c6b4ccaaf215827b37961fc22763"
+    },
+    {
+      "path": "metal_toolbox.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/metal_toolbox/metal_toolbox.bin",
+      "size_bytes": 468892,
+      "api_md5": "0a7b37a276056e8c1c714dd4af0351f9",
+      "sha256": "fe5551028e5b398c78c86911abf549010f83831c30b01593ca3eb3d8ba7ceae7"
+    }
+  ]
+}

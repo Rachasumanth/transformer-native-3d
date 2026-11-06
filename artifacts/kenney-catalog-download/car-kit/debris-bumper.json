@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/debris-bumper",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/debris-bumper.glb",
+  "sha256": "76c88ce4544153e8814795656e0539d196cfeaeeff5ad366d0f2440ae958f831",
+  "bytes": 23704,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

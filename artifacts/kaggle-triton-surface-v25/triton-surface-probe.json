@@ -1,0 +1,33 @@
+{
+  "scope": "One T4; random samples of a 64-cubed synthetic box surface; forward timing includes validation and neighbor-map construction; backward uses PyTorch; not a production benchmark",
+  "device": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "triton": "3.6.0",
+  "cases": [
+    {
+      "n": 2048,
+      "channels": 32,
+      "max_abs_error_forward_grad_features_grad_weight_grad_bias": [
+        5.364418029785156e-07,
+        2.384185791015625e-07,
+        7.62939453125e-06,
+        0.0
+      ],
+      "reference_ms": 10.663876399996752,
+      "experimental_ms": 8.422648800001298
+    },
+    {
+      "n": 9600,
+      "channels": 64,
+      "max_abs_error_forward_grad_features_grad_weight_grad_bias": [
+        1.6689300537109375e-06,
+        3.5762786865234375e-07,
+        6.103515625e-05,
+        0.0
+      ],
+      "reference_ms": 12.013849000004484,
+      "experimental_ms": 10.735716800002137
+    }
+  ],
+  "source_sha256": "8aeb0b4816e7e6475dde1e259bf660d7b22d2d1c6532fca831bf5429df134407"
+}

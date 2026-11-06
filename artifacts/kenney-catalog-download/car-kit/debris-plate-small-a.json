@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/debris-plate-small-a",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/debris-plate-small-a.glb",
+  "sha256": "5cf072c91b15885b62c2bc87c09345f1c67205ee38582220223f64582ebbc0d0",
+  "bytes": 16624,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

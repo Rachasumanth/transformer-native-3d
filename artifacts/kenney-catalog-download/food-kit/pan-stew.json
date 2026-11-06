@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/pan-stew",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/pan-stew.glb",
+  "sha256": "5e468d4e80708e534dd8748b6fd1673feeb386de8f73d01a94eef01d94a40cb7",
+  "bytes": 39052,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

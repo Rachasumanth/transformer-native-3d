@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/bag-flat",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/bag-flat.glb",
+  "sha256": "aa324fb3e9b9deac7762ac1fc9d3c1438d4bad7ff7baad0eaaaae29ae470abbd",
+  "bytes": 22024,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

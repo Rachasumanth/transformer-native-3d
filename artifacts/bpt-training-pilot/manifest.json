@@ -1,0 +1,250 @@
+{
+  "scope": "Small licensed data integration pilot; not a representative training corpus",
+  "split_policy": "Fixed by source asset before augmentation; Avocado validation, Box simple control, other accepted assets training",
+  "cleanup_policy": "Reject over 5% face deletion; otherwise explicitly filter 128-bin degeneracies/duplicates over 24 cube rotations",
+  "augmentation": "Four proper Y-axis quarter turns per accepted source; condition points match each decoded mesh",
+  "assets": [
+    {
+      "asset": "Avocado",
+      "split": "validation",
+      "source": "artifacts/native-inputs/Avocado.glb",
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "notice": "artifacts/import/avocado/SOURCE.md",
+      "source_faces": 682,
+      "retained_faces": 681,
+      "removed_fraction": 0.0014662756598240456,
+      "max_removed_fraction": 0.05,
+      "samples": [
+        {
+          "file": "Avocado-y0.npz",
+          "sha256": "68798433c165f4be19b653158203044e72b0b1c35b69c7ab93e7afea1129cd11",
+          "quarter_turns_y": 0,
+          "tokens": 1550,
+          "faces": 681,
+          "topology": {
+            "boundary_edges": 41,
+            "nonmanifold_edges": 0
+          }
+        },
+        {
+          "file": "Avocado-y1.npz",
+          "sha256": "125b559d9d7a2776435f2ad54ae7182c0b7dc79cc8d1de53cce211abdbacf0f9",
+          "quarter_turns_y": 1,
+          "tokens": 1526,
+          "faces": 681,
+          "topology": {
+            "boundary_edges": 41,
+            "nonmanifold_edges": 0
+          }
+        },
+        {
+          "file": "Avocado-y2.npz",
+          "sha256": "10c63eabb51d4b65f5e23f7df663d79cba9da74a73aa1bba655822cd6c6c6687",
+          "quarter_turns_y": 2,
+          "tokens": 1516,
+          "faces": 681,
+          "topology": {
+            "boundary_edges": 41,
+            "nonmanifold_edges": 0
+          }
+        },
+        {
+          "file": "Avocado-y3.npz",
+          "sha256": "493d5b842053e60c1196b6e64cafc3d79611c96ab2cef4a298e785d4c7108506",
+          "quarter_turns_y": 3,
+          "tokens": 1518,
+          "faces": 681,
+          "topology": {
+            "boundary_edges": 41,
+            "nonmanifold_edges": 0
+          }
+        }
+      ],
+      "status": "accepted"
+    },
+    {
+      "asset": "Box",
+      "split": "control",
+      "source": "artifacts/bpt-candidates/Box/Box.glb",
+      "source_sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e",
+      "notice": "artifacts/bpt-candidates/Box/LICENSE.md",
+      "source_faces": 12,
+      "retained_faces": 12,
+      "removed_fraction": 0.0,
+      "max_removed_fraction": 0.05,
+      "samples": [
+        {
+          "file": "Box-y0.npz",
+          "sha256": "6c0a2061ece9779ee5260134bc55cbe19c9262199b1f1322dee24b80dd6a241f",
+          "quarter_turns_y": 0,
+          "tokens": 36,
+          "faces": 12,
+          "topology": {
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0
+          }
+        },
+        {
+          "file": "Box-y1.npz",
+          "sha256": "f2ca2a42afa66dfff284248f34796e089730d91268e5985e34d4a0ff62f6dde1",
+          "quarter_turns_y": 1,
+          "tokens": 36,
+          "faces": 12,
+          "topology": {
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0
+          }
+        },
+        {
+          "file": "Box-y2.npz",
+          "sha256": "c917b7f82996ae33d67df4b422ed1b193fc6cf6bed954220bc11a799bc1d7d49",
+          "quarter_turns_y": 2,
+          "tokens": 36,
+          "faces": 12,
+          "topology": {
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0
+          }
+        },
+        {
+          "file": "Box-y3.npz",
+          "sha256": "2cc31a7394f418d9ccdd08c7acc129cd1225cf2edfb95d7265ca1be4c2370931",
+          "quarter_turns_y": 3,
+          "tokens": 36,
+          "faces": 12,
+          "topology": {
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0
+          }
+        }
+      ],
+      "status": "accepted"
+    },
+    {
+      "asset": "Duck",
+      "split": "train",
+      "source": "artifacts/bpt-candidates/Duck/Duck.glb",
+      "source_sha256": "65bf938f54d6073e619e76e007820bbf980cdc3dc0daec0d94830ffc4ae54ab5",
+      "notice": "artifacts/bpt-candidates/Duck/LICENSE.md",
+      "source_faces": 4212,
+      "retained_faces": 4096,
+      "removed_fraction": 0.02754036087369416,
+      "max_removed_fraction": 0.05,
+      "samples": [
+        {
+          "file": "Duck-y0.npz",
+          "sha256": "5455735a5b3a2659661811c96f0fc54bff9a6c20e32bf822413cc6c92ef7fe3c",
+          "quarter_turns_y": 0,
+          "tokens": 8344,
+          "faces": 4096,
+          "topology": {
+            "boundary_edges": 6,
+            "nonmanifold_edges": 4
+          }
+        },
+        {
+          "file": "Duck-y1.npz",
+          "sha256": "7799b75c0ff5931d59f2397659262d7296bf46ad2ca537a963a46d3c67298432",
+          "quarter_turns_y": 1,
+          "tokens": 8401,
+          "faces": 4096,
+          "topology": {
+            "boundary_edges": 6,
+            "nonmanifold_edges": 4
+          }
+        },
+        {
+          "file": "Duck-y2.npz",
+          "sha256": "273cf134e432393d0c5d523f3d3e4760ae7ae622a621021ae14dcd06f29d9b73",
+          "quarter_turns_y": 2,
+          "tokens": 8363,
+          "faces": 4096,
+          "topology": {
+            "boundary_edges": 6,
+            "nonmanifold_edges": 4
+          }
+        },
+        {
+          "file": "Duck-y3.npz",
+          "sha256": "a3baf434b3d6fccdb6ef0ff289a04556b06fee6b25606065dd13787f6e9041e3",
+          "quarter_turns_y": 3,
+          "tokens": 8408,
+          "faces": 4096,
+          "topology": {
+            "boundary_edges": 6,
+            "nonmanifold_edges": 4
+          }
+        }
+      ],
+      "status": "accepted"
+    },
+    {
+      "asset": "CesiumMilkTruck",
+      "split": "train",
+      "source": "artifacts/bpt-candidates/CesiumMilkTruck/CesiumMilkTruck.glb",
+      "source_sha256": "09371b34608116de5842d23abe260bf11acf3e1554daf334a647eb566eee5c49",
+      "notice": "artifacts/bpt-candidates/CesiumMilkTruck/LICENSE.md",
+      "status": "rejected",
+      "reason": "BPT static geometry preflight refuses rigged/animated GLBs",
+      "samples": []
+    },
+    {
+      "asset": "FoodLime",
+      "split": "train",
+      "source": "artifacts/bpt-candidates/PolyHaven_food_lime_01/food_lime_01_1k.gltf",
+      "source_sha256": "d0a0e452a39fdd95b50b26689857931e30cc494913f2a93a6f6bdebdee76cd85",
+      "notice": "artifacts/bpt-candidates/PolyHaven_food_lime_01/LICENSE.md",
+      "source_faces": 8100,
+      "retained_faces": 7949,
+      "removed_fraction": 0.018641975308641978,
+      "max_removed_fraction": 0.05,
+      "samples": [
+        {
+          "file": "FoodLime-y0.npz",
+          "sha256": "5d6ade431fe0b6be6ccfbc1b72117c1898e2b624b7a156475053c0134d8d6d2f",
+          "quarter_turns_y": 0,
+          "tokens": 15603,
+          "faces": 7949,
+          "topology": {
+            "boundary_edges": 95,
+            "nonmanifold_edges": 1
+          }
+        },
+        {
+          "file": "FoodLime-y1.npz",
+          "sha256": "512edfdfd7fe3728aa31b1a374c0e6ef1fe7eb1f7210f8999da6b79f037cc79b",
+          "quarter_turns_y": 1,
+          "tokens": 15544,
+          "faces": 7949,
+          "topology": {
+            "boundary_edges": 95,
+            "nonmanifold_edges": 1
+          }
+        },
+        {
+          "file": "FoodLime-y2.npz",
+          "sha256": "f82a14f2524829ca259416d02b8cb1d49c91ad89916898c22e37a5fb1893506f",
+          "quarter_turns_y": 2,
+          "tokens": 15538,
+          "faces": 7949,
+          "topology": {
+            "boundary_edges": 95,
+            "nonmanifold_edges": 1
+          }
+        },
+        {
+          "file": "FoodLime-y3.npz",
+          "sha256": "6be72588bae3f83f315b1069daa9d27b89683e7f8a5739a2029c502005dfdbf3",
+          "quarter_turns_y": 3,
+          "tokens": 15450,
+          "faces": 7949,
+          "topology": {
+            "boundary_edges": 95,
+            "nonmanifold_edges": 1
+          }
+        }
+      ],
+      "status": "accepted"
+    }
+  ]
+}

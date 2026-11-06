@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/whipped-cream",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/whipped-cream.glb",
+  "sha256": "218532c1bcc74b1e135ada1950ff0788e9dd0d4ce50be0882bb3f93647e8a6c2",
+  "bytes": 15652,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

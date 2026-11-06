@@ -1,0 +1,1 @@
+Private compiled upstream O-Voxel cache for the pinned source revision in receipt.json. Built in Kaggle native audit v2; original upstream and bundled dependency licenses apply. Source: https://github.com/microsoft/TRELLIS.2/tree/75fbf0183001ed9876c8dbb35de6b68552ee08bd/o-voxel . This is a runtime-specific build artifact, not a geometry quality result.

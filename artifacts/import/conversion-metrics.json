@@ -1,0 +1,32 @@
+{
+  "avocado": {
+    "valid": true,
+    "samples": 256,
+    "tolerance": 0.01,
+    "seed": 0,
+    "mean_distance": 0.0008617802360202588,
+    "reference_to_prediction": 0.0008617296705319299,
+    "prediction_to_reference": 0.0008618308015085878,
+    "precision": 1.0,
+    "recall": 1.0,
+    "fscore": 1.0,
+    "triangles": 1014,
+    "boundary_edges": 4,
+    "nonmanifold_edges": 28
+  },
+  "waterbottle": {
+    "valid": true,
+    "samples": 256,
+    "tolerance": 0.01,
+    "seed": 0,
+    "mean_distance": 0.0035501178325185604,
+    "reference_to_prediction": 0.004095304351610091,
+    "prediction_to_reference": 0.0030049313134270297,
+    "precision": 1.0,
+    "recall": 0.96875,
+    "fscore": 0.9841269841269841,
+    "triangles": 1004,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 112
+  }
+}

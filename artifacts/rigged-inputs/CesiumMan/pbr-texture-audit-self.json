@@ -1,0 +1,71 @@
+{
+  "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+  "output_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+  "source_face_count": 4672,
+  "output_face_count": 4672,
+  "source_materials": [
+    {
+      "base_color_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallic_factor": 0.0,
+      "roughness_factor": 1.0,
+      "alpha_mode": "OPAQUE",
+      "base_color_texture": {
+        "shape": [
+          1024,
+          1024,
+          4
+        ],
+        "min": 0.0,
+        "max": 1.0,
+        "channel_std": [
+          0.24789247861064154,
+          0.16102917439087516,
+          0.24131998903349658
+        ],
+        "unique_rgb_count": 16762
+      },
+      "metallic_roughness_texture": null
+    }
+  ],
+  "output_materials": [
+    {
+      "base_color_factor": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "metallic_factor": 0.0,
+      "roughness_factor": 1.0,
+      "alpha_mode": "OPAQUE",
+      "base_color_texture": {
+        "shape": [
+          1024,
+          1024,
+          4
+        ],
+        "min": 0.0,
+        "max": 1.0,
+        "channel_std": [
+          0.24789247861064154,
+          0.16102917439087516,
+          0.24131998903349658
+        ],
+        "unique_rgb_count": 16762
+      },
+      "metallic_roughness_texture": null
+    }
+  ],
+  "source_face_material_ids": [
+    0
+  ],
+  "output_face_material_ids": [
+    0
+  ],
+  "scope": "Structural texture retention and variation only; not a rendered material-fidelity metric."
+}

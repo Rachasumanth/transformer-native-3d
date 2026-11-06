@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/tractor",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/tractor.glb",
+  "sha256": "d15329598d19e1a0f28b4ad7ad505a8284e1ab067846f64bedec5c2ab49e7069",
+  "bytes": 188236,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/plate-sauerkraut",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/plate-sauerkraut.glb",
+  "sha256": "b6fa2da86637af9c2a123eda2a67a786c6e96d811149918b301fa2b60d544d0c",
+  "bytes": 75464,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

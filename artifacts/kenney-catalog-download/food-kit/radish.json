@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/radish",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/radish.glb",
+  "sha256": "85a64fb37ee02fc651088746be15e5765ba5473b776dd0a26e046ce53d66bcc8",
+  "bytes": 27200,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

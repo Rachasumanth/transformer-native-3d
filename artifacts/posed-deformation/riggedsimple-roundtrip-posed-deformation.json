@@ -1,0 +1,445 @@
+{
+  "scope": "Source clip retargeted through exported SkinAE weights and a position-matched joint mapping; correspondence-based surface comparison, not viewer or rendered deformation quality",
+  "source": {
+    "path": "/home/sumanth/transformer native 3d model format/artifacts/rigged-inputs/RiggedSimple/RiggedSimple.glb",
+    "sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401"
+  },
+  "output": {
+    "path": "/home/sumanth/transformer native 3d model format/artifacts/rigged-inputs/glb-export-roundtrip/RiggedSimple.glb",
+    "sha256": "b25358f5b21a708ffbf7b148b2129056704032d5709c7b674990df975e007ba0",
+    "vertices": 160,
+    "faces": 188,
+    "joints": 2
+  },
+  "animation": {
+    "index": 0,
+    "name": null,
+    "time_range": [
+      0.04166661947965622,
+      2.0833330154418945
+    ],
+    "fractions": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "samples": 512,
+    "tolerance": 0.01
+  },
+  "weight_comparison": {
+    "skin_ae_vs_source_transfer_mean_absolute": 1.6240165268584212e-10,
+    "skin_ae_vs_source_transfer_max_absolute": 8.243777882555037e-10,
+    "dominant_joint_agreement": 1.0
+  },
+  "joint_mapping": {
+    "source_to_output": [
+      0,
+      1
+    ],
+    "output_to_source": [
+      0,
+      1
+    ],
+    "matched_position_distance_max": 5.462879808921812e-10,
+    "matched_position_distance_mean": 2.9667624992529804e-10,
+    "parent_mismatches": 0
+  },
+  "rest_pose": {
+    "surface": {
+      "valid": true,
+      "samples": 512,
+      "tolerance": 0.01,
+      "seed": 0,
+      "mean_distance": 7.058856717609691e-10,
+      "reference_to_prediction": 6.949085972873896e-10,
+      "prediction_to_reference": 7.168627462345485e-10,
+      "precision": 1.0,
+      "recall": 1.0,
+      "fscore": 1.0,
+      "triangles": 188,
+      "boundary_edges": 0,
+      "boundary_edge_length": 0.0,
+      "mean_boundary_edge_length": 0.0,
+      "nonmanifold_edges": 0
+    }
+  },
+  "exported_animation": {
+    "path": "/home/sumanth/transformer native 3d model format/artifacts/posed-deformation/riggedsimple-roundtrip-animated.glb",
+    "sha256": "652c0bf498bd03f2d84d2d3f88da8728b0ce212f8b685735e5d5484d1f73500c",
+    "audit": {
+      "animation_index": 0,
+      "animation_name": null,
+      "output_animation_index": 0,
+      "times": 50,
+      "time_range": [
+        0.04166661947965622,
+        2.0833330154418945
+      ],
+      "joints": 2,
+      "channels": 6,
+      "source_to_output": [
+        0,
+        1
+      ],
+      "output_to_source": [
+        0,
+        1
+      ],
+      "matched_position_distance_mean": 2.9667624992529804e-10,
+      "matched_position_distance_max": 5.462879808921812e-10,
+      "max_trs_reconstruction_error": 2.980231644800213e-07,
+      "structural_validation": {
+        "animations": 1,
+        "samplers": 6,
+        "channels": 6,
+        "accessors": 19,
+        "buffer_views": 21
+      }
+    },
+    "roundtrip": [
+      {
+        "time": 0.04166661947965622,
+        "surface": {
+          "valid": true,
+          "samples": 512,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 1.886001222512702e-09,
+          "reference_to_prediction": 1.8752863273662834e-09,
+          "prediction_to_reference": 1.8967161176591208e-09,
+          "precision": 1.0,
+          "recall": 1.0,
+          "fscore": 1.0,
+          "triangles": 188,
+          "boundary_edges": 0,
+          "boundary_edge_length": 0.0,
+          "mean_boundary_edge_length": 0.0,
+          "nonmanifold_edges": 0
+        },
+        "max_vertex_difference_from_in_memory": 9.34226201954047e-09
+      },
+      {
+        "time": 0.5520832184702158,
+        "surface": {
+          "valid": true,
+          "samples": 512,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 2.517273208519807e-09,
+          "reference_to_prediction": 2.6329073226866043e-09,
+          "prediction_to_reference": 2.4016390943530093e-09,
+          "precision": 1.0,
+          "recall": 1.0,
+          "fscore": 1.0,
+          "triangles": 188,
+          "boundary_edges": 0,
+          "boundary_edge_length": 0.0,
+          "mean_boundary_edge_length": 0.0,
+          "nonmanifold_edges": 0
+        },
+        "max_vertex_difference_from_in_memory": 1.7413112951558674e-08
+      },
+      {
+        "time": 1.0624998174607754,
+        "surface": {
+          "valid": true,
+          "samples": 512,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 3.3783158958828453e-09,
+          "reference_to_prediction": 3.528372213728087e-09,
+          "prediction_to_reference": 3.2282595780376033e-09,
+          "precision": 1.0,
+          "recall": 1.0,
+          "fscore": 1.0,
+          "triangles": 188,
+          "boundary_edges": 0,
+          "boundary_edge_length": 0.0,
+          "mean_boundary_edge_length": 0.0,
+          "nonmanifold_edges": 0
+        },
+        "max_vertex_difference_from_in_memory": 3.467847409233116e-08
+      },
+      {
+        "time": 1.572916416451335,
+        "surface": {
+          "valid": true,
+          "samples": 512,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 2.1035925091211793e-09,
+          "reference_to_prediction": 2.1635109585336444e-09,
+          "prediction_to_reference": 2.043674059708714e-09,
+          "precision": 1.0,
+          "recall": 1.0,
+          "fscore": 1.0,
+          "triangles": 188,
+          "boundary_edges": 0,
+          "boundary_edge_length": 0.0,
+          "mean_boundary_edge_length": 0.0,
+          "nonmanifold_edges": 0
+        },
+        "max_vertex_difference_from_in_memory": 9.586619387214057e-09
+      },
+      {
+        "time": 2.0833330154418945,
+        "surface": {
+          "valid": true,
+          "samples": 512,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 1.886001222512702e-09,
+          "reference_to_prediction": 1.8752863273662834e-09,
+          "prediction_to_reference": 1.8967161176591208e-09,
+          "precision": 1.0,
+          "recall": 1.0,
+          "fscore": 1.0,
+          "triangles": 188,
+          "boundary_edges": 0,
+          "boundary_edge_length": 0.0,
+          "mean_boundary_edge_length": 0.0,
+          "nonmanifold_edges": 0
+        },
+        "max_vertex_difference_from_in_memory": 9.34226201954047e-09
+      }
+    ]
+  },
+  "poses": [
+    {
+      "time": 0.04166661947965622,
+      "source_vertex_motion_mean": 2.260398780113103e-09,
+      "source_vertex_motion_max": 6.518138084524769e-09,
+      "retargeted_vertex_motion_mean": 2.2603987870755484e-09,
+      "retargeted_vertex_motion_max": 6.5181381075284175e-09,
+      "retargeted_surface": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 7.058856733366103e-10,
+        "reference_to_prediction": 6.949085980630106e-10,
+        "prediction_to_reference": 7.1686274861021e-10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 188,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 0
+      },
+      "oracle_weight_surface": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 7.058856729951836e-10,
+        "reference_to_prediction": 6.949085980385214e-10,
+        "prediction_to_reference": 7.168627479518458e-10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 188,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 0
+      },
+      "mean_distance_improvement": 5.714434036820908e-10,
+      "rest_pose_mean_distance": 1.277329077018701e-09,
+      "rest_pose_fscore": 1.0
+    },
+    {
+      "time": 0.5520832184702158,
+      "source_vertex_motion_mean": 0.06158502060230753,
+      "source_vertex_motion_max": 0.15306147291111424,
+      "retargeted_vertex_motion_mean": 0.061585020635770725,
+      "retargeted_vertex_motion_max": 0.15306147289400132,
+      "retargeted_surface": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 1.2541221432727316e-09,
+        "reference_to_prediction": 1.2618392183301995e-09,
+        "prediction_to_reference": 1.2464050682152637e-09,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 188,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 0
+      },
+      "oracle_weight_surface": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 1.2543486729537288e-09,
+        "reference_to_prediction": 1.2620668070965301e-09,
+        "prediction_to_reference": 1.2466305388109272e-09,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 188,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 0
+      },
+      "mean_distance_improvement": 0.018170526109649334,
+      "rest_pose_mean_distance": 0.018170527363771477,
+      "rest_pose_fscore": 0.7006693324061196
+    },
+    {
+      "time": 1.0624998174607754,
+      "source_vertex_motion_mean": 0.11701835749393971,
+      "source_vertex_motion_max": 0.29083373908505517,
+      "retargeted_vertex_motion_mean": 0.1170183575575237,
+      "retargeted_vertex_motion_max": 0.29083373905253884,
+      "retargeted_surface": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 1.9546944129618385e-09,
+        "reference_to_prediction": 1.9768756480784414e-09,
+        "prediction_to_reference": 1.932513177845235e-09,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 188,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 0
+      },
+      "oracle_weight_surface": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 1.9551271296669017e-09,
+        "reference_to_prediction": 1.9773074711537608e-09,
+        "prediction_to_reference": 1.9329467881800426e-09,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 188,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 0
+      },
+      "mean_distance_improvement": 0.03993473890103365,
+      "rest_pose_mean_distance": 0.03993474085572806,
+      "rest_pose_fscore": 0.6722265058055152
+    },
+    {
+      "time": 1.572916416451335,
+      "source_vertex_motion_mean": 0.05912175964805545,
+      "source_vertex_motion_max": 0.14693936237829452,
+      "retargeted_vertex_motion_mean": 0.059121759680180186,
+      "retargeted_vertex_motion_max": 0.1469393623618661,
+      "retargeted_surface": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 1.2239873053708676e-09,
+        "reference_to_prediction": 1.2304751216174246e-09,
+        "prediction_to_reference": 1.2174994891243106e-09,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 188,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 0
+      },
+      "oracle_weight_surface": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 1.2242051609860173e-09,
+        "reference_to_prediction": 1.2306940363252328e-09,
+        "prediction_to_reference": 1.2177162856468016e-09,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 188,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 0
+      },
+      "mean_distance_improvement": 0.017339893405505572,
+      "rest_pose_mean_distance": 0.017339894629492876,
+      "rest_pose_fscore": 0.7017361111111111
+    },
+    {
+      "time": 2.0833330154418945,
+      "source_vertex_motion_mean": 2.260398780113103e-09,
+      "source_vertex_motion_max": 6.518138084524769e-09,
+      "retargeted_vertex_motion_mean": 2.2603987870755484e-09,
+      "retargeted_vertex_motion_max": 6.5181381075284175e-09,
+      "retargeted_surface": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 7.058856733366103e-10,
+        "reference_to_prediction": 6.949085980630106e-10,
+        "prediction_to_reference": 7.1686274861021e-10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 188,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 0
+      },
+      "oracle_weight_surface": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 7.058856729951836e-10,
+        "reference_to_prediction": 6.949085980385214e-10,
+        "prediction_to_reference": 7.168627479518458e-10,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 188,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 0
+      },
+      "mean_distance_improvement": 5.714434036820908e-10,
+      "rest_pose_mean_distance": 1.277329077018701e-09,
+      "rest_pose_fscore": 1.0
+    }
+  ],
+  "valid": true,
+  "summary": {
+    "retargeted_mean_distance": 1.1689150416557318e-09,
+    "retargeted_fscore": 1.0,
+    "oracle_weight_mean_distance": 1.1690904619194028e-09,
+    "oracle_weight_fscore": 1.0,
+    "rest_mean_distance": 0.015089033080730114,
+    "mean_distance_improvement": 0.015089031911815074,
+    "max_export_roundtrip_vertex_difference": 3.467847409233116e-08,
+    "roundtrip_invalid_times": [],
+    "roundtrip_mean_distance": 2.3542368117098472e-09,
+    "roundtrip_fscore": 1.0
+  },
+  "case": "riggedsimple-roundtrip"
+}

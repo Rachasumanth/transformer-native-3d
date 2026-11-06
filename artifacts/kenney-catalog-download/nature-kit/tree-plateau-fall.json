@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/tree-plateau-fall",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/tree-plateau-fall.glb",
+  "sha256": "11b2a1b09c2f90c58b1572a2245e4861d6c0d674147a17d10ccdc12abe1f13ff",
+  "bytes": 16296,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

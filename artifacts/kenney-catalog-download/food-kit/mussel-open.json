@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/mussel-open",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/mussel-open.glb",
+  "sha256": "82a0f7843c109a8933504510471150dcbc1e906256870140a1f9f89314960d56",
+  "bytes": 20956,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

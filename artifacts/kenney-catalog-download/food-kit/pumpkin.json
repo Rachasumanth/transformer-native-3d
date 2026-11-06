@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/pumpkin",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/pumpkin.glb",
+  "sha256": "9ff364d83c8a0133bed7dfabc28428af62739aa6c13e0e87caa444685cd9c144",
+  "bytes": 31184,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

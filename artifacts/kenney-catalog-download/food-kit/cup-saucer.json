@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/cup-saucer",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/cup-saucer.glb",
+  "sha256": "64a136d2dd4cd33f609180423dcabf0b66bbf6db5af47224ec234a878d0e8bfc",
+  "bytes": 18584,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

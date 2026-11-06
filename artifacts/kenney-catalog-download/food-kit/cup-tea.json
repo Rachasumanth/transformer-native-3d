@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/cup-tea",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/cup-tea.glb",
+  "sha256": "2c464a7a3263344c1379e118cd96a78d49eee52b096aeee7a5146ef46b8a0ec4",
+  "bytes": 20520,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

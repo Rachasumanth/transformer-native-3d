@@ -1,0 +1,10 @@
+{
+  "id": "space-kit/terrain-roadsplit",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/space-kit/terrain-roadsplit.glb",
+  "sha256": "22274ab3802c7383a3804efef61c68d4f6a081aeedf9f86aef9fce1f4c469a92",
+  "bytes": 6744,
+  "group": "space-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/space-kit"
+}

@@ -1,0 +1,254 @@
+{
+  "baseline_sha256": "5f982e4fb6281f3eca805c88887ed59404f7c0a3d50512545878e2510818cc3a",
+  "baseline_linear_pbr": {
+    "base_r": {
+      "mae": 0.029100701724456488,
+      "rmse": 0.07942161981411289,
+      "p95_absolute_error": 0.20738930503755137,
+      "psnr_db_peak_1": 22.001225193804054
+    },
+    "base_g": {
+      "mae": 0.022987261831538947,
+      "rmse": 0.06506999137043812,
+      "p95_absolute_error": 0.16381649217020666,
+      "psnr_db_peak_1": 23.732385017242773
+    },
+    "base_b": {
+      "mae": 0.023781697722220323,
+      "rmse": 0.07307580511059879,
+      "p95_absolute_error": 0.16181797129815323,
+      "psnr_db_peak_1": 22.72452782234197
+    },
+    "metallic": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": null
+    },
+    "roughness": {
+      "mae": 1.81603863891322e-18,
+      "rmse": 1.419932361251897e-17,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": 336.9546468564896
+    },
+    "alpha": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": null
+    }
+  },
+  "scope": "4096 area-weighted samples restricted to 28 patch triangles; linear attribute comparison against nearest source surface; not rendered appearance",
+  "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+  "candidate_sha256": "1649abde08ef3f0a54b4feb22109032b1d5fc08470b35395667e35c9668b69c7",
+  "samples": 4096,
+  "seed": 0,
+  "linear_pbr": {
+    "base_r": {
+      "mae": 0.030385951850227685,
+      "rmse": 0.08223454677021115,
+      "p95_absolute_error": 0.21963247877675618,
+      "psnr_db_peak_1": 21.69891393636535
+    },
+    "base_g": {
+      "mae": 0.023922187920096507,
+      "rmse": 0.06715752848874358,
+      "p95_absolute_error": 0.17199045782992056,
+      "psnr_db_peak_1": 23.458105900307885
+    },
+    "base_b": {
+      "mae": 0.024834873698273193,
+      "rmse": 0.0761709447707593,
+      "p95_absolute_error": 0.1809213557876021,
+      "psnr_db_peak_1": 22.364213153805714
+    },
+    "metallic": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": null
+    },
+    "roughness": {
+      "mae": 1.4365678785432934e-18,
+      "rmse": 1.2628977532625829e-17,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": 337.9726361874899
+    },
+    "alpha": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": null
+    }
+  },
+  "per_patch_face": [
+    {
+      "face": 9228,
+      "samples": 197,
+      "candidate_rgb_rmse": 0.23764717216492648,
+      "baseline_rgb_rmse": 0.22708103553875464
+    },
+    {
+      "face": 9229,
+      "samples": 202,
+      "candidate_rgb_rmse": 0.15038170590662303,
+      "baseline_rgb_rmse": 0.14395550399625318
+    },
+    {
+      "face": 9230,
+      "samples": 56,
+      "candidate_rgb_rmse": 0.1345383303805174,
+      "baseline_rgb_rmse": 0.12781616051023104
+    },
+    {
+      "face": 9231,
+      "samples": 61,
+      "candidate_rgb_rmse": 0.18206618244488534,
+      "baseline_rgb_rmse": 0.17515991570712341
+    },
+    {
+      "face": 9232,
+      "samples": 79,
+      "candidate_rgb_rmse": 0.011726718619909798,
+      "baseline_rgb_rmse": 0.011773413404098628
+    },
+    {
+      "face": 9233,
+      "samples": 197,
+      "candidate_rgb_rmse": 0.0038484828869580993,
+      "baseline_rgb_rmse": 0.004042658964617138
+    },
+    {
+      "face": 9234,
+      "samples": 219,
+      "candidate_rgb_rmse": 0.0019788337501952104,
+      "baseline_rgb_rmse": 0.001988372287788287
+    },
+    {
+      "face": 9235,
+      "samples": 129,
+      "candidate_rgb_rmse": 0.004846048269815307,
+      "baseline_rgb_rmse": 0.004863953226443214
+    },
+    {
+      "face": 9236,
+      "samples": 122,
+      "candidate_rgb_rmse": 0.037785703361438126,
+      "baseline_rgb_rmse": 0.03547060791465435
+    },
+    {
+      "face": 9237,
+      "samples": 147,
+      "candidate_rgb_rmse": 1.586032892321652e-17,
+      "baseline_rgb_rmse": 1.8313930346510132e-17
+    },
+    {
+      "face": 9238,
+      "samples": 205,
+      "candidate_rgb_rmse": 1.5508267909182875e-17,
+      "baseline_rgb_rmse": 1.7338770629105723e-17
+    },
+    {
+      "face": 9239,
+      "samples": 211,
+      "candidate_rgb_rmse": 7.698673924905022e-05,
+      "baseline_rgb_rmse": 7.698674156199463e-05
+    },
+    {
+      "face": 9240,
+      "samples": 78,
+      "candidate_rgb_rmse": 1.777779632451261e-17,
+      "baseline_rgb_rmse": 1.2570800335616148e-17
+    },
+    {
+      "face": 9241,
+      "samples": 63,
+      "candidate_rgb_rmse": 1.3987495347505254e-17,
+      "baseline_rgb_rmse": 1.3987495347505254e-17
+    },
+    {
+      "face": 9242,
+      "samples": 70,
+      "candidate_rgb_rmse": 1.3269703217737501e-17,
+      "baseline_rgb_rmse": 2.967195843610875e-17
+    },
+    {
+      "face": 9243,
+      "samples": 146,
+      "candidate_rgb_rmse": 2.0545598838839364e-17,
+      "baseline_rgb_rmse": 2.0545598838839364e-17
+    },
+    {
+      "face": 9244,
+      "samples": 246,
+      "candidate_rgb_rmse": 2.0021087780262732e-17,
+      "baseline_rgb_rmse": 1.7338770629105723e-17
+    },
+    {
+      "face": 9245,
+      "samples": 137,
+      "candidate_rgb_rmse": 2.5095679901079226e-17,
+      "baseline_rgb_rmse": 2.6828410307996405e-17
+    },
+    {
+      "face": 9246,
+      "samples": 252,
+      "candidate_rgb_rmse": 0.09217701305097402,
+      "baseline_rgb_rmse": 0.0914255108392703
+    },
+    {
+      "face": 9247,
+      "samples": 119,
+      "candidate_rgb_rmse": 0.11551171241614558,
+      "baseline_rgb_rmse": 0.11636729084551731
+    },
+    {
+      "face": 9248,
+      "samples": 89,
+      "candidate_rgb_rmse": 0.04508952372576859,
+      "baseline_rgb_rmse": 0.04508014760691638
+    },
+    {
+      "face": 9249,
+      "samples": 72,
+      "candidate_rgb_rmse": 0.01678423069636166,
+      "baseline_rgb_rmse": 0.01709571849208485
+    },
+    {
+      "face": 9250,
+      "samples": 165,
+      "candidate_rgb_rmse": 0.045652355227891614,
+      "baseline_rgb_rmse": 0.045731625393829
+    },
+    {
+      "face": 9251,
+      "samples": 181,
+      "candidate_rgb_rmse": 0.025430933691709724,
+      "baseline_rgb_rmse": 0.025409378220442414
+    },
+    {
+      "face": 9252,
+      "samples": 198,
+      "candidate_rgb_rmse": 2.0875008196762216e-17,
+      "baseline_rgb_rmse": 2.367003441645759e-17
+    },
+    {
+      "face": 9253,
+      "samples": 120,
+      "candidate_rgb_rmse": 2.0269806481627057e-17,
+      "baseline_rgb_rmse": 2.482534153247273e-17
+    },
+    {
+      "face": 9254,
+      "samples": 98,
+      "candidate_rgb_rmse": 0.0,
+      "baseline_rgb_rmse": 1.1214946133455535e-17
+    },
+    {
+      "face": 9255,
+      "samples": 237,
+      "candidate_rgb_rmse": 1.4423347015882346e-17,
+      "baseline_rgb_rmse": 1.9080294638605134e-17
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/ground-pathside",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/ground-pathside.glb",
+  "sha256": "b2b71d110214958231ad3691ee491643b101b3329f83add48ce7c48d90be16d5",
+  "bytes": 4124,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

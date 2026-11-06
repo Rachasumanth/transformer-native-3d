@@ -1,0 +1,168 @@
+{
+  "source_sha256": "904ef7b2006075b4800667b2d7a188a3abf788d3a009b8653d980f43a1f11191",
+  "manifest_sha256": "163de775a0bfd33466cc3bebffd3f721274f9e2ee0c71cb0cde18eaa265393d2",
+  "device": "Tesla T4",
+  "config": {
+    "width": 64,
+    "heads": 4,
+    "layers": 2,
+    "frequencies": 4
+  },
+  "seed": 23,
+  "updates": 400,
+  "scope": "three-asset SkinAE integration pilot; node-default poses only; no research quality claim",
+  "initial": {
+    "RiggedSimple": {
+      "split": "train",
+      "kl": 0.3322179913520813,
+      "uniform_kl": 0.3257632851600647,
+      "mean_absolute_weight_error": 0.34372568130493164,
+      "dominant_joint_accuracy": 0.2265625
+    },
+    "CesiumMan": {
+      "split": "train",
+      "kl": 2.351681709289551,
+      "uniform_kl": 2.322021722793579,
+      "mean_absolute_weight_error": 0.09070096909999847,
+      "dominant_joint_accuracy": 0.00390625
+    },
+    "Fox": {
+      "split": "validation",
+      "kl": 2.599996566772461,
+      "uniform_kl": 2.611278772354126,
+      "mean_absolute_weight_error": 0.07528170943260193,
+      "dominant_joint_accuracy": 0.00390625
+    }
+  },
+  "history": [
+    {
+      "update": 100,
+      "metrics": {
+        "RiggedSimple": {
+          "split": "train",
+          "kl": 0.010505473241209984,
+          "uniform_kl": 0.3257632851600647,
+          "mean_absolute_weight_error": 0.03526625409722328,
+          "dominant_joint_accuracy": 0.9921875
+        },
+        "CesiumMan": {
+          "split": "train",
+          "kl": 0.10461658239364624,
+          "uniform_kl": 2.322021722793579,
+          "mean_absolute_weight_error": 0.011165572330355644,
+          "dominant_joint_accuracy": 0.9541015625
+        },
+        "Fox": {
+          "split": "validation",
+          "kl": 1.6888978481292725,
+          "uniform_kl": 2.611278772354126,
+          "mean_absolute_weight_error": 0.059596262872219086,
+          "dominant_joint_accuracy": 0.453125
+        }
+      }
+    },
+    {
+      "update": 200,
+      "metrics": {
+        "RiggedSimple": {
+          "split": "train",
+          "kl": 0.009915374219417572,
+          "uniform_kl": 0.3257632851600647,
+          "mean_absolute_weight_error": 0.031153202056884766,
+          "dominant_joint_accuracy": 0.98828125
+        },
+        "CesiumMan": {
+          "split": "train",
+          "kl": 0.06109923496842384,
+          "uniform_kl": 2.322021722793579,
+          "mean_absolute_weight_error": 0.008348524570465088,
+          "dominant_joint_accuracy": 0.9765625
+        },
+        "Fox": {
+          "split": "validation",
+          "kl": 1.6803487539291382,
+          "uniform_kl": 2.611278772354126,
+          "mean_absolute_weight_error": 0.056275397539138794,
+          "dominant_joint_accuracy": 0.6201171875
+        }
+      }
+    },
+    {
+      "update": 300,
+      "metrics": {
+        "RiggedSimple": {
+          "split": "train",
+          "kl": 0.01011149026453495,
+          "uniform_kl": 0.3257632851600647,
+          "mean_absolute_weight_error": 0.029989631846547127,
+          "dominant_joint_accuracy": 0.9892578125
+        },
+        "CesiumMan": {
+          "split": "train",
+          "kl": 0.03906441479921341,
+          "uniform_kl": 2.322021722793579,
+          "mean_absolute_weight_error": 0.0067257569171488285,
+          "dominant_joint_accuracy": 0.9794921875
+        },
+        "Fox": {
+          "split": "validation",
+          "kl": 1.672650694847107,
+          "uniform_kl": 2.611278772354126,
+          "mean_absolute_weight_error": 0.054319076240062714,
+          "dominant_joint_accuracy": 0.5869140625
+        }
+      }
+    },
+    {
+      "update": 400,
+      "metrics": {
+        "RiggedSimple": {
+          "split": "train",
+          "kl": 0.01043225172907114,
+          "uniform_kl": 0.3257632851600647,
+          "mean_absolute_weight_error": 0.03163328021764755,
+          "dominant_joint_accuracy": 0.9970703125
+        },
+        "CesiumMan": {
+          "split": "train",
+          "kl": 0.03341177850961685,
+          "uniform_kl": 2.322021722793579,
+          "mean_absolute_weight_error": 0.006295208353549242,
+          "dominant_joint_accuracy": 0.978515625
+        },
+        "Fox": {
+          "split": "validation",
+          "kl": 1.6418709754943848,
+          "uniform_kl": 2.611278772354126,
+          "mean_absolute_weight_error": 0.054281286895275116,
+          "dominant_joint_accuracy": 0.5947265625
+        }
+      }
+    }
+  ],
+  "final": {
+    "RiggedSimple": {
+      "split": "train",
+      "kl": 0.01043225172907114,
+      "uniform_kl": 0.3257632851600647,
+      "mean_absolute_weight_error": 0.03163328021764755,
+      "dominant_joint_accuracy": 0.9970703125
+    },
+    "CesiumMan": {
+      "split": "train",
+      "kl": 0.03341177850961685,
+      "uniform_kl": 2.322021722793579,
+      "mean_absolute_weight_error": 0.006295208353549242,
+      "dominant_joint_accuracy": 0.978515625
+    },
+    "Fox": {
+      "split": "validation",
+      "kl": 1.6418709754943848,
+      "uniform_kl": 2.611278772354126,
+      "mean_absolute_weight_error": 0.054281286895275116,
+      "dominant_joint_accuracy": 0.5947265625
+    }
+  },
+  "checkpoint_sha256": "6b5948ab29b754a9bf9dff432d4e2ae102a0b9c9fdbdb3ec96bf4e9c9b8f1495",
+  "frozen": true
+}

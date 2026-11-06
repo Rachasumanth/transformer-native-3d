@@ -1,0 +1,203 @@
+{
+  "scope": "Text-conditioned Stage 2 shape latent geometry DiT trained on 649 Kenney train assets; evaluated on 16 held-out assets with latent MSE and mesh extraction",
+  "device": "Tesla T4",
+  "elapsed_seconds": 49.782350675999965,
+  "train_count": 649,
+  "validation_eval_count": 16,
+  "mean_val_latent_mse": 2.204305,
+  "mean_mesh_triangles": 1017.625,
+  "checkpoint_sha256": "9af1686720e06b7a1137c9494cbb783f0721ebd780ae10a0c6fbe77f94d7ed78",
+  "history": [
+    {
+      "step": 50,
+      "asset_id": "kenney-nature-kit-ground-pathrocks",
+      "loss": 1.84768545627594
+    },
+    {
+      "step": 100,
+      "asset_id": "kenney-food-kit-cherries",
+      "loss": 1.3616992235183716
+    },
+    {
+      "step": 150,
+      "asset_id": "kenney-car-kit-tractor-police",
+      "loss": 3.2922778129577637
+    },
+    {
+      "step": 200,
+      "asset_id": "kenney-nature-kit-tree-pineroundb",
+      "loss": 1.4513667821884155
+    },
+    {
+      "step": 250,
+      "asset_id": "kenney-car-kit-kart-oozi",
+      "loss": 2.3377108573913574
+    },
+    {
+      "step": 300,
+      "asset_id": "kenney-car-kit-debris-plate-small-b",
+      "loss": 2.1309311389923096
+    },
+    {
+      "step": 350,
+      "asset_id": "kenney-food-kit-corn",
+      "loss": 1.6279511451721191
+    },
+    {
+      "step": 400,
+      "asset_id": "kenney-food-kit-pot-lid",
+      "loss": 1.2509753704071045
+    },
+    {
+      "step": 450,
+      "asset_id": "kenney-food-kit-pepper-mill",
+      "loss": 1.2402076721191406
+    },
+    {
+      "step": 500,
+      "asset_id": "kenney-furniture-kit-chair",
+      "loss": 1.591423511505127
+    },
+    {
+      "step": 550,
+      "asset_id": "kenney-nature-kit-cliff-rock",
+      "loss": 1.2184178829193115
+    },
+    {
+      "step": 600,
+      "asset_id": "kenney-nature-kit-cliff-blockcave-rock",
+      "loss": 1.9708162546157837
+    }
+  ],
+  "eval_results": [
+    {
+      "asset_id": "kenney-pirate-kit-barrel",
+      "group": "kenney-pirate-kit",
+      "prompt": "a barrel pirate theme asset",
+      "latent_mse": 2.17857,
+      "decoded_voxels": 5595,
+      "mesh_triangles": 1158
+    },
+    {
+      "asset_id": "kenney-pirate-kit-boat-row-large",
+      "group": "kenney-pirate-kit",
+      "prompt": "a boat row large pirate theme asset",
+      "latent_mse": 3.31208,
+      "decoded_voxels": 8344,
+      "mesh_triangles": 1640
+    },
+    {
+      "asset_id": "kenney-pirate-kit-boat-row-small",
+      "group": "kenney-pirate-kit",
+      "prompt": "a boat row small pirate theme asset",
+      "latent_mse": 1.56729,
+      "decoded_voxels": 5910,
+      "mesh_triangles": 1152
+    },
+    {
+      "asset_id": "kenney-pirate-kit-bottle",
+      "group": "kenney-pirate-kit",
+      "prompt": "a bottle pirate theme asset",
+      "latent_mse": 1.9873,
+      "decoded_voxels": 3417,
+      "mesh_triangles": 744
+    },
+    {
+      "asset_id": "kenney-pirate-kit-bottle-large",
+      "group": "kenney-pirate-kit",
+      "prompt": "a bottle large pirate theme asset",
+      "latent_mse": 2.60883,
+      "decoded_voxels": 8800,
+      "mesh_triangles": 1654
+    },
+    {
+      "asset_id": "kenney-pirate-kit-cannon",
+      "group": "kenney-pirate-kit",
+      "prompt": "a cannon pirate theme asset",
+      "latent_mse": 1.68176,
+      "decoded_voxels": 5200,
+      "mesh_triangles": 1034
+    },
+    {
+      "asset_id": "kenney-pirate-kit-cannon-ball",
+      "group": "kenney-pirate-kit",
+      "prompt": "a cannon ball pirate theme asset",
+      "latent_mse": 1.73799,
+      "decoded_voxels": 5811,
+      "mesh_triangles": 1112
+    },
+    {
+      "asset_id": "kenney-pirate-kit-cannon-mobile",
+      "group": "kenney-pirate-kit",
+      "prompt": "a cannon mobile pirate theme asset",
+      "latent_mse": 2.64504,
+      "decoded_voxels": 3844,
+      "mesh_triangles": 736
+    },
+    {
+      "asset_id": "kenney-space-kit-alien",
+      "group": "kenney-space-kit",
+      "prompt": "an alien sci-fi space asset",
+      "latent_mse": 1.48787,
+      "decoded_voxels": 3582,
+      "mesh_triangles": 696
+    },
+    {
+      "asset_id": "kenney-space-kit-astronauta",
+      "group": "kenney-space-kit",
+      "prompt": "an astronauta sci-fi space asset",
+      "latent_mse": 2.90237,
+      "decoded_voxels": 4876,
+      "mesh_triangles": 948
+    },
+    {
+      "asset_id": "kenney-space-kit-astronautb",
+      "group": "kenney-space-kit",
+      "prompt": "an astronautb sci-fi space asset",
+      "latent_mse": 2.45067,
+      "decoded_voxels": 6650,
+      "mesh_triangles": 1428
+    },
+    {
+      "asset_id": "kenney-space-kit-barrel",
+      "group": "kenney-space-kit",
+      "prompt": "a barrel sci-fi space asset",
+      "latent_mse": 1.88281,
+      "decoded_voxels": 3969,
+      "mesh_triangles": 874
+    },
+    {
+      "asset_id": "kenney-space-kit-barrels",
+      "group": "kenney-space-kit",
+      "prompt": "a barrels sci-fi space asset",
+      "latent_mse": 1.58614,
+      "decoded_voxels": 6264,
+      "mesh_triangles": 1266
+    },
+    {
+      "asset_id": "kenney-space-kit-barrels-rail",
+      "group": "kenney-space-kit",
+      "prompt": "a barrels rail sci-fi space asset",
+      "latent_mse": 2.94255,
+      "decoded_voxels": 2901,
+      "mesh_triangles": 528
+    },
+    {
+      "asset_id": "kenney-space-kit-bones",
+      "group": "kenney-space-kit",
+      "prompt": "a bones sci-fi space asset",
+      "latent_mse": 1.75916,
+      "decoded_voxels": 2643,
+      "mesh_triangles": 512
+    },
+    {
+      "asset_id": "kenney-space-kit-chimney",
+      "group": "kenney-space-kit",
+      "prompt": "a chimney sci-fi space asset",
+      "latent_mse": 2.53845,
+      "decoded_voxels": 3924,
+      "mesh_triangles": 800
+    }
+  ],
+  "source_sha256": "a35a6e4959defa12db6827f1f4f6474a0d7c8912972e0ef701351ae98c07b739"
+}

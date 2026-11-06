@@ -1,0 +1,455 @@
+{
+  "source_sha256": "08a71010d2fae3e2070a13bc89d3f93b2854727698491e2569e36e68db18a449",
+  "dependencies": {
+    "CuMesh": [
+      "https://github.com/JeffreyXiang/CuMesh.git",
+      "12289e1062f0603f2f0d0771b02e1395d247f26f"
+    ],
+    "FlexGEMM": [
+      "https://github.com/JeffreyXiang/FlexGEMM.git",
+      "6dd94a859c26ee8246888502eada3dd8ad85532e"
+    ],
+    "nvdiffrast": [
+      "https://github.com/NVlabs/nvdiffrast.git",
+      "253ac4fcea7de5f396371124af597e6cc957bfae"
+    ]
+  },
+  "device": "Tesla T4",
+  "affine_sampling_passed": true,
+  "valid_texels": 15624,
+  "valid_texel_max_error": 2.384185791015625e-07,
+  "full_atlas_max_error": 2.384185791015625e-07,
+  "gradient_baking_max_error": 0.0,
+  "raster_chunk_parity_passed": true,
+  "glb_bytes": 14372,
+  "glb_faces": 186,
+  "alpha_mode": "BLEND",
+  "cli_audit": {
+    "device": "cuda:0",
+    "device_name": "Tesla T4",
+    "active_voxels": 152,
+    "extracted_faces": 300,
+    "uv_faces": 200,
+    "stages": [
+      {
+        "stage": "input",
+        "vertices": 152,
+        "faces": 300
+      },
+      {
+        "stage": "initial_holes",
+        "vertices": 152,
+        "faces": 300
+      },
+      {
+        "stage": "coarse",
+        "vertices": 152,
+        "faces": 300
+      },
+      {
+        "stage": "final",
+        "vertices": 102,
+        "faces": 200
+      }
+    ],
+    "texture_size": 128,
+    "valid_texels": 15624,
+    "source_up": "z",
+    "alpha_mode": "BLEND",
+    "remesh": false,
+    "skinned": false,
+    "joint_count": 0,
+    "skinae_checkpoint_sha256": null,
+    "skin_influence_audit": null,
+    "joint_tolerance": null,
+    "total_seconds": 2.2050218480000012,
+    "glb_bytes": 10028,
+    "glb_sha256": "6d7c0ad03756adc6a77c2739d3ef0fa9bc2e5a04c9312ee07813cb492d0b49a0",
+    "input_sha256": "750ddaeb0ab5e85273475077fd5e411c7352a9e009e2e92505de867e988a1745",
+    "bpt_token_count": 0,
+    "geometry_track": "raw Track A"
+  },
+  "cli_closed_outward_topology": {
+    "components": [
+      {
+        "faces": 200,
+        "closed": true,
+        "signed_volume": 0.21570347027199924,
+        "flipped_faces": 0
+      }
+    ],
+    "flipped_faces": 0,
+    "outward_closed_components": true
+  },
+  "rigged_cli": {
+    "audit": {
+      "device": "cuda:0",
+      "device_name": "Tesla T4",
+      "active_voxels": 152,
+      "extracted_faces": 300,
+      "uv_faces": 186,
+      "stages": [
+        {
+          "stage": "input",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "initial_holes",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "coarse",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "final",
+          "vertices": 95,
+          "faces": 186
+        }
+      ],
+      "texture_size": 128,
+      "valid_texels": 15624,
+      "source_up": "z",
+      "alpha_mode": "BLEND",
+      "remesh": false,
+      "skinned": true,
+      "joint_count": 3,
+      "skinae_checkpoint_sha256": "4e2ca11172898021c1cd99f7292d4b012f87b0d7b423879f1e65bb59aa29d84b",
+      "skin_influence_audit": {
+        "max_influences": 16,
+        "max_influences_before": 3,
+        "max_influences_after": 3,
+        "truncated_rows": 2,
+        "mean_discarded_mass": 1.490232247819002e-18,
+        "maximum_discarded_mass": 1.1102230246251565e-16,
+        "maximum_row_sum_error": 0.0
+      },
+      "joint_tolerance": 1e-06,
+      "total_seconds": 0.2665843489999702,
+      "glb_bytes": 18436,
+      "glb_sha256": "b5638e0452f557352890db346a170d96610f70e20c121785bbff7720f9775d6e"
+    },
+    "vertices": 149,
+    "faces": 186,
+    "joint_count": 3,
+    "maximum_weight_sum_error": 1.1102230246251565e-16,
+    "glb_bytes": 18436,
+    "glb_sha256": "b5638e0452f557352890db346a170d96610f70e20c121785bbff7720f9775d6e",
+    "scope": "Synthetic skinned cube through extraction, CuMesh cleanup/UV, PBR bake, SkinAE decode and GLB reload; no source-rig quality claim"
+  },
+  "real_rig_cli": {
+    "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+    "source_vertices": 3273,
+    "source_faces": 4672,
+    "source_joints": 19,
+    "normalization_scale": 0.6637680165409462,
+    "active_voxels": 918,
+    "source_to_recovered_joint_ids": [
+      10,
+      8,
+      6,
+      18,
+      16,
+      14,
+      12,
+      1,
+      2,
+      4,
+      3,
+      0,
+      11,
+      13,
+      15,
+      17,
+      5,
+      7,
+      9
+    ],
+    "vertices": 1530,
+    "faces": 1818,
+    "weight_mae": 0.040704911168175886,
+    "weight_kl": 0.501465026670946,
+    "source_topology": {
+      "valid": true,
+      "samples": 512,
+      "tolerance": 0.01,
+      "seed": 0,
+      "mean_distance": 1.641648060522968e-17,
+      "reference_to_prediction": 1.6744855210854018e-17,
+      "prediction_to_reference": 1.6088105999605345e-17,
+      "precision": 1.0,
+      "recall": 1.0,
+      "fscore": 1.0,
+      "triangles": 4672,
+      "boundary_edges": 0,
+      "boundary_edge_length": 0.0,
+      "mean_boundary_edge_length": 0.0,
+      "nonmanifold_edges": 0
+    },
+    "surface_comparison": {
+      "valid": true,
+      "samples": 512,
+      "tolerance": 0.01,
+      "seed": 0,
+      "mean_distance": 0.0009223325547891763,
+      "reference_to_prediction": 0.000948895297474064,
+      "prediction_to_reference": 0.0008957698121042887,
+      "precision": 0.994140625,
+      "recall": 1.0,
+      "fscore": 0.9970617042115573,
+      "triangles": 1818,
+      "boundary_edges": 49,
+      "boundary_edge_length": 0.8987978868186675,
+      "mean_boundary_edge_length": 0.0183428140167075,
+      "nonmanifold_edges": 33
+    },
+    "strict_remesh": {
+      "audit": {
+        "device": "cuda:0",
+        "device_name": "Tesla T4",
+        "active_voxels": 918,
+        "extracted_faces": 1818,
+        "uv_faces": 3048,
+        "stages": [
+          {
+            "stage": "input",
+            "vertices": 918,
+            "faces": 1818
+          },
+          {
+            "stage": "initial_holes",
+            "vertices": 918,
+            "faces": 1818
+          },
+          {
+            "stage": "narrow_band_remesh",
+            "vertices": 1528,
+            "faces": 3048
+          },
+          {
+            "stage": "remesh_simplify",
+            "vertices": 1528,
+            "faces": 3048
+          }
+        ],
+        "texture_size": 128,
+        "valid_texels": 9171,
+        "source_up": "y",
+        "alpha_mode": "OPAQUE",
+        "remesh": true,
+        "skinned": true,
+        "joint_count": 19,
+        "skinae_checkpoint_sha256": "4e2ca11172898021c1cd99f7292d4b012f87b0d7b423879f1e65bb59aa29d84b",
+        "skin_influence_audit": {
+          "max_influences": 16,
+          "max_influences_before": 19,
+          "max_influences_after": 16,
+          "truncated_rows": 2454,
+          "mean_discarded_mass": 0.00010358749038065998,
+          "maximum_discarded_mass": 0.0023201178291892832,
+          "maximum_row_sum_error": 4.440892098500626e-16
+        },
+        "joint_tolerance": 1e-06,
+        "total_seconds": 1.7266528279999989,
+        "glb_bytes": 350360,
+        "glb_sha256": "e0a99bd462eae66699a3be9a714bbb903612ceaff0cf7e14a95c3f67de835db3"
+      },
+      "vertices": 2454,
+      "faces": 3048,
+      "joint_count": 19,
+      "surface_comparison": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.006407926044116262,
+        "reference_to_prediction": 0.00527423500821915,
+        "prediction_to_reference": 0.007541617080013375,
+        "precision": 0.75390625,
+        "recall": 0.869140625,
+        "fscore": 0.8074326865222623,
+        "triangles": 3048,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 2
+      },
+      "maximum_weight_sum_error": 2.220446049250313e-16,
+      "glb_bytes": 350360,
+      "glb_sha256": "e0a99bd462eae66699a3be9a714bbb903612ceaff0cf7e14a95c3f67de835db3"
+    },
+    "audit": {
+      "device": "cuda:0",
+      "device_name": "Tesla T4",
+      "active_voxels": 918,
+      "extracted_faces": 1818,
+      "uv_faces": 1818,
+      "stages": [
+        {
+          "stage": "input",
+          "vertices": 918,
+          "faces": 1818
+        },
+        {
+          "stage": "initial_holes",
+          "vertices": 918,
+          "faces": 1818
+        },
+        {
+          "stage": "coarse",
+          "vertices": 984,
+          "faces": 1818
+        },
+        {
+          "stage": "final",
+          "vertices": 984,
+          "faces": 1818
+        }
+      ],
+      "texture_size": 128,
+      "valid_texels": 10452,
+      "source_up": "y",
+      "alpha_mode": "OPAQUE",
+      "remesh": false,
+      "skinned": true,
+      "joint_count": 19,
+      "skinae_checkpoint_sha256": "4e2ca11172898021c1cd99f7292d4b012f87b0d7b423879f1e65bb59aa29d84b",
+      "skin_influence_audit": {
+        "max_influences": 16,
+        "max_influences_before": 19,
+        "max_influences_after": 16,
+        "truncated_rows": 1530,
+        "mean_discarded_mass": 0.0001246982958405036,
+        "maximum_discarded_mass": 0.0023236399802979424,
+        "maximum_row_sum_error": 3.3306690738754696e-16
+      },
+      "joint_tolerance": 1e-06,
+      "total_seconds": 1.8528844279999817,
+      "glb_bytes": 229624,
+      "glb_sha256": "1011a435567745cdc43c958565aabb62dbfb419099d31af6291a2597e7f80739"
+    },
+    "checksummed_container_cli": {
+      "container_sha256": "e5b0971fa987cd5e1a4b31e9faf22fe1136a9b7f83aa8718d5f99450bc85c69f",
+      "audit": {
+        "device": "cuda:0",
+        "device_name": "Tesla T4",
+        "active_voxels": 918,
+        "extracted_faces": 1818,
+        "uv_faces": 1818,
+        "stages": [
+          {
+            "stage": "input",
+            "vertices": 918,
+            "faces": 1818
+          },
+          {
+            "stage": "initial_holes",
+            "vertices": 918,
+            "faces": 1818
+          },
+          {
+            "stage": "coarse",
+            "vertices": 984,
+            "faces": 1818
+          },
+          {
+            "stage": "final",
+            "vertices": 984,
+            "faces": 1818
+          }
+        ],
+        "texture_size": 128,
+        "valid_texels": 10270,
+        "source_up": "y",
+        "alpha_mode": "OPAQUE",
+        "remesh": false,
+        "skinned": true,
+        "joint_count": 19,
+        "skinae_checkpoint_sha256": "4e2ca11172898021c1cd99f7292d4b012f87b0d7b423879f1e65bb59aa29d84b",
+        "skin_influence_audit": {
+          "max_influences": 16,
+          "max_influences_before": 19,
+          "max_influences_after": 16,
+          "truncated_rows": 1531,
+          "mean_discarded_mass": 0.0001246423313459846,
+          "maximum_discarded_mass": 0.002319314476828427,
+          "maximum_row_sum_error": 4.440892098500626e-16
+        },
+        "joint_tolerance": 0.0078125,
+        "total_seconds": 3.829862057000014,
+        "glb_bytes": 229768,
+        "glb_sha256": "6f672bafcc462befb75e5c03352eed65ada6cc09b2365ad86a6f19f2ad34cc87",
+        "input_sha256": "e5b0971fa987cd5e1a4b31e9faf22fe1136a9b7f83aa8718d5f99450bc85c69f",
+        "bpt_token_count": 0,
+        "geometry_track": "raw Track A"
+      },
+      "vertices": 1531,
+      "faces": 1818,
+      "joint_count": 19,
+      "surface_comparison": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.0009298402415793179,
+        "reference_to_prediction": 0.0009489399093670194,
+        "prediction_to_reference": 0.0009107405737916164,
+        "precision": 0.994140625,
+        "recall": 1.0,
+        "fscore": 0.9970617042115573,
+        "triangles": 1818,
+        "boundary_edges": 49,
+        "boundary_edge_length": 0.898737938887966,
+        "mean_boundary_edge_length": 0.018341590589550327,
+        "nonmanifold_edges": 33
+      },
+      "maximum_weight_sum_error": 2.220446049250313e-16,
+      "glb_bytes": 229768,
+      "glb_sha256": "6f672bafcc462befb75e5c03352eed65ada6cc09b2365ad86a6f19f2ad34cc87"
+    },
+    "source_pbr": {
+      "material_count": 1,
+      "face_material_ids": [
+        0
+      ],
+      "voxel_pbr_min": [
+        0.07833114700330857,
+        0.2007254448492339,
+        0.00842823079961041,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "voxel_pbr_max": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "materials": [
+        {
+          "base_color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallic": 0,
+          "roughness": 1,
+          "alpha_mode": "OPAQUE",
+          "has_base_texture": true,
+          "has_metallic_roughness_texture": false
+        }
+      ]
+    },
+    "glb_bytes": 229624,
+    "glb_sha256": "1011a435567745cdc43c958565aabb62dbfb419099d31af6291a2597e7f80739",
+    "scope": "Real source rig through voxelization, barycentric source-weight transfer, field/SkinAE export and bind-pose reload; source PBR replaced by constant, no animation transfer"
+  },
+  "scope": "analytic cube, constant sparse PBR and independent affine sampler oracle; no rendered fidelity claim"
+}

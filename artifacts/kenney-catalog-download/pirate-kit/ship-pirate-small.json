@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/ship-pirate-small",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/ship-pirate-small.glb",
+  "sha256": "59c1f21d3df5b09bdfd54e20922372a69d4da990d254c506c7ed9af5cb438865",
+  "bytes": 141468,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

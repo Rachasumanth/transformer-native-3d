@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/utensil-fork",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/utensil-fork.glb",
+  "sha256": "9d74d1bd6689ff36eaaaf653b906e91a03a6a922f3bbfa70c643da212f89611e",
+  "bytes": 15564,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

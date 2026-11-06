@@ -1,0 +1,483 @@
+{
+  "scope": "Text-conditioned Stage 1 coarse occupancy DiT (16\u00b3 grid) trained on 649 Kenney train assets; evaluated on 24 held-out assets with prompt sensitivity checks",
+  "device": "Tesla T4",
+  "elapsed_seconds": 201.88220100799998,
+  "train_count": 649,
+  "validation_eval_count": 24,
+  "mean_val_occupancy_iou": 0.008020833333333333,
+  "mean_prompt_difference_cells": 8.833333333333334,
+  "checkpoint_sha256": "1cce8fc76b1f6258ded81263dfbea021a3930807a86e4c15717e3ce944b185b5",
+  "history": [
+    {
+      "step": 50,
+      "asset_id": "kenney-nature-kit-ground-pathrocks",
+      "loss": 0.20888768136501312
+    },
+    {
+      "step": 100,
+      "asset_id": "kenney-food-kit-cherries",
+      "loss": 1.783388376235962
+    },
+    {
+      "step": 150,
+      "asset_id": "kenney-car-kit-tractor-police",
+      "loss": 0.263556569814682
+    },
+    {
+      "step": 200,
+      "asset_id": "kenney-nature-kit-tree-pineroundb",
+      "loss": 0.20778483152389526
+    },
+    {
+      "step": 250,
+      "asset_id": "kenney-car-kit-kart-oozi",
+      "loss": 0.3871329724788666
+    },
+    {
+      "step": 300,
+      "asset_id": "kenney-car-kit-debris-plate-small-b",
+      "loss": 0.22640281915664673
+    },
+    {
+      "step": 350,
+      "asset_id": "kenney-food-kit-corn",
+      "loss": 0.6522994041442871
+    },
+    {
+      "step": 400,
+      "asset_id": "kenney-food-kit-pot-lid",
+      "loss": 0.23716223239898682
+    },
+    {
+      "step": 450,
+      "asset_id": "kenney-food-kit-pepper-mill",
+      "loss": 0.6080714464187622
+    },
+    {
+      "step": 500,
+      "asset_id": "kenney-furniture-kit-chair",
+      "loss": 0.14791712164878845
+    },
+    {
+      "step": 550,
+      "asset_id": "kenney-nature-kit-cliff-rock",
+      "loss": 0.5255285501480103
+    },
+    {
+      "step": 600,
+      "asset_id": "kenney-nature-kit-cliff-blockcave-rock",
+      "loss": 0.6232517957687378
+    }
+  ],
+  "eval_results": [
+    {
+      "asset_id": "kenney-pirate-kit-barrel",
+      "group": "kenney-pirate-kit",
+      "prompt": "a barrel pirate theme asset",
+      "mismatched_prompt": "an ambulance vehicle asset",
+      "correct": {
+        "predicted": 33,
+        "target": 1860,
+        "iou": 0.0091
+      },
+      "mismatched": {
+        "predicted": 34,
+        "target": 1860,
+        "iou": 0.0096
+      },
+      "prompt_difference_cells": 1
+    },
+    {
+      "asset_id": "kenney-pirate-kit-boat-row-large",
+      "group": "kenney-pirate-kit",
+      "prompt": "a boat row large pirate theme asset",
+      "mismatched_prompt": "a debris tire vehicle asset",
+      "correct": {
+        "predicted": 38,
+        "target": 568,
+        "iou": 0.005
+      },
+      "mismatched": {
+        "predicted": 23,
+        "target": 568,
+        "iou": 0.0034
+      },
+      "prompt_difference_cells": 15
+    },
+    {
+      "asset_id": "kenney-pirate-kit-boat-row-small",
+      "group": "kenney-pirate-kit",
+      "prompt": "a boat row small pirate theme asset",
+      "mismatched_prompt": "a suv luxury vehicle asset",
+      "correct": {
+        "predicted": 27,
+        "target": 492,
+        "iou": 0.0019
+      },
+      "mismatched": {
+        "predicted": 26,
+        "target": 492,
+        "iou": 0.0019
+      },
+      "prompt_difference_cells": 1
+    },
+    {
+      "asset_id": "kenney-pirate-kit-bottle",
+      "group": "kenney-pirate-kit",
+      "prompt": "a bottle pirate theme asset",
+      "mismatched_prompt": "an apple food item",
+      "correct": {
+        "predicted": 43,
+        "target": 408,
+        "iou": 0.0135
+      },
+      "mismatched": {
+        "predicted": 62,
+        "target": 408,
+        "iou": 0.0151
+      },
+      "prompt_difference_cells": 19
+    },
+    {
+      "asset_id": "kenney-pirate-kit-bottle-large",
+      "group": "kenney-pirate-kit",
+      "prompt": "a bottle large pirate theme asset",
+      "mismatched_prompt": "a broccoli food item",
+      "correct": {
+        "predicted": 44,
+        "target": 568,
+        "iou": 0.0082
+      },
+      "mismatched": {
+        "predicted": 52,
+        "target": 568,
+        "iou": 0.0081
+      },
+      "prompt_difference_cells": 8
+    },
+    {
+      "asset_id": "kenney-pirate-kit-cannon",
+      "group": "kenney-pirate-kit",
+      "prompt": "a cannon pirate theme asset",
+      "mismatched_prompt": "a cauliflower food item",
+      "correct": {
+        "predicted": 33,
+        "target": 894,
+        "iou": 0.0109
+      },
+      "mismatched": {
+        "predicted": 40,
+        "target": 894,
+        "iou": 0.0108
+      },
+      "prompt_difference_cells": 7
+    },
+    {
+      "asset_id": "kenney-pirate-kit-cannon-ball",
+      "group": "kenney-pirate-kit",
+      "prompt": "a cannon ball pirate theme asset",
+      "mismatched_prompt": "a cooking knife food item",
+      "correct": {
+        "predicted": 28,
+        "target": 1000,
+        "iou": 0.0069
+      },
+      "mismatched": {
+        "predicted": 28,
+        "target": 1000,
+        "iou": 0.0069
+      },
+      "prompt_difference_cells": 0
+    },
+    {
+      "asset_id": "kenney-pirate-kit-cannon-mobile",
+      "group": "kenney-pirate-kit",
+      "prompt": "a cannon mobile pirate theme asset",
+      "mismatched_prompt": "a donut chocolate food item",
+      "correct": {
+        "predicted": 34,
+        "target": 1178,
+        "iou": 0.0083
+      },
+      "mismatched": {
+        "predicted": 49,
+        "target": 1178,
+        "iou": 0.0107
+      },
+      "prompt_difference_cells": 15
+    },
+    {
+      "asset_id": "kenney-pirate-kit-castle-door",
+      "group": "kenney-pirate-kit",
+      "prompt": "a castle door pirate theme asset",
+      "mismatched_prompt": "a glass food item",
+      "correct": {
+        "predicted": 8,
+        "target": 766,
+        "iou": 0.0
+      },
+      "mismatched": {
+        "predicted": 8,
+        "target": 766,
+        "iou": 0.0
+      },
+      "prompt_difference_cells": 0
+    },
+    {
+      "asset_id": "kenney-pirate-kit-castle-gate",
+      "group": "kenney-pirate-kit",
+      "prompt": "a castle gate pirate theme asset",
+      "mismatched_prompt": "a loaf round food item",
+      "correct": {
+        "predicted": 31,
+        "target": 1540,
+        "iou": 0.0077
+      },
+      "mismatched": {
+        "predicted": 39,
+        "target": 1540,
+        "iou": 0.0083
+      },
+      "prompt_difference_cells": 8
+    },
+    {
+      "asset_id": "kenney-pirate-kit-castle-wall",
+      "group": "kenney-pirate-kit",
+      "prompt": "a castle wall pirate theme asset",
+      "mismatched_prompt": "a mushroom half food item",
+      "correct": {
+        "predicted": 53,
+        "target": 668,
+        "iou": 0.0155
+      },
+      "mismatched": {
+        "predicted": 66,
+        "target": 668,
+        "iou": 0.0166
+      },
+      "prompt_difference_cells": 13
+    },
+    {
+      "asset_id": "kenney-pirate-kit-castle-window",
+      "group": "kenney-pirate-kit",
+      "prompt": "a castle window pirate theme asset",
+      "mismatched_prompt": "a pineapple food item",
+      "correct": {
+        "predicted": 23,
+        "target": 718,
+        "iou": 0.0041
+      },
+      "mismatched": {
+        "predicted": 32,
+        "target": 718,
+        "iou": 0.0067
+      },
+      "prompt_difference_cells": 9
+    },
+    {
+      "asset_id": "kenney-space-kit-alien",
+      "group": "kenney-space-kit",
+      "prompt": "an alien sci-fi space asset",
+      "mismatched_prompt": "a flower yellowa nature environment asset",
+      "correct": {
+        "predicted": 45,
+        "target": 470,
+        "iou": 0.0098
+      },
+      "mismatched": {
+        "predicted": 41,
+        "target": 470,
+        "iou": 0.0059
+      },
+      "prompt_difference_cells": 4
+    },
+    {
+      "asset_id": "kenney-space-kit-astronauta",
+      "group": "kenney-space-kit",
+      "prompt": "an astronauta sci-fi space asset",
+      "mismatched_prompt": "a ground pathsideopen nature environment asset",
+      "correct": {
+        "predicted": 41,
+        "target": 508,
+        "iou": 0.0092
+      },
+      "mismatched": {
+        "predicted": 28,
+        "target": 508,
+        "iou": 0.0019
+      },
+      "prompt_difference_cells": 13
+    },
+    {
+      "asset_id": "kenney-space-kit-astronautb",
+      "group": "kenney-space-kit",
+      "prompt": "an astronautb sci-fi space asset",
+      "mismatched_prompt": "a log large nature environment asset",
+      "correct": {
+        "predicted": 29,
+        "target": 512,
+        "iou": 0.0056
+      },
+      "mismatched": {
+        "predicted": 24,
+        "target": 512,
+        "iou": 0.0037
+      },
+      "prompt_difference_cells": 5
+    },
+    {
+      "asset_id": "kenney-space-kit-barrel",
+      "group": "kenney-space-kit",
+      "prompt": "a barrel sci-fi space asset",
+      "mismatched_prompt": "a plant bushlargetriangle nature environment asset",
+      "correct": {
+        "predicted": 19,
+        "target": 936,
+        "iou": 0.0074
+      },
+      "mismatched": {
+        "predicted": 7,
+        "target": 936,
+        "iou": 0.0021
+      },
+      "prompt_difference_cells": 12
+    },
+    {
+      "asset_id": "kenney-space-kit-barrels",
+      "group": "kenney-space-kit",
+      "prompt": "a barrels sci-fi space asset",
+      "mismatched_prompt": "a rock smallc nature environment asset",
+      "correct": {
+        "predicted": 47,
+        "target": 1392,
+        "iou": 0.0134
+      },
+      "mismatched": {
+        "predicted": 52,
+        "target": 1392,
+        "iou": 0.0133
+      },
+      "prompt_difference_cells": 5
+    },
+    {
+      "asset_id": "kenney-space-kit-barrels-rail",
+      "group": "kenney-space-kit",
+      "prompt": "a barrels rail sci-fi space asset",
+      "mismatched_prompt": "a rock tallf nature environment asset",
+      "correct": {
+        "predicted": 36,
+        "target": 1684,
+        "iou": 0.0136
+      },
+      "mismatched": {
+        "predicted": 42,
+        "target": 1684,
+        "iou": 0.0159
+      },
+      "prompt_difference_cells": 6
+    },
+    {
+      "asset_id": "kenney-space-kit-bones",
+      "group": "kenney-space-kit",
+      "prompt": "a bones sci-fi space asset",
+      "mismatched_prompt": "a stone tallj nature environment asset",
+      "correct": {
+        "predicted": 47,
+        "target": 360,
+        "iou": 0.0025
+      },
+      "mismatched": {
+        "predicted": 30,
+        "target": 360,
+        "iou": 0.0
+      },
+      "prompt_difference_cells": 17
+    },
+    {
+      "asset_id": "kenney-space-kit-chimney",
+      "group": "kenney-space-kit",
+      "prompt": "a chimney sci-fi space asset",
+      "mismatched_prompt": "a tree default fall nature environment asset",
+      "correct": {
+        "predicted": 26,
+        "target": 176,
+        "iou": 0.0202
+      },
+      "mismatched": {
+        "predicted": 17,
+        "target": 176,
+        "iou": 0.0212
+      },
+      "prompt_difference_cells": 9
+    },
+    {
+      "asset_id": "kenney-space-kit-chimney-detailed",
+      "group": "kenney-space-kit",
+      "prompt": "a chimney detailed sci-fi space asset",
+      "mismatched_prompt": "a tree pineroundd nature environment asset",
+      "correct": {
+        "predicted": 17,
+        "target": 184,
+        "iou": 0.0
+      },
+      "mismatched": {
+        "predicted": 8,
+        "target": 184,
+        "iou": 0.0
+      },
+      "prompt_difference_cells": 9
+    },
+    {
+      "asset_id": "kenney-space-kit-corridor",
+      "group": "kenney-space-kit",
+      "prompt": "a corridor sci-fi space asset",
+      "mismatched_prompt": "a tree small nature environment asset",
+      "correct": {
+        "predicted": 47,
+        "target": 1408,
+        "iou": 0.0139
+      },
+      "mismatched": {
+        "predicted": 32,
+        "target": 1408,
+        "iou": 0.0119
+      },
+      "prompt_difference_cells": 15
+    },
+    {
+      "asset_id": "kenney-space-kit-corridor-corner",
+      "group": "kenney-space-kit",
+      "prompt": "a corridor corner sci-fi space asset",
+      "mismatched_prompt": "a debris plate a vehicle asset",
+      "correct": {
+        "predicted": 25,
+        "target": 1408,
+        "iou": 0.0021
+      },
+      "mismatched": {
+        "predicted": 11,
+        "target": 1408,
+        "iou": 0.0014
+      },
+      "prompt_difference_cells": 14
+    },
+    {
+      "asset_id": "kenney-space-kit-corridor-cornerround",
+      "group": "kenney-space-kit",
+      "prompt": "a corridor cornerround sci-fi space asset",
+      "mismatched_prompt": "a police vehicle asset",
+      "correct": {
+        "predicted": 17,
+        "target": 1322,
+        "iou": 0.0037
+      },
+      "mismatched": {
+        "predicted": 24,
+        "target": 1322,
+        "iou": 0.0045
+      },
+      "prompt_difference_cells": 7
+    }
+  ],
+  "source_sha256": "27d598fcf14bc7fd8bc34d7b6db0f9d021ea509c404d07694a3f661ec33f3479"
+}

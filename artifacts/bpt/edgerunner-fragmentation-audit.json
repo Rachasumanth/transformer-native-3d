@@ -1,0 +1,61 @@
+{
+  "scope": "Independent, paper-derived count of EdgeRunner B subsequence starts; local fixtures only",
+  "method": "Count each B emitted by the paper appendix traversal: seed unvisited faces in array order, use next/previous adjacent faces, and start a new B traversal on the previous side when both sides are unvisited.",
+  "boundary_policy": "Initialize boundary vertices as visited; treat missing adjacent faces as already visited when deciding traversal direction.",
+  "limitations": [
+    "The authors report 54.7 EdgeRunner and 199.5 AMT subsequences as dataset averages; this local count uses different fixtures and ordering.",
+    "The counter does not emit or validate vertex tokens and is not the authors\u2019 implementation.",
+    "Nonmanifold edges and inconsistent winding are rejected."
+  ],
+  "reference": "EdgeRunner Appendix A.1.1, Algorithm 1 (arXiv:2409.18114v1)",
+  "cases": [
+    {
+      "faces": 12,
+      "subsequences": 2,
+      "boundary_edges": 0,
+      "connected_components": 1,
+      "asset": "Khronos Box",
+      "provenance": "CC-BY 4.0 source after local BPT 128-bin quantization/round-trip",
+      "status": "counted",
+      "bpt_patch_count": 3
+    },
+    {
+      "faces": 8192,
+      "subsequences": 65,
+      "boundary_edges": 256,
+      "connected_components": 1,
+      "asset": "planar-grid",
+      "provenance": "synthetic open surface after local BPT round-trip",
+      "status": "counted",
+      "bpt_patch_count": 2080
+    },
+    {
+      "faces": 20480,
+      "subsequences": 27,
+      "boundary_edges": 0,
+      "connected_components": 1,
+      "asset": "icosphere",
+      "provenance": "synthetic closed surface after local BPT round-trip",
+      "status": "counted",
+      "bpt_patch_count": 3551
+    },
+    {
+      "faces": 681,
+      "subsequences": 16,
+      "boundary_edges": 41,
+      "connected_components": 2,
+      "asset": "Avocado",
+      "provenance": "cleaned 128-bin source; kept 681 faces",
+      "status": "counted",
+      "bpt_patch_count": 142
+    },
+    {
+      "asset": "Poly Haven Food Lime",
+      "provenance": "cleaned 128-bin source; kept 7949 faces",
+      "status": "rejected",
+      "faces": 7949,
+      "bpt_patch_count": 1698,
+      "reason": "nonmanifold edge (2579, 2580) has 4 incident faces"
+    }
+  ]
+}

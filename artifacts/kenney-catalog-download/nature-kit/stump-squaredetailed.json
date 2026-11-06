@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/stump-squaredetailed",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/stump-squaredetailed.glb",
+  "sha256": "d84fa1d9c2e57d07669b9e0072f61fb12f83dc8a20786caf9e75818cd4dcbfcc",
+  "bytes": 7544,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

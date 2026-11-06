@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/barrel",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/barrel.glb",
+  "sha256": "ee131f4802a977a1af2b2ec09503951b9be225168802baf92733ed0300096a64",
+  "bytes": 37544,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

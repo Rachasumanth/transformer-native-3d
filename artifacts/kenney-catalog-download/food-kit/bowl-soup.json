@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/bowl-soup",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/bowl-soup.glb",
+  "sha256": "c705ba30e46fe1e72162fdee0af6d1c0cd9b2e17ca89dc5ea0d9ab747d9e831d",
+  "bytes": 21932,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

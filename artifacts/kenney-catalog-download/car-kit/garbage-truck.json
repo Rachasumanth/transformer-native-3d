@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/garbage-truck",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/garbage-truck.glb",
+  "sha256": "ddafb85b3ed289184fa44d611ab8c0c86d73dd0cad878951bcbb547a4d22f4d5",
+  "bytes": 280428,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Transformer Native 3D Pilot",
+  "id": "sumu143/transformer-native-3d-pilot",
+  "licenses": [
+    {
+      "name": "CC0-1.0"
+    }
+  ],
+  "description": "Two low-resolution prepared Khronos CC0 sample assets for pipeline integration. Avocado train; WaterBottle validation. Not a curated corpus or quality benchmark."
+}

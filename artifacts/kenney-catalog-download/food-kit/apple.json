@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/apple",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/apple.glb",
+  "sha256": "80617eb699d267f4bc377415aff8e5397de4184b88d43974501b11bc3b5f33a1",
+  "bytes": 25120,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

@@ -1,0 +1,260 @@
+{
+  "avocado": {
+    "source_exact_weld_boundary_edges": 38,
+    "source_exact_weld_nonmanifold_edges": 0,
+    "extracted_boundary_edges": 4,
+    "extracted_nonmanifold_edges": 28,
+    "crossings": {
+      "active_voxels": 498,
+      "marked_edges": 507,
+      "multiple_crossing_edges": 3,
+      "maximum_crossings_per_edge": 2,
+      "parameter_tolerance": 1e-08,
+      "ambiguous_edge_examples": [
+        {
+          "cell": [
+            5,
+            12,
+            9
+          ],
+          "axis": 2,
+          "parameters": [
+            0.33630989085577023,
+            0.9744969582642156
+          ]
+        },
+        {
+          "cell": [
+            6,
+            14,
+            9
+          ],
+          "axis": 2,
+          "parameters": [
+            0.8056523855853835,
+            0.8261733367031672
+          ]
+        },
+        {
+          "cell": [
+            9,
+            4,
+            9
+          ],
+          "axis": 2,
+          "parameters": [
+            0.9769943259921856,
+            0.9770823916671951
+          ]
+        }
+      ]
+    }
+  },
+  "waterbottle": {
+    "source_exact_weld_boundary_edges": 264,
+    "source_exact_weld_nonmanifold_edges": 0,
+    "extracted_boundary_edges": 0,
+    "extracted_nonmanifold_edges": 112,
+    "crossings": {
+      "active_voxels": 464,
+      "marked_edges": 502,
+      "multiple_crossing_edges": 84,
+      "maximum_crossings_per_edge": 3,
+      "parameter_tolerance": 1e-08,
+      "ambiguous_edge_examples": [
+        {
+          "cell": [
+            4,
+            0,
+            7
+          ],
+          "axis": 0,
+          "parameters": [
+            0.6548998768491265,
+            0.9282827714090417
+          ]
+        },
+        {
+          "cell": [
+            4,
+            4,
+            7
+          ],
+          "axis": 0,
+          "parameters": [
+            0.6548998768491265,
+            0.9282830956108206
+          ]
+        },
+        {
+          "cell": [
+            4,
+            5,
+            7
+          ],
+          "axis": 0,
+          "parameters": [
+            0.6548998768491265,
+            0.9282831766612653
+          ]
+        },
+        {
+          "cell": [
+            5,
+            0,
+            5
+          ],
+          "axis": 0,
+          "parameters": [
+            0.32262473199231584,
+            0.681038505937349
+          ]
+        },
+        {
+          "cell": [
+            5,
+            0,
+            5
+          ],
+          "axis": 2,
+          "parameters": [
+            0.32262474393027546,
+            0.6810385609496707
+          ]
+        },
+        {
+          "cell": [
+            5,
+            0,
+            9
+          ],
+          "axis": 0,
+          "parameters": [
+            0.3226250535966802,
+            0.6810382172117408
+          ]
+        },
+        {
+          "cell": [
+            5,
+            0,
+            10
+          ],
+          "axis": 2,
+          "parameters": [
+            0.31896170598477275,
+            0.677375368192905
+          ]
+        },
+        {
+          "cell": [
+            5,
+            1,
+            5
+          ],
+          "axis": 0,
+          "parameters": [
+            0.3226247319923158,
+            0.6810387023421268
+          ]
+        },
+        {
+          "cell": [
+            5,
+            1,
+            5
+          ],
+          "axis": 2,
+          "parameters": [
+            0.3226247439302754,
+            0.6810387863181658
+          ]
+        },
+        {
+          "cell": [
+            5,
+            1,
+            9
+          ],
+          "axis": 0,
+          "parameters": [
+            0.3226250535966802,
+            0.6810381319880784
+          ]
+        },
+        {
+          "cell": [
+            5,
+            1,
+            10
+          ],
+          "axis": 2,
+          "parameters": [
+            0.3189618458914498,
+            0.677375368192905
+          ]
+        },
+        {
+          "cell": [
+            5,
+            2,
+            5
+          ],
+          "axis": 0,
+          "parameters": [
+            0.3226247319923158,
+            0.6810388987469044
+          ]
+        },
+        {
+          "cell": [
+            5,
+            2,
+            5
+          ],
+          "axis": 2,
+          "parameters": [
+            0.3226247439302754,
+            0.6810390116866609
+          ]
+        },
+        {
+          "cell": [
+            5,
+            2,
+            9
+          ],
+          "axis": 0,
+          "parameters": [
+            0.3226250535966802,
+            0.6810380467644155
+          ]
+        },
+        {
+          "cell": [
+            5,
+            2,
+            10
+          ],
+          "axis": 2,
+          "parameters": [
+            0.31896198579812685,
+            0.677375368192905
+          ]
+        },
+        {
+          "cell": [
+            5,
+            3,
+            5
+          ],
+          "axis": 0,
+          "parameters": [
+            0.3226247319923158,
+            0.681039095151682
+          ]
+        }
+      ]
+    }
+  }
+}

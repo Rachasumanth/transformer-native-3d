@@ -1,0 +1,52 @@
+{
+  "grid_size": [
+    8,
+    8,
+    8
+  ],
+  "active_voxels": 152,
+  "triangles": 300,
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "euler_characteristic": 2,
+  "bounds": [
+    [
+      0.2,
+      0.2,
+      0.2
+    ],
+    [
+      0.8,
+      0.8,
+      0.8
+    ]
+  ],
+  "encode_seconds": 0.37798923599999057,
+  "decode_seconds": 0.08230530299999828,
+  "material_seconds": 0.005378393999990294,
+  "storage_seconds": 0.0019085030000098868,
+  "pbr_channels": [
+    "linear_r",
+    "linear_g",
+    "linear_b",
+    "metallic",
+    "roughness",
+    "alpha"
+  ],
+  "orientation_seconds": 0.005074468999993087,
+  "orientation": {
+    "components": [
+      {
+        "faces": 300,
+        "closed": true,
+        "signed_volume": 0.21600000000000005,
+        "flipped_faces": 150
+      }
+    ],
+    "flipped_faces": 150,
+    "outward_closed_components": true
+  },
+  "storage_max_vertex_error": 2.034505208337034e-05,
+  "winding": "consistent; closed components have positive signed volume",
+  "backend": "CPU reference"
+}

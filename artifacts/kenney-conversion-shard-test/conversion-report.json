@@ -1,0 +1,25 @@
+{
+  "scope": "Uncurated shape-only shard; only within-shard exact duplicates checked; cross-shard and semantic deduplication and quality filtering remain pending",
+  "index_sha256": "e29374e35107cd34acd5c5f1d329cd0a478b37a7a30557023d62fd3651df775b",
+  "start": 0,
+  "stop": 2,
+  "accepted": [
+    {
+      "asset_id": "kenney-car-kit-ambulance",
+      "source_faces": 2804,
+      "removed_zero_or_grid_collapsed": 17,
+      "active_voxels": 3216,
+      "triangles": 6796,
+      "seconds": 9.483566913999312
+    },
+    {
+      "asset_id": "kenney-car-kit-box",
+      "source_faces": 124,
+      "removed_zero_or_grid_collapsed": 8,
+      "active_voxels": 5936,
+      "triangles": 11868,
+      "seconds": 12.671769741999015
+    }
+  ],
+  "rejected": []
+}

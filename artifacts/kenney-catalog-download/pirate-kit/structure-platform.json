@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/structure-platform",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/structure-platform.glb",
+  "sha256": "4381d3cff14b471b6a9f661c2b47b104cd2ff9cdb29d437fa4e8c74a22e4db92",
+  "bytes": 34344,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

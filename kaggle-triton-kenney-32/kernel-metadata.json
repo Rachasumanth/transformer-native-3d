@@ -1,0 +1,18 @@
+{
+  "id": "sumu143/transformer-native-3d-skinae-cross-validation",
+  "title": "Transformer Native 3D SkinAE Cross Validation",
+  "code_file": "triton.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "sumu143/t3d-mixed-pilot-shape-checkpoint",
+    "sumu143/t3d-kenney-shape-pilot-32"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

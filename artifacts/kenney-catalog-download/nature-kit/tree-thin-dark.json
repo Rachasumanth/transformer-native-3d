@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/tree-thin-dark",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/tree-thin-dark.glb",
+  "sha256": "8f12bf461e38c43866ddfeaa56f77fadaa56425642bcb2e71dcf3c5c74abab47",
+  "bytes": 32488,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

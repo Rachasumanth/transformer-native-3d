@@ -1,0 +1,26 @@
+{
+  "source_sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401",
+  "output_sha256": "7832683b01699bef7bcf57ea5f0cc378f29f638ec4286a3c8f592e649529ae15",
+  "source_vertices": 160,
+  "source_faces": 188,
+  "output_vertices": 714,
+  "output_faces": 966,
+  "joint_count": 2,
+  "normalization_scale": 0.10928777093401539,
+  "sample_count": 714,
+  "output_to_source_joint_ids": [
+    0,
+    1
+  ],
+  "skinae": {
+    "weight_mae": 0.2082098975934755,
+    "weight_kl": 0.16150848933776785,
+    "dominant_joint_accuracy": 0.9019607843137255
+  },
+  "nearest_joint_baseline": {
+    "weight_mae": 0.3177637464361029,
+    "weight_kl": 5.4895520177832315,
+    "dominant_joint_accuracy": 0.680672268907563
+  },
+  "target": "Source skin weights barycentrically projected from the closest source triangle to each output vertex."
+}

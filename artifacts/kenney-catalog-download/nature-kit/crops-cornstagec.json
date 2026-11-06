@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/crops-cornstagec",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/crops-cornstagec.glb",
+  "sha256": "deb8b4b74247fd8dc8834cf0a954c818c76c5da9564b244a6354ec4ab65da059",
+  "bytes": 11960,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/pie",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/pie.glb",
+  "sha256": "e7c9ee2551cfe9b47eedf42551b2f4e4a6f47d880d2f3e5b23416c8099ee442c",
+  "bytes": 33168,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

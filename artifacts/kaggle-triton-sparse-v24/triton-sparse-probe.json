@@ -1,0 +1,45 @@
+{
+  "scope": "One T4; tiny random sparse grids; forward timing includes validation and neighbor-map construction; backward uses PyTorch; not a production benchmark",
+  "device": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "triton": "3.6.0",
+  "cases": [
+    {
+      "n": 31,
+      "channels": 4,
+      "max_abs_error_forward_grad_features_grad_weight_grad_bias": [
+        5.960464477539063e-08,
+        2.9802322387695312e-08,
+        1.1920928955078125e-07,
+        0.0
+      ],
+      "reference_ms": 10.708154600001762,
+      "experimental_ms": 8.068444600007751
+    },
+    {
+      "n": 128,
+      "channels": 16,
+      "max_abs_error_forward_grad_features_grad_weight_grad_bias": [
+        2.980232238769531e-07,
+        1.7881393432617188e-07,
+        2.86102294921875e-06,
+        0.0
+      ],
+      "reference_ms": 10.59595020000188,
+      "experimental_ms": 8.019144399997913
+    },
+    {
+      "n": 512,
+      "channels": 33,
+      "max_abs_error_forward_grad_features_grad_weight_grad_bias": [
+        1.4901161193847656e-06,
+        3.5762786865234375e-07,
+        7.62939453125e-06,
+        0.0
+      ],
+      "reference_ms": 11.523427200006608,
+      "experimental_ms": 8.546406799996475
+    }
+  ],
+  "source_sha256": "5cd6a28451ba45a9f472273294c66c99e7744fb8decaa3c2dc8854dd4d38eef6"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/egg-half",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/egg-half.glb",
+  "sha256": "79ae4e55c6f00647bf482d0b36af6da364c60233ea5f55d6dfd458ce6fa7b217",
+  "bytes": 18992,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

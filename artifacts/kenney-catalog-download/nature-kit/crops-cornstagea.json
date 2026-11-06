@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/crops-cornstagea",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/crops-cornstagea.glb",
+  "sha256": "085e2f0501f0f39acc10762cf46449fd962d9ac0630e7fd128cf9aa4a1edcfb5",
+  "bytes": 9076,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

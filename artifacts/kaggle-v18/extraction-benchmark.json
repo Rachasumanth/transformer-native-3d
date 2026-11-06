@@ -1,0 +1,137 @@
+{
+  "source_sha256": "512fcd434230053e1f2ab6d448e12b20dfc51d6f3a868422d9e64134ea2f4159",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "device": "Tesla T4",
+  "fixture": "single axis-aligned sheet; surface support scales as resolution squared",
+  "includes": "validation, key sort, neighbor queries, vertex placement and triangulation",
+  "excludes": "input transfers, VAE decode, orientation, cleanup, UVs and GLB export",
+  "results": [
+    {
+      "resolution": 512,
+      "active_voxels": 262144,
+      "faces": 522242,
+      "split": "weights",
+      "wall_ms": [
+        7.8889970000091125,
+        6.006202999969901,
+        5.827606000025298
+      ],
+      "gpu_event_ms": [
+        6.074560165405273,
+        5.96940803527832,
+        5.801375865936279
+      ],
+      "median_wall_ms": 6.006202999969901,
+      "baseline_allocated_bytes": 11272192,
+      "peak_allocated_bytes": 111092224,
+      "peak_increment_bytes": 99820032,
+      "count_bounds_area_checks_passed": true
+    },
+    {
+      "resolution": 512,
+      "active_voxels": 262144,
+      "faces": 522242,
+      "split": "minimum_angle",
+      "wall_ms": [
+        10.783638000020801,
+        10.51242000005459,
+        10.520262000000002
+      ],
+      "gpu_event_ms": [
+        10.736576080322266,
+        10.48579216003418,
+        10.478879928588867
+      ],
+      "median_wall_ms": 10.520262000000002,
+      "baseline_allocated_bytes": 10223616,
+      "peak_allocated_bytes": 257854976,
+      "peak_increment_bytes": 247631360,
+      "count_bounds_area_checks_passed": true
+    },
+    {
+      "resolution": 1024,
+      "active_voxels": 1048576,
+      "faces": 2093058,
+      "split": "weights",
+      "wall_ms": [
+        22.070826000003763,
+        21.85948599992571,
+        21.833407000031002
+      ],
+      "gpu_event_ms": [
+        22.025184631347656,
+        21.83296012878418,
+        21.80681610107422
+      ],
+      "median_wall_ms": 21.85948599992571,
+      "baseline_allocated_bytes": 46137344,
+      "peak_allocated_bytes": 437103616,
+      "peak_increment_bytes": 390966272,
+      "count_bounds_area_checks_passed": true
+    },
+    {
+      "resolution": 1024,
+      "active_voxels": 1048576,
+      "faces": 2093058,
+      "split": "minimum_angle",
+      "wall_ms": [
+        32.85442499998226,
+        32.673748999968666,
+        32.56961199997477
+      ],
+      "gpu_event_ms": [
+        32.800254821777344,
+        32.63596725463867,
+        32.53014373779297
+      ],
+      "median_wall_ms": 32.673748999968666,
+      "baseline_allocated_bytes": 41943040,
+      "peak_allocated_bytes": 1024184832,
+      "peak_increment_bytes": 982241792,
+      "count_bounds_area_checks_passed": true
+    },
+    {
+      "resolution": 1536,
+      "active_voxels": 2359296,
+      "faces": 4712450,
+      "split": "weights",
+      "wall_ms": [
+        36.14087699997981,
+        35.75566299991806,
+        35.87504300003275
+      ],
+      "gpu_event_ms": [
+        36.09983825683594,
+        35.72771072387695,
+        35.84880065917969
+      ],
+      "median_wall_ms": 35.87504300003275,
+      "baseline_allocated_bytes": 101449728,
+      "peak_allocated_bytes": 981286912,
+      "peak_increment_bytes": 879837184,
+      "count_bounds_area_checks_passed": true
+    },
+    {
+      "resolution": 1536,
+      "active_voxels": 2359296,
+      "faces": 4712450,
+      "split": "minimum_angle",
+      "wall_ms": [
+        69.50417999996716,
+        69.84632000001056,
+        69.61520200002269
+      ],
+      "gpu_event_ms": [
+        69.4466552734375,
+        69.80960083007812,
+        69.57532501220703
+      ],
+      "median_wall_ms": 69.61520200002269,
+      "baseline_allocated_bytes": 92012544,
+      "peak_allocated_bytes": 2303284224,
+      "peak_increment_bytes": 2211271680,
+      "count_bounds_area_checks_passed": true
+    }
+  ]
+}

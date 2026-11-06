@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/cliff-cave-stone",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/cliff-cave-stone.glb",
+  "sha256": "8795c3d3bf3311d30403c10a8d1225d1e2075535554dab8a5235146668168c5c",
+  "bytes": 5484,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

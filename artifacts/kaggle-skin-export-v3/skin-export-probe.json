@@ -1,0 +1,17 @@
+{
+  "device": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "checkpoint_sha256": "f73a7be776b6ac653f2e248d78307eeddea833ea0c5284011e7a92bf2543e9eb",
+  "joint_count": 3,
+  "vertex_count": 512,
+  "joint_tolerance": 1e-06,
+  "support_count": 512,
+  "interpolation_max_error": 0.0,
+  "unsupported_corner_handling": "reported",
+  "minimum_weight_sum": 1.0,
+  "maximum_weight_sum": 1.0,
+  "minimum_weight": 0.016628433018922806,
+  "maximum_weight": 0.8301284909248352,
+  "mean_max_joint_probability": 0.6195100545883179,
+  "scope": "Synthetic CUDA probe of field clustering, sparse feature sampling, and frozen SkinAE decoding; no mesh extraction or quality claim"
+}

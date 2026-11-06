@@ -1,0 +1,82 @@
+{
+  "deformation-audit.json": {
+    "bytes": 12052,
+    "sha256": "3f77e61fb46a0b602d178f85ac6ba675b1a0bb4d7604b50c25447b80d4f58214"
+  },
+  "paired-deformation-comparison.json": {
+    "bytes": 508,
+    "sha256": "4cb069ab4b98a2d46d2103418471827b14eb6774bce8d9d56f67d61f1986f24d"
+  },
+  "skin-pose-cv-tests.log": {
+    "bytes": 1423,
+    "sha256": "a506865f5124b85ab230845bfd7c35f2d8c2eab8d03f5dd170564196f7e98549"
+  },
+  "transformer-native-3d-skinae-cross-validation.log": {
+    "bytes": 61954,
+    "sha256": "f29453b8111163a162923b5e96900bcb4d73fb54d5f2d78561a0ed124ba6906c"
+  },
+  "loss-0.0/skin-pose-pilot-holdout-CesiumMan.pt": {
+    "bytes": 470981,
+    "sha256": "3e695bcd6da26e5bcd82529eab4d1265a340ff3eb0b3794b6026dcae079c8a69"
+  },
+  "loss-0.0/skin-pose-pilot-holdout-Fox.pt": {
+    "bytes": 470693,
+    "sha256": "021717799f6e10d3560fbc356c22b3e325a3095d7d20802bd2285c32f873a999"
+  },
+  "loss-0.0/skin-pose-pilot-holdout-RiggedSimple.pt": {
+    "bytes": 471125,
+    "sha256": "7a6c3c24ecad28f22cfae0b25562f6a501fb037021b25773068fbdaeb914ddcf"
+  },
+  "loss-0.0/skin-pose-training-report-holdout-CesiumMan.json": {
+    "bytes": 7274,
+    "sha256": "5a9b08ea17f1dc79641260dba99670a429ba55431c9596e2f62342869919f2fc"
+  },
+  "loss-0.0/skin-pose-training-report-holdout-Fox.json": {
+    "bytes": 7261,
+    "sha256": "800823cb8c14c7529130582f8c2ad1c6eeb1652b947568ce7de4952cf1c0a68a"
+  },
+  "loss-0.0/skin-pose-training-report-holdout-RiggedSimple.json": {
+    "bytes": 7302,
+    "sha256": "97b56f9d730ccedb0df475cfa8f6926121210d6638730453c52f3cb01c010905"
+  },
+  "loss-1.0/skin-pose-pilot-holdout-CesiumMan.pt": {
+    "bytes": 470981,
+    "sha256": "b252aea57713efba096d2c9005bbc3b398662c462cac76ec37d6faf31899b1fe"
+  },
+  "loss-1.0/skin-pose-pilot-holdout-Fox.pt": {
+    "bytes": 470693,
+    "sha256": "4e8b07e08650206b1682230456b631374f0535951c1807100a9abf23bf9eb25e"
+  },
+  "loss-1.0/skin-pose-pilot-holdout-RiggedSimple.pt": {
+    "bytes": 471125,
+    "sha256": "a082a59c2d00b6070985e5b915041ff0db3f1ddc0fb5e282ad9ea6d877f63b15"
+  },
+  "loss-1.0/skin-pose-training-report-holdout-CesiumMan.json": {
+    "bytes": 7277,
+    "sha256": "c85cc0492aa3e45695806ab34e471371fe1cdad1dddbc948b4f467b10c8c4a30"
+  },
+  "loss-1.0/skin-pose-training-report-holdout-Fox.json": {
+    "bytes": 7263,
+    "sha256": "b616058d305f8fd04a53b8f1679cfd78aa7ea0924e623c2922dcd9508521b59d"
+  },
+  "loss-1.0/skin-pose-training-report-holdout-RiggedSimple.json": {
+    "bytes": 7330,
+    "sha256": "9b38a518296552d005e96b5c2da1e07a6ff0f3d378b622ac2401574961eb1db5"
+  },
+  "skin-pose-cv-project/artifacts/skin-pose-pilot/CesiumMan-SOURCE.json": {
+    "bytes": 701,
+    "sha256": "24ebff60aaa628440e6f5e4bd8b11d1aed0fb6342f774a7d3c6c9a268674776e"
+  },
+  "skin-pose-cv-project/artifacts/skin-pose-pilot/Fox-SOURCE.json": {
+    "bytes": 655,
+    "sha256": "f5db9029bc19aa080606ce83ef40dd21fb8c80c83a3f84ec267bd11fdf34620f"
+  },
+  "skin-pose-cv-project/artifacts/skin-pose-pilot/RiggedSimple-SOURCE.json": {
+    "bytes": 694,
+    "sha256": "f94124cd61f49f8ef5585326b6d780bd301effa29e77b273aa21381ec58a640d"
+  },
+  "skin-pose-cv-project/artifacts/skin-pose-pilot/manifest.json": {
+    "bytes": 3532,
+    "sha256": "1ab35fa09abea93f86158443c1a0856c983ffbb4b9b37912bdecb8c61ca8327f"
+  }
+}

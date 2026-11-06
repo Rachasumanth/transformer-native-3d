@@ -1,0 +1,10 @@
+{
+  "id": "space-kit/monorail-traincargo",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/space-kit/monorail-traincargo.glb",
+  "sha256": "cd8fabcc862ed1d517225082df1a6e32090ca0211cd1cf5d16db4ec9e460057f",
+  "bytes": 51296,
+  "group": "space-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/space-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/maki-salmon",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/maki-salmon.glb",
+  "sha256": "5d9a0d875c5b7af69f2278b62b4a8255455f075de36d64e253b88437d7171f18",
+  "bytes": 16740,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

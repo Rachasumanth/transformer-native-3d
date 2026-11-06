@@ -1,0 +1,250 @@
+{
+  "source_sha256": "dc317982b8015614d3fb8e72eafd3eeeb23c6195de71e4c8ec2dd246e006f258",
+  "manifest_sha256": "d57d05937d9a875c2c614208815d605f1b9b2aeef0904cbe4ff39533503003f6",
+  "device": "Tesla T4",
+  "config": {
+    "width": 64,
+    "heads": 4,
+    "layers": 2,
+    "frequencies": 4
+  },
+  "seed": 31,
+  "steps": 1200,
+  "joint_position_loss": 0.0,
+  "deformation_loss": 0.0,
+  "train_pose_count": 20,
+  "validation_pose_count": 5,
+  "train_assets": [
+    "Fox",
+    "RiggedSimple"
+  ],
+  "validation_assets": [
+    "CesiumMan"
+  ],
+  "scope": "Three-asset animated SkinAE integration pilot; one source asset per split; not a representative rig corpus; canonical bind samples and per-pose LBS transforms added",
+  "best_step": 300,
+  "best_validation": {
+    "CesiumMan": {
+      "split": "validation",
+      "poses": 5,
+      "kl": 0.5558040738105774,
+      "uniform_kl": 2.318995714187622,
+      "mean_absolute_weight_error": 0.03917272537946701,
+      "dominant_joint_accuracy": 0.8419921875,
+      "joint_position_error": 0.058457284420728686
+    }
+  },
+  "history": [
+    {
+      "step": 100,
+      "validation": {
+        "CesiumMan": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.9497840404510498,
+          "uniform_kl": 2.318995714187622,
+          "mean_absolute_weight_error": 0.05755428671836853,
+          "dominant_joint_accuracy": 0.5216796875,
+          "joint_position_error": 0.11193322539329528
+        }
+      },
+      "training_loss": 0.3828295171260834
+    },
+    {
+      "step": 200,
+      "validation": {
+        "CesiumMan": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.8021715641021728,
+          "uniform_kl": 2.318995714187622,
+          "mean_absolute_weight_error": 0.0519345223903656,
+          "dominant_joint_accuracy": 0.4326171875,
+          "joint_position_error": 0.08017322719097138
+        }
+      },
+      "training_loss": 0.19165478646755219
+    },
+    {
+      "step": 300,
+      "validation": {
+        "CesiumMan": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.5558040738105774,
+          "uniform_kl": 2.318995714187622,
+          "mean_absolute_weight_error": 0.03917272537946701,
+          "dominant_joint_accuracy": 0.8419921875,
+          "joint_position_error": 0.058457284420728686
+        }
+      },
+      "training_loss": 0.0141313336789608
+    },
+    {
+      "step": 400,
+      "validation": {
+        "CesiumMan": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.7470000505447387,
+          "uniform_kl": 2.318995714187622,
+          "mean_absolute_weight_error": 0.04525618478655815,
+          "dominant_joint_accuracy": 0.5224609375,
+          "joint_position_error": 0.06460985019803048
+        }
+      },
+      "training_loss": 0.016441870480775833
+    },
+    {
+      "step": 500,
+      "validation": {
+        "CesiumMan": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.7687735557556152,
+          "uniform_kl": 2.318995714187622,
+          "mean_absolute_weight_error": 0.045745262503623964,
+          "dominant_joint_accuracy": 0.49375,
+          "joint_position_error": 0.06232282817363739
+        }
+      },
+      "training_loss": 0.013223262503743172
+    },
+    {
+      "step": 600,
+      "validation": {
+        "CesiumMan": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.8162420630455017,
+          "uniform_kl": 2.318995714187622,
+          "mean_absolute_weight_error": 0.04734570533037186,
+          "dominant_joint_accuracy": 0.5634765625,
+          "joint_position_error": 0.07045981585979462
+        }
+      },
+      "training_loss": 0.00921163335442543
+    },
+    {
+      "step": 700,
+      "validation": {
+        "CesiumMan": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.7286200761795044,
+          "uniform_kl": 2.318995714187622,
+          "mean_absolute_weight_error": 0.043293822556734085,
+          "dominant_joint_accuracy": 0.7123046875,
+          "joint_position_error": 0.06332263797521591
+        }
+      },
+      "training_loss": 0.12426818907260895
+    },
+    {
+      "step": 800,
+      "validation": {
+        "CesiumMan": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.6396659851074219,
+          "uniform_kl": 2.318995714187622,
+          "mean_absolute_weight_error": 0.03910002484917641,
+          "dominant_joint_accuracy": 0.7671875,
+          "joint_position_error": 0.05690048933029175
+        }
+      },
+      "training_loss": 0.08498591184616089
+    },
+    {
+      "step": 900,
+      "validation": {
+        "CesiumMan": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.7186334609985352,
+          "uniform_kl": 2.318995714187622,
+          "mean_absolute_weight_error": 0.04262236058712006,
+          "dominant_joint_accuracy": 0.5673828125,
+          "joint_position_error": 0.05996802896261215
+        }
+      },
+      "training_loss": 0.09039308875799179
+    },
+    {
+      "step": 1000,
+      "validation": {
+        "CesiumMan": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.792095172405243,
+          "uniform_kl": 2.318995714187622,
+          "mean_absolute_weight_error": 0.04362621828913689,
+          "dominant_joint_accuracy": 0.55703125,
+          "joint_position_error": 0.05868675708770752
+        }
+      },
+      "training_loss": 0.07614898681640625
+    },
+    {
+      "step": 1100,
+      "validation": {
+        "CesiumMan": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.6355977892875672,
+          "uniform_kl": 2.318995714187622,
+          "mean_absolute_weight_error": 0.03740648850798607,
+          "dominant_joint_accuracy": 0.7740234375,
+          "joint_position_error": 0.04828476309776306
+        }
+      },
+      "training_loss": 0.01073563564568758
+    },
+    {
+      "step": 1200,
+      "validation": {
+        "CesiumMan": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.7901059269905091,
+          "uniform_kl": 2.318995714187622,
+          "mean_absolute_weight_error": 0.043212155997753146,
+          "dominant_joint_accuracy": 0.628515625,
+          "joint_position_error": 0.06015381291508674
+        }
+      },
+      "training_loss": 0.0671195387840271
+    }
+  ],
+  "checkpoint_sha256": "92bbab0b5bb4f4f23ec1ce5cce2dfc6eb8b28285dbd35b854566f7e1f77c3cdb",
+  "frozen": true,
+  "initial": {
+    "RiggedSimple": {
+      "split": "train",
+      "poses": 5,
+      "kl": 0.32059102654457095,
+      "uniform_kl": 0.3182910978794098,
+      "mean_absolute_weight_error": 0.3371458053588867,
+      "dominant_joint_accuracy": 0.2509765625,
+      "joint_position_error": 0.15428012609481812
+    },
+    "CesiumMan": {
+      "split": "validation",
+      "poses": 5,
+      "kl": 2.3144289016723634,
+      "uniform_kl": 2.318995714187622,
+      "mean_absolute_weight_error": 0.09026000797748565,
+      "dominant_joint_accuracy": 0.040234375,
+      "joint_position_error": 0.2062966048717499
+    },
+    "Fox": {
+      "split": "train",
+      "poses": 15,
+      "kl": 2.6203784942626953,
+      "uniform_kl": 2.629746913909912,
+      "mean_absolute_weight_error": 0.07544786036014557,
+      "dominant_joint_accuracy": 0.13170572916666667,
+      "joint_position_error": 0.21411584119002025
+    }
+  }
+}

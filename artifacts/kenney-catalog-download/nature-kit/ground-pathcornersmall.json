@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/ground-pathcornersmall",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/ground-pathcornersmall.glb",
+  "sha256": "d48127637fb555a2af23ef60928952de10c2adc67796dd8263c3a7e86a04706b",
+  "bytes": 3632,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

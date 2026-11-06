@@ -1,0 +1,197 @@
+{
+  "source_sha256": "167fc18bc9fce8fa68764b81f44e2c365339ef95163ae9a8115f93a2e5fc4a82",
+  "upstream_commit": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "device": "Tesla T4",
+  "native_wheel_sha256": "c674b532ea1e5ce78ecf20100c55353fc61c35c82950580196b71c7dffc458b5",
+  "scope": "CPU native geometry converter; no material, rig or production-quality claim",
+  "assets": {
+    "Avocado": {
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "source_faces": 682,
+      "source_boundary_edges": 38,
+      "source_nonmanifold_edges": 0,
+      "resolutions": {
+        "16": {
+          "conversion_seconds": 1.192967957999997,
+          "active_voxels": 498,
+          "diagnostics": {
+            "upstream_commit": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+            "native_position_units": "AABB-relative physical",
+            "maximum_local_roundoff": 0.0,
+            "clamped_components": 0,
+            "local_roundoff_tolerance": 7.62939453125e-06
+          },
+          "metrics": {
+            "valid": true,
+            "samples": 256,
+            "tolerance": 0.01,
+            "seed": 0,
+            "mean_distance": 0.001066453557163637,
+            "reference_to_prediction": 0.0011435990380760889,
+            "prediction_to_reference": 0.000989308076251185,
+            "precision": 1.0,
+            "recall": 1.0,
+            "fscore": 1.0,
+            "triangles": 1014,
+            "boundary_edges": 4,
+            "nonmanifold_edges": 28
+          },
+          "output_sha256": "13686be4e302bff93af1052725d997f7387c9ada2acf68003a268dd83f1e0dba"
+        },
+        "32": {
+          "conversion_seconds": 0.005298776000017824,
+          "active_voxels": 1991,
+          "diagnostics": {
+            "upstream_commit": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+            "native_position_units": "AABB-relative physical",
+            "maximum_local_roundoff": 0.0,
+            "clamped_components": 0,
+            "local_roundoff_tolerance": 1.52587890625e-05
+          },
+          "metrics": {
+            "valid": true,
+            "samples": 256,
+            "tolerance": 0.01,
+            "seed": 0,
+            "mean_distance": 0.0003609639126184427,
+            "reference_to_prediction": 0.00038903092978590306,
+            "prediction_to_reference": 0.0003328968954509823,
+            "precision": 1.0,
+            "recall": 1.0,
+            "fscore": 1.0,
+            "triangles": 4018,
+            "boundary_edges": 18,
+            "nonmanifold_edges": 60
+          },
+          "output_sha256": "71677393aa11d662bf4801ae65d3bd2746b148509360d26e8649575622a01988"
+        }
+      }
+    },
+    "WaterBottle": {
+      "source_sha256": "b337e526fd6a162013c2984aeec163f5fbb4f717252724dfc3f3458bd51df94b",
+      "source_faces": 4510,
+      "source_boundary_edges": 264,
+      "source_nonmanifold_edges": 0,
+      "resolutions": {
+        "16": {
+          "conversion_seconds": 0.0060342449999666314,
+          "active_voxels": 464,
+          "diagnostics": {
+            "upstream_commit": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+            "native_position_units": "AABB-relative physical",
+            "maximum_local_roundoff": 0.0,
+            "clamped_components": 0,
+            "local_roundoff_tolerance": 7.62939453125e-06
+          },
+          "metrics": {
+            "valid": true,
+            "samples": 256,
+            "tolerance": 0.01,
+            "seed": 0,
+            "mean_distance": 0.0035300554554559375,
+            "reference_to_prediction": 0.004249043495266346,
+            "prediction_to_reference": 0.002811067415645529,
+            "precision": 1.0,
+            "recall": 0.98046875,
+            "fscore": 0.9901380670611439,
+            "triangles": 1004,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 112
+          },
+          "output_sha256": "2c591be7d2d68ca146ce859da96693d55a51a59056020436be8c718d16524879"
+        },
+        "32": {
+          "conversion_seconds": 0.008089686000005258,
+          "active_voxels": 1904,
+          "diagnostics": {
+            "upstream_commit": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+            "native_position_units": "AABB-relative physical",
+            "maximum_local_roundoff": 0.0,
+            "clamped_components": 0,
+            "local_roundoff_tolerance": 1.52587890625e-05
+          },
+          "metrics": {
+            "valid": true,
+            "samples": 256,
+            "tolerance": 0.01,
+            "seed": 0,
+            "mean_distance": 0.0028058643954695225,
+            "reference_to_prediction": 0.0029601622974905132,
+            "prediction_to_reference": 0.002651566493448532,
+            "precision": 1.0,
+            "recall": 1.0,
+            "fscore": 1.0,
+            "triangles": 4172,
+            "boundary_edges": 64,
+            "nonmanifold_edges": 408
+          },
+          "output_sha256": "76f51e8690e8009ab9046c0266ea711ef028136c6316c114076cf162e6ddb2b9"
+        }
+      }
+    },
+    "Lantern": {
+      "source_sha256": "a79458c4b02d695187a952f23a63b8bf278e7bc3d316a3c2a314f2d6974181f1",
+      "source_faces": 5394,
+      "source_boundary_edges": 48,
+      "source_nonmanifold_edges": 0,
+      "resolutions": {
+        "16": {
+          "conversion_seconds": 0.006689692000009018,
+          "active_voxels": 146,
+          "diagnostics": {
+            "upstream_commit": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+            "native_position_units": "AABB-relative physical",
+            "maximum_local_roundoff": 0.0,
+            "clamped_components": 0,
+            "local_roundoff_tolerance": 7.62939453125e-06
+          },
+          "metrics": {
+            "valid": true,
+            "samples": 256,
+            "tolerance": 0.01,
+            "seed": 0,
+            "mean_distance": 0.004466514097827606,
+            "reference_to_prediction": 0.00588381542879533,
+            "prediction_to_reference": 0.003049212766859882,
+            "precision": 0.91796875,
+            "recall": 0.8125,
+            "fscore": 0.8620203160270881,
+            "triangles": 294,
+            "boundary_edges": 20,
+            "nonmanifold_edges": 38
+          },
+          "output_sha256": "1c65fd84ebf3c5a43300203899e0127dfe04597743b5b39d3ea9f68ef0975022"
+        },
+        "32": {
+          "conversion_seconds": 0.007726434000005611,
+          "active_voxels": 582,
+          "diagnostics": {
+            "upstream_commit": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+            "native_position_units": "AABB-relative physical",
+            "maximum_local_roundoff": 0.0,
+            "clamped_components": 0,
+            "local_roundoff_tolerance": 1.52587890625e-05
+          },
+          "metrics": {
+            "valid": true,
+            "samples": 256,
+            "tolerance": 0.01,
+            "seed": 0,
+            "mean_distance": 0.0018602052241917931,
+            "reference_to_prediction": 0.0022857131263459085,
+            "prediction_to_reference": 0.0014346973220376777,
+            "precision": 0.98828125,
+            "recall": 0.96484375,
+            "fscore": 0.976421875,
+            "triangles": 1222,
+            "boundary_edges": 58,
+            "nonmanifold_edges": 113
+          },
+          "output_sha256": "b6ffa67db0a2e691a31910d84bf37f6cc58c92fc19a5309a3df1997dafd1e30e"
+        }
+      }
+    }
+  }
+}

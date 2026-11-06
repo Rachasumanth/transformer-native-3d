@@ -1,0 +1,14 @@
+{
+  "upstream_commit": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+  "wheel": "o_voxel-0.0.1-cp313-cp313-linux_x86_64.whl",
+  "sha256": "b7ee8c199e613c01b543938715179f3d9261b63c4403b478ad74c8b2fa236f68",
+  "source_notebook": "sumu143/transformer-native-3d-converter-audit/2",
+  "eigen_commit": "21e4582d1739107337a03460c81412981130373e",
+  "runtime": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "cxx11_abi": true,
+    "architectures": "7.5"
+  }
+}

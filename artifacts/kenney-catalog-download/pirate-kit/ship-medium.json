@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/ship-medium",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/ship-medium.glb",
+  "sha256": "225988ce8064abd05cdafaa3c35a3bcc631e15ee840b87f92063e73b5cb40266",
+  "bytes": 154884,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

@@ -1,0 +1,317 @@
+{
+  "scope": "Exact source/prepared dedup only; semantic dedup and quality filtering remain pending",
+  "index_sha256": "e29374e35107cd34acd5c5f1d329cd0a478b37a7a30557023d62fd3651df775b",
+  "source_sha256": "7506aaf2adde39e39ae751c00a748b7b5088d94e88ee2ab757db9ae83ff782a8",
+  "candidates": 944,
+  "accepted": 868,
+  "shard_rejections": [
+    {
+      "shard": 1,
+      "id": "pirate-kit/chest",
+      "error_type": "ValueError",
+      "reason": "Rigged/animated GLB import is pending; refusing to drop articulation"
+    }
+  ],
+  "cross_shard_duplicates": [
+    {
+      "asset_id": "kenney-food-kit-bacon-raw",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-block-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-blockdiagonal-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-blockhalf-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-blockquarter-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-blockslope-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-cave-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-corner-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-cornerinnerlarge-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-cornerinnertop-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-cornertop-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-half-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-halfcorner-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-halfcornerinner-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-large-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-steps-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-stepscorner-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-stepscornerinner-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-top-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-waterfalltop-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-ground-grass",
+      "reason": "cross-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-space-kit-terrain",
+      "reason": "cross-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-ground-riverend",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-ground-riveropen",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-ground-riverrocks",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-ground-riverside",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-ground-riverstraight",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-mushroom-tangroup",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-mushroom-tantall",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-platform-stone",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-largea",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-largeb",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-largec",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-larged",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-largee",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-largef",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smallb",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smallc",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smalld",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smalle",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smallf",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smallflata",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smallflatb",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smallflatc",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smallg",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smallh",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smalltopa",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smalltopb",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-talla",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-tallb",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-tallc",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-talld",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-talle",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-talli",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-blocks-dark",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-cone-fall",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-default-dark",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-detailed-dark",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-detailed-fall",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-fat-darkh",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-fat-fall",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-oak-dark",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-oak-fall",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-plateau-dark",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-plateau-fall",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-simple-dark",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-simple-fall",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-small-fall",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-tall-dark",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-thin-fall",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-pirate-kit-flag-pirate",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-pirate-kit-flag-pirate-high",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-pirate-kit-flag-pirate-high-pennant",
+      "reason": "within-split exact duplicate"
+    },
+    {
+      "asset_id": "kenney-pirate-kit-flag-pirate-pennant",
+      "reason": "within-split exact duplicate"
+    }
+  ]
+}

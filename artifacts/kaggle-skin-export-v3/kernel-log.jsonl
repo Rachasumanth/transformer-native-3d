@@ -1,0 +1,75 @@
+[{"stream_name":"stderr","time":7.921068874,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.921116151,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.921122682,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.921126685,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.554976437,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.555008452,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.555012215,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.555014759,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":17.104369911,"data":"test_invalid_options_rejected_before_gpu_allocation (test_export.ExportContractTests.test_invalid_options_rejected_before_gpu_allocation) ... ok\n"}
+,{"stream_name":"stdout","time":17.104407983,"data":"test_missing_material_and_incomplete_rig_rejected_before_gpu_allocation (test_export.ExportContractTests.test_missing_material_and_incomplete_rig_rejected_before_gpu_allocation) ... ok\n"}
+,{"stream_name":"stdout","time":17.104413878,"data":"\n"}
+,{"stream_name":"stdout","time":17.104418168,"data":"----------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":17.104422601,"data":"Ran 2 tests in 0.011s\n"}
+,{"stream_name":"stdout","time":17.104426439,"data":"\n"}
+,{"stream_name":"stdout","time":17.104430047,"data":"OK\n"}
+,{"stream_name":"stdout","time":17.104433993,"data":"\n"}
+,{"stream_name":"stdout","time":24.337145389,"data":"test_invalid_rig_and_weights (test_skin_ae.SkinAETests.test_invalid_rig_and_weights) ... ok\n"}
+,{"stream_name":"stdout","time":24.337177573,"data":"test_joint_permutation_and_variable_count (test_skin_ae.SkinAETests.test_joint_permutation_and_variable_count) ... ok\n"}
+,{"stream_name":"stdout","time":24.337181983,"data":"test_weights_gradients_and_freeze (test_skin_ae.SkinAETests.test_weights_gradients_and_freeze) ... ok\n"}
+,{"stream_name":"stdout","time":24.337185821,"data":"\n"}
+,{"stream_name":"stdout","time":24.337189246,"data":"----------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":24.337193601,"data":"Ran 3 tests in 2.479s\n"}
+,{"stream_name":"stdout","time":24.337197487,"data":"\n"}
+,{"stream_name":"stdout","time":24.337201177,"data":"OK\n"}
+,{"stream_name":"stdout","time":24.337205196,"data":"\n"}
+,{"stream_name":"stderr","time":26.043268104,"data":"/kaggle/working/skin-export-project/tools/probe_skin_export.py:35: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stderr","time":26.043308527,"data":"  torch.as_tensor(skeleton.joints,device=device,dtype=torch.float32),\n"}
+,{"stream_name":"stderr","time":26.245579546,"data":"/kaggle/working/skin-export-project/tools/probe_skin_export.py:35: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stderr","time":26.245624996,"data":"  torch.as_tensor(skeleton.joints,device=device,dtype=torch.float32),\n"}
+,{"stream_name":"stderr","time":26.245630883,"data":"\n"}
+,{"stream_name":"stderr","time":26.245634999,"data":"/kaggle/working/skin-export-project/tools/probe_skin_export.py:35: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stderr","time":26.245640761,"data":"  torch.as_tensor(skeleton.joints,device=device,dtype=torch.float32),\n"}
+,{"stream_name":"stdout","time":26.60232163,"data":"{\n"}
+,{"stream_name":"stdout","time":26.602351168,"data":"  \"device\": \"Tesla T4\",\n"}
+,{"stream_name":"stdout","time":26.602356267,"data":"  \"torch\": \"2.11.0+cu130\",\n"}
+,{"stream_name":"stdout","time":26.602360157,"data":"  \"checkpoint_sha256\": \"f73a7be776b6ac653f2e248d78307eeddea833ea0c5284011e7a92bf2543e9eb\",\n"}
+,{"stream_name":"stdout","time":26.602364213,"data":"  \"joint_count\": 3,\n"}
+,{"stream_name":"stdout","time":26.602368208,"data":"  \"vertex_count\": 512,\n"}
+,{"stream_name":"stdout","time":26.602371792,"data":"  \"joint_tolerance\": 1e-06,\n"}
+,{"stream_name":"stdout","time":26.602375311,"data":"  \"support_count\": 512,\n"}
+,{"stream_name":"stdout","time":26.602379186,"data":"  \"interpolation_max_error\": 0.0,\n"}
+,{"stream_name":"stdout","time":26.602382656,"data":"  \"unsupported_corner_handling\": \"reported\",\n"}
+,{"stream_name":"stdout","time":26.602386322,"data":"  \"minimum_weight_sum\": 1.0,\n"}
+,{"stream_name":"stdout","time":26.602389781,"data":"  \"maximum_weight_sum\": 1.0,\n"}
+,{"stream_name":"stdout","time":26.602393286,"data":"  \"minimum_weight\": 0.016628433018922806,\n"}
+,{"stream_name":"stdout","time":26.602397013,"data":"  \"maximum_weight\": 0.8301284909248352,\n"}
+,{"stream_name":"stdout","time":26.602406756,"data":"  \"mean_max_joint_probability\": 0.6195100545883179,\n"}
+,{"stream_name":"stdout","time":26.60240964,"data":"  \"scope\": \"Synthetic CUDA probe of field clustering, sparse feature sampling, and frozen SkinAE decoding; no mesh extraction or quality claim\"\n"}
+,{"stream_name":"stdout","time":26.602412386,"data":"}\n"}
+,{"stream_name":"stdout","time":26.804560046,"data":"{\n"}
+,{"stream_name":"stdout","time":26.804590855,"data":"  \"device\": \"Tesla T4\",\n"}
+,{"stream_name":"stdout","time":26.804595762,"data":"  \"torch\": \"2.11.0+cu130\",\n"}
+,{"stream_name":"stdout","time":26.804599885000002,"data":"  \"checkpoint_sha256\": \"f73a7be776b6ac653f2e248d78307eeddea833ea0c5284011e7a92bf2543e9eb\",\n"}
+,{"stream_name":"stdout","time":26.804603961,"data":"  \"joint_count\": 3,\n"}
+,{"stream_name":"stdout","time":26.804607859,"data":"  \"vertex_count\": 512,\n"}
+,{"stream_name":"stdout","time":26.804611601,"data":"  \"joint_tolerance\": 1e-06,\n"}
+,{"stream_name":"stdout","time":26.804615186,"data":"  \"support_count\": 512,\n"}
+,{"stream_name":"stdout","time":26.804618964,"data":"  \"interpolation_max_error\": 0.0,\n"}
+,{"stream_name":"stdout","time":26.804622591,"data":"  \"unsupported_corner_handling\": \"reported\",\n"}
+,{"stream_name":"stdout","time":26.804639935,"data":"  \"minimum_weight_sum\": 1.0,\n"}
+,{"stream_name":"stdout","time":26.804643804,"data":"  \"maximum_weight_sum\": 1.0,\n"}
+,{"stream_name":"stdout","time":26.804647344,"data":"  \"minimum_weight\": 0.016628433018922806,\n"}
+,{"stream_name":"stdout","time":26.804651079,"data":"  \"maximum_weight\": 0.8301284909248352,\n"}
+,{"stream_name":"stdout","time":26.804654713,"data":"  \"mean_max_joint_probability\": 0.6195100545883179,\n"}
+,{"stream_name":"stdout","time":26.804658515,"data":"  \"scope\": \"Synthetic CUDA probe of field clustering, sparse feature sampling, and frozen SkinAE decoding; no mesh extraction or quality claim\"\n"}
+,{"stream_name":"stdout","time":26.804662741,"data":"}\n"}
+,{"stream_name":"stderr","time":30.057921063,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":30.057945666,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":30.231195374,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":30.231228722,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":31.035439101,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":31.115104388,"data":"[NbConvertApp] Writing 593986 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":33.698890367,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":34.199698415,"data":"[NbConvertApp] Writing 869653 bytes to __results__.html\n"}
+]

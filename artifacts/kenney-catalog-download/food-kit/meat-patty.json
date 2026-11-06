@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/meat-patty",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/meat-patty.glb",
+  "sha256": "ef0f34938653f6c555d889e982aadbe371c4c36c571005e3a52fe756ae87d956",
+  "bytes": 19836,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

@@ -1,0 +1,5077 @@
+{
+  "source": "https://api.polyhaven.com/assets?t=models",
+  "snapshot_utc": "2026-11-03T12:06:12.861783+00:00",
+  "license": "CC0-1.0 per https://polyhaven.com/license",
+  "total_model_assets": 521,
+  "minimum_reported_polycount": 8000,
+  "candidate_count": 311,
+  "candidates": [
+    {
+      "asset_id": "sofa_03",
+      "name": "Sofa 03",
+      "reported_polycount": 8004,
+      "categories": [
+        "furniture",
+        "seating"
+      ],
+      "authors": {
+        "Fran Calvente": "All"
+      },
+      "description": "Free 8K model of a vintage Victorian leather sofa with carved wooden frame, scrolled arms, patterned fringe cushions and rich antique brown finish.",
+      "source_model_hash": "6304a0e5c6e96371ba5b427ce5baa763f1405e2c",
+      "asset_page": "https://polyhaven.com/a/sofa_03"
+    },
+    {
+      "asset_id": "planter_box_01",
+      "name": "Planter Box 01",
+      "reported_polycount": 8094,
+      "categories": [
+        "decorative",
+        "containers",
+        "potted plants",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K model of an old farmhouse wooden planter box - weathered planks, interior liner, rustic shed/garden charm for landscaping, greenhouses, and decor.",
+      "source_model_hash": "e3e14427dcd99e4141916fa2a581509036657015",
+      "asset_page": "https://polyhaven.com/a/planter_box_01"
+    },
+    {
+      "asset_id": "food_lime_01",
+      "name": "Food Lime 01",
+      "reported_polycount": 8100,
+      "categories": [
+        "food",
+        "nature"
+      ],
+      "authors": {
+        "Oliver Harries": "All"
+      },
+      "description": "Free 8K model of a realistic lime with bumpy, mottled green-yellow peel, subtle blemishes and a glossy, slightly waxy surface.",
+      "source_model_hash": "b16ed297c671e83aed5f55fc1eb82f4b01976547",
+      "asset_page": "https://polyhaven.com/a/food_lime_01"
+    },
+    {
+      "asset_id": "vintage_microwave",
+      "name": "Vintage Microwave",
+      "reported_polycount": 8120,
+      "categories": [
+        "collection: project_lighthouse",
+        "appliances",
+        "electronics"
+      ],
+      "authors": {
+        "Adam Nekola": "All"
+      },
+      "description": "Free 8K model of a vintage microwave with analog controls, boxy form, subtle wear, crisp details, clean geometry, and realistic materials.",
+      "source_model_hash": "f87772eb5c4a10e48b84c176c94f2a25f042accc",
+      "asset_page": "https://polyhaven.com/a/vintage_microwave"
+    },
+    {
+      "asset_id": "food_pomegranate_01",
+      "name": "Food Pomegranate 01",
+      "reported_polycount": 8142,
+      "categories": [
+        "food",
+        "nature"
+      ],
+      "authors": {
+        "Oliver Harries": "All"
+      },
+      "description": "Free 8K model of a ripe pomegranate - photorealistic red mottled skin, subtle blemishes, glossy highlights and dried calyx detail.",
+      "source_model_hash": "3998876df4918643a59766ce2ca12bc609f8b057",
+      "asset_page": "https://polyhaven.com/a/food_pomegranate_01"
+    },
+    {
+      "asset_id": "garden_sprinkler_01",
+      "name": "Garden Sprinkler 01",
+      "reported_polycount": 8192,
+      "categories": [
+        "tools",
+        "appliances",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Amal Kumar": "All"
+      },
+      "description": "Free 4K model of a weathered yellow garden sprinkler with dual nozzles, metal swivel, ribbed hose connector and scuffed wheeled base.",
+      "source_model_hash": "3dfbbc58ed8f575c82e68d35b24379633fd5c955",
+      "asset_page": "https://polyhaven.com/a/garden_sprinkler_01"
+    },
+    {
+      "asset_id": "hand_plane_no4",
+      "name": "Hand Plane No4",
+      "reported_polycount": 8220,
+      "categories": [
+        "tools",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Satyaki Mandal": "All"
+      },
+      "description": "Free 8K model of a vintage No.4 wooden hand plane, worn wood handles, patinated steel body, brass adjustment knobs and chips, with richly detailed workshop-worn textures.",
+      "source_model_hash": "73089c692d816133d2c9be2553498a9deac54bf2",
+      "asset_page": "https://polyhaven.com/a/hand_plane_no4"
+    },
+    {
+      "asset_id": "antique_estoc",
+      "name": "Antique Estoc",
+      "reported_polycount": 8246,
+      "categories": [
+        "props"
+      ],
+      "authors": {
+        "James Ray Cock": "Texturing",
+        "Ulan Cabanilla": "modeling"
+      },
+      "description": "Free 8K model: Antique estoc - a slender historic thrusting sword with ornamental hilt, worn metal patina and traditional details, perfect for medieval or historical scenes.",
+      "source_model_hash": "94a121852cda667882e2a287dbda377b06652134",
+      "asset_page": "https://polyhaven.com/a/antique_estoc"
+    },
+    {
+      "asset_id": "wooden_lantern_01",
+      "name": "Wooden Lantern 01",
+      "reported_polycount": 8321,
+      "categories": [
+        "props",
+        "lighting",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K wooden lantern model - worn colonial/maritime farmhouse style with glass panels, metal top and handle; candle prop. Vintage farmhouse/colonial maritime prop from the Smugglers Cove collection.",
+      "source_model_hash": "3bbe436bb3d4b7c1a53e679a3ba3c509009996ac",
+      "asset_page": "https://polyhaven.com/a/wooden_lantern_01"
+    },
+    {
+      "asset_id": "metal_stool_01",
+      "name": "Metal Stool 01",
+      "reported_polycount": 8334,
+      "categories": [
+        "collection: project_lighthouse",
+        "furniture",
+        "seating"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K model, tall industrial metal stool with aged metal finish, concentric ring footrests and a riveted brown leather padded seat.",
+      "source_model_hash": "71e47af25e18dbc9a6081c23a25c72ee5a2459f6",
+      "asset_page": "https://polyhaven.com/a/metal_stool_01"
+    },
+    {
+      "asset_id": "seeding_tray_01",
+      "name": "Seedling Tray 01",
+      "reported_polycount": 8334,
+      "categories": [
+        "containers",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Satyaki Mandal": "All"
+      },
+      "description": "Free 8K model of a black 9-cell plastic seedling tray with tapered square pots, realistic scratches, dirt and subtle glossy-worn plastic detailing.",
+      "source_model_hash": "abdc7651094d5ec29fc76183d7ff2fbe6ec977eb",
+      "asset_page": "https://polyhaven.com/a/seeding_tray_01"
+    },
+    {
+      "asset_id": "vintage_hand_drill",
+      "name": "Vintage Hand Drill",
+      "reported_polycount": 8338,
+      "categories": [
+        "tools",
+        "props",
+        "rigged",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Yann Kervran": "Rigging",
+        "Benjamin McDonnell": "Modeling & Texturing"
+      },
+      "description": "Free 8K model of a vintage hand drill - worn wooden handle, red crank wheel, detailed metalwork and rigged parts; ideal for workshop, shed or carpentry scenes.",
+      "source_model_hash": "2f277705ee0c38f4e8b2ea7d8251f51583675e2e",
+      "asset_page": "https://polyhaven.com/a/vintage_hand_drill"
+    },
+    {
+      "asset_id": "steel_frame_shelves_03",
+      "name": "Steel Frame Shelves 03",
+      "reported_polycount": 8396,
+      "categories": [
+        "shelves",
+        "furniture"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K steel-frame shelves with black metal frame, warm wood shelves and three drawers - contemporary, minimalist display with industrial character.",
+      "source_model_hash": "11d2967d71aa564929c3849d03001604a9f66e4e",
+      "asset_page": "https://polyhaven.com/a/steel_frame_shelves_03"
+    },
+    {
+      "asset_id": "bunsen_burner",
+      "name": "Bunsen Burner",
+      "reported_polycount": 8434,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "industrial",
+        "tools"
+      ],
+      "authors": {
+        "BKS": "All"
+      },
+      "description": "Free 4K Bunsen burner model with blue cast base and ring, brushed steel tube and legs, knurled brass valve, hose barb, and subtle wear for realistic detail.",
+      "source_model_hash": "8cfa0fa389cd410b0391534b3c9a9515d1bc5421",
+      "asset_page": "https://polyhaven.com/a/bunsen_burner"
+    },
+    {
+      "asset_id": "wooden_ladder",
+      "name": "Wooden Ladder",
+      "reported_polycount": 8492,
+      "categories": [
+        "collection: project_lighthouse",
+        "tools",
+        "industrial"
+      ],
+      "authors": {
+        "Miroslav Turura": "All"
+      },
+      "description": "Free 4K wooden step ladder model with an A-frame design, worn planks, top platform, metal braces, and realistic scuffs, grain, and hardware.",
+      "source_model_hash": "6be946b83102f13c42165cd9c4c13cc0cce50608",
+      "asset_page": "https://polyhaven.com/a/wooden_ladder"
+    },
+    {
+      "asset_id": "industrial_pipe_lamp",
+      "name": "Industrial Pipe Lamp",
+      "reported_polycount": 8626,
+      "categories": [
+        "collection: project_lighthouse",
+        "industrial",
+        "lighting"
+      ],
+      "authors": {
+        "Mateusz Sadek": "All"
+      },
+      "description": "Free 4k model of an industrial pipe lamp with weathered metal, heavy bolted base and exposed filament bulb.",
+      "source_model_hash": "b4c7f4672f07891c0c1d0e7e082a1eea414c7ecb",
+      "asset_page": "https://polyhaven.com/a/industrial_pipe_lamp"
+    },
+    {
+      "asset_id": "round_wooden_table_01",
+      "name": "Round Wooden Table 01",
+      "reported_polycount": 8640,
+      "categories": [
+        "furniture",
+        "table"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 8K model of a vintage round wooden table with a turned pedestal, splayed legs, dark polished finish and subtle surface wear.",
+      "source_model_hash": "68d8afc5c698ecb2b91c3773864c78f58fa75c5a",
+      "asset_page": "https://polyhaven.com/a/round_wooden_table_01"
+    },
+    {
+      "asset_id": "projector_screen",
+      "name": "Projector Screen",
+      "reported_polycount": 8727,
+      "categories": [
+        "collection: project_lighthouse",
+        "office"
+      ],
+      "authors": {
+        "PeterM": "All"
+      },
+      "description": "Free 8K model of a portable projector screen: teal metal roll case, white fabric with subtle stains and creases, black edges, tripod stand with rubber feet.",
+      "source_model_hash": "9d6cfae28ea00c99d348c3bbf2f8e1d58731f5cd",
+      "asset_page": "https://polyhaven.com/a/projector_screen"
+    },
+    {
+      "asset_id": "ratchet_wrench",
+      "name": "Ratchet Wrench",
+      "reported_polycount": 8796,
+      "categories": [
+        "props",
+        "tools",
+        "industrial",
+        "collection: the_shed",
+        "rigged"
+      ],
+      "authors": {
+        "John Hutcheson": "All"
+      },
+      "description": "Free 8K model: rigged, realistic chrome ratchet wrench with scuffed, oily metal, worn edges, and detailed head and handle geometry.",
+      "source_model_hash": "db0eaed0940d34477b2f9962ec8339365f3fa992",
+      "asset_page": "https://polyhaven.com/a/ratchet_wrench"
+    },
+    {
+      "asset_id": "Ukulele_01",
+      "name": "Ukulele 01",
+      "reported_polycount": 8912,
+      "categories": [
+        "props",
+        "instrument"
+      ],
+      "authors": {
+        "Joseph Burgan": "All"
+      },
+      "description": "Free 4K model of a worn wooden ukulele with scuffed varnish, detailed fretboard, metal tuners and visible wood grain.",
+      "source_model_hash": "b4e3018d389e983dde250c867172db7ab1214945",
+      "asset_page": "https://polyhaven.com/a/Ukulele_01"
+    },
+    {
+      "asset_id": "modern_arm_chair_01",
+      "name": "Modern Arm Chair 01",
+      "reported_polycount": 8916,
+      "categories": [
+        "furniture",
+        "seating",
+        "office"
+      ],
+      "authors": {
+        "Vibrant Nordic": "All"
+      },
+      "description": "Free 8K model, modern wooden armchair with warm oak frame and plush black leather cushions - contemporary lounge styling with clean lines and wear detailing.",
+      "source_model_hash": "6893f36e58dddba95bd0ae1f1ef38537c1852a0b",
+      "asset_page": "https://polyhaven.com/a/modern_arm_chair_01"
+    },
+    {
+      "asset_id": "life_jacket",
+      "name": "Life Jacket",
+      "reported_polycount": 8968,
+      "categories": [
+        "collection: project_lighthouse",
+        "props"
+      ],
+      "authors": {
+        "PierreB3D": "All"
+      },
+      "description": "Free 4K model of an orange horse-collar life jacket with weathered vinyl, soft creases, stitched seams, white webbing straps and a metal buckle.",
+      "source_model_hash": "94cef5a5cde9afe795c7cf940b7916f2cd3ea2d1",
+      "asset_page": "https://polyhaven.com/a/life_jacket"
+    },
+    {
+      "asset_id": "scandinavian_masonry_heater",
+      "name": "Scandinavian Masonry Heater",
+      "reported_polycount": 9350,
+      "categories": [
+        "appliances"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 8K model of a Scandinavian masonry heater - cylindrical metal wood stove with vintage patina, detailed door and realistic textures, perfect for cozy interiors.",
+      "source_model_hash": "1df0efcec018e691b441ce2b2d246a0edea14fab",
+      "asset_page": "https://polyhaven.com/a/scandinavian_masonry_heater"
+    },
+    {
+      "asset_id": "antique_ceramic_vase_01",
+      "name": "Antique Ceramic Vase 01",
+      "reported_polycount": 9408,
+      "categories": [
+        "decorative",
+        "containers",
+        "vases"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K model - antique ceramic vase with blue floral transferware pattern, crackle glaze and subtle wear; perfect vintage decorative pot.",
+      "source_model_hash": "14acbdecea40d7a8992d0d78a740a56bbe23ed9f",
+      "asset_page": "https://polyhaven.com/a/antique_ceramic_vase_01"
+    },
+    {
+      "asset_id": "hanging_industrial_lamp",
+      "name": "Hanging Industrial Lamp",
+      "reported_polycount": 9530,
+      "categories": [
+        "lighting"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 4K model of a hanging industrial metal lamp with chipped green paint, chain-and-cable suspension, protective wire cage and weathered, scratched surfaces.",
+      "source_model_hash": "93bdeee802d5c557ec986ed728bf843b41ead1fb",
+      "asset_page": "https://polyhaven.com/a/hanging_industrial_lamp"
+    },
+    {
+      "asset_id": "gamepad",
+      "name": "Gamepad",
+      "reported_polycount": 9546,
+      "categories": [
+        "props"
+      ],
+      "authors": {
+        "Josh Dean": "All"
+      },
+      "description": "Free 4K model: retro wired gray gamepad with D-pad, four colored face buttons, start/select switches, worn plastic and long cable.",
+      "source_model_hash": "5c8dcfd40d6e66cac6ad8555a40317333f1827ba",
+      "asset_page": "https://polyhaven.com/a/gamepad"
+    },
+    {
+      "asset_id": "brass_goblets",
+      "name": "Brass Goblets",
+      "reported_polycount": 9600,
+      "categories": [
+        "props",
+        "dishes",
+        "decorative",
+        "containers"
+      ],
+      "authors": {
+        "Tina": "All"
+      },
+      "description": "Free 4K model of three ornate vintage brass goblets, engraved rims and bases, warm aged patina and polished golden interiors.",
+      "source_model_hash": "5b9625f91aafb878f745d78543e395020b35b8ca",
+      "asset_page": "https://polyhaven.com/a/brass_goblets"
+    },
+    {
+      "asset_id": "metal_jerrycan_green",
+      "name": "Metal Jerrycan Green",
+      "reported_polycount": 9636,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "containers"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K model of an old green metal jerrycan with 20L emboss, triple handle and hinged cap, heavy wear, dents, rust and chipped paint.",
+      "source_model_hash": "77866d0231053e819e02a2456d50bf12b5b22e5d",
+      "asset_page": "https://polyhaven.com/a/metal_jerrycan_green"
+    },
+    {
+      "asset_id": "signal_flashlight",
+      "name": "Signal Flashlight",
+      "reported_polycount": 9730,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "electronics"
+      ],
+      "authors": {
+        "Ji\u0159\u00ed Pt\u00e1\u010dek": "All"
+      },
+      "description": "Free 4K model of a vintage 3 colour signal flashlight with worn green metal body, embossed DAYMON, three slider toggles, big dulled reflector, and cracked leather loop.",
+      "source_model_hash": "df6171714af44a5b9f0006e7a3247a0a8ef9e907",
+      "asset_page": "https://polyhaven.com/a/signal_flashlight"
+    },
+    {
+      "asset_id": "industrial_wall_sconce",
+      "name": "Industrial Wall Sconce",
+      "reported_polycount": 9826,
+      "categories": [
+        "lighting",
+        "decorative"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K model: vintage industrial wall sconce with aged brass/copper backplate, curved arm and black conical shade showing worn, rustic patina.",
+      "source_model_hash": "aa185f8f5968206d2240a1e39b3fce85dc68dff5",
+      "asset_page": "https://polyhaven.com/a/industrial_wall_sconce"
+    },
+    {
+      "asset_id": "outdoor_table_chair_set_01",
+      "name": "Outdoor Table Chair Set 01",
+      "reported_polycount": 9828,
+      "categories": [
+        "furniture",
+        "seating"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 4K model: compact outdoor foldable table & two chairs with wood slats and metal frame; perfect for city cafes, diners, patios and street seating.",
+      "source_model_hash": "6e1e83970732c6c4e9f2056f37cec189cc80adc5",
+      "asset_page": "https://polyhaven.com/a/outdoor_table_chair_set_01"
+    },
+    {
+      "asset_id": "korean_fire_extinguisher_01",
+      "name": "Korean Fire Extinguisher 01",
+      "reported_polycount": 9913,
+      "categories": [
+        "industrial",
+        "props"
+      ],
+      "authors": {
+        "UM JOORIN": "All"
+      },
+      "description": "Free 8K model of a red Korean fire extinguisher with weathered paint, pressure gauge, hose and yellow strap, mounted on a scuffed base.",
+      "source_model_hash": "bf286ac62105374e5c583367e80ce77dcbe6881c",
+      "asset_page": "https://polyhaven.com/a/korean_fire_extinguisher_01"
+    },
+    {
+      "asset_id": "CashRegister_01",
+      "name": "Cash Register 01",
+      "reported_polycount": 9927,
+      "categories": [
+        "appliances",
+        "props"
+      ],
+      "authors": {
+        "Joe Seabuhr": "All"
+      },
+      "description": "Free 8K vintage cash register model with worn cream finish, metal base and open coin drawer, featuring detailed keys, levers, decals, scratches & grime.",
+      "source_model_hash": "a28caf40c20cabd1ee08e639d41982066d7340c6",
+      "asset_page": "https://polyhaven.com/a/CashRegister_01"
+    },
+    {
+      "asset_id": "wooden_bookshelf_worn",
+      "name": "Wooden Bookshelf Worn",
+      "reported_polycount": 10106,
+      "categories": [
+        "furniture",
+        "shelves",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K model of a worn wooden bookshelf with multiple shelves, distressed weathered grain, layered plywood edges, visible nail holes and rustic vintage finish.",
+      "source_model_hash": "7db4a47cb5d2cf4dccb714c4ada6008321217fcb",
+      "asset_page": "https://polyhaven.com/a/wooden_bookshelf_worn"
+    },
+    {
+      "asset_id": "boombox",
+      "name": "Boombox",
+      "reported_polycount": 10168,
+      "categories": [
+        "appliances",
+        "electronics",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Thomas Paul Mouilleron": "All"
+      },
+      "description": "Free 4K model of a vintage 80s portable boombox with dual speakers, cassette deck, tuner knobs, telescoping antenna and worn stickers, gritty urban wear.",
+      "source_model_hash": "480c7f057f485ec818a8f1c7c790248ef993b734",
+      "asset_page": "https://polyhaven.com/a/boombox"
+    },
+    {
+      "asset_id": "wooden_picnic_table",
+      "name": "Wooden Picnic Table",
+      "reported_polycount": 10210,
+      "categories": [
+        "furniture",
+        "seating",
+        "table"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K model of a weathered wooden picnic table with attached benches, vintage worn planks, visible nail heads and rustic countryside patina.",
+      "source_model_hash": "56962f92a441625ad0afd4cc2e1ae405035a86ea",
+      "asset_page": "https://polyhaven.com/a/wooden_picnic_table"
+    },
+    {
+      "asset_id": "fishermans_hat",
+      "name": "Fishermans Hat",
+      "reported_polycount": 10304,
+      "categories": [
+        "collection: project_lighthouse",
+        "props"
+      ],
+      "authors": {
+        "PierreB3D": "All"
+      },
+      "description": "Free 4K model of a khaki fisherman's hat with wide stitched brim, canvas texture, metal eyelets, fabric band, and subtle wear.",
+      "source_model_hash": "a1b99c79405e31ff8a3e74b7b0d51783007e4b45",
+      "asset_page": "https://polyhaven.com/a/fishermans_hat"
+    },
+    {
+      "asset_id": "kite_shield",
+      "name": "Kite Shield",
+      "reported_polycount": 10306,
+      "categories": [
+        "props",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K model - weathered wooden kite shield with chipped white-and-red paint, faded sword motif and rusted iron rim and brackets; battle-worn medieval vibe.",
+      "source_model_hash": "4ab42d2666ed24a7e420e0950bf1d148666fa6ba",
+      "asset_page": "https://polyhaven.com/a/kite_shield"
+    },
+    {
+      "asset_id": "digital_wrist_watch",
+      "name": "Digital Wrist Watch",
+      "reported_polycount": 10390,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "electronics"
+      ],
+      "authors": {
+        "Adrian C": "All"
+      },
+      "description": "Free 4K vintage digital wristwatch with brushed steel bracelet, octagonal case, scuffed edges, electroluminescent text, side buttons and LCD readout.",
+      "source_model_hash": "6f9042911f618186b294485af7ef8f081a3a4494",
+      "asset_page": "https://polyhaven.com/a/digital_wrist_watch"
+    },
+    {
+      "asset_id": "CoffeeTable_01",
+      "name": "Coffee Table 01",
+      "reported_polycount": 10404,
+      "categories": [
+        "furniture",
+        "table"
+      ],
+      "authors": {
+        "Fernando Quinn": "All"
+      },
+      "description": "Free 4K model of a vintage wooden coffee table with turquoise distressed paint, ornate carved legs and trim, a center drawer and worn antique finish.",
+      "source_model_hash": "edc6d675027952fdddc0cf03be30f8354abc2338",
+      "asset_page": "https://polyhaven.com/a/CoffeeTable_01"
+    },
+    {
+      "asset_id": "old_military_crate",
+      "name": "Old Military Crate",
+      "reported_polycount": 10476,
+      "categories": [
+        "collection: project_lighthouse",
+        "containers",
+        "props"
+      ],
+      "authors": {
+        "Jack Mava": "All"
+      },
+      "description": "Free 8K model of an old green military crate with worn wood, chipped paint, metal latches, stenciled markings and a canvas flap, shown open and closed.",
+      "source_model_hash": "03f2c68403869a77c2b3b4a7b2e2e2266ba616fa",
+      "asset_page": "https://polyhaven.com/a/old_military_crate"
+    },
+    {
+      "asset_id": "moon_rock_03",
+      "name": "Moon Rock 03",
+      "reported_polycount": 10492,
+      "categories": [
+        "rocks",
+        "collection: moon",
+        "nature"
+      ],
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Rico Cilliers": "Photography",
+        "Jenelle van Heerden": "Processing"
+      },
+      "description": "Free 16K moon rock model with rough, dust-coated regolith - detailed lunar surface, dirty crevices and extraterrestrial character for realistic space scenes.",
+      "source_model_hash": "91e6ba46a8ce2620ab298cb0cabe82d60027ccb1",
+      "asset_page": "https://polyhaven.com/a/moon_rock_03"
+    },
+    {
+      "asset_id": "vintage_flashlight",
+      "name": "Vintage Flashlight",
+      "reported_polycount": 10562,
+      "categories": [
+        "collection: project_lighthouse",
+        "lighting",
+        "electronics",
+        "props",
+        "tools"
+      ],
+      "authors": {
+        "Omar M. El-Safy": "All"
+      },
+      "description": "Free 4K model of a vintage flashlight with a weathered red battery box, chunky black handle, polished metal reflector and authentic scratches, dents and bolts.",
+      "source_model_hash": "90669e64aa1bf85684f2fdef801e8ae2cbe7a8e6",
+      "asset_page": "https://polyhaven.com/a/vintage_flashlight"
+    },
+    {
+      "asset_id": "vintage_crutches_01",
+      "name": "Vintage Crutches 01",
+      "reported_polycount": 10628,
+      "categories": [
+        "props",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K model of vintage wooden crutches, war-era worn patina with metal fittings and aged wood - ideal antique hospital/medical prop for period scenes.",
+      "source_model_hash": "d749b421cc9f59d98c9cb2685fe192c55c064b6f",
+      "asset_page": "https://polyhaven.com/a/vintage_crutches_01"
+    },
+    {
+      "asset_id": "lifebuoy",
+      "name": "Lifebuoy",
+      "reported_polycount": 10728,
+      "categories": [
+        "collection: project_lighthouse",
+        "wall decoration",
+        "industrial"
+      ],
+      "authors": {
+        "Hank Kaamura": "All"
+      },
+      "description": "Free 8K weathered red lifebuoy with cracked paint, salt stains, faded stencils, and a loose pale rope; crisp scuffs and surface detail.",
+      "source_model_hash": "623799ae1de57723ec238ea1aac86b5b061fa92b",
+      "asset_page": "https://polyhaven.com/a/lifebuoy"
+    },
+    {
+      "asset_id": "pipe_wrench",
+      "name": "Pipe Wrench",
+      "reported_polycount": 10746,
+      "categories": [
+        "industrial",
+        "tools",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Will Evarts": "All"
+      },
+      "description": "Free 4K model: a used pipe wrench with chipped red paint, heavy rust, adjustable jaw and realistic worn-metal textures.",
+      "source_model_hash": "0fed71461221f8452bd88d244d7fee1e6b85cc47",
+      "asset_page": "https://polyhaven.com/a/pipe_wrench"
+    },
+    {
+      "asset_id": "wine_barrel_01",
+      "name": "Wine Barrel 01",
+      "reported_polycount": 10820,
+      "categories": [
+        "containers"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K wine barrel model with worn oak staves, weathered metal hoops and bung hole - high-detail farmhouse/cellar prop perfect for rustic farm scenes.",
+      "source_model_hash": "943d486d1d003b1f56157522fd5382e24ab4bf07",
+      "asset_page": "https://polyhaven.com/a/wine_barrel_01"
+    },
+    {
+      "asset_id": "pull_chain_light_socket",
+      "name": "Pull Chain Light Socket",
+      "reported_polycount": 10902,
+      "categories": [
+        "lighting",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Josh Dean": "All"
+      },
+      "description": "Free 8K model of a vintage porcelain pull-chain light socket with worn glossy finish, visible mounting cavities, brass beaded chain and small bell pull.",
+      "source_model_hash": "8a23a75031188d91dc77677e24dcf2c56f7a25af",
+      "asset_page": "https://polyhaven.com/a/pull_chain_light_socket"
+    },
+    {
+      "asset_id": "planter_box_02",
+      "name": "Planter Box 02",
+      "reported_polycount": 10944,
+      "categories": [
+        "containers",
+        "decorative",
+        "potted plants",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K model of a worn wooden planter box with metal liner, farmhouse shed style and realistic weathered grain - great for gardens, greenhouses, and landscaping.",
+      "source_model_hash": "11d15f92f767aa1e72507d3ceacd24f50f09253e",
+      "asset_page": "https://polyhaven.com/a/planter_box_02"
+    },
+    {
+      "asset_id": "wooden_stool_01",
+      "name": "Wooden Stool 01",
+      "reported_polycount": 10946,
+      "categories": [
+        "seating",
+        "furniture",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 8K model of an old, worn wooden stool with a cracked round seat, turned legs and weathered grain, dusty finish and workshop-aged patina.",
+      "source_model_hash": "8649ad7ef50e62cfd22d57a62ac0c3d525fb93f3",
+      "asset_page": "https://polyhaven.com/a/wooden_stool_01"
+    },
+    {
+      "asset_id": "wooden_stool_02",
+      "name": "Wooden Stool 02",
+      "reported_polycount": 11146,
+      "categories": [
+        "seating",
+        "furniture"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 8K model - antique handcrafted wooden footstool with worn patina, rugged timber legs, visible tool marks and rustic farmhouse character.",
+      "source_model_hash": "9433cdf32f3ee601deccbfb175abe18afe31ce55",
+      "asset_page": "https://polyhaven.com/a/wooden_stool_02"
+    },
+    {
+      "asset_id": "modular_fire_escape",
+      "name": "Modular Fire Escape",
+      "reported_polycount": 11322,
+      "categories": [
+        "industrial",
+        "structures",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Juniix": "All"
+      },
+      "description": "Free 8K modular fire escape model with grated platforms, straight ladder and angled stair sections, welded railings and subtle weathered metal detail.",
+      "source_model_hash": "e093c9b1a65b153f392b8c239fa2a411c432806d",
+      "asset_page": "https://polyhaven.com/a/modular_fire_escape"
+    },
+    {
+      "asset_id": "barrel_stove",
+      "name": "Barrel Stove",
+      "reported_polycount": 11404,
+      "categories": [
+        "industrial",
+        "containers",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "MP": "All"
+      },
+      "description": "Free 8K model of a dented, heavily rusted barrel stove with burn marks, charred lower rim and perforated base - gritty urban, weathered metal detail.",
+      "source_model_hash": "317d4401f290899072044a82841d94f4a8440c2f",
+      "asset_page": "https://polyhaven.com/a/barrel_stove"
+    },
+    {
+      "asset_id": "pot_enamel_01",
+      "name": "Pot Enamel 01",
+      "reported_polycount": 11416,
+      "categories": [
+        "props",
+        "decorative",
+        "dishes"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 8K enamel pot model, dark brown with worn scuffs, lid and rounded handles, decorated with bold red-orange flame-like pattern around the base.",
+      "source_model_hash": "2332da616c0701d4556f6e272426f8459611c7f3",
+      "asset_page": "https://polyhaven.com/a/pot_enamel_01"
+    },
+    {
+      "asset_id": "rusted_spade_01",
+      "name": "Rusted Spade 01",
+      "reported_polycount": 11436,
+      "categories": [
+        "tools",
+        "props",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Blemonade": "All"
+      },
+      "description": "Free 4K model of a worn, vintage spade with a battered wooden handle, riveted ferrule and a rusted, chipped blade with weathered dirt and patina.",
+      "source_model_hash": "eef32d05175c6b1e0e8604beaef20deb8f3555ba",
+      "asset_page": "https://polyhaven.com/a/rusted_spade_01"
+    },
+    {
+      "asset_id": "gallinera_chair",
+      "name": "Gallinera Chair",
+      "reported_polycount": 11560,
+      "categories": [
+        "furniture",
+        "seating"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K model: dark-stained antique Filipino gallinera chair with carved floral backrest, slatted sides and front storage door, solid wooden frame.",
+      "source_model_hash": "973b0b19757f75a4677c956ac740d4b739efaf72",
+      "asset_page": "https://polyhaven.com/a/gallinera_chair"
+    },
+    {
+      "asset_id": "modified_thermos",
+      "name": "Modified Thermos",
+      "reported_polycount": 11576,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "containers"
+      ],
+      "authors": {
+        "Alex Weber": "All"
+      },
+      "description": "Free 8K model of a vintage thermos: mint-green cracked enamel, heavy steel bands, dented cap, scuffed base, and improvised handle with screws. Rich detail and grime.",
+      "source_model_hash": "b54fc17f8886546ef664c28796bfcc96a6bc69a5",
+      "asset_page": "https://polyhaven.com/a/modified_thermos"
+    },
+    {
+      "asset_id": "hamburger_buns",
+      "name": "Hamburger Buns",
+      "reported_polycount": 11588,
+      "categories": [
+        "props",
+        "food",
+        "collection: project_lighthouse"
+      ],
+      "authors": {
+        "Alexander Shulha": "All"
+      },
+      "description": "Free 4k model of hamburger buns - realistic golden-brown rolls with soft crumb, subtle browning and high-detail textures.",
+      "source_model_hash": "73e5febb05ae9cc2246560b97feac601a56a1c3e",
+      "asset_page": "https://polyhaven.com/a/hamburger_buns"
+    },
+    {
+      "asset_id": "seadogs_compass",
+      "name": "Seadogs Compass",
+      "reported_polycount": 11645,
+      "categories": [
+        "props",
+        "tools",
+        "decorative",
+        "collection: project_lighthouse"
+      ],
+      "authors": {
+        "Benny Weimer": "All"
+      },
+      "description": "Free 8K brass compass model with aged patina, hinged lid and sight wire. Engraved dial, knurled rim and ring loop give it a rugged nautical, antique feel.",
+      "source_model_hash": "47241f01ef012f81e068401649409183db7e503c",
+      "asset_page": "https://polyhaven.com/a/seadogs_compass"
+    },
+    {
+      "asset_id": "garden_hose_wall_mounted_01",
+      "name": "Garden Hose Wall Mounted 01",
+      "reported_polycount": 11684,
+      "categories": [
+        "wall decoration",
+        "plants",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 8K model of a coiled green garden hose on a metal wall bracket, textured rubber weave, brass fitting, chipped paint and light grime.",
+      "source_model_hash": "95609e400f4f61d64639a230e801439fb09a43c3",
+      "asset_page": "https://polyhaven.com/a/garden_hose_wall_mounted_01"
+    },
+    {
+      "asset_id": "brass_blowtorch",
+      "name": "Brass Blowtorch",
+      "reported_polycount": 11750,
+      "categories": [
+        "props",
+        "tools"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K brass blowtorch model with worn patina and realistic metal detail; an industrial workshop prop ideal for garage, welding and automotive repair scenes.",
+      "source_model_hash": "3950ac0497f70453da620e3ffc79d58f152183f2",
+      "asset_page": "https://polyhaven.com/a/brass_blowtorch"
+    },
+    {
+      "asset_id": "round_spectacles",
+      "name": "Round Spectacles",
+      "reported_polycount": 11810,
+      "categories": [
+        "collection: project_lighthouse",
+        "props"
+      ],
+      "authors": {
+        "Sean Buckley": "All"
+      },
+      "description": "Free 8k model of vintage round spectacles with thin metal frame, reflective lenses, subtle wear, smudges, nose pads and curved temples.",
+      "source_model_hash": "35737e3f6dce1f4fdfca27bfba9c4e8abd0ce482",
+      "asset_page": "https://polyhaven.com/a/round_spectacles"
+    },
+    {
+      "asset_id": "watering_can_metal_01",
+      "name": "Watering Can Metal 01",
+      "reported_polycount": 11837,
+      "categories": [
+        "containers",
+        "tools",
+        "props",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Charles Nderitu": "All"
+      },
+      "description": "Free 8K metal watering can with a weathered, scratched patina, subtle dents, embossed bands and a long perforated spout - rustic shed/farmhouse character.",
+      "source_model_hash": "2418aec52e5fa408b1cbc23701f8ce1eac860bc6",
+      "asset_page": "https://polyhaven.com/a/watering_can_metal_01"
+    },
+    {
+      "asset_id": "Rockingchair_01",
+      "name": "Rockingchair 01",
+      "reported_polycount": 11866,
+      "categories": [
+        "furniture",
+        "seating"
+      ],
+      "authors": {
+        "Jorge Camacho": "All"
+      },
+      "description": "Free 4K model, solid wood vintage rocking chair with slatted back, curved legs, armrests, turned spindles and an antique worn finish.",
+      "source_model_hash": "cad30a6e8f6569971447bd4d7c4d9064ca17aec3",
+      "asset_page": "https://polyhaven.com/a/Rockingchair_01"
+    },
+    {
+      "asset_id": "concrete_cat_statue",
+      "name": "Concrete Cat Statue",
+      "reported_polycount": 11950,
+      "categories": [
+        "decorative"
+      ],
+      "authors": {
+        "Rico Cilliers": "Guidance",
+        "Riley Queen": "All"
+      },
+      "description": "Free 8K concrete cat statue with a weathered, moss-speckled surface, serene expression and soft, rounded forms in a classic seated sculptural pose.",
+      "source_model_hash": "5f3785e43dd475d06772cd5c57d202e22f978c22",
+      "asset_page": "https://polyhaven.com/a/concrete_cat_statue"
+    },
+    {
+      "asset_id": "horse_head",
+      "name": "Horse Head",
+      "reported_polycount": 12068,
+      "categories": [
+        "decorative"
+      ],
+      "authors": {
+        "Tina": "All"
+      },
+      "description": "Free 8K model of an antique bronze horse head bust with flowing mane, ornate sculptural details and worn patina on a square plinth.",
+      "source_model_hash": "e57f384475e832c0bcbd230230ad778073b959bf",
+      "asset_page": "https://polyhaven.com/a/horse_head"
+    },
+    {
+      "asset_id": "compost_bag_02",
+      "name": "Compost Bag 02",
+      "reported_polycount": 12096,
+      "categories": [
+        "containers",
+        "industrial",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Satyaki Mandal": "All"
+      },
+      "description": "Free 8K model of a weathered teal woven compost bag, topped with soil and a black liner, showing dirt stains, creases and worn print.",
+      "source_model_hash": "aa96f29975d682235b75de6414439ac812135c24",
+      "asset_page": "https://polyhaven.com/a/compost_bag_02"
+    },
+    {
+      "asset_id": "GothicCabinet_01",
+      "name": "Gothic Cabinet 01",
+      "reported_polycount": 12170,
+      "categories": [
+        "furniture",
+        "shelves"
+      ],
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "description": "Free 4K model: vintage Gothic wooden cabinet with ornate carved panels, iron hinges and stacked shelving - characterful furniture for period interiors.",
+      "source_model_hash": "d00370c71bc0545009b85e8ba406b74c04efab65",
+      "asset_page": "https://polyhaven.com/a/GothicCabinet_01"
+    },
+    {
+      "asset_id": "ocean_buoy",
+      "name": "Ocean Buoy",
+      "reported_polycount": 12240,
+      "categories": [
+        "collection: project_lighthouse",
+        "props"
+      ],
+      "authors": {
+        "Mateusz Sadek": "All"
+      },
+      "description": "Free 8K model of a weathered red ocean buoy with cage light, bell, and ring guard. Rust, chipped paint, and mossy marine growth on the hull and base.",
+      "source_model_hash": "59b96a90c88cd0f8f5f07577c1a133ae40908e3d",
+      "asset_page": "https://polyhaven.com/a/ocean_buoy"
+    },
+    {
+      "asset_id": "modular_industrial_pipes_01",
+      "name": "Modular Industrial Pipes 01",
+      "reported_polycount": 12340,
+      "categories": [
+        "industrial",
+        "structures"
+      ],
+      "authors": {
+        "Jorge Camacho": "All"
+      },
+      "description": "Free 8K modular industrial pipe set, aged blue-gray metal with rusted flanges, elbows, tees, crosses, straight runs and a red-handled valve with gauge.",
+      "source_model_hash": "43a80d0f0f527ea832f00a5d6512ec0ef70a5910",
+      "asset_page": "https://polyhaven.com/a/modular_industrial_pipes_01"
+    },
+    {
+      "asset_id": "security_camera_02",
+      "name": "Security Camera 02",
+      "reported_polycount": 12477,
+      "categories": [
+        "industrial",
+        "electronics",
+        "appliances",
+        "rigged",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Garrison Gager": "Modeling & Texturing",
+        "Yann Kervran": "Rigging"
+      },
+      "description": "Free 8K model: rigged CCTV camera with weathered metal casing, protective hood and mounting bracket - perfect for industrial or urban surveillance scenes.",
+      "source_model_hash": "141ee900f27b02e86f21ef1c1b5a5500a7e22b40",
+      "asset_page": "https://polyhaven.com/a/security_camera_02"
+    },
+    {
+      "asset_id": "lambis_shell",
+      "name": "Lambis Shell",
+      "reported_polycount": 12498,
+      "categories": [
+        "decorative",
+        "nature"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 8K Lambis shell model with glossy ridged brown-and-cream surface, pronounced curved spines and subtle weathering for a natural decorative look.",
+      "source_model_hash": "541aa6fe3432c07646559a84f5384e248ab4dffe",
+      "asset_page": "https://polyhaven.com/a/lambis_shell"
+    },
+    {
+      "asset_id": "food_pears_asian_01",
+      "name": "Pears Asian 01",
+      "reported_polycount": 12572,
+      "categories": [
+        "food",
+        "nature"
+      ],
+      "authors": {
+        "Amal Kumar": "All"
+      },
+      "description": "Free 8K model of Asian pears with realistic green-yellow skin, subtle blemishes, natural stems, and high-detail surface textures.",
+      "source_model_hash": "7b8953bf76ea6fdac29f364d3f3f553240856491",
+      "asset_page": "https://polyhaven.com/a/food_pears_asian_01"
+    },
+    {
+      "asset_id": "covered_car",
+      "name": "Covered Car",
+      "reported_polycount": 12592,
+      "categories": [
+        "props",
+        "industrial",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "MP": "All"
+      },
+      "description": "Free 8K model of a car under a worn, dusty fabric cover with natural folds and visible wheels- aged garage/industrial character.",
+      "source_model_hash": "22592d3c2b16533339ed1bf4e4320e25e5a76cf2",
+      "asset_page": "https://polyhaven.com/a/covered_car"
+    },
+    {
+      "asset_id": "vintage_grandfather_clock_01",
+      "name": "Vintage Grandfather Clock 01",
+      "reported_polycount": 12604,
+      "categories": [
+        "decorative",
+        "appliances",
+        "rigged"
+      ],
+      "authors": {
+        "Yann Kervran": "Rigging",
+        "James Ray Cock": "Modeling & Texturing"
+      },
+      "description": "Free 8K model - ornate vintage wooden grandfather clock with antique brass dial and moonphase, fully rigged for animation; ideal for decorative or period sets.",
+      "source_model_hash": "225a23b74efa589c46b353905b3a5d18718ec80d",
+      "asset_page": "https://polyhaven.com/a/vintage_grandfather_clock_01"
+    },
+    {
+      "asset_id": "large_castle_door",
+      "name": "Large Castle Door",
+      "reported_polycount": 12640,
+      "categories": [
+        "structures",
+        "buildings",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Tina": "All"
+      },
+      "description": "Free 4K model - arched medieval double wooden door with weathered wood, iron straps, rivets, ring handles and small barred windows; fortified character.",
+      "source_model_hash": "194bbdcfc45ec659005f36661f327a127a2e7a20",
+      "asset_page": "https://polyhaven.com/a/large_castle_door"
+    },
+    {
+      "asset_id": "brass_diya_lantern",
+      "name": "Brass Diya Lantern",
+      "reported_polycount": 12742,
+      "categories": [
+        "decorative",
+        "lighting"
+      ],
+      "authors": {
+        "Bhargav Kubal": "All"
+      },
+      "description": "Free 8K model of a hanging brass diya lantern featuring aged patina, hexagonal glass panels, star-shaped vents, a chain suspension, and a lit oil bowl.",
+      "source_model_hash": "c8a70bbd5dd2708135a561576d895436844aaa25",
+      "asset_page": "https://polyhaven.com/a/brass_diya_lantern"
+    },
+    {
+      "asset_id": "moon_rock_07",
+      "name": "Moon Rock 07",
+      "reported_polycount": 12786,
+      "categories": [
+        "rocks",
+        "collection: moon",
+        "nature"
+      ],
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Rico Cilliers": "Photography",
+        "Jenelle van Heerden": "Processing"
+      },
+      "description": "Free 16K lunar rock model with rough, regolith-dusted surface, pitted cavities and realistic dusty detail - ideal for moon and space scenes.",
+      "source_model_hash": "1192bc6d118965aeccede559392f836eff8a2722",
+      "asset_page": "https://polyhaven.com/a/moon_rock_07"
+    },
+    {
+      "asset_id": "moon_rock_06",
+      "name": "Moon Rock 06",
+      "reported_polycount": 12974,
+      "categories": [
+        "rocks",
+        "collection: moon",
+        "nature"
+      ],
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Jenelle van Heerden": "Processing",
+        "Rico Cilliers": "Photography"
+      },
+      "description": "Free 16K moon rock model with rough, dusted regolith and dirty, extraterrestrial surface - high-detail rock for lunar and space scenes.",
+      "source_model_hash": "a10f25ef675b7dee9b168613f109c6108df4f9eb",
+      "asset_page": "https://polyhaven.com/a/moon_rock_06"
+    },
+    {
+      "asset_id": "alarm_clock_01",
+      "name": "Alarm Clock 01",
+      "reported_polycount": 13006,
+      "categories": [
+        "props",
+        "decorative",
+        "rigged"
+      ],
+      "authors": {
+        "Yann Kervran": "Rigging",
+        "James Ray Cock": "Modeling & Texturing"
+      },
+      "description": "Free 8K rigged model of a retro aqua twin-bell bedside alarm clock with worn metal, Roman numerals, and animatable parts.",
+      "source_model_hash": "286437d3c3b7a8a0cac2022b3d8647ac26026416",
+      "asset_page": "https://polyhaven.com/a/alarm_clock_01"
+    },
+    {
+      "asset_id": "lateral_sea_marker",
+      "name": "Lateral Sea Marker",
+      "reported_polycount": 13014,
+      "categories": [
+        "props"
+      ],
+      "authors": {
+        "James Ray Cock": "Additional texture wear",
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 8K lateral sea marker: realistic weathered red buoy with stacked column, top daymark, handrail ring and dock-ready wear for harbors, docks, and ships.",
+      "source_model_hash": "162937f0d3a623b8446237e8a6c51b3717f5e32a",
+      "asset_page": "https://polyhaven.com/a/lateral_sea_marker"
+    },
+    {
+      "asset_id": "planter_box_03",
+      "name": "Planter Box 03",
+      "reported_polycount": 13112,
+      "categories": [
+        "containers",
+        "decorative",
+        "potted plants",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K model - weathered wooden planter box with liner, rustic farmhouse style, ideal for gardens, greenhouses and landscaping scenes.",
+      "source_model_hash": "f7992283532ca3db8edfa08e6a27b989696f05cd",
+      "asset_page": "https://polyhaven.com/a/planter_box_03"
+    },
+    {
+      "asset_id": "hand_truck",
+      "name": "Hand Truck",
+      "reported_polycount": 13220,
+      "categories": [
+        "collection: project_lighthouse",
+        "industrial",
+        "props"
+      ],
+      "authors": {
+        "Mutanzom3D": "All"
+      },
+      "description": "Free 8K hand truck model with chipped red paint, rusted steel frame, worn toe plate, and rubber wheels. Realistic wear, curved handles, and solid bars.",
+      "source_model_hash": "b169bd38206dbdde638e2bda547dab1ec7823c39",
+      "asset_page": "https://polyhaven.com/a/hand_truck"
+    },
+    {
+      "asset_id": "small_plastic_torch",
+      "name": "Small Plastic Torch",
+      "reported_polycount": 13252,
+      "categories": [
+        "collection: project_lighthouse",
+        "tools",
+        "props"
+      ],
+      "authors": {
+        "Abiyyu Panggalih (Abiyyu_xyz)": "All"
+      },
+      "description": "Free 4K model of a small yellow plastic torch with black end caps, red slider switch, molded grips and scuffed, chipped wear, clear lens and reflector.",
+      "source_model_hash": "38d8326f0116b436ae0098909a7ac0fa32cab57b",
+      "asset_page": "https://polyhaven.com/a/small_plastic_torch"
+    },
+    {
+      "asset_id": "vintage_spacecraft_instrument",
+      "name": "Vintage Spacecraft Instrument",
+      "reported_polycount": 13279,
+      "categories": [
+        "collection: project_lighthouse",
+        "instrument",
+        "electronics",
+        "industrial"
+      ],
+      "authors": {
+        "Micha\u0142 Wi\u015bniewski": "All"
+      },
+      "description": "Free 8K model of a weathered vintage spacecraft panel with glass globe display, chipped green paint, Cyrillic labels, metal knobs, and hand\u2011scribbled marks.",
+      "source_model_hash": "3aec81c994124de931920043b0fa287c0f23a96c",
+      "asset_page": "https://polyhaven.com/a/vintage_spacecraft_instrument"
+    },
+    {
+      "asset_id": "portable_cassette_player",
+      "name": "Portable Cassette Player",
+      "reported_polycount": 13307,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "electronics"
+      ],
+      "authors": {
+        "Mateusz Sadek": "All"
+      },
+      "description": "Free 4K model of a weathered teal portable cassette player and scratched black cassette, detailed labels, radio dial, tactile buttons and scuffed plastic.",
+      "source_model_hash": "ffb24285e6fb0c78d14778860cbeab851f2f2547",
+      "asset_page": "https://polyhaven.com/a/portable_cassette_player"
+    },
+    {
+      "asset_id": "retro_multimeter",
+      "name": "Retro Multimeter",
+      "reported_polycount": 13356,
+      "categories": [
+        "collection: project_lighthouse",
+        "electronics",
+        "industrial",
+        "tools",
+        "instrument",
+        "props"
+      ],
+      "authors": {
+        "elli moeller": "All"
+      },
+      "description": "Free 4K model of a vintage analog multimeter with carry handle, glass needle gauge, detailed rotary dial, worn decals, and coiled red/black probes.",
+      "source_model_hash": "53bc11f4783d6aa428add6ff0096328bb169d4f1",
+      "asset_page": "https://polyhaven.com/a/retro_multimeter"
+    },
+    {
+      "asset_id": "security_camera_01",
+      "name": "Security Camera 01",
+      "reported_polycount": 13571,
+      "categories": [
+        "electronics",
+        "appliances",
+        "industrial",
+        "rigged",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Alexander Otterbeck": "Modeling & Texturing",
+        "Yann Kervran": "Rigging"
+      },
+      "description": "Free 8K model: rigged wall-mounted CCTV camera with weathered metal housing, pivoting mount and realistic lens - industrial security asset for surveillance.",
+      "source_model_hash": "1291611332590f75d3ecdaa72e8285241c5c3fc0",
+      "asset_page": "https://polyhaven.com/a/security_camera_01"
+    },
+    {
+      "asset_id": "modern_coffee_table_02",
+      "name": "Modern Coffee Table 02",
+      "reported_polycount": 13645,
+      "categories": [
+        "furniture",
+        "table"
+      ],
+      "authors": {
+        "Amin": "All"
+      },
+      "description": "Free 8K model of a contemporary rectangular coffee table with a dark stone base and intricate concentric wooden geometric inlay, deco-inspired, clean finish.",
+      "source_model_hash": "d4792d6f4ea4eb10335816eaac4b6e1a9bcd1b36",
+      "asset_page": "https://polyhaven.com/a/modern_coffee_table_02"
+    },
+    {
+      "asset_id": "chinese_console_table",
+      "name": "Chinese Console Table",
+      "reported_polycount": 13648,
+      "categories": [
+        "table",
+        "furniture"
+      ],
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "description": "Free 8K model of a vintage Chinese wooden console table with ornate carvings and traditional Asian styling; antique patina, ideal for period interiors.",
+      "source_model_hash": "d2f88e4753957bff4fcf282db5d86af5073eff45",
+      "asset_page": "https://polyhaven.com/a/chinese_console_table"
+    },
+    {
+      "asset_id": "plastic_bottle_gallon",
+      "name": "Plastic Bottle Gallon",
+      "reported_polycount": 13728,
+      "categories": [
+        "containers",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Rahul Chaudhary": "All"
+      },
+      "description": "Free 8K model of a weathered off-white plastic gallon jug with integrated handle, scuffs, dirt and rusty stains, scratched, dented and worn neck threads.",
+      "source_model_hash": "8e579852c844aa8beea73397b4e05717a2303d93",
+      "asset_page": "https://polyhaven.com/a/plastic_bottle_gallon"
+    },
+    {
+      "asset_id": "carrot_cake",
+      "name": "Carrot Cake",
+      "reported_polycount": 13790,
+      "categories": [
+        "food",
+        "props"
+      ],
+      "authors": {
+        "Greg Zaal": "photography",
+        "James Ray Cock": "processing"
+      },
+      "description": "Free 8K model of a realistic carrot cake with cream-cheese frosting, walnut sprinkles, and baked crumb detail - perfect food prop for close-up renders.",
+      "source_model_hash": "b1fa5ea224d02682e75f74b2f0e5b1cc52f3e4c5",
+      "asset_page": "https://polyhaven.com/a/carrot_cake"
+    },
+    {
+      "asset_id": "electric_stove",
+      "name": "Electric Stove",
+      "reported_polycount": 13914,
+      "categories": [
+        "electronics",
+        "appliances",
+        "rigged",
+        "props"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 8K model: compact white electric stove with four worn hotplates, front control knobs, oven window and subtle rust/weathering; rigged.",
+      "source_model_hash": "750ee10bdfe78eb6b0b620ef7b5a898e436fb696",
+      "asset_page": "https://polyhaven.com/a/electric_stove"
+    },
+    {
+      "asset_id": "metal_trash_can",
+      "name": "Metal Trash Can",
+      "reported_polycount": 13960,
+      "categories": [
+        "industrial",
+        "containers",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "GurJas Studios": "All"
+      },
+      "description": "Free 8K model of a weathered metal trash can with removable lid, ribbed cylindrical body, dents, heavy rust, grime and realistic industrial wear.",
+      "source_model_hash": "3ecbee3adbcc53b4af3c8f010e76e10c5b7558a2",
+      "asset_page": "https://polyhaven.com/a/metal_trash_can"
+    },
+    {
+      "asset_id": "wooden_bowl_01",
+      "name": "Wooden Bowl 01",
+      "reported_polycount": 14122,
+      "categories": [
+        "props",
+        "decorative",
+        "dishes"
+      ],
+      "authors": {
+        "Oliver Harries": "All"
+      },
+      "description": "Free 8K model - hand-carved, rustic wooden bowl with irregular, worn rim, smooth shallow interior and rich aged grain and patina.",
+      "source_model_hash": "ff38f8071c92479217e80fabee05cb78ca6ef1a0",
+      "asset_page": "https://polyhaven.com/a/wooden_bowl_01"
+    },
+    {
+      "asset_id": "metal_toolbox",
+      "name": "Metal Toolbox",
+      "reported_polycount": 14228,
+      "categories": [
+        "collection: project_lighthouse",
+        "containers",
+        "tools",
+        "industrial"
+      ],
+      "authors": {
+        "Mateusz Sadek": "All"
+      },
+      "description": "Free 4K model of a vintage metal toolbox with chipped olive paint, brass latches, a wood handle with red band, rusted edges and a round badge.",
+      "source_model_hash": "df0982cb97ade9651921bf5d76047a33a388118a",
+      "asset_page": "https://polyhaven.com/a/metal_toolbox"
+    },
+    {
+      "asset_id": "ornate_mirror_01",
+      "name": "Ornate Mirror 01",
+      "reported_polycount": 14246,
+      "categories": [
+        "decorative",
+        "wall decoration",
+        "furniture"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K model - Victorian-style arched mirror with gilded floral crest, carved rope trim and aged, speckled glass showing subtle patina.",
+      "source_model_hash": "dce07cbb7de9a3c517163291f4bc452fbd11624c",
+      "asset_page": "https://polyhaven.com/a/ornate_mirror_01"
+    },
+    {
+      "asset_id": "wooden_broom",
+      "name": "Wooden Broom",
+      "reported_polycount": 14258,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "tools"
+      ],
+      "authors": {
+        "Balen": "All"
+      },
+      "description": "Free 4K model of a weathered wooden broom with stiff straw bristles, rusted metal supports, cracked wood grain, and authentic wear.",
+      "source_model_hash": "24370350833793d8ac46995502178ef1324ff05c",
+      "asset_page": "https://polyhaven.com/a/wooden_broom"
+    },
+    {
+      "asset_id": "modular_airduct_circular_01",
+      "name": "Modular Airduct Circular 01",
+      "reported_polycount": 14280,
+      "categories": [
+        "industrial",
+        "structures",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Riley Queen": "All"
+      },
+      "description": "Free 4K model of modular circular air ducts: smooth and corrugated sections, square inlet grilles, rings and hangers with worn industrial metal finish.",
+      "source_model_hash": "5f65fb9f28086c2c443b7348ff0ffb4fe0bb6051",
+      "asset_page": "https://polyhaven.com/a/modular_airduct_circular_01"
+    },
+    {
+      "asset_id": "street_rat",
+      "name": "Street Rat",
+      "reported_polycount": 14286,
+      "categories": [
+        "nature",
+        "creature",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Sean Buckley": "All"
+      },
+      "description": "Free 8K model of a realistic street rat with dense dark fur, glossy black eyes, detailed whiskers, ears and claws, and gritty, lifelike feral character.",
+      "source_model_hash": "7d499946dd91cfc66cb4e0ec8825012643ee832c",
+      "asset_page": "https://polyhaven.com/a/street_rat"
+    },
+    {
+      "asset_id": "moon_rock_04",
+      "name": "Moon Rock 04",
+      "reported_polycount": 14316,
+      "categories": [
+        "rocks",
+        "collection: moon",
+        "nature"
+      ],
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Rico Cilliers": "Photography",
+        "Jenelle van Heerden": "Processing"
+      },
+      "description": "Free 16K model, rugged lunar rock with rough, dusted regolith and dirty, cratered details - ideal for moon and extraterrestrial scenes.",
+      "source_model_hash": "80374d9ae3cf6a80f1983768987db33576a6e277",
+      "asset_page": "https://polyhaven.com/a/moon_rock_04"
+    },
+    {
+      "asset_id": "bar_chair_round_01",
+      "name": "Bar Chair Round 01",
+      "reported_polycount": 14373,
+      "categories": [
+        "seating",
+        "furniture"
+      ],
+      "authors": {
+        "Dairon Sanchez": "All"
+      },
+      "description": "Free 4K model, vintage wooden bar stool with round seat, carved beaded trim, hexagonal legs, circular footrest and worn finish.",
+      "source_model_hash": "3a4411b06fb8509e297c299acac13b2e6d5d71b0",
+      "asset_page": "https://polyhaven.com/a/bar_chair_round_01"
+    },
+    {
+      "asset_id": "dead_quiver_branch_02",
+      "name": "Dead Quiver Branch 02",
+      "reported_polycount": 14386,
+      "categories": [
+        "nature",
+        "collection: namaqualand",
+        "plants",
+        "ground cover"
+      ],
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Jenelle van Heerden": "modeling"
+      },
+      "description": "Free 8K Dead Quiver Branch 02 model - Namaqualand, Karoo-worn, decayed dried log with cracked bark and weathered texture, perfect desert groundcover debris.",
+      "source_model_hash": "f421a59fa732de651bb3995542030fb0907822af",
+      "asset_page": "https://polyhaven.com/a/dead_quiver_branch_02"
+    },
+    {
+      "asset_id": "circuit_board",
+      "name": "Circuit Board",
+      "reported_polycount": 14430,
+      "categories": [
+        "collection: project_lighthouse",
+        "electronics"
+      ],
+      "authors": {
+        "Benny Weimer": "All"
+      },
+      "description": "Free 4K model of a retro green motherboard with CPU cooler, tall RAM sticks, capacitors, sockets, rich PCB traces, connectors, and printed labels.",
+      "source_model_hash": "804d8b735c30e6a9df2ae66b6307a7368ef8291b",
+      "asset_page": "https://polyhaven.com/a/circuit_board"
+    },
+    {
+      "asset_id": "classic_laptop",
+      "name": "Classic Laptop",
+      "reported_polycount": 14450,
+      "categories": [
+        "collection: project_lighthouse",
+        "office",
+        "electronics"
+      ],
+      "authors": {
+        "Arrangemonk": "All"
+      },
+      "description": "Free 4K model of a retro beige laptop with DOS screen, chunky keycaps, built-in trackball, floppy slot, thick hinges, and period-correct details.",
+      "source_model_hash": "44e244f74d7fc5329b69795c5c95f105803aadc2",
+      "asset_page": "https://polyhaven.com/a/classic_laptop"
+    },
+    {
+      "asset_id": "metal_tool_chest",
+      "name": "Metal Tool Chest",
+      "reported_polycount": 14576,
+      "categories": [
+        "props",
+        "tools",
+        "industrial",
+        "containers",
+        "rigged",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Yann Kervran": "Rigging",
+        "John Hutcheson": "Modeling & Texturing"
+      },
+      "description": "Free 8K model of a worn red steel tool chest - rusted scratches, metal handles and lock; rigged lid and drawers, ideal for garage, workshop or industrial scenes.",
+      "source_model_hash": "8fdd3f7409ad7cfd5a4fc3091933d1e1d3785b0e",
+      "asset_page": "https://polyhaven.com/a/metal_tool_chest"
+    },
+    {
+      "asset_id": "ornate_medieval_mace",
+      "name": "Ornate Medieval Mace",
+      "reported_polycount": 14762,
+      "categories": [
+        "props"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K model. Ornate medieval mace with flanged, studded head, twisted spiral shaft and aged iron-silver finish, detailed rivets and worn patina.",
+      "source_model_hash": "5c5c324bc81152705758c5112d8e6b1626b3f805",
+      "asset_page": "https://polyhaven.com/a/ornate_medieval_mace"
+    },
+    {
+      "asset_id": "dead_quiver_branch_01",
+      "name": "Dead Quiver Branch 01",
+      "reported_polycount": 14834,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Jenelle van Heerden": "modeling"
+      },
+      "description": "Free 8K 3D model of a dried quiver branch from the Namaqualand Karoo, with weathered bark and desert-worn detail - ideal as ground cover, botanical debris or desert props.",
+      "source_model_hash": "30e0f1dc491198a52d5ed34408d9a7f15c2c5546",
+      "asset_page": "https://polyhaven.com/a/dead_quiver_branch_01"
+    },
+    {
+      "asset_id": "vintage_electric_kettle",
+      "name": "Vintage Electric Kettle",
+      "reported_polycount": 14838,
+      "categories": [
+        "collection: project_lighthouse",
+        "decorative",
+        "appliances"
+      ],
+      "authors": {
+        "SV Garip": "All"
+      },
+      "description": "Free 4K vintage electric kettle with worn metal body, gooseneck spout, wood handle, and front thermometer gauge, detailed patina, dents, and brass fittings.",
+      "source_model_hash": "6de2f0161fe1e0f8eb1138daf0985ee865511290",
+      "asset_page": "https://polyhaven.com/a/vintage_electric_kettle"
+    },
+    {
+      "asset_id": "small_lpg_tank",
+      "name": "Small Lpg Tank",
+      "reported_polycount": 15042,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "industrial"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4k model of a small LPG cylinder: worn red metal with scratched, chipped paint, welded seams, corroded valve, realistic industrial detailing.",
+      "source_model_hash": "f15a80eccdef60165c29e86f7955a8e679943902",
+      "asset_page": "https://polyhaven.com/a/small_lpg_tank"
+    },
+    {
+      "asset_id": "rusted_wheel_rim_02",
+      "name": "Rusted Wheel Rim 02",
+      "reported_polycount": 15256,
+      "categories": [
+        "industrial",
+        "props",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "John Hutcheson": "All"
+      },
+      "description": "Free 8K model of a dented, heavily rusted steel wheel rim with pitted, flaking corrosion, bent lip and worn finish, rugged scrapyard character.",
+      "source_model_hash": "59c2b3a414b64b3b9963b8383855f8ba8cbb5552",
+      "asset_page": "https://polyhaven.com/a/rusted_wheel_rim_02"
+    },
+    {
+      "asset_id": "metal_detector",
+      "name": "Metal Detector",
+      "reported_polycount": 15518,
+      "categories": [
+        "props",
+        "electronics"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 4K model: realistic metal detector with weathered control box, tactile knobs, coiled cable and search coil - ideal for exploration, archaeology and adventure props.",
+      "source_model_hash": "554df4e1073ad058fcb816d9ef745b6754d45a64",
+      "asset_page": "https://polyhaven.com/a/metal_detector"
+    },
+    {
+      "asset_id": "pocket_watch",
+      "name": "Pocket Watch",
+      "reported_polycount": 15615,
+      "categories": [
+        "collection: project_lighthouse",
+        "props"
+      ],
+      "authors": {
+        "PierreB3D": "All"
+      },
+      "description": "Free 4K antique brass pocket watch model with polished case, Roman numerals, ornate black hands, subtle wear, and realistic glass reflections.",
+      "source_model_hash": "c65deb88b8fde08c0fae40bfe7db71e396446909",
+      "asset_page": "https://polyhaven.com/a/pocket_watch"
+    },
+    {
+      "asset_id": "chinese_cabinet",
+      "name": "Chinese Cabinet",
+      "reported_polycount": 15668,
+      "categories": [
+        "shelves",
+        "furniture"
+      ],
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "description": "Free 8K model of an antique Chinese wooden cabinet: elegant traditional shelving with ornate carved panels, drawers, brass hardware and vintage character.",
+      "source_model_hash": "68eb3f19ce1eef5021e2dda705ad67d43f063cd0",
+      "asset_page": "https://polyhaven.com/a/chinese_cabinet"
+    },
+    {
+      "asset_id": "Megaphone_01",
+      "name": "Megaphone 01",
+      "reported_polycount": 15814,
+      "categories": [
+        "props",
+        "electronics",
+        "tools"
+      ],
+      "authors": {
+        "Ethan Simon-Law": "All"
+      },
+      "description": "Free 4K model of a handheld plastic megaphone - gray horn, red body, pistol grip, coiled mic cord, buttons, ports and realistic scuffs.",
+      "source_model_hash": "699e4fe3504118c25b1bb26d5542015baff03e43",
+      "asset_page": "https://polyhaven.com/a/Megaphone_01"
+    },
+    {
+      "asset_id": "vintage_telephone_wall_clock",
+      "name": "Vintage Telephone Wall Clock",
+      "reported_polycount": 15864,
+      "categories": [
+        "props",
+        "decorative",
+        "wall decoration",
+        "collection: project_lighthouse"
+      ],
+      "authors": {
+        "Adrian C": "All"
+      },
+      "description": "Free 4k model of a vintage red metal telephone wall clock with chipped paint, rotary-style dial, ornate clock hands and a worn, tarnished handset.",
+      "source_model_hash": "976b18cea2b7303dbd4af20021bfcc5e498c4da7",
+      "asset_page": "https://polyhaven.com/a/vintage_telephone_wall_clock"
+    },
+    {
+      "asset_id": "ceiling_fan",
+      "name": "Ceiling Fan",
+      "reported_polycount": 16356,
+      "categories": [
+        "appliances",
+        "electronics"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K model of a sleek matte-black ceiling fan with four curved blades, brushed metal hub and integrated frosted light diffuser; modern, low-profile fixture.",
+      "source_model_hash": "9f5ec1073512943e6b3f4e1d4186e9dfc1097ece",
+      "asset_page": "https://polyhaven.com/a/ceiling_fan"
+    },
+    {
+      "asset_id": "rusted_wheel_rim_01",
+      "name": "Rusted Wheel Rim 01",
+      "reported_polycount": 16440,
+      "categories": [
+        "industrial",
+        "props",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "John Hutcheson": "All"
+      },
+      "description": "Free 8K model of a dented, heavily rusted steel wheel rim featuring realistic pitting, worn edges, bolt holes, and authentic scrapyard corrosion.",
+      "source_model_hash": "c6ea2791df5e76adddaff24df87f21144350cd3a",
+      "asset_page": "https://polyhaven.com/a/rusted_wheel_rim_01"
+    },
+    {
+      "asset_id": "vintage_suitcase",
+      "name": "Vintage Suitcase",
+      "reported_polycount": 16474,
+      "categories": [
+        "decorative",
+        "props"
+      ],
+      "authors": {
+        "Maximilian Schuster": "All"
+      },
+      "description": "Free 8K vintage suitcase model with worn green leather, stitched edges, rusted clasps and weathered travel stickers, showing rustic, hand-made aged character.",
+      "source_model_hash": "990b81368d2e3271bc560aa3b47dbf44e80e8d32",
+      "asset_page": "https://polyhaven.com/a/vintage_suitcase"
+    },
+    {
+      "asset_id": "modular_metal_gutter",
+      "name": "Modular Metal Gutter",
+      "reported_polycount": 16490,
+      "categories": [
+        "industrial",
+        "structures",
+        "buildings",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Maxim Domnin": "All"
+      },
+      "description": "Free 4K modular metal gutter model with weathered galvanized sections: gutters, downspout, elbow, outlets and brackets.",
+      "source_model_hash": "01a58d11c6108814bd6526ac6951ee9ce2abc1f6",
+      "asset_page": "https://polyhaven.com/a/modular_metal_gutter"
+    },
+    {
+      "asset_id": "industrial_microscope",
+      "name": "Industrial Microscope",
+      "reported_polycount": 16598,
+      "categories": [
+        "collection: project_lighthouse",
+        "industrial",
+        "tools",
+        "appliances"
+      ],
+      "authors": {
+        "Lukas Walzer": "All"
+      },
+      "description": "Free 4K model of a vintage industrial microscope with binocular head, triple objective turret, textured cast-metal body, worn paint, and detailed knobs.",
+      "source_model_hash": "8a478e01a8143546913bb0c48712bdd06dcac2ee",
+      "asset_page": "https://polyhaven.com/a/industrial_microscope"
+    },
+    {
+      "asset_id": "calathea_orbifolia_01",
+      "name": "Calathea Orbifolia 01",
+      "reported_polycount": 16688,
+      "categories": [
+        "plants",
+        "nature",
+        "ground cover",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rob Tuytel": "scanning",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K shrub featuring clusters of broad, glossy, ribbed heart-shaped leaves with deep green tones and subtle vein highlights.",
+      "source_model_hash": "5b3ad0b0352b1429f1f11e3de6f5b360ea6ef35a",
+      "asset_page": "https://polyhaven.com/a/calathea_orbifolia_01"
+    },
+    {
+      "asset_id": "small_oil_can_01",
+      "name": "Small Oil Can 01",
+      "reported_polycount": 16746,
+      "categories": [
+        "industrial",
+        "tools",
+        "props",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Raven van de Werken": "All"
+      },
+      "description": "Free 8K model: small red metal oil can with long bent spout and pump lever, featuring chipped paint, dents, scratches and subtle rust for a worn mechanic aesthetic.",
+      "source_model_hash": "8aee52e7d617093a125677e1903f4bdae10bf8fe",
+      "asset_page": "https://polyhaven.com/a/small_oil_can_01"
+    },
+    {
+      "asset_id": "dry_branches_medium_01",
+      "name": "Dry Branches Medium 01",
+      "reported_polycount": 16803,
+      "categories": [
+        "props",
+        "nature",
+        "plants",
+        "ground cover",
+        "collection: pine_forest",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K photoscanned set of medium dry branches - gnarled, cracked bark, weathered texture, natural twists, knots and subtle moss.",
+      "source_model_hash": "9707cc29f837b6946d6787c231b522dc2ed69573",
+      "asset_page": "https://polyhaven.com/a/dry_branches_medium_01"
+    },
+    {
+      "asset_id": "cigarette_case",
+      "name": "Cigarette Case",
+      "reported_polycount": 16912,
+      "categories": [
+        "collection: project_lighthouse",
+        "props"
+      ],
+      "authors": {
+        "Micha\u0142 Wi\u015bniewski": "All"
+      },
+      "description": "Free 4K vintage metal cigarette case with ornate engraved lid, worn edges, hinged clamshell interior, spring straps, three cigarettes and a folded note.",
+      "source_model_hash": "9615ca36a0f9301a9812b2d66ad2c6e13a573ae8",
+      "asset_page": "https://polyhaven.com/a/cigarette_case"
+    },
+    {
+      "asset_id": "cardboard_box_01",
+      "name": "Cardboard Box 01",
+      "reported_polycount": 16952,
+      "categories": [
+        "industrial",
+        "containers",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Rahul Chaudhary": "All"
+      },
+      "description": "Free 4K model of a worn, creased cardboard box with torn flaps, taped seams and a weathered strap - aged, dented paper texture and realistic damage.",
+      "source_model_hash": "2a37ded0aeebc15100db0e1d285ad36cf40b8f42",
+      "asset_page": "https://polyhaven.com/a/cardboard_box_01"
+    },
+    {
+      "asset_id": "shrub_03",
+      "name": "Shrub 03",
+      "reported_polycount": 16955,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 4K shrub with slender stems, paired oval leaves and vertical seed spikes - detailed green low\u2011growth foliage with a natural meadow character.",
+      "source_model_hash": "54def63266ae691c3656edadb07e137996c6dde7",
+      "asset_page": "https://polyhaven.com/a/shrub_03"
+    },
+    {
+      "asset_id": "weed_plant_02",
+      "name": "Weed Plant 02",
+      "reported_polycount": 17062,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography",
+        "Rico Cilliers": "Modeling"
+      },
+      "description": "Free 8K model of small weed clusters with glossy green leaves, reddish stems and yellowing edges - photoreal low-growing groundcover with natural detail.",
+      "source_model_hash": "ec3ea7f56c7504415056b28465ce384a4f884f6c",
+      "asset_page": "https://polyhaven.com/a/weed_plant_02"
+    },
+    {
+      "asset_id": "bull_head",
+      "name": "Bull Head",
+      "reported_polycount": 17148,
+      "categories": [
+        "decorative"
+      ],
+      "authors": {
+        "Tina": "All"
+      },
+      "description": "Free 8K model: ornate antique bull head sculpture in dark bronze with polished golden horns, rich patina and detailed sculpted features.",
+      "source_model_hash": "69296e3dab4af13ddb59b1c9323152dd43d237ac",
+      "asset_page": "https://polyhaven.com/a/bull_head"
+    },
+    {
+      "asset_id": "marble_bust_01",
+      "name": "Marble Bust 01",
+      "reported_polycount": 17456,
+      "categories": [
+        "decorative"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K model: a marble Renaissance-style male bust with finely carved features, subtle surface veining, light weathering and a round plinth.",
+      "source_model_hash": "7a118fddaa2d7823e16cf3647b9075d373a81164",
+      "asset_page": "https://polyhaven.com/a/marble_bust_01"
+    },
+    {
+      "asset_id": "mounted_fluorescent_lights",
+      "name": "Mounted Fluorescent Lights",
+      "reported_polycount": 17820,
+      "categories": [
+        "collection: project_lighthouse",
+        "lighting",
+        "industrial"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K model of mounted fluorescent multiple strip lights: grey metal housings, end caps and chain hooks, clean geometry with subtle wear and screws.",
+      "source_model_hash": "0f8286f500f15e7c1476596bec518a25695012c5",
+      "asset_page": "https://polyhaven.com/a/mounted_fluorescent_lights"
+    },
+    {
+      "asset_id": "wicker_basket_02",
+      "name": "Wicker Basket 02",
+      "reported_polycount": 17850,
+      "categories": [
+        "containers",
+        "decorative"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 8K model of a handwoven wicker basket with lid - rustic rattan weave, twine-bound rim and short wooden legs.",
+      "source_model_hash": "7c68c52ddfcdec879003c2120929487b0c589837",
+      "asset_page": "https://polyhaven.com/a/wicker_basket_02"
+    },
+    {
+      "asset_id": "binder_notebook",
+      "name": "Binder Notebook",
+      "reported_polycount": 18077,
+      "categories": [
+        "collection: project_lighthouse",
+        "books",
+        "props"
+      ],
+      "authors": {
+        "DaDrood": "All"
+      },
+      "description": "Free 8K leather binder notebook with worn patina, brass rings, stitched pockets, snap strap and pen, embossed logo, realistic paper stack and metal details.",
+      "source_model_hash": "19b74a17100b8c852b8ce520b3029609fc601fbb",
+      "asset_page": "https://polyhaven.com/a/binder_notebook"
+    },
+    {
+      "asset_id": "plastic_crate_01",
+      "name": "Plastic Crate 01",
+      "reported_polycount": 18320,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "containers"
+      ],
+      "authors": {
+        "PierreB3D": "All"
+      },
+      "description": "Free 4K model of a deep red plastic crate with lattice sides, cutout handles, and a worn GALLER STORAGE print. Realistic scuffs, grime, and sturdy ribs.",
+      "source_model_hash": "74d27ffa75c1d477708f4dd344d500b65d376a84",
+      "asset_page": "https://polyhaven.com/a/plastic_crate_01"
+    },
+    {
+      "asset_id": "moon_rock_05",
+      "name": "Moon Rock 05",
+      "reported_polycount": 18466,
+      "categories": [
+        "rocks",
+        "collection: moon",
+        "nature"
+      ],
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Rico Cilliers": "Photography",
+        "Jenelle van Heerden": "Processing"
+      },
+      "description": "Free 16K lunar rock model with rough, dusty regolith surface, a dirty rugged extraterrestrial boulder ideal for realistic moon and sci\u2011fi scenes.",
+      "source_model_hash": "dcbb3649329497b8f6fc8e258f0aca901f47dca7",
+      "asset_page": "https://polyhaven.com/a/moon_rock_05"
+    },
+    {
+      "asset_id": "moon_rock_01",
+      "name": "Moon Rock 01",
+      "reported_polycount": 18668,
+      "categories": [
+        "rocks",
+        "collection: moon",
+        "nature"
+      ],
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Rico Cilliers": "Photography",
+        "Jenelle van Heerden": "Processing",
+        "Dario Barresi": "Processing"
+      },
+      "description": "Free 16K lunar rock model with rough, dusted regolith and dirty, extraterrestrial detailing - ideal for moon terrains, sci\u2011fi scenes and close-up renders.",
+      "source_model_hash": "8aac337ef1b7cd03ee522258ce658dbc1bffe554",
+      "asset_page": "https://polyhaven.com/a/moon_rock_01"
+    },
+    {
+      "asset_id": "vintage_video_camera",
+      "name": "Vintage Video Camera",
+      "reported_polycount": 18682,
+      "categories": [
+        "electronics",
+        "appliances"
+      ],
+      "authors": {
+        "James Ray Cock": "Textures",
+        "Jenelle van Heerden": "Photography & Model"
+      },
+      "description": "Free 8K model of a vintage World War II era film/video camera with worn metal and triple-lens turret. ",
+      "source_model_hash": "c07a3cd8f538e99f6f8a5863ceae5bd3d9be40ce",
+      "asset_page": "https://polyhaven.com/a/vintage_video_camera"
+    },
+    {
+      "asset_id": "compost_bags",
+      "name": "Compost Bags",
+      "reported_polycount": 18708,
+      "categories": [
+        "props",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K model of stacked and upright compost bags - realistic worn packaging, creased plastic, floral label; ideal for gardens, sheds, greenhouses, and farms.",
+      "source_model_hash": "0ba33faf6d6518ed888ab2dfce615a3505b8a22d",
+      "asset_page": "https://polyhaven.com/a/compost_bags"
+    },
+    {
+      "asset_id": "plastic_broom",
+      "name": "Plastic Broom",
+      "reported_polycount": 18736,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "tools"
+      ],
+      "authors": {
+        "L": "All"
+      },
+      "description": "Free 8K model of a plastic push broom: red worn head, dense gray bristles, white handle and metal mount, subtle scratches and grime for realism.",
+      "source_model_hash": "96b9f69289e9738a0bcfc8302e17575e0fd0a237",
+      "asset_page": "https://polyhaven.com/a/plastic_broom"
+    },
+    {
+      "asset_id": "GothicBed_01",
+      "name": "Gothic Bed 01",
+      "reported_polycount": 18741,
+      "categories": [
+        "furniture",
+        "bed"
+      ],
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "description": "Free 4K model of a vintage Gothic wooden four-poster bed with ornate carved headboard/footboard, rich dark finish and decorative medieval-inspired detailing.",
+      "source_model_hash": "1ab8ed2b813d573962623fdafa37c84def8e8447",
+      "asset_page": "https://polyhaven.com/a/GothicBed_01"
+    },
+    {
+      "asset_id": "portable_searchlight",
+      "name": "Portable Searchlight",
+      "reported_polycount": 18802,
+      "categories": [
+        "collection: project_lighthouse",
+        "lighting",
+        "electronics",
+        "tools",
+        "props"
+      ],
+      "authors": {
+        "Elijah Cragg": "All"
+      },
+      "description": "Free 4K portable searchlight model with rugged olive body, big chrome reflector, chunky black bezel, side control panel and red handle button, subtle wear.",
+      "source_model_hash": "9b5f1215694e0361ac1dd8bed7512f2f296ec634",
+      "asset_page": "https://polyhaven.com/a/portable_searchlight"
+    },
+    {
+      "asset_id": "old_gas_mask",
+      "name": "Old Gas Mask",
+      "reported_polycount": 18900,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "industrial",
+        "tools"
+      ],
+      "authors": {
+        "Micha\u0142 Wi\u015bniewski": "All"
+      },
+      "description": "Free 8K vintage gas mask model with cracked rubber hood, foggy round lenses, metal fittings, long corrugated hose, and ribbed green filter, worn and grimy.",
+      "source_model_hash": "2eb8444cb0f9cfd027d96b09364c1fd4fe9fdaf8",
+      "asset_page": "https://polyhaven.com/a/old_gas_mask"
+    },
+    {
+      "asset_id": "industrial_storage_cart",
+      "name": "Industrial Storage Cart",
+      "reported_polycount": 18902,
+      "categories": [
+        "collection: project_lighthouse",
+        "table",
+        "furniture",
+        "industrial"
+      ],
+      "authors": {
+        "Jule Bielitz": "All"
+      },
+      "description": "Free 8K model of a weathered industrial storage cart with riveted steel frame, two trays, lower double-door cabinet, rolling casters, chipped paint and rust.",
+      "source_model_hash": "1885782cd204ad6fed4d96111bd713aee14fd4bf",
+      "asset_page": "https://polyhaven.com/a/industrial_storage_cart"
+    },
+    {
+      "asset_id": "exterior_aircon_unit",
+      "name": "Exterior Aircon Unit",
+      "reported_polycount": 18986,
+      "categories": [
+        "appliances",
+        "industrial",
+        "electronics",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Monsta3D": "All"
+      },
+      "description": "Free 4K exterior aircon unit model with clean and heavily weathered variants, detailed grille and fan, mounting brackets and realistic rust and chipped paint.",
+      "source_model_hash": "afd5b9eb4b3cfc2544044a00f4acb2a92d2f310e",
+      "asset_page": "https://polyhaven.com/a/exterior_aircon_unit"
+    },
+    {
+      "asset_id": "binoculars",
+      "name": "Binoculars",
+      "reported_polycount": 19248,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "tools"
+      ],
+      "authors": {
+        "Derek Wight": "All"
+      },
+      "description": "Free 8K binoculars model: classic black metal, textured leatherette grips, knurled focus wheel, clean glass lenses, and a brown strap with light wear.",
+      "source_model_hash": "6dcecf864351bfc953953bec37b976d11e84115e",
+      "asset_page": "https://polyhaven.com/a/binoculars"
+    },
+    {
+      "asset_id": "vintage_binocular",
+      "name": "Vintage Binoculars",
+      "reported_polycount": 19362,
+      "categories": [
+        "collection: project_lighthouse",
+        "instrument",
+        "props"
+      ],
+      "authors": {
+        "Luke": "All"
+      },
+      "description": "Free 4K model of vintage binoculars with worn brass rims, pebbled leather grips, aged black metal, crisp glass optics, and a detailed center focus wheel.",
+      "source_model_hash": "a0e6413e0a5f69c98aa8681f673dc2b0b6809e22",
+      "asset_page": "https://polyhaven.com/a/vintage_binocular"
+    },
+    {
+      "asset_id": "bolt_action_rifle_7_62",
+      "name": "Bolt Action Rifle 7.62",
+      "reported_polycount": 19985,
+      "categories": [
+        "collection: project_lighthouse",
+        "weapons",
+        "firearms"
+      ],
+      "authors": {
+        "Mateusz Sadek": "All"
+      },
+      "description": "Free 8K model of a classic bolt-action 7.62 rifle with long barrel, worn wood stock, cloth-wrapped butt, detachable magazine, small scope, and weathered metal.",
+      "source_model_hash": "151d4108d40bfd38a062ac462e8b4ad7e3df2e98",
+      "asset_page": "https://polyhaven.com/a/bolt_action_rifle_7_62"
+    },
+    {
+      "asset_id": "WoodenChair_01",
+      "name": "Wooden Chair 01",
+      "reported_polycount": 19992,
+      "categories": [
+        "furniture",
+        "seating"
+      ],
+      "authors": {
+        "Jake Mobley": "All"
+      },
+      "description": "Free 4K model: ornate Victorian Gothic wooden chair with pointed tracery back, carved floral motif, turned legs, armrests and worn dark-stained finish.",
+      "source_model_hash": "62044fc04038e8a8192783c6c0db8cb879935209",
+      "asset_page": "https://polyhaven.com/a/WoodenChair_01"
+    },
+    {
+      "asset_id": "metal_jerrycan",
+      "name": "Metal Jerrycan",
+      "reported_polycount": 20022,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "containers"
+      ],
+      "authors": {
+        "Sean Buckley": "All"
+      },
+      "description": "Free 8k model of a weathered red metal jerrycan with chipped paint, rusted edges, embossed text, and high-detail dents, scratches and grime.",
+      "source_model_hash": "dec5eb28e40431074a34abb2cc63354559218f46",
+      "asset_page": "https://polyhaven.com/a/metal_jerrycan"
+    },
+    {
+      "asset_id": "rock_face_01",
+      "name": "Rock Face 01",
+      "reported_polycount": 20174,
+      "categories": [
+        "rocks",
+        "nature",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Dario Barresi": "All"
+      },
+      "description": "Free 8K model of a weathered rock face with layered sedimentary strata, rugged cracks, lichen patches and subtle blue-red mineral tones.",
+      "source_model_hash": "a39e6911cc84e0ceef097a98b1146885afb4afb3",
+      "asset_page": "https://polyhaven.com/a/rock_face_01"
+    },
+    {
+      "asset_id": "street_lamp_02",
+      "name": "Street Lamp 02",
+      "reported_polycount": 20338,
+      "categories": [
+        "lighting",
+        "industrial",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Josh Dean": "All"
+      },
+      "description": "Free 8K wall-mounted Victorian street lamp with ornate wrought-iron bracket, textured dark metal, frosted glass panes and exposed bulb detail.",
+      "source_model_hash": "2128f871d76c756f6779cac3286443d21eb9b40f",
+      "asset_page": "https://polyhaven.com/a/street_lamp_02"
+    },
+    {
+      "asset_id": "vintage_microscope",
+      "name": "Vintage Microscope",
+      "reported_polycount": 20631,
+      "categories": [
+        "collection: project_lighthouse",
+        "instrument",
+        "industrial",
+        "tools"
+      ],
+      "authors": {
+        "Luis Jos\u00e9 Fern\u00e1ndez Rodr\u00edguez": "All"
+      },
+      "description": "Free 8K model of a vintage brass microscope with black enamel body, knurled focus wheels, rotating dual objectives, engraved metal stage, and a cast base.",
+      "source_model_hash": "1ec0dfddbf0c79a3b8c34a3e794848aa145ebed9",
+      "asset_page": "https://polyhaven.com/a/vintage_microscope"
+    },
+    {
+      "asset_id": "power_box_01",
+      "name": "Power Box 01",
+      "reported_polycount": 21272,
+      "categories": [
+        "industrial",
+        "props",
+        "electronics",
+        "tools",
+        "rigged",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Rico Cilliers": "Modeling & Texturing",
+        "Yann Kervran": "Rigging"
+      },
+      "description": "Free 8K model of a modern, slightly damaged industrial power box with breakers, switches and exposed wiring - rugged, rigged prop ready for utility, electronics, and industrial scenes.",
+      "source_model_hash": "4df156d1369da9a74510ad2ff012212cea3d4cfa",
+      "asset_page": "https://polyhaven.com/a/power_box_01"
+    },
+    {
+      "asset_id": "brass_vase_01",
+      "name": "Brass Vase 01",
+      "reported_polycount": 21440,
+      "categories": [
+        "decorative",
+        "vases"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K brass vase with an antique patina, elegant elongated silhouette, engraved decorative bands and subtle wear for a believable vintage metal look.",
+      "source_model_hash": "c7c0ecd0be363f53878e45bda4f10cbb382bca54",
+      "asset_page": "https://polyhaven.com/a/brass_vase_01"
+    },
+    {
+      "asset_id": "Chandelier_02",
+      "name": "Chandelier 02",
+      "reported_polycount": 21514,
+      "categories": [
+        "lighting"
+      ],
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "description": "Free 4K model of an elegant vintage hanging ceiling chandelier, an ornate brass six-arm fixture with pleated fabric shades - ideal for classic interior scenes.",
+      "source_model_hash": "92f4825de2702b09d11b990655bdbd24ba504a09",
+      "asset_page": "https://polyhaven.com/a/Chandelier_02"
+    },
+    {
+      "asset_id": "plastic_crate_03",
+      "name": "Plastic Crate 03",
+      "reported_polycount": 21740,
+      "categories": [
+        "collection: project_lighthouse",
+        "containers",
+        "industrial"
+      ],
+      "authors": {
+        "Pacific Penguin": "All"
+      },
+      "description": "Free 8K model of a weathered red plastic crate with lattice sides, ribbed frame, open handles, and realistic scuffs, grime, and edge wear.",
+      "source_model_hash": "de0df102c2dfdda10d8a569c40579824212f0fec",
+      "asset_page": "https://polyhaven.com/a/plastic_crate_03"
+    },
+    {
+      "asset_id": "old_drill_press",
+      "name": "Old Drill Press",
+      "reported_polycount": 21842,
+      "categories": [
+        "collection: project_lighthouse",
+        "tools",
+        "industrial"
+      ],
+      "authors": {
+        "Harsh Vardhan Singh": "All"
+      },
+      "description": "Free 8K model of an old green drill press with chipped paint, rusted steel column, worn slotted table, power cord and labels, realistic grime and dents.",
+      "source_model_hash": "a96e5cf7bda67039ae79e04d97d814f147c78936",
+      "asset_page": "https://polyhaven.com/a/old_drill_press"
+    },
+    {
+      "asset_id": "dining_chair_02",
+      "name": "Dining Chair 02",
+      "reported_polycount": 22013,
+      "categories": [
+        "furniture",
+        "seating"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K model: modern dining chair with tufted brown leather, high cushioned back and seat, dark wooden legs - fancy, comfy and ideal for elegant interior scenes.",
+      "source_model_hash": "b99b2f907424bbc55b77541f9616fa9da770dcde",
+      "asset_page": "https://polyhaven.com/a/dining_chair_02"
+    },
+    {
+      "asset_id": "wicker_basket_01",
+      "name": "Wicker Basket 01",
+      "reported_polycount": 22276,
+      "categories": [
+        "containers",
+        "decorative",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 8K wicker basket model with hand-woven twine, dark weathered wood tones, tight rectangular weave, braided rim and realistic grain with subtle wear.",
+      "source_model_hash": "49f624a285b5e5dc8fe4b75ad18cf5d18d8cdca1",
+      "asset_page": "https://polyhaven.com/a/wicker_basket_01"
+    },
+    {
+      "asset_id": "horse_statue_01",
+      "name": "Horse Statue 01",
+      "reported_polycount": 22388,
+      "categories": [
+        "props",
+        "decorative"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K model - glossy white porcelain horse figurine rearing on a round wooden base, with detailed mane, musculature and an elegant sculptural finish.",
+      "source_model_hash": "1d826b7fbcaca3f5aaa48ea4b27a74b44e593971",
+      "asset_page": "https://polyhaven.com/a/horse_statue_01"
+    },
+    {
+      "asset_id": "caged_hanging_light",
+      "name": "Caged Hanging Light",
+      "reported_polycount": 22893,
+      "categories": [
+        "collection: project_lighthouse",
+        "lighting",
+        "industrial"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K model of a chain-hung industrial fluorescent light with a rugged caged guard, olive metal body, weathered paint, bolts and wiring detail.",
+      "source_model_hash": "94e927bd1cfe4ed907dbcfbc509f5f9f0bcb921b",
+      "asset_page": "https://polyhaven.com/a/caged_hanging_light"
+    },
+    {
+      "asset_id": "wooden_military_crate",
+      "name": "Wooden Military Crate",
+      "reported_polycount": 22986,
+      "categories": [
+        "collection: project_lighthouse",
+        "containers"
+      ],
+      "authors": {
+        "Prabhjinder Singh": "All"
+      },
+      "description": "Free 4K model of a rugged wooden military crate with hinged lid, metal straps and latches, side handles, and stenciled, weathered paint and scratches.",
+      "source_model_hash": "b9d3d18a67e72d739f6be8ffe564827fc8e25cdb",
+      "asset_page": "https://polyhaven.com/a/wooden_military_crate"
+    },
+    {
+      "asset_id": "rock_09",
+      "name": "Rock 09",
+      "reported_polycount": 23280,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "All"
+      },
+      "description": "Free 8K weathered boulder model with rugged, rust-brown stone, detailed dirt and erosion - ideal for natural terrain and landscape scenes.",
+      "source_model_hash": "1560e10c5800cc570d6e0a692fb5300443f72156",
+      "asset_page": "https://polyhaven.com/a/rock_09"
+    },
+    {
+      "asset_id": "crystalline_iceplant",
+      "name": "Crystalline Iceplant",
+      "reported_polycount": 23487,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "James Ray Cock": "modeling",
+        "Jenelle van Heerden": "Photography"
+      },
+      "description": "Free 8K Crystalline Iceplant model - a small South African succulent groundcover with realistic leaves, botanical Karoo detail and low, rosette foliage.",
+      "source_model_hash": "0344e1f831a707e73f4bde5e29c2fa8a7cb14563",
+      "asset_page": "https://polyhaven.com/a/crystalline_iceplant"
+    },
+    {
+      "asset_id": "gothic_coffee_table",
+      "name": "Gothic Coffee Table",
+      "reported_polycount": 23836,
+      "categories": [
+        "furniture",
+        "table"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 8K model of a Gothic wooden coffee table featuring ornate details, dark antique finish, medieval motifs, rich wood grain and aged patina.",
+      "source_model_hash": "05912f196d3d1f8cf861b8ffe1ad8dacd42d927e",
+      "asset_page": "https://polyhaven.com/a/gothic_coffee_table"
+    },
+    {
+      "asset_id": "hanging_picture_frame_03",
+      "name": "Hanging Picture Frame 03",
+      "reported_polycount": 24348,
+      "categories": [
+        "wall decoration",
+        "decorative"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K - ornate oval wooden hanging picture frame with varnished vintage finish, carved floral details and antique photo insert; decorative wall prop.",
+      "source_model_hash": "6861338cad64c7960760adaeb8df7d112daa8208",
+      "asset_page": "https://polyhaven.com/a/hanging_picture_frame_03"
+    },
+    {
+      "asset_id": "modern_wooden_cabinet",
+      "name": "Modern Wooden Cabinet",
+      "reported_polycount": 24976,
+      "categories": [
+        "furniture",
+        "table"
+      ],
+      "authors": {
+        "Patrik Pangerl": "All"
+      },
+      "description": "Free 8K model of a modern wooden cabinet with dark frame, vertical light-wood slatted curved doors on slim metal legs, minimalist contemporary design.",
+      "source_model_hash": "ef2d266b0823d230f465b29bb32b110b4c71b3b2",
+      "asset_page": "https://polyhaven.com/a/modern_wooden_cabinet"
+    },
+    {
+      "asset_id": "modular_street_seating",
+      "name": "Modular Street Seating",
+      "reported_polycount": 25156,
+      "categories": [
+        "furniture",
+        "seating",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Stuart Attenborrow": "All"
+      },
+      "description": "Free 4K modular street seating: contemporary urban bench kit with weathered metal supports and wooden slats, straight and curved interchangeable modules.",
+      "source_model_hash": "95d5a9ba8bf29d4db6c9089297b8bdb920994f6d",
+      "asset_page": "https://polyhaven.com/a/modular_street_seating"
+    },
+    {
+      "asset_id": "desk_lamp_arm_01",
+      "name": "Desk Lamp Arm 01",
+      "reported_polycount": 25710,
+      "categories": [
+        "lighting",
+        "rigged",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Yann Kervran": "Rigging",
+        "Kuutti Siitonen": "Modeling & texturing"
+      },
+      "description": "Free 8K model of an industrial, rigged desk lamp arm - clamp-mounted, articulated with springs, vintage workshop style.",
+      "source_model_hash": "e15dd68e575e78092f99c7179cd031525428bbc1",
+      "asset_page": "https://polyhaven.com/a/desk_lamp_arm_01"
+    },
+    {
+      "asset_id": "flower_gazania",
+      "name": "Flower Gazania",
+      "reported_polycount": 25819,
+      "categories": [
+        "nature",
+        "plants",
+        "flowers",
+        "ground cover",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "James Ray Cock": "modeling",
+        "Jenelle van Heerden": "Photography"
+      },
+      "description": "Free 8K model: realistic Gazania wildflower clumps from Namaqualand - orange daisy-like groundcover with botanical detail, ideal for fields.",
+      "source_model_hash": "6861ef52064618add31b204dcabc198a5bfbb52e",
+      "asset_page": "https://polyhaven.com/a/flower_gazania"
+    },
+    {
+      "asset_id": "drawer_cabinet",
+      "name": "Drawer Cabinet",
+      "reported_polycount": 26406,
+      "categories": [
+        "furniture"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K modern drawer cabinet featuring warm wood drawers and shelves, slim black metal frame, four horizontal drawers, and open shelving.",
+      "source_model_hash": "dda532faa842f6046d05e7ffcfddaea897152f78",
+      "asset_page": "https://polyhaven.com/a/drawer_cabinet"
+    },
+    {
+      "asset_id": "portable_generator",
+      "name": "Portable Generator",
+      "reported_polycount": 26419,
+      "categories": [
+        "industrial",
+        "appliances",
+        "collection: project_lighthouse"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K model of a rugged yellow portable generator branding, tubular steel frame, crisp gauges, outlets and switches, exposed wiring, and worn grime.",
+      "source_model_hash": "1eb1caabd255ee5d737842cb7d92dc325c77d0f4",
+      "asset_page": "https://polyhaven.com/a/portable_generator"
+    },
+    {
+      "asset_id": "industrial_caged_sconce",
+      "name": "Industrial Caged Sconce",
+      "reported_polycount": 26576,
+      "categories": [
+        "collection: project_lighthouse",
+        "lighting",
+        "industrial"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K industrial wall sconce model with caged frosted glass, weathered black steel, yellow valve cap, wall plate, and modular single or double pipe setups.",
+      "source_model_hash": "82c0f612e6c31736976371c01ca95386b20ddaf3",
+      "asset_page": "https://polyhaven.com/a/industrial_caged_sconce"
+    },
+    {
+      "asset_id": "Chandelier_01",
+      "name": "Chandelier 01",
+      "reported_polycount": 26860,
+      "categories": [
+        "lighting",
+        "decorative"
+      ],
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "description": "Free 4K model of an ornate vintage brass chandelier with six fabric shades, decorative beads and hanging ceiling mount, detailed for archviz and games.",
+      "source_model_hash": "4de97a301043c23293772a3f8d5498a088141ddf",
+      "asset_page": "https://polyhaven.com/a/Chandelier_01"
+    },
+    {
+      "asset_id": "Camera_01",
+      "name": "Camera 01",
+      "reported_polycount": 26987,
+      "categories": [
+        "props",
+        "electronics"
+      ],
+      "authors": {
+        "Rajil Jose Macatangay": "All"
+      },
+      "description": "Free vintage rangefinder camera model with ornate wear, leather strap and detailed lens - high-res prop for retro scenes, stills, animations, and product shots.",
+      "source_model_hash": "6db4d73f8b708eb87597df841c1f6e9beea70778",
+      "asset_page": "https://polyhaven.com/a/Camera_01"
+    },
+    {
+      "asset_id": "strawberry_chocolate_cake",
+      "name": "Strawberry Chocolate Cake",
+      "reported_polycount": 27054,
+      "categories": [
+        "props",
+        "food"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 8K model of a rustic chocolate cake topped with glossy strawberry slices and chocolate shavings. Rich texture and hand-made look.",
+      "source_model_hash": "a441726fcf88501501868c20037cfbf7a88f82bd",
+      "asset_page": "https://polyhaven.com/a/strawberry_chocolate_cake"
+    },
+    {
+      "asset_id": "service_pistol",
+      "name": "Service Pistol",
+      "reported_polycount": 27548,
+      "categories": [
+        "collection: project_lighthouse",
+        "props",
+        "weapons",
+        "firearms"
+      ],
+      "authors": {
+        "Mateusz Sadek": "All"
+      },
+      "description": "Free 4k model of a worn pistol with realistic metal surfaces, two grip variants (wood and blue tape), detachable magazines, and bullets.",
+      "source_model_hash": "86bdbd0d905e64817287588732c07588b09b980e",
+      "asset_page": "https://polyhaven.com/a/service_pistol"
+    },
+    {
+      "asset_id": "CoffeeCart_01",
+      "name": "Coffee Cart 01",
+      "reported_polycount": 27659,
+      "categories": [
+        "appliances",
+        "props",
+        "furniture",
+        "office"
+      ],
+      "authors": {
+        "Joe Seabuhr": "All"
+      },
+      "description": "Free 4K model - industrial metal coffee cart with commercial brewer, glass carafes, storage cabinet, lower shelf bin, power cord and red caster wheels.",
+      "source_model_hash": "9a4acb5ef57be1f96cd1af66af66d2a798139a24",
+      "asset_page": "https://polyhaven.com/a/CoffeeCart_01"
+    },
+    {
+      "asset_id": "gothic_statue",
+      "name": "Gothic Statue",
+      "reported_polycount": 27739,
+      "categories": [
+        "collection: project_lighthouse",
+        "decorative"
+      ],
+      "authors": {
+        "Benny Weimer": "All"
+      },
+      "description": "Free 8K model of a weathered gothic statue: robed, veiled figure with crown, heavy chains, book and sword. Mossy stone, chipped edges, detailed base.",
+      "source_model_hash": "180fe034aec7158f2550b133e0ba2be9e9c1c241",
+      "asset_page": "https://polyhaven.com/a/gothic_statue"
+    },
+    {
+      "asset_id": "rock_07",
+      "name": "Rock 07",
+      "reported_polycount": 27830,
+      "categories": [
+        "rocks",
+        "nature",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "All"
+      },
+      "description": "Free 8K model: weathered boulder with rugged erosion-worn surfaces and rich earth tones, perfect for realistic landscapes and trail or geological scenes.",
+      "source_model_hash": "dd2ca74801cd50ae5f510331cbb86e4b76b05801",
+      "asset_page": "https://polyhaven.com/a/rock_07"
+    },
+    {
+      "asset_id": "modular_fort_01",
+      "name": "Modular Fort 01",
+      "reported_polycount": 28218,
+      "categories": [
+        "structures",
+        "buildings",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K modular fort model - weathered colonial stone blocks, battlements, towers, ramparts and an arched gate with mossy, aged surface detail.",
+      "source_model_hash": "5ccbf62aeee96ea99cf0c2e29e4c8ed843ee7c44",
+      "asset_page": "https://polyhaven.com/a/modular_fort_01"
+    },
+    {
+      "asset_id": "wine_bottles_01",
+      "name": "Wine Bottles 01",
+      "reported_polycount": 28848,
+      "categories": [
+        "props",
+        "containers",
+        "dishes"
+      ],
+      "authors": {
+        "Rico Cilliers": "modeling",
+        "Jurita Burger": "graphic design"
+      },
+      "description": "Free 8K model of four wine and champagne bottles with realistic glass, varied labels, foil/wax tops and subtle wear, evoking a rustic vineyard farmhouse character.",
+      "source_model_hash": "9426086370c86485039d330f47b99c93d333ff38",
+      "asset_page": "https://polyhaven.com/a/wine_bottles_01"
+    },
+    {
+      "asset_id": "garden_gnome",
+      "name": "Garden Gnome",
+      "reported_polycount": 28858,
+      "categories": [
+        "decorative",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Bhargav Kubal": "All"
+      },
+      "description": "Free 4K model of a whimsical garden gnome with red pointy hat, white beard, green coat and handheld lantern; glossy, painted ceramic look and charming details.",
+      "source_model_hash": "d9916cd986eeec9226772870af437dea0fdf8366",
+      "asset_page": "https://polyhaven.com/a/garden_gnome"
+    },
+    {
+      "asset_id": "ladder_sectioned_01",
+      "name": "Ladder Sectioned 01",
+      "reported_polycount": 29140,
+      "categories": [
+        "industrial",
+        "tools",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "MP": "All"
+      },
+      "description": "Free 4K sectioned folding metal ladder with flat treads, orange safety caps and straps, telescoping industrial finish with light wear.",
+      "source_model_hash": "13918cbf2df2d0f0321d29546ed2da162b44887a",
+      "asset_page": "https://polyhaven.com/a/ladder_sectioned_01"
+    },
+    {
+      "asset_id": "Chandelier_03",
+      "name": "Chandelier 03",
+      "reported_polycount": 29301,
+      "categories": [
+        "lighting",
+        "decorative"
+      ],
+      "authors": {
+        "Kirill Sannikov": "All"
+      },
+      "description": "Free 4K model of an ornate hanging chandelier: elegant brass fixture with crystal dishes and multiple candle-style bulbs, perfect for classic interiors.",
+      "source_model_hash": "69e7cbdf2f16db6a22efd043f6d584a58ee9a5f8",
+      "asset_page": "https://polyhaven.com/a/Chandelier_03"
+    },
+    {
+      "asset_id": "tool_cart",
+      "name": "Tool Cart",
+      "reported_polycount": 29394,
+      "categories": [
+        "collection: project_lighthouse",
+        "industrial",
+        "furniture",
+        "table"
+      ],
+      "authors": {
+        "Savva Zakharov": "All"
+      },
+      "description": "Free 8K model of a worn green metal tool cart with raised-lip top, lower shelf, two side drawers, riveted frame, chipped paint, rust, and casters.",
+      "source_model_hash": "05721491e72ee7cf51d9e1acca348145e5a0565c",
+      "asset_page": "https://polyhaven.com/a/tool_cart"
+    },
+    {
+      "asset_id": "portable_welding_cart",
+      "name": "Portable Welding Cart",
+      "reported_polycount": 29418,
+      "categories": [
+        "collection: project_lighthouse",
+        "industrial",
+        "containers"
+      ],
+      "authors": {
+        "Georgii Gorbunov": "All"
+      },
+      "description": "Free 8K model of a portable welding cart with green and red gas cylinders, brass gauges and torch, coiled hoses, scuffed paint, and chunky rubber wheels.",
+      "source_model_hash": "54d2c0b8e1d0da2bf8e86e668062ca0fa071f0e3",
+      "asset_page": "https://polyhaven.com/a/portable_welding_cart"
+    },
+    {
+      "asset_id": "rock_face_02",
+      "name": "Rock Face 02",
+      "reported_polycount": 29566,
+      "categories": [
+        "rocks",
+        "nature",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Dario Barresi": "All",
+        "Rico Cilliers": "processing"
+      },
+      "description": "Free 8K rock face model, weathered sandstone cliff with layered strata, moss and lichen patches, rugged fissures and realistic geological detail.",
+      "source_model_hash": "18e36d9aade0f369471717db252fdfd3c1c28ca1",
+      "asset_page": "https://polyhaven.com/a/rock_face_02"
+    },
+    {
+      "asset_id": "mantel_clock_01",
+      "name": "Mantel Clock 01",
+      "reported_polycount": 29742,
+      "categories": [
+        "decorative",
+        "appliances",
+        "rigged"
+      ],
+      "authors": {
+        "Yann Kervran": "Rigging",
+        "Rico Cilliers": "Modeling & Texturing"
+      },
+      "description": "Free 8K mantel clock model - ornate vintage wooden shelf clock with carved floral details, brass bezel and aged face; decorative, rigged for animation.",
+      "source_model_hash": "de687045899d468bf7dad80f71f6c47992d5d63c",
+      "asset_page": "https://polyhaven.com/a/mantel_clock_01"
+    },
+    {
+      "asset_id": "street_lamp_01",
+      "name": "Street Lamp 01",
+      "reported_polycount": 30610,
+      "categories": [
+        "lighting",
+        "industrial",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Josh Dean": "All"
+      },
+      "description": "Free 8K model: ornate cast-iron street lamp with glass panes, exposed bulb, weathered black finish and detailed base, finial and mounting hardware.",
+      "source_model_hash": "002d697fa195d73f627e82804612208853212519",
+      "asset_page": "https://polyhaven.com/a/street_lamp_01"
+    },
+    {
+      "asset_id": "gaming_console",
+      "name": "Gaming Console",
+      "reported_polycount": 31710,
+      "categories": [
+        "appliances",
+        "electronics"
+      ],
+      "authors": {
+        "Sean Buckley": "All"
+      },
+      "description": "Free 8K model. Matte black gaming console with curved shell, front disc slot, circular illuminated power button, multiple front ports and ventilation details.",
+      "source_model_hash": "9700b9cb52e54ec5957d976c04c6d31ebf421c6e",
+      "asset_page": "https://polyhaven.com/a/gaming_console"
+    },
+    {
+      "asset_id": "filmstrip_projector_8mm",
+      "name": "Filmstrip Projector 8mm",
+      "reported_polycount": 32697,
+      "categories": [
+        "electronics",
+        "appliances",
+        "collection: project_lighthouse"
+      ],
+      "authors": {
+        "PeterM": "All"
+      },
+      "description": "Free 8K model of a vintage 8mm film projector with red star-spoked reel, black feed reel, vented control box, textured knobs, and detailed power cord and plugs.",
+      "source_model_hash": "cb2fd73b23c90c63a44da80712938f5239d1990b",
+      "asset_page": "https://polyhaven.com/a/filmstrip_projector_8mm"
+    },
+    {
+      "asset_id": "wooden_barrels_01",
+      "name": "Wooden Barrels 01",
+      "reported_polycount": 33142,
+      "categories": [
+        "containers",
+        "props",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K model of weathered wooden barrels and loose staves - antique colonial/maritime props for smugglers' cove, farmhouse, or cellar scenes.",
+      "source_model_hash": "fb7a0e11ec57aaef718bc90c26fa626a65cf9f30",
+      "asset_page": "https://polyhaven.com/a/wooden_barrels_01"
+    },
+    {
+      "asset_id": "dead_quiver_trunk",
+      "name": "Dead Quiver Trunk",
+      "reported_polycount": 33706,
+      "categories": [
+        "collection: namaqualand",
+        "nature",
+        "trees"
+      ],
+      "authors": {
+        "James Ray Cock": "Photography",
+        "Dario Barresi": "Photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K model of a dried, decayed quiver-tree trunk from South Africa's Karoo, with weathered bark, knotted stump and debris, ideal for arid nature scenes.",
+      "source_model_hash": "5e1897094f635d4f7a0903be28a8ebe54dd1bdcf",
+      "asset_page": "https://polyhaven.com/a/dead_quiver_trunk"
+    },
+    {
+      "asset_id": "Lantern_01",
+      "name": "Lantern 01",
+      "reported_polycount": 33902,
+      "categories": [
+        "props",
+        "lighting"
+      ],
+      "authors": {
+        "Rajil Jose Macatangay": "All"
+      },
+      "description": "Free 4K model of an antique brass/bronze hurricane lantern with textured glass globe, worn patina, metal handle and detailed rivets for vintage character.",
+      "source_model_hash": "e8a56bd66bee21140aa3272268bd207bac37a7e1",
+      "asset_page": "https://polyhaven.com/a/Lantern_01"
+    },
+    {
+      "asset_id": "rubber_boots",
+      "name": "Rubber Boots",
+      "reported_polycount": 35004,
+      "categories": [
+        "collection: project_lighthouse",
+        "props"
+      ],
+      "authors": {
+        "L": "All"
+      },
+      "description": "Free 8K model: deep green rubber wellies, glossy shafts with black rims and toe guards, chunky tread soles, subtle seams, scuffs, mud splashes, embossed logo.",
+      "source_model_hash": "42cc529377cae934a22cdfb5f3cbf4db14a2a6bc",
+      "asset_page": "https://polyhaven.com/a/rubber_boots"
+    },
+    {
+      "asset_id": "fancy_picture_frame_02",
+      "name": "Fancy Picture Frame 02",
+      "reported_polycount": 35102,
+      "categories": [
+        "decorative",
+        "wall decoration"
+      ],
+      "authors": {
+        "Rob Tuytel": "Scan & Painting",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K model: ornate antique gold gilt frame with carved rococo flourishes, worn patina and an inset Dutch oil painting of gabled canal houses.",
+      "source_model_hash": "53929893cbeaef7e3bce4784bfbf8afa2cd7bcca",
+      "asset_page": "https://polyhaven.com/a/fancy_picture_frame_02"
+    },
+    {
+      "asset_id": "dirty_football",
+      "name": "Dirty Football",
+      "reported_polycount": 37486,
+      "categories": [
+        "props"
+      ],
+      "authors": {
+        "Rohit Seervi": "All"
+      },
+      "description": "Free 8K model of a weathered, dirty soccer ball with stitched panels, scuffs, faded leather tones and realistic dirt buildup for a well-used vintage look.",
+      "source_model_hash": "b27ae02f28eda2ef7e2b5ee925fdad06b3346617",
+      "asset_page": "https://polyhaven.com/a/dirty_football"
+    },
+    {
+      "asset_id": "large_iron_gate",
+      "name": "Large Iron Gate",
+      "reported_polycount": 38140,
+      "categories": [
+        "structures",
+        "buildings",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Josh Dean": "All"
+      },
+      "description": "Free 8K model - large cast-iron double gate with arched tops, ring motifs, spear finials and weathered rust; ornate, sturdy entrance panels.",
+      "source_model_hash": "93b045958194b830c41c9a16d3f3aa7a5cb8bced",
+      "asset_page": "https://polyhaven.com/a/large_iron_gate"
+    },
+    {
+      "asset_id": "wheelchair_01",
+      "name": "Wheelchair 01",
+      "reported_polycount": 40252,
+      "categories": [
+        "props"
+      ],
+      "authors": {
+        "Garreth Dean": "All"
+      },
+      "description": "Free 4K model. Folding wheelchair with teal padded vinyl seat and back, chrome tubular frame, spoked rear wheels, small front casters and subtle surface wear.",
+      "source_model_hash": "3c76c141a25ce6a406ee3a14ea8db4d76f6d7948",
+      "asset_page": "https://polyhaven.com/a/wheelchair_01"
+    },
+    {
+      "asset_id": "tea_set_01",
+      "name": "Tea Set 01",
+      "reported_polycount": 40296,
+      "categories": [
+        "props",
+        "dishes"
+      ],
+      "authors": {
+        "James Ray Cock": "texturing",
+        "Rico Cilliers": "modeling",
+        "Jurita Burger": "graphic design"
+      },
+      "description": "Free 8K model of an antique Victorian English ceramic tea set with ornate floral decals, gold trim, teapot, cups, saucers, perfect as decorative props and dishes.",
+      "source_model_hash": "56e8ed17e683a9335871e8e8ad9a444ba44e6c1c",
+      "asset_page": "https://polyhaven.com/a/tea_set_01"
+    },
+    {
+      "asset_id": "tree_stump_01",
+      "name": "Tree Stump 01",
+      "reported_polycount": 41046,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "trees",
+        "collection: pine_forest"
+      ],
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "description": "Free 8K model of a decayed tree stump with exposed roots, rough bark, moss patches and leaf-littered forest floor detail.",
+      "source_model_hash": "a61e4018508b545a75a5a705d54d5de8e9c8df9f",
+      "asset_page": "https://polyhaven.com/a/tree_stump_01"
+    },
+    {
+      "asset_id": "industrial_coffee_table",
+      "name": "Industrial Coffee Table",
+      "reported_polycount": 41300,
+      "categories": [
+        "furniture",
+        "table"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K model - industrial coffee table with perforated steel frame, bolted rustic wood top; rugged workshop/garage character perfect for urban loft scenes.",
+      "source_model_hash": "25e02bba0258cd7e7da15885c573e686e7513ed1",
+      "asset_page": "https://polyhaven.com/a/industrial_coffee_table"
+    },
+    {
+      "asset_id": "cannon_01",
+      "name": "Cannon 01",
+      "reported_polycount": 41444,
+      "categories": [
+        "props",
+        "rigged",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Yann Kervran": "Rigging",
+        "James Ray Cock": "Modeling & Texturing"
+      },
+      "description": "Free rigged, high-detail colonial ship cannon with cast-iron barrel and weathered wooden carriage, ideal for maritime/pirate scenes, games, films, and VR.",
+      "source_model_hash": "524b9cea2530716ddde9345ddc3501bfe9455f85",
+      "asset_page": "https://polyhaven.com/a/cannon_01"
+    },
+    {
+      "asset_id": "brass_candleholders",
+      "name": "Brass Candleholders",
+      "reported_polycount": 41936,
+      "categories": [
+        "decorative",
+        "lighting"
+      ],
+      "authors": {
+        "Tina": "All"
+      },
+      "description": "Free 4K model of ornate antique brass candleholders - classic engraved bases, scrolling arms, and lit taper candles with a warm, aged patina.",
+      "source_model_hash": "4f01be71cd89efe0a7c1f678354a80b22943ff38",
+      "asset_page": "https://polyhaven.com/a/brass_candleholders"
+    },
+    {
+      "asset_id": "chemistry_set",
+      "name": "Chemistry Set",
+      "reported_polycount": 41958,
+      "categories": [
+        "collection: project_lighthouse",
+        "industrial",
+        "props",
+        "tools"
+      ],
+      "authors": {
+        "Ji\u0159\u00ed Pt\u00e1\u010dek": "All"
+      },
+      "description": "Free 4K model of a vintage chemistry set: glass beakers, test tubes, brown reagent bottles, metal stands, and a Bunsen burner, with worn labels and grime.",
+      "source_model_hash": "fc23251aead732812c32d58dda83b6264aee231a",
+      "asset_page": "https://polyhaven.com/a/chemistry_set"
+    },
+    {
+      "asset_id": "modular_electric_cables",
+      "name": "Modular Electric Cables",
+      "reported_polycount": 42078,
+      "categories": [
+        "industrial"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 4K modular electric cables: industrial kit of wiring segments, junction boxes, connectors and bends; PBR-ready.",
+      "source_model_hash": "824f792bf907b567d72a52da324c7a79e67b40cd",
+      "asset_page": "https://polyhaven.com/a/modular_electric_cables"
+    },
+    {
+      "asset_id": "vintage_radio_transceiver",
+      "name": "Vintage Radio Transceiver",
+      "reported_polycount": 42350,
+      "categories": [
+        "appliances",
+        "electronics",
+        "collection: project_lighthouse"
+      ],
+      "authors": {
+        "Mateusz Sadek": "All"
+      },
+      "description": "Free 4K model of a vintage military radio transceiver with weathered olive-drab case, frequency dial, cables, whip antenna, desk mic and Morse key.",
+      "source_model_hash": "f343f538ee1b638da93aeaf450e50e428a57a2f4",
+      "asset_page": "https://polyhaven.com/a/vintage_radio_transceiver"
+    },
+    {
+      "asset_id": "sungka_board_02",
+      "name": "Sungka Board 02",
+      "reported_polycount": 42558,
+      "categories": [
+        "decorative",
+        "props"
+      ],
+      "authors": {
+        "Ulan Cabanilla": "All"
+      },
+      "description": "Free 4K hand-carved Filipino sungka board with shells, wooden traditional tabletop prop, ideal for games, period scenes, VR/AR, and decorative renders.",
+      "source_model_hash": "343a77c8c6da8429ecf0838f1abcb2105e572ebd",
+      "asset_page": "https://polyhaven.com/a/sungka_board_02"
+    },
+    {
+      "asset_id": "concrete_road_barrier_02",
+      "name": "Concrete Road Barrier 02",
+      "reported_polycount": 42578,
+      "categories": [
+        "industrial",
+        "structures",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Amal Kumar": "All"
+      },
+      "description": "Free 8K model of a weathered concrete road barrier with chipped edges, exposed rebar, rusted lifting hooks and a rough, gritty surface texture.",
+      "source_model_hash": "fbcefc03483cf10e19d91653f3f1b10112be436d",
+      "asset_page": "https://polyhaven.com/a/concrete_road_barrier_02"
+    },
+    {
+      "asset_id": "flower_ursinia",
+      "name": "Flower Ursinia",
+      "reported_polycount": 44360,
+      "categories": [
+        "nature",
+        "plants",
+        "flowers",
+        "collection: namaqualand",
+        "ground cover"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 4K model of Namaqualand ursinia - low, sprawling orange wildflower from South Africa\u2019s Karoo; botanical detail, perfect groundcover for desert scenes.",
+      "source_model_hash": "c7207cfa8d45fac3cca61091eab76931340b6722",
+      "asset_page": "https://polyhaven.com/a/flower_ursinia"
+    },
+    {
+      "asset_id": "modular_airduct_rectangular_01",
+      "name": "Modular Airduct Rectangular 01",
+      "reported_polycount": 45090,
+      "categories": [
+        "industrial"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K modular airduct set: realistic rectangular metal vents, elbows, joints and grilles. Industrial, workshop/warehouse-ready with detailed, worn-metal finish",
+      "source_model_hash": "7241493c7894d6ce392291a582243edc369ec975",
+      "asset_page": "https://polyhaven.com/a/modular_airduct_rectangular_01"
+    },
+    {
+      "asset_id": "nettle_plant",
+      "name": "Nettle Plant",
+      "reported_polycount": 46195,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K photoreal nettle plant model: slender stems with serrated green leaves, multiple sprigs, detailed veins and a natural wet sheen.",
+      "source_model_hash": "8f65dcb085e502c39e2abfa0161f4de2b43c6096",
+      "asset_page": "https://polyhaven.com/a/nettle_plant"
+    },
+    {
+      "asset_id": "bananas",
+      "name": "Bananas",
+      "reported_polycount": 46868,
+      "categories": [
+        "food",
+        "collection: project_lighthouse",
+        "nature"
+      ],
+      "authors": {
+        "Alexander Shulha": "All"
+      },
+      "description": "Free 8K model of ripe bananas: four singles and a small bunch, clean geometry with natural curves, scuffed tips and speckled yellow skins.",
+      "source_model_hash": "e0a8d2e4bad29eafcbff7fc2f6c6654fad7b2830",
+      "asset_page": "https://polyhaven.com/a/bananas"
+    },
+    {
+      "asset_id": "lion_head",
+      "name": "Lion Head",
+      "reported_polycount": 47214,
+      "categories": [
+        "decorative"
+      ],
+      "authors": {
+        "Tina": "All"
+      },
+      "description": "Free 8K model of a vintage carved lion head sculpture with dramatic flowing mane, ornate wood-like texture, weathered patina and detailed square plinth.",
+      "source_model_hash": "e7e73761f23f501655f1b5b8aa1eb3b2ad8919b1",
+      "asset_page": "https://polyhaven.com/a/lion_head"
+    },
+    {
+      "asset_id": "modular_pipes",
+      "name": "Modular Pipes",
+      "reported_polycount": 47428,
+      "categories": [
+        "industrial",
+        "structures"
+      ],
+      "authors": {
+        "Kuutti Siitonen": "All"
+      },
+      "description": "Free 8K modular pipes model: metal & plastic pipes, fittings and valves with rusted, weathered finish - modular kit for industrial, utility and sewer scenes.",
+      "source_model_hash": "948d48a946e0b01a42ca63332cb85763d21ea9c5",
+      "asset_page": "https://polyhaven.com/a/modular_pipes"
+    },
+    {
+      "asset_id": "shrub_04",
+      "name": "Shrub 04",
+      "reported_polycount": 47813,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 4K model - four detailed shrub branches with glossy green leaves, thin woody stems and natural undergrowth variation.",
+      "source_model_hash": "e2ec49df49d4a6ee25e245f493249e07a42a9b7d",
+      "asset_page": "https://polyhaven.com/a/shrub_04"
+    },
+    {
+      "asset_id": "korean_public_payphone_01",
+      "name": "Korean Public Payphone 01",
+      "reported_polycount": 48132,
+      "categories": [
+        "props"
+      ],
+      "authors": {
+        "UM JOORIN": "All"
+      },
+      "description": "Free 8K model of a weathered Korean public payphone, stainless-steel body with worn keypad, coin/card slots, handset, stickers and realistic scuffs and grime.",
+      "source_model_hash": "25bf80a7dfbeac1175f793d594299ee6667ea1ce",
+      "asset_page": "https://polyhaven.com/a/korean_public_payphone_01"
+    },
+    {
+      "asset_id": "modular_pipes_plastic_01",
+      "name": "Modular Pipes Plastic 01",
+      "reported_polycount": 49708,
+      "categories": [
+        "industrial",
+        "structures",
+        "collection: the_shed"
+      ],
+      "authors": {
+        "Amal Kumar": "All"
+      },
+      "description": "Free 8K modular plastic pipe kit with PVC tubes, flexible hose, elbows, valves, clamps and fittings, realistic worn surfaces and utilitarian detailing.",
+      "source_model_hash": "4f42b50b74be515ab781b45d4ab1e788828f3381",
+      "asset_page": "https://polyhaven.com/a/modular_pipes_plastic_01"
+    },
+    {
+      "asset_id": "old_bed_frame",
+      "name": "Old Bed Frame",
+      "reported_polycount": 49990,
+      "categories": [
+        "collection: project_lighthouse",
+        "bed",
+        "furniture"
+      ],
+      "authors": {
+        "Luca B": "All"
+      },
+      "description": "Free 8K old metal bed frame with tubular rails, wire mesh base, chipped white paint and rust stains. Sturdy single-size vintage look with worn details.",
+      "source_model_hash": "520f81981bc7162368cfbb9b889264d8e3c53b57",
+      "asset_page": "https://polyhaven.com/a/old_bed_frame"
+    },
+    {
+      "asset_id": "spinning_wheel_01",
+      "name": "Spinning Wheel 01",
+      "reported_polycount": 52023,
+      "categories": [
+        "props",
+        "tools"
+      ],
+      "authors": {
+        "Sofia Pahaoja": "All"
+      },
+      "description": "Free 8K model of a vintage Victorian wooden spinning wheel, with turned legs, spoked wheel, bobbin and worn paint patina, detailed aged wood and metal.",
+      "source_model_hash": "752a2a4337f51a3bfe69b4d35cca17cd80839bde",
+      "asset_page": "https://polyhaven.com/a/spinning_wheel_01"
+    },
+    {
+      "asset_id": "shrub_02",
+      "name": "Shrub 02",
+      "reported_polycount": 52317,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 4K shrub model with delicate branching stems and narrow lanceolate leaves, realistic low-growing groundcover with subtle color variation and fine detail.",
+      "source_model_hash": "b8a0252030e27a0d209db5e564cd6aa62e2bb9db",
+      "asset_page": "https://polyhaven.com/a/shrub_02"
+    },
+    {
+      "asset_id": "rock_moss_set_02",
+      "name": "Rock Moss Set 02",
+      "reported_polycount": 57647,
+      "categories": [
+        "rocks",
+        "nature",
+        "collection: pine_forest"
+      ],
+      "authors": {
+        "Kless Gyzen": "All"
+      },
+      "description": "Free 8K set of weathered moss-covered rocks and stones, with varied shapes, earthy tones, dirt-streaked surfaces and detailed, realistic crevices.",
+      "source_model_hash": "b67decad66a9030c0c8c8c730c06194af880eebf",
+      "asset_page": "https://polyhaven.com/a/rock_moss_set_02"
+    },
+    {
+      "asset_id": "drill_press_01",
+      "name": "Drill Press 01",
+      "reported_polycount": 58526,
+      "categories": [
+        "collection: project_lighthouse",
+        "appliances",
+        "electronics",
+        "industrial",
+        "tools"
+      ],
+      "authors": {
+        "Viktor": "All"
+      },
+      "description": "Free 8K model of a vintage green drill press with open belt-drive pulleys, metal chuck, worn paint, spec plates, cord, slotted adjustable table and cast base.",
+      "source_model_hash": "f3eb9da047d02b6a02c34286c4cd12008418fccc",
+      "asset_page": "https://polyhaven.com/a/drill_press_01"
+    },
+    {
+      "asset_id": "vintage_cabinet_01",
+      "name": "Vintage Cabinet 01",
+      "reported_polycount": 61096,
+      "categories": [
+        "furniture",
+        "shelves"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K model: varnished dark-wood vintage cabinet with carved detailing, glass-front upper doors, paneled lower cupboards and brass knobs.",
+      "source_model_hash": "bf62cfcce0951dc45080086064486e4a2b3757d8",
+      "asset_page": "https://polyhaven.com/a/vintage_cabinet_01"
+    },
+    {
+      "asset_id": "tree_stump_02",
+      "name": "Tree Stump 02",
+      "reported_polycount": 62345,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "trees",
+        "collection: pine_forest"
+      ],
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "description": "Free 8K model of a decayed, mossy tree stump with rough bark, exposed roots and leaf-littered forest floor - detailed, dry textures and natural irregular shape.",
+      "source_model_hash": "014e407e84af210a9ec49adba0505c7581706544",
+      "asset_page": "https://polyhaven.com/a/tree_stump_02"
+    },
+    {
+      "asset_id": "rock_moss_set_01",
+      "name": "Rock Moss Set 01",
+      "reported_polycount": 63127,
+      "categories": [
+        "rocks",
+        "nature",
+        "collection: pine_forest"
+      ],
+      "authors": {
+        "Kless Gyzen": "All"
+      },
+      "description": "Free 8K set of mossy forest rocks: six weathered stones with varied silhouettes, earthy textures, subtle green moss, dirt and realistic erosion.",
+      "source_model_hash": "3d61828e10ef81512a639c8064c9a51a75165b5a",
+      "asset_page": "https://polyhaven.com/a/rock_moss_set_01"
+    },
+    {
+      "asset_id": "dandelion_01",
+      "name": "Dandelion 01",
+      "reported_polycount": 64099,
+      "categories": [
+        "plants",
+        "flowers",
+        "nature",
+        "ground cover"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography",
+        "Rico Cilliers": "Modeling"
+      },
+      "description": "Free 8K model - photoreal dandelion rosettes with serrated green leaves, slender stems and bright yellow flower heads, natural texture and high detail.",
+      "source_model_hash": "1aaae5d9ce759a84e3b9d381821c8647cefa7a85",
+      "asset_page": "https://polyhaven.com/a/dandelion_01"
+    },
+    {
+      "asset_id": "book_encyclopedia_set_01",
+      "name": "Book Encyclopedia Set 01",
+      "reported_polycount": 67306,
+      "categories": [
+        "props",
+        "decorative",
+        "books"
+      ],
+      "authors": {
+        "John Malcolm": "All"
+      },
+      "description": "Free 8K set of vintage leather-bound encyclopedia volumes with gold-embossed spines, alphabetic labels and realistic wear, warm brown tones.",
+      "source_model_hash": "e9912207a0e5af455662c910d23d34ccbabb26ac",
+      "asset_page": "https://polyhaven.com/a/book_encyclopedia_set_01"
+    },
+    {
+      "asset_id": "periwinkle_plant",
+      "name": "Periwinkle Plant",
+      "reported_polycount": 67388,
+      "categories": [
+        "nature",
+        "ground cover",
+        "plants",
+        "flowers"
+      ],
+      "authors": {
+        "Amal Kumar": "All"
+      },
+      "description": "Free 4K periwinkle plant model with small pink flowers, realistic leaves and branch variations, perfect for gardens, meadows, groundcover and botanical scenes.",
+      "source_model_hash": "914403d31fda1dc15ff457e71e96ab7476134019",
+      "asset_page": "https://polyhaven.com/a/periwinkle_plant"
+    },
+    {
+      "asset_id": "dutch_ship_medium",
+      "name": "Dutch Ship Medium",
+      "reported_polycount": 69162,
+      "categories": [
+        "ships",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "James Ray Cock": "model, textures, cleanup",
+        "Rico Cilliers": "sails model, textures",
+        "Nicol\u00f2 Zubbini": "original model"
+      },
+      "description": "Free 4K medium Dutch wooden ship model, - ornate, weathered hull, detailed rigging and sails, perfect for maritime, pirate, or historical scenes.",
+      "source_model_hash": "7a79ab7160d0290b23b54a966bc1b33f140bcf28",
+      "asset_page": "https://polyhaven.com/a/dutch_ship_medium"
+    },
+    {
+      "asset_id": "potted_plant_02",
+      "name": "Potted Plant 02",
+      "reported_polycount": 69806,
+      "categories": [
+        "decorative",
+        "plants",
+        "potted plants",
+        "nature"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K model. Realistic terracotta pot with weathered rim, textured soil, and variegated green, heart-shaped leaves with pronounced veins.",
+      "source_model_hash": "155661c96a28b9eb143e866daeb41f5a076d6677",
+      "asset_page": "https://polyhaven.com/a/potted_plant_02"
+    },
+    {
+      "asset_id": "stone_01",
+      "name": "Stone 01",
+      "reported_polycount": 71916,
+      "categories": [
+        "rocks",
+        "nature",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Dario Barresi": "Photography",
+        "Rico Cilliers": "photography, processing"
+      },
+      "description": "Free 8K model of a weathered reddish quartz stone with a rough, pebbly surface, earthy dirt streaks, crystalline veins and detailed, rugged geometry.",
+      "source_model_hash": "3b541260ddde766b6bcfae56be426b81ce1a1e81",
+      "asset_page": "https://polyhaven.com/a/stone_01"
+    },
+    {
+      "asset_id": "wild_rooibos_bush",
+      "name": "Wild Rooibos Bush",
+      "reported_polycount": 76521,
+      "categories": [
+        "nature",
+        "plants",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "James Ray Cock": "modeling",
+        "Jenelle van Heerden": "photography"
+      },
+      "description": "Free 8K model of a dried wild rooibos shrub from South Africa's Karoo/Namaqualand - low, multi-stemmed desert bush with needle-like leaves, perfect for arid scenes.",
+      "source_model_hash": "e36b891edee5f1133d3d05b0707a690f8a078f6c",
+      "asset_page": "https://polyhaven.com/a/wild_rooibos_bush"
+    },
+    {
+      "asset_id": "namaqualand_boulders_01",
+      "name": "Namaqualand Boulders 01",
+      "reported_polycount": 76590,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Jenelle van Heerden": "modeling"
+      },
+      "description": "Free 8K model of rugged Namaqualand boulders from South Africa's Karoo - brown, rough geological rocks for realistic desert landscaping and nature scenes.",
+      "source_model_hash": "05cd2d5d4beb501f2bd4b7b2a441fc5792b25c18",
+      "asset_page": "https://polyhaven.com/a/namaqualand_boulders_01"
+    },
+    {
+      "asset_id": "pachira_aquatica_01",
+      "name": "Pachira Aquatica 01",
+      "reported_polycount": 76914,
+      "categories": [
+        "plants",
+        "nature",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rob Tuytel": "scanning",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K Pachira Aquatica 01 - realistic tropical shrub models with braided trunks, glossy green leaves, varied sizes and high-detail bark and foliage.",
+      "source_model_hash": "26f491dc4d71f09717217df3cdec865c546926f2",
+      "asset_page": "https://polyhaven.com/a/pachira_aquatica_01"
+    },
+    {
+      "asset_id": "chess_set",
+      "name": "Chess Set",
+      "reported_polycount": 76920,
+      "categories": [
+        "decorative",
+        "props"
+      ],
+      "authors": {
+        "Riley Queen": "All"
+      },
+      "description": "Free 8K model: elegant vintage marble chess set with polished black and white pieces on a beveled, high-gloss checkered board.",
+      "source_model_hash": "fe02fd16e17017a92c414b79d7f81047708e89ee",
+      "asset_page": "https://polyhaven.com/a/chess_set"
+    },
+    {
+      "asset_id": "old_military_compressor",
+      "name": "Old Military Compressor",
+      "reported_polycount": 79042,
+      "categories": [
+        "collection: project_lighthouse",
+        "industrial",
+        "tools"
+      ],
+      "authors": {
+        "Brian Speight": "All"
+      },
+      "description": "Free 8K model of an old military compressor with dented, scratched tank, stenciled markings, chipped green paint, rusty steel, belt drive, and worn wheels.",
+      "source_model_hash": "68ce27286d358c0109bfefb8198d3be96cdf18b7",
+      "asset_page": "https://polyhaven.com/a/old_military_compressor"
+    },
+    {
+      "asset_id": "concrete_road_barrier",
+      "name": "Concrete Road Barrier",
+      "reported_polycount": 80776,
+      "categories": [
+        "industrial",
+        "structures",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Amal Kumar": "All"
+      },
+      "description": "Free 8K model, weathered concrete road barrier with chipped black-and-white checker paint, dirt streaks, eroded rough edges and rusted metal lifting loops.",
+      "source_model_hash": "bc3dfafc1abfc83dfa19710745d6f0beba9d2368",
+      "asset_page": "https://polyhaven.com/a/concrete_road_barrier"
+    },
+    {
+      "asset_id": "modular_wooden_pier",
+      "name": "Modular Wooden Pier",
+      "reported_polycount": 84780,
+      "categories": [
+        "structures",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K model of a modular, weathered wooden pier: uneven planks, mossy pilings, tied ropes and scaffolded supports conveying a worn maritime character.",
+      "source_model_hash": "219aafe4dfbcc2ebac731ae205bebfd5837c6138",
+      "asset_page": "https://polyhaven.com/a/modular_wooden_pier"
+    },
+    {
+      "asset_id": "fire_hydrant",
+      "name": "Fire Hydrant",
+      "reported_polycount": 86316,
+      "categories": [
+        "industrial",
+        "structures",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "Gon\u00e7alo Fel\u00edcio": "All"
+      },
+      "description": "Free 8K model: red street fire hydrant with clean and worn variants. Chipped paint, rusted metal caps and chain, realistic urban wear and detailed base.",
+      "source_model_hash": "392eed954362d55b55022af83c0b7150bf977853",
+      "asset_page": "https://polyhaven.com/a/fire_hydrant"
+    },
+    {
+      "asset_id": "modular_chainlink_fence",
+      "name": "Modular Chainlink Fence",
+      "reported_polycount": 89232,
+      "categories": [
+        "structures",
+        "industrial",
+        "buildings",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "James Ray Cock": "All",
+        "Amal Kumar": "Fence Wire Material"
+      },
+      "description": "Free 8K modular chainlink fence kit with rusted posts, gate and configurable panels - gritty urban/industrial barrier ideal for city, alley & security scenes.",
+      "source_model_hash": "a876696fcfd57a434e5d1dd68baa03e15475b97e",
+      "asset_page": "https://polyhaven.com/a/modular_chainlink_fence"
+    },
+    {
+      "asset_id": "overhead_crane",
+      "name": "Overhead Crane",
+      "reported_polycount": 89964,
+      "categories": [
+        "collection: project_lighthouse",
+        "industrial",
+        "tools"
+      ],
+      "authors": {
+        "Timothy3D": "All"
+      },
+      "description": "Free 8K model of a weathered overhead crane hoist: arched steel beam, trolley wheels, cable drum, pulleys and worn hook, with bolts, grime and chipped paint.",
+      "source_model_hash": "2a3542eda64a36e958257ff4d679e743f0f67c2b",
+      "asset_page": "https://polyhaven.com/a/overhead_crane"
+    },
+    {
+      "asset_id": "potted_plant_01",
+      "name": "Potted Plant 01",
+      "reported_polycount": 96030,
+      "categories": [
+        "decorative",
+        "plants",
+        "potted plants",
+        "nature"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K model of a medium potted plant with lush scalloped green leaves in a weathered terracotta pedestal pot, detailed trunk and gravel-filled soil.",
+      "source_model_hash": "9fa70d49cb125b1b74e3aeddef22253ba2db060b",
+      "asset_page": "https://polyhaven.com/a/potted_plant_01"
+    },
+    {
+      "asset_id": "dutch_ship_large_02",
+      "name": "Dutch Ship Large 02",
+      "reported_polycount": 96506,
+      "categories": [
+        "ships",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "James Ray Cock": "model, textures, cleanup",
+        "Rico Cilliers": "sails model, textures",
+        "Nicol\u00f2 Zubbini": "original model"
+      },
+      "description": "Free 4K model of a large, old Dutch wooden sailing ship - ornate, weathered hull, detailed rigging and sails, perfect for maritime, pirate, or historical scenes.",
+      "source_model_hash": "c0612d345014f54e097ca15b0e4d291549ee3348",
+      "asset_page": "https://polyhaven.com/a/dutch_ship_large_02"
+    },
+    {
+      "asset_id": "dead_tree_trunk",
+      "name": "Dead Tree Trunk",
+      "reported_polycount": 101802,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "collection: pine_forest",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "description": "Free 8K dead tree trunk model, a long weathered log with cracked, decayed bark, pronounced wood grain, broken ends and subtle mossy-green patches.",
+      "source_model_hash": "1e56e4393417d157e43e26bd8b7b019189d313ed",
+      "asset_page": "https://polyhaven.com/a/dead_tree_trunk"
+    },
+    {
+      "asset_id": "treasure_chest",
+      "name": "Treasure Chest",
+      "reported_polycount": 103330,
+      "categories": [
+        "props",
+        "containers",
+        "decorative",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K model of a worn wooden treasure chest with ornate iron straps, rivets and a weathered, antique maritime look.",
+      "source_model_hash": "0ae2580ba667a1c67340426abc76f7665306406e",
+      "asset_page": "https://polyhaven.com/a/treasure_chest"
+    },
+    {
+      "asset_id": "flower_stinkkruid",
+      "name": "Flower Stinkkruid",
+      "reported_polycount": 103778,
+      "categories": [
+        "nature",
+        "plants",
+        "flowers",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "Photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 4K Flower Stinkkruid model - a detailed Namaqualand wildflower with grey-green leaves, thin stems and yellow button blooms.",
+      "source_model_hash": "03082af6c21b6b6f146a8bec83808a8efafb3e7b",
+      "asset_page": "https://polyhaven.com/a/flower_stinkkruid"
+    },
+    {
+      "asset_id": "namaqualand_stones_01",
+      "name": "Namaqualand Stones 01",
+      "reported_polycount": 106602,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Jenelle van Heerden": "modeling"
+      },
+      "description": "Free 8K model of weathered Namaqualand quartz stones, varied Karoo desert rocks from South Africa, realistic, high-detail assets for nature and geological scenes.",
+      "source_model_hash": "56a5d069e1b0eb31d342e677d39a23649a5265dd",
+      "asset_page": "https://polyhaven.com/a/namaqualand_stones_01"
+    },
+    {
+      "asset_id": "dutch_ship_large_01",
+      "name": "Dutch Ship Large 01",
+      "reported_polycount": 110616,
+      "categories": [
+        "ships",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "James Ray Cock": "model, textures, cleanup",
+        "Rico Cilliers": "sails model, textures",
+        "Nicol\u00f2 Zubbini": "original model"
+      },
+      "description": "Free 4K model of a large Dutch wooden sailing ship - ornate, weathered hull, detailed rigging and sails, perfect for maritime, pirate, or historical scenes.",
+      "source_model_hash": "60c7a7b6a4173e1f4f1cb0873e5f57ca1b4cd99e",
+      "asset_page": "https://polyhaven.com/a/dutch_ship_large_01"
+    },
+    {
+      "asset_id": "namaqualand_boulder_04",
+      "name": "Namaqualand Boulder 04",
+      "reported_polycount": 110746,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "All"
+      },
+      "description": "Free 8K Namaqualand boulder model - rugged Karoo rock from South Africa with brown, weathered surfaces and lichen patches for landscaping.",
+      "source_model_hash": "96945b21625a362af6541ea0b8347455f0052282",
+      "asset_page": "https://polyhaven.com/a/namaqualand_boulder_04"
+    },
+    {
+      "asset_id": "decorative_book_set_01",
+      "name": "Decorative Book Set 01",
+      "reported_polycount": 112560,
+      "categories": [
+        "props",
+        "decorative",
+        "books"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free model - a realistic decorative book set with varied paperback and hardcover spines, colors and sizes. Ideal for bookshelves, libraries, and scene dressing. All covers are CC0 and free to use.",
+      "source_model_hash": "17b60199f281591c470612a06a05afa38780b4eb",
+      "asset_page": "https://polyhaven.com/a/decorative_book_set_01"
+    },
+    {
+      "asset_id": "single_root",
+      "name": "Single Root",
+      "reported_polycount": 114424,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "All"
+      },
+      "description": "Free 8K model of an exposed tree root and forest floor - detailed bark, leaf litter and natural soil contours, ideal for woodland environments and ground cover.",
+      "source_model_hash": "580506751940bc602fc02652ec0f56db13133356",
+      "asset_page": "https://polyhaven.com/a/single_root"
+    },
+    {
+      "asset_id": "namaqualand_boulder_05",
+      "name": "Namaqualand Boulder 05",
+      "reported_polycount": 117622,
+      "categories": [
+        "collection: namaqualand",
+        "nature",
+        "rocks"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "modeling",
+        "Dario Barresi": "Photography"
+      },
+      "description": "Free 8K model of a weathered Namaqualand boulder - dry Karoo sandstone with layered, eroded surface and warm desert tones, perfect for natural rock scenes.",
+      "source_model_hash": "db0437675da1e8fcd3fdd7b0d933cac1c9462456",
+      "asset_page": "https://polyhaven.com/a/namaqualand_boulder_05"
+    },
+    {
+      "asset_id": "modular_urban_apartments_facade",
+      "name": "Modular Urban Apartments Facade",
+      "reported_polycount": 118215,
+      "categories": [
+        "collection: hidden_alley",
+        "structures",
+        "buildings"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K modular urban apartments facade: contemporary residential modules with doors, windows, trim and corner pieces for quick, customizable city building kits.",
+      "source_model_hash": "1710ec01c24ef6193511942c08ec3c754f3eb8fb",
+      "asset_page": "https://polyhaven.com/a/modular_urban_apartments_facade"
+    },
+    {
+      "asset_id": "namaqualand_boulder_03",
+      "name": "Namaqualand Boulder 03",
+      "reported_polycount": 121546,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "modeling",
+        "Dario Barresi": "Photography"
+      },
+      "description": "Free 8K model: rough brown boulder from the Karoo, detailed geological rock with weathered facets - perfect for desert scenes and landscaping.",
+      "source_model_hash": "d45a977057ab8e8538e1747b7a5d89013da6743e",
+      "asset_page": "https://polyhaven.com/a/namaqualand_boulder_03"
+    },
+    {
+      "asset_id": "boulder_01",
+      "name": "Boulder 01",
+      "reported_polycount": 123976,
+      "categories": [
+        "rocks",
+        "nature",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K photoreal boulder model with weathered, jagged surfaces, subtle lichen and rusty mineral streaks, and rugged, cliff-like rock face detail.",
+      "source_model_hash": "83e2b16d6a089f8077d3eebe0462615c2ba0e7f6",
+      "asset_page": "https://polyhaven.com/a/boulder_01"
+    },
+    {
+      "asset_id": "dry_quiver_leaf",
+      "name": "Dry Quiver Leaf",
+      "reported_polycount": 147596,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Greg Zaal": "photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K model of a dried quiver leaf from Namaqualand - realistic desert debris with curled fibrous texture and brittle edges for ground-cover scenes.",
+      "source_model_hash": "ad69fbdafc6c8ba947ad3110d76faed9ce875420",
+      "asset_page": "https://polyhaven.com/a/dry_quiver_leaf"
+    },
+    {
+      "asset_id": "quiver_tree_02",
+      "name": "Quiver Tree 02",
+      "reported_polycount": 153887,
+      "categories": [
+        "nature",
+        "trees",
+        "plants",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Dario Barresi": "photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K model of a realistic Quiver Tree: weathered, sculpted trunk and dense rosette of long aloe-like succulent leaves with natural color variation.",
+      "source_model_hash": "0587f20a8675f71008bafe89b42256c1ffda2cf7",
+      "asset_page": "https://polyhaven.com/a/quiver_tree_02"
+    },
+    {
+      "asset_id": "dead_tree_trunk_02",
+      "name": "Dead Tree Trunk 02",
+      "reported_polycount": 155864,
+      "categories": [
+        "nature",
+        "plants",
+        "trees",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "Photography",
+        "Rico Cilliers": "processing"
+      },
+      "description": "Free 8K 3D model of a dead tree trunk - decayed, dry log with rough bark, lichen and broken stub; great for woodland debris, stump or forest-floor ground cover.",
+      "source_model_hash": "0f6fb24c57fc368a36a02efe96bd2e838320575b",
+      "asset_page": "https://polyhaven.com/a/dead_tree_trunk_02"
+    },
+    {
+      "asset_id": "namaqualand_rocks_01",
+      "name": "Namaqualand Rocks 01",
+      "reported_polycount": 160716,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Jenelle van Heerden": "modeling"
+      },
+      "description": "Free 8K model of quartz-rich Namaqualand rocks (Karoo, South Africa). Realistic desert stones with high-detail geological texture for nature and landscape scenes.",
+      "source_model_hash": "b3db262e3bbee2c87c984ee85daad2baaaeeebee",
+      "asset_page": "https://polyhaven.com/a/namaqualand_rocks_01"
+    },
+    {
+      "asset_id": "pine_roots",
+      "name": "Pine Roots",
+      "reported_polycount": 162693,
+      "categories": [
+        "plants",
+        "nature",
+        "ground cover",
+        "collection: pine_forest"
+      ],
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "description": "Free 8K model of exposed pine roots and forest floor - gnarled, weathered root network, scattered needles, mossy patches and rich, compacted soil detail.",
+      "source_model_hash": "8a16347883d31284122bea6c1638f4feca7966ef",
+      "asset_page": "https://polyhaven.com/a/pine_roots"
+    },
+    {
+      "asset_id": "modular_factory_facade",
+      "name": "Modular Factory Facade",
+      "reported_polycount": 175014,
+      "categories": [
+        "collection: hidden_alley",
+        "structures",
+        "buildings"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K modular factory facade model with brick panels, varied windows, doors and loading bays - industrial warehouse exterior tiles for flexible assembly.",
+      "source_model_hash": "4716a794d840f5d4ebf75b1db1d8a8b7e8d57a61",
+      "asset_page": "https://polyhaven.com/a/modular_factory_facade"
+    },
+    {
+      "asset_id": "namaqualand_cliff_01",
+      "name": "Namaqualand Cliff 01",
+      "reported_polycount": 176938,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "Photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K model of a Namaqualand cliff: weathered Karoo boulders, eroded rock faces and cracks with desert tones - high-detail, natural cliffside asset.",
+      "source_model_hash": "92420ba154192b67e304f16a1559b17804ec0854",
+      "asset_page": "https://polyhaven.com/a/namaqualand_cliff_01"
+    },
+    {
+      "asset_id": "namaqualand_boulder_02",
+      "name": "Namaqualand Boulder 02",
+      "reported_polycount": 183681,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K model of Namaqualand boulders - realistic Karoo sandstone rocks with layered, weathered surfaces, perfect for desert, geological, and landscaping scenes.",
+      "source_model_hash": "a8226fbda59ed50a4686c9354fdb3d4eea061706",
+      "asset_page": "https://polyhaven.com/a/namaqualand_boulder_02"
+    },
+    {
+      "asset_id": "ship_pinnace",
+      "name": "Ship Pinnace",
+      "reported_polycount": 183837,
+      "categories": [
+        "ships",
+        "rigged",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "James Ray Cock": "model, textures, cleanup",
+        "Rico Cilliers": "sails model, textures",
+        "Nicol\u00f2 Zubbini": "original model",
+        "Yann Kervran": "Rigging"
+      },
+      "description": "Free 4K model of a rigged wooden colonial pinnace - ornate, weathered hull, detailed rigging and sails, perfect for maritime, pirate, or historical scenes.",
+      "source_model_hash": "98d53486acdd9e5d17bdc7f81ff61f88954704a8",
+      "asset_page": "https://polyhaven.com/a/ship_pinnace"
+    },
+    {
+      "asset_id": "cheiridopsis_succulent",
+      "name": "Cheiridopsis Succulent",
+      "reported_polycount": 198888,
+      "categories": [
+        "collection: namaqualand",
+        "nature",
+        "plants",
+        "ground cover"
+      ],
+      "authors": {
+        "James Ray Cock": "modeling",
+        "Jenelle van Heerden": "Photography"
+      },
+      "description": "Free 8K Cheiridopsis model: tiny Karoo groundcover with fleshy blue-green leaves, quartz-strewn base and delicate pale-pink flowers - ideal for desert scenes.",
+      "source_model_hash": "982ded4019c28843e7468de66ac90f0406286184",
+      "asset_page": "https://polyhaven.com/a/cheiridopsis_succulent"
+    },
+    {
+      "asset_id": "modular_electricity_poles",
+      "name": "Modular Electricity Poles",
+      "reported_polycount": 200610,
+      "categories": [
+        "industrial",
+        "structures",
+        "collection: hidden_alley"
+      ],
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "description": "Free 8K modular electricity poles: realistic weathered wooden utility poles with transformers, crossarms, insulators, junction boxes and cable segments - perfect for urban scenes.",
+      "source_model_hash": "e40d56f04b77c4357252d49fa63051edce4f92f7",
+      "asset_page": "https://polyhaven.com/a/modular_electricity_poles"
+    },
+    {
+      "asset_id": "namaqualand_boulder_06",
+      "name": "Namaqualand Boulder 06",
+      "reported_polycount": 204584,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Greg Zaal": "Photography",
+        "Jenelle van Heerden": "modeling"
+      },
+      "description": "Free 8K model, rugged brown Namaqualand boulder from the Karoo with a rough geological surface - perfect for desert scenes.",
+      "source_model_hash": "f388f7ae4d491b48aa800289d7e71c43cecea93b",
+      "asset_page": "https://polyhaven.com/a/namaqualand_boulder_06"
+    },
+    {
+      "asset_id": "grass_bermuda_01",
+      "name": "Grass Bermuda 01",
+      "reported_polycount": 223596,
+      "categories": [
+        "grass",
+        "nature",
+        "ground cover",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K model of dense Bermuda grass tuft with fine blades, varied green-yellow tones and a natural, slightly wild groundcover look. Geometry nodes scatter system.",
+      "source_model_hash": "2db18033b751b1c846f98e2797539d39f155a8dc",
+      "asset_page": "https://polyhaven.com/a/grass_bermuda_01"
+    },
+    {
+      "asset_id": "root_cluster_01",
+      "name": "Root Cluster 01",
+      "reported_polycount": 225261,
+      "categories": [
+        "nature",
+        "collection: verdant_trail",
+        "plants",
+        "ground cover"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "Photography",
+        "Rico Cilliers": "photography, processing"
+      },
+      "description": "Free 8K root cluster model with high-detail bark, tangled roots and forest-floor foliage; natural, layered ground cover ideal for realistic woodland environments.",
+      "source_model_hash": "f3dbd608c7a1d3447a8cb33bac5e53a812f628bb",
+      "asset_page": "https://polyhaven.com/a/root_cluster_01"
+    },
+    {
+      "asset_id": "moss_01",
+      "name": "Moss 01",
+      "reported_polycount": 246170,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "collection: pine_forest"
+      ],
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "description": "Free 4K model - dense, lush ground-cover moss clump with fine fronds, varied green tones and realistic undergrowth geometry.",
+      "source_model_hash": "2b55f8db1e0e00e0aa2681ef0bccc7d1aec5bfab",
+      "asset_page": "https://polyhaven.com/a/moss_01"
+    },
+    {
+      "asset_id": "quiver_tree_01",
+      "name": "Quiver Tree 01",
+      "reported_polycount": 269522,
+      "categories": [
+        "nature",
+        "plants",
+        "trees",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "James Ray Cock": "Photography",
+        "Dario Barresi": "Photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K Quiver Tree 3D model, photoreal: detailed trunk bark and aloe-like succulent rosettes, ideal for desert scenes.",
+      "source_model_hash": "8ceb1c433e141026dbb41873681ad75ae4b686f6",
+      "asset_page": "https://polyhaven.com/a/quiver_tree_01"
+    },
+    {
+      "asset_id": "shrub_01",
+      "name": "Shrub 01",
+      "reported_polycount": 282224,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "flowers",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 4K model of a slender wild shrub with heart-shaped green leaves and delicate clustered white flowers on thin brown stems, realistic botanical detail.",
+      "source_model_hash": "b962e00abd51cece23b2878ce436f9a5b3c36729",
+      "asset_page": "https://polyhaven.com/a/shrub_01"
+    },
+    {
+      "asset_id": "mountainside",
+      "name": "Mountainside",
+      "reported_polycount": 287755,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Dario Barresi": "Photography",
+        "Rico Cilliers": "processing"
+      },
+      "description": "Free 8K Mountainside model: a weathered cliff rock face with layered, jagged boulders, visible lichen patches, and rugged earthy, high-detail surface textures.",
+      "source_model_hash": "88117dc2ad316e0f6b30ec2407a534746beb0bad",
+      "asset_page": "https://polyhaven.com/a/mountainside"
+    },
+    {
+      "asset_id": "jacaranda_tree",
+      "name": "Jacaranda Tree",
+      "reported_polycount": 312356,
+      "categories": [
+        "nature",
+        "plants",
+        "trees",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rob Tuytel": "guidance",
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K Jacaranda tree model - lush, wide canopy of dense leaves, detailed bark and branching, natural multi-trunk silhouette.",
+      "source_model_hash": "2841c124ea9e28651baa3b47ca8828907e19aee0",
+      "asset_page": "https://polyhaven.com/a/jacaranda_tree"
+    },
+    {
+      "asset_id": "flower_heliophila",
+      "name": "Flower Heliophila",
+      "reported_polycount": 324914,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "grass",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "All"
+      },
+      "description": "Free 8K model of Heliophila: tiny white Namaqualand wildflower groundcover from South Africa, delicate stems and realistic botanical detail for desert scenes.",
+      "source_model_hash": "2e29fbc25028f76af4a3dc86cfb3b6480cf85d51",
+      "asset_page": "https://polyhaven.com/a/flower_heliophila"
+    },
+    {
+      "asset_id": "root_cluster_02",
+      "name": "Root Cluster 02",
+      "reported_polycount": 339641,
+      "categories": [
+        "collection: verdant_trail",
+        "nature",
+        "ground cover"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "All"
+      },
+      "description": "Free 8K model of a weathered dead-tree root cluster. High-detail modular forest-floor pieces for natural ground cover and scene dressing.",
+      "source_model_hash": "1e84dbee66939fe16d72046d655761b2b6d63288",
+      "asset_page": "https://polyhaven.com/a/root_cluster_02"
+    },
+    {
+      "asset_id": "bark_debris_01",
+      "name": "Bark Debris 01",
+      "reported_polycount": 362632,
+      "categories": [
+        "nature",
+        "ground cover",
+        "plants",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Greg Zaal": "photography",
+        "Jenelle van Heerden": "modeling"
+      },
+      "description": "Free 16K model of photoreal bark debris. Weathered Karoo sticks with cracked, dry surfaces - ideal for desert ground cover and dead-tree scenes (Namaqualand).",
+      "source_model_hash": "f63fd327bdc06de60bb9599ec203ebd9b299fb42",
+      "asset_page": "https://polyhaven.com/a/bark_debris_01"
+    },
+    {
+      "asset_id": "namaqualand_cliff_02",
+      "name": "Namaqualand Cliff 02",
+      "reported_polycount": 363896,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Dario Barresi": "Photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K model of a weathered cliff: stacked boulders, eroded rock face, cracked slabs, warm brown tones and lichen-dotted surfaces.",
+      "source_model_hash": "050412eba9cffa4604402f2cf5eed251b0ed3d26",
+      "asset_page": "https://polyhaven.com/a/namaqualand_cliff_02"
+    },
+    {
+      "asset_id": "pine_sapling_small",
+      "name": "Pine Sapling Small",
+      "reported_polycount": 398144,
+      "categories": [
+        "nature",
+        "plants",
+        "trees",
+        "collection: pine_forest"
+      ],
+      "authors": {
+        "Rob Tuytel": "photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K model of a small pine sapling with detailed bark and slender trunk, layered needle clusters, irregular branches and natural evergreen foliage.",
+      "source_model_hash": "e756e9c95c4bac208f0074fb7768cc1a1ab09783",
+      "asset_page": "https://polyhaven.com/a/pine_sapling_small"
+    },
+    {
+      "asset_id": "fir_sapling",
+      "name": "Fir Sapling",
+      "reported_polycount": 433021,
+      "categories": [
+        "nature",
+        "plants",
+        "trees",
+        "collection: pine_forest"
+      ],
+      "authors": {
+        "Rob Tuytel": "photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K model of young fir saplings - three small variations with slender trunks, layered horizontal branches and dense green needles, natural woodland detail.",
+      "source_model_hash": "bb9606eafe58f204df8c9e54970d234049eae021",
+      "asset_page": "https://polyhaven.com/a/fir_sapling"
+    },
+    {
+      "asset_id": "othonna_cerarioides",
+      "name": "Othonna Cerarioides",
+      "reported_polycount": 651641,
+      "categories": [
+        "nature",
+        "plants",
+        "trees",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "James Ray Cock": "modeling",
+        "Jenelle van Heerden": "Photography"
+      },
+      "description": "Free 8K model of Othonna Cerarioides - a realistic Karoo succulent shrub with dense upright stems, leathery green leaves and fine botanical detail.",
+      "source_model_hash": "8123a78c623246505137a7bb6cf14a1cb21cbd4e",
+      "asset_page": "https://polyhaven.com/a/othonna_cerarioides"
+    },
+    {
+      "asset_id": "leipoldtia_schultzei",
+      "name": "Leipoldtia Schultzei",
+      "reported_polycount": 654080,
+      "categories": [
+        "plants",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "All"
+      },
+      "description": "Free 8K model of Leipoldtia schultzei - low, spreading purple-succulent wildflower from Namaqualand with detailed leaves, stems and vibrant blooms.",
+      "source_model_hash": "413899fdf8bac139d2cff0805a732a442daacdcf",
+      "asset_page": "https://polyhaven.com/a/leipoldtia_schultzei"
+    },
+    {
+      "asset_id": "didelta_spinosa",
+      "name": "Didelta Spinosa",
+      "reported_polycount": 694671,
+      "categories": [
+        "plants",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "Jenelle van Heerden": "All"
+      },
+      "description": "Free 8K Didelta spinosa model - realistic Namaqualand desert shrub with twisted stems, dense green leaves and yellow flowers.",
+      "source_model_hash": "a7a1606e4512b047d4d96b122abe227840054902",
+      "asset_page": "https://polyhaven.com/a/didelta_spinosa"
+    },
+    {
+      "asset_id": "searsia_lucida",
+      "name": "Searsia Lucida",
+      "reported_polycount": 841648,
+      "categories": [
+        "nature",
+        "plants",
+        "trees",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "James Ray Cock": "modeling",
+        "Jenelle van Heerden": "Photography"
+      },
+      "description": "Free 8K Searsia lucida model: realistic Karoo shrub with twiggy branches and dense leathery leaves - perfect for dry, desert and arid scenes.",
+      "source_model_hash": "86fd827ff7e7b7a05e5628337f477ee16e6844cb",
+      "asset_page": "https://polyhaven.com/a/searsia_lucida"
+    },
+    {
+      "asset_id": "coastal_cliff_01",
+      "name": "Coastal Cliff 01",
+      "reported_polycount": 865917,
+      "categories": [
+        "nature",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography, processing",
+        "Rico Cilliers": "cleanup"
+      },
+      "description": "Free 8K coastal cliff model featuring weathered rock faces, eroded overhangs, grassy top edge, detailed strata, moss and crevice-rich shoreline geometry.",
+      "source_model_hash": "97e7ffd6293c2d99d6eae2d9ae50ed7b17f66af4",
+      "asset_page": "https://polyhaven.com/a/coastal_cliff_01"
+    },
+    {
+      "asset_id": "coast_line_01",
+      "name": "Coast Line 01",
+      "reported_polycount": 1011543,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography, processing",
+        "Rico Cilliers": "cleanup"
+      },
+      "description": "Free 8K model of a weathered rocky coastline: layered, pebble-strewn shore with algae-stained rock faces and eroded, detailed geological textures.",
+      "source_model_hash": "03a44dd0c8590dec6b6dbf08c7dbd28143748ec1",
+      "asset_page": "https://polyhaven.com/a/coast_line_01"
+    },
+    {
+      "asset_id": "grass_medium_02",
+      "name": "Grass Medium 02",
+      "reported_polycount": 1043926,
+      "categories": [
+        "nature",
+        "ground cover",
+        "grass",
+        "plants",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 4K model of a medium grass tuft - dense green-brown blades, varied strands and geometry-nodes driven scatter system for natural ground cover.",
+      "source_model_hash": "d05007ce4693d18c58c6a58b3db37d0804888066",
+      "asset_page": "https://polyhaven.com/a/grass_medium_02"
+    },
+    {
+      "asset_id": "coast_rocks_01",
+      "name": "Coast Rocks 01",
+      "reported_polycount": 1274876,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography, processing",
+        "Rico Cilliers": "cleanup"
+      },
+      "description": "Free 8K model of a weathered coastal rock formation with scattered pebbles, sandy shoreline and mossy algae textures, high-detail, realistic geometry.",
+      "source_model_hash": "6acfdba4c92f81a40f3b2fff0e65e8d1753934f9",
+      "asset_page": "https://polyhaven.com/a/coast_rocks_01"
+    },
+    {
+      "asset_id": "sand_rocks_small_01",
+      "name": "Sand Rocks Small 01",
+      "reported_polycount": 1386500,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: smugglers_cove",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography, processing",
+        "Rico Cilliers": "cleanup"
+      },
+      "description": "Free 8K model of a sandy shoreline patch with weathered coastal boulders, scattered pebbles and fine sand, realistic textures and natural coastal tones.",
+      "source_model_hash": "5d404c75371a10afa765713fdfb963816447e175",
+      "asset_page": "https://polyhaven.com/a/sand_rocks_small_01"
+    },
+    {
+      "asset_id": "coast_line_02",
+      "name": "Coast Line 02",
+      "reported_polycount": 1419259,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography, processing",
+        "Rico Cilliers": "cleanup"
+      },
+      "description": "Free 8K coastal rock model showing a weathered shoreline strip with layered stone, pebbles, sand and algae-streaked tide channels.",
+      "source_model_hash": "4e22d4c35c56fde67a6737d2f5b49c98dec07ea7",
+      "asset_page": "https://polyhaven.com/a/coast_line_02"
+    },
+    {
+      "asset_id": "searsia_burchellii",
+      "name": "Searsia Burchellii",
+      "reported_polycount": 1427042,
+      "categories": [
+        "nature",
+        "trees",
+        "collection: namaqualand"
+      ],
+      "authors": {
+        "James Ray Cock": "modeling",
+        "Jenelle van Heerden": "photography"
+      },
+      "description": "Free 8K model of Searsia burchellii - a sprawling dry Karoo shrub with tangled branches and dense small leaves.",
+      "source_model_hash": "eb6e265dc3d676f35b551c973ac14710390c48d2",
+      "asset_page": "https://polyhaven.com/a/searsia_burchellii"
+    },
+    {
+      "asset_id": "coast_rocks_05",
+      "name": "Coast Rocks 05",
+      "reported_polycount": 1446981,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: smugglers_cove",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "description": "Free, 8K photoreal rock model: weathered limestone boulder and ledge with eroded undercut, pebble-strewn surface and patches of seaweed and greenery.",
+      "source_model_hash": "5685f8953d4ee948c31128c4f857661a299dbf2c",
+      "asset_page": "https://polyhaven.com/a/coast_rocks_05"
+    },
+    {
+      "asset_id": "coast_rocks_03",
+      "name": "Coast Rocks 03",
+      "reported_polycount": 1525242,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography, processing",
+        "Rico Cilliers": "cleanup"
+      },
+      "description": "Free 8K photoreal coastal rock formation with weathered boulders, scattered pebbles, sandy shore and algae-stained surfaces; high-detail textures and topology.",
+      "source_model_hash": "06b4da9b5b7d38519541cc97dca09141e4c1df98",
+      "asset_page": "https://polyhaven.com/a/coast_rocks_03"
+    },
+    {
+      "asset_id": "grass_medium_01",
+      "name": "Grass Medium 01",
+      "reported_polycount": 1606633,
+      "categories": [
+        "grass",
+        "nature",
+        "ground cover",
+        "collection: pine_forest"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography",
+        "Rico Cilliers": "Modeling"
+      },
+      "description": "Free 8K grass model: dense medium tuft with varied green blades, natural meadow tones and wispy outer fronds for realistic ground cover. Geometry nodes scatter system.",
+      "source_model_hash": "c37a6bea414dac24f578f288810652add69d09fc",
+      "asset_page": "https://polyhaven.com/a/grass_medium_01"
+    },
+    {
+      "asset_id": "celandine_01",
+      "name": "Celandine 01",
+      "reported_polycount": 1746764,
+      "categories": [
+        "nature",
+        "plants",
+        "ground cover",
+        "flowers"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K model: dense celandine groundcover with glossy heart-shaped green leaves and scattered small yellow flowers, detailed natural meadow foliage. Geometry nodes scatter system.",
+      "source_model_hash": "9aed486a831bf5dcb77621dd86039512cae57d30",
+      "asset_page": "https://polyhaven.com/a/celandine_01"
+    },
+    {
+      "asset_id": "island_tree_02",
+      "name": "Island Tree 02",
+      "reported_polycount": 1762064,
+      "categories": [
+        "nature",
+        "plants",
+        "trees"
+      ],
+      "authors": {
+        "Rob Tuytel": "scanning, processing",
+        "Rico Cilliers": "cleanup, processing"
+      },
+      "description": "Free 8K model of a small coastal island tree with a twisted, weathered trunk and sprawling dense green foliage; detailed bark and branched canopy.",
+      "source_model_hash": "4292954a33702fc0809a2b2f17a310bb36fd1aca",
+      "asset_page": "https://polyhaven.com/a/island_tree_02"
+    },
+    {
+      "asset_id": "coastal_cliff_02",
+      "name": "Coastal Cliff 02",
+      "reported_polycount": 1768655,
+      "categories": [
+        "nature",
+        "collection: smugglers_cove",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "description": "Free 8K model of a rugged seaside cliff with weathered rock faces, crevices, layered strata and grassy top - high-detail, sea-worn coastal formation.",
+      "source_model_hash": "e7023dcb232d9a61fe2a7dadea40fc91a3299a1f",
+      "asset_page": "https://polyhaven.com/a/coastal_cliff_02"
+    },
+    {
+      "asset_id": "coast_land_rocks_04",
+      "name": "Coast Land Rocks 04",
+      "reported_polycount": 2037497,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography, processing",
+        "Rico Cilliers": "cleanup"
+      },
+      "description": "Free 8K model of a weathered coastal rockbed with mixed pebbles, sand patches and eroded rock faces in warm earthy tones.",
+      "source_model_hash": "e19f10a929ab5322bceceb4011fad3a2dda2782b",
+      "asset_page": "https://polyhaven.com/a/coast_land_rocks_04"
+    },
+    {
+      "asset_id": "coast_land_rocks_03",
+      "name": "Coast Land Rocks 03",
+      "reported_polycount": 2056223,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography, processing",
+        "Rico Cilliers": "cleanup"
+      },
+      "description": "Free 8K model of coastal rock formation with weathered, eroded boulders, scattered pebbles and detailed sandy-brown shoreline textures.",
+      "source_model_hash": "1ecab8435da35fcb0df8eff44307ad4f74ea0c3c",
+      "asset_page": "https://polyhaven.com/a/coast_land_rocks_03"
+    },
+    {
+      "asset_id": "fir_sapling_medium",
+      "name": "Fir Sapling Medium",
+      "reported_polycount": 2308249,
+      "categories": [
+        "plants",
+        "nature",
+        "trees",
+        "collection: pine_forest"
+      ],
+      "authors": {
+        "Rob Tuytel": "photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K fir sapling model - a slender conifer with layered branches, dense needles, twiggy trunk and natural woodland silhouette.",
+      "source_model_hash": "0029476c186325a03c000bb1349ec299e43f9331",
+      "asset_page": "https://polyhaven.com/a/fir_sapling_medium"
+    },
+    {
+      "asset_id": "coast_rocks_02",
+      "name": "Coast Rocks 02",
+      "reported_polycount": 2363290,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography, processing",
+        "Rico Cilliers": "cleanup"
+      },
+      "description": "Free 8K model of a weathered coastal rock formation: eroded shoreline, pebble-strewn path, mossy boulders and sandy soil with realistic textures.",
+      "source_model_hash": "effc6a8b2259a73ab2c9c91688fa3b2db3ee139e",
+      "asset_page": "https://polyhaven.com/a/coast_rocks_02"
+    },
+    {
+      "asset_id": "coast_land_rocks_02",
+      "name": "Coast Land Rocks 02",
+      "reported_polycount": 2420895,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: smugglers_cove"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography, processing",
+        "Rico Cilliers": "cleanup"
+      },
+      "description": "Free 8K model of weathered coastal boulders and pebble-strewn shoreline, rugged sandy textures and detailed rock crevices from the Smugglers Cove collection.",
+      "source_model_hash": "ef0785f6063bc883e676ee4dbe57058f305272c8",
+      "asset_page": "https://polyhaven.com/a/coast_land_rocks_02"
+    },
+    {
+      "asset_id": "coastal_cliff_04",
+      "name": "Coastal Cliff 04",
+      "reported_polycount": 2883111,
+      "categories": [
+        "nature",
+        "rocks",
+        "collection: smugglers_cove",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rob Tuytel": "Photography, processing",
+        "Rico Cilliers": "cleanup"
+      },
+      "description": "Free 8K model of a weathered coastal cliff with layered rock faces, eroded ledges, scattered boulders and a grassy top, with high-detail textures.",
+      "source_model_hash": "f65523b2e83b5542b732c2a06f4a5d623c929839",
+      "asset_page": "https://polyhaven.com/a/coastal_cliff_04"
+    },
+    {
+      "asset_id": "island_tree_01",
+      "name": "Island Tree 01",
+      "reported_polycount": 3729692,
+      "categories": [
+        "nature",
+        "plants",
+        "trees",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rob Tuytel": "scanning, processing",
+        "Rico Cilliers": "cleanup, processing"
+      },
+      "description": "Free 8K tree model with twisted gnarled trunk, high-detail bark, exposed roots and a dense, wind-sculpted coastal canopy of small green leaves.",
+      "source_model_hash": "29bbda3fd0ebe9974d015ba2a9d939525eb6811b",
+      "asset_page": "https://polyhaven.com/a/island_tree_01"
+    },
+    {
+      "asset_id": "tree_small_02",
+      "name": "Tree Small 02",
+      "reported_polycount": 4652585,
+      "categories": [
+        "nature",
+        "plants",
+        "trees",
+        "collection: verdant_trail"
+      ],
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "description": "Free 8K model: small tree with a slender curved trunk, detailed bark and branches, and a dense, airy canopy of clustered green leaves.",
+      "source_model_hash": "5fe4637be7454be81ee92fc68a7938b56d20c613",
+      "asset_page": "https://polyhaven.com/a/tree_small_02"
+    },
+    {
+      "asset_id": "island_tree_03",
+      "name": "Island Tree 03",
+      "reported_polycount": 4760490,
+      "categories": [
+        "nature",
+        "plants",
+        "trees"
+      ],
+      "authors": {
+        "Rob Tuytel": "scanning, processing",
+        "Rico Cilliers": "cleanup, processing"
+      },
+      "description": "Free 8K model of a low, windswept coastal tree with twisted, gnarled trunks, dense green foliage, realistic bark texture and exposed roots on a sandy base.",
+      "source_model_hash": "1a79cbc33b9534f23a88a1adc2ad8fcdce54505a",
+      "asset_page": "https://polyhaven.com/a/island_tree_03"
+    },
+    {
+      "asset_id": "fir_tree_01",
+      "name": "Fir Tree 01",
+      "reported_polycount": 7853731,
+      "categories": [
+        "nature",
+        "plants",
+        "trees",
+        "collection: pine_forest"
+      ],
+      "authors": {
+        "Rob Tuytel": "photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K model of three tall fir trees with slender trunks, detailed bark, layered needle foliage and natural twiggy branch structure.",
+      "source_model_hash": "6b79f3da0de1d192fc78ab54efa5e8956af97749",
+      "asset_page": "https://polyhaven.com/a/fir_tree_01"
+    },
+    {
+      "asset_id": "pine_sapling_medium",
+      "name": "Pine Sapling Medium",
+      "reported_polycount": 9784670,
+      "categories": [
+        "nature",
+        "plants",
+        "trees",
+        "collection: pine_forest"
+      ],
+      "authors": {
+        "Rob Tuytel": "photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K pine sapling model: slender trunk, twiggy branches, dense needle clusters and textured bark with natural evergreen foliage.",
+      "source_model_hash": "af56623e42ba6af60745dd721297559ca06d7d76",
+      "asset_page": "https://polyhaven.com/a/pine_sapling_medium"
+    },
+    {
+      "asset_id": "pine_tree_01",
+      "name": "Pine Tree 01",
+      "reported_polycount": 17427094,
+      "categories": [
+        "nature",
+        "plants",
+        "trees",
+        "collection: pine_forest"
+      ],
+      "authors": {
+        "Rob Tuytel": "photography",
+        "Rico Cilliers": "modeling"
+      },
+      "description": "Free 8K model of a tall, slender pine with layered branch clusters, dense needle foliage, and a realistic textured trunk and bark.",
+      "source_model_hash": "98997b7406016d998742bd962473c5d63e14da21",
+      "asset_page": "https://polyhaven.com/a/pine_tree_01"
+    }
+  ]
+}

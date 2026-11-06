@@ -1,0 +1,33 @@
+{
+  "validator": "Khronos glTF Validator",
+  "scope": "Round-trip skinned GLBs emitted from actual imported rigged assets",
+  "results": [
+    {
+      "asset": "RiggedSimple",
+      "file": "artifacts/rigged-inputs/glb-export-roundtrip/RiggedSimple.glb",
+      "sha256": "b25358f5b21a708ffbf7b148b2129056704032d5709c7b674990df975e007ba0",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    {
+      "asset": "CesiumMan",
+      "file": "artifacts/rigged-inputs/glb-export-roundtrip/CesiumMan.glb",
+      "sha256": "a0571b484eacf511d25a241d6caee465fc53a09475cfcedc4006660c45e11309",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    },
+    {
+      "asset": "Fox",
+      "file": "artifacts/rigged-inputs/glb-export-roundtrip/Fox.glb",
+      "sha256": "406ac8067d8e462fcd8423c6a61e20a20b410ec63622a5a1c22ae60075e268f6",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "messages": []
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+[{"stream_name":"stderr","time":7.14664568,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.146690352,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.146696627,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.146700773,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.762572343,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.762602534,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.762607902,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.76261399,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":16.117484254,"data":"Collecting hilbertcurve\u003c3,\u003e=2\n"}
+,{"stream_name":"stdout","time":16.22572718,"data":"  Downloading hilbertcurve-2.0.5-py3-none-any.whl.metadata (11 kB)\n"}
+,{"stream_name":"stdout","time":16.319898951,"data":"Collecting hilbertcurve\u003c3,\u003e=2\n"}
+,{"stream_name":"stdout","time":16.319920591,"data":"  Downloading hilbertcurve-2.0.5-py3-none-any.whl.metadata (11 kB)\n"}
+,{"stream_name":"stdout","time":16.419082921,"data":"Collecting trimesh\u003c5,\u003e=4\n"}
+,{"stream_name":"stdout","time":16.435519332,"data":"  Downloading trimesh-4.12.2-py3-none-any.whl.metadata (13 kB)\n"}
+,{"stream_name":"stdout","time":16.460442204,"data":"Requirement already satisfied: Pillow\u003e=10 in /usr/local/lib/python3.13/dist-packages (13.0.0)\n"}
+,{"stream_name":"stdout","time":16.460932813,"data":"Requirement already satisfied: opencv-python-headless in /usr/local/lib/python3.13/dist-packages (4.14.0.94)\n"}
+,{"stream_name":"stdout","time":16.461528087,"data":"Requirement already satisfied: ninja in /usr/local/lib/python3.13/dist-packages (1.13.2)\n"}
+,{"stream_name":"stdout","time":16.462379672,"data":"Requirement already satisfied: numpy in /usr/local/lib/python3.13/dist-packages (from hilbertcurve\u003c3,\u003e=2) (2.1.3)\n"}
+,{"stream_name":"stdout","time":16.488283164,"data":"Downloading hilbertcurve-2.0.5-py3-none-any.whl (8.6 kB)\n"}
+,{"stream_name":"stdout","time":16.520053645,"data":"Downloading trimesh-4.12.2-py3-none-any.whl (741 kB)\n"}
+,{"stream_name":"stdout","time":16.589216693,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 741.0/741.0 kB 12.6 MB/s  0:00:00\n"}
+,{"stream_name":"stdout","time":16.621183098,"data":"Collecting trimesh\u003c5,\u003e=4\n"}
+,{"stream_name":"stdout","time":16.621202913,"data":"  Downloading trimesh-4.12.2-py3-none-any.whl.metadata (13 kB)\n"}
+,{"stream_name":"stdout","time":16.621207833,"data":"Requirement already satisfied: Pillow\u003e=10 in /usr/local/lib/python3.13/dist-packages (13.0.0)\n"}
+,{"stream_name":"stdout","time":16.621212021,"data":"Requirement already satisfied: opencv-python-headless in /usr/local/lib/python3.13/dist-packages (4.14.0.94)\n"}
+,{"stream_name":"stdout","time":16.621216104,"data":"Requirement already satisfied: ninja in /usr/local/lib/python3.13/dist-packages (1.13.2)\n"}
+,{"stream_name":"stdout","time":16.621219815,"data":"Requirement already satisfied: numpy in /usr/local/lib/python3.13/dist-packages (from hilbertcurve\u003c3,\u003e=2) (2.1.3)\n"}
+,{"stream_name":"stdout","time":16.621224139,"data":"Downloading hilbertcurve-2.0.5-py3-none-any.whl (8.6 kB)\n"}
+,{"stream_name":"stdout","time":16.621239555,"data":"Downloading trimesh-4.12.2-py3-none-any.whl (741 kB)\n"}
+,{"stream_name":"stdout","time":16.621243701,"data":"   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 741.0/741.0 kB 12.6 MB/s  0:00:00\n"}
+,{"stream_name":"stdout","time":18.273398573,"data":"Installing collected packages: trimesh, hilbertcurve\n"}
+,{"stream_name":"stdout","time":18.475627934,"data":"Installing collected packages: trimesh, hilbertcurve\n"}
+,{"stream_name":"stdout","time":18.641520659,"data":"\n"}
+,{"stream_name":"stdout","time":18.712981178,"data":"Successfully installed hilbertcurve-2.0.5 trimesh-4.12.2\n"}
+,{"stream_name":"stdout","time":18.844311408,"data":"\n"}
+,{"stream_name":"stdout","time":18.844372251,"data":"Successfully installed hilbertcurve-2.0.5 trimesh-4.12.2\n"}
+,{"stream_name":"stdout","time":19.372705866,"data":"test_deformation_identity_translation_rotation (test_articulation.ArticulationTests.test_deformation_identity_translation_rotation) ... ok\n"}
+,{"stream_name":"stdout","time":19.372740159,"data":"test_displacement_root_tie_and_chunking (test_articulation.ArticulationTests.test_displacement_root_tie_and_chunking) ... ok\n"}
+,{"stream_name":"stdout","time":19.372746845,"data":"test_embedding_and_container (test_articulation.ArticulationTests.test_embedding_and_container) ... ok\n"}
+,{"stream_name":"stdout","time":19.372751741,"data":"test_hierarchy_arbitrary_order_and_cycles (test_articulation.ArticulationTests.test_hierarchy_arbitrary_order_and_cycles) ... ok\n"}
+,{"stream_name":"stdout","time":19.372757315,"data":"test_infer_skeleton_from_exact_and_noisy_fields (test_articulation.ArticulationTests.test_infer_skeleton_from_exact_and_noisy_fields) ... ok\n"}
+,{"stream_name":"stdout","time":19.372762874,"data":"test_source_weight_transfer (test_articulation.ArticulationTests.test_source_weight_transfer) ... ok\n"}
+,{"stream_name":"stdout","time":19.372771369,"data":"test_weights_validation (test_articulation.ArticulationTests.test_weights_validation) ... ok\n"}
+,{"stream_name":"stdout","time":19.372777597,"data":"\n"}
+,{"stream_name":"stdout","time":19.372782658,"data":"----------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":19.37278778,"data":"Ran 7 tests in 0.088s\n"}
+,{"stream_name":"stdout","time":19.372792126,"data":"\n"}
+,{"stream_name":"stdout","time":19.3727963,"data":"OK\n"}
+,{"stream_name":"stdout","time":19.372801009,"data":"\n"}
+,{"stream_name":"stdout","time":19.372805732,"data":"test_invalid_options_rejected_before_gpu_allocation (test_export.ExportContractTests.test_invalid_options_rejected_before_gpu_allocation) ... ok\n"}
+,{"stream_name":"stdout","time":19.372810845,"data":"test_missing_material_and_incomplete_rig_rejected_before_gpu_allocation (test_export.ExportContractTests.test_missing_material_and_incomplete_rig_rejected_before_gpu_allocation) ... ok\n"}
+,{"stream_name":"stdout","time":19.372816335,"data":"\n"}
+,{"stream_name":"stdout","time":19.372820579,"data":"----------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":19.372825311,"data":"Ran 2 tests in 0.002s\n"}
+,{"stream_name":"stdout","time":19.372829889,"data":"\n"}
+,{"stream_name":"stdout","time":19.372834102,"data":"OK\n"}
+,{"stream_name":"stdout","time":19.372838927,"data":"\n"}
+,{"stream_name":"stdout","time":22.100944086,"data":"test_embedded_pbr_and_coordinate_roundtrip (test_glb.GLBTests.test_embedded_pbr_and_coordinate_roundtrip) ... ok\n"}
+,{"stream_name":"stdout","time":22.100978556,"data":"test_reject_invalid_payload_and_conventions (test_glb.GLBTests.test_reject_invalid_payload_and_conventions) ... ok\n"}
+,{"stream_name":"stdout","time":22.100996036,"data":"test_skinned_glb_requires_matching_skin_inputs (test_glb.GLBTests.test_skinned_glb_requires_matching_skin_inputs) ... ok\n"}
+,{"stream_name":"stdout","time":22.101001022,"data":"test_skinned_glb_roundtrip_preserves_geometry_skeleton_and_weights (test_glb.GLBTests.test_skinned_glb_roundtrip_preserves_geometry_skeleton_and_weights) ... ok\n"}
+,{"stream_name":"stdout","time":22.10100565,"data":"\n"}
+,{"stream_name":"stdout","time":22.101009469,"data":"----------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":22.101013545,"data":"Ran 4 tests in 0.059s\n"}
+,{"stream_name":"stdout","time":22.101018241,"data":"\n"}
+,{"stream_name":"stdout","time":22.101021633,"data":"OK\n"}
+,{"stream_name":"stdout","time":22.101024973,"data":"\n"}
+,{"stream_name":"stdout","time":28.482863917,"data":"test_invalid_rig_and_weights (test_skin_ae.SkinAETests.test_invalid_rig_and_weights) ... ok\n"}
+,{"stream_name":"stdout","time":28.482897759,"data":"test_joint_permutation_and_variable_count (test_skin_ae.SkinAETests.test_joint_permutation_and_variable_count) ... ok\n"}
+,{"stream_name":"stdout","time":28.482904032,"data":"test_weights_gradients_and_freeze (test_skin_ae.SkinAETests.test_weights_gradients_and_freeze) ... ok\n"}
+,{"stream_name":"stdout","time":28.482908495,"data":"\n"}
+,{"stream_name":"stdout","time":28.482912105,"data":"----------------------------------------------------------------------\n"}
+,{"stream_name":"stdout","time":28.482915973,"data":"Ran 3 tests in 2.173s\n"}
+,{"stream_name":"stdout","time":28.482919461,"data":"\n"}
+,{"stream_name":"stdout","time":28.482922845,"data":"OK\n"}
+,{"stream_name":"stdout","time":28.482926329,"data":"\n"}
+,{"stream_name":"stderr","time":1032.159180466,"data":"/kaggle/working/t3d-rigged-export/t3d/extraction_torch.py:39: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stderr","time":1032.159271851,"data":"  bounds = torch.as_tensor(aabb, device=device, dtype=dual_vertices.dtype)\n"}
+,{"stream_name":"stderr","time":1032.370730864,"data":"/kaggle/working/t3d-rigged-export/t3d/extraction_torch.py:39: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stderr","time":1032.370764366,"data":"  bounds = torch.as_tensor(aabb, device=device, dtype=dual_vertices.dtype)\n"}
+,{"stream_name":"stderr","time":1032.37077151,"data":"\n"}
+,{"stream_name":"stderr","time":1032.370777234,"data":"/kaggle/working/t3d-rigged-export/t3d/extraction_torch.py:39: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stderr","time":1032.370795269,"data":"  bounds = torch.as_tensor(aabb, device=device, dtype=dual_vertices.dtype)\n"}
+,{"stream_name":"stdout","time":1034.318697657,"data":"{\n"}
+,{"stream_name":"stdout","time":1034.31873858,"data":"  \"device\": \"cuda:0\",\n"}
+,{"stream_name":"stdout","time":1034.318745733,"data":"  \"device_name\": \"Tesla T4\",\n"}
+,{"stream_name":"stdout","time":1034.318751452,"data":"  \"active_voxels\": 152,\n"}
+,{"stream_name":"stdout","time":1034.318756955,"data":"  \"extracted_faces\": 300,\n"}
+,{"stream_name":"stdout","time":1034.318761927,"data":"  \"uv_faces\": 200,\n"}
+,{"stream_name":"stdout","time":1034.318767226,"data":"  \"stages\": [\n"}
+,{"stream_name":"stdout","time":1034.318772643,"data":"    {\n"}
+,{"stream_name":"stdout","time":1034.318777797,"data":"      \"stage\": \"input\",\n"}
+,{"stream_name":"stdout","time":1034.318783077,"data":"      \"vertices\": 152,\n"}
+,{"stream_name":"stdout","time":1034.31878814,"data":"      \"faces\": 300\n"}
+,{"stream_name":"stdout","time":1034.318793145,"data":"    },\n"}
+,{"stream_name":"stdout","time":1034.318798376,"data":"    {\n"}
+,{"stream_name":"stdout","time":1034.318803343,"data":"      \"stage\": \"initial_holes\",\n"}
+,{"stream_name":"stdout","time":1034.318808587,"data":"      \"vertices\": 152,\n"}
+,{"stream_name":"stdout","time":1034.318813582,"data":"      \"faces\": 300\n"}
+,{"stream_name":"stdout","time":1034.318818507,"data":"    },\n"}
+,{"stream_name":"stdout","time":1034.318823241,"data":"    {\n"}
+,{"stream_name":"stdout","time":1034.318828238,"data":"      \"stage\": \"coarse\",\n"}
+,{"stream_name":"stdout","time":1034.31883348,"data":"      \"vertices\": 152,\n"}
+,{"stream_name":"stdout","time":1034.318838462,"data":"      \"faces\": 300\n"}
+,{"stream_name":"stdout","time":1034.318843402,"data":"    },\n"}
+,{"stream_name":"stdout","time":1034.318848229,"data":"    {\n"}
+,{"stream_name":"stdout","time":1034.318853057,"data":"      \"stage\": \"final\",\n"}
+,{"stream_name":"stdout","time":1034.318858032,"data":"      \"vertices\": 102,\n"}
+,{"stream_name":"stdout","time":1034.318863076,"data":"      \"faces\": 200\n"}
+,{"stream_name":"stdout","time":1034.318868215,"data":"    }\n"}
+,{"stream_name":"stdout","time":1034.318872882,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1034.318877817,"data":"  \"texture_size\": 128,\n"}
+,{"stream_name":"stdout","time":1034.318882927,"data":"  \"valid_texels\": 15624,\n"}
+,{"stream_name":"stdout","time":1034.318888385,"data":"  \"source_up\": \"z\",\n"}
+,{"stream_name":"stdout","time":1034.318893616,"data":"  \"alpha_mode\": \"BLEND\",\n"}
+,{"stream_name":"stdout","time":1034.318898823,"data":"  \"remesh\": false,\n"}
+,{"stream_name":"stdout","time":1034.318903721,"data":"  \"skinned\": false,\n"}
+,{"stream_name":"stdout","time":1034.318908688,"data":"  \"joint_count\": 0,\n"}
+,{"stream_name":"stdout","time":1034.318913852,"data":"  \"skinae_checkpoint_sha256\": null,\n"}
+,{"stream_name":"stdout","time":1034.318919309,"data":"  \"joint_tolerance\": null,\n"}
+,{"stream_name":"stdout","time":1034.318924561,"data":"  \"total_seconds\": 2.3688061440000183,\n"}
+,{"stream_name":"stdout","time":1034.318929743,"data":"  \"glb_bytes\": 10028,\n"}
+,{"stream_name":"stdout","time":1034.318934669,"data":"  \"glb_sha256\": \"6d7c0ad03756adc6a77c2739d3ef0fa9bc2e5a04c9312ee07813cb492d0b49a0\",\n"}
+,{"stream_name":"stdout","time":1034.318940052,"data":"  \"input_sha256\": \"750ddaeb0ab5e85273475077fd5e411c7352a9e009e2e92505de867e988a1745\",\n"}
+,{"stream_name":"stdout","time":1034.318945616,"data":"  \"bpt_token_count\": 0,\n"}
+,{"stream_name":"stdout","time":1034.318967357,"data":"  \"geometry_track\": \"raw Track A\"\n"}
+,{"stream_name":"stdout","time":1034.318973146,"data":"}\n"}
+,{"stream_name":"stdout","time":1034.522070967,"data":"{\n"}
+,{"stream_name":"stdout","time":1034.522106039,"data":"  \"device\": \"cuda:0\",\n"}
+,{"stream_name":"stdout","time":1034.522111747,"data":"  \"device_name\": \"Tesla T4\",\n"}
+,{"stream_name":"stdout","time":1034.522115951,"data":"  \"active_voxels\": 152,\n"}
+,{"stream_name":"stdout","time":1034.522126118,"data":"  \"extracted_faces\": 300,\n"}
+,{"stream_name":"stdout","time":1034.522130203,"data":"  \"uv_faces\": 200,\n"}
+,{"stream_name":"stdout","time":1034.522134214,"data":"  \"stages\": [\n"}
+,{"stream_name":"stdout","time":1034.522137992,"data":"    {\n"}
+,{"stream_name":"stdout","time":1034.522141544,"data":"      \"stage\": \"input\",\n"}
+,{"stream_name":"stdout","time":1034.522146199,"data":"      \"vertices\": 152,\n"}
+,{"stream_name":"stdout","time":1034.522150407,"data":"      \"faces\": 300\n"}
+,{"stream_name":"stdout","time":1034.522160705,"data":"    },\n"}
+,{"stream_name":"stdout","time":1034.522164879,"data":"    {\n"}
+,{"stream_name":"stdout","time":1034.522169219,"data":"      \"stage\": \"initial_holes\",\n"}
+,{"stream_name":"stdout","time":1034.522173838,"data":"      \"vertices\": 152,\n"}
+,{"stream_name":"stdout","time":1034.522178346,"data":"      \"faces\": 300\n"}
+,{"stream_name":"stdout","time":1034.522182706,"data":"    },\n"}
+,{"stream_name":"stdout","time":1034.522186385,"data":"    {\n"}
+,{"stream_name":"stdout","time":1034.522190593,"data":"      \"stage\": \"coarse\",\n"}
+,{"stream_name":"stdout","time":1034.522195017,"data":"      \"vertices\": 152,\n"}
+,{"stream_name":"stdout","time":1034.52219953,"data":"      \"faces\": 300\n"}
+,{"stream_name":"stdout","time":1034.52220338,"data":"    },\n"}
+,{"stream_name":"stdout","time":1034.522207064,"data":"    {\n"}
+,{"stream_name":"stdout","time":1034.522210736,"data":"      \"stage\": \"final\",\n"}
+,{"stream_name":"stdout","time":1034.522214767,"data":"      \"vertices\": 102,\n"}
+,{"stream_name":"stdout","time":1034.522218594,"data":"      \"faces\": 200\n"}
+,{"stream_name":"stdout","time":1034.522222428,"data":"    }\n"}
+,{"stream_name":"stdout","time":1034.522226227,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1034.522253196,"data":"  \"texture_size\": 128,\n"}
+,{"stream_name":"stdout","time":1034.522257712,"data":"  \"valid_texels\": 15624,\n"}
+,{"stream_name":"stdout","time":1034.522262261,"data":"  \"source_up\": \"z\",\n"}
+,{"stream_name":"stdout","time":1034.522266927,"data":"  \"alpha_mode\": \"BLEND\",\n"}
+,{"stream_name":"stdout","time":1034.522271528,"data":"  \"remesh\": false,\n"}
+,{"stream_name":"stdout","time":1034.52227588,"data":"  \"skinned\": false,\n"}
+,{"stream_name":"stdout","time":1034.522279714,"data":"  \"joint_count\": 0,\n"}
+,{"stream_name":"stdout","time":1034.522283595,"data":"  \"skinae_checkpoint_sha256\": null,\n"}
+,{"stream_name":"stdout","time":1034.522287577,"data":"  \"joint_tolerance\": null,\n"}
+,{"stream_name":"stdout","time":1034.522291541,"data":"  \"total_seconds\": 2.3688061440000183,\n"}
+,{"stream_name":"stdout","time":1034.52229552,"data":"  \"glb_bytes\": 10028,\n"}
+,{"stream_name":"stdout","time":1034.52229933,"data":"  \"glb_sha256\": \"6d7c0ad03756adc6a77c2739d3ef0fa9bc2e5a04c9312ee07813cb492d0b49a0\",\n"}
+,{"stream_name":"stdout","time":1034.522303484,"data":"  \"input_sha256\": \"750ddaeb0ab5e85273475077fd5e411c7352a9e009e2e92505de867e988a1745\",\n"}
+,{"stream_name":"stdout","time":1034.522307734,"data":"  \"bpt_token_count\": 0,\n"}
+,{"stream_name":"stdout","time":1034.522329143,"data":"  \"geometry_track\": \"raw Track A\"\n"}
+,{"stream_name":"stdout","time":1034.5223324,"data":"}\n"}
+,{"stream_name":"stderr","time":1035.115486955,"data":"/kaggle/working/t3d-rigged-export/tools/probe_export.py:142: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stderr","time":1035.115523656,"data":"  torch.as_tensor(rig.joints,device='cuda',dtype=torch.float32),\n"}
+,{"stream_name":"stderr","time":1035.318041962,"data":"/kaggle/working/t3d-rigged-export/tools/probe_export.py:142: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stderr","time":1035.318124159,"data":"  torch.as_tensor(rig.joints,device='cuda',dtype=torch.float32),\n"}
+,{"stream_name":"stderr","time":1035.3181316,"data":"\n"}
+,{"stream_name":"stderr","time":1035.318136066,"data":"/kaggle/working/t3d-rigged-export/tools/probe_export.py:142: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stderr","time":1035.318142161,"data":"  torch.as_tensor(rig.joints,device='cuda',dtype=torch.float32),\n"}
+,{"stream_name":"stdout","time":1035.410988434,"data":"{\"source_sha256\": \"a7bfe7d666746200ba0853a66d87b6b7ab10f4964295f41c345ec74b9ab3b762\", \"dependencies\": {\"CuMesh\": [\"https://github.com/JeffreyXiang/CuMesh.git\", \"12289e1062f0603f2f0d0771b02e1395d247f26f\"], \"FlexGEMM\": [\"https://github.com/JeffreyXiang/FlexGEMM.git\", \"6dd94a859c26ee8246888502eada3dd8ad85532e\"], \"nvdiffrast\": [\"https://github.com/NVlabs/nvdiffrast.git\", \"253ac4fcea7de5f396371124af597e6cc957bfae\"]}, \"device\": \"Tesla T4\", \"affine_sampling_passed\": true, \"valid_texels\": 15624, \"valid_texel_max_error\": 2.384185791015625e-07, \"full_atlas_max_error\": 2.384185791015625e-07, \"gradient_baking_max_error\": 0.0, \"raster_chunk_parity_passed\": true, \"glb_bytes\": 14372, \"glb_faces\": 186, \"alpha_mode\": \"BLEND\", \"cli_audit\": {\"device\": \"cuda:0\", \"device_name\": \"Tesla T4\", \"active_voxels\": 152, \"extracted_faces\": 300, \"uv_faces\": 200, \"stages\": [{\"stage\": \"input\", \"vertices\": 152, \"faces\": 300}, {\"stage\": \"initial_holes\", \"vertices\": 152, \"faces\": 300}, {\"stage\": \"coarse\", \"vertices\": 152, \"faces\": 300}, {\"stage\": \"final\", \"vertices\": 102, \"faces\": 200}], \"texture_size\": 128, \"valid_texels\": 15624, \"source_up\": \"z\", \"alpha_mode\": \"BLEND\", \"remesh\": false, \"skinned\": false, \"joint_count\": 0, \"skinae_checkpoint_sha256\": null, \"joint_tolerance\": null, \"total_seconds\": 2.3688061440000183, \"glb_bytes\": 10028, \"glb_sha256\": \"6d7c0ad03756adc6a77c2739d3ef0fa9bc2e5a04c9312ee07813cb492d0b49a0\", \"input_sha256\": \"750ddaeb0ab5e85273475077fd5e411c7352a9e009e2e92505de867e988a1745\", \"bpt_token_count\": 0, \"geometry_track\": \"raw Track A\"}, \"cli_closed_outward_topology\": {\"components\": [{\"faces\": 200, \"closed\": true, \"signed_volume\": 0.21570347027199924, \"flipped_faces\": 0}], \"flipped_faces\": 0, \"outward_closed_components\": true}, \"rigged_cli\": {\"audit\": {\"device\": \"cuda:0\", \"device_name\": \"Tesla T4\", \"active_voxels\": 152, \"extracted_faces\": 300, \"uv_faces\": 186, \"stages\": [{\"stage\": \"input\", \"vertices\": 152, \"faces\": 300}, {\"stage\": \"initial_holes\", \"vertices\": 152, \"faces\": 300}, {\"stage\": \"coarse\", \"vertices\": 152, \"faces\": 300}, {\"stage\": \"final\", \"vertices\": 95, \"faces\": 186}], \"texture_size\": 128, \"valid_texels\": 15624, \"source_up\": \"z\", \"alpha_mode\": \"BLEND\", \"remesh\": false, \"skinned\": true, \"joint_count\": 3, \"skinae_checkpoint_sha256\": \"f73a7be776b6ac653f2e248d78307eeddea833ea0c5284011e7a92bf2543e9eb\", \"joint_tolerance\": 1e-06, \"total_seconds\": 0.2561785449997842, \"glb_bytes\": 18436, \"glb_sha256\": \"211dd7c94799dd2bdf54ae3b4fc5fd38a86c8bbc916182fcf281f2b0c6645e19\"}, \"vertices\": 149, \"faces\": 186, \"joint_count\": 3, \"maximum_weight_sum_error\": 0.0, \"glb_bytes\": 18436, \"glb_sha256\": \"211dd7c94799dd2bdf54ae3b4fc5fd38a86c8bbc916182fcf281f2b0c6645e19\", \"scope\": \"Synthetic skinned cube through extraction, CuMesh cleanup/UV, PBR bake, SkinAE decode and GLB reload; no source-rig quality claim\"}, \"scope\": \"analytic cube, constant sparse PBR and independent affine sampler oracle; no rendered fidelity claim\"}\n"}
+,{"stream_name":"stdout","time":1035.613960121,"data":"{\"source_sha256\": \"a7bfe7d666746200ba0853a66d87b6b7ab10f4964295f41c345ec74b9ab3b762\", \"dependencies\": {\"CuMesh\": [\"https://github.com/JeffreyXiang/CuMesh.git\", \"12289e1062f0603f2f0d0771b02e1395d247f26f\"], \"FlexGEMM\": [\"https://github.com/JeffreyXiang/FlexGEMM.git\", \"6dd94a859c26ee8246888502eada3dd8ad85532e\"], \"nvdiffrast\": [\"https://github.com/NVlabs/nvdiffrast.git\", \"253ac4fcea7de5f396371124af597e6cc957bfae\"]}, \"device\": \"Tesla T4\", \"affine_sampling_passed\": true, \"valid_texels\": 15624, \"valid_texel_max_error\": 2.384185791015625e-07, \"full_atlas_max_error\": 2.384185791015625e-07, \"gradient_baking_max_error\": 0.0, \"raster_chunk_parity_passed\": true, \"glb_bytes\": 14372, \"glb_faces\": 186, \"alpha_mode\": \"BLEND\", \"cli_audit\": {\"device\": \"cuda:0\", \"device_name\": \"Tesla T4\", \"active_voxels\": 152, \"extracted_faces\": 300, \"uv_faces\": 200, \"stages\": [{\"stage\": \"input\", \"vertices\": 152, \"faces\": 300}, {\"stage\": \"initial_holes\", \"vertices\": 152, \"faces\": 300}, {\"stage\": \"coarse\", \"vertices\": 152, \"faces\": 300}, {\"stage\": \"final\", \"vertices\": 102, \"faces\": 200}], \"texture_size\": 128, \"valid_texels\": 15624, \"source_up\": \"z\", \"alpha_mode\": \"BLEND\", \"remesh\": false, \"skinned\": false, \"joint_count\": 0, \"skinae_checkpoint_sha256\": null, \"joint_tolerance\": null, \"total_seconds\": 2.3688061440000183, \"glb_bytes\": 10028, \"glb_sha256\": \"6d7c0ad03756adc6a77c2739d3ef0fa9bc2e5a04c9312ee07813cb492d0b49a0\", \"input_sha256\": \"750ddaeb0ab5e85273475077fd5e411c7352a9e009e2e92505de867e988a1745\", \"bpt_token_count\": 0, \"geometry_track\": \"raw Track A\"}, \"cli_closed_outward_topology\": {\"components\": [{\"faces\": 200, \"closed\": true, \"signed_volume\": 0.21570347027199924, \"flipped_faces\": 0}], \"flipped_faces\": 0, \"outward_closed_components\": true}, \"rigged_cli\": {\"audit\": {\"device\": \"cuda:0\", \"device_name\": \"Tesla T4\", \"active_voxels\": 152, \"extracted_faces\": 300, \"uv_faces\": 186, \"stages\": [{\"stage\": \"input\", \"vertices\": 152, \"faces\": 300}, {\"stage\": \"initial_holes\", \"vertices\": 152, \"faces\": 300}, {\"stage\": \"coarse\", \"vertices\": 152, \"faces\": 300}, {\"stage\": \"final\", \"vertices\": 95, \"faces\": 186}], \"texture_size\": 128, \"valid_texels\": 15624, \"source_up\": \"z\", \"alpha_mode\": \"BLEND\", \"remesh\": false, \"skinned\": true, \"joint_count\": 3, \"skinae_checkpoint_sha256\": \"f73a7be776b6ac653f2e248d78307eeddea833ea0c5284011e7a92bf2543e9eb\", \"joint_tolerance\": 1e-06, \"total_seconds\": 0.2561785449997842, \"glb_bytes\": 18436, \"glb_sha256\": \"211dd7c94799dd2bdf54ae3b4fc5fd38a86c8bbc916182fcf281f2b0c6645e19\"}, \"vertices\": 149, \"faces\": 186, \"joint_count\": 3, \"maximum_weight_sum_error\": 0.0, \"glb_bytes\": 18436, \"glb_sha256\": \"211dd7c94799dd2bdf54ae3b4fc5fd38a86c8bbc916182fcf281f2b0c6645e19\", \"scope\": \"Synthetic skinned cube through extraction, CuMesh cleanup/UV, PBR bake, SkinAE decode and GLB reload; no source-rig quality claim\"}, \"scope\": \"analytic cube, constant sparse PBR and independent affine sampler oracle; no rendered fidelity claim\"}\n"}
+,{"stream_name":"stderr","time":1039.494308787,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1039.494357163,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1039.673297213,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1039.673328272,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1040.539089446,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1040.631473777,"data":"[NbConvertApp] Writing 703451 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1043.50672193,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1044.082556633,"data":"[NbConvertApp] Writing 980227 bytes to __results__.html\n"}
+]

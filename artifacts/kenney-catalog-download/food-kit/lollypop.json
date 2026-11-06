@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/lollypop",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/lollypop.glb",
+  "sha256": "8da7212ad5bdc530aa9a899ee29df20aa0b2e1c9370aa3aa0b6eaf42fddb44ae",
+  "bytes": 19284,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

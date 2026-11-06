@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/paprika-slice",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/paprika-slice.glb",
+  "sha256": "7afe5dbe24c73acf1341f4edf12372643163b89cb1f9879150490f00d79e7ce7",
+  "bytes": 19724,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

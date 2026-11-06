@@ -1,0 +1,10 @@
+{
+  "id": "space-kit/barrels",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/space-kit/barrels.glb",
+  "sha256": "5eefdb7cb192863ac6b6709293e196ae97e7cceb29c6ab754850a738f3b2379b",
+  "bytes": 20808,
+  "group": "space-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/space-kit"
+}

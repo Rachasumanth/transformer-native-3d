@@ -1,0 +1,521 @@
+{
+  "scope": "two sample assets; unsquared point-to-triangle metric; not research benchmark",
+  "run_source_sha256": {
+    "20": "4b605fe2f41150e0535c7ab6682d4aa2b1c9e9d35b125ef13f4fb6b5fd4e0388",
+    "24": "82db5a79d4311c2970b45f8037db1158b8f0b1f259aff7ac1c10f95cca53b365"
+  },
+  "assets": {
+    "train": {
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "source_faces": 682,
+      "results": {
+        "prepared": {
+          "sha256": "acd504a1f9d3b8a32425458e97340cd07e183e5fd988ee7b838567821fd7345e",
+          "measurements": [
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 0,
+              "mean_distance": 0.0008617802360202582,
+              "reference_to_prediction": 0.0008617296705319279,
+              "prediction_to_reference": 0.0008618308015085885,
+              "precision": 1.0,
+              "recall": 1.0,
+              "fscore": 1.0,
+              "triangles": 1014,
+              "boundary_edges": 4,
+              "nonmanifold_edges": 28
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 1,
+              "mean_distance": 0.0007411730585243194,
+              "reference_to_prediction": 0.0006864000810964502,
+              "prediction_to_reference": 0.0007959460359521886,
+              "precision": 1.0,
+              "recall": 1.0,
+              "fscore": 1.0,
+              "triangles": 1014,
+              "boundary_edges": 4,
+              "nonmanifold_edges": 28
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 2,
+              "mean_distance": 0.0006969554786358265,
+              "reference_to_prediction": 0.0007309063083124277,
+              "prediction_to_reference": 0.0006630046489592254,
+              "precision": 1.0,
+              "recall": 1.0,
+              "fscore": 1.0,
+              "triangles": 1014,
+              "boundary_edges": 4,
+              "nonmanifold_edges": 28
+            }
+          ]
+        },
+        "v20-teacher": {
+          "sha256": "8653b2a093889f36572516cd5513c8d1b7b138f5bfa3c28f90267a1678c77083",
+          "measurements": [
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 0,
+              "mean_distance": 0.014638978530868377,
+              "reference_to_prediction": 0.013925115846984186,
+              "prediction_to_reference": 0.015352841214752569,
+              "precision": 0.3203125,
+              "recall": 0.39453125,
+              "fscore": 0.35356898907103823,
+              "triangles": 792,
+              "boundary_edges": 328,
+              "nonmanifold_edges": 32
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 1,
+              "mean_distance": 0.014433943158857637,
+              "reference_to_prediction": 0.012579552704461223,
+              "prediction_to_reference": 0.01628833361325405,
+              "precision": 0.31640625,
+              "recall": 0.41796875,
+              "fscore": 0.3601645611702128,
+              "triangles": 792,
+              "boundary_edges": 328,
+              "nonmanifold_edges": 32
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 2,
+              "mean_distance": 0.014401762403258217,
+              "reference_to_prediction": 0.013070699015229803,
+              "prediction_to_reference": 0.015732825791286632,
+              "precision": 0.29296875,
+              "recall": 0.41796875,
+              "fscore": 0.344479739010989,
+              "triangles": 792,
+              "boundary_edges": 328,
+              "nonmanifold_edges": 32
+            }
+          ]
+        },
+        "v20-predicted": {
+          "sha256": "09abf90322d63c89600908a2371141f3dcc318758b9548e98641bd60933e7892",
+          "measurements": [
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 0,
+              "mean_distance": 0.01978306642613018,
+              "reference_to_prediction": 0.02156119372682644,
+              "prediction_to_reference": 0.018004939125433928,
+              "precision": 0.3203125,
+              "recall": 0.24609375,
+              "fscore": 0.2783405172413793,
+              "triangles": 570,
+              "boundary_edges": 321,
+              "nonmanifold_edges": 35
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 1,
+              "mean_distance": 0.019560617183528358,
+              "reference_to_prediction": 0.021374779011311344,
+              "prediction_to_reference": 0.017746455355745372,
+              "precision": 0.28515625,
+              "recall": 0.27734375,
+              "fscore": 0.2811957465277778,
+              "triangles": 570,
+              "boundary_edges": 321,
+              "nonmanifold_edges": 35
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 2,
+              "mean_distance": 0.0181942978426609,
+              "reference_to_prediction": 0.01934656634527519,
+              "prediction_to_reference": 0.017042029340046613,
+              "precision": 0.32421875,
+              "recall": 0.3203125,
+              "fscore": 0.3222537878787879,
+              "triangles": 570,
+              "boundary_edges": 321,
+              "nonmanifold_edges": 35
+            }
+          ]
+        },
+        "v24-teacher": {
+          "sha256": "edc1c4704e4010d6b75666af2ae9765f599560d7eb4e2774ce7b14752a623e2e",
+          "measurements": [
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 0,
+              "mean_distance": 0.01478816944618565,
+              "reference_to_prediction": 0.013943508479536529,
+              "prediction_to_reference": 0.01563283041283477,
+              "precision": 0.3359375,
+              "recall": 0.3984375,
+              "fscore": 0.3645279255319149,
+              "triangles": 750,
+              "boundary_edges": 329,
+              "nonmanifold_edges": 29
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 1,
+              "mean_distance": 0.014252458721533292,
+              "reference_to_prediction": 0.012975783971986132,
+              "prediction_to_reference": 0.015529133471080453,
+              "precision": 0.34375,
+              "recall": 0.4296875,
+              "fscore": 0.3819444444444444,
+              "triangles": 750,
+              "boundary_edges": 329,
+              "nonmanifold_edges": 29
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 2,
+              "mean_distance": 0.01424139149202177,
+              "reference_to_prediction": 0.013060775497866751,
+              "prediction_to_reference": 0.01542200748617679,
+              "precision": 0.3359375,
+              "recall": 0.43359375,
+              "fscore": 0.3785691624365482,
+              "triangles": 750,
+              "boundary_edges": 329,
+              "nonmanifold_edges": 29
+            }
+          ]
+        },
+        "v24-predicted": {
+          "sha256": "53b170d5245160ab30377af04ff49ba22f5bf66268b9b63e0b0e27fbb35cc62f",
+          "measurements": [
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 0,
+              "mean_distance": 0.018880117605803805,
+              "reference_to_prediction": 0.021879232773648494,
+              "prediction_to_reference": 0.01588100243795911,
+              "precision": 0.390625,
+              "recall": 0.2734375,
+              "fscore": 0.32169117647058826,
+              "triangles": 520,
+              "boundary_edges": 284,
+              "nonmanifold_edges": 22
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 1,
+              "mean_distance": 0.018917335957182854,
+              "reference_to_prediction": 0.022197585201543343,
+              "prediction_to_reference": 0.01563708671282237,
+              "precision": 0.390625,
+              "recall": 0.27734375,
+              "fscore": 0.32437865497076024,
+              "triangles": 520,
+              "boundary_edges": 284,
+              "nonmanifold_edges": 22
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 2,
+              "mean_distance": 0.019617550304923924,
+              "reference_to_prediction": 0.021487769506435286,
+              "prediction_to_reference": 0.01774733110341256,
+              "precision": 0.3125,
+              "recall": 0.3125,
+              "fscore": 0.3125,
+              "triangles": 520,
+              "boundary_edges": 284,
+              "nonmanifold_edges": 22
+            }
+          ]
+        }
+      }
+    },
+    "validation": {
+      "source_sha256": "b337e526fd6a162013c2984aeec163f5fbb4f717252724dfc3f3458bd51df94b",
+      "source_faces": 4510,
+      "results": {
+        "prepared": {
+          "sha256": "d3201e11b9da7e356577d016aad9bbdb2f8fdafed7c24b36a46ae52476c998d4",
+          "measurements": [
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 0,
+              "mean_distance": 0.00355011783251856,
+              "reference_to_prediction": 0.004095304351610091,
+              "prediction_to_reference": 0.003004931313427029,
+              "precision": 1.0,
+              "recall": 0.96875,
+              "fscore": 0.9841269841269841,
+              "triangles": 1004,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 112
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 1,
+              "mean_distance": 0.003515040096571923,
+              "reference_to_prediction": 0.004278009167090448,
+              "prediction_to_reference": 0.0027520710260533973,
+              "precision": 1.0,
+              "recall": 0.93359375,
+              "fscore": 0.9656565656565657,
+              "triangles": 1004,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 112
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 2,
+              "mean_distance": 0.003454395416100313,
+              "reference_to_prediction": 0.004104531047612316,
+              "prediction_to_reference": 0.0028042597845883096,
+              "precision": 1.0,
+              "recall": 0.97265625,
+              "fscore": 0.9861386138613861,
+              "triangles": 1004,
+              "boundary_edges": 0,
+              "nonmanifold_edges": 112
+            }
+          ]
+        },
+        "v20-teacher": {
+          "sha256": "af2b3abb7b397890667733ffad40802aa850ca1c02a73430025527aab5643a50",
+          "measurements": [
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 0,
+              "mean_distance": 0.01928834930690349,
+              "reference_to_prediction": 0.02096914984352305,
+              "prediction_to_reference": 0.017607548770283928,
+              "precision": 0.35546875,
+              "recall": 0.25,
+              "fscore": 0.29354838709677417,
+              "triangles": 468,
+              "boundary_edges": 389,
+              "nonmanifold_edges": 29
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 1,
+              "mean_distance": 0.02013023744932907,
+              "reference_to_prediction": 0.02121591738840824,
+              "prediction_to_reference": 0.0190445575102499,
+              "precision": 0.29296875,
+              "recall": 0.25390625,
+              "fscore": 0.2720424107142857,
+              "triangles": 468,
+              "boundary_edges": 389,
+              "nonmanifold_edges": 29
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 2,
+              "mean_distance": 0.019666571725366407,
+              "reference_to_prediction": 0.021508187198750126,
+              "prediction_to_reference": 0.017824956251982684,
+              "precision": 0.33984375,
+              "recall": 0.2265625,
+              "fscore": 0.271875,
+              "triangles": 468,
+              "boundary_edges": 389,
+              "nonmanifold_edges": 29
+            }
+          ]
+        },
+        "v20-predicted": {
+          "sha256": "1f83ee8ddd6c6d41352132b9384215a1b032d41a9dd356629a77459982c8bad2",
+          "measurements": [
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 0,
+              "mean_distance": 0.04261026202711855,
+              "reference_to_prediction": 0.038804220276722784,
+              "prediction_to_reference": 0.04641630377751433,
+              "precision": 0.1953125,
+              "recall": 0.11328125,
+              "fscore": 0.14339398734177214,
+              "triangles": 554,
+              "boundary_edges": 288,
+              "nonmanifold_edges": 28
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 1,
+              "mean_distance": 0.042173568196230804,
+              "reference_to_prediction": 0.03758769137851632,
+              "prediction_to_reference": 0.046759445013945286,
+              "precision": 0.15234375,
+              "recall": 0.14453125,
+              "fscore": 0.14833470394736842,
+              "triangles": 554,
+              "boundary_edges": 288,
+              "nonmanifold_edges": 28
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 2,
+              "mean_distance": 0.04245426360561704,
+              "reference_to_prediction": 0.038161544433039596,
+              "prediction_to_reference": 0.04674698277819449,
+              "precision": 0.19140625,
+              "recall": 0.1328125,
+              "fscore": 0.15681475903614459,
+              "triangles": 554,
+              "boundary_edges": 288,
+              "nonmanifold_edges": 28
+            }
+          ]
+        },
+        "v24-teacher": {
+          "sha256": "ac4ee64ac8afea2150f9dc589db6aadeec7d78750865cf2f900d99d92cccd0da",
+          "measurements": [
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 0,
+              "mean_distance": 0.0201565764924174,
+              "reference_to_prediction": 0.022407083721073806,
+              "prediction_to_reference": 0.017906069263761,
+              "precision": 0.3515625,
+              "recall": 0.21484375,
+              "fscore": 0.2667025862068966,
+              "triangles": 442,
+              "boundary_edges": 371,
+              "nonmanifold_edges": 28
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 1,
+              "mean_distance": 0.020668072297303407,
+              "reference_to_prediction": 0.02259099519421688,
+              "prediction_to_reference": 0.018745149400389932,
+              "precision": 0.2890625,
+              "recall": 0.2890625,
+              "fscore": 0.2890625,
+              "triangles": 442,
+              "boundary_edges": 371,
+              "nonmanifold_edges": 28
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 2,
+              "mean_distance": 0.021743843482054645,
+              "reference_to_prediction": 0.02325150746540303,
+              "prediction_to_reference": 0.020236179498706257,
+              "precision": 0.27734375,
+              "recall": 0.21484375,
+              "fscore": 0.24212549603174602,
+              "triangles": 442,
+              "boundary_edges": 371,
+              "nonmanifold_edges": 28
+            }
+          ]
+        },
+        "v24-predicted": {
+          "sha256": "4c1f58ee346d2ea21143ad9dc9679c2837abf783b3d29cb17b57be712ed95d48",
+          "measurements": [
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 0,
+              "mean_distance": 0.04468671652230041,
+              "reference_to_prediction": 0.039708712042044916,
+              "prediction_to_reference": 0.049664721002555916,
+              "precision": 0.1328125,
+              "recall": 0.11328125,
+              "fscore": 0.12227182539682539,
+              "triangles": 498,
+              "boundary_edges": 280,
+              "nonmanifold_edges": 22
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 1,
+              "mean_distance": 0.04336089265119678,
+              "reference_to_prediction": 0.037200748559932176,
+              "prediction_to_reference": 0.04952103674246139,
+              "precision": 0.1484375,
+              "recall": 0.13671875,
+              "fscore": 0.1423373287671233,
+              "triangles": 498,
+              "boundary_edges": 280,
+              "nonmanifold_edges": 22
+            },
+            {
+              "valid": true,
+              "samples": 256,
+              "tolerance": 0.01,
+              "seed": 2,
+              "mean_distance": 0.0415100145650656,
+              "reference_to_prediction": 0.0386275073758304,
+              "prediction_to_reference": 0.04439252175430081,
+              "precision": 0.15234375,
+              "recall": 0.1328125,
+              "fscore": 0.14190924657534246,
+              "triangles": 498,
+              "boundary_edges": 280,
+              "nonmanifold_edges": 22
+            }
+          ]
+        }
+      }
+    }
+  }
+}

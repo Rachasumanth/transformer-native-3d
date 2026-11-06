@@ -1,0 +1,84 @@
+{
+  "baseline_sha256": "5f982e4fb6281f3eca805c88887ed59404f7c0a3d50512545878e2510818cc3a",
+  "baseline_linear_pbr": {
+    "base_r": {
+      "mae": 0.02910553157597728,
+      "rmse": 0.07943279650595782,
+      "p95_absolute_error": 0.20738930490969276,
+      "psnr_db_peak_1": 22.00000294875361
+    },
+    "base_g": {
+      "mae": 0.022989108341399125,
+      "rmse": 0.06507419148470071,
+      "p95_absolute_error": 0.16418451654372856,
+      "psnr_db_peak_1": 23.731824381674368
+    },
+    "base_b": {
+      "mae": 0.023785064856348362,
+      "rmse": 0.07308562675215424,
+      "p95_absolute_error": 0.16181797089420652,
+      "psnr_db_peak_1": 22.72336048710645
+    },
+    "metallic": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": null
+    },
+    "roughness": {
+      "mae": 1.4365678785432934e-18,
+      "rmse": 1.2628977532625829e-17,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": 337.9726361874899
+    },
+    "alpha": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": null
+    }
+  },
+  "scope": "4096 area-weighted samples restricted to 28 patch triangles; linear attribute comparison against nearest source surface; not rendered appearance",
+  "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+  "candidate_sha256": "085b469999395446385caae2e63189dcb3ef16b36a4f509b074a63552cc1f716",
+  "samples": 4096,
+  "seed": 0,
+  "linear_pbr": {
+    "base_r": {
+      "mae": 0.31890772179947996,
+      "rmse": 0.4928969775747027,
+      "p95_absolute_error": 0.8953835107078384,
+      "psnr_db_peak_1": 6.1448768982832025
+    },
+    "base_g": {
+      "mae": 0.2449693020436177,
+      "rmse": 0.3798018194319798,
+      "p95_absolute_error": 0.7577188496261664,
+      "psnr_db_peak_1": 8.408859182323553
+    },
+    "base_b": {
+      "mae": 0.23240935288606762,
+      "rmse": 0.40692715120050843,
+      "p95_absolute_error": 0.9801434922056711,
+      "psnr_db_peak_1": 7.809666639249557
+    },
+    "metallic": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": null
+    },
+    "roughness": {
+      "mae": 1.7076184216646695e-18,
+      "rmse": 1.3768940732700484e-17,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": 337.221989388962
+    },
+    "alpha": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": null
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/ground-riverend",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/ground-riverend.glb",
+  "sha256": "b04a26243915db0feb3037b3777396dcefc8377bf6fe7989277c4e278ec32d23",
+  "bytes": 5464,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

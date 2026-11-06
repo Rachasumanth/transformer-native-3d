@@ -1,0 +1,7 @@
+{
+  "scope": "regular barycentric grid over patch, one-direction distance to source; not continuous maximum",
+  "points": 6468,
+  "mean": 0.000809190766213618,
+  "p95": 0.0028030010519593074,
+  "max": 0.0048649832334140405
+}

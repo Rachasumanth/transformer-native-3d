@@ -1,0 +1,13 @@
+{
+  "name": "CuMesh",
+  "url": "https://github.com/JeffreyXiang/CuMesh.git",
+  "commit": "12289e1062f0603f2f0d0771b02e1395d247f26f",
+  "wheel": "cumesh-0.0.1-cp313-cp313-linux_x86_64.whl",
+  "sha256": "81a81e6a4ff27d7c076c1bafeedb05572a26330c63cde63d548ed0fce2695523",
+  "python": "3.13.15",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "cxx11_abi": true,
+  "architectures": "7.5",
+  "max_jobs": "2"
+}

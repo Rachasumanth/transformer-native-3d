@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/ice-cream-cup",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/ice-cream-cup.glb",
+  "sha256": "0d3e8f24550c1c6c740aaeac7a93827cb36cfc9b97997fbb79f9a93b2aa49cc4",
+  "bytes": 18548,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

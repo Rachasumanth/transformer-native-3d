@@ -1,0 +1,78 @@
+{
+  "scope": "One CesiumMan training asset; 128-to-16 surface occupancy and sampled bind skeleton segments; no held-out data and no image/text conditioning",
+  "device": "Tesla T4",
+  "steps": 200,
+  "seed": 43,
+  "before": {
+    "shape": {
+      "predicted": 1278,
+      "target": 226,
+      "intersection": 66,
+      "iou": 0.0458970792767733
+    },
+    "skeleton": {
+      "predicted": 380,
+      "target": 39,
+      "intersection": 6,
+      "iou": 0.014527845036319613
+    }
+  },
+  "after": {
+    "shape": {
+      "predicted": 148,
+      "target": 226,
+      "intersection": 12,
+      "iou": 0.03314917127071823
+    },
+    "skeleton": {
+      "predicted": 5,
+      "target": 39,
+      "intersection": 0,
+      "iou": 0.0
+    }
+  },
+  "history": [
+    {
+      "step": 25,
+      "shape_loss": 0.41869014501571655,
+      "skeleton_loss": 0.23739510774612427
+    },
+    {
+      "step": 50,
+      "shape_loss": 0.2822842299938202,
+      "skeleton_loss": 0.22343766689300537
+    },
+    {
+      "step": 75,
+      "shape_loss": 0.12762580811977386,
+      "skeleton_loss": 0.15868794918060303
+    },
+    {
+      "step": 100,
+      "shape_loss": 0.09740163385868073,
+      "skeleton_loss": 0.041020892560482025
+    },
+    {
+      "step": 125,
+      "shape_loss": 0.22290006279945374,
+      "skeleton_loss": 0.07070384174585342
+    },
+    {
+      "step": 150,
+      "shape_loss": 0.24617555737495422,
+      "skeleton_loss": 0.05318587273359299
+    },
+    {
+      "step": 175,
+      "shape_loss": 0.2651522159576416,
+      "skeleton_loss": 0.15051019191741943
+    },
+    {
+      "step": 200,
+      "shape_loss": 0.6234951615333557,
+      "skeleton_loss": 0.46551820635795593
+    }
+  ],
+  "checkpoint_sha256": "b9e937f7d8d63361683d31d664cf5e950a9d00e59d735912b63f54a889868824",
+  "source_sha256": "55b24662d7dc87bf13e84265827417ebf88a7bc6e4667665af38dcb67f6759df"
+}

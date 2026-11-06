@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/stone-smallh",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/stone-smallh.glb",
+  "sha256": "c13f8f724cb64f06df2fd7fa1b9964690f2f44f5f45c459874d6e9546c90613b",
+  "bytes": 5772,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

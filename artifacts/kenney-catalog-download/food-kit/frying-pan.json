@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/frying-pan",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/frying-pan.glb",
+  "sha256": "dbd6f6185dd40b983ebb828998d1e3002339f5db75786af528c54b5ea8293afc",
+  "bytes": 29952,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

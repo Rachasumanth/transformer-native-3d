@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/tomato-slice",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/tomato-slice.glb",
+  "sha256": "5872a8b33aacb41d750ebfd62c32de229d0c0da0a2ebe989e7efb19e66ed01e0",
+  "bytes": 23084,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/flag-high",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/flag-high.glb",
+  "sha256": "5fb9d8e4f7dc42341a258e566fb9fbb9b7c2de2454c707a4e7301cfd1719f295",
+  "bytes": 25292,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

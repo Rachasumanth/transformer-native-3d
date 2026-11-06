@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/wholer-ham",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/wholer-ham.glb",
+  "sha256": "a556c57fbd5ea2566e5cf84707ee5967a9cca9e2ca575924270634792e607891",
+  "bytes": 23660,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

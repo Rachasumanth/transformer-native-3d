@@ -1,0 +1,100 @@
+{
+  "source_sha256": "1519d5a19e540294aab6e4e24edc2b6ac2f3224fe05575e14fe334cef437f824",
+  "cumesh_commit": "12289e1062f0603f2f0d0771b02e1395d247f26f",
+  "device": "Tesla T4",
+  "results": [
+    {
+      "remesh": false,
+      "stages": [
+        {
+          "stage": "input",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "initial_holes",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "coarse",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "final",
+          "vertices": 95,
+          "faces": 186
+        }
+      ],
+      "uv_vertices": 148,
+      "uv_faces": 186,
+      "closed_after_position_weld": true,
+      "finite_uv_normals": true,
+      "topology": {
+        "components": [
+          {
+            "faces": 186,
+            "closed": true,
+            "signed_volume": 0.21573499060227766,
+            "flipped_faces": 0
+          }
+        ],
+        "flipped_faces": 0,
+        "outward_closed_components": true
+      },
+      "source_component_count_preserved": true,
+      "outward_orientation_preserved": true
+    },
+    {
+      "remesh": true,
+      "stages": [
+        {
+          "stage": "input",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "initial_holes",
+          "vertices": 152,
+          "faces": 300
+        },
+        {
+          "stage": "narrow_band_remesh",
+          "vertices": 160,
+          "faces": 312
+        },
+        {
+          "stage": "remesh_simplify",
+          "vertices": 104,
+          "faces": 200
+        }
+      ],
+      "uv_vertices": 166,
+      "uv_faces": 200,
+      "closed_after_position_weld": true,
+      "finite_uv_normals": true,
+      "topology": {
+        "components": [
+          {
+            "faces": 188,
+            "closed": true,
+            "signed_volume": 0.25087134722093835,
+            "flipped_faces": 0
+          },
+          {
+            "faces": 12,
+            "closed": true,
+            "signed_volume": 0.015292853176586532,
+            "flipped_faces": 12
+          }
+        ],
+        "flipped_faces": 12,
+        "outward_closed_components": true
+      },
+      "source_component_count_preserved": false,
+      "outward_orientation_preserved": false
+    }
+  ],
+  "scope": "analytic extracted cube; no texture baking or GLB export"
+}

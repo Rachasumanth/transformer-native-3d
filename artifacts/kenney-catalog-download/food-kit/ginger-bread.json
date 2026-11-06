@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/ginger-bread",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/ginger-bread.glb",
+  "sha256": "0f33e067f3d3cfad58df1cbb59e6ca6076317040658218457c539c8e866732b5",
+  "bytes": 18504,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

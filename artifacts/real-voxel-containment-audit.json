@@ -1,0 +1,40 @@
+{
+  "scope": "CesiumMan bind skeleton segments sampled and rasterized at coarse resolution; downsampled 128-grid surface and 6-connected fill, not a watertight ground-truth occupancy or bone containment benchmark",
+  "container_sha256": "fa998a60b1b239e19785e5be83917643d43c20ff47606b831260326752d48363",
+  "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+  "rows": [
+    {
+      "grid": 16,
+      "surface_voxels": 226,
+      "solid_voxels": 234,
+      "interior_voxels": 8,
+      "bone_sample_out_of_aabb": 0,
+      "bone_voxels": 39,
+      "bone_on_surface": 37,
+      "bone_in_bounding_box": 39,
+      "bone_in_filled_shell": 39
+    },
+    {
+      "grid": 32,
+      "surface_voxels": 918,
+      "solid_voxels": 1130,
+      "interior_voxels": 212,
+      "bone_sample_out_of_aabb": 0,
+      "bone_voxels": 72,
+      "bone_on_surface": 42,
+      "bone_in_bounding_box": 72,
+      "bone_in_filled_shell": 72
+    },
+    {
+      "grid": 64,
+      "surface_voxels": 3704,
+      "solid_voxels": 6186,
+      "interior_voxels": 2482,
+      "bone_sample_out_of_aabb": 0,
+      "bone_voxels": 152,
+      "bone_on_surface": 12,
+      "bone_in_bounding_box": 152,
+      "bone_in_filled_shell": 152
+    }
+  ]
+}

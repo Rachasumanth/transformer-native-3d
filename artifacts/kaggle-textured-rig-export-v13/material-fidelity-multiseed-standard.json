@@ -1,0 +1,28 @@
+{
+  "output_sha256": "52bebe3dc8c2675e028124bbd43d62db294f9661e9015f3953833fce62f6bff3",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "samples_per_seed": 4096,
+  "channel_rmse": {
+    "base_r": {
+      "mean": 0.12204200374273574,
+      "stddev": 0.0025061127881339054
+    },
+    "base_g": {
+      "mean": 0.09546661366766127,
+      "stddev": 0.0024203762263714217
+    },
+    "base_b": {
+      "mean": 0.1013737520495745,
+      "stddev": 0.005171677381719743
+    }
+  },
+  "source_projection_distance_mean": 6.24767538846215e-05,
+  "source_projection_distance_p95_mean": 0.0002595370005374047,
+  "scope": "Five independent area-weighted sample seeds; source correspondence by nearest triangle; attribute-space only."
+}

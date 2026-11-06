@@ -1,0 +1,189 @@
+{
+  "kaggle_kernel": "sumu143/transformer-native-3d-rigged-export-probe",
+  "kaggle_version": 6,
+  "source_bundle_sha256": "0195d63d8acd18731edbf363bb7e997a41ee017c33070b60efb61395c23694ea",
+  "device": "Tesla T4",
+  "test_count": 20,
+  "source_rig_sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401",
+  "skin_checkpoint_sha256": "95bc334058ada68c97800fcd5c3c83998059a03ea1d69e9e033a6c20ac4439a7",
+  "container_sha256": "267ac514202dc843b1a249bafeb620e4b37236d97e4763d8a043a2e5bae60fa2",
+  "container_cli_audit": {
+    "device": "cuda:0",
+    "device_name": "Tesla T4",
+    "active_voxels": 584,
+    "extracted_faces": 1164,
+    "uv_faces": 992,
+    "stages": [
+      {
+        "stage": "input",
+        "vertices": 584,
+        "faces": 1164
+      },
+      {
+        "stage": "initial_holes",
+        "vertices": 584,
+        "faces": 1164
+      },
+      {
+        "stage": "coarse",
+        "vertices": 584,
+        "faces": 1164
+      },
+      {
+        "stage": "final",
+        "vertices": 498,
+        "faces": 992
+      }
+    ],
+    "texture_size": 128,
+    "valid_texels": 8185,
+    "source_up": "y",
+    "alpha_mode": "BLEND",
+    "remesh": false,
+    "skinned": true,
+    "joint_count": 2,
+    "skinae_checkpoint_sha256": "95bc334058ada68c97800fcd5c3c83998059a03ea1d69e9e033a6c20ac4439a7",
+    "joint_tolerance": 0.0078125,
+    "total_seconds": 3.714004253999974,
+    "glb_bytes": 49512,
+    "glb_sha256": "8eebd956f50816fcc4761dd951bde4e7d18db8b70c03bb9e681f6457b9b7e890",
+    "input_sha256": "267ac514202dc843b1a249bafeb620e4b37236d97e4763d8a043a2e5bae60fa2",
+    "bpt_token_count": 0,
+    "geometry_track": "raw Track A"
+  },
+  "container_cli_surface": {
+    "valid": true,
+    "samples": 512,
+    "tolerance": 0.01,
+    "seed": 0,
+    "mean_distance": 0.00046833349764217256,
+    "reference_to_prediction": 0.00048206118584472805,
+    "prediction_to_reference": 0.0004546058094396171,
+    "precision": 1.0,
+    "recall": 1.0,
+    "fscore": 1.0,
+    "triangles": 992,
+    "boundary_edges": 0,
+    "boundary_edge_length": 0.0,
+    "mean_boundary_edge_length": 0.0,
+    "nonmanifold_edges": 0
+  },
+  "container_cli_skin_weights": {
+    "source_sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401",
+    "output_sha256": "8eebd956f50816fcc4761dd951bde4e7d18db8b70c03bb9e681f6457b9b7e890",
+    "source_vertices": 160,
+    "source_faces": 188,
+    "output_vertices": 659,
+    "output_faces": 992,
+    "joint_count": 2,
+    "normalization_scale": 0.10928777093401539,
+    "sample_count": 659,
+    "output_to_source_joint_ids": [
+      0,
+      1
+    ],
+    "skinae": {
+      "weight_mae": 0.20730127986704427,
+      "weight_kl": 0.15851087468058728,
+      "dominant_joint_accuracy": 0.8983308042488619
+    },
+    "nearest_joint_baseline": {
+      "weight_mae": 0.30997660973209223,
+      "weight_kl": 5.3471864697138605,
+      "dominant_joint_accuracy": 0.6904400606980273
+    },
+    "target": "Source skin weights barycentrically projected from the closest source triangle to each output vertex."
+  },
+  "validator": "Khronos glTF Validator npm package gltf-validator@2.0.0-dev.3.10",
+  "artifacts": {
+    "export-build.log": {
+      "sha256": "3d15eee0689101678a51f8eee6ae79b0e5010e1f728fd2723f83404a36460ae0",
+      "bytes": 943
+    },
+    "export-probe.json": {
+      "sha256": "c2928e04ef5c6f326e366f3e14a4b05d3c9c97f34a5216d0ce8af49fe9641651",
+      "bytes": 10701
+    },
+    "export-real-rigged-container.glb": {
+      "sha256": "8eebd956f50816fcc4761dd951bde4e7d18db8b70c03bb9e681f6457b9b7e890",
+      "bytes": 49512
+    },
+    "export-real-rigged-container.glb.json": {
+      "sha256": "7ac14fd8c22eccd9d13a08713d07bdf4535aba7317afa482c76a1e2072ffcc6c",
+      "bytes": 1039
+    },
+    "export-real-rigged-container.glb.validator.json": {
+      "sha256": "195fcbc9bedf8b6bf52665b34c0f4819a3780ef8ccf6e8254b740ff0bba88d41",
+      "bytes": 113
+    },
+    "export-real-rigged-input.t3d": {
+      "sha256": "267ac514202dc843b1a249bafeb620e4b37236d97e4763d8a043a2e5bae60fa2",
+      "bytes": 29408
+    },
+    "export-real-rigged-strict.glb": {
+      "sha256": "6b8cd9bc31f4d3e928b13dc51ed2e932f2b8d9a30ca704162b2677cfabb971fe",
+      "bytes": 57816
+    },
+    "export-real-rigged-strict.glb.validator.json": {
+      "sha256": "3aa9e059824b1b3e60cec70d1b0a50341de499203192139e7767d7be5470ca51",
+      "bytes": 110
+    },
+    "export-real-rigged.glb": {
+      "sha256": "2051fd5f1acb8df599e8a9c77899b0a881a4c803f3f073c802eb71416c405192",
+      "bytes": 53708
+    },
+    "export-real-rigged.glb.validator.json": {
+      "sha256": "be843381026436e57ac4597ffc70e44852e71f78602d97da8eb1608a5b384734",
+      "bytes": 103
+    },
+    "rigged-export-tests.log": {
+      "sha256": "4522ab6131e96a6385a1b542d02cbab58ca885ecc6e633319aff83b469dd4fce",
+      "bytes": 2968
+    },
+    "skin-weight-audit-container-cli.json": {
+      "sha256": "d641d5f486f5224471015bdecbc6265d58cf4b1cb3f7dca0424ed68df3797a2c",
+      "bytes": 840
+    },
+    "transformer-native-3d-rigged-export-probe.log": {
+      "sha256": "918e23660e2f97592ddc730de4e3df0ca4aefe0aee19b31074167f09984be2a9",
+      "bytes": 52379
+    },
+    "container-field-audit.json": {
+      "sha256": "f2f29b0c5087fbf2fa33a215c64b8cad873e3d9fafab70a0515428121d56ab40",
+      "bytes": 623
+    }
+  },
+  "container_field_auditor": "tools/audit_rigged_container.py",
+  "container_field_auditor_sha256": "3336719784f6cefc21c9bd31e8d139d18be10dc80a676483e11f412d864feda4",
+  "independent_container_field_audit": {
+    "container_sha256": "267ac514202dc843b1a249bafeb620e4b37236d97e4763d8a043a2e5bae60fa2",
+    "source_glb_sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401",
+    "curve": "z",
+    "grid_size": [
+      32,
+      32,
+      32
+    ],
+    "active_voxels": 584,
+    "skeleton_field_shape": [
+      584,
+      6
+    ],
+    "skin_embedding_shape": [
+      584,
+      4
+    ],
+    "cluster_tolerance": 0.0078125,
+    "inferred_joint_count": 2,
+    "inferred_parent_ids_in_source_order": [
+      -1,
+      0
+    ],
+    "source_parent_ids": [
+      -1,
+      0
+    ],
+    "parent_hierarchy_matches": true,
+    "max_joint_position_error": 3.369716894629764e-05
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/cooking-fork",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/cooking-fork.glb",
+  "sha256": "aa49b0efa23cca9f3b0355615b7acee583051380eeb0fdb4d28d262e531d1d1a",
+  "bytes": 15612,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

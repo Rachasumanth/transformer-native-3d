@@ -1,0 +1,36 @@
+{
+  "fixture": "trimesh icosphere, subdivisions=5, radius=0.5",
+  "provenance": "Synthetic tokenizer fixture; not an artist asset or curated corpus",
+  "vertices": 10242,
+  "faces": 20480,
+  "tokens": 35996,
+  "tokens_per_face": 1.7576171875,
+  "fraction_of_raw_9_tokens": 0.19529079861111112,
+  "sequence_reduction": 0.8047092013888889,
+  "patches": 3551,
+  "encode_seconds": 2.6711025550002887,
+  "quantization": {
+    "bins": 128,
+    "source_faces": 20480,
+    "source_unique_positions": 10242,
+    "quantized_unique_positions": 10242,
+    "source_zero_area_faces": 0,
+    "source_tiny_faces_1e_8": 0,
+    "collapsed_faces": 0,
+    "collinear_faces": 0,
+    "eligible": true,
+    "max_abs_coordinate_error": 0.00390625,
+    "rms_coordinate_error": 0.0022163904938781462
+  },
+  "oriented_quantized_faces_preserved": true,
+  "decoded_vertices": 10242,
+  "decoded_faces": 20480,
+  "source_edge_topology": {
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0
+  },
+  "decoded_edge_topology": {
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0
+  }
+}

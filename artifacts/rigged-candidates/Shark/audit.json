@@ -1,0 +1,13 @@
+{
+  "asset": "Shark",
+  "sha256": "0fc450c99f0fd9f2e5d774ef58cd42b8d8d927bed138444254204b366595dc42",
+  "bytes": 61616,
+  "source": "https://github.com/Ariescar/gobkit-free-assets/tree/main/animal",
+  "license": "CC0-1.0",
+  "skins": 1,
+  "animations": 1,
+  "vertices": 348,
+  "faces": 286,
+  "joints": 16,
+  "import": "ok"
+}

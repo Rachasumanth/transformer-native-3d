@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/carrot",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/carrot.glb",
+  "sha256": "6fe79d7fe695c035de72190b23269a151390025175479560f034bbed5e51465c",
+  "bytes": 27108,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

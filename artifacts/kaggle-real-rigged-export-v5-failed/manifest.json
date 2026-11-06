@@ -1,0 +1,57 @@
+{
+  "kaggle_kernel": "sumu143/transformer-native-3d-rigged-export-probe",
+  "kaggle_version": 5,
+  "source_bundle_sha256": "82f453990d8b3aaa7c74e1b198a1f2ac9c5610143478007539e7956fa143e814",
+  "device": "Tesla T4",
+  "test_suites_passed": {
+    "articulation": 7,
+    "export": 2,
+    "glb": 4,
+    "metrics": 3,
+    "skin_ae": 3
+  },
+  "failure": "CLI exported 10 inferred joints from a 2-joint source rig after float16 container serialization; the probe rejected the changed joint count.",
+  "joint_tolerance": 1e-06,
+  "source_joint_count": 2,
+  "inferred_joint_count": 10,
+  "input_container_sha256": "267ac514202dc843b1a249bafeb620e4b37236d97e4763d8a043a2e5bae60fa2",
+  "glb_sha256": "bd22d490bc1d2bd3716544042a80b7f02f0ea80c9c3ccabc8441f9f63c0200e2",
+  "glb_validator": "Khronos glTF Validator",
+  "glb_validator_result": {
+    "file": "artifacts/kaggle-real-rigged-export-v5-failed/export-real-rigged-container.glb",
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0,
+    "messages": []
+  },
+  "artifacts": {
+    "export-build.log": {
+      "sha256": "3d15eee0689101678a51f8eee6ae79b0e5010e1f728fd2723f83404a36460ae0",
+      "bytes": 943
+    },
+    "export-real-rigged-container.glb": {
+      "sha256": "bd22d490bc1d2bd3716544042a80b7f02f0ea80c9c3ccabc8441f9f63c0200e2",
+      "bytes": 77572
+    },
+    "export-real-rigged-container.glb.json": {
+      "sha256": "278a24ba0331c66425936a227a8654501607f65f78a657cb4c0e3a9eb8553cb0",
+      "bytes": 1037
+    },
+    "export-real-rigged-container.glb.validator.json": {
+      "sha256": "d0d73144f30abc2ec47cf5fb79f5b99e368d4cc864dffd55857261a47a3ca844",
+      "bytes": 159
+    },
+    "export-real-rigged-input.t3d": {
+      "sha256": "267ac514202dc843b1a249bafeb620e4b37236d97e4763d8a043a2e5bae60fa2",
+      "bytes": 29408
+    },
+    "rigged-export-tests.log": {
+      "sha256": "38af08099f00abbe924704d1303e6a63d74ee0b72ff512d18887ca7813345a2a",
+      "bytes": 2817
+    },
+    "transformer-native-3d-rigged-export-probe.log": {
+      "sha256": "16204dea8c171678e032b39084373eecd18969a9877bf7e6fe9841a845c83e32",
+      "bytes": 42003
+    }
+  }
+}

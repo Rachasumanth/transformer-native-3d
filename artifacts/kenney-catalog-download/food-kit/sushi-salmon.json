@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/sushi-salmon",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/sushi-salmon.glb",
+  "sha256": "6b5a6e0ee94d5f218670bfd8c139c4a1c69345b95862961344f3c3cfb0cea1cf",
+  "bytes": 19596,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

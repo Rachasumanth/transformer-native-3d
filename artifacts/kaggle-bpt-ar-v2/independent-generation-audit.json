@@ -1,0 +1,22 @@
+{
+  "source_sha256": "9d93e620dbec3d1fd3c04f9435fe00cee43bb7300b07e201619eb9e37cb7795b",
+  "cases": {
+    "heldout-box": {
+      "matches_training_stream": true,
+      "faces": 681,
+      "decodes_to_saved_mesh": true
+    },
+    "heldout-lime": {
+      "matches_training_stream": true,
+      "faces": 681,
+      "decodes_to_saved_mesh": true
+    },
+    "train-avocado": {
+      "matches_training_stream": true,
+      "faces": 681,
+      "decodes_to_saved_mesh": true
+    }
+  },
+  "conclusion": "Both held-out clouds produced the exact Avocado training stream; measured condition generalization fails.",
+  "downloaded_model_test_probe_sources_match_local": true
+}

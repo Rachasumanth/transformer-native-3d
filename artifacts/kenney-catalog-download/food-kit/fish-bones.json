@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/fish-bones",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/fish-bones.glb",
+  "sha256": "c6f2f000401a08feba8284c40901516e914b68cbc4c68f701e67feefea642fe7",
+  "bytes": 44808,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

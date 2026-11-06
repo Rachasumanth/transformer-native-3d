@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/cupcake",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/cupcake.glb",
+  "sha256": "084ea2ba2ad001f48f46ff36db4d729dab4ae025fd28393ff8ede551b2429f01",
+  "bytes": 33420,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

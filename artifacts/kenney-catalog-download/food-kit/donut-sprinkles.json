@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/donut-sprinkles",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/donut-sprinkles.glb",
+  "sha256": "dd785a67c51ec17452ea01b21616ec5031ba7911210d7dbe4a5ccabdaa02b0e2",
+  "bytes": 30748,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

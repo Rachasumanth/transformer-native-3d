@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/wheel-default",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/wheel-default.glb",
+  "sha256": "4b6eb5df137de5897448850943a36643cc6f33c1660e322b332bafdc6d251daa",
+  "bytes": 39220,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

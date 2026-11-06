@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/castle-gate",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/castle-gate.glb",
+  "sha256": "c7a22b53a449fac0810690bc3dd18fc2a11fd88503ae05ca111a233308725611",
+  "bytes": 77528,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

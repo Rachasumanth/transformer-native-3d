@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/cake-slicer",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/cake-slicer.glb",
+  "sha256": "1b42b959fec5f423e2cdb4a978925e1d3552cbcfc86926a5efca049316f0da05",
+  "bytes": 15800,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

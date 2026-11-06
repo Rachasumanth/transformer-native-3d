@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/patch-grass-foliage",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/patch-grass-foliage.glb",
+  "sha256": "14567bb3747dae322fd2b865ff1b13b599fd9b9b91809830f3ac0724813eb064",
+  "bytes": 40804,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

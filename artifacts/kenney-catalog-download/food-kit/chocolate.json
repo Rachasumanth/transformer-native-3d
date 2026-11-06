@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/chocolate",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/chocolate.glb",
+  "sha256": "675edbdd34da023705e4d10315bee5920f2bb84290df71c546c15966b1143b85",
+  "bytes": 23396,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

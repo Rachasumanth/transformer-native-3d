@@ -1,0 +1,132 @@
+{
+  "version": 2,
+  "scope": "Three-rig area-weighted vertex sampling; five animated times per clip; research pilot, not a representative corpus",
+  "sampling": "1024 vertices sampled with face area weighting; shared normalization and exact original vertex skinning",
+  "split_policy": "RiggedSimple and CesiumMan train; Fox asset-held-out validation; no animation frame crosses source split",
+  "assets": [
+    {
+      "name": "RiggedSimple",
+      "split": "train",
+      "file": "RiggedSimple-poses.npz",
+      "sha256": "ba4fbff8d2b261414aab728da9e7a789dbc6b7d9c8aa446f39702b432e554fc9",
+      "source_sha256": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401",
+      "samples": 1024,
+      "poses": 5,
+      "joints": 2,
+      "faces": 188,
+      "animations": [
+        {
+          "animation_index": 0,
+          "name": null,
+          "times": [
+            0.04166661947965622,
+            0.5520832184702158,
+            1.0624998174607754,
+            1.572916416451335,
+            2.0833330154418945
+          ]
+        }
+      ],
+      "normalization": {
+        "center": [
+          -5.218048215738236e-15,
+          2.434097448045236e-07,
+          -2.0861626381929455e-07
+        ],
+        "scale": 0.10928777093401539
+      },
+      "max_interpolated_lbs_vs_posed_triangle": 0.0534894318838912,
+      "max_lbs_target_error": 6.583051377633195e-09
+    },
+    {
+      "name": "CesiumMan",
+      "split": "train",
+      "file": "CesiumMan-poses.npz",
+      "sha256": "2c0f4133c0f5df645a3e845d91a5129406215b016c2974c80d8f8daa7e31db61",
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "samples": 1024,
+      "poses": 5,
+      "joints": 19,
+      "faces": 4672,
+      "animations": [
+        {
+          "animation_index": 0,
+          "name": null,
+          "times": [
+            0.04166661947965622,
+            0.5312499646097422,
+            1.020833309739828,
+            1.510416654869914,
+            2.0
+          ]
+        }
+      ],
+      "normalization": {
+        "center": [
+          -6.53480239920512e-08,
+          0.7532751040569674,
+          0.02497701394774722
+        ],
+        "scale": 0.6637680165409462
+      },
+      "max_interpolated_lbs_vs_posed_triangle": 0.005605770160792119,
+      "max_lbs_target_error": 7.329834422363544e-08
+    },
+    {
+      "name": "Fox",
+      "split": "validation",
+      "file": "Fox-poses.npz",
+      "sha256": "92f8433d1f9c85d79d4e881131b25c4be76cccda926207811d96b20eea8b02ca",
+      "source_sha256": "d97044e701822bac5a62696459b27d7b375aada5de8574ed4362edbba94771f7",
+      "samples": 1024,
+      "poses": 15,
+      "joints": 24,
+      "faces": 576,
+      "animations": [
+        {
+          "animation_index": 0,
+          "name": "Survey",
+          "times": [
+            0.0,
+            0.8541666865348816,
+            1.7083333730697632,
+            2.5625000596046448,
+            3.4166667461395264
+          ]
+        },
+        {
+          "animation_index": 1,
+          "name": "Walk",
+          "times": [
+            0.0,
+            0.1770833283662796,
+            0.3541666567325592,
+            0.5312499850988388,
+            0.7083333134651184
+          ]
+        },
+        {
+          "animation_index": 2,
+          "name": "Run",
+          "times": [
+            0.0,
+            0.28958332538604736,
+            0.5791666507720947,
+            0.8687499761581421,
+            1.1583333015441895
+          ]
+        }
+      ],
+      "normalization": {
+        "center": [
+          -6.378095989134636e-07,
+          39.392726731703334,
+          -10.735073004654097
+        ],
+        "scale": 0.00646329413711845
+      },
+      "max_interpolated_lbs_vs_posed_triangle": 0.042143913272453246,
+      "max_lbs_target_error": 1.95988149874451e-08
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/tower-watch",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/tower-watch.glb",
+  "sha256": "2be207df5f21c06b09d673890920de56e27777b75e11dd9d1f8450f5d49cb651",
+  "bytes": 31764,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/soy",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/soy.glb",
+  "sha256": "3204745c660d7692d9a15aa9421d8b6e68c790d5340c8d5f72a3c61bb64aadfd",
+  "bytes": 15884,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

@@ -1,0 +1,2356 @@
+{
+  "scope": "Warm-start from triton-mixed-600.pt, trained on 649 Kenney train assets across 4 packs; evaluated on 24 held-out assets from pirate and space packs",
+  "device": "Tesla T4",
+  "train_count": 649,
+  "validation_count": 219,
+  "old_manifest_sha256": "aa53c436015f729bbef385d8339bf8e1c0948332b6e0eac7ed0e54639b1dfa64",
+  "corpus_manifest_sha256": "af2f3179db2cbfe1288a3ab9e67e0d7093df61a7591b9c7586cc782fc72824bc",
+  "initial_checkpoint_sha256": "a765fedf81532528a727e703cdcd13646e291f6b7d0b9f91173878bfef3fb755",
+  "elapsed_seconds": 641.278750254,
+  "rows": [
+    {
+      "step": 600,
+      "mean_val_iou": 0.09976896971252946,
+      "mean_val_loss": 1.484472468495369,
+      "cases": [
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-boat-row-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.475373387336731,
+            "attribute": 0.7908955216407776,
+            "occupancy": 0.6844742894172668,
+            "kl": 3.5500810146331787
+          },
+          "free_occupancy": {
+            "target": 2236,
+            "predicted": 2719,
+            "intersection": 507,
+            "precision": 0.18646561235748438,
+            "recall": 0.22674418604651161,
+            "iou": 0.11398381294964029
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-bottle",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.3932886123657227,
+            "attribute": 0.7653060555458069,
+            "occupancy": 0.6279798746109009,
+            "kl": 2.6471972465515137
+          },
+          "free_occupancy": {
+            "target": 1608,
+            "predicted": 2788,
+            "intersection": 536,
+            "precision": 0.19225251076040173,
+            "recall": 0.3333333333333333,
+            "iou": 0.138860103626943
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-castle-door",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.417525053024292,
+            "attribute": 0.7728955149650574,
+            "occupancy": 0.6446248292922974,
+            "kl": 4.822227954864502
+          },
+          "free_occupancy": {
+            "target": 3431,
+            "predicted": 3034,
+            "intersection": 705,
+            "precision": 0.23236651285431772,
+            "recall": 0.2054794520547945,
+            "iou": 0.12239583333333333
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-grass-patch",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.495934009552002,
+            "attribute": 0.8193371295928955,
+            "occupancy": 0.6765925288200378,
+            "kl": 4.325044631958008
+          },
+          "free_occupancy": {
+            "target": 2937,
+            "predicted": 2461,
+            "intersection": 634,
+            "precision": 0.2576188541243397,
+            "recall": 0.21586653047327203,
+            "iou": 0.1330814441645676
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-hole",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.522849440574646,
+            "attribute": 0.8380489945411682,
+            "occupancy": 0.6847978234291077,
+            "kl": 2.6587741374969482
+          },
+          "free_occupancy": {
+            "target": 1747,
+            "predicted": 2331,
+            "intersection": 313,
+            "precision": 0.13427713427713428,
+            "recall": 0.17916428162564396,
+            "iou": 0.08313413014608234
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-palm-straight",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.4874886274337769,
+            "attribute": 0.8261135816574097,
+            "occupancy": 0.6613725423812866,
+            "kl": 2.481982946395874
+          },
+          "free_occupancy": {
+            "target": 1606,
+            "predicted": 2681,
+            "intersection": 333,
+            "precision": 0.12420738530399104,
+            "recall": 0.20734744707347447,
+            "iou": 0.08421851289833081
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-rocks-a",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.5118664503097534,
+            "attribute": 0.8533033132553101,
+            "occupancy": 0.6585577726364136,
+            "kl": 5.41146183013916
+          },
+          "free_occupancy": {
+            "target": 3711,
+            "predicted": 2613,
+            "intersection": 701,
+            "precision": 0.26827401454267125,
+            "recall": 0.18889787119374832,
+            "iou": 0.12466654810599324
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.4237743616104126,
+            "attribute": 0.7827005386352539,
+            "occupancy": 0.6410703659057617,
+            "kl": 3.480928421020508
+          },
+          "free_occupancy": {
+            "target": 2220,
+            "predicted": 2374,
+            "intersection": 493,
+            "precision": 0.2076663858466723,
+            "recall": 0.22207207207207208,
+            "iou": 0.1202145818093148
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-medium",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.4291284084320068,
+            "attribute": 0.7887148857116699,
+            "occupancy": 0.640408992767334,
+            "kl": 4.503232002258301
+          },
+          "free_occupancy": {
+            "target": 2994,
+            "predicted": 2611,
+            "intersection": 668,
+            "precision": 0.25584067407123706,
+            "recall": 0.22311289245156982,
+            "iou": 0.13530484099655662
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-pirate-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.427349328994751,
+            "attribute": 0.7861644625663757,
+            "occupancy": 0.6411814093589783,
+            "kl": 3.486481189727783
+          },
+          "free_occupancy": {
+            "target": 2216,
+            "predicted": 2375,
+            "intersection": 496,
+            "precision": 0.20884210526315788,
+            "recall": 0.22382671480144403,
+            "iou": 0.12112332112332112
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-pirate-small",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.4888025522232056,
+            "attribute": 0.8327787518501282,
+            "occupancy": 0.6560198068618774,
+            "kl": 3.9040629863739014
+          },
+          "free_occupancy": {
+            "target": 2607,
+            "predicted": 2904,
+            "intersection": 585,
+            "precision": 0.20144628099173553,
+            "recall": 0.2243958573072497,
+            "iou": 0.11875761266747868
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-wreck",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.448245882987976,
+            "attribute": 0.8021734952926636,
+            "occupancy": 0.6460679173469543,
+            "kl": 4.42735481262207
+          },
+          "free_occupancy": {
+            "target": 2170,
+            "predicted": 2006,
+            "intersection": 387,
+            "precision": 0.19292123629112662,
+            "recall": 0.1783410138248848,
+            "iou": 0.1021377672209026
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-barrel",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.4963431358337402,
+            "attribute": 0.8024179935455322,
+            "occupancy": 0.6939188241958618,
+            "kl": 6.328548908233643
+          },
+          "free_occupancy": {
+            "target": 3856,
+            "predicted": 3404,
+            "intersection": 517,
+            "precision": 0.1518801410105758,
+            "recall": 0.13407676348547717,
+            "iou": 0.0766721044045677
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-corridor-corner",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.5542241334915161,
+            "attribute": 0.9016101956367493,
+            "occupancy": 0.6526064872741699,
+            "kl": 7.547597408294678
+          },
+          "free_occupancy": {
+            "target": 6068,
+            "predicted": 2832,
+            "intersection": 785,
+            "precision": 0.2771892655367232,
+            "recall": 0.12936717205009887,
+            "iou": 0.09673444239063463
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-craft-speedera",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.4895057678222656,
+            "attribute": 0.8090878129005432,
+            "occupancy": 0.6804148554801941,
+            "kl": 3.044067859649658
+          },
+          "free_occupancy": {
+            "target": 2014,
+            "predicted": 2090,
+            "intersection": 401,
+            "precision": 0.19186602870813396,
+            "recall": 0.19910625620655412,
+            "iou": 0.10829057520928977
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-monorail-trainfront",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.4779412746429443,
+            "attribute": 0.8230069279670715,
+            "occupancy": 0.6549289226531982,
+            "kl": 5.447575569152832
+          },
+          "free_occupancy": {
+            "target": 3418,
+            "predicted": 2201,
+            "intersection": 378,
+            "precision": 0.1717401181281236,
+            "recall": 0.11059098888238736,
+            "iou": 0.07212364052661706
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-monorail-trainpassenger",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.5025821924209595,
+            "attribute": 0.8304088115692139,
+            "occupancy": 0.6721661686897278,
+            "kl": 7.269741058349609
+          },
+          "free_occupancy": {
+            "target": 4200,
+            "predicted": 2959,
+            "intersection": 561,
+            "precision": 0.1895910780669145,
+            "recall": 0.13357142857142856,
+            "iou": 0.08502576538344953
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-pipe-end",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.4623253345489502,
+            "attribute": 0.8057996034622192,
+            "occupancy": 0.6565197706222534,
+            "kl": 5.997958183288574
+          },
+          "free_occupancy": {
+            "target": 3024,
+            "predicted": 1571,
+            "intersection": 301,
+            "precision": 0.19159770846594526,
+            "recall": 0.09953703703703703,
+            "iou": 0.07009781089892873
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-pipe-rampsmall",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.487305760383606,
+            "attribute": 0.8166109919548035,
+            "occupancy": 0.6706916689872742,
+            "kl": 3.1261792182922363
+          },
+          "free_occupancy": {
+            "target": 2386,
+            "predicted": 2657,
+            "intersection": 624,
+            "precision": 0.23485133609333836,
+            "recall": 0.26152556580050296,
+            "iou": 0.14120841819416158
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-platform-center",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.5340818166732788,
+            "attribute": 0.8417543768882751,
+            "occupancy": 0.6923242211341858,
+            "kl": 3.2025160789489746
+          },
+          "free_occupancy": {
+            "target": 2048,
+            "predicted": 2156,
+            "intersection": 185,
+            "precision": 0.08580705009276438,
+            "recall": 0.09033203125,
+            "iou": 0.0460313510823588
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rail",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.5138577222824097,
+            "attribute": 0.8422425389289856,
+            "occupancy": 0.6716140508651733,
+            "kl": 1.0554897785186768
+          },
+          "free_occupancy": {
+            "target": 494,
+            "predicted": 2107,
+            "intersection": 94,
+            "precision": 0.044613194114855245,
+            "recall": 0.1902834008097166,
+            "iou": 0.03749501396090946
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rocket-basea",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.4834928512573242,
+            "attribute": 0.8279086947441101,
+            "occupancy": 0.6555787324905396,
+            "kl": 5.541463375091553
+          },
+          "free_occupancy": {
+            "target": 3260,
+            "predicted": 2467,
+            "intersection": 489,
+            "precision": 0.1982164572355087,
+            "recall": 0.15,
+            "iou": 0.09335624284077892
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rocket-fuelb",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.5277433395385742,
+            "attribute": 0.8710684776306152,
+            "occupancy": 0.6566652655601501,
+            "kl": 9.505407333374023
+          },
+          "free_occupancy": {
+            "target": 7496,
+            "predicted": 2505,
+            "intersection": 786,
+            "precision": 0.3137724550898204,
+            "recall": 0.10485592315901815,
+            "iou": 0.08529571351058057
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-stairs-short",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.5763098001480103,
+            "attribute": 0.904037594795227,
+            "occupancy": 0.6722673177719116,
+            "kl": 4.916258335113525
+          },
+          "free_occupancy": {
+            "target": 3270,
+            "predicted": 2573,
+            "intersection": 454,
+            "precision": 0.17644772638942868,
+            "recall": 0.13883792048929663,
+            "iou": 0.08424568565596585
+          }
+        }
+      ]
+    },
+    {
+      "step": 900,
+      "mean_val_iou": 0.1702555763095862,
+      "mean_val_loss": 1.3463790118694305,
+      "cases": [
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-boat-row-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.3215067386627197,
+            "attribute": 0.7339667677879333,
+            "occupancy": 0.5875366926193237,
+            "kl": 3.3888609409332275
+          },
+          "free_occupancy": {
+            "target": 2236,
+            "predicted": 2900,
+            "intersection": 709,
+            "precision": 0.24448275862068966,
+            "recall": 0.3170840787119857,
+            "iou": 0.16015360289134856
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-bottle",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.3039014339447021,
+            "attribute": 0.7191128730773926,
+            "occupancy": 0.5847862362861633,
+            "kl": 2.404109477996826
+          },
+          "free_occupancy": {
+            "target": 1608,
+            "predicted": 3098,
+            "intersection": 726,
+            "precision": 0.2343447385409942,
+            "recall": 0.45149253731343286,
+            "iou": 0.18241206030150753
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-castle-door",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.3090943098068237,
+            "attribute": 0.7140246033668518,
+            "occupancy": 0.5950655937194824,
+            "kl": 4.173432350158691
+          },
+          "free_occupancy": {
+            "target": 3431,
+            "predicted": 6263,
+            "intersection": 1604,
+            "precision": 0.25610729682260897,
+            "recall": 0.4675021859516176,
+            "iou": 0.19826946847960444
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-grass-patch",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.352691411972046,
+            "attribute": 0.7745344638824463,
+            "occupancy": 0.5781530141830444,
+            "kl": 3.9270265102386475
+          },
+          "free_occupancy": {
+            "target": 2937,
+            "predicted": 3011,
+            "intersection": 928,
+            "precision": 0.308203254732647,
+            "recall": 0.3159686755192373,
+            "iou": 0.1848605577689243
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-hole",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.3446998596191406,
+            "attribute": 0.779374361038208,
+            "occupancy": 0.5653226971626282,
+            "kl": 2.9130611419677734
+          },
+          "free_occupancy": {
+            "target": 1747,
+            "predicted": 2200,
+            "intersection": 610,
+            "precision": 0.2772727272727273,
+            "recall": 0.34917000572409845,
+            "iou": 0.18279892118669464
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-palm-straight",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.3635902404785156,
+            "attribute": 0.7677944302558899,
+            "occupancy": 0.5957932472229004,
+            "kl": 2.6684610843658447
+          },
+          "free_occupancy": {
+            "target": 1606,
+            "predicted": 2835,
+            "intersection": 644,
+            "precision": 0.2271604938271605,
+            "recall": 0.40099626400996263,
+            "iou": 0.16960758493547537
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-rocks-a",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.3706252574920654,
+            "attribute": 0.7632784843444824,
+            "occupancy": 0.6073417067527771,
+            "kl": 5.049798965454102
+          },
+          "free_occupancy": {
+            "target": 3711,
+            "predicted": 5019,
+            "intersection": 1432,
+            "precision": 0.28531579996015144,
+            "recall": 0.3858798167609809,
+            "iou": 0.19621814195670045
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.3321678638458252,
+            "attribute": 0.7371199727058411,
+            "occupancy": 0.5950444340705872,
+            "kl": 3.4036388397216797
+          },
+          "free_occupancy": {
+            "target": 2220,
+            "predicted": 4561,
+            "intersection": 919,
+            "precision": 0.20149090111817583,
+            "recall": 0.41396396396396395,
+            "iou": 0.1567724326168543
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-medium",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.3140579462051392,
+            "attribute": 0.7354129552841187,
+            "occupancy": 0.5786410570144653,
+            "kl": 3.966890573501587
+          },
+          "free_occupancy": {
+            "target": 2994,
+            "predicted": 4738,
+            "intersection": 1257,
+            "precision": 0.26530181511186157,
+            "recall": 0.4198396793587174,
+            "iou": 0.19413127413127412
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-pirate-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.3356781005859375,
+            "attribute": 0.7405921220779419,
+            "occupancy": 0.5950825214385986,
+            "kl": 3.407484292984009
+          },
+          "free_occupancy": {
+            "target": 2216,
+            "predicted": 4553,
+            "intersection": 925,
+            "precision": 0.20316274983527344,
+            "recall": 0.4174187725631769,
+            "iou": 0.15828199863107462
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-pirate-small",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.335771083831787,
+            "attribute": 0.7517057061195374,
+            "occupancy": 0.5840619206428528,
+            "kl": 3.4726104736328125
+          },
+          "free_occupancy": {
+            "target": 2607,
+            "predicted": 3922,
+            "intersection": 1134,
+            "precision": 0.28913819479857217,
+            "recall": 0.43498273878020716,
+            "iou": 0.21019462465245597
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-wreck",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.3207039833068848,
+            "attribute": 0.7384871244430542,
+            "occupancy": 0.5822129249572754,
+            "kl": 3.9769399166107178
+          },
+          "free_occupancy": {
+            "target": 2170,
+            "predicted": 3717,
+            "intersection": 859,
+            "precision": 0.23110034974441754,
+            "recall": 0.395852534562212,
+            "iou": 0.17084327764518695
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-barrel",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3599432706832886,
+            "attribute": 0.7266274690628052,
+            "occupancy": 0.6333096623420715,
+            "kl": 6.050167560577393
+          },
+          "free_occupancy": {
+            "target": 3856,
+            "predicted": 9395,
+            "intersection": 1358,
+            "precision": 0.14454497072911124,
+            "recall": 0.35217842323651455,
+            "iou": 0.11418481459682166
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-corridor-corner",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3206225633621216,
+            "attribute": 0.7402731776237488,
+            "occupancy": 0.5803427696228027,
+            "kl": 6.54830265045166
+          },
+          "free_occupancy": {
+            "target": 6068,
+            "predicted": 6617,
+            "intersection": 2249,
+            "precision": 0.33988212180746563,
+            "recall": 0.3706328279499011,
+            "iou": 0.21550402453047143
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-craft-speedera",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3530480861663818,
+            "attribute": 0.7514827251434326,
+            "occupancy": 0.6015625596046448,
+            "kl": 2.8030624389648438
+          },
+          "free_occupancy": {
+            "target": 2014,
+            "predicted": 2432,
+            "intersection": 580,
+            "precision": 0.23848684210526316,
+            "recall": 0.28798411122144985,
+            "iou": 0.15002586652871186
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-monorail-trainfront",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3456252813339233,
+            "attribute": 0.7418702244758606,
+            "occupancy": 0.6037502288818359,
+            "kl": 4.841990947723389
+          },
+          "free_occupancy": {
+            "target": 3418,
+            "predicted": 6122,
+            "intersection": 1334,
+            "precision": 0.21790264619405422,
+            "recall": 0.39028671737858395,
+            "iou": 0.1625639775773824
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-monorail-trainpassenger",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3802690505981445,
+            "attribute": 0.7639878988265991,
+            "occupancy": 0.6162744760513306,
+            "kl": 6.6718034744262695
+          },
+          "free_occupancy": {
+            "target": 4200,
+            "predicted": 8640,
+            "intersection": 1771,
+            "precision": 0.20497685185185185,
+            "recall": 0.4216666666666667,
+            "iou": 0.15999638630409252
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-pipe-end",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.348414421081543,
+            "attribute": 0.7437814474105835,
+            "occupancy": 0.6046276092529297,
+            "kl": 5.405271530151367
+          },
+          "free_occupancy": {
+            "target": 3024,
+            "predicted": 4941,
+            "intersection": 1173,
+            "precision": 0.2374013357619915,
+            "recall": 0.3878968253968254,
+            "iou": 0.17270318021201414
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-pipe-rampsmall",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.36349356174469,
+            "attribute": 0.7638145685195923,
+            "occupancy": 0.5996763110160828,
+            "kl": 2.7126994132995605
+          },
+          "free_occupancy": {
+            "target": 2386,
+            "predicted": 2939,
+            "intersection": 910,
+            "precision": 0.30962912555290917,
+            "recall": 0.38139145012573344,
+            "iou": 0.20611551528878821
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-platform-center",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3240102529525757,
+            "attribute": 0.7627027034759521,
+            "occupancy": 0.5613042116165161,
+            "kl": 3.3132970333099365
+          },
+          "free_occupancy": {
+            "target": 2048,
+            "predicted": 2441,
+            "intersection": 637,
+            "precision": 0.2609586235149529,
+            "recall": 0.31103515625,
+            "iou": 0.1653686396677051
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rail",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3938459157943726,
+            "attribute": 0.7905608415603638,
+            "occupancy": 0.6032837629318237,
+            "kl": 1.3380372524261475
+          },
+          "free_occupancy": {
+            "target": 494,
+            "predicted": 877,
+            "intersection": 125,
+            "precision": 0.14253135689851767,
+            "recall": 0.25303643724696356,
+            "iou": 0.10032102728731943
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rocket-basea",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3755820989608765,
+            "attribute": 0.7430664896965027,
+            "occupancy": 0.6325104236602783,
+            "kl": 5.143918991088867
+          },
+          "free_occupancy": {
+            "target": 3260,
+            "predicted": 5683,
+            "intersection": 999,
+            "precision": 0.17578743621326764,
+            "recall": 0.30644171779141105,
+            "iou": 0.12575528700906344
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rocket-fuelb",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3176593780517578,
+            "attribute": 0.741259753704071,
+            "occupancy": 0.5763912796974182,
+            "kl": 8.357561111450195
+          },
+          "free_occupancy": {
+            "target": 7496,
+            "predicted": 8288,
+            "intersection": 2684,
+            "precision": 0.32384169884169883,
+            "recall": 0.35805763073639274,
+            "iou": 0.20488549618320612
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-stairs-short",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.4260941743850708,
+            "attribute": 0.8111294507980347,
+            "occupancy": 0.6149601340293884,
+            "kl": 4.646566390991211
+          },
+          "free_occupancy": {
+            "target": 3270,
+            "predicted": 5349,
+            "intersection": 1086,
+            "precision": 0.20302860347728546,
+            "recall": 0.3321100917431193,
+            "iou": 0.14416567104739147
+          }
+        }
+      ],
+      "checkpoint_sha256": "146924e29f3f2f0097019a05cbb956bc944b057702961610860eb886511842ad"
+    },
+    {
+      "step": 1200,
+      "mean_val_iou": 0.19654778066546494,
+      "mean_val_loss": 1.2582881301641464,
+      "cases": [
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-boat-row-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.2240182161331177,
+            "attribute": 0.7136273980140686,
+            "occupancy": 0.51038658618927,
+            "kl": 4.226565361022949
+          },
+          "free_occupancy": {
+            "target": 2236,
+            "predicted": 2971,
+            "intersection": 809,
+            "precision": 0.27229888926287443,
+            "recall": 0.3618067978533095,
+            "iou": 0.18394724874943155
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-bottle",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.2292712926864624,
+            "attribute": 0.7057238221168518,
+            "occupancy": 0.523544430732727,
+            "kl": 2.988525867462158
+          },
+          "free_occupancy": {
+            "target": 1608,
+            "predicted": 3580,
+            "intersection": 825,
+            "precision": 0.23044692737430167,
+            "recall": 0.5130597014925373,
+            "iou": 0.18909007563603025
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-castle-door",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.231627345085144,
+            "attribute": 0.6949735879898071,
+            "occupancy": 0.5366487503051758,
+            "kl": 4.948540210723877
+          },
+          "free_occupancy": {
+            "target": 3431,
+            "predicted": 6388,
+            "intersection": 1712,
+            "precision": 0.2680025046963056,
+            "recall": 0.49897988924511805,
+            "iou": 0.21117552732206735
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-grass-patch",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.263225793838501,
+            "attribute": 0.7591282725334167,
+            "occupancy": 0.5040926933288574,
+            "kl": 4.744025230407715
+          },
+          "free_occupancy": {
+            "target": 2937,
+            "predicted": 3384,
+            "intersection": 1131,
+            "precision": 0.3342198581560284,
+            "recall": 0.38508682328907046,
+            "iou": 0.21791907514450867
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-hole",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.21365225315094,
+            "attribute": 0.7581390142440796,
+            "occupancy": 0.4555094242095947,
+            "kl": 3.862288475036621
+          },
+          "free_occupancy": {
+            "target": 1747,
+            "predicted": 2737,
+            "intersection": 876,
+            "precision": 0.320058458165875,
+            "recall": 0.5014310246136233,
+            "iou": 0.24279379157427938
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-palm-straight",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.2933865785598755,
+            "attribute": 0.7582461833953857,
+            "occupancy": 0.5351369976997375,
+            "kl": 3.449570894241333
+          },
+          "free_occupancy": {
+            "target": 1606,
+            "predicted": 3398,
+            "intersection": 773,
+            "precision": 0.22748675691583284,
+            "recall": 0.4813200498132005,
+            "iou": 0.18269912550224532
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-rocks-a",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.2757395505905151,
+            "attribute": 0.7514162063598633,
+            "occupancy": 0.5243172645568848,
+            "kl": 6.0943603515625
+          },
+          "free_occupancy": {
+            "target": 3711,
+            "predicted": 5902,
+            "intersection": 1685,
+            "precision": 0.28549644188410706,
+            "recall": 0.45405551064403127,
+            "iou": 0.21253784056508576
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.2605011463165283,
+            "attribute": 0.7256826758384705,
+            "occupancy": 0.5348141193389893,
+            "kl": 4.25438928604126
+          },
+          "free_occupancy": {
+            "target": 2220,
+            "predicted": 5234,
+            "intersection": 1061,
+            "precision": 0.2027130301872373,
+            "recall": 0.47792792792792793,
+            "iou": 0.16596277178163615
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-medium",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.2335206270217896,
+            "attribute": 0.7239041924476624,
+            "occupancy": 0.5096116662025452,
+            "kl": 4.775571823120117
+          },
+          "free_occupancy": {
+            "target": 2994,
+            "predicted": 5547,
+            "intersection": 1458,
+            "precision": 0.26284478096268254,
+            "recall": 0.48697394789579157,
+            "iou": 0.20584498094027953
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-pirate-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.2637617588043213,
+            "attribute": 0.7289952039718628,
+            "occupancy": 0.5347623229026794,
+            "kl": 4.258048057556152
+          },
+          "free_occupancy": {
+            "target": 2216,
+            "predicted": 5250,
+            "intersection": 1066,
+            "precision": 0.20304761904761906,
+            "recall": 0.48104693140794225,
+            "iou": 0.1665625
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-pirate-small",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.25341796875,
+            "attribute": 0.7428799867630005,
+            "occupancy": 0.5105338096618652,
+            "kl": 4.213698387145996
+          },
+          "free_occupancy": {
+            "target": 2607,
+            "predicted": 4277,
+            "intersection": 1287,
+            "precision": 0.3009118541033435,
+            "recall": 0.4936708860759494,
+            "iou": 0.22994461318563517
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-wreck",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.2447501420974731,
+            "attribute": 0.7284483909606934,
+            "occupancy": 0.5162969827651978,
+            "kl": 4.806865692138672
+          },
+          "free_occupancy": {
+            "target": 2170,
+            "predicted": 3952,
+            "intersection": 1027,
+            "precision": 0.2598684210526316,
+            "recall": 0.4732718894009217,
+            "iou": 0.20157016683022572
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-barrel",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2916666269302368,
+            "attribute": 0.7145543694496155,
+            "occupancy": 0.5771048069000244,
+            "kl": 7.527061462402344
+          },
+          "free_occupancy": {
+            "target": 3856,
+            "predicted": 10194,
+            "intersection": 1535,
+            "precision": 0.15057877182656465,
+            "recall": 0.3980809128630705,
+            "iou": 0.12265281662005593
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-corridor-corner",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2454731464385986,
+            "attribute": 0.72232985496521,
+            "occupancy": 0.5231360197067261,
+            "kl": 7.312769889831543
+          },
+          "free_occupancy": {
+            "target": 6068,
+            "predicted": 8555,
+            "intersection": 2821,
+            "precision": 0.3297486849795441,
+            "recall": 0.4648978246539222,
+            "iou": 0.23902728351126928
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-craft-speedera",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2617348432540894,
+            "attribute": 0.7326115369796753,
+            "occupancy": 0.5291197896003723,
+            "kl": 3.4180526733398438
+          },
+          "free_occupancy": {
+            "target": 2014,
+            "predicted": 2608,
+            "intersection": 699,
+            "precision": 0.268021472392638,
+            "recall": 0.3470705064548163,
+            "iou": 0.17817996431302574
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-monorail-trainfront",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2795442342758179,
+            "attribute": 0.7236930727958679,
+            "occupancy": 0.5558453798294067,
+            "kl": 5.844609260559082
+          },
+          "free_occupancy": {
+            "target": 3418,
+            "predicted": 6372,
+            "intersection": 1418,
+            "precision": 0.22253609541745134,
+            "recall": 0.4148624926857812,
+            "iou": 0.16937410415671286
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-monorail-trainpassenger",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.289602279663086,
+            "attribute": 0.7567993402481079,
+            "occupancy": 0.532794713973999,
+            "kl": 8.205558776855469
+          },
+          "free_occupancy": {
+            "target": 4200,
+            "predicted": 9356,
+            "intersection": 1934,
+            "precision": 0.20671227020094057,
+            "recall": 0.4604761904761905,
+            "iou": 0.1664085355360523
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-pipe-end",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.25762140750885,
+            "attribute": 0.7262784838676453,
+            "occupancy": 0.5313363671302795,
+            "kl": 6.519700527191162
+          },
+          "free_occupancy": {
+            "target": 3024,
+            "predicted": 5370,
+            "intersection": 1379,
+            "precision": 0.2567970204841713,
+            "recall": 0.45601851851851855,
+            "iou": 0.19657875980042766
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-pipe-rampsmall",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2584269046783447,
+            "attribute": 0.7473850250244141,
+            "occupancy": 0.5110386610031128,
+            "kl": 3.229043960571289
+          },
+          "free_occupancy": {
+            "target": 2386,
+            "predicted": 2462,
+            "intersection": 1026,
+            "precision": 0.41673436230706745,
+            "recall": 0.4300083822296731,
+            "iou": 0.2684458398744113
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-platform-center",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.1459989547729492,
+            "attribute": 0.7110645174980164,
+            "occupancy": 0.4349302053451538,
+            "kl": 4.306168079376221
+          },
+          "free_occupancy": {
+            "target": 2048,
+            "predicted": 2973,
+            "intersection": 1026,
+            "precision": 0.34510595358224017,
+            "recall": 0.5009765625,
+            "iou": 0.2568210262828536
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rail",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.292768955230713,
+            "attribute": 0.7733950018882751,
+            "occupancy": 0.5193721055984497,
+            "kl": 1.91361665725708
+          },
+          "free_occupancy": {
+            "target": 494,
+            "predicted": 527,
+            "intersection": 132,
+            "precision": 0.2504743833017078,
+            "recall": 0.26720647773279355,
+            "iou": 0.1484814398200225
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rocket-basea",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.311309814453125,
+            "attribute": 0.7327271103858948,
+            "occupancy": 0.5785765647888184,
+            "kl": 6.258233070373535
+          },
+          "free_occupancy": {
+            "target": 3260,
+            "predicted": 6526,
+            "intersection": 1252,
+            "precision": 0.1918479926448054,
+            "recall": 0.38404907975460123,
+            "iou": 0.14670728849308648
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rocket-fuelb",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2572506666183472,
+            "attribute": 0.7434236407279968,
+            "occupancy": 0.513817548751831,
+            "kl": 9.435892105102539
+          },
+          "free_occupancy": {
+            "target": 7496,
+            "predicted": 9948,
+            "intersection": 3140,
+            "precision": 0.3156413349416968,
+            "recall": 0.41889007470651013,
+            "iou": 0.21951901565995527
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-stairs-short",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3206446170806885,
+            "attribute": 0.7978882193565369,
+            "occupancy": 0.5227505564689636,
+            "kl": 5.788666725158691
+          },
+          "free_occupancy": {
+            "target": 3270,
+            "predicted": 5779,
+            "intersection": 1476,
+            "precision": 0.2554075099498183,
+            "recall": 0.45137614678899085,
+            "iou": 0.19490294467186056
+          }
+        }
+      ],
+      "checkpoint_sha256": "3edcaa7552472038fa91f8d762f7e9b574fc3ceb00d85e1b114fd10871d5c6a8"
+    },
+    {
+      "step": 1500,
+      "mean_val_iou": 0.22178682869085045,
+      "mean_val_loss": 1.1807409425576527,
+      "cases": [
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-boat-row-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.1539900302886963,
+            "attribute": 0.6833769679069519,
+            "occupancy": 0.470608115196228,
+            "kl": 4.950901508331299
+          },
+          "free_occupancy": {
+            "target": 2236,
+            "predicted": 2958,
+            "intersection": 932,
+            "precision": 0.31507775524002707,
+            "recall": 0.41681574239713776,
+            "iou": 0.21867667761614265
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-bottle",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.1436209678649902,
+            "attribute": 0.664100706577301,
+            "occupancy": 0.4795166850090027,
+            "kl": 3.625168561935425
+          },
+          "free_occupancy": {
+            "target": 1608,
+            "predicted": 3700,
+            "intersection": 904,
+            "precision": 0.24432432432432433,
+            "recall": 0.5621890547263682,
+            "iou": 0.2052679382379655
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-castle-door",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.1428864002227783,
+            "attribute": 0.6517856121063232,
+            "occupancy": 0.4910949170589447,
+            "kl": 5.806246757507324
+          },
+          "free_occupancy": {
+            "target": 3431,
+            "predicted": 6106,
+            "intersection": 1759,
+            "precision": 0.2880773010153947,
+            "recall": 0.5126785193821043,
+            "iou": 0.2261506814091026
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-grass-patch",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.2062958478927612,
+            "attribute": 0.7378853559494019,
+            "occupancy": 0.4684048891067505,
+            "kl": 5.547893524169922
+          },
+          "free_occupancy": {
+            "target": 2937,
+            "predicted": 4069,
+            "intersection": 1353,
+            "precision": 0.33251413123617596,
+            "recall": 0.4606741573033708,
+            "iou": 0.2393419423315054
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-hole",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.1197631359100342,
+            "attribute": 0.7269685864448547,
+            "occupancy": 0.3927900195121765,
+            "kl": 4.510499954223633
+          },
+          "free_occupancy": {
+            "target": 1747,
+            "predicted": 1949,
+            "intersection": 968,
+            "precision": 0.4966649563878912,
+            "recall": 0.5540927303949628,
+            "iou": 0.3548387096774194
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-palm-straight",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.2203078269958496,
+            "attribute": 0.738318681716919,
+            "occupancy": 0.4819852113723755,
+            "kl": 3.960606575012207
+          },
+          "free_occupancy": {
+            "target": 1606,
+            "predicted": 2381,
+            "intersection": 723,
+            "precision": 0.3036539269214616,
+            "recall": 0.450186799501868,
+            "iou": 0.22150735294117646
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-rocks-a",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.2039475440979004,
+            "attribute": 0.7255184054374695,
+            "occupancy": 0.47842228412628174,
+            "kl": 6.8721747398376465
+          },
+          "free_occupancy": {
+            "target": 3711,
+            "predicted": 5556,
+            "intersection": 1796,
+            "precision": 0.3232541396688265,
+            "recall": 0.48396658582592295,
+            "iou": 0.24039619863472092
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.1918749809265137,
+            "attribute": 0.7013660073280334,
+            "occupancy": 0.4905039668083191,
+            "kl": 5.0355329513549805
+          },
+          "free_occupancy": {
+            "target": 2220,
+            "predicted": 4152,
+            "intersection": 1034,
+            "precision": 0.24903660886319845,
+            "recall": 0.4657657657657658,
+            "iou": 0.19370550768077932
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-medium",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.163931965827942,
+            "attribute": 0.7006860375404358,
+            "occupancy": 0.46324020624160767,
+            "kl": 5.698257923126221
+          },
+          "free_occupancy": {
+            "target": 2994,
+            "predicted": 5008,
+            "intersection": 1504,
+            "precision": 0.3003194888178914,
+            "recall": 0.5023380093520374,
+            "iou": 0.23145583256386582
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-pirate-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.194995641708374,
+            "attribute": 0.7045193910598755,
+            "occupancy": 0.4904712438583374,
+            "kl": 5.039179801940918
+          },
+          "free_occupancy": {
+            "target": 2216,
+            "predicted": 4164,
+            "intersection": 1037,
+            "precision": 0.24903938520653218,
+            "recall": 0.46796028880866425,
+            "iou": 0.1940857196331649
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-pirate-small",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.1829246282577515,
+            "attribute": 0.7210671901702881,
+            "occupancy": 0.46185246109962463,
+            "kl": 5.018247127532959
+          },
+          "free_occupancy": {
+            "target": 2607,
+            "predicted": 4144,
+            "intersection": 1335,
+            "precision": 0.32215250965250963,
+            "recall": 0.5120828538550057,
+            "iou": 0.24649187592319055
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-wreck",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.1749587059020996,
+            "attribute": 0.7052977681159973,
+            "occupancy": 0.4696551561355591,
+            "kl": 5.688616752624512
+          },
+          "free_occupancy": {
+            "target": 2170,
+            "predicted": 3669,
+            "intersection": 1078,
+            "precision": 0.29381302807304444,
+            "recall": 0.4967741935483871,
+            "iou": 0.22642302037387105
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-barrel",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.214031457901001,
+            "attribute": 0.6734777688980103,
+            "occupancy": 0.5405451655387878,
+            "kl": 8.59204387664795
+          },
+          "free_occupancy": {
+            "target": 3856,
+            "predicted": 7826,
+            "intersection": 1507,
+            "precision": 0.1925632507027856,
+            "recall": 0.3908195020746888,
+            "iou": 0.14810810810810812
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-corridor-corner",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.158972978591919,
+            "attribute": 0.6807339787483215,
+            "occupancy": 0.4782309830188751,
+            "kl": 7.982878684997559
+          },
+          "free_occupancy": {
+            "target": 6068,
+            "predicted": 7742,
+            "intersection": 2899,
+            "precision": 0.37445104624128134,
+            "recall": 0.4777521423862887,
+            "iou": 0.26569517001191456
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-craft-speedera",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.1753654479980469,
+            "attribute": 0.6941707730293274,
+            "occupancy": 0.48119065165519714,
+            "kl": 4.032721042633057
+          },
+          "free_occupancy": {
+            "target": 2014,
+            "predicted": 3415,
+            "intersection": 907,
+            "precision": 0.265592972181552,
+            "recall": 0.4503475670307845,
+            "iou": 0.2005749668288368
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-monorail-trainfront",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.215860366821289,
+            "attribute": 0.6816434860229492,
+            "occupancy": 0.5342099070549011,
+            "kl": 6.882000923156738
+          },
+          "free_occupancy": {
+            "target": 3418,
+            "predicted": 5953,
+            "intersection": 1339,
+            "precision": 0.22492860742482781,
+            "recall": 0.39174956114686954,
+            "iou": 0.16670816733067728
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-monorail-trainpassenger",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2143151760101318,
+            "attribute": 0.7169206142425537,
+            "occupancy": 0.4973852038383484,
+            "kl": 9.274618148803711
+          },
+          "free_occupancy": {
+            "target": 4200,
+            "predicted": 7809,
+            "intersection": 1741,
+            "precision": 0.22294788065053145,
+            "recall": 0.4145238095238095,
+            "iou": 0.16955590183093106
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-pipe-end",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.172797679901123,
+            "attribute": 0.6894108653068542,
+            "occupancy": 0.4833793044090271,
+            "kl": 7.5187506675720215
+          },
+          "free_occupancy": {
+            "target": 3024,
+            "predicted": 4739,
+            "intersection": 1372,
+            "precision": 0.2895125553914328,
+            "recall": 0.4537037037037037,
+            "iou": 0.21467688937568455
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-pipe-rampsmall",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.181709885597229,
+            "attribute": 0.7187497615814209,
+            "occupancy": 0.4629563093185425,
+            "kl": 3.847423553466797
+          },
+          "free_occupancy": {
+            "target": 2386,
+            "predicted": 3356,
+            "intersection": 1268,
+            "precision": 0.3778307508939213,
+            "recall": 0.5314333612740989,
+            "iou": 0.2834152883325883
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-platform-center",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.0084242820739746,
+            "attribute": 0.6374412775039673,
+            "occupancy": 0.3709779381752014,
+            "kl": 5.06289005279541
+          },
+          "free_occupancy": {
+            "target": 2048,
+            "predicted": 2068,
+            "intersection": 1060,
+            "precision": 0.5125725338491296,
+            "recall": 0.517578125,
+            "iou": 0.3468586387434555
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rail",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2266287803649902,
+            "attribute": 0.7406338453292847,
+            "occupancy": 0.4859926700592041,
+            "kl": 2.323655128479004
+          },
+          "free_occupancy": {
+            "target": 494,
+            "predicted": 465,
+            "intersection": 95,
+            "precision": 0.20430107526881722,
+            "recall": 0.19230769230769232,
+            "iou": 0.1099537037037037
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rocket-basea",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2534797191619873,
+            "attribute": 0.7054176330566406,
+            "occupancy": 0.5480549335479736,
+            "kl": 7.201231956481934
+          },
+          "free_occupancy": {
+            "target": 3260,
+            "predicted": 5098,
+            "intersection": 1172,
+            "precision": 0.22989407610827775,
+            "recall": 0.3595092024539877,
+            "iou": 0.16309490676315058
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rocket-fuelb",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.1711663007736206,
+            "attribute": 0.7043083906173706,
+            "occupancy": 0.46684759855270386,
+            "kl": 10.341207504272461
+          },
+          "free_occupancy": {
+            "target": 7496,
+            "predicted": 10208,
+            "intersection": 3437,
+            "precision": 0.33669670846394983,
+            "recall": 0.4585112059765208,
+            "iou": 0.24090558631807668
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-stairs-short",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2455328702926636,
+            "attribute": 0.762985110282898,
+            "occupancy": 0.4825412631034851,
+            "kl": 6.516390800476074
+          },
+          "free_occupancy": {
+            "target": 3270,
+            "predicted": 5416,
+            "intersection": 1537,
+            "precision": 0.2837887740029542,
+            "recall": 0.47003058103975537,
+            "iou": 0.21499510421037907
+          }
+        }
+      ],
+      "checkpoint_sha256": "287071e230ecb3218527e7e071465a845c29f8236446dfe453632e940e064e2d"
+    },
+    {
+      "step": 1900,
+      "mean_val_iou": 0.2536211684813041,
+      "mean_val_loss": 1.0525512173771858,
+      "cases": [
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-boat-row-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.0009735822677612,
+            "attribute": 0.571792721748352,
+            "occupancy": 0.42917555570602417,
+            "kl": 5.367800712585449
+          },
+          "free_occupancy": {
+            "target": 2236,
+            "predicted": 3590,
+            "intersection": 1205,
+            "precision": 0.33565459610027853,
+            "recall": 0.5389087656529516,
+            "iou": 0.26076606795066004
+          },
+          "reconstruction_sha256": "3300f0d5ce101431fa7a628fd214782fee219fb244e2b4b31a63b799e5558e64"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-bottle",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.026626706123352,
+            "attribute": 0.5722740888595581,
+            "occupancy": 0.45434868335723877,
+            "kl": 3.9500503540039062
+          },
+          "free_occupancy": {
+            "target": 1608,
+            "predicted": 3918,
+            "intersection": 1009,
+            "precision": 0.25752935171005614,
+            "recall": 0.6274875621890548,
+            "iou": 0.22337834846136817
+          },
+          "reconstruction_sha256": "ffc2bce6f1fda78881134253eca8c93ad33d4f9ead5c362077a8788fbd92fc28"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-castle-door",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 0.9967270493507385,
+            "attribute": 0.5399972796440125,
+            "occupancy": 0.4567236006259918,
+            "kl": 6.135905742645264
+          },
+          "free_occupancy": {
+            "target": 3431,
+            "predicted": 6118,
+            "intersection": 1986,
+            "precision": 0.32461588754494936,
+            "recall": 0.5788399883415913,
+            "iou": 0.26259420864736216
+          },
+          "reconstruction_sha256": "6d69e71c2e0c032f98d5e655ed746d20fbd5a03d0b5aad3e9b9d9739afce6d4a"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-grass-patch",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.1382664442062378,
+            "attribute": 0.7146161794662476,
+            "occupancy": 0.4236442744731903,
+            "kl": 6.004693031311035
+          },
+          "free_occupancy": {
+            "target": 2937,
+            "predicted": 5061,
+            "intersection": 1762,
+            "precision": 0.3481525390239083,
+            "recall": 0.5999319033026899,
+            "iou": 0.28255291853752407
+          },
+          "reconstruction_sha256": "9c8f6971c140c0d12f27a18df9a06ed1f596ad267a4d621a1df3081428b0bc58"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-hole",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.0107808113098145,
+            "attribute": 0.6520181894302368,
+            "occupancy": 0.35875773429870605,
+            "kl": 4.907215118408203
+          },
+          "free_occupancy": {
+            "target": 1747,
+            "predicted": 1849,
+            "intersection": 930,
+            "precision": 0.502974580854516,
+            "recall": 0.5323411562678878,
+            "iou": 0.3488372093023256
+          },
+          "reconstruction_sha256": "311d5e18e45170c580966eeea5c2a37015fc3638449dacbf1d5ff268fed21757"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-palm-straight",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.140488624572754,
+            "attribute": 0.6920077800750732,
+            "occupancy": 0.4484766125679016,
+            "kl": 4.239230155944824
+          },
+          "free_occupancy": {
+            "target": 1606,
+            "predicted": 2123,
+            "intersection": 748,
+            "precision": 0.35233160621761656,
+            "recall": 0.4657534246575342,
+            "iou": 0.25092250922509224
+          },
+          "reconstruction_sha256": "b6024e859de0dd495a3fe4ac87002fd6d660382de67a888d008929ba02daf179"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-rocks-a",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.0996710062026978,
+            "attribute": 0.6667197942733765,
+            "occupancy": 0.43294399976730347,
+            "kl": 7.314959526062012
+          },
+          "free_occupancy": {
+            "target": 3711,
+            "predicted": 5532,
+            "intersection": 2044,
+            "precision": 0.36948662328271875,
+            "recall": 0.5507949339800593,
+            "iou": 0.28392832337824697
+          },
+          "reconstruction_sha256": "27d10cb659851b9cce7762d74f9251b054867f9f25ceb4702c28ca0bd90fd645"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.082292914390564,
+            "attribute": 0.6234607100486755,
+            "occupancy": 0.4588267207145691,
+            "kl": 5.481340408325195
+          },
+          "free_occupancy": {
+            "target": 2220,
+            "predicted": 3639,
+            "intersection": 1094,
+            "precision": 0.300632041769717,
+            "recall": 0.4927927927927928,
+            "iou": 0.22959076600209863
+          },
+          "reconstruction_sha256": "a065dd72740404676fab72087060881f51a6859af39f9076c820cd75e3c46861"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-medium",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.0566450357437134,
+            "attribute": 0.6189100742340088,
+            "occupancy": 0.43772876262664795,
+            "kl": 6.15755558013916
+          },
+          "free_occupancy": {
+            "target": 2994,
+            "predicted": 5391,
+            "intersection": 1781,
+            "precision": 0.33036542385457246,
+            "recall": 0.5948563794255177,
+            "iou": 0.26968503937007876
+          },
+          "reconstruction_sha256": "bcd3f5f68dc81b7f053c3a0d6737b1af2e1cef3b916a5f2379e5fc9eef3be817"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-pirate-large",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.084611177444458,
+            "attribute": 0.6258224844932556,
+            "occupancy": 0.45878320932388306,
+            "kl": 5.483820915222168
+          },
+          "free_occupancy": {
+            "target": 2216,
+            "predicted": 3650,
+            "intersection": 1102,
+            "precision": 0.3019178082191781,
+            "recall": 0.4972924187725632,
+            "iou": 0.2313182199832074
+          },
+          "reconstruction_sha256": "f5860e8005748ae4a12f29acbb6789cc726fc80d42a3f2a6218ae4cfe338003d"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-pirate-small",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.0770740509033203,
+            "attribute": 0.6448843479156494,
+            "occupancy": 0.4321843683719635,
+            "kl": 5.423336505889893
+          },
+          "free_occupancy": {
+            "target": 2607,
+            "predicted": 4628,
+            "intersection": 1577,
+            "precision": 0.34075194468452896,
+            "recall": 0.604909858074415,
+            "iou": 0.2787203958996112
+          },
+          "reconstruction_sha256": "6a535393390c69b74dd3b46de26477ce03d47574072c2ce65bd31bdca6aa6ff6"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-wreck",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.0630576610565186,
+            "attribute": 0.6282918453216553,
+            "occupancy": 0.43475961685180664,
+            "kl": 6.157670497894287
+          },
+          "free_occupancy": {
+            "target": 2170,
+            "predicted": 3992,
+            "intersection": 1301,
+            "precision": 0.32590180360721444,
+            "recall": 0.5995391705069124,
+            "iou": 0.2676404032092162
+          },
+          "reconstruction_sha256": "03c240bf5534ba8f4261a3d0e1c4e324a81949c6991a9c9d7515a8f864ea2e7c"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-barrel",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.0753285884857178,
+            "attribute": 0.5598551630973816,
+            "occupancy": 0.515464186668396,
+            "kl": 9.25617790222168
+          },
+          "free_occupancy": {
+            "target": 3856,
+            "predicted": 8644,
+            "intersection": 1867,
+            "precision": 0.21598796853308652,
+            "recall": 0.4841804979253112,
+            "iou": 0.17558544154989184
+          },
+          "reconstruction_sha256": "22c0ae85cd090631163c3833afb2daa288da53bae0a632bec3c91a0ebdc50145"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-corridor-corner",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.021128535270691,
+            "attribute": 0.5790728330612183,
+            "occupancy": 0.4420471787452698,
+            "kl": 8.431487083435059
+          },
+          "free_occupancy": {
+            "target": 6068,
+            "predicted": 8365,
+            "intersection": 3231,
+            "precision": 0.38625224148236703,
+            "recall": 0.5324653922214898,
+            "iou": 0.288430637386181
+          },
+          "reconstruction_sha256": "452e290bcecae5131dcf531bfad483bd9ed9b2f9b7f78cd206eb7ee817ac5a68"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-craft-speedera",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.031692624092102,
+            "attribute": 0.5936919450759888,
+            "occupancy": 0.4379962980747223,
+            "kl": 4.388132572174072
+          },
+          "free_occupancy": {
+            "target": 2014,
+            "predicted": 3734,
+            "intersection": 1124,
+            "precision": 0.30101767541510444,
+            "recall": 0.5580933465739821,
+            "iou": 0.2430795847750865
+          },
+          "reconstruction_sha256": "e16e87143f806c622c300070e8afd1049fa1f5ab03c094e474abf757fa04cf72"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-monorail-trainfront",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.0735410451889038,
+            "attribute": 0.5716190338134766,
+            "occupancy": 0.5019145011901855,
+            "kl": 7.476555824279785
+          },
+          "free_occupancy": {
+            "target": 3418,
+            "predicted": 6158,
+            "intersection": 1614,
+            "precision": 0.2620980837934394,
+            "recall": 0.4722059684025746,
+            "iou": 0.2027128862094951
+          },
+          "reconstruction_sha256": "27510aab108fb95ab44b0ab59d76e3950887199758495923c3ae118e178386e8"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-monorail-trainpassenger",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.073884129524231,
+            "attribute": 0.6127316355705261,
+            "occupancy": 0.4611425995826721,
+            "kl": 9.921263694763184
+          },
+          "free_occupancy": {
+            "target": 4200,
+            "predicted": 8723,
+            "intersection": 2207,
+            "precision": 0.25300928579617105,
+            "recall": 0.5254761904761904,
+            "iou": 0.20595371407241508
+          },
+          "reconstruction_sha256": "f16a7e004a6df4743489c3f0fd1488d0e6fdef1c3b41660f065e3341c8003452"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-pipe-end",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.0167335271835327,
+            "attribute": 0.5786170959472656,
+            "occupancy": 0.43810829520225525,
+            "kl": 8.06576919555664
+          },
+          "free_occupancy": {
+            "target": 3024,
+            "predicted": 4630,
+            "intersection": 1516,
+            "precision": 0.32742980561555074,
+            "recall": 0.5013227513227513,
+            "iou": 0.2469859889214728
+          },
+          "reconstruction_sha256": "39effad8363af55bc756d4b476d1aa4973097141ad9a1b547b0071a3aa1a22a3"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-pipe-rampsmall",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.0687936544418335,
+            "attribute": 0.6429188251495361,
+            "occupancy": 0.4258705973625183,
+            "kl": 4.121456146240234
+          },
+          "free_occupancy": {
+            "target": 2386,
+            "predicted": 3548,
+            "intersection": 1299,
+            "precision": 0.3661217587373168,
+            "recall": 0.5444258172673931,
+            "iou": 0.2802588996763754
+          },
+          "reconstruction_sha256": "82cd55cc8fe1aa902979002b31c2ade0b4cc2354bf018499ca760a8b5feec9b6"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-platform-center",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 0.7793066501617432,
+            "attribute": 0.4562782943248749,
+            "occupancy": 0.323022723197937,
+            "kl": 5.584280967712402
+          },
+          "free_occupancy": {
+            "target": 2048,
+            "predicted": 2314,
+            "intersection": 1186,
+            "precision": 0.5125324114088159,
+            "recall": 0.5791015625,
+            "iou": 0.3734256926952141
+          },
+          "reconstruction_sha256": "e5784ccae080074a12b8749aeb95696a06d5595f0fd30e41e7a3cf6bb3f456b7"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rail",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.0654089450836182,
+            "attribute": 0.6386110782623291,
+            "occupancy": 0.42679527401924133,
+            "kl": 2.619609832763672
+          },
+          "free_occupancy": {
+            "target": 494,
+            "predicted": 719,
+            "intersection": 197,
+            "precision": 0.27399165507649514,
+            "recall": 0.39878542510121456,
+            "iou": 0.19389763779527558
+          },
+          "reconstruction_sha256": "7298b28fc094028cc759e16a4bb42d186760176096197008f4ed0234f6227ab6"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rocket-basea",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.1207613945007324,
+            "attribute": 0.6098601222038269,
+            "occupancy": 0.5108933448791504,
+            "kl": 7.835749626159668
+          },
+          "free_occupancy": {
+            "target": 3260,
+            "predicted": 5514,
+            "intersection": 1382,
+            "precision": 0.2506347479143997,
+            "recall": 0.42392638036809815,
+            "iou": 0.18695887445887446
+          },
+          "reconstruction_sha256": "71330bf39e86bcc18e9ea0fc565ef1e887b5ffdf393c1849827b0fc6be71770b"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rocket-fuelb",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.0608705282211304,
+            "attribute": 0.6233282089233398,
+            "occupancy": 0.4375315308570862,
+            "kl": 10.878018379211426
+          },
+          "free_occupancy": {
+            "target": 7496,
+            "predicted": 12133,
+            "intersection": 4157,
+            "precision": 0.34261930272809693,
+            "recall": 0.5545624332977588,
+            "iou": 0.2686789038262668
+          },
+          "reconstruction_sha256": "533042a24afef0d917b83ec2724c1b196fbd4e0f6aa17b7bb7526304563c4c9e"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-stairs-short",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.096564531326294,
+            "attribute": 0.6545918583869934,
+            "occupancy": 0.44196563959121704,
+            "kl": 6.999107360839844
+          },
+          "free_occupancy": {
+            "target": 3270,
+            "predicted": 6354,
+            "intersection": 1806,
+            "precision": 0.2842304060434372,
+            "recall": 0.5522935779816514,
+            "iou": 0.23100537221795855
+          },
+          "reconstruction_sha256": "8584006e737d0397f9b78b2bfcaafbdd379713702ccd4f9f34e60c3edb774f4f"
+        }
+      ],
+      "checkpoint_sha256": "40d992575688311097bb7eb9b6181415fe17ba4ec9c7c7df7a42e1708ee2550d"
+    }
+  ],
+  "source_sha256": "e7b022825ad065ec16bbc96b75899965d205cfe312a18f2cdfdca49d38ffc7f8"
+}

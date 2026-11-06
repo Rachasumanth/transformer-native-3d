@@ -1,0 +1,6 @@
+{
+  "scope": "Blender BVH triangle overlap excluding pairs sharing welded vertices; not a robust exhaustive self-intersection proof",
+  "patch_faces": 28,
+  "pairs": [],
+  "overlap_count": 0
+}

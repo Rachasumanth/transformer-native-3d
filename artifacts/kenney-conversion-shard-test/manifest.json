@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "asset_id": "kenney-car-kit-ambulance",
+      "path": "kenney-car-kit-ambulance.t3d",
+      "sha256": "f94f163a3413fcc5204591aa9693d00b4d350c300f08ee26795dc0e5acbabbfc",
+      "split": "train",
+      "source": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/ambulance.glb",
+      "license": "CC0-1.0; Kenney; https://kenney.nl/assets/car-kit",
+      "source_sha256": "d35740315ab0560156a3357f70f6d96333734225e4506e21788120811ab0b758",
+      "source_group": "kenney-car-kit"
+    },
+    {
+      "asset_id": "kenney-car-kit-box",
+      "path": "kenney-car-kit-box.t3d",
+      "sha256": "c90250fa8c00a4d490418e09439f3c9415b6002426dc3e966109de2a7ea51c34",
+      "split": "train",
+      "source": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/box.glb",
+      "license": "CC0-1.0; Kenney; https://kenney.nl/assets/car-kit",
+      "source_sha256": "da0ee99b3a63a931572ddafcde7e7ecb76ae987ca16b138ba56669e6e379988a",
+      "source_group": "kenney-car-kit"
+    }
+  ]
+}

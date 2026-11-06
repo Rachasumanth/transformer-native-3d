@@ -1,0 +1,36 @@
+{
+  "scope": "One rendered image and one text prompt through frozen pretrained encoders and untrained flow; no alignment, training quality or generation claim",
+  "device": "Tesla T4",
+  "image_sha256": "f4a1448ff2c61ef2a613a901301fadb7dd56d090662936d9da76dc6edc067d30",
+  "models": {
+    "image_model": "facebook/dinov2-small",
+    "image_revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+    "text_model": "openai/clip-vit-base-patch32",
+    "text_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268"
+  },
+  "image_tokens": [
+    257,
+    32
+  ],
+  "text_tokens": [
+    10,
+    32
+  ],
+  "backbones_frozen": true,
+  "projection_gradients": true,
+  "flow_losses": {
+    "image": {
+      "occupancy": 1.469836950302124,
+      "skeleton_occupancy": 0.7927291989326477,
+      "geometry": 0.6563656330108643,
+      "material": 1.5454061031341553
+    },
+    "text": {
+      "occupancy": 0.411855548620224,
+      "skeleton_occupancy": 1.8176829814910889,
+      "geometry": 1.526511549949646,
+      "material": 0.9994831681251526
+    }
+  },
+  "source_sha256": "eadebd2b0dd343d15921e31a5aa27feff734067e954a30585d42d92a85a70ba4"
+}

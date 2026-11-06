@@ -1,0 +1,17 @@
+{
+  "RiggedSimple": {
+    "nearest_joint_dominant_accuracy": 0.6787109375,
+    "mean_absolute_weight_error": 0.3160481736824323,
+    "kl_with_1e_8_floor": 5.454438608408164
+  },
+  "CesiumMan": {
+    "nearest_joint_dominant_accuracy": 0.6103515625,
+    "mean_absolute_weight_error": 0.04367195964003571,
+    "kl_with_1e_8_floor": 7.0200217029714285
+  },
+  "Fox": {
+    "nearest_joint_dominant_accuracy": 0.51953125,
+    "mean_absolute_weight_error": 0.0432888753080398,
+    "kl_with_1e_8_floor": 9.002151744497528
+  }
+}

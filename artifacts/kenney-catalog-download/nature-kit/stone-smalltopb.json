@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/stone-smalltopb",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/stone-smalltopb.glb",
+  "sha256": "b9a2deeafdd2fa1e15cea0a9a37c5e1b70c74b58b21738202654aae5313a7fb0",
+  "bytes": 6232,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

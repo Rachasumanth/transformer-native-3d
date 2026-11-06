@@ -1,0 +1,4346 @@
+{
+  "version": 1,
+  "total": 868,
+  "prompts": {
+    "kenney-car-kit-ambulance": {
+      "prompt": "an ambulance vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-box": {
+      "prompt": "a box vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-cone": {
+      "prompt": "a cone vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-cone-flat": {
+      "prompt": "a cone flat vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-bolt": {
+      "prompt": "a debris bolt vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-bumper": {
+      "prompt": "a debris bumper vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-door": {
+      "prompt": "a debris door vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-door-window": {
+      "prompt": "a debris door window vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-drivetrain": {
+      "prompt": "a debris drivetrain vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-drivetrain-axle": {
+      "prompt": "a debris drivetrain axle vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-nut": {
+      "prompt": "a debris nut vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-plate-a": {
+      "prompt": "a debris plate a vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-plate-b": {
+      "prompt": "a debris plate b vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-plate-small-a": {
+      "prompt": "a debris plate small a vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-plate-small-b": {
+      "prompt": "a debris plate small b vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-spoiler-a": {
+      "prompt": "a debris spoiler a vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-spoiler-b": {
+      "prompt": "a debris spoiler b vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-debris-tire": {
+      "prompt": "a debris tire vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-delivery": {
+      "prompt": "a delivery vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-delivery-flat": {
+      "prompt": "a delivery flat vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-firetruck": {
+      "prompt": "a firetruck vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-garbage-truck": {
+      "prompt": "a garbage truck vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-hatchback-sports": {
+      "prompt": "a hatchback sports vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-kart-oobi": {
+      "prompt": "a kart oobi vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-kart-oodi": {
+      "prompt": "a kart oodi vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-kart-ooli": {
+      "prompt": "a kart ooli vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-kart-oopi": {
+      "prompt": "a kart oopi vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-kart-oozi": {
+      "prompt": "a kart oozi vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-police": {
+      "prompt": "a police vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-race": {
+      "prompt": "a race vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-race-future": {
+      "prompt": "a race future vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-sedan": {
+      "prompt": "a sedan vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-sedan-sports": {
+      "prompt": "a sedan sports vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-suv": {
+      "prompt": "a suv vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-suv-luxury": {
+      "prompt": "a suv luxury vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-taxi": {
+      "prompt": "a taxi vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-tractor": {
+      "prompt": "a tractor vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-tractor-police": {
+      "prompt": "a tractor police vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-tractor-shovel": {
+      "prompt": "a tractor shovel vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-truck": {
+      "prompt": "a truck vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-truck-flat": {
+      "prompt": "a truck flat vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-van": {
+      "prompt": "a van vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-wheel-dark": {
+      "prompt": "a wheel dark vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-wheel-default": {
+      "prompt": "a wheel default vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-wheel-racing": {
+      "prompt": "a wheel racing vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-wheel-tractor-back": {
+      "prompt": "a wheel tractor back vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-wheel-tractor-dark-back": {
+      "prompt": "a wheel tractor dark back vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-wheel-tractor-dark-front": {
+      "prompt": "a wheel tractor dark front vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-wheel-tractor-front": {
+      "prompt": "a wheel tractor front vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-car-kit-wheel-truck": {
+      "prompt": "a wheel truck vehicle asset",
+      "split": "train",
+      "group": "kenney-car-kit"
+    },
+    "kenney-food-kit-advocado-half": {
+      "prompt": "an advocado half food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-apple": {
+      "prompt": "an apple food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-apple-half": {
+      "prompt": "an apple half food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-avocado": {
+      "prompt": "an avocado food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-bacon": {
+      "prompt": "a bacon food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-bag": {
+      "prompt": "a bag food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-bag-flat": {
+      "prompt": "a bag flat food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-banana": {
+      "prompt": "a banana food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-barrel": {
+      "prompt": "a barrel food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-beet": {
+      "prompt": "a beet food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-bottle-ketchup": {
+      "prompt": "a bottle ketchup food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-bottle-musterd": {
+      "prompt": "a bottle musterd food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-bottle-oil": {
+      "prompt": "a bottle oil food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-bowl": {
+      "prompt": "a bowl food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-bowl-broth": {
+      "prompt": "a bowl broth food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-bowl-cereal": {
+      "prompt": "a bowl cereal food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-bowl-soup": {
+      "prompt": "a bowl soup food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-bread": {
+      "prompt": "a bread food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-broccoli": {
+      "prompt": "a broccoli food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-burger": {
+      "prompt": "a burger food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-burger-cheese": {
+      "prompt": "a burger cheese food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-burger-cheese-double": {
+      "prompt": "a burger cheese double food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-burger-double": {
+      "prompt": "a burger double food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cabbage": {
+      "prompt": "a cabbage food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cake": {
+      "prompt": "a cake food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cake-birthday": {
+      "prompt": "a cake birthday food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cake-slicer": {
+      "prompt": "a cake slicer food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-can": {
+      "prompt": "a can food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-can-open": {
+      "prompt": "a can open food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-can-small": {
+      "prompt": "a can small food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-candy-bar": {
+      "prompt": "a candy bar food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-candy-bar-wrapper": {
+      "prompt": "a candy bar wrapper food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-carrot": {
+      "prompt": "a carrot food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-carton": {
+      "prompt": "a carton food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-carton-small": {
+      "prompt": "a carton small food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cauliflower": {
+      "prompt": "a cauliflower food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-celery-stick": {
+      "prompt": "a celery stick food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cheese": {
+      "prompt": "a cheese food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cheese-cut": {
+      "prompt": "a cheese cut food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cheese-slicer": {
+      "prompt": "a cheese slicer food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cherries": {
+      "prompt": "a cherries food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-chinese": {
+      "prompt": "a chinese food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-chocolate": {
+      "prompt": "a chocolate food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-chocolate-wrapper": {
+      "prompt": "a chocolate wrapper food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-chopstic-decorative": {
+      "prompt": "a chopstic decorative food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-chopstick": {
+      "prompt": "a chopstick food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cocktail": {
+      "prompt": "a cocktail food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-coconut": {
+      "prompt": "a coconut food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-coconut-half": {
+      "prompt": "a coconut half food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cookie": {
+      "prompt": "a cookie food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cookie-chocolate": {
+      "prompt": "a cookie chocolate food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cooking-fork": {
+      "prompt": "a cooking fork food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cooking-knife": {
+      "prompt": "a cooking knife food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cooking-knife-chopping": {
+      "prompt": "a cooking knife chopping food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cooking-spatula": {
+      "prompt": "a cooking spatula food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cooking-spoon": {
+      "prompt": "a cooking spoon food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-corn": {
+      "prompt": "a corn food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-corn-dog": {
+      "prompt": "a corn dog food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-croissant": {
+      "prompt": "a croissant food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cup": {
+      "prompt": "a cup food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cup-coffee": {
+      "prompt": "a cup coffee food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cup-saucer": {
+      "prompt": "a cup saucer food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cup-tea": {
+      "prompt": "a cup tea food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cupcake": {
+      "prompt": "a cupcake food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cutting-board": {
+      "prompt": "a cutting board food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cutting-board-japanese": {
+      "prompt": "a cutting board japanese food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-cutting-board-round": {
+      "prompt": "a cutting board round food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-dim-sum": {
+      "prompt": "a dim sum food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-donut": {
+      "prompt": "a donut food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-donut-chocolate": {
+      "prompt": "a donut chocolate food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-donut-sprinkles": {
+      "prompt": "a donut sprinkles food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-egg": {
+      "prompt": "an egg food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-egg-cooked": {
+      "prompt": "an egg cooked food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-egg-cup": {
+      "prompt": "an egg cup food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-egg-half": {
+      "prompt": "an egg half food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-eggplant": {
+      "prompt": "an eggplant food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-fish": {
+      "prompt": "a fish food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-fish-bones": {
+      "prompt": "a fish bones food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-frappe": {
+      "prompt": "a frappe food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-fries": {
+      "prompt": "a fries food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-fries-empty": {
+      "prompt": "a fries empty food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-frikandel-speciaal": {
+      "prompt": "a frikandel speciaal food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-frying-pan": {
+      "prompt": "a frying pan food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-frying-pan-lid": {
+      "prompt": "a frying pan lid food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-ginger-bread": {
+      "prompt": "a ginger bread food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-ginger-bread-cutter": {
+      "prompt": "a ginger bread cutter food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-glass": {
+      "prompt": "a glass food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-glass-wine": {
+      "prompt": "a glass wine food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-grapes": {
+      "prompt": "a grapes food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-honey": {
+      "prompt": "a honey food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-hot-dog": {
+      "prompt": "a hot dog food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-hot-dog-raw": {
+      "prompt": "a hot dog raw food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-ice-cream": {
+      "prompt": "an ice cream food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-ice-cream-cne": {
+      "prompt": "an ice cream cne food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-ice-cream-cup": {
+      "prompt": "an ice cream cup food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-ice-cream-scoop-chocolate": {
+      "prompt": "an ice cream scoop chocolate food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-ice-cream-scoop-mint": {
+      "prompt": "an ice cream scoop mint food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-knife-block": {
+      "prompt": "a knife block food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-leek": {
+      "prompt": "a leek food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-lemon": {
+      "prompt": "a lemon food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-lemon-half": {
+      "prompt": "a lemon half food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-loaf": {
+      "prompt": "a loaf food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-loaf-baguette": {
+      "prompt": "a loaf baguette food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-loaf-round": {
+      "prompt": "a loaf round food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-lollypop": {
+      "prompt": "a lollypop food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-maki-roe": {
+      "prompt": "a maki roe food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-maki-salmon": {
+      "prompt": "a maki salmon food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-maki-vegetable": {
+      "prompt": "a maki vegetable food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-meat-cooked": {
+      "prompt": "a meat cooked food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-meat-patty": {
+      "prompt": "a meat patty food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-meat-raw": {
+      "prompt": "a meat raw food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-meat-ribs": {
+      "prompt": "a meat ribs food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-meat-sausage": {
+      "prompt": "a meat sausage food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-meat-tenderizer": {
+      "prompt": "a meat tenderizer food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-mincemeat-pie": {
+      "prompt": "a mincemeat pie food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-mortar": {
+      "prompt": "a mortar food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-mortar-pestle": {
+      "prompt": "a mortar pestle food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-muffin": {
+      "prompt": "a muffin food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-mug": {
+      "prompt": "a mug food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-mushroom": {
+      "prompt": "a mushroom food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-mushroom-half": {
+      "prompt": "a mushroom half food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-mussel": {
+      "prompt": "a mussel food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-mussel-open": {
+      "prompt": "a mussel open food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-onion": {
+      "prompt": "an onion food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-onion-half": {
+      "prompt": "an onion half food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-orange": {
+      "prompt": "an orange food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pan": {
+      "prompt": "a pan food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pan-stew": {
+      "prompt": "a pan stew food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pancakes": {
+      "prompt": "a pancakes food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-paprika": {
+      "prompt": "a paprika food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-paprika-slice": {
+      "prompt": "a paprika slice food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-peanut-butter": {
+      "prompt": "a peanut butter food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pear": {
+      "prompt": "a pear food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pear-half": {
+      "prompt": "a pear half food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pepper": {
+      "prompt": "a pepper food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pepper-mill": {
+      "prompt": "a pepper mill food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pie": {
+      "prompt": "a pie food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pineapple": {
+      "prompt": "a pineapple food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pizza": {
+      "prompt": "a pizza food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pizza-box": {
+      "prompt": "a pizza box food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pizza-cutter": {
+      "prompt": "a pizza cutter food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-plate": {
+      "prompt": "a plate food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-plate-broken": {
+      "prompt": "a plate broken food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-plate-deep": {
+      "prompt": "a plate deep food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-plate-dinner": {
+      "prompt": "a plate dinner food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-plate-rectangle": {
+      "prompt": "a plate rectangle food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-plate-sauerkraut": {
+      "prompt": "a plate sauerkraut food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-popsicle": {
+      "prompt": "a popsicle food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-popsicle-chocolate": {
+      "prompt": "a popsicle chocolate food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-popsicle-stick": {
+      "prompt": "a popsicle stick food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pot": {
+      "prompt": "a pot food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pot-lid": {
+      "prompt": "a pot lid food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pot-stew": {
+      "prompt": "a pot stew food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pot-stew-lid": {
+      "prompt": "a pot stew lid food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pudding": {
+      "prompt": "a pudding food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pumpkin": {
+      "prompt": "a pumpkin food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-pumpkin-basic": {
+      "prompt": "a pumpkin basic food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-radish": {
+      "prompt": "a radish food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-rice-ball": {
+      "prompt": "a rice ball food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-rollingpin": {
+      "prompt": "a rollingpin food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-salad": {
+      "prompt": "a salad food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-sandwich": {
+      "prompt": "a sandwich food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-sausage": {
+      "prompt": "a sausage food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-sausage-half": {
+      "prompt": "a sausage half food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-shaker-pepper": {
+      "prompt": "a shaker pepper food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-shaker-salt": {
+      "prompt": "a shaker salt food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-skewer": {
+      "prompt": "a skewer food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-skewer-vegetables": {
+      "prompt": "a skewer vegetables food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-soda": {
+      "prompt": "a soda food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-soda-bottle": {
+      "prompt": "a soda bottle food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-soda-can": {
+      "prompt": "a soda can food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-soda-can-crushed": {
+      "prompt": "a soda can crushed food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-soda-glass": {
+      "prompt": "a soda glass food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-soy": {
+      "prompt": "a soy food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-steamer": {
+      "prompt": "a steamer food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-strawberry": {
+      "prompt": "a strawberry food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-styrofoam": {
+      "prompt": "a styrofoam food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-styrofoam-dinner": {
+      "prompt": "a styrofoam dinner food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-sub": {
+      "prompt": "a sub food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-sundae": {
+      "prompt": "a sundae food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-sushi-egg": {
+      "prompt": "a sushi egg food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-sushi-salmon": {
+      "prompt": "a sushi salmon food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-taco": {
+      "prompt": "a taco food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-tajine": {
+      "prompt": "a tajine food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-tajine-lid": {
+      "prompt": "a tajine lid food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-tomato": {
+      "prompt": "a tomato food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-tomato-slice": {
+      "prompt": "a tomato slice food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-turkey": {
+      "prompt": "a turkey food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-utensil-fork": {
+      "prompt": "an utensil fork food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-utensil-knife": {
+      "prompt": "an utensil knife food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-utensil-spoon": {
+      "prompt": "an utensil spoon food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-waffle": {
+      "prompt": "a waffle food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-watermelon": {
+      "prompt": "a watermelon food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-whipped-cream": {
+      "prompt": "a whipped cream food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-whisk": {
+      "prompt": "a whisk food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-whole-ham": {
+      "prompt": "a whole ham food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-wholer-ham": {
+      "prompt": "a wholer ham food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-wine-red": {
+      "prompt": "a wine red food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-food-kit-wine-white": {
+      "prompt": "a wine white food item",
+      "split": "train",
+      "group": "kenney-food-kit"
+    },
+    "kenney-furniture-kit-bathroomcabinet": {
+      "prompt": "a bathroomcabinet furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bathroomcabinetdrawer": {
+      "prompt": "a bathroomcabinetdrawer furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bathroommirror": {
+      "prompt": "a bathroommirror furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bathroomsink": {
+      "prompt": "a bathroomsink furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bathroomsinksquare": {
+      "prompt": "a bathroomsinksquare furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bathtub": {
+      "prompt": "a bathtub furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bear": {
+      "prompt": "a bear furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bedbunk": {
+      "prompt": "a bedbunk furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-beddouble": {
+      "prompt": "a beddouble furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bedsingle": {
+      "prompt": "a bedsingle furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bench": {
+      "prompt": "a bench furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-benchcushion": {
+      "prompt": "a benchcushion furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-benchcushionlow": {
+      "prompt": "a benchcushionlow furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bookcaseclosed": {
+      "prompt": "a bookcaseclosed furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bookcasecloseddoors": {
+      "prompt": "a bookcasecloseddoors furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bookcaseclosedwide": {
+      "prompt": "a bookcaseclosedwide furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bookcaseopen": {
+      "prompt": "a bookcaseopen furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-bookcaseopenlow": {
+      "prompt": "a bookcaseopenlow furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-books": {
+      "prompt": "a books furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-cabinetbed": {
+      "prompt": "a cabinetbed furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-cabinetbeddrawer": {
+      "prompt": "a cabinetbeddrawer furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-cabinetbeddrawertable": {
+      "prompt": "a cabinetbeddrawertable furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-cabinettelevision": {
+      "prompt": "a cabinettelevision furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-cabinettelevisiondoors": {
+      "prompt": "a cabinettelevisiondoors furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-cardboardboxclosed": {
+      "prompt": "a cardboardboxclosed furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-cardboardboxopen": {
+      "prompt": "a cardboardboxopen furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-ceilingfan": {
+      "prompt": "a ceilingfan furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-chair": {
+      "prompt": "a chair furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-chaircushion": {
+      "prompt": "a chaircushion furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-chairdesk": {
+      "prompt": "a chairdesk furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-chairmoderncushion": {
+      "prompt": "a chairmoderncushion furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-chairmodernframecushion": {
+      "prompt": "a chairmodernframecushion furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-chairrounded": {
+      "prompt": "a chairrounded furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-coatrack": {
+      "prompt": "a coatrack furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-coatrackstanding": {
+      "prompt": "a coatrackstanding furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-computerkeyboard": {
+      "prompt": "a computerkeyboard furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-computermouse": {
+      "prompt": "a computermouse furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-computerscreen": {
+      "prompt": "a computerscreen furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-desk": {
+      "prompt": "a desk furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-deskcorner": {
+      "prompt": "a deskcorner furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-doorway": {
+      "prompt": "a doorway furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-doorwayfront": {
+      "prompt": "a doorwayfront furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-doorwayopen": {
+      "prompt": "a doorwayopen furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-dryer": {
+      "prompt": "a dryer furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-floorcorner": {
+      "prompt": "a floorcorner furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-floorcornerround": {
+      "prompt": "a floorcornerround furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-floorfull": {
+      "prompt": "a floorfull furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-floorhalf": {
+      "prompt": "a floorhalf furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-hoodlarge": {
+      "prompt": "a hoodlarge furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-hoodmodern": {
+      "prompt": "a hoodmodern furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchenbar": {
+      "prompt": "a kitchenbar furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchenbarend": {
+      "prompt": "a kitchenbarend furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchenblender": {
+      "prompt": "a kitchenblender furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchencabinet": {
+      "prompt": "a kitchencabinet furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchencabinetcornerinner": {
+      "prompt": "a kitchencabinetcornerinner furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchencabinetcornerround": {
+      "prompt": "a kitchencabinetcornerround furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchencabinetdrawer": {
+      "prompt": "a kitchencabinetdrawer furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchencabinetupper": {
+      "prompt": "a kitchencabinetupper furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchencabinetuppercorner": {
+      "prompt": "a kitchencabinetuppercorner furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchencabinetupperdouble": {
+      "prompt": "a kitchencabinetupperdouble furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchencabinetupperlow": {
+      "prompt": "a kitchencabinetupperlow furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchencoffeemachine": {
+      "prompt": "a kitchencoffeemachine furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchenfridge": {
+      "prompt": "a kitchenfridge furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchenfridgebuiltin": {
+      "prompt": "a kitchenfridgebuiltin furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchenfridgelarge": {
+      "prompt": "a kitchenfridgelarge furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchenfridgesmall": {
+      "prompt": "a kitchenfridgesmall furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchenmicrowave": {
+      "prompt": "a kitchenmicrowave furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchensink": {
+      "prompt": "a kitchensink furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchenstove": {
+      "prompt": "a kitchenstove furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-kitchenstoveelectric": {
+      "prompt": "a kitchenstoveelectric furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-lamproundfloor": {
+      "prompt": "a lamproundfloor furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-lamproundtable": {
+      "prompt": "a lamproundtable furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-lampsquareceiling": {
+      "prompt": "a lampsquareceiling furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-lampsquarefloor": {
+      "prompt": "a lampsquarefloor furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-lampsquaretable": {
+      "prompt": "a lampsquaretable furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-lampwall": {
+      "prompt": "a lampwall furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-laptop": {
+      "prompt": "a laptop furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-loungechair": {
+      "prompt": "a loungechair furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-loungechairrelax": {
+      "prompt": "a loungechairrelax furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-loungedesignchair": {
+      "prompt": "a loungedesignchair furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-loungedesignsofa": {
+      "prompt": "a loungedesignsofa furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-loungedesignsofacorner": {
+      "prompt": "a loungedesignsofacorner furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-loungesofa": {
+      "prompt": "a loungesofa furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-loungesofacorner": {
+      "prompt": "a loungesofacorner furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-loungesofalong": {
+      "prompt": "a loungesofalong furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-loungesofaottoman": {
+      "prompt": "a loungesofaottoman furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-paneling": {
+      "prompt": "a paneling furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-pillow": {
+      "prompt": "a pillow furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-pillowblue": {
+      "prompt": "a pillowblue furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-pillowbluelong": {
+      "prompt": "a pillowbluelong furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-pillowlong": {
+      "prompt": "a pillowlong furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-plantsmall1": {
+      "prompt": "a plantsmall1 furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-plantsmall2": {
+      "prompt": "a plantsmall2 furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-plantsmall3": {
+      "prompt": "a plantsmall3 furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-pottedplant": {
+      "prompt": "a pottedplant furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-radio": {
+      "prompt": "a radio furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-rugdoormat": {
+      "prompt": "a rugdoormat furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-rugrectangle": {
+      "prompt": "a rugrectangle furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-ruground": {
+      "prompt": "a ruground furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-rugrounded": {
+      "prompt": "a rugrounded furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-rugsquare": {
+      "prompt": "a rugsquare furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-shower": {
+      "prompt": "a shower furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-showerround": {
+      "prompt": "a showerround furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-sidetable": {
+      "prompt": "a sidetable furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-sidetabledrawers": {
+      "prompt": "a sidetabledrawers furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-speaker": {
+      "prompt": "a speaker furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-speakersmall": {
+      "prompt": "a speakersmall furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-stairs": {
+      "prompt": "a stairs furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-stairscorner": {
+      "prompt": "a stairscorner furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-stairsopen": {
+      "prompt": "a stairsopen furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-stairsopensingle": {
+      "prompt": "a stairsopensingle furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-stoolbar": {
+      "prompt": "a stoolbar furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-stoolbarsquare": {
+      "prompt": "a stoolbarsquare furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-table": {
+      "prompt": "a table furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-tablecloth": {
+      "prompt": "a tablecloth furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-tablecoffee": {
+      "prompt": "a tablecoffee furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-tablecoffeeglass": {
+      "prompt": "a tablecoffeeglass furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-tablecoffeeglasssquare": {
+      "prompt": "a tablecoffeeglasssquare furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-tablecoffeesquare": {
+      "prompt": "a tablecoffeesquare furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-tablecross": {
+      "prompt": "a tablecross furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-tablecrosscloth": {
+      "prompt": "a tablecrosscloth furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-tableglass": {
+      "prompt": "a tableglass furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-tableround": {
+      "prompt": "a tableround furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-televisionantenna": {
+      "prompt": "a televisionantenna furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-televisionmodern": {
+      "prompt": "a televisionmodern furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-televisionvintage": {
+      "prompt": "a televisionvintage furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-toaster": {
+      "prompt": "a toaster furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-toilet": {
+      "prompt": "a toilet furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-toiletsquare": {
+      "prompt": "a toiletsquare furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-trashcan": {
+      "prompt": "a trashcan furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-wall": {
+      "prompt": "a wall furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-wallcorner": {
+      "prompt": "a wallcorner furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-wallcornerrond": {
+      "prompt": "a wallcornerrond furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-walldoorway": {
+      "prompt": "a walldoorway furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-walldoorwaywide": {
+      "prompt": "a walldoorwaywide furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-wallhalf": {
+      "prompt": "a wallhalf furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-wallwindow": {
+      "prompt": "a wallwindow furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-wallwindowslide": {
+      "prompt": "a wallwindowslide furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-washer": {
+      "prompt": "a washer furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-furniture-kit-washerdryerstacked": {
+      "prompt": "a washerdryerstacked furniture piece",
+      "split": "train",
+      "group": "kenney-furniture-kit"
+    },
+    "kenney-nature-kit-bed": {
+      "prompt": "a bed nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bed-floor": {
+      "prompt": "a bed floor nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-center-stone": {
+      "prompt": "a bridge center stone nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-center-stoneround": {
+      "prompt": "a bridge center stoneround nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-center-wood": {
+      "prompt": "a bridge center wood nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-center-woodround": {
+      "prompt": "a bridge center woodround nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-side-stone": {
+      "prompt": "a bridge side stone nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-side-stoneround": {
+      "prompt": "a bridge side stoneround nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-side-wood": {
+      "prompt": "a bridge side wood nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-side-woodround": {
+      "prompt": "a bridge side woodround nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-stone": {
+      "prompt": "a bridge stone nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-stonenarrow": {
+      "prompt": "a bridge stonenarrow nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-stoneround": {
+      "prompt": "a bridge stoneround nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-stoneroundnarrow": {
+      "prompt": "a bridge stoneroundnarrow nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-wood": {
+      "prompt": "a bridge wood nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-woodnarrow": {
+      "prompt": "a bridge woodnarrow nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-woodround": {
+      "prompt": "a bridge woodround nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-bridge-woodroundnarrow": {
+      "prompt": "a bridge woodroundnarrow nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cactus-short": {
+      "prompt": "a cactus short nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cactus-tall": {
+      "prompt": "a cactus tall nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-campfire-bricks": {
+      "prompt": "a campfire bricks nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-campfire-logs": {
+      "prompt": "a campfire logs nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-campfire-planks": {
+      "prompt": "a campfire planks nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-campfire-stones": {
+      "prompt": "a campfire stones nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-canoe": {
+      "prompt": "a canoe nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-canoe-paddle": {
+      "prompt": "a canoe paddle nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-block-rock": {
+      "prompt": "a cliff block rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-blockcave-rock": {
+      "prompt": "a cliff blockcave rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-blockcave-stone": {
+      "prompt": "a cliff blockcave stone nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-blockdiagonal-rock": {
+      "prompt": "a cliff blockdiagonal rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-blockhalf-rock": {
+      "prompt": "a cliff blockhalf rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-blockquarter-rock": {
+      "prompt": "a cliff blockquarter rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-blockslope-rock": {
+      "prompt": "a cliff blockslope rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-blockslopehalfwalls-rock": {
+      "prompt": "a cliff blockslopehalfwalls rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-blockslopehalfwalls-stone": {
+      "prompt": "a cliff blockslopehalfwalls stone nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-blockslopewalls-rock": {
+      "prompt": "a cliff blockslopewalls rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-blockslopewalls-stone": {
+      "prompt": "a cliff blockslopewalls stone nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-cave-rock": {
+      "prompt": "a cliff cave rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-corner-rock": {
+      "prompt": "a cliff corner rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-cornerinner-rock": {
+      "prompt": "a cliff cornerinner rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-cornerinner-stone": {
+      "prompt": "a cliff cornerinner stone nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-cornerinnerlarge-rock": {
+      "prompt": "a cliff cornerinnerlarge rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-cornerinnertop-rock": {
+      "prompt": "a cliff cornerinnertop rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-cornerlarge-rock": {
+      "prompt": "a cliff cornerlarge rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-cornerlarge-stone": {
+      "prompt": "a cliff cornerlarge stone nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-cornertop-rock": {
+      "prompt": "a cliff cornertop rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-diagonal-rock": {
+      "prompt": "a cliff diagonal rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-diagonal-stone": {
+      "prompt": "a cliff diagonal stone nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-half-rock": {
+      "prompt": "a cliff half rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-halfcorner-rock": {
+      "prompt": "a cliff halfcorner rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-halfcornerinner-rock": {
+      "prompt": "a cliff halfcornerinner rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-large-rock": {
+      "prompt": "a cliff large rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-rock": {
+      "prompt": "a cliff rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-steps-rock": {
+      "prompt": "a cliff steps rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-stepscorner-rock": {
+      "prompt": "a cliff stepscorner rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-stepscornerinner-rock": {
+      "prompt": "a cliff stepscornerinner rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-top-rock": {
+      "prompt": "a cliff top rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-topdiagonal-rock": {
+      "prompt": "a cliff topdiagonal rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-topdiagonal-stone": {
+      "prompt": "a cliff topdiagonal stone nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-waterfall-rock": {
+      "prompt": "a cliff waterfall rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-waterfall-stone": {
+      "prompt": "a cliff waterfall stone nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-cliff-waterfalltop-rock": {
+      "prompt": "a cliff waterfalltop rock nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crop-carrot": {
+      "prompt": "a crop carrot nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crop-melon": {
+      "prompt": "a crop melon nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crop-pumpkin": {
+      "prompt": "a crop pumpkin nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crop-turnip": {
+      "prompt": "a crop turnip nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-bamboostagea": {
+      "prompt": "a crops bamboostagea nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-bamboostageb": {
+      "prompt": "a crops bamboostageb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-cornstagea": {
+      "prompt": "a crops cornstagea nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-cornstageb": {
+      "prompt": "a crops cornstageb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-cornstagec": {
+      "prompt": "a crops cornstagec nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-cornstaged": {
+      "prompt": "a crops cornstaged nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-dirtdoublerow": {
+      "prompt": "a crops dirtdoublerow nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-dirtdoublerowcorner": {
+      "prompt": "a crops dirtdoublerowcorner nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-dirtdoublerowend": {
+      "prompt": "a crops dirtdoublerowend nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-dirtrow": {
+      "prompt": "a crops dirtrow nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-dirtrowcorner": {
+      "prompt": "a crops dirtrowcorner nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-dirtrowend": {
+      "prompt": "a crops dirtrowend nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-dirtsingle": {
+      "prompt": "a crops dirtsingle nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-leafsstagea": {
+      "prompt": "a crops leafsstagea nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-leafsstageb": {
+      "prompt": "a crops leafsstageb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-wheatstagea": {
+      "prompt": "a crops wheatstagea nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-crops-wheatstageb": {
+      "prompt": "a crops wheatstageb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-fence-bend": {
+      "prompt": "a fence bend nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-fence-bendcenter": {
+      "prompt": "a fence bendcenter nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-fence-corner": {
+      "prompt": "a fence corner nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-fence-gate": {
+      "prompt": "a fence gate nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-fence-planks": {
+      "prompt": "a fence planks nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-fence-planksdouble": {
+      "prompt": "a fence planksdouble nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-fence-simple": {
+      "prompt": "a fence simple nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-fence-simplecenter": {
+      "prompt": "a fence simplecenter nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-fence-simplediagonal": {
+      "prompt": "a fence simplediagonal nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-fence-simplediagonalcenter": {
+      "prompt": "a fence simplediagonalcenter nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-fence-simplehigh": {
+      "prompt": "a fence simplehigh nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-fence-simplelow": {
+      "prompt": "a fence simplelow nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-flower-purplea": {
+      "prompt": "a flower purplea nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-flower-purpleb": {
+      "prompt": "a flower purpleb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-flower-purplec": {
+      "prompt": "a flower purplec nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-flower-reda": {
+      "prompt": "a flower reda nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-flower-redb": {
+      "prompt": "a flower redb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-flower-redc": {
+      "prompt": "a flower redc nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-flower-yellowa": {
+      "prompt": "a flower yellowa nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-flower-yellowb": {
+      "prompt": "a flower yellowb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-flower-yellowc": {
+      "prompt": "a flower yellowc nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-grass": {
+      "prompt": "a grass nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-grass-large": {
+      "prompt": "a grass large nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-grass-leafs": {
+      "prompt": "a grass leafs nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-grass-leafslarge": {
+      "prompt": "a grass leafslarge nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathbend": {
+      "prompt": "a ground pathbend nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathbendbank": {
+      "prompt": "a ground pathbendbank nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathcorner": {
+      "prompt": "a ground pathcorner nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathcornersmall": {
+      "prompt": "a ground pathcornersmall nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathcross": {
+      "prompt": "a ground pathcross nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathend": {
+      "prompt": "a ground pathend nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathendclosed": {
+      "prompt": "a ground pathendclosed nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathopen": {
+      "prompt": "a ground pathopen nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathrocks": {
+      "prompt": "a ground pathrocks nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathside": {
+      "prompt": "a ground pathside nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathsideopen": {
+      "prompt": "a ground pathsideopen nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathsplit": {
+      "prompt": "a ground pathsplit nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathstraight": {
+      "prompt": "a ground pathstraight nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-pathtile": {
+      "prompt": "a ground pathtile nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-riverbend": {
+      "prompt": "a ground riverbend nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-riverbendbank": {
+      "prompt": "a ground riverbendbank nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-rivercorner": {
+      "prompt": "a ground rivercorner nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-rivercornersmall": {
+      "prompt": "a ground rivercornersmall nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-rivercross": {
+      "prompt": "a ground rivercross nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-riverendclosed": {
+      "prompt": "a ground riverendclosed nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-riversideopen": {
+      "prompt": "a ground riversideopen nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-riversplit": {
+      "prompt": "a ground riversplit nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-ground-rivertile": {
+      "prompt": "a ground rivertile nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-hanging-moss": {
+      "prompt": "a hanging moss nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-lily-large": {
+      "prompt": "a lily large nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-lily-small": {
+      "prompt": "a lily small nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-log": {
+      "prompt": "a log nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-log-large": {
+      "prompt": "a log large nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-log-stack": {
+      "prompt": "a log stack nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-log-stacklarge": {
+      "prompt": "a log stacklarge nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-mushroom-red": {
+      "prompt": "a mushroom red nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-mushroom-redgroup": {
+      "prompt": "a mushroom redgroup nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-mushroom-redtall": {
+      "prompt": "a mushroom redtall nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-mushroom-tan": {
+      "prompt": "a mushroom tan nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-path-stone": {
+      "prompt": "a path stone nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-path-stonecircle": {
+      "prompt": "a path stonecircle nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-path-stonecorner": {
+      "prompt": "a path stonecorner nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-path-stoneend": {
+      "prompt": "a path stoneend nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-path-wood": {
+      "prompt": "a path wood nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-path-woodcorner": {
+      "prompt": "a path woodcorner nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-path-woodend": {
+      "prompt": "a path woodend nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-plant-bush": {
+      "prompt": "a plant bush nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-plant-bushdetailed": {
+      "prompt": "a plant bushdetailed nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-plant-bushlarge": {
+      "prompt": "a plant bushlarge nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-plant-bushlargetriangle": {
+      "prompt": "a plant bushlargetriangle nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-plant-bushsmall": {
+      "prompt": "a plant bushsmall nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-plant-bushtriangle": {
+      "prompt": "a plant bushtriangle nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-plant-flatshort": {
+      "prompt": "a plant flatshort nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-plant-flattall": {
+      "prompt": "a plant flattall nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-platform-beach": {
+      "prompt": "a platform beach nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-platform-grass": {
+      "prompt": "a platform grass nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-pot-large": {
+      "prompt": "a pot large nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-pot-small": {
+      "prompt": "a pot small nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-largea": {
+      "prompt": "a rock largea nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-largeb": {
+      "prompt": "a rock largeb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-largec": {
+      "prompt": "a rock largec nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-larged": {
+      "prompt": "a rock larged nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-largee": {
+      "prompt": "a rock largee nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-largef": {
+      "prompt": "a rock largef nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smalla": {
+      "prompt": "a rock smalla nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smallb": {
+      "prompt": "a rock smallb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smallc": {
+      "prompt": "a rock smallc nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smalld": {
+      "prompt": "a rock smalld nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smalle": {
+      "prompt": "a rock smalle nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smallf": {
+      "prompt": "a rock smallf nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smallflata": {
+      "prompt": "a rock smallflata nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smallflatb": {
+      "prompt": "a rock smallflatb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smallflatc": {
+      "prompt": "a rock smallflatc nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smallg": {
+      "prompt": "a rock smallg nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smallh": {
+      "prompt": "a rock smallh nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smalli": {
+      "prompt": "a rock smalli nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smalltopa": {
+      "prompt": "a rock smalltopa nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-smalltopb": {
+      "prompt": "a rock smalltopb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-talla": {
+      "prompt": "a rock talla nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-tallb": {
+      "prompt": "a rock tallb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-tallc": {
+      "prompt": "a rock tallc nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-talld": {
+      "prompt": "a rock talld nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-talle": {
+      "prompt": "a rock talle nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-tallf": {
+      "prompt": "a rock tallf nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-tallg": {
+      "prompt": "a rock tallg nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-tallh": {
+      "prompt": "a rock tallh nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-talli": {
+      "prompt": "a rock talli nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-rock-tallj": {
+      "prompt": "a rock tallj nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-sign": {
+      "prompt": "a sign nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-statue-block": {
+      "prompt": "a statue block nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-statue-column": {
+      "prompt": "a statue column nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-statue-columndamaged": {
+      "prompt": "a statue columndamaged nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-statue-head": {
+      "prompt": "a statue head nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-statue-obelisk": {
+      "prompt": "a statue obelisk nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-statue-ring": {
+      "prompt": "a statue ring nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-stone-smalla": {
+      "prompt": "a stone smalla nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-stone-smalli": {
+      "prompt": "a stone smalli nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-stone-tallf": {
+      "prompt": "a stone tallf nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-stone-tallg": {
+      "prompt": "a stone tallg nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-stone-tallh": {
+      "prompt": "a stone tallh nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-stone-tallj": {
+      "prompt": "a stone tallj nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-stump-old": {
+      "prompt": "a stump old nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-stump-oldtall": {
+      "prompt": "a stump oldtall nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-stump-round": {
+      "prompt": "a stump round nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-stump-rounddetailed": {
+      "prompt": "a stump rounddetailed nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-stump-square": {
+      "prompt": "a stump square nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-stump-squaredetailed": {
+      "prompt": "a stump squaredetailed nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-stump-squaredetailedwide": {
+      "prompt": "a stump squaredetailedwide nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tent-detailedclosed": {
+      "prompt": "a tent detailedclosed nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tent-detailedopen": {
+      "prompt": "a tent detailedopen nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tent-smallclosed": {
+      "prompt": "a tent smallclosed nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tent-smallopen": {
+      "prompt": "a tent smallopen nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-blocks": {
+      "prompt": "a tree blocks nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-blocks-fall": {
+      "prompt": "a tree blocks fall nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-cone": {
+      "prompt": "a tree cone nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-cone-dark": {
+      "prompt": "a tree cone dark nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-default": {
+      "prompt": "a tree default nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-default-fall": {
+      "prompt": "a tree default fall nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-detailed": {
+      "prompt": "a tree detailed nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-fat": {
+      "prompt": "a tree fat nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-oak": {
+      "prompt": "a tree oak nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-palm": {
+      "prompt": "a tree palm nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-palmbend": {
+      "prompt": "a tree palmbend nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-palmdetailedshort": {
+      "prompt": "a tree palmdetailedshort nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-palmdetailedtall": {
+      "prompt": "a tree palmdetailedtall nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-palmshort": {
+      "prompt": "a tree palmshort nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-palmtall": {
+      "prompt": "a tree palmtall nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinedefaulta": {
+      "prompt": "a tree pinedefaulta nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinedefaultb": {
+      "prompt": "a tree pinedefaultb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinegrounda": {
+      "prompt": "a tree pinegrounda nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinegroundb": {
+      "prompt": "a tree pinegroundb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinerounda": {
+      "prompt": "a tree pinerounda nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pineroundb": {
+      "prompt": "a tree pineroundb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pineroundc": {
+      "prompt": "a tree pineroundc nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pineroundd": {
+      "prompt": "a tree pineroundd nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinerounde": {
+      "prompt": "a tree pinerounde nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pineroundf": {
+      "prompt": "a tree pineroundf nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinesmalla": {
+      "prompt": "a tree pinesmalla nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinesmallb": {
+      "prompt": "a tree pinesmallb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinesmallc": {
+      "prompt": "a tree pinesmallc nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinesmalld": {
+      "prompt": "a tree pinesmalld nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinetalla": {
+      "prompt": "a tree pinetalla nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinetalla-detailed": {
+      "prompt": "a tree pinetalla detailed nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinetallb": {
+      "prompt": "a tree pinetallb nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinetallb-detailed": {
+      "prompt": "a tree pinetallb detailed nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinetallc": {
+      "prompt": "a tree pinetallc nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinetallc-detailed": {
+      "prompt": "a tree pinetallc detailed nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinetalld": {
+      "prompt": "a tree pinetalld nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-pinetalld-detailed": {
+      "prompt": "a tree pinetalld detailed nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-plateau": {
+      "prompt": "a tree plateau nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-simple": {
+      "prompt": "a tree simple nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-small": {
+      "prompt": "a tree small nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-small-dark": {
+      "prompt": "a tree small dark nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-tall": {
+      "prompt": "a tree tall nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-tall-fall": {
+      "prompt": "a tree tall fall nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-thin": {
+      "prompt": "a tree thin nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-nature-kit-tree-thin-dark": {
+      "prompt": "a tree thin dark nature environment asset",
+      "split": "train",
+      "group": "kenney-nature-kit"
+    },
+    "kenney-pirate-kit-barrel": {
+      "prompt": "a barrel pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-boat-row-large": {
+      "prompt": "a boat row large pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-boat-row-small": {
+      "prompt": "a boat row small pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-bottle": {
+      "prompt": "a bottle pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-bottle-large": {
+      "prompt": "a bottle large pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-cannon": {
+      "prompt": "a cannon pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-cannon-ball": {
+      "prompt": "a cannon ball pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-cannon-mobile": {
+      "prompt": "a cannon mobile pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-castle-door": {
+      "prompt": "a castle door pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-castle-gate": {
+      "prompt": "a castle gate pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-castle-wall": {
+      "prompt": "a castle wall pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-castle-window": {
+      "prompt": "a castle window pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-crate": {
+      "prompt": "a crate pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-crate-bottles": {
+      "prompt": "a crate bottles pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-flag": {
+      "prompt": "a flag pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-flag-high": {
+      "prompt": "a flag high pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-flag-high-pennant": {
+      "prompt": "a flag high pennant pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-flag-pennant": {
+      "prompt": "a flag pennant pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-grass": {
+      "prompt": "a grass pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-grass-patch": {
+      "prompt": "a grass patch pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-grass-plant": {
+      "prompt": "a grass plant pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-hole": {
+      "prompt": "a hole pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-mast": {
+      "prompt": "a mast pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-mast-ropes": {
+      "prompt": "a mast ropes pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-palm-bend": {
+      "prompt": "a palm bend pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-palm-detailed-bend": {
+      "prompt": "a palm detailed bend pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-palm-detailed-straight": {
+      "prompt": "a palm detailed straight pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-palm-straight": {
+      "prompt": "a palm straight pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-patch-grass": {
+      "prompt": "a patch grass pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-patch-grass-foliage": {
+      "prompt": "a patch grass foliage pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-patch-sand": {
+      "prompt": "a patch sand pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-patch-sand-foliage": {
+      "prompt": "a patch sand foliage pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-platform": {
+      "prompt": "a platform pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-platform-planks": {
+      "prompt": "a platform planks pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-rocks-a": {
+      "prompt": "a rocks a pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-rocks-b": {
+      "prompt": "a rocks b pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-rocks-c": {
+      "prompt": "a rocks c pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-rocks-sand-a": {
+      "prompt": "a rocks sand a pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-rocks-sand-b": {
+      "prompt": "a rocks sand b pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-rocks-sand-c": {
+      "prompt": "a rocks sand c pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-ship-ghost": {
+      "prompt": "a ship ghost pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-ship-large": {
+      "prompt": "a ship large pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-ship-medium": {
+      "prompt": "a ship medium pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-ship-pirate-large": {
+      "prompt": "a ship pirate large pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-ship-pirate-medium": {
+      "prompt": "a ship pirate medium pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-ship-pirate-small": {
+      "prompt": "a ship pirate small pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-ship-small": {
+      "prompt": "a ship small pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-ship-wreck": {
+      "prompt": "a ship wreck pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-structure": {
+      "prompt": "a structure pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-structure-fence": {
+      "prompt": "a structure fence pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-structure-fence-sides": {
+      "prompt": "a structure fence sides pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-structure-platform": {
+      "prompt": "a structure platform pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-structure-platform-dock": {
+      "prompt": "a structure platform dock pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-structure-platform-dock-small": {
+      "prompt": "a structure platform dock small pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-structure-platform-small": {
+      "prompt": "a structure platform small pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-structure-roof": {
+      "prompt": "a structure roof pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-tool-paddle": {
+      "prompt": "a tool paddle pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-tool-shovel": {
+      "prompt": "a tool shovel pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-tower-base": {
+      "prompt": "a tower base pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-tower-base-door": {
+      "prompt": "a tower base door pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-tower-complete-large": {
+      "prompt": "a tower complete large pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-tower-complete-small": {
+      "prompt": "a tower complete small pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-tower-middle": {
+      "prompt": "a tower middle pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-tower-middle-windows": {
+      "prompt": "a tower middle windows pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-tower-roof": {
+      "prompt": "a tower roof pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-tower-top": {
+      "prompt": "a tower top pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-pirate-kit-tower-watch": {
+      "prompt": "a tower watch pirate theme asset",
+      "split": "validation",
+      "group": "kenney-pirate-kit"
+    },
+    "kenney-space-kit-alien": {
+      "prompt": "an alien sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-astronauta": {
+      "prompt": "an astronauta sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-astronautb": {
+      "prompt": "an astronautb sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-barrel": {
+      "prompt": "a barrel sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-barrels": {
+      "prompt": "a barrels sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-barrels-rail": {
+      "prompt": "a barrels rail sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-bones": {
+      "prompt": "a bones sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-chimney": {
+      "prompt": "a chimney sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-chimney-detailed": {
+      "prompt": "a chimney detailed sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor": {
+      "prompt": "a corridor sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor-corner": {
+      "prompt": "a corridor corner sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor-cornerround": {
+      "prompt": "a corridor cornerround sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor-cornerroundwindow": {
+      "prompt": "a corridor cornerroundwindow sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor-cross": {
+      "prompt": "a corridor cross sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor-detailed": {
+      "prompt": "a corridor detailed sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor-end": {
+      "prompt": "a corridor end sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor-open": {
+      "prompt": "a corridor open sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor-roof": {
+      "prompt": "a corridor roof sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor-split": {
+      "prompt": "a corridor split sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor-wall": {
+      "prompt": "a corridor wall sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor-wallcorner": {
+      "prompt": "a corridor wallcorner sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor-window": {
+      "prompt": "a corridor window sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-corridor-windowclosed": {
+      "prompt": "a corridor windowclosed sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-craft-cargoa": {
+      "prompt": "a craft cargoa sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-craft-cargob": {
+      "prompt": "a craft cargob sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-craft-miner": {
+      "prompt": "a craft miner sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-craft-racer": {
+      "prompt": "a craft racer sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-craft-speedera": {
+      "prompt": "a craft speedera sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-craft-speederb": {
+      "prompt": "a craft speederb sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-craft-speederc": {
+      "prompt": "a craft speederc sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-craft-speederd": {
+      "prompt": "a craft speederd sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-crater": {
+      "prompt": "a crater sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-craterlarge": {
+      "prompt": "a craterlarge sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-desk-chair": {
+      "prompt": "a desk chair sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-desk-chairarms": {
+      "prompt": "a desk chairarms sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-desk-chairstool": {
+      "prompt": "a desk chairstool sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-desk-computer": {
+      "prompt": "a desk computer sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-desk-computercorner": {
+      "prompt": "a desk computercorner sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-desk-computerscreen": {
+      "prompt": "a desk computerscreen sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-gate-complex": {
+      "prompt": "a gate complex sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-gate-simple": {
+      "prompt": "a gate simple sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-hangar-largea": {
+      "prompt": "a hangar largea sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-hangar-largeb": {
+      "prompt": "a hangar largeb sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-hangar-rounda": {
+      "prompt": "a hangar rounda sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-hangar-roundb": {
+      "prompt": "a hangar roundb sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-hangar-roundglass": {
+      "prompt": "a hangar roundglass sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-hangar-smalla": {
+      "prompt": "a hangar smalla sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-hangar-smallb": {
+      "prompt": "a hangar smallb sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-machine-barrel": {
+      "prompt": "a machine barrel sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-machine-barrellarge": {
+      "prompt": "a machine barrellarge sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-machine-generator": {
+      "prompt": "a machine generator sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-machine-generatorlarge": {
+      "prompt": "a machine generatorlarge sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-machine-wireless": {
+      "prompt": "a machine wireless sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-machine-wirelesscable": {
+      "prompt": "a machine wirelesscable sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-meteor": {
+      "prompt": "a meteor sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-meteor-detailed": {
+      "prompt": "a meteor detailed sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-meteor-half": {
+      "prompt": "a meteor half sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-monorail-trackcornerlarge": {
+      "prompt": "a monorail trackcornerlarge sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-monorail-trackcornersmall": {
+      "prompt": "a monorail trackcornersmall sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-monorail-trackslope": {
+      "prompt": "a monorail trackslope sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-monorail-trackstraight": {
+      "prompt": "a monorail trackstraight sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-monorail-tracksupport": {
+      "prompt": "a monorail tracksupport sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-monorail-tracksupportcorner": {
+      "prompt": "a monorail tracksupportcorner sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-monorail-trainbox": {
+      "prompt": "a monorail trainbox sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-monorail-traincargo": {
+      "prompt": "a monorail traincargo sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-monorail-trainend": {
+      "prompt": "a monorail trainend sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-monorail-trainflat": {
+      "prompt": "a monorail trainflat sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-monorail-trainfront": {
+      "prompt": "a monorail trainfront sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-monorail-trainpassenger": {
+      "prompt": "a monorail trainpassenger sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-corner": {
+      "prompt": "a pipe corner sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-cornerdiagonal": {
+      "prompt": "a pipe cornerdiagonal sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-cornerround": {
+      "prompt": "a pipe cornerround sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-cornerroundlarge": {
+      "prompt": "a pipe cornerroundlarge sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-cross": {
+      "prompt": "a pipe cross sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-end": {
+      "prompt": "a pipe end sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-entrance": {
+      "prompt": "a pipe entrance sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-open": {
+      "prompt": "a pipe open sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-ramplarge": {
+      "prompt": "a pipe ramplarge sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-rampsmall": {
+      "prompt": "a pipe rampsmall sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-ring": {
+      "prompt": "a pipe ring sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-ringhigh": {
+      "prompt": "a pipe ringhigh sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-ringhighend": {
+      "prompt": "a pipe ringhighend sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-ringsupport": {
+      "prompt": "a pipe ringsupport sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-split": {
+      "prompt": "a pipe split sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-straight": {
+      "prompt": "a pipe straight sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-supporthigh": {
+      "prompt": "a pipe supporthigh sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-pipe-supportlow": {
+      "prompt": "a pipe supportlow sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-platform-center": {
+      "prompt": "a platform center sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-platform-corner": {
+      "prompt": "a platform corner sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-platform-corneropen": {
+      "prompt": "a platform corneropen sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-platform-cornerround": {
+      "prompt": "a platform cornerround sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-platform-end": {
+      "prompt": "a platform end sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-platform-high": {
+      "prompt": "a platform high sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-platform-large": {
+      "prompt": "a platform large sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-platform-long": {
+      "prompt": "a platform long sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-platform-low": {
+      "prompt": "a platform low sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-platform-side": {
+      "prompt": "a platform side sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-platform-small": {
+      "prompt": "a platform small sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-platform-smalldiagonal": {
+      "prompt": "a platform smalldiagonal sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-platform-straight": {
+      "prompt": "a platform straight sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rail": {
+      "prompt": "a rail sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rail-corner": {
+      "prompt": "a rail corner sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rail-end": {
+      "prompt": "a rail end sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rail-middle": {
+      "prompt": "a rail middle sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rock": {
+      "prompt": "a rock sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rock-crystals": {
+      "prompt": "a rock crystals sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rock-crystalslargea": {
+      "prompt": "a rock crystalslargea sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rock-crystalslargeb": {
+      "prompt": "a rock crystalslargeb sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rock-largea": {
+      "prompt": "a rock largea sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rock-largeb": {
+      "prompt": "a rock largeb sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rocket-basea": {
+      "prompt": "a rocket basea sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rocket-baseb": {
+      "prompt": "a rocket baseb sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rocket-finsa": {
+      "prompt": "a rocket finsa sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rocket-finsb": {
+      "prompt": "a rocket finsb sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rocket-fuela": {
+      "prompt": "a rocket fuela sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rocket-fuelb": {
+      "prompt": "a rocket fuelb sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rocket-sidesa": {
+      "prompt": "a rocket sidesa sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rocket-sidesb": {
+      "prompt": "a rocket sidesb sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rocket-topa": {
+      "prompt": "a rocket topa sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rocket-topb": {
+      "prompt": "a rocket topb sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rocks-smalla": {
+      "prompt": "a rocks smalla sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rocks-smallb": {
+      "prompt": "a rocks smallb sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-rover": {
+      "prompt": "a rover sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-satellitedish": {
+      "prompt": "a satellitedish sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-satellitedish-detailed": {
+      "prompt": "a satellitedish detailed sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-satellitedish-large": {
+      "prompt": "a satellitedish large sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-stairs": {
+      "prompt": "a stairs sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-stairs-corner": {
+      "prompt": "a stairs corner sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-stairs-short": {
+      "prompt": "a stairs short sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-structure": {
+      "prompt": "a structure sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-structure-closed": {
+      "prompt": "a structure closed sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-structure-detailed": {
+      "prompt": "a structure detailed sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-structure-diagonal": {
+      "prompt": "a structure diagonal sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-supports-high": {
+      "prompt": "a supports high sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-supports-low": {
+      "prompt": "a supports low sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-terrain-ramp": {
+      "prompt": "a terrain ramp sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-terrain-ramplarge": {
+      "prompt": "a terrain ramplarge sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-terrain-ramplarge-detailed": {
+      "prompt": "a terrain ramplarge detailed sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-terrain-roadcorner": {
+      "prompt": "a terrain roadcorner sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-terrain-roadcross": {
+      "prompt": "a terrain roadcross sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-terrain-roadend": {
+      "prompt": "a terrain roadend sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-terrain-roadsplit": {
+      "prompt": "a terrain roadsplit sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-terrain-roadstraight": {
+      "prompt": "a terrain roadstraight sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-terrain-side": {
+      "prompt": "a terrain side sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-terrain-sidecliff": {
+      "prompt": "a terrain sidecliff sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-terrain-sidecorner": {
+      "prompt": "a terrain sidecorner sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-terrain-sidecornerinner": {
+      "prompt": "a terrain sidecornerinner sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-terrain-sideend": {
+      "prompt": "a terrain sideend sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-turret-double": {
+      "prompt": "a turret double sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-turret-single": {
+      "prompt": "a turret single sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-weapon-gun": {
+      "prompt": "a weapon gun sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    },
+    "kenney-space-kit-weapon-rifle": {
+      "prompt": "a weapon rifle sci-fi space asset",
+      "split": "validation",
+      "group": "kenney-space-kit"
+    }
+  }
+}

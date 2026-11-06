@@ -1,0 +1,28 @@
+{
+  "output": "artifacts/kaggle-textured-rig-export-v11/export-real-rigged.glb",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "samples_per_seed": 4096,
+  "channel_rmse": {
+    "base_r": {
+      "mean": 0.19782288416825838,
+      "stddev": 0.003018323340803154
+    },
+    "base_g": {
+      "mean": 0.15353409699338108,
+      "stddev": 0.001949890736248245
+    },
+    "base_b": {
+      "mean": 0.16501961607823945,
+      "stddev": 0.002308735622342374
+    }
+  },
+  "source_projection_distance_mean": 0.00014829772873407976,
+  "source_projection_distance_p95_mean": 0.0006700223720504572,
+  "scope": "Five independent area-weighted sample seeds; source correspondence by nearest triangle; attribute-space only."
+}

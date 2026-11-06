@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/debris-drivetrain",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/debris-drivetrain.glb",
+  "sha256": "26a5326a30ee8c4a0deb457254beabb8423f768c915129a340a7acecbb6a0b1c",
+  "bytes": 49288,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

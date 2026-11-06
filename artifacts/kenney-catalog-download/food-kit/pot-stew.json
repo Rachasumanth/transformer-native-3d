@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/pot-stew",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/pot-stew.glb",
+  "sha256": "5844e7124e63d6b1b5d368629ed4780be48dca3bf4fccd787b1699e007c219b6",
+  "bytes": 40300,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

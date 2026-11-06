@@ -1,0 +1,9 @@
+{
+  "validator": "Khronos glTF Validator",
+  "file": "artifacts/kaggle-rigged-export-v2/export-cli-rigged.glb",
+  "sha256": "211dd7c94799dd2bdf54ae3b4fc5fd38a86c8bbc916182fcf281f2b0c6645e19",
+  "errors": 0,
+  "warnings": 0,
+  "infos": 0,
+  "messages": []
+}

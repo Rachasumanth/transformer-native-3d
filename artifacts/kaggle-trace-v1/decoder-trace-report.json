@@ -1,0 +1,329 @@
+{
+  "source_sha256": "3c8b2d3b5898b4405dbe1e9fcf572aefaa3e3363ecaf23a5fff9bc1bcd024bd7",
+  "device": "Tesla T4",
+  "scope": "two-asset pilot; posterior-mean reconstruction; no quality claim",
+  "models": {
+    "20": {
+      "checkpoint_sha256": "81c3b0145972e3da6d518c260991ad2080487d4e31397367fedc754e4aa5de8e",
+      "assets": {
+        "train": [
+          {
+            "downsample": 8,
+            "parents": 1,
+            "predicted": 8,
+            "target": 8,
+            "true_positive": 8,
+            "false_positive": 0,
+            "false_negative": 0,
+            "missed_unreachable": 0,
+            "missed_reachable": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "teacher_context": {
+              "true_positive": 8,
+              "false_positive": 0,
+              "false_negative": 0,
+              "parents": 1
+            }
+          },
+          {
+            "downsample": 4,
+            "parents": 8,
+            "predicted": 28,
+            "target": 28,
+            "true_positive": 28,
+            "false_positive": 0,
+            "false_negative": 0,
+            "missed_unreachable": 0,
+            "missed_reachable": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "teacher_context": {
+              "true_positive": 28,
+              "false_positive": 0,
+              "false_negative": 0,
+              "parents": 8
+            }
+          },
+          {
+            "downsample": 2,
+            "parents": 28,
+            "predicted": 113,
+            "target": 113,
+            "true_positive": 113,
+            "false_positive": 0,
+            "false_negative": 0,
+            "missed_unreachable": 0,
+            "missed_reachable": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "teacher_context": {
+              "true_positive": 113,
+              "false_positive": 0,
+              "false_negative": 0,
+              "parents": 28
+            }
+          },
+          {
+            "downsample": 1,
+            "parents": 113,
+            "predicted": 512,
+            "target": 498,
+            "true_positive": 436,
+            "false_positive": 76,
+            "false_negative": 62,
+            "missed_unreachable": 0,
+            "missed_reachable": 62,
+            "precision": 0.8515625,
+            "recall": 0.8755020080321285,
+            "teacher_context": {
+              "true_positive": 436,
+              "false_positive": 76,
+              "false_negative": 62,
+              "parents": 113
+            }
+          }
+        ],
+        "validation": [
+          {
+            "downsample": 8,
+            "parents": 1,
+            "predicted": 8,
+            "target": 8,
+            "true_positive": 8,
+            "false_positive": 0,
+            "false_negative": 0,
+            "missed_unreachable": 0,
+            "missed_reachable": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "teacher_context": {
+              "true_positive": 8,
+              "false_positive": 0,
+              "false_negative": 0,
+              "parents": 1
+            }
+          },
+          {
+            "downsample": 4,
+            "parents": 8,
+            "predicted": 28,
+            "target": 16,
+            "true_positive": 16,
+            "false_positive": 12,
+            "false_negative": 0,
+            "missed_unreachable": 0,
+            "missed_reachable": 0,
+            "precision": 0.5714285714285714,
+            "recall": 1.0,
+            "teacher_context": {
+              "true_positive": 16,
+              "false_positive": 12,
+              "false_negative": 0,
+              "parents": 8
+            }
+          },
+          {
+            "downsample": 2,
+            "parents": 28,
+            "predicted": 113,
+            "target": 96,
+            "true_positive": 81,
+            "false_positive": 32,
+            "false_negative": 15,
+            "missed_unreachable": 0,
+            "missed_reachable": 15,
+            "precision": 0.7168141592920354,
+            "recall": 0.84375,
+            "teacher_context": {
+              "true_positive": 81,
+              "false_positive": 13,
+              "false_negative": 15,
+              "parents": 16
+            }
+          },
+          {
+            "downsample": 1,
+            "parents": 113,
+            "predicted": 506,
+            "target": 464,
+            "true_positive": 263,
+            "false_positive": 243,
+            "false_negative": 201,
+            "missed_unreachable": 40,
+            "missed_reachable": 161,
+            "precision": 0.5197628458498024,
+            "recall": 0.5668103448275862,
+            "teacher_context": {
+              "true_positive": 283,
+              "false_positive": 150,
+              "false_negative": 181,
+              "parents": 96
+            }
+          }
+        ]
+      }
+    },
+    "24": {
+      "checkpoint_sha256": "50eb25502ab09929a96f9498d0eeac79c81553d40fd8ea25a2939cf1d6d94cc2",
+      "assets": {
+        "train": [
+          {
+            "downsample": 8,
+            "parents": 1,
+            "predicted": 8,
+            "target": 8,
+            "true_positive": 8,
+            "false_positive": 0,
+            "false_negative": 0,
+            "missed_unreachable": 0,
+            "missed_reachable": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "teacher_context": {
+              "true_positive": 8,
+              "false_positive": 0,
+              "false_negative": 0,
+              "parents": 1
+            }
+          },
+          {
+            "downsample": 4,
+            "parents": 8,
+            "predicted": 28,
+            "target": 28,
+            "true_positive": 28,
+            "false_positive": 0,
+            "false_negative": 0,
+            "missed_unreachable": 0,
+            "missed_reachable": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "teacher_context": {
+              "true_positive": 28,
+              "false_positive": 0,
+              "false_negative": 0,
+              "parents": 8
+            }
+          },
+          {
+            "downsample": 2,
+            "parents": 28,
+            "predicted": 113,
+            "target": 113,
+            "true_positive": 113,
+            "false_positive": 0,
+            "false_negative": 0,
+            "missed_unreachable": 0,
+            "missed_reachable": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "teacher_context": {
+              "true_positive": 113,
+              "false_positive": 0,
+              "false_negative": 0,
+              "parents": 28
+            }
+          },
+          {
+            "downsample": 1,
+            "parents": 113,
+            "predicted": 504,
+            "target": 498,
+            "true_positive": 423,
+            "false_positive": 81,
+            "false_negative": 75,
+            "missed_unreachable": 0,
+            "missed_reachable": 75,
+            "precision": 0.8392857142857143,
+            "recall": 0.8493975903614458,
+            "teacher_context": {
+              "true_positive": 423,
+              "false_positive": 81,
+              "false_negative": 75,
+              "parents": 113
+            }
+          }
+        ],
+        "validation": [
+          {
+            "downsample": 8,
+            "parents": 1,
+            "predicted": 8,
+            "target": 8,
+            "true_positive": 8,
+            "false_positive": 0,
+            "false_negative": 0,
+            "missed_unreachable": 0,
+            "missed_reachable": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "teacher_context": {
+              "true_positive": 8,
+              "false_positive": 0,
+              "false_negative": 0,
+              "parents": 1
+            }
+          },
+          {
+            "downsample": 4,
+            "parents": 8,
+            "predicted": 28,
+            "target": 16,
+            "true_positive": 16,
+            "false_positive": 12,
+            "false_negative": 0,
+            "missed_unreachable": 0,
+            "missed_reachable": 0,
+            "precision": 0.5714285714285714,
+            "recall": 1.0,
+            "teacher_context": {
+              "true_positive": 16,
+              "false_positive": 12,
+              "false_negative": 0,
+              "parents": 8
+            }
+          },
+          {
+            "downsample": 2,
+            "parents": 28,
+            "predicted": 113,
+            "target": 96,
+            "true_positive": 81,
+            "false_positive": 32,
+            "false_negative": 15,
+            "missed_unreachable": 0,
+            "missed_reachable": 15,
+            "precision": 0.7168141592920354,
+            "recall": 0.84375,
+            "teacher_context": {
+              "true_positive": 81,
+              "false_positive": 13,
+              "false_negative": 15,
+              "parents": 16
+            }
+          },
+          {
+            "downsample": 1,
+            "parents": 113,
+            "predicted": 505,
+            "target": 464,
+            "true_positive": 264,
+            "false_positive": 241,
+            "false_negative": 200,
+            "missed_unreachable": 40,
+            "missed_reachable": 160,
+            "precision": 0.5227722772277228,
+            "recall": 0.5689655172413793,
+            "teacher_context": {
+              "true_positive": 298,
+              "false_positive": 150,
+              "false_negative": 166,
+              "parents": 96
+            }
+          }
+        ]
+      }
+    }
+  }
+}

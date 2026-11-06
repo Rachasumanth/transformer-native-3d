@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/debris-nut",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/debris-nut.glb",
+  "sha256": "3f73bfbf9f53281d9ad8c646fb987a1656c2aec5dbbd15c8c4e53f0eaa36363c",
+  "bytes": 17140,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "Exhaustive face-deletion search restricted to 12 incident triangles, requiring all touched welded edges incidence zero or two; not a general remeshing search",
+  "pool": [
+    3886,
+    3888,
+    4766,
+    4767,
+    5113,
+    7202,
+    7205,
+    7206,
+    7582,
+    9285,
+    9292,
+    9293
+  ],
+  "solutions": []
+}

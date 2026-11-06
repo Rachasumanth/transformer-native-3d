@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/tree-cone-dark",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/tree-cone-dark.glb",
+  "sha256": "b5c22416b8b37cfa9af04b89657a95c10a1ca45ff8e84afff3a19ae5a01c1ade",
+  "bytes": 19940,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

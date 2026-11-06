@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/debris-door-window",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/debris-door-window.glb",
+  "sha256": "cda5f92b46c4ef820f2150c16206e174eca98e2da1cf51602a0751218e0cb2e8",
+  "bytes": 19968,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

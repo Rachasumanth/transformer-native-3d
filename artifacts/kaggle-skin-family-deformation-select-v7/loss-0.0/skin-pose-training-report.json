@@ -1,0 +1,560 @@
+{
+  "source_sha256": "81c77ae757a4aa52220bc343a8d3cba96116b548afa638151fb78de671bc90c4",
+  "manifest_sha256": "b7d0a7d221793a7aee7da156ace07a069fa7ff32fb2664348c8a884961e292c8",
+  "device": "Tesla T4",
+  "config": {
+    "width": 64,
+    "heads": 4,
+    "layers": 2,
+    "frequencies": 4
+  },
+  "seed": 31,
+  "steps": 1200,
+  "joint_position_loss": 0.0,
+  "deformation_loss": 0.0,
+  "select_metric": "deformation_error",
+  "train_pose_count": 25,
+  "validation_pose_count": 15,
+  "train_assets": [
+    "CesiumMan",
+    "Fox",
+    "RiggedSimple"
+  ],
+  "validation_assets": [
+    "Bat",
+    "Corgi",
+    "Shark"
+  ],
+  "scope": "Three original training rigs, Gobkit animal family held out for validation; area-weighted vertex samples, not a representative corpus",
+  "best_step": 300,
+  "best_validation": {
+    "Corgi": {
+      "split": "validation",
+      "poses": 5,
+      "kl": 0.783988642692566,
+      "uniform_kl": 2.7725887298583984,
+      "mean_absolute_weight_error": 0.06547811478376389,
+      "dominant_joint_accuracy": 1.0,
+      "joint_position_error": 0.1155050054192543,
+      "deformation_error": 0.006711123027605126
+    },
+    "Bat": {
+      "split": "validation",
+      "poses": 5,
+      "kl": 0.3663797855377197,
+      "uniform_kl": 2.7725887298583984,
+      "mean_absolute_weight_error": 0.03600413501262665,
+      "dominant_joint_accuracy": 0.9935546875,
+      "joint_position_error": 0.04575367420911789,
+      "deformation_error": 0.0018608911238018778
+    },
+    "Shark": {
+      "split": "validation",
+      "poses": 5,
+      "kl": 0.2752733647823334,
+      "uniform_kl": 2.7725887298583984,
+      "mean_absolute_weight_error": 0.02801014669239521,
+      "dominant_joint_accuracy": 0.990625,
+      "joint_position_error": 0.03510748110711574,
+      "deformation_error": 0.0030330919569863113
+    }
+  },
+  "history": [
+    {
+      "step": 100,
+      "validation": {
+        "Corgi": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 1.0170271277427674,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.07504604309797287,
+          "dominant_joint_accuracy": 0.9154296875,
+          "joint_position_error": 0.15405321419239043,
+          "deformation_error": 0.006880803453654849
+        },
+        "Bat": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.5693462371826172,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.0497745081782341,
+          "dominant_joint_accuracy": 0.925,
+          "joint_position_error": 0.06941556558012962,
+          "deformation_error": 0.0034557184292296483
+        },
+        "Shark": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.4096763372421265,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.03699871376156807,
+          "dominant_joint_accuracy": 0.9267578125,
+          "joint_position_error": 0.04978089481592178,
+          "deformation_error": 0.0038877900007754816
+        }
+      },
+      "training_loss": 0.3168247938156128
+    },
+    {
+      "step": 200,
+      "validation": {
+        "Corgi": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.7973330616950989,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.06590690463781357,
+          "dominant_joint_accuracy": 0.9853515625,
+          "joint_position_error": 0.10930325239896774,
+          "deformation_error": 0.006309991045752028
+        },
+        "Bat": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.6031815350055695,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.0543730117380619,
+          "dominant_joint_accuracy": 0.96953125,
+          "joint_position_error": 0.0596283107995987,
+          "deformation_error": 0.003195766758097562
+        },
+        "Shark": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.48915840983390807,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.044774077087640765,
+          "dominant_joint_accuracy": 1.0,
+          "joint_position_error": 0.04841751232743263,
+          "deformation_error": 0.0039943586825749835
+        }
+      },
+      "training_loss": 0.2449253797531128
+    },
+    {
+      "step": 300,
+      "validation": {
+        "Corgi": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.783988642692566,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.06547811478376389,
+          "dominant_joint_accuracy": 1.0,
+          "joint_position_error": 0.1155050054192543,
+          "deformation_error": 0.006711123027605126
+        },
+        "Bat": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.3663797855377197,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.03600413501262665,
+          "dominant_joint_accuracy": 0.9935546875,
+          "joint_position_error": 0.04575367420911789,
+          "deformation_error": 0.0018608911238018778
+        },
+        "Shark": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.2752733647823334,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.02801014669239521,
+          "dominant_joint_accuracy": 0.990625,
+          "joint_position_error": 0.03510748110711574,
+          "deformation_error": 0.0030330919569863113
+        }
+      },
+      "training_loss": 0.023260287940502167
+    },
+    {
+      "step": 400,
+      "validation": {
+        "Corgi": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.854902720451355,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.06884743869304658,
+          "dominant_joint_accuracy": 0.6978515625,
+          "joint_position_error": 0.12037278860807418,
+          "deformation_error": 0.007785849540861279
+        },
+        "Bat": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.5144618093967438,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.04808424860239029,
+          "dominant_joint_accuracy": 0.9630859375,
+          "joint_position_error": 0.05963543951511383,
+          "deformation_error": 0.002543447887665984
+        },
+        "Shark": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.41789324283599855,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.04002489894628525,
+          "dominant_joint_accuracy": 0.9794921875,
+          "joint_position_error": 0.047920975089073184,
+          "deformation_error": 0.0054486901034888294
+        }
+      },
+      "training_loss": 0.004482844844460487
+    },
+    {
+      "step": 500,
+      "validation": {
+        "Corgi": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.9037598013877869,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.0704364836215973,
+          "dominant_joint_accuracy": 1.0,
+          "joint_position_error": 0.12304991483688354,
+          "deformation_error": 0.009309065915955372
+        },
+        "Bat": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.41654245257377626,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.04092864766716957,
+          "dominant_joint_accuracy": 0.9630859375,
+          "joint_position_error": 0.051011967658996585,
+          "deformation_error": 0.002291187356761526
+        },
+        "Shark": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.3207386672496796,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.0325509823858738,
+          "dominant_joint_accuracy": 0.9794921875,
+          "joint_position_error": 0.03992933183908463,
+          "deformation_error": 0.004010244535298924
+        }
+      },
+      "training_loss": 0.030572565272450447
+    },
+    {
+      "step": 600,
+      "validation": {
+        "Corgi": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.8979562044143676,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.06969130188226699,
+          "dominant_joint_accuracy": 0.6994140625,
+          "joint_position_error": 0.11642544716596603,
+          "deformation_error": 0.007679301950711093
+        },
+        "Bat": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.4009133458137512,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.03900590315461159,
+          "dominant_joint_accuracy": 1.0,
+          "joint_position_error": 0.05575028136372566,
+          "deformation_error": 0.0020528717484986636
+        },
+        "Shark": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.3335198640823364,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.03355012834072113,
+          "dominant_joint_accuracy": 1.0,
+          "joint_position_error": 0.0472852885723114,
+          "deformation_error": 0.003831359847357163
+        }
+      },
+      "training_loss": 0.10077472031116486
+    },
+    {
+      "step": 700,
+      "validation": {
+        "Corgi": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 1.0205513477325439,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.07565053701400756,
+          "dominant_joint_accuracy": 0.94765625,
+          "joint_position_error": 0.13838833570480347,
+          "deformation_error": 0.00776219542928267
+        },
+        "Bat": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.5846248507499695,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.052439482510089876,
+          "dominant_joint_accuracy": 0.9544921875,
+          "joint_position_error": 0.07661109268665314,
+          "deformation_error": 0.0023571025739961724
+        },
+        "Shark": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.49970353245735166,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.04603781998157501,
+          "dominant_joint_accuracy": 0.9701171875,
+          "joint_position_error": 0.0654712475836277,
+          "deformation_error": 0.006412362746605993
+        }
+      },
+      "training_loss": 0.06950981914997101
+    },
+    {
+      "step": 800,
+      "validation": {
+        "Corgi": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.9066079378128051,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.06954683214426041,
+          "dominant_joint_accuracy": 0.94765625,
+          "joint_position_error": 0.12058161497116089,
+          "deformation_error": 0.007378184771869201
+        },
+        "Bat": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.5607043862342834,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.05117748901247978,
+          "dominant_joint_accuracy": 0.9615234375,
+          "joint_position_error": 0.07126175612211227,
+          "deformation_error": 0.0022958241681447335
+        },
+        "Shark": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.47224223613739014,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.04405496194958687,
+          "dominant_joint_accuracy": 0.9794921875,
+          "joint_position_error": 0.05989356637001038,
+          "deformation_error": 0.00608740724913801
+        }
+      },
+      "training_loss": 0.054531462490558624
+    },
+    {
+      "step": 900,
+      "validation": {
+        "Corgi": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.9697205185890198,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.07208552062511445,
+          "dominant_joint_accuracy": 1.0,
+          "joint_position_error": 0.11573361605405807,
+          "deformation_error": 0.008219623513279827
+        },
+        "Bat": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.4509057939052582,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.043467356264591216,
+          "dominant_joint_accuracy": 1.0,
+          "joint_position_error": 0.06150406450033188,
+          "deformation_error": 0.0020838145292845665
+        },
+        "Shark": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.39493638277053833,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.03874354436993599,
+          "dominant_joint_accuracy": 1.0,
+          "joint_position_error": 0.05424500703811645,
+          "deformation_error": 0.004019697320995519
+        }
+      },
+      "training_loss": 0.06962399929761887
+    },
+    {
+      "step": 1000,
+      "validation": {
+        "Corgi": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.9166420459747314,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.06987372636795045,
+          "dominant_joint_accuracy": 1.0,
+          "joint_position_error": 0.12282935976982116,
+          "deformation_error": 0.007603112282096802
+        },
+        "Bat": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.6235680699348449,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.055752673745155336,
+          "dominant_joint_accuracy": 1.0,
+          "joint_position_error": 0.07899363338947296,
+          "deformation_error": 0.0023411603811636537
+        },
+        "Shark": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.5072866201400756,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.04624212309718132,
+          "dominant_joint_accuracy": 1.0,
+          "joint_position_error": 0.06386687457561493,
+          "deformation_error": 0.007351371213640867
+        }
+      },
+      "training_loss": 0.05044891685247421
+    },
+    {
+      "step": 1100,
+      "validation": {
+        "Corgi": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.8755014181137085,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.06806693822145463,
+          "dominant_joint_accuracy": 0.9619140625,
+          "joint_position_error": 0.12056710720062255,
+          "deformation_error": 0.007287452977444886
+        },
+        "Bat": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.5693927526473999,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.05211036279797554,
+          "dominant_joint_accuracy": 1.0,
+          "joint_position_error": 0.07559807524085045,
+          "deformation_error": 0.002372564071115235
+        },
+        "Shark": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.48361889123916624,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.045608531683683395,
+          "dominant_joint_accuracy": 1.0,
+          "joint_position_error": 0.06671304106712342,
+          "deformation_error": 0.010279342304663786
+        }
+      },
+      "training_loss": 0.0005142264417372644
+    },
+    {
+      "step": 1200,
+      "validation": {
+        "Corgi": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.9215679168701172,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.06974659860134125,
+          "dominant_joint_accuracy": 0.9619140625,
+          "joint_position_error": 0.11863690316677093,
+          "deformation_error": 0.007566119699626128
+        },
+        "Bat": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.5354979038238525,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.049687803536653516,
+          "dominant_joint_accuracy": 0.9630859375,
+          "joint_position_error": 0.07438358217477799,
+          "deformation_error": 0.0021523434925551756
+        },
+        "Shark": {
+          "split": "validation",
+          "poses": 5,
+          "kl": 0.43035553097724916,
+          "uniform_kl": 2.7725887298583984,
+          "mean_absolute_weight_error": 0.0411824956536293,
+          "dominant_joint_accuracy": 0.9794921875,
+          "joint_position_error": 0.06013855636119843,
+          "deformation_error": 0.006314917824306843
+        }
+      },
+      "training_loss": 0.04697365686297417
+    }
+  ],
+  "checkpoint_sha256": "16c0a4f9824f9d7b577ade455831099a60a7c73f53930663786d16d7bb1be6ed",
+  "frozen": true,
+  "initial": {
+    "RiggedSimple": {
+      "split": "train",
+      "poses": 5,
+      "kl": 0.44574570655822754,
+      "uniform_kl": 0.44348031282424927,
+      "mean_absolute_weight_error": 0.3883537769317627,
+      "dominant_joint_accuracy": 0.1689453125,
+      "joint_position_error": 0.17771324515342712,
+      "deformation_error": 0.034484309696095575
+    },
+    "CesiumMan": {
+      "split": "train",
+      "poses": 5,
+      "kl": 2.336924505233765,
+      "uniform_kl": 2.3414995670318604,
+      "mean_absolute_weight_error": 0.09078787118196488,
+      "dominant_joint_accuracy": 0.0388671875,
+      "joint_position_error": 0.20694695115089418,
+      "deformation_error": 0.12071401923894882
+    },
+    "Fox": {
+      "split": "train",
+      "poses": 15,
+      "kl": 2.8937657197316486,
+      "uniform_kl": 2.9011309146881104,
+      "mean_absolute_weight_error": 0.07793315102656682,
+      "dominant_joint_accuracy": 0.12376302083333333,
+      "joint_position_error": 0.21964021027088165,
+      "deformation_error": 0.05868159271776676
+    },
+    "Corgi": {
+      "split": "validation",
+      "poses": 5,
+      "kl": 2.731726551055908,
+      "uniform_kl": 2.7725887298583984,
+      "mean_absolute_weight_error": 0.11685677170753479,
+      "dominant_joint_accuracy": 0.0236328125,
+      "joint_position_error": 0.20230253636837006,
+      "deformation_error": 0.014814519915677237
+    },
+    "Bat": {
+      "split": "validation",
+      "poses": 5,
+      "kl": 2.784079885482788,
+      "uniform_kl": 2.7725887298583984,
+      "mean_absolute_weight_error": 0.11726351976394653,
+      "dominant_joint_accuracy": 0.01015625,
+      "joint_position_error": 0.1394579976797104,
+      "deformation_error": 0.009666142048183701
+    },
+    "Shark": {
+      "split": "validation",
+      "poses": 5,
+      "kl": 2.770924139022827,
+      "uniform_kl": 2.7725887298583984,
+      "mean_absolute_weight_error": 0.11716193556785584,
+      "dominant_joint_accuracy": 0.0,
+      "joint_position_error": 0.1337757721543312,
+      "deformation_error": 0.00937243871299831
+    }
+  }
+}

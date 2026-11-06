@@ -1,0 +1,11 @@
+{
+  "source": "artifacts/kaggle-textured-rig-export-v14/fan-patch-candidate.glb",
+  "sha256": "16b15f7debd4f75cf933801d78635555e9c2ff0ca1a90784b327b3c9f194e5bf",
+  "scope": "Exact positional weld; coincident disconnected surfaces can appear nonmanifold",
+  "vertices": 5957,
+  "welded_vertices": 4652,
+  "faces": 9256,
+  "duplicate_welded_faces": 0,
+  "nonmanifold_edges": 0,
+  "edges": []
+}

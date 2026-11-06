@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/crops-dirtrow",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/crops-dirtrow.glb",
+  "sha256": "a36752160e42703c0539386bf07260984796dd07674d322ae18c1fc5201b59b2",
+  "bytes": 4712,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

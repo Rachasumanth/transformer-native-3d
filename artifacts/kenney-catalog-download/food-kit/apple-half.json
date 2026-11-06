@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/apple-half",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/apple-half.glb",
+  "sha256": "ee2f2080bc13a565ba770494095e462943e35fe99e7f550f614f9229fe2078bd",
+  "bytes": 21688,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

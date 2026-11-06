@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/rocks-c",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/rocks-c.glb",
+  "sha256": "5d779ecc2ffe8af9cf1c444ed9f812478484cb0bd32dfe4381b86a4bbd019e97",
+  "bytes": 34672,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

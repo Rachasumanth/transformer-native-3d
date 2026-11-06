@@ -1,0 +1,20 @@
+{
+  "candidates": [
+    {
+      "asset": "lantern",
+      "sha256": "a79458c4b02d695187a952f23a63b8bf278e7bc3d316a3c2a314f2d6974181f1",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/Lantern",
+      "license": "CC0-1.0 model files; see retained LICENSE.md for metadata",
+      "status": "not admitted",
+      "reason": "30 multiple-crossing edges at 16^3; conversion rejected"
+    },
+    {
+      "asset": "toycar",
+      "sha256": "01a60862de55cd4b9f3acfab0b0def86451800f9c42467fcd61052c16cb9838c",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/ToyCar",
+      "license": "CC0-1.0 model files; see retained LICENSE.md for metadata",
+      "status": "not admitted",
+      "reason": "core importer rejects extended materials"
+    }
+  ]
+}

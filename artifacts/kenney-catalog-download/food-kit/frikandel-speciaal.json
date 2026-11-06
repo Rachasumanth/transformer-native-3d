@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/frikandel-speciaal",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/frikandel-speciaal.glb",
+  "sha256": "46f579fb65a9d60099c87eb2ede8b248f0e3b166de11fd662195033920652739",
+  "bytes": 36208,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

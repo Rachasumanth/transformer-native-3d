@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/glass",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/glass.glb",
+  "sha256": "c7f74224b8880f79e3d08869c2ff08f2d955e65b501998f41ba5bcf4ec78b3c4",
+  "bytes": 14956,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

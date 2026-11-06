@@ -1,0 +1,41 @@
+{
+  "kaggle_kernel": "sumu143/transformer-native-3d-rigged-export-probe",
+  "version": 2,
+  "status": "COMPLETE",
+  "source_bundle_sha256": "a7bfe7d666746200ba0853a66d87b6b7ab10f4964295f41c345ec74b9ab3b762",
+  "device": "Tesla T4",
+  "dependencies": {
+    "CuMesh": [
+      "https://github.com/JeffreyXiang/CuMesh.git",
+      "12289e1062f0603f2f0d0771b02e1395d247f26f"
+    ],
+    "FlexGEMM": [
+      "https://github.com/JeffreyXiang/FlexGEMM.git",
+      "6dd94a859c26ee8246888502eada3dd8ad85532e"
+    ],
+    "nvdiffrast": [
+      "https://github.com/NVlabs/nvdiffrast.git",
+      "253ac4fcea7de5f396371124af597e6cc957bfae"
+    ]
+  },
+  "included_tests": 16,
+  "test_log": "rigged-export-tests.log",
+  "rigged_glb": "export-cli-rigged.glb",
+  "rigged_glb_sha256": "211dd7c94799dd2bdf54ae3b4fc5fd38a86c8bbc916182fcf281f2b0c6645e19",
+  "validator": {
+    "errors": 0,
+    "warnings": 0,
+    "infos": 0
+  },
+  "synthetic_cube": {
+    "active_voxels": 152,
+    "extracted_faces": 300,
+    "output_faces": 186,
+    "output_vertices": 149,
+    "joint_count": 3,
+    "maximum_weight_sum_error": 0.0,
+    "skin_checkpoint_sha256": "f73a7be776b6ac653f2e248d78307eeddea833ea0c5284011e7a92bf2543e9eb",
+    "export_seconds": 0.2561785449997842
+  },
+  "scope": "Synthetic skinned cube through extraction, CuMesh cleanup/UV, PBR bake, SkinAE decode and GLB reload; no source-rig quality claim"
+}

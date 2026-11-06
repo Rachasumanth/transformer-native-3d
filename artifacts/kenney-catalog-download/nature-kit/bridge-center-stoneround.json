@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/bridge-center-stoneround",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/bridge-center-stoneround.glb",
+  "sha256": "ec0e73f593a3230b9f10bfe69dec5e95c8c031f1a1a81e1a308501ef3a70e68c",
+  "bytes": 5080,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

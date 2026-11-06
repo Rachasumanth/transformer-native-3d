@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/pepper-mill",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/pepper-mill.glb",
+  "sha256": "68154432072d82d62775c59e9631c325fdda375e487874fcfa64f60bd952b547",
+  "bytes": 36404,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

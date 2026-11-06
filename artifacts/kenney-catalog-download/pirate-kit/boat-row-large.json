@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/boat-row-large",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/boat-row-large.glb",
+  "sha256": "c3a1ee47defb9a9dab70ff24de848c31eb188d1b3292a1451038e180516058b2",
+  "bytes": 26024,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

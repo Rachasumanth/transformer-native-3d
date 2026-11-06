@@ -1,0 +1,25 @@
+{
+  "urls": {
+    "README.md": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CesiumMan/README.md",
+    "CesiumMan.glb": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CesiumMan/glTF-Binary/CesiumMan.glb"
+  },
+  "sha256": {
+    "README.md": "1bf7fa794013d2e0de8c244518936b04d95cba780f4510c8cceee4c23dbc04a8",
+    "CesiumMan.glb": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9"
+  },
+  "bytes": 438044,
+  "joint_counts": [
+    19
+  ],
+  "animations": 1,
+  "primitive_attributes": [
+    [
+      "JOINTS_0",
+      "NORMAL",
+      "POSITION",
+      "TEXCOORD_0",
+      "WEIGHTS_0"
+    ]
+  ],
+  "extensions_required": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "furniture-kit/cardboardboxclosed",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/furniture-kit/cardboardboxclosed.glb",
+  "sha256": "4af079dca52960912764574950f0549ff2ae1224b3db1528718629473a2d5d81",
+  "bytes": 5400,
+  "group": "furniture-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/furniture-kit"
+}

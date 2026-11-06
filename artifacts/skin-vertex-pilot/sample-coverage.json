@@ -1,0 +1,23 @@
+[
+  {
+    "asset": "RiggedSimple",
+    "samples": 1024,
+    "unique_vertices": 117,
+    "max_repetitions": 25,
+    "source_vertex_count": 160
+  },
+  {
+    "asset": "CesiumMan",
+    "samples": 1024,
+    "unique_vertices": 680,
+    "max_repetitions": 6,
+    "source_vertex_count": 3273
+  },
+  {
+    "asset": "Fox",
+    "samples": 1024,
+    "unique_vertices": 666,
+    "max_repetitions": 7,
+    "source_vertex_count": 1728
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/soda",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/soda.glb",
+  "sha256": "dab8a7323d5f273bf840e9d3b6767fed6d8279632ab6dd9625f6a1e1dffba8b5",
+  "bytes": 23096,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

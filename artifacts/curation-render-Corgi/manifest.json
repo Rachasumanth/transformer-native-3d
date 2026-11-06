@@ -1,0 +1,81 @@
+{
+  "scope": "Multi-view color/depth/normal render; no quality filtering or canonical pose prediction",
+  "input_sha256": "95cd2c4d53d70ee9dd2e1329dcb6de7d4a725301d504a4f2f00ecb34dc1a0851",
+  "blender_version": "5.2.2 LTS",
+  "resolution": 64,
+  "samples": 8,
+  "bounds": [
+    [
+      -173.205078125,
+      -241.07232666015625,
+      -4.751958847045898
+    ],
+    [
+      173.205078125,
+      200.718505859375,
+      398.7205505371094
+    ]
+  ],
+  "views": [
+    {
+      "azimuth": 0.0,
+      "elevation": 20,
+      "fov_degrees": 35.0,
+      "camera_position": [
+        1188.246337890625,
+        -20.176910400390625,
+        629.4706420898438
+      ],
+      "files": {
+        "view-000-color.png": "6ceee0053d9d9e591b13673830d6d8077ba4444eedc637f1b392415548de72e1",
+        "view-000-depth-.exr": "172e18921a29bde4f536d0565928dadc907c1325677643508d7b69b936612614",
+        "view-000-normal-.exr": "606d18e5f0b7cf5aa262c957c1989d900145d8056174627b7c00dd4ca399f079"
+      }
+    },
+    {
+      "azimuth": 90.0,
+      "elevation": 20,
+      "fov_degrees": 35.0,
+      "camera_position": [
+        7.275910695334412e-14,
+        1168.0694580078125,
+        629.4706420898438
+      ],
+      "files": {
+        "view-001-color.png": "bbe588bc24ac53c5ad59c524d031db3e1a5c2817d4be4c748e8c8c75ccacc5b4",
+        "view-001-depth-.exr": "64af0ba1dc187aed5c38f20db029e36969ac12b2991080540d07197b4da610b9",
+        "view-001-normal-.exr": "9aa380e8e6fc90cdca90e72bbc5ebc59188954caae791716a791779e5bb4fdb6"
+      }
+    },
+    {
+      "azimuth": 0.0,
+      "elevation": 20,
+      "fov_degrees": 55.0,
+      "camera_position": [
+        773.8248901367188,
+        -20.176910400390625,
+        478.633544921875
+      ],
+      "files": {
+        "view-002-color.png": "f0f9dad2f10e218105da9a703d8657aa73c61366dc3f72c649be4c0f189b4f2d",
+        "view-002-depth-.exr": "2fb06e946d1b316d227a972a8589364167c1af6ff89eeea317d60348ceff4e13",
+        "view-002-normal-.exr": "d981a3aa424290f6c7d74b95a43376101e13e6497f312dbe8a187df815f342aa"
+      }
+    },
+    {
+      "azimuth": 90.0,
+      "elevation": 20,
+      "fov_degrees": 55.0,
+      "camera_position": [
+        4.7383107772700286e-14,
+        753.64794921875,
+        478.633544921875
+      ],
+      "files": {
+        "view-003-color.png": "bf54c71722dd31bfdf35d6261c4c622cdbf0cd9637b8bc18ab262df51c067c06",
+        "view-003-depth-.exr": "2b22e6d8b028edb19b92366f39a6bad6c8e45c704c8708c54faf98451f63486b",
+        "view-003-normal-.exr": "d7688e34a34b51866fa5f8d33accdeb648fbd4fba2ad9e9816f7c777a581cad7"
+      }
+    }
+  ]
+}

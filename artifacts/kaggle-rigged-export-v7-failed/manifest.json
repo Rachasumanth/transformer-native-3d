@@ -1,0 +1,20 @@
+{
+  "kaggle_kernel": "sumu143/transformer-native-3d-rigged-export-probe",
+  "kaggle_version": 7,
+  "source_bundle_sha256": "01570acbd64450c6d845346d71e4f75115350c4c8d5c091298136527e49d3bfa",
+  "failure": "All 26 focused tests passed; real-rig export reached pad_pbr, which rejected an interpolated image outside [0,1]. No real-rig GLB or probe report was emitted.",
+  "files": {
+    "export-build.log": {
+      "sha256": "3d15eee0689101678a51f8eee6ae79b0e5010e1f728fd2723f83404a36460ae0",
+      "bytes": 943
+    },
+    "rigged-export-tests.log": {
+      "sha256": "2334342cd3dea1f2b237a636ec57a05c1242935f96730721badeaee28799712f",
+      "bytes": 3943
+    },
+    "transformer-native-3d-rigged-export-probe.log": {
+      "sha256": "a77b37bb874124ac8e95cd17d3e4bcdfb83e5fa8c0ca2483447d6100ac5e3bc5",
+      "bytes": 38182
+    }
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "file": "Duck.glb",
+    "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Duck/glTF-Binary/Duck.glb",
+    "sha256": "65bf938f54d6073e619e76e007820bbf980cdc3dc0daec0d94830ffc4ae54ab5"
+  },
+  {
+    "file": "README.md",
+    "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Duck/README.md",
+    "sha256": "09c366dc722e768d1eb41f0d8f2798ee37c56efac269837feb0bb3df901eba36"
+  },
+  {
+    "file": "LICENSE.md",
+    "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Duck/LICENSE.md",
+    "sha256": "acb64e58f2d3807a9e58413f9537b788f6cc5abee755034c8dc7bb6bd7c31765"
+  }
+]

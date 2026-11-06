@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/bowl-cereal",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/bowl-cereal.glb",
+  "sha256": "9b32feac99e01c3769f713ad492354cf18a3e6cc4a2256e280263ab045c4c64c",
+  "bytes": 23212,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

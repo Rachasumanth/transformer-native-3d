@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "asset_id": "khronos-avocado",
+      "path": "avocado.t3d",
+      "sha256": "952e495f5e8212771ae2631b4a3eecf2105f28df1e20066456e7cbb5f4dd825d",
+      "split": "train",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/Avocado",
+      "license": "CC0-1.0; Microsoft, 2017",
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "source_group": "khronos-avocado"
+    },
+    {
+      "asset_id": "khronos-waterbottle",
+      "path": "waterbottle.t3d",
+      "sha256": "f75a40a6ba7f159e225b6d4b90d18be32b701c7b8b22f266813f59853c200fc4",
+      "split": "validation",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/WaterBottle",
+      "license": "CC0-1.0; Microsoft, 2017",
+      "source_sha256": "b337e526fd6a162013c2984aeec163f5fbb4f717252724dfc3f3458bd51df94b",
+      "source_group": "khronos-waterbottle"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "space-kit/machine-wirelesscable",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/space-kit/machine-wirelesscable.glb",
+  "sha256": "b38770b6d1a40e2afd8a5f535e6a962f07cf18a8345e9b940bf3843bcf938a6b",
+  "bytes": 20884,
+  "group": "space-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/space-kit"
+}

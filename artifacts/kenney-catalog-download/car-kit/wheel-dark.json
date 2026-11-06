@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/wheel-dark",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/wheel-dark.glb",
+  "sha256": "ac2239a8a46ffa7214a34cea76b73a9e50b6ceb4b99996f85d8d4e4ddd4194d6",
+  "bytes": 41512,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

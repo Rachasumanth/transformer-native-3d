@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/popsicle",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/popsicle.glb",
+  "sha256": "8ecfb881829a5e205668b5c035fe578ed2b003b05b487ab30a4f35c8b2b0ba6c",
+  "bytes": 18852,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

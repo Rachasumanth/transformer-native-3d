@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/loaf-baguette",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/loaf-baguette.glb",
+  "sha256": "b2e7f2fc482c6e8997bc35e3ee41e62cb55caa458e8523e643e793d8ad06e360",
+  "bytes": 23572,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

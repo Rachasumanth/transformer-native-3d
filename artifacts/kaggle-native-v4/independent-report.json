@@ -1,0 +1,325 @@
+{
+  "source_sha256": "167fc18bc9fce8fa68764b81f44e2c365339ef95163ae9a8115f93a2e5fc4a82",
+  "upstream_commit": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+  "scope": "three source assets at two resolutions; sampled surface metrics, not research benchmark",
+  "cases": [
+    {
+      "asset": "Avocado",
+      "grid_size": 16,
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "output_sha256": "13686be4e302bff93af1052725d997f7387c9ada2acf68003a268dd83f1e0dba",
+      "measurements": [
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.0010659053791978305,
+          "reference_to_prediction": 0.0011424495928675327,
+          "prediction_to_reference": 0.0009893611655281283,
+          "precision": 1.0,
+          "recall": 1.0,
+          "fscore": 1.0,
+          "triangles": 1014,
+          "boundary_edges": 4,
+          "nonmanifold_edges": 28
+        },
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 1,
+          "mean_distance": 0.0010287111145724924,
+          "reference_to_prediction": 0.001006856543898308,
+          "prediction_to_reference": 0.0010505656852466765,
+          "precision": 1.0,
+          "recall": 1.0,
+          "fscore": 1.0,
+          "triangles": 1014,
+          "boundary_edges": 4,
+          "nonmanifold_edges": 28
+        },
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 2,
+          "mean_distance": 0.001079982403436099,
+          "reference_to_prediction": 0.0010772812561227869,
+          "prediction_to_reference": 0.0010826835507494112,
+          "precision": 1.0,
+          "recall": 1.0,
+          "fscore": 1.0,
+          "triangles": 1014,
+          "boundary_edges": 4,
+          "nonmanifold_edges": 28
+        }
+      ]
+    },
+    {
+      "asset": "Avocado",
+      "grid_size": 32,
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "output_sha256": "71677393aa11d662bf4801ae65d3bd2746b148509360d26e8649575622a01988",
+      "measurements": [
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.00036249150017596255,
+          "reference_to_prediction": 0.00038921860087904974,
+          "prediction_to_reference": 0.00033576439947287536,
+          "precision": 1.0,
+          "recall": 1.0,
+          "fscore": 1.0,
+          "triangles": 4018,
+          "boundary_edges": 18,
+          "nonmanifold_edges": 60
+        },
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 1,
+          "mean_distance": 0.00028723870539979596,
+          "reference_to_prediction": 0.00028991290059076746,
+          "prediction_to_reference": 0.00028456451020882447,
+          "precision": 1.0,
+          "recall": 1.0,
+          "fscore": 1.0,
+          "triangles": 4018,
+          "boundary_edges": 18,
+          "nonmanifold_edges": 60
+        },
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 2,
+          "mean_distance": 0.0003018429524510199,
+          "reference_to_prediction": 0.0003101941018134936,
+          "prediction_to_reference": 0.0002934918030885462,
+          "precision": 1.0,
+          "recall": 1.0,
+          "fscore": 1.0,
+          "triangles": 4018,
+          "boundary_edges": 18,
+          "nonmanifold_edges": 60
+        }
+      ]
+    },
+    {
+      "asset": "WaterBottle",
+      "grid_size": 16,
+      "source_sha256": "b337e526fd6a162013c2984aeec163f5fbb4f717252724dfc3f3458bd51df94b",
+      "output_sha256": "2c591be7d2d68ca146ce859da96693d55a51a59056020436be8c718d16524879",
+      "measurements": [
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.0035271739133112935,
+          "reference_to_prediction": 0.004248658768765535,
+          "prediction_to_reference": 0.0028056890578570517,
+          "precision": 1.0,
+          "recall": 0.98046875,
+          "fscore": 0.9901380670611439,
+          "triangles": 1004,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 112
+        },
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 1,
+          "mean_distance": 0.003834822782112117,
+          "reference_to_prediction": 0.0043846237119917215,
+          "prediction_to_reference": 0.0032850218522325132,
+          "precision": 1.0,
+          "recall": 0.94921875,
+          "fscore": 0.9739478957915831,
+          "triangles": 1004,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 112
+        },
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 2,
+          "mean_distance": 0.0035204076052465037,
+          "reference_to_prediction": 0.0041426518757241414,
+          "prediction_to_reference": 0.0028981633347688663,
+          "precision": 1.0,
+          "recall": 0.96875,
+          "fscore": 0.9841269841269841,
+          "triangles": 1004,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 112
+        }
+      ]
+    },
+    {
+      "asset": "WaterBottle",
+      "grid_size": 32,
+      "source_sha256": "b337e526fd6a162013c2984aeec163f5fbb4f717252724dfc3f3458bd51df94b",
+      "output_sha256": "76f51e8690e8009ab9046c0266ea711ef028136c6316c114076cf162e6ddb2b9",
+      "measurements": [
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.002796156415445824,
+          "reference_to_prediction": 0.0029601270461693833,
+          "prediction_to_reference": 0.002632185784722265,
+          "precision": 1.0,
+          "recall": 1.0,
+          "fscore": 1.0,
+          "triangles": 4172,
+          "boundary_edges": 64,
+          "nonmanifold_edges": 408
+        },
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 1,
+          "mean_distance": 0.00261779157970174,
+          "reference_to_prediction": 0.003019268229827056,
+          "prediction_to_reference": 0.0022163149295764237,
+          "precision": 1.0,
+          "recall": 0.98828125,
+          "fscore": 0.9941060903732809,
+          "triangles": 4172,
+          "boundary_edges": 64,
+          "nonmanifold_edges": 408
+        },
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 2,
+          "mean_distance": 0.0022542612462199815,
+          "reference_to_prediction": 0.0025082915081608872,
+          "prediction_to_reference": 0.0020002309842790753,
+          "precision": 1.0,
+          "recall": 0.984375,
+          "fscore": 0.9921259842519685,
+          "triangles": 4172,
+          "boundary_edges": 64,
+          "nonmanifold_edges": 408
+        }
+      ]
+    },
+    {
+      "asset": "Lantern",
+      "grid_size": 16,
+      "source_sha256": "a79458c4b02d695187a952f23a63b8bf278e7bc3d316a3c2a314f2d6974181f1",
+      "output_sha256": "1c65fd84ebf3c5a43300203899e0127dfe04597743b5b39d3ea9f68ef0975022",
+      "measurements": [
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.004467787888180829,
+          "reference_to_prediction": 0.00588421033290097,
+          "prediction_to_reference": 0.0030513654434606886,
+          "precision": 0.91796875,
+          "recall": 0.8125,
+          "fscore": 0.8620203160270881,
+          "triangles": 294,
+          "boundary_edges": 20,
+          "nonmanifold_edges": 38
+        },
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 1,
+          "mean_distance": 0.003639334698172443,
+          "reference_to_prediction": 0.004627264615439404,
+          "prediction_to_reference": 0.002651404780905482,
+          "precision": 0.953125,
+          "recall": 0.8671875,
+          "fscore": 0.9081276824034334,
+          "triangles": 294,
+          "boundary_edges": 20,
+          "nonmanifold_edges": 38
+        },
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 2,
+          "mean_distance": 0.0036859534768958644,
+          "reference_to_prediction": 0.0046866998574521075,
+          "prediction_to_reference": 0.002685207096339621,
+          "precision": 0.9609375,
+          "recall": 0.859375,
+          "fscore": 0.9073229613733905,
+          "triangles": 294,
+          "boundary_edges": 20,
+          "nonmanifold_edges": 38
+        }
+      ]
+    },
+    {
+      "asset": "Lantern",
+      "grid_size": 32,
+      "source_sha256": "a79458c4b02d695187a952f23a63b8bf278e7bc3d316a3c2a314f2d6974181f1",
+      "output_sha256": "b6ffa67db0a2e691a31910d84bf37f6cc58c92fc19a5309a3df1997dafd1e30e",
+      "measurements": [
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 0,
+          "mean_distance": 0.0018583933044671725,
+          "reference_to_prediction": 0.0022858423180402553,
+          "prediction_to_reference": 0.0014309442908940896,
+          "precision": 0.98828125,
+          "recall": 0.96484375,
+          "fscore": 0.976421875,
+          "triangles": 1222,
+          "boundary_edges": 58,
+          "nonmanifold_edges": 113
+        },
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 1,
+          "mean_distance": 0.0016766180349200963,
+          "reference_to_prediction": 0.001995576671935966,
+          "prediction_to_reference": 0.0013576593979042265,
+          "precision": 0.98828125,
+          "recall": 0.9609375,
+          "fscore": 0.9744175851703407,
+          "triangles": 1222,
+          "boundary_edges": 58,
+          "nonmanifold_edges": 113
+        },
+        {
+          "valid": true,
+          "samples": 256,
+          "tolerance": 0.01,
+          "seed": 2,
+          "mean_distance": 0.0016019003437068198,
+          "reference_to_prediction": 0.0019153163218203406,
+          "prediction_to_reference": 0.0012884843655932992,
+          "precision": 0.99609375,
+          "recall": 0.96484375,
+          "fscore": 0.9802197460159362,
+          "triangles": 1222,
+          "boundary_edges": 58,
+          "nonmanifold_edges": 113
+        }
+      ]
+    }
+  ]
+}

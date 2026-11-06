@@ -1,0 +1,26 @@
+{
+  "purpose": "Private Kaggle input for real textured rig export validation",
+  "source_asset": "Khronos CesiumMan, CC-BY-4.0; original URL and digest are in SOURCE.json",
+  "files": {
+    "CesiumMan.glb": {
+      "sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "bytes": 438044
+    },
+    "README.md": {
+      "sha256": "1bf7fa794013d2e0de8c244518936b04d95cba780f4510c8cceee4c23dbc04a8",
+      "bytes": 1146
+    },
+    "SOURCE.json": {
+      "sha256": "24ebff60aaa628440e6f5e4bd8b11d1aed0fb6342f774a7d3c6c9a268674776e",
+      "bytes": 701
+    },
+    "skin-pose-pilot-holdout-CesiumMan.pt": {
+      "sha256": "4e2ca11172898021c1cd99f7292d4b012f87b0d7b423879f1e65bb59aa29d84b",
+      "bytes": 470981
+    },
+    "skin-pose-training-report-holdout-CesiumMan.json": {
+      "sha256": "98250c9e1b342fafab762bb70ec734df161665871536b395b3799e0467d49c59",
+      "bytes": 6379
+    }
+  }
+}

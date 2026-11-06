@@ -1,0 +1,47 @@
+{
+  "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+  "output_sha256": "0730f81ae704be16526c6bb2840242b1e2fa775434fe742b87dbfad7e33422d5",
+  "samples": 4096,
+  "seed": 0,
+  "source_projection_distance_mean": 0.00727110098286551,
+  "source_projection_distance_p95": 0.024037076341673052,
+  "linear_pbr": {
+    "base_r": {
+      "mae": 0.19637153080002312,
+      "rmse": 0.2949053213310602,
+      "p95_absolute_error": 0.6603742066897701,
+      "psnr_db_peak_1": 10.606347817606602
+    },
+    "base_g": {
+      "mae": 0.14878163540773726,
+      "rmse": 0.22639930435759414,
+      "p95_absolute_error": 0.5084696331865475,
+      "psnr_db_peak_1": 12.902498238202035
+    },
+    "base_b": {
+      "mae": 0.13701151516466034,
+      "rmse": 0.24237227910287376,
+      "p95_absolute_error": 0.6186265992883734,
+      "psnr_db_peak_1": 12.310341066443456
+    },
+    "metallic": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": null
+    },
+    "roughness": {
+      "mae": 2.303929616531697e-18,
+      "rmse": 1.5993360207877823e-17,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": 335.9212056263549
+    },
+    "alpha": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "p95_absolute_error": 0.0,
+      "psnr_db_peak_1": null
+    }
+  },
+  "scope": "Area-weighted output surface samples compared with source PBR at nearest source-surface points; attribute-space only, not rendered material fidelity."
+}

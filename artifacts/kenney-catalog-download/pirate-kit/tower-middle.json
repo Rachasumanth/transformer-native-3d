@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/tower-middle",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/tower-middle.glb",
+  "sha256": "72b04b1a4c2ee3c9afe32faf20b420941e3ba82af0abdb049896e950df8dc74c",
+  "bytes": 31204,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/crop-turnip",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/crop-turnip.glb",
+  "sha256": "5e121c6042742497ed02081a7c62fc80aec2191f04e22a57d81d02130689f71d",
+  "bytes": 14308,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

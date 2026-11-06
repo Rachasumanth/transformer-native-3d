@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/utensil-spoon",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/utensil-spoon.glb",
+  "sha256": "6b32f7391dc898da4571059d4ecdc3baa0ad8962091445809adf657683fcbcb1",
+  "bytes": 16872,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/taco",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/taco.glb",
+  "sha256": "2aca873cda80115b36f7135f0620c3978f6f8140ec06b31a1014c37ed3ae3f9a",
+  "bytes": 28212,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

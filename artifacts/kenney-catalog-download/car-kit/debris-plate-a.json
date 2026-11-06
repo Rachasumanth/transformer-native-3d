@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/debris-plate-a",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/debris-plate-a.glb",
+  "sha256": "989bbdaedeb4eb065d8a51b9349b81a55958aaf8e139ee20c750bab23f1102ca",
+  "bytes": 17440,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

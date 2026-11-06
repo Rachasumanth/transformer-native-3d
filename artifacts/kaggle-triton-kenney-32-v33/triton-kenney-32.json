@@ -1,0 +1,1866 @@
+{
+  "scope": "Warm-start from previously inspected mixed-asset pilot, then train on 16 uncurated Kenney models; eight validation models from other packs; no semantic deduplication or quality benchmark",
+  "device": "Tesla T4",
+  "old_manifest_sha256": "aa53c436015f729bbef385d8339bf8e1c0948332b6e0eac7ed0e54639b1dfa64",
+  "manifest_sha256": "59b1a8a38d4e34889777a42ebffaa24c0c0a46547b4fd881e88b349fb632a5a4",
+  "initial_checkpoint_sha256": "a765fedf81532528a727e703cdcd13646e291f6b7d0b9f91173878bfef3fb755",
+  "elapsed_seconds": 244.678178157,
+  "rows": [
+    {
+      "step": 600,
+      "cases": [
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-debris-spoiler-b",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.4685953855514526,
+            "attribute": 0.809685468673706,
+            "occupancy": 0.6589080095291138,
+            "kl": 1.888155221939087
+          },
+          "free_occupancy": {
+            "target": 1072,
+            "predicted": 2028,
+            "intersection": 178,
+            "precision": 0.08777120315581854,
+            "recall": 0.166044776119403,
+            "iou": 0.06091718001368925
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-suv",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.4834542274475098,
+            "attribute": 0.8030133843421936,
+            "occupancy": 0.6804369688034058,
+            "kl": 3.802875280380249
+          },
+          "free_occupancy": {
+            "target": 2806,
+            "predicted": 2322,
+            "intersection": 647,
+            "precision": 0.2786391042204996,
+            "recall": 0.23057733428367783,
+            "iou": 0.14438741352376702
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-wheel-truck",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.4802864789962769,
+            "attribute": 0.7920794486999512,
+            "occupancy": 0.6882001161575317,
+            "kl": 6.882541179656982
+          },
+          "free_occupancy": {
+            "target": 4080,
+            "predicted": 2798,
+            "intersection": 409,
+            "precision": 0.1461758398856326,
+            "recall": 0.10024509803921569,
+            "iou": 0.0632246096769207
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-advocado-half",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.4396185874938965,
+            "attribute": 0.7938655018806458,
+            "occupancy": 0.6457489728927612,
+            "kl": 4.05512809753418
+          },
+          "free_occupancy": {
+            "target": 2692,
+            "predicted": 2933,
+            "intersection": 575,
+            "precision": 0.19604500511421752,
+            "recall": 0.21359583952451708,
+            "iou": 0.11386138613861387
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-cutting-board-japanese",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.4943128824234009,
+            "attribute": 0.8027850985527039,
+            "occupancy": 0.6915248036384583,
+            "kl": 3.012272357940674
+          },
+          "free_occupancy": {
+            "target": 1964,
+            "predicted": 2022,
+            "intersection": 258,
+            "precision": 0.12759643916913946,
+            "recall": 0.13136456211812628,
+            "iou": 0.06920600858369098
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-pear",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.4820992946624756,
+            "attribute": 0.8152081966400146,
+            "occupancy": 0.6668864488601685,
+            "kl": 4.705777168273926
+          },
+          "free_occupancy": {
+            "target": 2590,
+            "predicted": 2774,
+            "intersection": 486,
+            "precision": 0.17519826964671953,
+            "recall": 0.18764478764478765,
+            "iou": 0.0996309963099631
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-wine-white",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.4004846811294556,
+            "attribute": 0.7669516205787659,
+            "occupancy": 0.6335312724113464,
+            "kl": 1.8283110857009888
+          },
+          "free_occupancy": {
+            "target": 988,
+            "predicted": 2711,
+            "intersection": 310,
+            "precision": 0.11434894872740686,
+            "recall": 0.31376518218623484,
+            "iou": 0.09147241074063145
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-bathroomcabinet",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.3339051008224487,
+            "attribute": 0.7858623266220093,
+            "occupancy": 0.5480368137359619,
+            "kl": 5.920528411865234
+          },
+          "free_occupancy": {
+            "target": 3876,
+            "predicted": 2566,
+            "intersection": 834,
+            "precision": 0.3250194855806703,
+            "recall": 0.21517027863777088,
+            "iou": 0.14871611982881597
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-floorfull",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.4770543575286865,
+            "attribute": 0.7852106690406799,
+            "occupancy": 0.6918405294418335,
+            "kl": 3.0994081497192383
+          },
+          "free_occupancy": {
+            "target": 2048,
+            "predicted": 2147,
+            "intersection": 194,
+            "precision": 0.0903586399627387,
+            "recall": 0.0947265625,
+            "iou": 0.04848787803049238
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-plantsmall3",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.4234048128128052,
+            "attribute": 0.7953277230262756,
+            "occupancy": 0.6280725002288818,
+            "kl": 4.603764057159424
+          },
+          "free_occupancy": {
+            "target": 3024,
+            "predicted": 2890,
+            "intersection": 775,
+            "precision": 0.2681660899653979,
+            "recall": 0.2562830687830688,
+            "iou": 0.1508075501070247
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-washerdryerstacked",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.429673671722412,
+            "attribute": 0.7954851388931274,
+            "occupancy": 0.6341843605041504,
+            "kl": 4.221750259399414
+          },
+          "free_occupancy": {
+            "target": 2872,
+            "predicted": 2907,
+            "intersection": 758,
+            "precision": 0.260749914000688,
+            "recall": 0.2639275766016713,
+            "iou": 0.15096594303923522
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-bed",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.4884706735610962,
+            "attribute": 0.8100789785385132,
+            "occupancy": 0.6783891916275024,
+            "kl": 2.453230619430542
+          },
+          "free_occupancy": {
+            "target": 1590,
+            "predicted": 2093,
+            "intersection": 239,
+            "precision": 0.11419015766841854,
+            "recall": 0.15031446540880503,
+            "iou": 0.06939605110336818
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-fence-simple",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.401286244392395,
+            "attribute": 0.7373095750808716,
+            "occupancy": 0.6639754772186279,
+            "kl": 1.170128345489502
+          },
+          "free_occupancy": {
+            "target": 560,
+            "predicted": 1934,
+            "intersection": 108,
+            "precision": 0.055842812823164424,
+            "recall": 0.19285714285714287,
+            "iou": 0.04526404023470243
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-rock-tallj",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.4620529413223267,
+            "attribute": 0.8050214648246765,
+            "occupancy": 0.6570262908935547,
+            "kl": 5.143809795379639
+          },
+          "free_occupancy": {
+            "target": 3209,
+            "predicted": 3092,
+            "intersection": 575,
+            "precision": 0.18596377749029755,
+            "recall": 0.17918354627609848,
+            "iou": 0.10041914076143905
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-tree-thin-fall",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.4275760650634766,
+            "attribute": 0.7740087509155273,
+            "occupancy": 0.653565526008606,
+            "kl": 1.7909643650054932
+          },
+          "free_occupancy": {
+            "target": 1076,
+            "predicted": 2838,
+            "intersection": 280,
+            "precision": 0.09866102889358704,
+            "recall": 0.26022304832713755,
+            "iou": 0.07705008255365987
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-ambulance",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.44727623462677,
+            "attribute": 0.8027242422103882,
+            "occupancy": 0.6445474624633789,
+            "kl": 4.535284042358398
+          },
+          "free_occupancy": {
+            "target": 3216,
+            "predicted": 2572,
+            "intersection": 639,
+            "precision": 0.2484447900466563,
+            "recall": 0.19869402985074627,
+            "iou": 0.12410176733346281
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-alien",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3566501140594482,
+            "attribute": 0.7660149931907654,
+            "occupancy": 0.5906317234039307,
+            "kl": 3.3717246055603027
+          },
+          "free_occupancy": {
+            "target": 1956,
+            "predicted": 2662,
+            "intersection": 528,
+            "precision": 0.19834710743801653,
+            "recall": 0.26993865030674846,
+            "iou": 0.12909535452322737
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-machine-generatorlarge",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.443955898284912,
+            "attribute": 0.7765178680419922,
+            "occupancy": 0.6674328446388245,
+            "kl": 5.263339042663574
+          },
+          "free_occupancy": {
+            "target": 3092,
+            "predicted": 2917,
+            "intersection": 393,
+            "precision": 0.13472745971888928,
+            "recall": 0.12710219922380336,
+            "iou": 0.06997863247863248
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rail-corner",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.4767775535583496,
+            "attribute": 0.7871456146240234,
+            "occupancy": 0.689630389213562,
+            "kl": 1.5442155599594116
+          },
+          "free_occupancy": {
+            "target": 576,
+            "predicted": 1731,
+            "intersection": 99,
+            "precision": 0.05719237435008666,
+            "recall": 0.171875,
+            "iou": 0.04483695652173913
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-weapon-rifle",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.4380488395690918,
+            "attribute": 0.7827197909355164,
+            "occupancy": 0.655326783657074,
+            "kl": 2.2882285118103027
+          },
+          "free_occupancy": {
+            "target": 1440,
+            "predicted": 2044,
+            "intersection": 306,
+            "precision": 0.149706457925636,
+            "recall": 0.2125,
+            "iou": 0.09628697293895531
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-barrel",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.5572078227996826,
+            "attribute": 0.8698710203170776,
+            "occupancy": 0.6873273253440857,
+            "kl": 9.566612243652344
+          },
+          "free_occupancy": {
+            "target": 8208,
+            "predicted": 3280,
+            "intersection": 871,
+            "precision": 0.2655487804878049,
+            "recall": 0.1061159844054581,
+            "iou": 0.08203824055759631
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-grass-patch",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.495934009552002,
+            "attribute": 0.8193371295928955,
+            "occupancy": 0.6765925288200378,
+            "kl": 4.325044631958008
+          },
+          "free_occupancy": {
+            "target": 2937,
+            "predicted": 2461,
+            "intersection": 634,
+            "precision": 0.2576188541243397,
+            "recall": 0.21586653047327203,
+            "iou": 0.1330814441645676
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-medium",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.4291284084320068,
+            "attribute": 0.7887148857116699,
+            "occupancy": 0.640408992767334,
+            "kl": 4.503232002258301
+          },
+          "free_occupancy": {
+            "target": 2994,
+            "predicted": 2611,
+            "intersection": 668,
+            "precision": 0.25584067407123706,
+            "recall": 0.22311289245156982,
+            "iou": 0.13530484099655662
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-tower-watch",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.4994431734085083,
+            "attribute": 0.8181045055389404,
+            "occupancy": 0.6813297271728516,
+            "kl": 8.957910537719727
+          },
+          "free_occupancy": {
+            "target": 7300,
+            "predicted": 3331,
+            "intersection": 822,
+            "precision": 0.24677274091864304,
+            "recall": 0.1126027397260274,
+            "iou": 0.08380059129370986
+          }
+        }
+      ]
+    },
+    {
+      "step": 800,
+      "cases": [
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-debris-spoiler-b",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.3227756023406982,
+            "attribute": 0.7358848452568054,
+            "occupancy": 0.5868886113166809,
+            "kl": 2.1365606784820557
+          },
+          "free_occupancy": {
+            "target": 1072,
+            "predicted": 1385,
+            "intersection": 334,
+            "precision": 0.24115523465703972,
+            "recall": 0.31156716417910446,
+            "iou": 0.15732454074422986
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-suv",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.3340221643447876,
+            "attribute": 0.7535956501960754,
+            "occupancy": 0.5804225206375122,
+            "kl": 3.9773342609405518
+          },
+          "free_occupancy": {
+            "target": 2806,
+            "predicted": 3708,
+            "intersection": 1228,
+            "precision": 0.33117583603020495,
+            "recall": 0.43763364219529577,
+            "iou": 0.23231176693151723
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-wheel-truck",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.3707603216171265,
+            "attribute": 0.7371658682823181,
+            "occupancy": 0.6335868835449219,
+            "kl": 7.469196319580078
+          },
+          "free_occupancy": {
+            "target": 4080,
+            "predicted": 6412,
+            "intersection": 1338,
+            "precision": 0.20867124142233312,
+            "recall": 0.32794117647058824,
+            "iou": 0.14616561066200567
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-advocado-half",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.2886260747909546,
+            "attribute": 0.7379232048988342,
+            "occupancy": 0.5506985187530518,
+            "kl": 4.428335189819336
+          },
+          "free_occupancy": {
+            "target": 2692,
+            "predicted": 4873,
+            "intersection": 1240,
+            "precision": 0.2544633695875231,
+            "recall": 0.4606240713224368,
+            "iou": 0.19604743083003953
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-cutting-board-japanese",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.3408849239349365,
+            "attribute": 0.7379773855209351,
+            "occupancy": 0.6029040813446045,
+            "kl": 3.421456813812256
+          },
+          "free_occupancy": {
+            "target": 1964,
+            "predicted": 2207,
+            "intersection": 624,
+            "precision": 0.2827367467149977,
+            "recall": 0.31771894093686354,
+            "iou": 0.17592331547786863
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-pear",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.3697372674942017,
+            "attribute": 0.7639389634132385,
+            "occupancy": 0.6057930588722229,
+            "kl": 5.258856773376465
+          },
+          "free_occupancy": {
+            "target": 2590,
+            "predicted": 5166,
+            "intersection": 1112,
+            "precision": 0.21525358110723963,
+            "recall": 0.42934362934362935,
+            "iou": 0.16736905478627334
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-wine-white",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.2995871305465698,
+            "attribute": 0.7344456315040588,
+            "occupancy": 0.5651393532752991,
+            "kl": 2.1238417625427246
+          },
+          "free_occupancy": {
+            "target": 988,
+            "predicted": 2781,
+            "intersection": 529,
+            "precision": 0.19021934555915138,
+            "recall": 0.5354251012145749,
+            "iou": 0.16327160493827161
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-bathroomcabinet",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.1919511556625366,
+            "attribute": 0.7029236555099487,
+            "occupancy": 0.4890214502811432,
+            "kl": 6.100368499755859
+          },
+          "free_occupancy": {
+            "target": 3876,
+            "predicted": 5303,
+            "intersection": 1804,
+            "precision": 0.340184801056006,
+            "recall": 0.46542827657378744,
+            "iou": 0.24461016949152542
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-floorfull",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.3189774751663208,
+            "attribute": 0.713103711605072,
+            "occupancy": 0.6058701872825623,
+            "kl": 3.5186538696289062
+          },
+          "free_occupancy": {
+            "target": 2048,
+            "predicted": 2090,
+            "intersection": 471,
+            "precision": 0.22535885167464115,
+            "recall": 0.22998046875,
+            "iou": 0.12844286883010636
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-plantsmall3",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.2988219261169434,
+            "attribute": 0.7442547082901001,
+            "occupancy": 0.5545623302459717,
+            "kl": 4.913596153259277
+          },
+          "free_occupancy": {
+            "target": 3024,
+            "predicted": 4332,
+            "intersection": 1345,
+            "precision": 0.31048014773776544,
+            "recall": 0.44477513227513227,
+            "iou": 0.223756446514723
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-washerdryerstacked",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.2428830862045288,
+            "attribute": 0.7332283854484558,
+            "occupancy": 0.5096504092216492,
+            "kl": 4.32429313659668
+          },
+          "free_occupancy": {
+            "target": 2872,
+            "predicted": 4130,
+            "intersection": 1392,
+            "precision": 0.337046004842615,
+            "recall": 0.48467966573816157,
+            "iou": 0.24812834224598931
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-bed",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.315693974494934,
+            "attribute": 0.742830753326416,
+            "occupancy": 0.572860598564148,
+            "kl": 2.6757843494415283
+          },
+          "free_occupancy": {
+            "target": 1590,
+            "predicted": 2631,
+            "intersection": 674,
+            "precision": 0.25617635879893574,
+            "recall": 0.4238993710691824,
+            "iou": 0.19001973498731323
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-fence-simple",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.2729605436325073,
+            "attribute": 0.68403559923172,
+            "occupancy": 0.588923454284668,
+            "kl": 1.5006687641143799
+          },
+          "free_occupancy": {
+            "target": 560,
+            "predicted": 856,
+            "intersection": 149,
+            "precision": 0.17406542056074767,
+            "recall": 0.26607142857142857,
+            "iou": 0.11760063141278611
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-rock-tallj",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.3502119779586792,
+            "attribute": 0.751641571521759,
+            "occupancy": 0.598564863204956,
+            "kl": 5.601766586303711
+          },
+          "free_occupancy": {
+            "target": 3209,
+            "predicted": 5692,
+            "intersection": 1387,
+            "precision": 0.24367533380182713,
+            "recall": 0.4322218759738236,
+            "iou": 0.18458876763375034
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-tree-thin-fall",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.3158246278762817,
+            "attribute": 0.7431700825691223,
+            "occupancy": 0.5726524591445923,
+            "kl": 2.058917999267578
+          },
+          "free_occupancy": {
+            "target": 1076,
+            "predicted": 2459,
+            "intersection": 457,
+            "precision": 0.18584790565270434,
+            "recall": 0.4247211895910781,
+            "iou": 0.1484730344379467
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-ambulance",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.2968668937683105,
+            "attribute": 0.743327796459198,
+            "occupancy": 0.5535342693328857,
+            "kl": 4.816086769104004
+          },
+          "free_occupancy": {
+            "target": 3216,
+            "predicted": 4227,
+            "intersection": 1366,
+            "precision": 0.3231606340193991,
+            "recall": 0.4247512437810945,
+            "iou": 0.2247819647852559
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-alien",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2789822816848755,
+            "attribute": 0.7310184240341187,
+            "occupancy": 0.5479601621627808,
+            "kl": 3.67574405670166
+          },
+          "free_occupancy": {
+            "target": 1956,
+            "predicted": 4239,
+            "intersection": 916,
+            "precision": 0.2160887001651333,
+            "recall": 0.46830265848670755,
+            "iou": 0.17351771168781965
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-machine-generatorlarge",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3622829914093018,
+            "attribute": 0.722721517086029,
+            "occupancy": 0.6395557522773743,
+            "kl": 5.778168201446533
+          },
+          "free_occupancy": {
+            "target": 3092,
+            "predicted": 3622,
+            "intersection": 624,
+            "precision": 0.17228050800662617,
+            "recall": 0.2018111254851229,
+            "iou": 0.10246305418719212
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rail-corner",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3694771528244019,
+            "attribute": 0.7510035037994385,
+            "occupancy": 0.6184717416763306,
+            "kl": 1.8739938735961914
+          },
+          "free_occupancy": {
+            "target": 576,
+            "predicted": 1394,
+            "intersection": 191,
+            "precision": 0.13701578192252512,
+            "recall": 0.3315972222222222,
+            "iou": 0.10736368746486791
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-weapon-rifle",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3256936073303223,
+            "attribute": 0.7289332747459412,
+            "occupancy": 0.5967576503753662,
+            "kl": 2.623643159866333
+          },
+          "free_occupancy": {
+            "target": 1440,
+            "predicted": 2845,
+            "intersection": 587,
+            "precision": 0.2063268892794376,
+            "recall": 0.4076388888888889,
+            "iou": 0.1587344510546241
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-barrel",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.4393974542617798,
+            "attribute": 0.7916101813316345,
+            "occupancy": 0.6477775573730469,
+            "kl": 9.679734230041504
+          },
+          "free_occupancy": {
+            "target": 8208,
+            "predicted": 6374,
+            "intersection": 1768,
+            "precision": 0.27737684342641983,
+            "recall": 0.21539961013645223,
+            "iou": 0.13797409083814577
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-grass-patch",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.452093482017517,
+            "attribute": 0.8235889077186584,
+            "occupancy": 0.6284998655319214,
+            "kl": 4.671905517578125
+          },
+          "free_occupancy": {
+            "target": 2937,
+            "predicted": 3269,
+            "intersection": 805,
+            "precision": 0.2462526766595289,
+            "recall": 0.27408920667347636,
+            "iou": 0.14904647287539344
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-medium",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.307438850402832,
+            "attribute": 0.7534317970275879,
+            "occupancy": 0.5540022850036621,
+            "kl": 4.800595760345459
+          },
+          "free_occupancy": {
+            "target": 2994,
+            "predicted": 4350,
+            "intersection": 1163,
+            "precision": 0.2673563218390805,
+            "recall": 0.3884435537742151,
+            "iou": 0.18815725610742598
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-tower-watch",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.39324951171875,
+            "attribute": 0.7538852691650391,
+            "occupancy": 0.6393550634384155,
+            "kl": 9.19094467163086
+          },
+          "free_occupancy": {
+            "target": 7300,
+            "predicted": 6819,
+            "intersection": 1895,
+            "precision": 0.27789998533509314,
+            "recall": 0.2595890410958904,
+            "iou": 0.1550229057591623
+          }
+        }
+      ],
+      "checkpoint_sha256": "443b0f901b0ba0ac06bd8fd41b7ae65083fda3683e5a4d415943b24ac41b6018"
+    },
+    {
+      "step": 1000,
+      "cases": [
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-debris-spoiler-b",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.2207480669021606,
+            "attribute": 0.7227188348770142,
+            "occupancy": 0.49802643060684204,
+            "kl": 2.7635135650634766
+          },
+          "free_occupancy": {
+            "target": 1072,
+            "predicted": 1680,
+            "intersection": 486,
+            "precision": 0.2892857142857143,
+            "recall": 0.4533582089552239,
+            "iou": 0.2144748455428067
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-suv",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.2276029586791992,
+            "attribute": 0.7420875430107117,
+            "occupancy": 0.4855107069015503,
+            "kl": 4.798104286193848
+          },
+          "free_occupancy": {
+            "target": 2806,
+            "predicted": 3763,
+            "intersection": 1338,
+            "precision": 0.3555673664629285,
+            "recall": 0.4768353528153956,
+            "iou": 0.255782833110304
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-wheel-truck",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.2803064584732056,
+            "attribute": 0.7371651530265808,
+            "occupancy": 0.5431320667266846,
+            "kl": 9.21673583984375
+          },
+          "free_occupancy": {
+            "target": 4080,
+            "predicted": 6982,
+            "intersection": 1589,
+            "precision": 0.22758521913491836,
+            "recall": 0.3894607843137255,
+            "iou": 0.16773989232555683
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-advocado-half",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.195733904838562,
+            "attribute": 0.7220408320426941,
+            "occupancy": 0.47368761897087097,
+            "kl": 5.489572525024414
+          },
+          "free_occupancy": {
+            "target": 2692,
+            "predicted": 4429,
+            "intersection": 1282,
+            "precision": 0.28945585911040866,
+            "recall": 0.47622585438335807,
+            "iou": 0.21955814351772565
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-cutting-board-japanese",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.2029176950454712,
+            "attribute": 0.7166430950164795,
+            "occupancy": 0.4862701892852783,
+            "kl": 4.393154144287109
+          },
+          "free_occupancy": {
+            "target": 1964,
+            "predicted": 1626,
+            "intersection": 717,
+            "precision": 0.44095940959409596,
+            "recall": 0.365071283095723,
+            "iou": 0.24956491472328576
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-pear",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.276179313659668,
+            "attribute": 0.7575204968452454,
+            "occupancy": 0.518652081489563,
+            "kl": 6.698263168334961
+          },
+          "free_occupancy": {
+            "target": 2590,
+            "predicted": 5163,
+            "intersection": 1184,
+            "precision": 0.22932403641293822,
+            "recall": 0.45714285714285713,
+            "iou": 0.18024052367179175
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-wine-white",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.2208925485610962,
+            "attribute": 0.7184142470359802,
+            "occupancy": 0.5024755001068115,
+            "kl": 2.755187511444092
+          },
+          "free_occupancy": {
+            "target": 988,
+            "predicted": 2902,
+            "intersection": 543,
+            "precision": 0.18711233631977947,
+            "recall": 0.5495951417004049,
+            "iou": 0.16223483716761278
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-bathroomcabinet",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.101625680923462,
+            "attribute": 0.6859261393547058,
+            "occupancy": 0.4156920909881592,
+            "kl": 7.405418872833252
+          },
+          "free_occupancy": {
+            "target": 3876,
+            "predicted": 5474,
+            "intersection": 1974,
+            "precision": 0.36061381074168797,
+            "recall": 0.5092879256965944,
+            "iou": 0.2676247288503254
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-floorfull",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.1750227212905884,
+            "attribute": 0.6864832043647766,
+            "occupancy": 0.48853498697280884,
+            "kl": 4.561769485473633
+          },
+          "free_occupancy": {
+            "target": 2048,
+            "predicted": 2055,
+            "intersection": 718,
+            "precision": 0.3493917274939173,
+            "recall": 0.3505859375,
+            "iou": 0.2121122599704579
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-plantsmall3",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.2091565132141113,
+            "attribute": 0.7311525344848633,
+            "occupancy": 0.47799789905548096,
+            "kl": 6.0583271980285645
+          },
+          "free_occupancy": {
+            "target": 3024,
+            "predicted": 4619,
+            "intersection": 1503,
+            "precision": 0.32539510716605324,
+            "recall": 0.49702380952380953,
+            "iou": 0.24478827361563518
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-washerdryerstacked",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.1339985132217407,
+            "attribute": 0.7139007449150085,
+            "occupancy": 0.4200926125049591,
+            "kl": 5.183625221252441
+          },
+          "free_occupancy": {
+            "target": 2872,
+            "predicted": 4347,
+            "intersection": 1544,
+            "precision": 0.3551874856222682,
+            "recall": 0.5376044568245125,
+            "iou": 0.2720704845814978
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-bed",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.200914978981018,
+            "attribute": 0.7271300554275513,
+            "occupancy": 0.4737815856933594,
+            "kl": 3.3592276573181152
+          },
+          "free_occupancy": {
+            "target": 1590,
+            "predicted": 2795,
+            "intersection": 836,
+            "precision": 0.2991055456171735,
+            "recall": 0.5257861635220126,
+            "iou": 0.2355593124823894
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-fence-simple",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.169987678527832,
+            "attribute": 0.6677795648574829,
+            "occupancy": 0.5022060871124268,
+            "kl": 2.041261672973633
+          },
+          "free_occupancy": {
+            "target": 560,
+            "predicted": 921,
+            "intersection": 220,
+            "precision": 0.23887079261672095,
+            "recall": 0.39285714285714285,
+            "iou": 0.17446471054718476
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-rock-tallj",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.257827639579773,
+            "attribute": 0.7449592351913452,
+            "occupancy": 0.5128613710403442,
+            "kl": 7.021354675292969
+          },
+          "free_occupancy": {
+            "target": 3209,
+            "predicted": 5351,
+            "intersection": 1465,
+            "precision": 0.273780601756681,
+            "recall": 0.4565285135556248,
+            "iou": 0.20648343904157856
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-tree-thin-fall",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.2224900722503662,
+            "attribute": 0.731806218624115,
+            "occupancy": 0.49068117141723633,
+            "kl": 2.637773036956787
+          },
+          "free_occupancy": {
+            "target": 1076,
+            "predicted": 2530,
+            "intersection": 529,
+            "precision": 0.20909090909090908,
+            "recall": 0.491635687732342,
+            "iou": 0.17192070198245044
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-ambulance",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.195862889289856,
+            "attribute": 0.7303200960159302,
+            "occupancy": 0.4655369222164154,
+            "kl": 5.893938064575195
+          },
+          "free_occupancy": {
+            "target": 3216,
+            "predicted": 4114,
+            "intersection": 1502,
+            "precision": 0.36509479824987845,
+            "recall": 0.4670398009950249,
+            "iou": 0.2577213452299245
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-alien",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2230037450790405,
+            "attribute": 0.7215629816055298,
+            "occupancy": 0.5014361143112183,
+            "kl": 4.599008560180664
+          },
+          "free_occupancy": {
+            "target": 1956,
+            "predicted": 4418,
+            "intersection": 976,
+            "precision": 0.2209144409234948,
+            "recall": 0.49897750511247446,
+            "iou": 0.18080770655798445
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-machine-generatorlarge",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3267815113067627,
+            "attribute": 0.7310109734535217,
+            "occupancy": 0.5957634449005127,
+            "kl": 7.11682653427124
+          },
+          "free_occupancy": {
+            "target": 3092,
+            "predicted": 4420,
+            "intersection": 779,
+            "precision": 0.17624434389140273,
+            "recall": 0.25194049159120313,
+            "iou": 0.11569879697014704
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rail-corner",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.306042194366455,
+            "attribute": 0.7513926029205322,
+            "occupancy": 0.5546470880508423,
+            "kl": 2.4445292949676514
+          },
+          "free_occupancy": {
+            "target": 576,
+            "predicted": 1299,
+            "intersection": 242,
+            "precision": 0.18629715165511931,
+            "recall": 0.4201388888888889,
+            "iou": 0.14819350887936314
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-weapon-rifle",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.266954779624939,
+            "attribute": 0.722787618637085,
+            "occupancy": 0.5441638231277466,
+            "kl": 3.341160774230957
+          },
+          "free_occupancy": {
+            "target": 1440,
+            "predicted": 2527,
+            "intersection": 489,
+            "precision": 0.19351009101701622,
+            "recall": 0.33958333333333335,
+            "iou": 0.140598044853364
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-barrel",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.414065957069397,
+            "attribute": 0.8505288362503052,
+            "occupancy": 0.5635267496109009,
+            "kl": 10.368534088134766
+          },
+          "free_occupancy": {
+            "target": 8208,
+            "predicted": 7816,
+            "intersection": 2300,
+            "precision": 0.29426816786079835,
+            "recall": 0.2802144249512671,
+            "iou": 0.16758962401632177
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-grass-patch",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.4269005060195923,
+            "attribute": 0.8602794408798218,
+            "occupancy": 0.5666153430938721,
+            "kl": 5.742060661315918
+          },
+          "free_occupancy": {
+            "target": 2937,
+            "predicted": 2629,
+            "intersection": 818,
+            "precision": 0.3111449220235831,
+            "recall": 0.27851549199863807,
+            "iou": 0.17228306655433867
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-medium",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.2469236850738525,
+            "attribute": 0.7574124336242676,
+            "occupancy": 0.489505410194397,
+            "kl": 5.874830722808838
+          },
+          "free_occupancy": {
+            "target": 2994,
+            "predicted": 4177,
+            "intersection": 1244,
+            "precision": 0.29782140292075654,
+            "recall": 0.41549766199064797,
+            "iou": 0.20988695798886453
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-tower-watch",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.3949886560440063,
+            "attribute": 0.8188961744308472,
+            "occupancy": 0.5760822296142578,
+            "kl": 10.199542045593262
+          },
+          "free_occupancy": {
+            "target": 7300,
+            "predicted": 7932,
+            "intersection": 2006,
+            "precision": 0.2528996469994957,
+            "recall": 0.27479452054794523,
+            "iou": 0.15167095115681234
+          }
+        }
+      ],
+      "checkpoint_sha256": "beaa6a6cde611ad3dd12ed973bf0958a10734110990bcee9dba2f84f3bc58d3f"
+    },
+    {
+      "step": 1200,
+      "cases": [
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-debris-spoiler-b",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.1262428760528564,
+            "attribute": 0.7009040117263794,
+            "occupancy": 0.42533552646636963,
+            "kl": 3.3644566535949707
+          },
+          "free_occupancy": {
+            "target": 1072,
+            "predicted": 1222,
+            "intersection": 495,
+            "precision": 0.40507364975450083,
+            "recall": 0.46175373134328357,
+            "iou": 0.27515286270150086
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-suv",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.1473383903503418,
+            "attribute": 0.7220141291618347,
+            "occupancy": 0.42531871795654297,
+            "kl": 5.516359329223633
+          },
+          "free_occupancy": {
+            "target": 2806,
+            "predicted": 3755,
+            "intersection": 1473,
+            "precision": 0.3922769640479361,
+            "recall": 0.5249465431218817,
+            "iou": 0.28950471698113206
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-wheel-truck",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.1839267015457153,
+            "attribute": 0.7120298743247986,
+            "occupancy": 0.47188663482666016,
+            "kl": 10.10045051574707
+          },
+          "free_occupancy": {
+            "target": 4080,
+            "predicted": 6019,
+            "intersection": 1520,
+            "precision": 0.2525336434623692,
+            "recall": 0.37254901960784315,
+            "iou": 0.17717682713602984
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-advocado-half",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.1280272006988525,
+            "attribute": 0.6911845207214355,
+            "occupancy": 0.43683624267578125,
+            "kl": 6.38690185546875
+          },
+          "free_occupancy": {
+            "target": 2692,
+            "predicted": 4630,
+            "intersection": 1384,
+            "precision": 0.29892008639308854,
+            "recall": 0.5141158989598811,
+            "iou": 0.23307510946446616
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-cutting-board-japanese",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.078489065170288,
+            "attribute": 0.6870173811912537,
+            "occupancy": 0.3914664387702942,
+            "kl": 5.265493392944336
+          },
+          "free_occupancy": {
+            "target": 1964,
+            "predicted": 1389,
+            "intersection": 859,
+            "precision": 0.6184305255579554,
+            "recall": 0.43737270875763745,
+            "iou": 0.3444266238973536
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-pear",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.193795084953308,
+            "attribute": 0.7401598691940308,
+            "occupancy": 0.45362749695777893,
+            "kl": 7.705615997314453
+          },
+          "free_occupancy": {
+            "target": 2590,
+            "predicted": 4589,
+            "intersection": 1220,
+            "precision": 0.26585312704292874,
+            "recall": 0.47104247104247104,
+            "iou": 0.20473233764054372
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-food-kit-wine-white",
+          "group": "kenney-food-kit",
+          "teacher_forced_loss": {
+            "total": 1.124737024307251,
+            "attribute": 0.6885783076286316,
+            "occupancy": 0.43615537881851196,
+            "kl": 3.348780393600464
+          },
+          "free_occupancy": {
+            "target": 988,
+            "predicted": 2372,
+            "intersection": 541,
+            "precision": 0.22807757166947723,
+            "recall": 0.5475708502024291,
+            "iou": 0.19191202554097198
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-bathroomcabinet",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.020148515701294,
+            "attribute": 0.6515979170799255,
+            "occupancy": 0.3685421049594879,
+            "kl": 8.476335525512695
+          },
+          "free_occupancy": {
+            "target": 3876,
+            "predicted": 5374,
+            "intersection": 2006,
+            "precision": 0.37327874953479717,
+            "recall": 0.5175438596491229,
+            "iou": 0.27691882937603535
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-floorfull",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.0316823720932007,
+            "attribute": 0.6455819606781006,
+            "occupancy": 0.38609495759010315,
+            "kl": 5.498234272003174
+          },
+          "free_occupancy": {
+            "target": 2048,
+            "predicted": 1733,
+            "intersection": 839,
+            "precision": 0.48413156376226196,
+            "recall": 0.40966796875,
+            "iou": 0.2851801495581237
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-plantsmall3",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.1307225227355957,
+            "attribute": 0.707717776298523,
+            "occupancy": 0.4229978919029236,
+            "kl": 6.897200584411621
+          },
+          "free_occupancy": {
+            "target": 3024,
+            "predicted": 4792,
+            "intersection": 1602,
+            "precision": 0.33430717863105175,
+            "recall": 0.5297619047619048,
+            "iou": 0.2578049565497264
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-furniture-kit-washerdryerstacked",
+          "group": "kenney-furniture-kit",
+          "teacher_forced_loss": {
+            "total": 1.0522905588150024,
+            "attribute": 0.6833611726760864,
+            "occupancy": 0.3689234256744385,
+            "kl": 5.946514129638672
+          },
+          "free_occupancy": {
+            "target": 2872,
+            "predicted": 4343,
+            "intersection": 1561,
+            "precision": 0.3594289661524292,
+            "recall": 0.5435236768802229,
+            "iou": 0.2760877255040679
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-bed",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.1074090003967285,
+            "attribute": 0.6962728500366211,
+            "occupancy": 0.41113224625587463,
+            "kl": 3.969465732574463
+          },
+          "free_occupancy": {
+            "target": 1590,
+            "predicted": 2448,
+            "intersection": 824,
+            "precision": 0.3366013071895425,
+            "recall": 0.5182389937106918,
+            "iou": 0.2563783447417548
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-fence-simple",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.064927577972412,
+            "attribute": 0.6396990418434143,
+            "occupancy": 0.4252259135246277,
+            "kl": 2.5696427822113037
+          },
+          "free_occupancy": {
+            "target": 560,
+            "predicted": 777,
+            "intersection": 258,
+            "precision": 0.33204633204633205,
+            "recall": 0.4607142857142857,
+            "iou": 0.2391102873030584
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-rock-tallj",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.1780650615692139,
+            "attribute": 0.7213956713676453,
+            "occupancy": 0.4566614329814911,
+            "kl": 8.001710891723633
+          },
+          "free_occupancy": {
+            "target": 3209,
+            "predicted": 4817,
+            "intersection": 1457,
+            "precision": 0.3024704172721611,
+            "recall": 0.4540355250856965,
+            "iou": 0.22179936063327751
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-nature-kit-tree-thin-fall",
+          "group": "kenney-nature-kit",
+          "teacher_forced_loss": {
+            "total": 1.1319578886032104,
+            "attribute": 0.7095173597335815,
+            "occupancy": 0.42243725061416626,
+            "kl": 3.2106595039367676
+          },
+          "free_occupancy": {
+            "target": 1076,
+            "predicted": 1818,
+            "intersection": 537,
+            "precision": 0.2953795379537954,
+            "recall": 0.49907063197026025,
+            "iou": 0.2278319898175647
+          }
+        },
+        {
+          "split": "train",
+          "asset": "kenney-car-kit-ambulance",
+          "group": "kenney-car-kit",
+          "teacher_forced_loss": {
+            "total": 1.1266227960586548,
+            "attribute": 0.7100064754486084,
+            "occupancy": 0.416609525680542,
+            "kl": 6.811162948608398
+          },
+          "free_occupancy": {
+            "target": 3216,
+            "predicted": 4319,
+            "intersection": 1594,
+            "precision": 0.36906691363741606,
+            "recall": 0.4956467661691542,
+            "iou": 0.26830499915839084
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-alien",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.1842645406723022,
+            "attribute": 0.705897867679596,
+            "occupancy": 0.47836124897003174,
+            "kl": 5.378326416015625
+          },
+          "free_occupancy": {
+            "target": 1956,
+            "predicted": 4106,
+            "intersection": 982,
+            "precision": 0.23916220165611302,
+            "recall": 0.5020449897750511,
+            "iou": 0.19330708661417323
+          },
+          "reconstruction_sha256": "ad807ee6e3de6c2636d0a0aadf13fcc36f333507f2cbc616ee692b88f25bc3ea"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-machine-generatorlarge",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.3120073080062866,
+            "attribute": 0.7352619171142578,
+            "occupancy": 0.5767375230789185,
+            "kl": 7.909681797027588
+          },
+          "free_occupancy": {
+            "target": 3092,
+            "predicted": 3996,
+            "intersection": 824,
+            "precision": 0.2062062062062062,
+            "recall": 0.2664941785252264,
+            "iou": 0.13154533844189017
+          },
+          "reconstruction_sha256": "510e4fd127f4f9a994647d8f997deece86a313af220c6cd653625ce91de210b8"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-rail-corner",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2550709247589111,
+            "attribute": 0.7589432597160339,
+            "occupancy": 0.4961247444152832,
+            "kl": 2.899646520614624
+          },
+          "free_occupancy": {
+            "target": 576,
+            "predicted": 828,
+            "intersection": 169,
+            "precision": 0.2041062801932367,
+            "recall": 0.2934027777777778,
+            "iou": 0.1368421052631579
+          },
+          "reconstruction_sha256": "a7c98dc8a4a79ceed8759be272bf6b656bab68981a0d2709798709f15f9bc836"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-space-kit-weapon-rifle",
+          "group": "kenney-space-kit",
+          "teacher_forced_loss": {
+            "total": 1.2226287126541138,
+            "attribute": 0.7078591585159302,
+            "occupancy": 0.5147656798362732,
+            "kl": 3.957920789718628
+          },
+          "free_occupancy": {
+            "target": 1440,
+            "predicted": 2703,
+            "intersection": 518,
+            "precision": 0.19163891971883093,
+            "recall": 0.3597222222222222,
+            "iou": 0.14289655172413793
+          },
+          "reconstruction_sha256": "7c4e6371bc2335dd90f0f87f6ee0383298cc0f79694cd6e3e327592927f33e7e"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-barrel",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.4237332344055176,
+            "attribute": 0.8693588972091675,
+            "occupancy": 0.5543632507324219,
+            "kl": 11.127639770507812
+          },
+          "free_occupancy": {
+            "target": 8208,
+            "predicted": 6289,
+            "intersection": 1830,
+            "precision": 0.2909842582286532,
+            "recall": 0.22295321637426901,
+            "iou": 0.14446988237151653
+          },
+          "reconstruction_sha256": "00bb3b0844ef8a6eed553b21e2201a63ecd0c51ad8b5d5e7b9e3f72da6664e16"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-grass-patch",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.4752367734909058,
+            "attribute": 0.9014146327972412,
+            "occupancy": 0.573815643787384,
+            "kl": 6.608043193817139
+          },
+          "free_occupancy": {
+            "target": 2937,
+            "predicted": 2100,
+            "intersection": 732,
+            "precision": 0.3485714285714286,
+            "recall": 0.24923391215526047,
+            "iou": 0.1700348432055749
+          },
+          "reconstruction_sha256": "3d0adda73bc25f53cbe1f5a629c222745494a8b456a0d15ebc6de177221e5a92"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-ship-medium",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.2351154088974,
+            "attribute": 0.753756046295166,
+            "occupancy": 0.48135265707969666,
+            "kl": 6.698994159698486
+          },
+          "free_occupancy": {
+            "target": 2994,
+            "predicted": 4167,
+            "intersection": 1156,
+            "precision": 0.27741780657547394,
+            "recall": 0.3861055444221777,
+            "iou": 0.19250624479600334
+          },
+          "reconstruction_sha256": "3c4d882e970a2b7f1d107d9aa55282cafa5ed4e6f7b3241ef94e27fea48a4841"
+        },
+        {
+          "split": "validation",
+          "asset": "kenney-pirate-kit-tower-watch",
+          "group": "kenney-pirate-kit",
+          "teacher_forced_loss": {
+            "total": 1.4257643222808838,
+            "attribute": 0.8501635789871216,
+            "occupancy": 0.5755898356437683,
+            "kl": 10.998231887817383
+          },
+          "free_occupancy": {
+            "target": 7300,
+            "predicted": 6665,
+            "intersection": 1706,
+            "precision": 0.2559639909977494,
+            "recall": 0.2336986301369863,
+            "iou": 0.1391630638714414
+          },
+          "reconstruction_sha256": "a49fd18bbc7ab8512ca8f9fd8a071e925d8c139eb702cd51f2f14418fd80e27c"
+        }
+      ],
+      "checkpoint_sha256": "5814fbd193ac84afc4ab52bd6f5c130264003f503463ef63f2d0263fc3d7b093"
+    }
+  ],
+  "source_sha256": "9983e9c237d1b83c82bfc1a9b0c5b5ff55ef14c22d9bbbb2e302e511ab15086c"
+}

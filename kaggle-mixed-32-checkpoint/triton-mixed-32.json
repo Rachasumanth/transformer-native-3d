@@ -1,0 +1,471 @@
+{
+  "scope": "Warm-start from 30 steps on Avocado, then round-robin four prior-inspected training assets; two prior-inspected validation assets; no untouched benchmark",
+  "device": "Tesla T4",
+  "old_manifest_sha256": "71c951b5f8e401ba4aea615f8cc08eeb52b9babb74e9cdef1f8f3ddce0c8d6e0",
+  "manifest_sha256": "aa53c436015f729bbef385d8339bf8e1c0948332b6e0eac7ed0e54639b1dfa64",
+  "initial_checkpoint_sha256": "03a4b6cfbbb9a923db38bba7b3ee5262e3238f579ce9c30a4ca4810e09a5dbd1",
+  "elapsed_seconds": 159.602259795,
+  "rows": [
+    {
+      "step": 30,
+      "cases": [
+        {
+          "split": "train",
+          "asset": "khronos-avocado",
+          "teacher_forced_loss": {
+            "total": 1.6470657587051392,
+            "attribute": 0.9523191452026367,
+            "occupancy": 0.6947466135025024,
+            "kl": 0.005732007324695587
+          },
+          "free_occupancy": {
+            "target": 1991,
+            "predicted": 2214,
+            "intersection": 122,
+            "precision": 0.05510388437217705,
+            "recall": 0.06127574083375188,
+            "iou": 0.0298799902032819
+          }
+        },
+        {
+          "split": "train",
+          "asset": "corgi",
+          "teacher_forced_loss": {
+            "total": 1.6466259956359863,
+            "attribute": 0.9470660090446472,
+            "occupancy": 0.6995600461959839,
+            "kl": 0.008096464909613132
+          },
+          "free_occupancy": {
+            "target": 4253,
+            "predicted": 2118,
+            "intersection": 315,
+            "precision": 0.14872521246458922,
+            "recall": 0.07406536562426523,
+            "iou": 0.05201453104359313
+          }
+        },
+        {
+          "split": "train",
+          "asset": "bat",
+          "teacher_forced_loss": {
+            "total": 1.662544846534729,
+            "attribute": 0.967778742313385,
+            "occupancy": 0.694766104221344,
+            "kl": 0.004351389594376087
+          },
+          "free_occupancy": {
+            "target": 1480,
+            "predicted": 2166,
+            "intersection": 94,
+            "precision": 0.04339796860572484,
+            "recall": 0.06351351351351352,
+            "iou": 0.026463963963963964
+          }
+        },
+        {
+          "split": "train",
+          "asset": "shark",
+          "teacher_forced_loss": {
+            "total": 1.6711704730987549,
+            "attribute": 0.9766629934310913,
+            "occupancy": 0.6945075392723083,
+            "kl": 0.004468146711587906
+          },
+          "free_occupancy": {
+            "target": 1618,
+            "predicted": 2248,
+            "intersection": 127,
+            "precision": 0.056494661921708184,
+            "recall": 0.07849196538936959,
+            "iou": 0.03396630115004012
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "khronos-waterbottle",
+          "teacher_forced_loss": {
+            "total": 1.6508300304412842,
+            "attribute": 0.95525723695755,
+            "occupancy": 0.6955727338790894,
+            "kl": 0.005105313379317522
+          },
+          "free_occupancy": {
+            "target": 1904,
+            "predicted": 2206,
+            "intersection": 91,
+            "precision": 0.041251133272892114,
+            "recall": 0.04779411764705882,
+            "iou": 0.022642448370241354
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "riggedfigure",
+          "teacher_forced_loss": {
+            "total": 1.6365821361541748,
+            "attribute": 0.9405097961425781,
+            "occupancy": 0.6960723400115967,
+            "kl": 0.0034864391200244427
+          },
+          "free_occupancy": {
+            "target": 918,
+            "predicted": 2062,
+            "intersection": 36,
+            "precision": 0.01745877788554801,
+            "recall": 0.0392156862745098,
+            "iou": 0.012228260869565218
+          }
+        }
+      ]
+    },
+    {
+      "step": 100,
+      "cases": [
+        {
+          "split": "train",
+          "asset": "khronos-avocado",
+          "teacher_forced_loss": {
+            "total": 1.5897692441940308,
+            "attribute": 0.8978110551834106,
+            "occupancy": 0.6919580698013306,
+            "kl": 0.11440275609493256
+          },
+          "free_occupancy": {
+            "target": 1991,
+            "predicted": 1653,
+            "intersection": 106,
+            "precision": 0.06412583182093164,
+            "recall": 0.053239578101456554,
+            "iou": 0.029960429621254947
+          }
+        },
+        {
+          "split": "train",
+          "asset": "corgi",
+          "teacher_forced_loss": {
+            "total": 1.6099119186401367,
+            "attribute": 0.9109301567077637,
+            "occupancy": 0.6989815831184387,
+            "kl": 0.2637401819229126
+          },
+          "free_occupancy": {
+            "target": 4253,
+            "predicted": 1331,
+            "intersection": 190,
+            "precision": 0.14274981217129978,
+            "recall": 0.04467434751939807,
+            "iou": 0.035224323322209865
+          }
+        },
+        {
+          "split": "train",
+          "asset": "bat",
+          "teacher_forced_loss": {
+            "total": 1.5997748374938965,
+            "attribute": 0.906951904296875,
+            "occupancy": 0.6928228139877319,
+            "kl": 0.08471590280532837
+          },
+          "free_occupancy": {
+            "target": 1480,
+            "predicted": 1467,
+            "intersection": 68,
+            "precision": 0.046353101567825496,
+            "recall": 0.04594594594594595,
+            "iou": 0.023619312261201807
+          }
+        },
+        {
+          "split": "train",
+          "asset": "shark",
+          "teacher_forced_loss": {
+            "total": 1.6114355325698853,
+            "attribute": 0.9177276492118835,
+            "occupancy": 0.6937078237533569,
+            "kl": 0.0860077515244484
+          },
+          "free_occupancy": {
+            "target": 1618,
+            "predicted": 1680,
+            "intersection": 105,
+            "precision": 0.0625,
+            "recall": 0.06489493201483312,
+            "iou": 0.03288443470090824
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "khronos-waterbottle",
+          "teacher_forced_loss": {
+            "total": 1.5955159664154053,
+            "attribute": 0.9013848900794983,
+            "occupancy": 0.6941309571266174,
+            "kl": 0.08978386223316193
+          },
+          "free_occupancy": {
+            "target": 1904,
+            "predicted": 1787,
+            "intersection": 160,
+            "precision": 0.08953553441522104,
+            "recall": 0.08403361344537816,
+            "iou": 0.045312942509204195
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "riggedfigure",
+          "teacher_forced_loss": {
+            "total": 1.5806140899658203,
+            "attribute": 0.8858445882797241,
+            "occupancy": 0.6947695016860962,
+            "kl": 0.034311387687921524
+          },
+          "free_occupancy": {
+            "target": 918,
+            "predicted": 1829,
+            "intersection": 39,
+            "precision": 0.021323127392017496,
+            "recall": 0.042483660130718956,
+            "iou": 0.014401772525849335
+          }
+        }
+      ]
+    },
+    {
+      "step": 300,
+      "cases": [
+        {
+          "split": "train",
+          "asset": "khronos-avocado",
+          "teacher_forced_loss": {
+            "total": 1.4559681415557861,
+            "attribute": 0.7807272672653198,
+            "occupancy": 0.6752386689186096,
+            "kl": 2.1089065074920654
+          },
+          "free_occupancy": {
+            "target": 1991,
+            "predicted": 2237,
+            "intersection": 368,
+            "precision": 0.16450603486812695,
+            "recall": 0.18483174284279258,
+            "iou": 0.09533678756476684
+          }
+        },
+        {
+          "split": "train",
+          "asset": "corgi",
+          "teacher_forced_loss": {
+            "total": 1.4684031009674072,
+            "attribute": 0.7839239239692688,
+            "occupancy": 0.6844750642776489,
+            "kl": 4.033646583557129
+          },
+          "free_occupancy": {
+            "target": 4253,
+            "predicted": 2717,
+            "intersection": 575,
+            "precision": 0.21163047478836952,
+            "recall": 0.1351986832823889,
+            "iou": 0.08991399530883502
+          }
+        },
+        {
+          "split": "train",
+          "asset": "bat",
+          "teacher_forced_loss": {
+            "total": 1.4669080972671509,
+            "attribute": 0.7842485308647156,
+            "occupancy": 0.6826578974723816,
+            "kl": 1.6922738552093506
+          },
+          "free_occupancy": {
+            "target": 1480,
+            "predicted": 1905,
+            "intersection": 227,
+            "precision": 0.11916010498687664,
+            "recall": 0.15337837837837837,
+            "iou": 0.07188093730208993
+          }
+        },
+        {
+          "split": "train",
+          "asset": "shark",
+          "teacher_forced_loss": {
+            "total": 1.483810544013977,
+            "attribute": 0.7962742447853088,
+            "occupancy": 0.6875344514846802,
+            "kl": 1.7735576629638672
+          },
+          "free_occupancy": {
+            "target": 1618,
+            "predicted": 2406,
+            "intersection": 269,
+            "precision": 0.11180382377389858,
+            "recall": 0.16625463535228677,
+            "iou": 0.07163781624500666
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "khronos-waterbottle",
+          "teacher_forced_loss": {
+            "total": 1.4762264490127563,
+            "attribute": 0.7898692488670349,
+            "occupancy": 0.6863553524017334,
+            "kl": 1.772772192955017
+          },
+          "free_occupancy": {
+            "target": 1904,
+            "predicted": 1984,
+            "intersection": 273,
+            "precision": 0.1376008064516129,
+            "recall": 0.14338235294117646,
+            "iou": 0.07551867219917012
+          }
+        },
+        {
+          "split": "validation",
+          "asset": "riggedfigure",
+          "teacher_forced_loss": {
+            "total": 1.4679584503173828,
+            "attribute": 0.7801377177238464,
+            "occupancy": 0.6878197193145752,
+            "kl": 0.963441014289856
+          },
+          "free_occupancy": {
+            "target": 918,
+            "predicted": 2386,
+            "intersection": 138,
+            "precision": 0.057837384744341996,
+            "recall": 0.1503267973856209,
+            "iou": 0.043588123815540114
+          }
+        }
+      ],
+      "checkpoint_sha256": "1470bd75e891b6714edb80bc6f31dc3712e13942ee83c4b55f0bb57f4f61c2dc"
+    },
+    {
+      "step": 600,
+      "cases": [
+        {
+          "split": "train",
+          "asset": "khronos-avocado",
+          "teacher_forced_loss": {
+            "total": 1.3076658248901367,
+            "attribute": 0.7495026588439941,
+            "occupancy": 0.558159589767456,
+            "kl": 3.5558743476867676
+          },
+          "free_occupancy": {
+            "target": 1991,
+            "predicted": 2898,
+            "intersection": 768,
+            "precision": 0.2650103519668737,
+            "recall": 0.3857358111501758,
+            "iou": 0.18636253336568795
+          },
+          "reconstruction_sha256": "cb2a44ea39cee09bc772528349f44852627509fb30476fff7e7934672e9ec549"
+        },
+        {
+          "split": "train",
+          "asset": "corgi",
+          "teacher_forced_loss": {
+            "total": 1.3743395805358887,
+            "attribute": 0.7632107138633728,
+            "occupancy": 0.6111224889755249,
+            "kl": 6.424781799316406
+          },
+          "free_occupancy": {
+            "target": 4253,
+            "predicted": 3494,
+            "intersection": 1065,
+            "precision": 0.3048082427017745,
+            "recall": 0.25041147425346816,
+            "iou": 0.15938341813828194
+          },
+          "reconstruction_sha256": "124578a406ecd4e619dd65c7c1422a92a60d9cb48c7cc56cf092d491886bc63a"
+        },
+        {
+          "split": "train",
+          "asset": "bat",
+          "teacher_forced_loss": {
+            "total": 1.3555023670196533,
+            "attribute": 0.7570167183876038,
+            "occupancy": 0.5984827876091003,
+            "kl": 2.882385730743408
+          },
+          "free_occupancy": {
+            "target": 1480,
+            "predicted": 2584,
+            "intersection": 547,
+            "precision": 0.211687306501548,
+            "recall": 0.3695945945945946,
+            "iou": 0.15553028148990616
+          },
+          "reconstruction_sha256": "0b1ef03c538ba5ea32ed402e309ced113a1ac7cdf7463d78eab56c72a9e0ba0d"
+        },
+        {
+          "split": "train",
+          "asset": "shark",
+          "teacher_forced_loss": {
+            "total": 1.3878614902496338,
+            "attribute": 0.7756930589675903,
+            "occupancy": 0.6121654510498047,
+            "kl": 2.9703240394592285
+          },
+          "free_occupancy": {
+            "target": 1618,
+            "predicted": 2578,
+            "intersection": 597,
+            "precision": 0.23157486423584173,
+            "recall": 0.3689740420271941,
+            "iou": 0.1658794109474854
+          },
+          "reconstruction_sha256": "bd7b322989d67e90e076b77ea194a95d3fe23c7722adc093146dc812eda668f8"
+        },
+        {
+          "split": "validation",
+          "asset": "khronos-waterbottle",
+          "teacher_forced_loss": {
+            "total": 1.419075608253479,
+            "attribute": 0.781441330909729,
+            "occupancy": 0.637631356716156,
+            "kl": 2.9512791633605957
+          },
+          "free_occupancy": {
+            "target": 1904,
+            "predicted": 2721,
+            "intersection": 589,
+            "precision": 0.21646453509739066,
+            "recall": 0.30934873949579833,
+            "iou": 0.14593657086223985
+          },
+          "reconstruction_sha256": "fa955e8f37cb64c775894fa70b2e1703972b047215f98acab0e89666775accfd"
+        },
+        {
+          "split": "validation",
+          "asset": "riggedfigure",
+          "teacher_forced_loss": {
+            "total": 1.3963358402252197,
+            "attribute": 0.768293023109436,
+            "occupancy": 0.62804114818573,
+            "kl": 1.7206778526306152
+          },
+          "free_occupancy": {
+            "target": 918,
+            "predicted": 2396,
+            "intersection": 195,
+            "precision": 0.08138564273789649,
+            "recall": 0.21241830065359477,
+            "iou": 0.06252003847386983
+          },
+          "reconstruction_sha256": "62ead03796941d5500bc44852696aea18cdbbd23488b442631e644b81d2290b1"
+        }
+      ],
+      "checkpoint_sha256": "a765fedf81532528a727e703cdcd13646e291f6b7d0b9f91173878bfef3fb755"
+    }
+  ],
+  "source_sha256": "a52b2282ea21053aaae18445cda1d27fead375536629f84885bac2aa96693455"
+}

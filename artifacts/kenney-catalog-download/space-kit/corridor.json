@@ -1,0 +1,10 @@
+{
+  "id": "space-kit/corridor",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/space-kit/corridor.glb",
+  "sha256": "1e3a98e6e0b8f34a7b16b60e7f8d655c920b78881285d05e091893acf91fc6b9",
+  "bytes": 6876,
+  "group": "space-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/space-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/burger-cheese",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/burger-cheese.glb",
+  "sha256": "f87d32606dfba0fea5923e16d9820e4a6baedb1c2e18458c0e07ab0f6789e117",
+  "bytes": 36548,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

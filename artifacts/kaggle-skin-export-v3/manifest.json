@@ -1,0 +1,23 @@
+{
+  "kaggle_kernel": "sumu143/transformer-native-3d-skinae-export-inference",
+  "version": 3,
+  "source_bundle_sha256": "a5fe59a78e3ee638972b458ce9b5108a608e5e20db9f12046c5e1478e815974b",
+  "status": "COMPLETE",
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "source_file_sha256": {
+    "t3d/articulation.py": "962fb84f87a6dc681bc337957d45b522f6dfd44c96f71516d169ddb311ce5fd3",
+    "t3d/export.py": "5e710dc782ee6651eba1b7462e48a2ae35227ad9d610900a1e8b39c73f256a0b",
+    "t3d/schema.py": "bfda1a110ff307e4549f318c7625cbdd90e8fa47888fc9c9c9bd1481d97e78de",
+    "t3d/serialization.py": "10cee7fc6446a0d61206fc68600422d15b7b11e78da122a482b4d596b1c91346",
+    "t3d/skin_ae.py": "b864d49a65efe11567020393c7458a616591a922c9e9389dc736bb529c50024c",
+    "tests/test_export.py": "dbb43efe4cdd960b466ca1688e48272bb63f56ef1f0d9684e825202a5555210f",
+    "tests/test_skin_ae.py": "836336d99f8989eb375a64ed8f59d5ea81a61f5c72f4b5ddeac8da717ef28163",
+    "tools/probe_skin_export.py": "f811c8ef582177df256fc282d527db03bd1828bf12a04c97fd70e0db844e086a",
+    "tools/build_skin_export_notebook.py": "fd256afbca389e13b9b7fd016ca2a95eacce376783cc9fb2eb48cc24f8ea4c9a",
+    "artifacts/kaggle-skin-pose-v1/skin-pose-pilot.pt": "f73a7be776b6ac653f2e248d78307eeddea833ea0c5284011e7a92bf2543e9eb"
+  },
+  "probe": "skin-export-probe.json",
+  "tests": "skin-export-tests.log",
+  "scope": "CUDA synthetic field-to-rig clustering, sparse affine interpolation, checkpoint load, and normalized SkinAE decoding; not full geometry/PBR export"
+}

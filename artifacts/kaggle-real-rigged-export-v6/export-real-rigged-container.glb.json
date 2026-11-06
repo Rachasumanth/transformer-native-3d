@@ -1,0 +1,44 @@
+{
+  "device": "cuda:0",
+  "device_name": "Tesla T4",
+  "active_voxels": 584,
+  "extracted_faces": 1164,
+  "uv_faces": 992,
+  "stages": [
+    {
+      "stage": "input",
+      "vertices": 584,
+      "faces": 1164
+    },
+    {
+      "stage": "initial_holes",
+      "vertices": 584,
+      "faces": 1164
+    },
+    {
+      "stage": "coarse",
+      "vertices": 584,
+      "faces": 1164
+    },
+    {
+      "stage": "final",
+      "vertices": 498,
+      "faces": 992
+    }
+  ],
+  "texture_size": 128,
+  "valid_texels": 8185,
+  "source_up": "y",
+  "alpha_mode": "BLEND",
+  "remesh": false,
+  "skinned": true,
+  "joint_count": 2,
+  "skinae_checkpoint_sha256": "95bc334058ada68c97800fcd5c3c83998059a03ea1d69e9e033a6c20ac4439a7",
+  "joint_tolerance": 0.0078125,
+  "total_seconds": 3.714004253999974,
+  "glb_bytes": 49512,
+  "glb_sha256": "8eebd956f50816fcc4761dd951bde4e7d18db8b70c03bb9e681f6457b9b7e890",
+  "input_sha256": "267ac514202dc843b1a249bafeb620e4b37236d97e4763d8a043a2e5bae60fa2",
+  "bpt_token_count": 0,
+  "geometry_track": "raw Track A"
+}

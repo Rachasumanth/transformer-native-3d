@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/ice-cream-cne",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/ice-cream-cne.glb",
+  "sha256": "7c38c8996bb945725e0b27032b986a720d9138b7322ecac44aed553061aeadbf",
+  "bytes": 16204,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

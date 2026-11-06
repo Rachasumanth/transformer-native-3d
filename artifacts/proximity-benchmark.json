@@ -1,0 +1,35 @@
+{
+  "seed": 917,
+  "results": [
+    {
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "source": "artifacts/import/avocado/Avocado.glb",
+      "faces": 682,
+      "queries": 256,
+      "brute_seconds": 0.11851430699971388,
+      "bvh_build_seconds": 0.004229413999837561,
+      "bvh_query_seconds": 0.11327002100006212,
+      "max_position_error": 0.0,
+      "max_distance_error": 0.0,
+      "face_ids_equal": true,
+      "nodes": 255,
+      "triangle_query_pairs": 23768,
+      "exhaustive_pairs": 174592
+    },
+    {
+      "source_sha256": "b337e526fd6a162013c2984aeec163f5fbb4f717252724dfc3f3458bd51df94b",
+      "source": "artifacts/import/waterbottle/WaterBottle.glb",
+      "faces": 4510,
+      "queries": 256,
+      "brute_seconds": 0.7740489050001997,
+      "bvh_build_seconds": 0.02991459599979862,
+      "bvh_query_seconds": 0.6273631819999537,
+      "max_position_error": 0.0,
+      "max_distance_error": 0.0,
+      "face_ids_equal": true,
+      "nodes": 1851,
+      "triangle_query_pairs": 68506,
+      "exhaustive_pairs": 1154560
+    }
+  ]
+}

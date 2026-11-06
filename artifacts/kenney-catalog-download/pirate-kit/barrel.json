@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/barrel",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/barrel.glb",
+  "sha256": "db5f8ddf8f292d590e1feee972289a9f7564f69c2a2727e9bfef0ffe4035140d",
+  "bytes": 24176,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

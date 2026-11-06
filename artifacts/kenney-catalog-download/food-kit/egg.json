@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/egg",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/egg.glb",
+  "sha256": "e790fdab4fb5c3c839192df32cc52bdaf4ed0435f3a41b2b19ddf7617dd548e9",
+  "bytes": 16784,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

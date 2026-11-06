@@ -1,0 +1,25 @@
+{
+  "fixture": "65x65 planar grid",
+  "vertices": 4225,
+  "faces": 8192,
+  "tokens": 15888,
+  "tokens_per_face": 1.939453125,
+  "fraction_of_raw_9_tokens": 0.21549479166666666,
+  "sequence_reduction": 0.7845052083333334,
+  "patches": 2080,
+  "encode_seconds": 0.5591801159998795,
+  "quantization": {
+    "bins": 128,
+    "source_faces": 8192,
+    "source_unique_positions": 4225,
+    "quantized_unique_positions": 4225,
+    "source_zero_area_faces": 0,
+    "source_tiny_faces_1e_8": 0,
+    "collapsed_faces": 0,
+    "collinear_faces": 0,
+    "eligible": true,
+    "max_abs_coordinate_error": 0.00390625,
+    "rms_coordinate_error": 0.00390625
+  },
+  "oriented_quantized_faces_preserved": true
+}

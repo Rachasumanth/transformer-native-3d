@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/grass-plant",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/grass-plant.glb",
+  "sha256": "34613cea17db3b187f5841487cc0937a9146667ebbb84874e00b5dcb42e1b830",
+  "bytes": 24492,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

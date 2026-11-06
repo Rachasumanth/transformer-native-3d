@@ -1,0 +1,235 @@
+{
+  "source": "artifacts/kaggle-textured-rig-export-v14/export-real-rigged.glb",
+  "sha256": "e6a5b3b5eefc18bd96f5e453e3f9b49f3205c8486878bca250a8d6a055f87d3c",
+  "scope": "Coincidence at exact bind position; attribute differences and winding compared at position-matched corners",
+  "pairs": [
+    {
+      "faces": [
+        2029,
+        4769
+      ],
+      "normal_dot": -0.9999999999999998,
+      "max_uv_difference": 0.1612301468849182,
+      "max_weight_difference": 0.0,
+      "vertices_a": [
+        765,
+        766,
+        767
+      ],
+      "vertices_b": [
+        3057,
+        3059,
+        3056
+      ]
+    },
+    {
+      "faces": [
+        4201,
+        4558
+      ],
+      "normal_dot": -0.9999999999999999,
+      "max_uv_difference": 0.0,
+      "max_weight_difference": 0.0,
+      "vertices_a": [
+        2503,
+        2504,
+        2505
+      ],
+      "vertices_b": [
+        2657,
+        2659,
+        2658
+      ]
+    },
+    {
+      "faces": [
+        4772,
+        4773
+      ],
+      "normal_dot": -1.0000000000000002,
+      "max_uv_difference": 0.0,
+      "max_weight_difference": 0.0,
+      "vertices_a": [
+        3060,
+        3061,
+        3062
+      ],
+      "vertices_b": [
+        3063,
+        3061,
+        3062
+      ]
+    },
+    {
+      "faces": [
+        4772,
+        4774
+      ],
+      "normal_dot": -1.0000000000000002,
+      "max_uv_difference": 0.0,
+      "max_weight_difference": 0.0,
+      "vertices_a": [
+        3060,
+        3061,
+        3062
+      ],
+      "vertices_b": [
+        3060,
+        3064,
+        3062
+      ]
+    },
+    {
+      "faces": [
+        4772,
+        4775
+      ],
+      "normal_dot": 1.0000000000000002,
+      "max_uv_difference": 0.0,
+      "max_weight_difference": 0.0,
+      "vertices_a": [
+        3060,
+        3061,
+        3062
+      ],
+      "vertices_b": [
+        3063,
+        3064,
+        3062
+      ]
+    },
+    {
+      "faces": [
+        7590,
+        9311
+      ],
+      "normal_dot": -1.0000000000000002,
+      "max_uv_difference": 0.39235788583755493,
+      "max_weight_difference": 0.0,
+      "vertices_a": [
+        4808,
+        4810,
+        4811
+      ],
+      "vertices_b": [
+        5871,
+        5870,
+        5872
+      ]
+    },
+    {
+      "faces": [
+        7592,
+        7593
+      ],
+      "normal_dot": -0.9999999999999998,
+      "max_uv_difference": 0.0,
+      "max_weight_difference": 0.0,
+      "vertices_a": [
+        4812,
+        4813,
+        4814
+      ],
+      "vertices_b": [
+        4815,
+        4813,
+        4814
+      ]
+    },
+    {
+      "faces": [
+        7592,
+        7594
+      ],
+      "normal_dot": -0.9999999999999998,
+      "max_uv_difference": 0.0,
+      "max_weight_difference": 0.0,
+      "vertices_a": [
+        4812,
+        4813,
+        4814
+      ],
+      "vertices_b": [
+        4812,
+        4813,
+        4816
+      ]
+    },
+    {
+      "faces": [
+        7592,
+        7595
+      ],
+      "normal_dot": 0.9999999999999998,
+      "max_uv_difference": 0.0,
+      "max_weight_difference": 0.0,
+      "vertices_a": [
+        4812,
+        4813,
+        4814
+      ],
+      "vertices_b": [
+        4815,
+        4813,
+        4816
+      ]
+    },
+    {
+      "faces": [
+        9305,
+        9306
+      ],
+      "normal_dot": -1.0,
+      "max_uv_difference": 0.0,
+      "max_weight_difference": 0.0,
+      "vertices_a": [
+        5846,
+        5847,
+        5848
+      ],
+      "vertices_b": [
+        5849,
+        5847,
+        5848
+      ]
+    },
+    {
+      "faces": [
+        9305,
+        9307
+      ],
+      "normal_dot": -0.9999999999999416,
+      "max_uv_difference": 0.0,
+      "max_weight_difference": 0.0,
+      "vertices_a": [
+        5846,
+        5847,
+        5848
+      ],
+      "vertices_b": [
+        5846,
+        5850,
+        5848
+      ]
+    },
+    {
+      "faces": [
+        9305,
+        9308
+      ],
+      "normal_dot": 0.9999999999999416,
+      "max_uv_difference": 0.0,
+      "max_weight_difference": 0.0,
+      "vertices_a": [
+        5846,
+        5847,
+        5848
+      ],
+      "vertices_b": [
+        5849,
+        5850,
+        5848
+      ]
+    }
+  ]
+}

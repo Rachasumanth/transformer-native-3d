@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "asset_id": "avocado-rot0",
+      "path": "avocado-rot0.t3d",
+      "sha256": "952e495f5e8212771ae2631b4a3eecf2105f28df1e20066456e7cbb5f4dd825d",
+      "split": "train",
+      "source": "local:artifacts/native-inputs/Avocado.glb#rot=0",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "source_group": "multiasset-avocado"
+    },
+    {
+      "asset_id": "avocado-rot90",
+      "path": "avocado-rot90.t3d",
+      "sha256": "9680ed05131df3aae3370c344a2dee9537c6bd9c1cd0841aa080c58ab4c84f92",
+      "split": "train",
+      "source": "local:artifacts/native-inputs/Avocado.glb#rot=90",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "source_group": "multiasset-avocado"
+    },
+    {
+      "asset_id": "avocado-rot180",
+      "path": "avocado-rot180.t3d",
+      "sha256": "53675494f290e9f04c0c1a40e544179bbad7eac767f27139405cfb9a12c39d9e",
+      "split": "train",
+      "source": "local:artifacts/native-inputs/Avocado.glb#rot=180",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "source_group": "multiasset-avocado"
+    },
+    {
+      "asset_id": "avocado-rot270",
+      "path": "avocado-rot270.t3d",
+      "sha256": "58c83691140418722f98c52e126b2d9e91823e6b80b624f8026e65a671410a6e",
+      "split": "train",
+      "source": "local:artifacts/native-inputs/Avocado.glb#rot=270",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "ccc9c3ce56423720b09399c2351537207cd5a65f859f9e6e2f30922762f3abd4",
+      "source_group": "multiasset-avocado"
+    },
+    {
+      "asset_id": "waterbottle-rot0",
+      "path": "waterbottle-rot0.t3d",
+      "sha256": "f75a40a6ba7f159e225b6d4b90d18be32b701c7b8b22f266813f59853c200fc4",
+      "split": "train",
+      "source": "local:artifacts/native-inputs/WaterBottle.glb#rot=0",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "b337e526fd6a162013c2984aeec163f5fbb4f717252724dfc3f3458bd51df94b",
+      "source_group": "multiasset-waterbottle"
+    },
+    {
+      "asset_id": "waterbottle-rot90",
+      "path": "waterbottle-rot90.t3d",
+      "sha256": "9ded20b8235f4e4b498d0037a3d150c849b282f83e803c3ab5f202127e52643f",
+      "split": "train",
+      "source": "local:artifacts/native-inputs/WaterBottle.glb#rot=90",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "b337e526fd6a162013c2984aeec163f5fbb4f717252724dfc3f3458bd51df94b",
+      "source_group": "multiasset-waterbottle"
+    },
+    {
+      "asset_id": "waterbottle-rot180",
+      "path": "waterbottle-rot180.t3d",
+      "sha256": "c6fc5afa30da384f65f1fe22aebe446d7d11d11738ba2492cc72386eb9d2a562",
+      "split": "train",
+      "source": "local:artifacts/native-inputs/WaterBottle.glb#rot=180",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "b337e526fd6a162013c2984aeec163f5fbb4f717252724dfc3f3458bd51df94b",
+      "source_group": "multiasset-waterbottle"
+    },
+    {
+      "asset_id": "waterbottle-rot270",
+      "path": "waterbottle-rot270.t3d",
+      "sha256": "d0b8ff6157daad701c84d1860fd25e72dfe1778a95f063aa9ff74741b3afa8d2",
+      "split": "train",
+      "source": "local:artifacts/native-inputs/WaterBottle.glb#rot=270",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "b337e526fd6a162013c2984aeec163f5fbb4f717252724dfc3f3458bd51df94b",
+      "source_group": "multiasset-waterbottle"
+    },
+    {
+      "asset_id": "fish-rot0",
+      "path": "fish-rot0.t3d",
+      "sha256": "8e9d431952dd2f63d8f564585df555844327b3576958073bcac639503cc44c12",
+      "split": "train",
+      "source": "local:artifacts/bpt-candidates/BarramundiFish/BarramundiFish.glb#rot=0",
+      "license": "CC-BY-4.0; PolyHaven/Khronos",
+      "source_sha256": "ecc3bafb6b00f2c8b810863c388e3768a7b7ea0d0335e8cb8c574c266e571f4a",
+      "source_group": "multiasset-fish"
+    },
+    {
+      "asset_id": "fish-rot90",
+      "path": "fish-rot90.t3d",
+      "sha256": "d1b17ece65d18430b3b1bdba4ff998b07fa556e0e246a744385b93cf1a6d109a",
+      "split": "train",
+      "source": "local:artifacts/bpt-candidates/BarramundiFish/BarramundiFish.glb#rot=90",
+      "license": "CC-BY-4.0; PolyHaven/Khronos",
+      "source_sha256": "ecc3bafb6b00f2c8b810863c388e3768a7b7ea0d0335e8cb8c574c266e571f4a",
+      "source_group": "multiasset-fish"
+    },
+    {
+      "asset_id": "fish-rot180",
+      "path": "fish-rot180.t3d",
+      "sha256": "49ff7db9c630279c7bab92c0e5655412a6dda1f1efabc827b0b8066bbe172dfc",
+      "split": "train",
+      "source": "local:artifacts/bpt-candidates/BarramundiFish/BarramundiFish.glb#rot=180",
+      "license": "CC-BY-4.0; PolyHaven/Khronos",
+      "source_sha256": "ecc3bafb6b00f2c8b810863c388e3768a7b7ea0d0335e8cb8c574c266e571f4a",
+      "source_group": "multiasset-fish"
+    },
+    {
+      "asset_id": "fish-rot270",
+      "path": "fish-rot270.t3d",
+      "sha256": "0433667e25ae8db1ccc16957906b889f0443c54a2afd9a34f347404db09a59db",
+      "split": "train",
+      "source": "local:artifacts/bpt-candidates/BarramundiFish/BarramundiFish.glb#rot=270",
+      "license": "CC-BY-4.0; PolyHaven/Khronos",
+      "source_sha256": "ecc3bafb6b00f2c8b810863c388e3768a7b7ea0d0335e8cb8c574c266e571f4a",
+      "source_group": "multiasset-fish"
+    },
+    {
+      "asset_id": "duck-rot0",
+      "path": "duck-rot0.t3d",
+      "sha256": "5edd6b0febe2d4d71c00e1b5279820935ce1385349b4ab805f03d0f0be714454",
+      "split": "train",
+      "source": "local:artifacts/bpt-candidates/Duck/Duck.glb#rot=0",
+      "license": "CC0-1.0; Sony/Khronos",
+      "source_sha256": "65bf938f54d6073e619e76e007820bbf980cdc3dc0daec0d94830ffc4ae54ab5",
+      "source_group": "multiasset-duck"
+    },
+    {
+      "asset_id": "duck-rot90",
+      "path": "duck-rot90.t3d",
+      "sha256": "65605e9b49e1b77ca74f4ebe9e41e6a2efb52cad15202d2eada56a0f2f9775ba",
+      "split": "train",
+      "source": "local:artifacts/bpt-candidates/Duck/Duck.glb#rot=90",
+      "license": "CC0-1.0; Sony/Khronos",
+      "source_sha256": "65bf938f54d6073e619e76e007820bbf980cdc3dc0daec0d94830ffc4ae54ab5",
+      "source_group": "multiasset-duck"
+    },
+    {
+      "asset_id": "duck-rot180",
+      "path": "duck-rot180.t3d",
+      "sha256": "f2457be6c6b37dc566ff0f58623b85a3f8a0181f9bfa44c314b77c996b7e4980",
+      "split": "train",
+      "source": "local:artifacts/bpt-candidates/Duck/Duck.glb#rot=180",
+      "license": "CC0-1.0; Sony/Khronos",
+      "source_sha256": "65bf938f54d6073e619e76e007820bbf980cdc3dc0daec0d94830ffc4ae54ab5",
+      "source_group": "multiasset-duck"
+    },
+    {
+      "asset_id": "duck-rot270",
+      "path": "duck-rot270.t3d",
+      "sha256": "577057a7b0b40cf1698a7b843e02833c08e2128b2fc23b34d98d5f6d34f6f2ce",
+      "split": "train",
+      "source": "local:artifacts/bpt-candidates/Duck/Duck.glb#rot=270",
+      "license": "CC0-1.0; Sony/Khronos",
+      "source_sha256": "65bf938f54d6073e619e76e007820bbf980cdc3dc0daec0d94830ffc4ae54ab5",
+      "source_group": "multiasset-duck"
+    },
+    {
+      "asset_id": "box-rot0",
+      "path": "box-rot0.t3d",
+      "sha256": "af46e1458bad1f3af36fb43655edbbd9ab0f1edca7d16f01959565d29623af33",
+      "split": "train",
+      "source": "local:artifacts/bpt-candidates/Box/Box.glb#rot=0",
+      "license": "CC0-1.0; Khronos",
+      "source_sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e",
+      "source_group": "multiasset-box"
+    },
+    {
+      "asset_id": "box-rot90",
+      "path": "box-rot90.t3d",
+      "sha256": "e018ab0bd3784fcd9e32db619be30cc71a6a2422e7697e4113963bef5545e9d1",
+      "split": "train",
+      "source": "local:artifacts/bpt-candidates/Box/Box.glb#rot=90",
+      "license": "CC0-1.0; Khronos",
+      "source_sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e",
+      "source_group": "multiasset-box"
+    },
+    {
+      "asset_id": "box-rot180",
+      "path": "box-rot180.t3d",
+      "sha256": "af46e1458bad1f3af36fb43655edbbd9ab0f1edca7d16f01959565d29623af33",
+      "split": "train",
+      "source": "local:artifacts/bpt-candidates/Box/Box.glb#rot=180",
+      "license": "CC0-1.0; Khronos",
+      "source_sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e",
+      "source_group": "multiasset-box"
+    },
+    {
+      "asset_id": "box-rot270",
+      "path": "box-rot270.t3d",
+      "sha256": "e018ab0bd3784fcd9e32db619be30cc71a6a2422e7697e4113963bef5545e9d1",
+      "split": "train",
+      "source": "local:artifacts/bpt-candidates/Box/Box.glb#rot=270",
+      "license": "CC0-1.0; Khronos",
+      "source_sha256": "ed52f7192b8311d700ac0ce80644e3852cd01537e4d62241b9acba023da3d54e",
+      "source_group": "multiasset-box"
+    },
+    {
+      "asset_id": "lantern-rot0",
+      "path": "lantern-rot0.t3d",
+      "sha256": "e1bd002e24ee1ef838eb815a55f88834232cc7cddd420bf0587a5f41e0e12448",
+      "split": "validation",
+      "source": "local:artifacts/native-inputs/Lantern.glb#rot=0",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "a79458c4b02d695187a952f23a63b8bf278e7bc3d316a3c2a314f2d6974181f1",
+      "source_group": "multiasset-lantern"
+    },
+    {
+      "asset_id": "lantern-rot90",
+      "path": "lantern-rot90.t3d",
+      "sha256": "82299bf746f4922704a8c02571f826d2a38048131127f03b84f2b3d26ba728c7",
+      "split": "validation",
+      "source": "local:artifacts/native-inputs/Lantern.glb#rot=90",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "a79458c4b02d695187a952f23a63b8bf278e7bc3d316a3c2a314f2d6974181f1",
+      "source_group": "multiasset-lantern"
+    },
+    {
+      "asset_id": "lantern-rot180",
+      "path": "lantern-rot180.t3d",
+      "sha256": "259af5482720899e72cafb5387627785a464033a0a5c0d1eb91c78f7dfddcdd9",
+      "split": "validation",
+      "source": "local:artifacts/native-inputs/Lantern.glb#rot=180",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "a79458c4b02d695187a952f23a63b8bf278e7bc3d316a3c2a314f2d6974181f1",
+      "source_group": "multiasset-lantern"
+    },
+    {
+      "asset_id": "lantern-rot270",
+      "path": "lantern-rot270.t3d",
+      "sha256": "54699d66d720bc05ed6c0cf7ed07c02699cb5b9cf9e1d6a8ef65cecde5cc1999",
+      "split": "validation",
+      "source": "local:artifacts/native-inputs/Lantern.glb#rot=270",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "a79458c4b02d695187a952f23a63b8bf278e7bc3d316a3c2a314f2d6974181f1",
+      "source_group": "multiasset-lantern"
+    },
+    {
+      "asset_id": "boombox-rot0",
+      "path": "boombox-rot0.t3d",
+      "sha256": "9294dd8e53e38cc907df88e13fb283e593d5769fb7d9af6f89b39d90cd4c8f44",
+      "split": "validation",
+      "source": "local:artifacts/bpt-candidates/BoomBox/BoomBox.glb#rot=0",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "f8b918445ebdd006768232205a62f5182d2208ca57f84c6ccc084943c0bc8f15",
+      "source_group": "multiasset-boombox"
+    },
+    {
+      "asset_id": "boombox-rot90",
+      "path": "boombox-rot90.t3d",
+      "sha256": "f6ea207117b2f325983035d141fbdcec9d2bedcf3887db23aab5277c63d4370e",
+      "split": "validation",
+      "source": "local:artifacts/bpt-candidates/BoomBox/BoomBox.glb#rot=90",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "f8b918445ebdd006768232205a62f5182d2208ca57f84c6ccc084943c0bc8f15",
+      "source_group": "multiasset-boombox"
+    },
+    {
+      "asset_id": "boombox-rot180",
+      "path": "boombox-rot180.t3d",
+      "sha256": "2fbc42d960f7c79ad30f0dba292cffc8247577cd19310f8778ed5b60afff8496",
+      "split": "validation",
+      "source": "local:artifacts/bpt-candidates/BoomBox/BoomBox.glb#rot=180",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "f8b918445ebdd006768232205a62f5182d2208ca57f84c6ccc084943c0bc8f15",
+      "source_group": "multiasset-boombox"
+    },
+    {
+      "asset_id": "boombox-rot270",
+      "path": "boombox-rot270.t3d",
+      "sha256": "9d523e1cc9d15aabb4aba0a768562e3d6d57df685cf9cdcf090c4136e1b29c2a",
+      "split": "validation",
+      "source": "local:artifacts/bpt-candidates/BoomBox/BoomBox.glb#rot=270",
+      "license": "CC0-1.0; Microsoft",
+      "source_sha256": "f8b918445ebdd006768232205a62f5182d2208ca57f84c6ccc084943c0bc8f15",
+      "source_group": "multiasset-boombox"
+    }
+  ]
+}

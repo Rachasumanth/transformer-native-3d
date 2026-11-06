@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/wheel-racing",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/wheel-racing.glb",
+  "sha256": "edab62281d80eb95b94a227586dea57f581ca32fdcf3696139871ff2c7515730",
+  "bytes": 41520,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

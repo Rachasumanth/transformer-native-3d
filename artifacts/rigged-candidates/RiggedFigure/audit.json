@@ -1,0 +1,13 @@
+{
+  "asset": "RiggedFigure",
+  "sha256": "d6be85417d3e256861ee733eea6916093a7af7c79c16366181fd8abcaeb38cf5",
+  "readme_sha256": "fdac90fe042c2cbd4f4e988a473990f249da8466bae57746f871dbd5eeac8de7",
+  "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/RiggedFigure",
+  "skins": 1,
+  "animations": 1,
+  "extensions_required": [],
+  "vertices": 370,
+  "faces": 256,
+  "joints": 19,
+  "import": "ok"
+}

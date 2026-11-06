@@ -1,0 +1,1523 @@
+{
+  "scope": "Uncurated shape-only shard; only within-shard exact duplicates checked; cross-shard and semantic deduplication and quality filtering remain pending",
+  "index_sha256": "e29374e35107cd34acd5c5f1d329cd0a478b37a7a30557023d62fd3651df775b",
+  "start": 2,
+  "stop": 944,
+  "stride": 5,
+  "accepted": [
+    {
+      "asset_id": "kenney-car-kit-cone",
+      "source_faces": 172,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3168,
+      "triangles": 6332,
+      "seconds": 11.957999321999978
+    },
+    {
+      "asset_id": "kenney-car-kit-debris-door-window",
+      "source_faces": 74,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2133,
+      "triangles": 4296,
+      "seconds": 8.037733486999969
+    },
+    {
+      "asset_id": "kenney-car-kit-debris-plate-b",
+      "source_faces": 44,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2744,
+      "triangles": 5488,
+      "seconds": 9.41438503500001
+    },
+    {
+      "asset_id": "kenney-car-kit-debris-tire",
+      "source_faces": 288,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4744,
+      "triangles": 9488,
+      "seconds": 17.321171559999925
+    },
+    {
+      "asset_id": "kenney-car-kit-hatchback-sports",
+      "source_faces": 2088,
+      "removed_zero_or_grid_collapsed": 8,
+      "active_voxels": 2350,
+      "triangles": 5012,
+      "seconds": 10.366310158999909
+    },
+    {
+      "asset_id": "kenney-car-kit-kart-oozi",
+      "source_faces": 2726,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 6462,
+      "triangles": 14274,
+      "seconds": 26.021763961000033
+    },
+    {
+      "asset_id": "kenney-car-kit-sedan-sports",
+      "source_faces": 2088,
+      "removed_zero_or_grid_collapsed": 13,
+      "active_voxels": 2990,
+      "triangles": 6352,
+      "seconds": 13.138523612000085
+    },
+    {
+      "asset_id": "kenney-car-kit-tractor-police",
+      "source_faces": 2278,
+      "removed_zero_or_grid_collapsed": 14,
+      "active_voxels": 4435,
+      "triangles": 9676,
+      "seconds": 18.312072564999994
+    },
+    {
+      "asset_id": "kenney-car-kit-wheel-dark",
+      "source_faces": 332,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4332,
+      "triangles": 8660,
+      "seconds": 14.882409301000052
+    },
+    {
+      "asset_id": "kenney-car-kit-wheel-tractor-dark-front",
+      "source_faces": 332,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4340,
+      "triangles": 8676,
+      "seconds": 15.180135020999955
+    },
+    {
+      "asset_id": "kenney-food-kit-apple-half",
+      "source_faces": 124,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3560,
+      "triangles": 7248,
+      "seconds": 12.437889187999986
+    },
+    {
+      "asset_id": "kenney-food-kit-bag-flat",
+      "source_faces": 114,
+      "removed_zero_or_grid_collapsed": 15,
+      "active_voxels": 2024,
+      "triangles": 4028,
+      "seconds": 7.557828975000007
+    },
+    {
+      "asset_id": "kenney-food-kit-bottle-musterd",
+      "source_faces": 96,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1468,
+      "triangles": 2932,
+      "seconds": 5.339902126999959
+    },
+    {
+      "asset_id": "kenney-food-kit-bowl-soup",
+      "source_faces": 132,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2766,
+      "triangles": 5508,
+      "seconds": 10.279234307000024
+    },
+    {
+      "asset_id": "kenney-food-kit-burger-cheese-double",
+      "source_faces": 392,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 9984,
+      "triangles": 20516,
+      "seconds": 42.82732970200004
+    },
+    {
+      "asset_id": "kenney-food-kit-cake-slicer",
+      "source_faces": 36,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 206,
+      "triangles": 344,
+      "seconds": 0.8473010699999577
+    },
+    {
+      "asset_id": "kenney-food-kit-candy-bar-wrapper",
+      "source_faces": 48,
+      "removed_zero_or_grid_collapsed": 4,
+      "active_voxels": 1266,
+      "triangles": 2536,
+      "seconds": 4.43629953300001
+    },
+    {
+      "asset_id": "kenney-food-kit-celery-stick",
+      "source_faces": 52,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 640,
+      "triangles": 1276,
+      "seconds": 2.455733946999999
+    },
+    {
+      "asset_id": "kenney-food-kit-chinese",
+      "source_faces": 162,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2624,
+      "triangles": 5148,
+      "seconds": 12.198787401000004
+    },
+    {
+      "asset_id": "kenney-food-kit-cocktail",
+      "source_faces": 144,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1426,
+      "triangles": 3052,
+      "seconds": 5.939814941000009
+    },
+    {
+      "asset_id": "kenney-food-kit-cooking-fork",
+      "source_faces": 36,
+      "removed_zero_or_grid_collapsed": 4,
+      "active_voxels": 172,
+      "triangles": 268,
+      "seconds": 0.7459023029999798
+    },
+    {
+      "asset_id": "kenney-food-kit-corn",
+      "source_faces": 128,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2295,
+      "triangles": 4498,
+      "seconds": 9.216000079999958
+    },
+    {
+      "asset_id": "kenney-food-kit-cup-saucer",
+      "source_faces": 116,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1972,
+      "triangles": 3940,
+      "seconds": 7.345547622000026
+    },
+    {
+      "asset_id": "kenney-food-kit-cutting-board-round",
+      "source_faces": 156,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1888,
+      "triangles": 3772,
+      "seconds": 7.252070554999932
+    },
+    {
+      "asset_id": "kenney-food-kit-egg",
+      "source_faces": 44,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3548,
+      "triangles": 7092,
+      "seconds": 13.327853613999991
+    },
+    {
+      "asset_id": "kenney-food-kit-fish",
+      "source_faces": 233,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1130,
+      "triangles": 2216,
+      "seconds": 4.754100332000007
+    },
+    {
+      "asset_id": "kenney-food-kit-frikandel-speciaal",
+      "source_faces": 308,
+      "removed_zero_or_grid_collapsed": 1,
+      "active_voxels": 926,
+      "triangles": 2076,
+      "seconds": 4.324021314999982
+    },
+    {
+      "asset_id": "kenney-food-kit-glass",
+      "source_faces": 44,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4348,
+      "triangles": 8692,
+      "seconds": 15.392270925000048
+    },
+    {
+      "asset_id": "kenney-food-kit-hot-dog-raw",
+      "source_faces": 92,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 752,
+      "triangles": 1500,
+      "seconds": 3.0567193879999195
+    },
+    {
+      "asset_id": "kenney-food-kit-ice-cream-scoop-mint",
+      "source_faces": 56,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3100,
+      "triangles": 6196,
+      "seconds": 11.585328859000015
+    },
+    {
+      "asset_id": "kenney-food-kit-loaf",
+      "source_faces": 116,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 3560,
+      "triangles": 7112,
+      "seconds": 12.98449283399998
+    },
+    {
+      "asset_id": "kenney-food-kit-maki-salmon",
+      "source_faces": 56,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3756,
+      "triangles": 7508,
+      "seconds": 13.909620486999984
+    },
+    {
+      "asset_id": "kenney-food-kit-meat-ribs",
+      "source_faces": 164,
+      "removed_zero_or_grid_collapsed": 4,
+      "active_voxels": 1328,
+      "triangles": 2648,
+      "seconds": 5.244640908999941
+    },
+    {
+      "asset_id": "kenney-food-kit-mortar-pestle",
+      "source_faces": 56,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1400,
+      "triangles": 2796,
+      "seconds": 5.4630916379999235
+    },
+    {
+      "asset_id": "kenney-food-kit-mussel",
+      "source_faces": 38,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1736,
+      "triangles": 3468,
+      "seconds": 6.575401423000017
+    },
+    {
+      "asset_id": "kenney-food-kit-pan",
+      "source_faces": 236,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2228,
+      "triangles": 4516,
+      "seconds": 8.481858562999946
+    },
+    {
+      "asset_id": "kenney-food-kit-peanut-butter",
+      "source_faces": 172,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4280,
+      "triangles": 8556,
+      "seconds": 16.66311666599995
+    },
+    {
+      "asset_id": "kenney-food-kit-pie",
+      "source_faces": 292,
+      "removed_zero_or_grid_collapsed": 20,
+      "active_voxels": 2180,
+      "triangles": 4356,
+      "seconds": 8.78812893099996
+    },
+    {
+      "asset_id": "kenney-food-kit-plate",
+      "source_faces": 140,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1956,
+      "triangles": 3908,
+      "seconds": 7.393739460999996
+    },
+    {
+      "asset_id": "kenney-food-kit-plate-sauerkraut",
+      "source_faces": 580,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2462,
+      "triangles": 5052,
+      "seconds": 10.15368841999998
+    },
+    {
+      "asset_id": "kenney-food-kit-pot-lid",
+      "source_faces": 132,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1816,
+      "triangles": 3640,
+      "seconds": 6.810969462000003
+    },
+    {
+      "asset_id": "kenney-food-kit-pumpkin-basic",
+      "source_faces": 80,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3192,
+      "triangles": 6380,
+      "seconds": 11.920483205000096
+    },
+    {
+      "asset_id": "kenney-food-kit-sandwich",
+      "source_faces": 176,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3633,
+      "triangles": 7234,
+      "seconds": 14.15647452799999
+    },
+    {
+      "asset_id": "kenney-food-kit-skewer",
+      "source_faces": 116,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 536,
+      "triangles": 1104,
+      "seconds": 2.1468670439999187
+    },
+    {
+      "asset_id": "kenney-food-kit-soda-can-crushed",
+      "source_faces": 212,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4272,
+      "triangles": 8546,
+      "seconds": 15.637851533000003
+    },
+    {
+      "asset_id": "kenney-food-kit-styrofoam",
+      "source_faces": 152,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 2404,
+      "triangles": 5058,
+      "seconds": 8.91602097000009
+    },
+    {
+      "asset_id": "kenney-food-kit-sushi-salmon",
+      "source_faces": 96,
+      "removed_zero_or_grid_collapsed": 4,
+      "active_voxels": 2420,
+      "triangles": 4910,
+      "seconds": 8.622482493999996
+    },
+    {
+      "asset_id": "kenney-food-kit-tomato-slice",
+      "source_faces": 140,
+      "removed_zero_or_grid_collapsed": 4,
+      "active_voxels": 2248,
+      "triangles": 4492,
+      "seconds": 8.561031578999973
+    },
+    {
+      "asset_id": "kenney-food-kit-waffle",
+      "source_faces": 588,
+      "removed_zero_or_grid_collapsed": 48,
+      "active_voxels": 3236,
+      "triangles": 6826,
+      "seconds": 13.213325834999978
+    },
+    {
+      "asset_id": "kenney-food-kit-wholer-ham",
+      "source_faces": 116,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1472,
+      "triangles": 2932,
+      "seconds": 5.431881028000021
+    },
+    {
+      "asset_id": "kenney-furniture-kit-bathroommirror",
+      "source_faces": 72,
+      "removed_zero_or_grid_collapsed": 3,
+      "active_voxels": 2148,
+      "triangles": 4338,
+      "seconds": 7.6236141660000385
+    },
+    {
+      "asset_id": "kenney-furniture-kit-bedbunk",
+      "source_faces": 580,
+      "removed_zero_or_grid_collapsed": 13,
+      "active_voxels": 4593,
+      "triangles": 9598,
+      "seconds": 18.447077324999896
+    },
+    {
+      "asset_id": "kenney-furniture-kit-benchcushionlow",
+      "source_faces": 138,
+      "removed_zero_or_grid_collapsed": 6,
+      "active_voxels": 2572,
+      "triangles": 5242,
+      "seconds": 9.465477093000004
+    },
+    {
+      "asset_id": "kenney-furniture-kit-bookcaseopenlow",
+      "source_faces": 184,
+      "removed_zero_or_grid_collapsed": 12,
+      "active_voxels": 4240,
+      "triangles": 8586,
+      "seconds": 15.604259815999967
+    },
+    {
+      "asset_id": "kenney-furniture-kit-cabinettelevision",
+      "source_faces": 154,
+      "removed_zero_or_grid_collapsed": 6,
+      "active_voxels": 2476,
+      "triangles": 4956,
+      "seconds": 9.313624275999928
+    },
+    {
+      "asset_id": "kenney-furniture-kit-chair",
+      "source_faces": 170,
+      "removed_zero_or_grid_collapsed": 8,
+      "active_voxels": 1424,
+      "triangles": 2864,
+      "seconds": 5.497610083999916
+    },
+    {
+      "asset_id": "kenney-furniture-kit-chairrounded",
+      "source_faces": 280,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 1924,
+      "triangles": 3868,
+      "seconds": 7.1776861600000075
+    },
+    {
+      "asset_id": "kenney-furniture-kit-computerscreen",
+      "source_faces": 72,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1918,
+      "triangles": 3832,
+      "seconds": 7.2118282859999
+    },
+    {
+      "asset_id": "kenney-furniture-kit-doorwayopen",
+      "source_faces": 28,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 560,
+      "triangles": 1094,
+      "seconds": 2.1132658539999056
+    },
+    {
+      "asset_id": "kenney-furniture-kit-floorhalf",
+      "source_faces": 12,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1152,
+      "triangles": 2424,
+      "seconds": 4.12651387599999
+    },
+    {
+      "asset_id": "kenney-furniture-kit-kitchenblender",
+      "source_faces": 246,
+      "removed_zero_or_grid_collapsed": 1,
+      "active_voxels": 2246,
+      "triangles": 4574,
+      "seconds": 9.259628655000029
+    },
+    {
+      "asset_id": "kenney-furniture-kit-kitchencabinetupper",
+      "source_faces": 80,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 7206,
+      "triangles": 14674,
+      "seconds": 25.142247201999908
+    },
+    {
+      "asset_id": "kenney-furniture-kit-kitchenfridge",
+      "source_faces": 250,
+      "removed_zero_or_grid_collapsed": 12,
+      "active_voxels": 3376,
+      "triangles": 7032,
+      "seconds": 12.742042278999975
+    },
+    {
+      "asset_id": "kenney-furniture-kit-kitchensink",
+      "source_faces": 318,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 9135,
+      "triangles": 18558,
+      "seconds": 31.89820940800007
+    },
+    {
+      "asset_id": "kenney-furniture-kit-lampsquareceiling",
+      "source_faces": 60,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3220,
+      "triangles": 6436,
+      "seconds": 11.178094717000022
+    },
+    {
+      "asset_id": "kenney-furniture-kit-loungechair",
+      "source_faces": 128,
+      "removed_zero_or_grid_collapsed": 4,
+      "active_voxels": 5366,
+      "triangles": 10812,
+      "seconds": 18.552756832
+    },
+    {
+      "asset_id": "kenney-furniture-kit-loungesofa",
+      "source_faces": 128,
+      "removed_zero_or_grid_collapsed": 5,
+      "active_voxels": 2272,
+      "triangles": 4614,
+      "seconds": 7.971106209000027
+    },
+    {
+      "asset_id": "kenney-furniture-kit-pillow",
+      "source_faces": 50,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4282,
+      "triangles": 9420,
+      "seconds": 16.848002973000007
+    },
+    {
+      "asset_id": "kenney-furniture-kit-plantsmall2",
+      "source_faces": 158,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3136,
+      "triangles": 6532,
+      "seconds": 11.439866087000041
+    },
+    {
+      "asset_id": "kenney-furniture-kit-rugrectangle",
+      "source_faces": 28,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1280,
+      "triangles": 2556,
+      "seconds": 4.409564004999993
+    },
+    {
+      "asset_id": "kenney-furniture-kit-showerround",
+      "source_faces": 960,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 3614,
+      "triangles": 7350,
+      "seconds": 14.437948861999985
+    },
+    {
+      "asset_id": "kenney-furniture-kit-stairs",
+      "source_faces": 308,
+      "removed_zero_or_grid_collapsed": 18,
+      "active_voxels": 2246,
+      "triangles": 4482,
+      "seconds": 8.274629844999936
+    },
+    {
+      "asset_id": "kenney-furniture-kit-stoolbarsquare",
+      "source_faces": 142,
+      "removed_zero_or_grid_collapsed": 6,
+      "active_voxels": 1512,
+      "triangles": 3036,
+      "seconds": 5.766561761000048
+    },
+    {
+      "asset_id": "kenney-furniture-kit-tablecoffeeglasssquare",
+      "source_faces": 140,
+      "removed_zero_or_grid_collapsed": 4,
+      "active_voxels": 3808,
+      "triangles": 7730,
+      "seconds": 13.924506938999912
+    },
+    {
+      "asset_id": "kenney-furniture-kit-tableround",
+      "source_faces": 80,
+      "removed_zero_or_grid_collapsed": 1,
+      "active_voxels": 1890,
+      "triangles": 3776,
+      "seconds": 6.882174082999995
+    },
+    {
+      "asset_id": "kenney-furniture-kit-toilet",
+      "source_faces": 230,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4300,
+      "triangles": 8780,
+      "seconds": 16.047303650000003
+    },
+    {
+      "asset_id": "kenney-furniture-kit-wallcornerrond",
+      "source_faces": 116,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1664,
+      "triangles": 3324,
+      "seconds": 6.399538279000012
+    },
+    {
+      "asset_id": "kenney-furniture-kit-wallwindowslide",
+      "source_faces": 152,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1768,
+      "triangles": 3570,
+      "seconds": 6.637874332000024
+    },
+    {
+      "asset_id": "kenney-nature-kit-bridge-center-stone",
+      "source_faces": 52,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 3044,
+      "triangles": 6084,
+      "seconds": 10.630184230000054
+    },
+    {
+      "asset_id": "kenney-nature-kit-bridge-side-stoneround",
+      "source_faces": 198,
+      "removed_zero_or_grid_collapsed": 3,
+      "active_voxels": 3206,
+      "triangles": 6408,
+      "seconds": 11.712819940000031
+    },
+    {
+      "asset_id": "kenney-nature-kit-bridge-stoneround",
+      "source_faces": 360,
+      "removed_zero_or_grid_collapsed": 1,
+      "active_voxels": 3680,
+      "triangles": 7356,
+      "seconds": 14.098716841000055
+    },
+    {
+      "asset_id": "kenney-nature-kit-bridge-woodroundnarrow",
+      "source_faces": 336,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 3648,
+      "triangles": 7382,
+      "seconds": 13.654822328000023
+    },
+    {
+      "asset_id": "kenney-nature-kit-campfire-planks",
+      "source_faces": 108,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 1835,
+      "triangles": 3770,
+      "seconds": 6.943774394000002
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-block-stone",
+      "source_faces": 12,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 5768,
+      "triangles": 11532,
+      "seconds": 19.568615856000065
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-blockhalf-rock",
+      "source_faces": 12,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 5832,
+      "triangles": 11904,
+      "seconds": 19.540010584000015
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-blockslope-stone",
+      "source_faces": 70,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4156,
+      "triangles": 8346,
+      "seconds": 16.337228245999995
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-cave-rock",
+      "source_faces": 64,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2045,
+      "triangles": 4086,
+      "seconds": 7.231726381000044
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-cornerinner-stone",
+      "source_faces": 112,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4970,
+      "triangles": 9932,
+      "seconds": 19.461155981000047
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-cornerlarge-rock",
+      "source_faces": 12,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1874,
+      "triangles": 3744,
+      "seconds": 6.3333392530000765
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-diagonal-stone",
+      "source_faces": 44,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3646,
+      "triangles": 7288,
+      "seconds": 14.196850901000062
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-halfcornerinner-rock",
+      "source_faces": 89,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3820,
+      "triangles": 7994,
+      "seconds": 13.715329019000023
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-steps-rock",
+      "source_faces": 219,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 5614,
+      "triangles": 11312,
+      "seconds": 19.638656345000072
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-stepscornerinner-stone",
+      "source_faces": 213,
+      "removed_zero_or_grid_collapsed": 1,
+      "active_voxels": 6504,
+      "triangles": 13102,
+      "seconds": 22.16109171500011
+    },
+    {
+      "asset_id": "kenney-nature-kit-cliff-topdiagonal-stone",
+      "source_faces": 132,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3343,
+      "triangles": 6706,
+      "seconds": 16.975263821999988
+    },
+    {
+      "asset_id": "kenney-nature-kit-crop-carrot",
+      "source_faces": 148,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 750,
+      "triangles": 1252,
+      "seconds": 2.9627885380000407
+    },
+    {
+      "asset_id": "kenney-nature-kit-crops-bamboostageb",
+      "source_faces": 564,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1066,
+      "triangles": 2134,
+      "seconds": 4.497929948999854
+    },
+    {
+      "asset_id": "kenney-nature-kit-crops-dirtdoublerow",
+      "source_faces": 88,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1512,
+      "triangles": 2996,
+      "seconds": 5.38003766199995
+    },
+    {
+      "asset_id": "kenney-nature-kit-crops-dirtrowend",
+      "source_faces": 32,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2001,
+      "triangles": 3996,
+      "seconds": 6.6743639589999475
+    },
+    {
+      "asset_id": "kenney-nature-kit-crops-wheatstageb",
+      "source_faces": 360,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2373,
+      "triangles": 4750,
+      "seconds": 9.007026994999933
+    },
+    {
+      "asset_id": "kenney-nature-kit-fence-planks",
+      "source_faces": 96,
+      "removed_zero_or_grid_collapsed": 16,
+      "active_voxels": 540,
+      "triangles": 1080,
+      "seconds": 2.087424777000024
+    },
+    {
+      "asset_id": "kenney-nature-kit-fence-simplediagonalcenter",
+      "source_faces": 148,
+      "removed_zero_or_grid_collapsed": 4,
+      "active_voxels": 768,
+      "triangles": 1644,
+      "seconds": 3.7953021360001458
+    },
+    {
+      "asset_id": "kenney-nature-kit-flower-purplec",
+      "source_faces": 78,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 3116,
+      "triangles": 6178,
+      "seconds": 11.430935295999916
+    },
+    {
+      "asset_id": "kenney-nature-kit-flower-yellowb",
+      "source_faces": 154,
+      "removed_zero_or_grid_collapsed": 6,
+      "active_voxels": 2144,
+      "triangles": 4142,
+      "seconds": 9.746052292000059
+    },
+    {
+      "asset_id": "kenney-nature-kit-grass-leafslarge",
+      "source_faces": 144,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1936,
+      "triangles": 2978,
+      "seconds": 7.493556878999925
+    },
+    {
+      "asset_id": "kenney-nature-kit-ground-pathcornersmall",
+      "source_faces": 24,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 1041,
+      "triangles": 1954,
+      "seconds": 3.5952644809999583
+    },
+    {
+      "asset_id": "kenney-nature-kit-ground-pathrocks",
+      "source_faces": 102,
+      "removed_zero_or_grid_collapsed": 8,
+      "active_voxels": 1124,
+      "triangles": 2118,
+      "seconds": 3.9747353709999516
+    },
+    {
+      "asset_id": "kenney-nature-kit-ground-pathtile",
+      "source_faces": 86,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1086,
+      "triangles": 2046,
+      "seconds": 3.780263080000168
+    },
+    {
+      "asset_id": "kenney-nature-kit-ground-rivercross",
+      "source_faces": 82,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 1092,
+      "triangles": 2050,
+      "seconds": 3.794860910999887
+    },
+    {
+      "asset_id": "kenney-nature-kit-ground-riverside",
+      "source_faces": 34,
+      "removed_zero_or_grid_collapsed": 1,
+      "active_voxels": 1060,
+      "triangles": 1992,
+      "seconds": 3.689292726000076
+    },
+    {
+      "asset_id": "kenney-nature-kit-hanging-moss",
+      "source_faces": 52,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 632,
+      "triangles": 1260,
+      "seconds": 2.3819081560000086
+    },
+    {
+      "asset_id": "kenney-nature-kit-log-stack",
+      "source_faces": 184,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3300,
+      "triangles": 6696,
+      "seconds": 11.959760125000003
+    },
+    {
+      "asset_id": "kenney-nature-kit-mushroom-tan",
+      "source_faces": 48,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2942,
+      "triangles": 5880,
+      "seconds": 10.545143075999931
+    },
+    {
+      "asset_id": "kenney-nature-kit-path-stonecorner",
+      "source_faces": 112,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1363,
+      "triangles": 2838,
+      "seconds": 4.95261662300004
+    },
+    {
+      "asset_id": "kenney-nature-kit-plant-bush",
+      "source_faces": 32,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1064,
+      "triangles": 1818,
+      "seconds": 4.289049908999914
+    },
+    {
+      "asset_id": "kenney-nature-kit-plant-bushtriangle",
+      "source_faces": 30,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1116,
+      "triangles": 1942,
+      "seconds": 4.701221802999953
+    },
+    {
+      "asset_id": "kenney-nature-kit-platform-stone",
+      "source_faces": 192,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1462,
+      "triangles": 3022,
+      "seconds": 5.49746641500019
+    },
+    {
+      "asset_id": "kenney-nature-kit-rock-largec",
+      "source_faces": 72,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2365,
+      "triangles": 4726,
+      "seconds": 8.456595977000006
+    },
+    {
+      "asset_id": "kenney-nature-kit-rock-smallb",
+      "source_faces": 24,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2956,
+      "triangles": 5908,
+      "seconds": 10.706733099000076
+    },
+    {
+      "asset_id": "kenney-nature-kit-rock-smallflata",
+      "source_faces": 20,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1751,
+      "triangles": 3498,
+      "seconds": 6.132932747000041
+    },
+    {
+      "asset_id": "kenney-nature-kit-rock-smalli",
+      "source_faces": 44,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3496,
+      "triangles": 6988,
+      "seconds": 12.547523051000098
+    },
+    {
+      "asset_id": "kenney-nature-kit-rock-tallc",
+      "source_faces": 37,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2157,
+      "triangles": 4344,
+      "seconds": 7.862487887000043
+    },
+    {
+      "asset_id": "kenney-nature-kit-rock-tallh",
+      "source_faces": 78,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3333,
+      "triangles": 6662,
+      "seconds": 11.97614115500005
+    },
+    {
+      "asset_id": "kenney-nature-kit-statue-column",
+      "source_faces": 122,
+      "removed_zero_or_grid_collapsed": 1,
+      "active_voxels": 1372,
+      "triangles": 2798,
+      "seconds": 5.003028960999927
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-largea",
+      "source_faces": 80,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1911,
+      "triangles": 3818,
+      "seconds": 6.825413182000148
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-largef",
+      "source_faces": 73,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2822,
+      "triangles": 5748,
+      "seconds": 10.103525433999948
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smalle",
+      "source_faces": 64,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3320,
+      "triangles": 6636,
+      "seconds": 11.875553954999987
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-smallg",
+      "source_faces": 32,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2488,
+      "triangles": 4972,
+      "seconds": 8.77573531500002
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-talla",
+      "source_faces": 136,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2703,
+      "triangles": 5402,
+      "seconds": 9.353484630000139
+    },
+    {
+      "asset_id": "kenney-nature-kit-stone-tallf",
+      "source_faces": 46,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3368,
+      "triangles": 6732,
+      "seconds": 11.820025591000103
+    },
+    {
+      "asset_id": "kenney-nature-kit-stump-old",
+      "source_faces": 120,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 4172,
+      "triangles": 8338,
+      "seconds": 14.60300030999997
+    },
+    {
+      "asset_id": "kenney-nature-kit-stump-squaredetailed",
+      "source_faces": 84,
+      "removed_zero_or_grid_collapsed": 3,
+      "active_voxels": 3012,
+      "triangles": 6046,
+      "seconds": 10.75706164899998
+    },
+    {
+      "asset_id": "kenney-nature-kit-tent-smallopen",
+      "source_faces": 224,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3360,
+      "triangles": 6636,
+      "seconds": 16.969341547000113
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-cone-dark",
+      "source_faces": 264,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 992,
+      "triangles": 1976,
+      "seconds": 4.64498614099989
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-detailed",
+      "source_faces": 402,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1640,
+      "triangles": 3306,
+      "seconds": 6.367673907999915
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-fat-fall",
+      "source_faces": 50,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2212,
+      "triangles": 4420,
+      "seconds": 7.85200951700017
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-palmbend",
+      "source_faces": 200,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 799,
+      "triangles": 1394,
+      "seconds": 3.1886750879998544
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-pinedefaulta",
+      "source_faces": 230,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 734,
+      "triangles": 1454,
+      "seconds": 2.858330039000066
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-pineroundb",
+      "source_faces": 262,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1654,
+      "triangles": 3282,
+      "seconds": 6.121794721000015
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-pinesmalla",
+      "source_faces": 164,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1892,
+      "triangles": 3780,
+      "seconds": 6.868243542999835
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-pinetalla-detailed",
+      "source_faces": 134,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 594,
+      "triangles": 1170,
+      "seconds": 2.3975025229999574
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-pinetalld",
+      "source_faces": 98,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 440,
+      "triangles": 878,
+      "seconds": 1.73850848699999
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-simple",
+      "source_faces": 62,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 520,
+      "triangles": 1036,
+      "seconds": 2.032390822000025
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-small-fall",
+      "source_faces": 62,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1104,
+      "triangles": 2204,
+      "seconds": 3.9417845530001614
+    },
+    {
+      "asset_id": "kenney-nature-kit-tree-thin-dark",
+      "source_faces": 456,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1076,
+      "triangles": 2162,
+      "seconds": 5.185405249000041
+    },
+    {
+      "asset_id": "kenney-pirate-kit-bottle",
+      "source_faces": 124,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1608,
+      "triangles": 3212,
+      "seconds": 5.659801373000164
+    },
+    {
+      "asset_id": "kenney-pirate-kit-castle-door",
+      "source_faces": 392,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3431,
+      "triangles": 7240,
+      "seconds": 12.256541135999896
+    },
+    {
+      "asset_id": "kenney-pirate-kit-crate",
+      "source_faces": 76,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4936,
+      "triangles": 10276,
+      "seconds": 16.959874792000164
+    },
+    {
+      "asset_id": "kenney-pirate-kit-flag-pennant",
+      "source_faces": 118,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 825,
+      "triangles": 1628,
+      "seconds": 3.1633090749999155
+    },
+    {
+      "asset_id": "kenney-pirate-kit-grass",
+      "source_faces": 72,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2129,
+      "triangles": 4150,
+      "seconds": 7.198448177000046
+    },
+    {
+      "asset_id": "kenney-pirate-kit-mast-ropes",
+      "source_faces": 350,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 547,
+      "triangles": 1050,
+      "seconds": 2.8006623139999647
+    },
+    {
+      "asset_id": "kenney-pirate-kit-patch-grass",
+      "source_faces": 84,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1157,
+      "triangles": 2304,
+      "seconds": 4.117585915000063
+    },
+    {
+      "asset_id": "kenney-pirate-kit-platform-planks",
+      "source_faces": 48,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1833,
+      "triangles": 3782,
+      "seconds": 6.819331587000079
+    },
+    {
+      "asset_id": "kenney-pirate-kit-rocks-sand-b",
+      "source_faces": 516,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4282,
+      "triangles": 9314,
+      "seconds": 16.448994063999862
+    },
+    {
+      "asset_id": "kenney-pirate-kit-ship-pirate-large",
+      "source_faces": 1938,
+      "removed_zero_or_grid_collapsed": 7,
+      "active_voxels": 2216,
+      "triangles": 4904,
+      "seconds": 10.599361789999875
+    },
+    {
+      "asset_id": "kenney-pirate-kit-structure",
+      "source_faces": 276,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4728,
+      "triangles": 10100,
+      "seconds": 17.359541644000046
+    },
+    {
+      "asset_id": "kenney-pirate-kit-structure-platform-dock-small",
+      "source_faces": 312,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3746,
+      "triangles": 7956,
+      "seconds": 13.936956520999956
+    },
+    {
+      "asset_id": "kenney-pirate-kit-tower-base",
+      "source_faces": 44,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4208,
+      "triangles": 8412,
+      "seconds": 14.795578089000173
+    },
+    {
+      "asset_id": "kenney-pirate-kit-tower-middle-windows",
+      "source_faces": 242,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 4904,
+      "triangles": 10156,
+      "seconds": 17.800046818000055
+    },
+    {
+      "asset_id": "kenney-space-kit-astronauta",
+      "source_faces": 296,
+      "removed_zero_or_grid_collapsed": 7,
+      "active_voxels": 2242,
+      "triangles": 4650,
+      "seconds": 8.506704518999868
+    },
+    {
+      "asset_id": "kenney-space-kit-bones",
+      "source_faces": 168,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1380,
+      "triangles": 2732,
+      "seconds": 5.202376455999911
+    },
+    {
+      "asset_id": "kenney-space-kit-corridor-cornerround",
+      "source_faces": 414,
+      "removed_zero_or_grid_collapsed": 5,
+      "active_voxels": 5682,
+      "triangles": 11360,
+      "seconds": 20.71328323900002
+    },
+    {
+      "asset_id": "kenney-space-kit-corridor-open",
+      "source_faces": 170,
+      "removed_zero_or_grid_collapsed": 4,
+      "active_voxels": 4356,
+      "triangles": 8792,
+      "seconds": 15.50104290000013
+    },
+    {
+      "asset_id": "kenney-space-kit-corridor-window",
+      "source_faces": 190,
+      "removed_zero_or_grid_collapsed": 4,
+      "active_voxels": 5652,
+      "triangles": 11388,
+      "seconds": 20.414114317999974
+    },
+    {
+      "asset_id": "kenney-space-kit-craft-racer",
+      "source_faces": 280,
+      "removed_zero_or_grid_collapsed": 13,
+      "active_voxels": 1822,
+      "triangles": 3640,
+      "seconds": 7.0500335979998
+    },
+    {
+      "asset_id": "kenney-space-kit-crater",
+      "source_faces": 60,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1792,
+      "triangles": 3584,
+      "seconds": 6.684997952000003
+    },
+    {
+      "asset_id": "kenney-space-kit-desk-computer",
+      "source_faces": 88,
+      "removed_zero_or_grid_collapsed": 5,
+      "active_voxels": 3064,
+      "triangles": 6204,
+      "seconds": 10.848865873000022
+    },
+    {
+      "asset_id": "kenney-space-kit-hangar-largea",
+      "source_faces": 412,
+      "removed_zero_or_grid_collapsed": 10,
+      "active_voxels": 3012,
+      "triangles": 6496,
+      "seconds": 11.877615553000169
+    },
+    {
+      "asset_id": "kenney-space-kit-hangar-smalla",
+      "source_faces": 280,
+      "removed_zero_or_grid_collapsed": 9,
+      "active_voxels": 6372,
+      "triangles": 13186,
+      "seconds": 22.32542041900001
+    },
+    {
+      "asset_id": "kenney-space-kit-machine-generatorlarge",
+      "source_faces": 126,
+      "removed_zero_or_grid_collapsed": 4,
+      "active_voxels": 3092,
+      "triangles": 6180,
+      "seconds": 11.074223053999958
+    },
+    {
+      "asset_id": "kenney-space-kit-meteor-half",
+      "source_faces": 44,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2656,
+      "triangles": 5308,
+      "seconds": 9.608204701999966
+    },
+    {
+      "asset_id": "kenney-space-kit-monorail-tracksupport",
+      "source_faces": 176,
+      "removed_zero_or_grid_collapsed": 4,
+      "active_voxels": 1952,
+      "triangles": 3920,
+      "seconds": 7.326730496999971
+    },
+    {
+      "asset_id": "kenney-space-kit-monorail-trainflat",
+      "source_faces": 84,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2248,
+      "triangles": 4952,
+      "seconds": 8.52907436800001
+    },
+    {
+      "asset_id": "kenney-space-kit-pipe-cornerround",
+      "source_faces": 352,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 5902,
+      "triangles": 11804,
+      "seconds": 22.147876274000055
+    },
+    {
+      "asset_id": "kenney-space-kit-pipe-open",
+      "source_faces": 104,
+      "removed_zero_or_grid_collapsed": 3,
+      "active_voxels": 4356,
+      "triangles": 8820,
+      "seconds": 15.653064590999975
+    },
+    {
+      "asset_id": "kenney-space-kit-pipe-ringhighend",
+      "source_faces": 186,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 2848,
+      "triangles": 5738,
+      "seconds": 9.996797987000036
+    },
+    {
+      "asset_id": "kenney-space-kit-pipe-supportlow",
+      "source_faces": 40,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 3708,
+      "triangles": 7552,
+      "seconds": 12.375347238999893
+    },
+    {
+      "asset_id": "kenney-space-kit-platform-end",
+      "source_faces": 64,
+      "removed_zero_or_grid_collapsed": 1,
+      "active_voxels": 2384,
+      "triangles": 4864,
+      "seconds": 8.547778569999991
+    },
+    {
+      "asset_id": "kenney-space-kit-platform-side",
+      "source_faces": 30,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 2256,
+      "triangles": 4474,
+      "seconds": 7.999882843000023
+    },
+    {
+      "asset_id": "kenney-space-kit-rail-corner",
+      "source_faces": 130,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 576,
+      "triangles": 1036,
+      "seconds": 2.245069609999973
+    },
+    {
+      "asset_id": "kenney-space-kit-rock-crystalslargea",
+      "source_faces": 384,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2902,
+      "triangles": 5800,
+      "seconds": 10.589213041999983
+    },
+    {
+      "asset_id": "kenney-space-kit-rocket-baseb",
+      "source_faces": 284,
+      "removed_zero_or_grid_collapsed": 8,
+      "active_voxels": 2764,
+      "triangles": 5540,
+      "seconds": 10.148286920999908
+    },
+    {
+      "asset_id": "kenney-space-kit-rocket-sidesa",
+      "source_faces": 222,
+      "removed_zero_or_grid_collapsed": 3,
+      "active_voxels": 7728,
+      "triangles": 15456,
+      "seconds": 28.443683972999906
+    },
+    {
+      "asset_id": "kenney-space-kit-rocks-smallb",
+      "source_faces": 48,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1238,
+      "triangles": 2458,
+      "seconds": 4.581949510999948
+    },
+    {
+      "asset_id": "kenney-space-kit-stairs",
+      "source_faces": 208,
+      "removed_zero_or_grid_collapsed": 1,
+      "active_voxels": 1546,
+      "triangles": 3216,
+      "seconds": 7.300265194999838
+    },
+    {
+      "asset_id": "kenney-space-kit-structure-detailed",
+      "source_faces": 232,
+      "removed_zero_or_grid_collapsed": 11,
+      "active_voxels": 4136,
+      "triangles": 8288,
+      "seconds": 15.43921463599986
+    },
+    {
+      "asset_id": "kenney-space-kit-terrain-ramp",
+      "source_faces": 4,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2288,
+      "triangles": 5376,
+      "seconds": 10.001783931999853
+    },
+    {
+      "asset_id": "kenney-space-kit-terrain-roadend",
+      "source_faces": 58,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 2048,
+      "triangles": 3844,
+      "seconds": 8.566736472000002
+    },
+    {
+      "asset_id": "kenney-space-kit-terrain-sidecorner",
+      "source_faces": 12,
+      "removed_zero_or_grid_collapsed": 0,
+      "active_voxels": 1746,
+      "triangles": 3344,
+      "seconds": 7.053879617999883
+    },
+    {
+      "asset_id": "kenney-space-kit-weapon-gun",
+      "source_faces": 70,
+      "removed_zero_or_grid_collapsed": 2,
+      "active_voxels": 1964,
+      "triangles": 3958,
+      "seconds": 7.168441224000162
+    }
+  ],
+  "rejected": [],
+  "source_sha256": "7506aaf2adde39e39ae751c00a748b7b5088d94e88ee2ab757db9ae83ff782a8"
+}

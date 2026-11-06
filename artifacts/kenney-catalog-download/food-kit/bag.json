@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/bag",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/bag.glb",
+  "sha256": "9e6dbed700ba195f7b55b4b19c13dd2ffe78a10c3f0092b0081c5fe72a6d6199",
+  "bytes": 17148,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

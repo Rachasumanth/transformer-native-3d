@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/stone-smalli",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/stone-smalli.glb",
+  "sha256": "f210ea4a4e60c3fa0b6d1601a33ef8efb6e1d0ea17121319c1c685ae72ac5a79",
+  "bytes": 4692,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

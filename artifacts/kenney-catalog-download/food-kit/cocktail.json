@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/cocktail",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/cocktail.glb",
+  "sha256": "6f5532c816583686737ff675c8d3257ab24eef66d9f7c3dfb22fe18b36bac597",
+  "bytes": 24812,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

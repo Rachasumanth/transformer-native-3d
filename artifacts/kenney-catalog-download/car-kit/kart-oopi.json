@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/kart-oopi",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/kart-oopi.glb",
+  "sha256": "c6ada5b224bb65037576ea4c611f6291e257ec78c7421ab996a10463e17ba354",
+  "bytes": 248468,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

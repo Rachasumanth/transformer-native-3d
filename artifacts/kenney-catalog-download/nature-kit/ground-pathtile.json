@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/ground-pathtile",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/ground-pathtile.glb",
+  "sha256": "b169d96d4143d8dd00ef074b8beb5395d8743b73bbafb88506512c1270075b42",
+  "bytes": 6624,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

@@ -1,0 +1,159 @@
+{
+  "scope": "One previously inspected textured train asset and one validation asset at 32 cubed; teacher support supplied; no generated mesh or render quality claim",
+  "device": "Tesla T4",
+  "manifest_sha256": "d933803360fae0faf05f4fd57172c840f68d57ef0be1892b81ee94ff2bc001f0",
+  "elapsed_seconds": 134.08623986599991,
+  "rows": [
+    {
+      "step": 0,
+      "cases": {
+        "train": {
+          "teacher_loss": {
+            "total": 1.1319687366485596,
+            "attribute": 0.43658289313316345,
+            "occupancy": 0.6953858137130737,
+            "kl": 0.0032079340890049934
+          },
+          "mean_absolute_error": {
+            "r": 0.35218319296836853,
+            "g": 0.34502309560775757,
+            "b": 0.47258129715919495,
+            "metallic": 0.5852713584899902,
+            "roughness": 0.3200071156024933,
+            "alpha": 0.5444311499595642
+          }
+        },
+        "validation": {
+          "teacher_loss": {
+            "total": 1.0623871088027954,
+            "attribute": 0.3610783517360687,
+            "occupancy": 0.7013087272644043,
+            "kl": 0.0027638585306704044
+          },
+          "mean_absolute_error": {
+            "r": 0.20775309205055237,
+            "g": 0.3054596781730652,
+            "b": 0.4213489890098572,
+            "metallic": 0.48303645849227905,
+            "roughness": 0.20653992891311646,
+            "alpha": 0.5423322319984436
+          }
+        }
+      }
+    },
+    {
+      "step": 100,
+      "cases": {
+        "train": {
+          "teacher_loss": {
+            "total": 0.9464602470397949,
+            "attribute": 0.4102226495742798,
+            "occupancy": 0.5362339019775391,
+            "kl": 3.7134547233581543
+          },
+          "mean_absolute_error": {
+            "r": 0.3469846844673157,
+            "g": 0.34238648414611816,
+            "b": 0.4006708860397339,
+            "metallic": 0.5878519415855408,
+            "roughness": 0.2813475430011749,
+            "alpha": 0.5020942091941833
+          }
+        },
+        "validation": {
+          "teacher_loss": {
+            "total": 1.0329421758651733,
+            "attribute": 0.3569915294647217,
+            "occupancy": 0.6759486198425293,
+            "kl": 2.082611083984375
+          },
+          "mean_absolute_error": {
+            "r": 0.22332130372524261,
+            "g": 0.30905434489250183,
+            "b": 0.3832073509693146,
+            "metallic": 0.4794711470603943,
+            "roughness": 0.22524496912956238,
+            "alpha": 0.521649956703186
+          }
+        }
+      }
+    },
+    {
+      "step": 300,
+      "cases": {
+        "train": {
+          "teacher_loss": {
+            "total": 0.27374449372291565,
+            "attribute": 0.15144173800945282,
+            "occupancy": 0.12210451066493988,
+            "kl": 198.2492218017578
+          },
+          "mean_absolute_error": {
+            "r": 0.20557533204555511,
+            "g": 0.22485332190990448,
+            "b": 0.05040775239467621,
+            "metallic": 0.24868027865886688,
+            "roughness": 0.1292305439710617,
+            "alpha": 0.04990318790078163
+          }
+        },
+        "validation": {
+          "teacher_loss": {
+            "total": 1.9847747087478638,
+            "attribute": 0.331705242395401,
+            "occupancy": 1.65290367603302,
+            "kl": 165.86471557617188
+          },
+          "mean_absolute_error": {
+            "r": 0.31156599521636963,
+            "g": 0.3371550738811493,
+            "b": 0.18799124658107758,
+            "metallic": 0.5275771021842957,
+            "roughness": 0.4453775882720947,
+            "alpha": 0.18056462705135345
+          }
+        }
+      },
+      "checkpoint_sha256": "8dec8f01b4c8debe00d01b1f610a59d1f9063667b22ba04eeacf7406ebdadd5e"
+    },
+    {
+      "step": 600,
+      "cases": {
+        "train": {
+          "teacher_loss": {
+            "total": 0.09200508147478104,
+            "attribute": 0.08609578758478165,
+            "occupancy": 0.002899985993281007,
+            "kl": 3009.30322265625
+          },
+          "mean_absolute_error": {
+            "r": 0.14243558049201965,
+            "g": 0.18656553328037262,
+            "b": 0.04173677787184715,
+            "metallic": 0.00786646455526352,
+            "roughness": 0.13672833144664764,
+            "alpha": 0.0012420202838256955
+          }
+        },
+        "validation": {
+          "teacher_loss": {
+            "total": 7.630724906921387,
+            "attribute": 0.3470008969306946,
+            "occupancy": 7.281121253967285,
+            "kl": 2602.53271484375
+          },
+          "mean_absolute_error": {
+            "r": 0.3691668212413788,
+            "g": 0.3817066550254822,
+            "b": 0.16227349638938904,
+            "metallic": 0.5790662169456482,
+            "roughness": 0.5014315843582153,
+            "alpha": 0.08836066722869873
+          }
+        }
+      },
+      "checkpoint_sha256": "b6c1dc62dcde88239487331d1f852912341c8bf1b377dff85c35ddd9b9419fec"
+    }
+  ],
+  "source_sha256": "9087826cfad5a4b09d847fd0ac2235432ac01a78cf5049cda133fbd47d0f32e4"
+}

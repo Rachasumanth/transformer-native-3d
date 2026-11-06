@@ -1,0 +1,40 @@
+{
+  "scope": "In-memory face removal simulation; no GLB modified, UV material appearance not checked",
+  "removed_face_ids": [
+    2029,
+    4201,
+    4558,
+    4769,
+    4772,
+    4773,
+    4774,
+    4775,
+    7590,
+    7592,
+    7593,
+    7594,
+    7595,
+    9305,
+    9306,
+    9307,
+    9308,
+    9311
+  ],
+  "surface_comparison": {
+    "valid": true,
+    "samples": 512,
+    "tolerance": 0.01,
+    "seed": 0,
+    "mean_distance": 5.812916080944818e-05,
+    "reference_to_prediction": 5.845707086243422e-05,
+    "prediction_to_reference": 5.780125075646215e-05,
+    "precision": 1.0,
+    "recall": 1.0,
+    "fscore": 1.0,
+    "triangles": 9294,
+    "boundary_edges": 0,
+    "boundary_edge_length": 0.0,
+    "mean_boundary_edge_length": 0.0,
+    "nonmanifold_edges": 3
+  }
+}

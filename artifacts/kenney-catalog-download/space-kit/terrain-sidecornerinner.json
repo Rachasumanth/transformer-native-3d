@@ -1,0 +1,10 @@
+{
+  "id": "space-kit/terrain-sidecornerinner",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/space-kit/terrain-sidecornerinner.glb",
+  "sha256": "13da95a3ebb598e191c10acc95d72e692efd23f7e1ad8709a0953b30d3f76767",
+  "bytes": 2372,
+  "group": "space-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/space-kit"
+}

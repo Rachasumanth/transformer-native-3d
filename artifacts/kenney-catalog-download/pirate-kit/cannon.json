@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/cannon",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/cannon.glb",
+  "sha256": "85fab96d972249d0081bbd9151612981b2362f3529fdeed7cb6aea8a2577fd10",
+  "bytes": 34024,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/bowl-broth",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/bowl-broth.glb",
+  "sha256": "117d28157cc933f6bb3aa653076af833da4255bf82948c77c53e803c010c2583",
+  "bytes": 27344,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

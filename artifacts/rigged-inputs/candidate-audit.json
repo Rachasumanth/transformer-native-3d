@@ -1,0 +1,75 @@
+{
+  "RiggedSimple": {
+    "urls": {
+      "README.md": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/RiggedSimple/README.md",
+      "RiggedSimple.glb": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/RiggedSimple/glTF-Binary/RiggedSimple.glb"
+    },
+    "sha256": {
+      "README.md": "7fd42e0fee9302eaaac8dd9eb82cd16e7beb4699e1d08480c8fd4a19ad01c257",
+      "RiggedSimple.glb": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401"
+    },
+    "bytes": 15104,
+    "joint_counts": [
+      2
+    ],
+    "animations": 1,
+    "primitive_attributes": [
+      [
+        "JOINTS_0",
+        "NORMAL",
+        "POSITION",
+        "WEIGHTS_0"
+      ]
+    ],
+    "extensions_required": []
+  },
+  "CesiumMan": {
+    "urls": {
+      "README.md": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CesiumMan/README.md",
+      "CesiumMan.glb": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/CesiumMan/glTF-Binary/CesiumMan.glb"
+    },
+    "sha256": {
+      "README.md": "1bf7fa794013d2e0de8c244518936b04d95cba780f4510c8cceee4c23dbc04a8",
+      "CesiumMan.glb": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9"
+    },
+    "bytes": 438044,
+    "joint_counts": [
+      19
+    ],
+    "animations": 1,
+    "primitive_attributes": [
+      [
+        "JOINTS_0",
+        "NORMAL",
+        "POSITION",
+        "TEXCOORD_0",
+        "WEIGHTS_0"
+      ]
+    ],
+    "extensions_required": []
+  },
+  "Fox": {
+    "urls": {
+      "README.md": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Fox/README.md",
+      "Fox.glb": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/Fox/glTF-Binary/Fox.glb"
+    },
+    "sha256": {
+      "README.md": "cf767a7943b12f3af0ea14a1b18947a45ed7a03c3e722678df33854d97df0f88",
+      "Fox.glb": "d97044e701822bac5a62696459b27d7b375aada5de8574ed4362edbba94771f7"
+    },
+    "bytes": 162852,
+    "joint_counts": [
+      24
+    ],
+    "animations": 3,
+    "primitive_attributes": [
+      [
+        "JOINTS_0",
+        "POSITION",
+        "TEXCOORD_0",
+        "WEIGHTS_0"
+      ]
+    ],
+    "extensions_required": []
+  }
+}

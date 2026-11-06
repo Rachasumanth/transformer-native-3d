@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/tomato",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/tomato.glb",
+  "sha256": "6b7175b7d0d58c1265d5b0f4e38d84a4b85d0b0cb494efed3757e5232ababb2c",
+  "bytes": 24824,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

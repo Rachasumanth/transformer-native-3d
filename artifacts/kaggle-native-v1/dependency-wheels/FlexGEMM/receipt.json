@@ -1,0 +1,13 @@
+{
+  "name": "FlexGEMM",
+  "url": "https://github.com/JeffreyXiang/FlexGEMM.git",
+  "commit": "6dd94a859c26ee8246888502eada3dd8ad85532e",
+  "wheel": "flex_gemm-1.0.0-cp313-cp313-linux_x86_64.whl",
+  "sha256": "a4a9600c190f332cc24f73cf74984fefa25e1ea463546db3d4d72b8420e7f9fd",
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "cxx11_abi": true,
+  "architectures": "7.5",
+  "max_jobs": "2"
+}

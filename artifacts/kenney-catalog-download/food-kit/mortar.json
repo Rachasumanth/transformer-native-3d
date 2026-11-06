@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/mortar",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/mortar.glb",
+  "sha256": "11b26372c8bc2c7ccb62cd6f34da257ed8c35a4b2aa6c86562fc03d0f383b575",
+  "bytes": 20948,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

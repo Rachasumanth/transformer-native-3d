@@ -1,0 +1,165 @@
+{
+  "scope": "Single CesiumMan source, multiple resolution and remesh variants; geometry only; no UV skin, rendering, self-intersection or generic generalization claim",
+  "rows": [
+    {
+      "version": 10,
+      "variant": "standard",
+      "input_sha256": "9136636e7fb051afa9f1ddf0ed2fadc2d344d65a456e5fcd16a89642a6c79448",
+      "status": "rejected",
+      "reason": "Open input mesh is unsupported"
+    },
+    {
+      "version": 10,
+      "variant": "strict",
+      "input_sha256": "0730f81ae704be16526c6bb2840242b1e2fa775434fe742b87dbfad7e33422d5",
+      "status": "accepted",
+      "repair_seconds": 0.4994847440002559,
+      "summary": {
+        "input_faces": 3048,
+        "output_faces": 3018,
+        "added_faces": 30,
+        "loop_lengths": [
+          14,
+          16
+        ],
+        "near_degenerate_faces": 0,
+        "exact_weld_boundary_edges": 0,
+        "exact_weld_nonmanifold_edges": 0
+      },
+      "surface": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 0.006313529432288675,
+        "reference_to_prediction": 0.005269598721337041,
+        "prediction_to_reference": 0.00735746014324031,
+        "precision": 0.765625,
+        "recall": 0.869140625,
+        "fscore": 0.8141054360812425,
+        "triangles": 3018,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 0
+      }
+    },
+    {
+      "version": 11,
+      "variant": "standard",
+      "input_sha256": "ba6b6309b71bd7c5786d1954598fd1ae13c6765afab23a3eefbfa2978b985976",
+      "status": "rejected",
+      "reason": "Open input mesh is unsupported"
+    },
+    {
+      "version": 11,
+      "variant": "strict",
+      "input_sha256": "ff30f918df9553b2db25cc80f6c9214898cb68b533e443578fd8358f94f26170",
+      "status": "rejected",
+      "reason": "Repair exceeds face removal budget"
+    },
+    {
+      "version": 12,
+      "variant": "standard",
+      "input_sha256": "6065bc8e18e596180e73a8f8532a70bd8c937f73966b4393118252453e873728",
+      "status": "rejected",
+      "reason": "Open input mesh is unsupported"
+    },
+    {
+      "version": 12,
+      "variant": "strict",
+      "input_sha256": "d4abe14083ee497a198cc41b0c42d29bcfdd6e6ba6dee4a3f4ba39eeb9f3b8c9",
+      "status": "rejected",
+      "reason": "Repair exceeds face removal budget"
+    },
+    {
+      "version": 13,
+      "variant": "standard",
+      "input_sha256": "52bebe3dc8c2675e028124bbd43d62db294f9661e9015f3953833fce62f6bff3",
+      "status": "accepted",
+      "repair_seconds": 1.6106081640000411,
+      "summary": {
+        "input_faces": 9306,
+        "output_faces": 9234,
+        "added_faces": 38,
+        "loop_lengths": [
+          10,
+          9,
+          9,
+          10
+        ],
+        "near_degenerate_faces": 0,
+        "exact_weld_boundary_edges": 0,
+        "exact_weld_nonmanifold_edges": 0
+      },
+      "surface": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 6.361803115137999e-05,
+        "reference_to_prediction": 5.828088448024339e-05,
+        "prediction_to_reference": 6.89551778225166e-05,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 9234,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 0
+      }
+    },
+    {
+      "version": 13,
+      "variant": "strict",
+      "input_sha256": "98cc1524a7e81963d84cb21dab106ee3779a5cd1b64d505310a626dbd0d39f8c",
+      "status": "rejected",
+      "reason": "Open input mesh is unsupported"
+    },
+    {
+      "version": 14,
+      "variant": "standard",
+      "input_sha256": "e6a5b3b5eefc18bd96f5e453e3f9b49f3205c8486878bca250a8d6a055f87d3c",
+      "status": "accepted",
+      "repair_seconds": 0.7470342339993294,
+      "summary": {
+        "input_faces": 9312,
+        "output_faces": 9256,
+        "added_faces": 28,
+        "loop_lengths": [
+          9,
+          9,
+          10
+        ],
+        "near_degenerate_faces": 0,
+        "exact_weld_boundary_edges": 0,
+        "exact_weld_nonmanifold_edges": 0
+      },
+      "surface": {
+        "valid": true,
+        "samples": 512,
+        "tolerance": 0.01,
+        "seed": 0,
+        "mean_distance": 5.7260484575700276e-05,
+        "reference_to_prediction": 5.845717651803488e-05,
+        "prediction_to_reference": 5.6063792633365676e-05,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fscore": 1.0,
+        "triangles": 9256,
+        "boundary_edges": 0,
+        "boundary_edge_length": 0.0,
+        "mean_boundary_edge_length": 0.0,
+        "nonmanifold_edges": 0
+      }
+    },
+    {
+      "version": 14,
+      "variant": "strict",
+      "input_sha256": "9e5d2b41103e92ae7b61bb01a3668e925a211ef10aeda50ab47750ca18c999b3",
+      "status": "rejected",
+      "reason": "Open input mesh is unsupported"
+    }
+  ]
+}

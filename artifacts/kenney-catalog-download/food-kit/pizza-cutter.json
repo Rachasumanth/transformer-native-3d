@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/pizza-cutter",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/pizza-cutter.glb",
+  "sha256": "b6f520ece3a4a4ed97d81bde45ef54fa84672e54b0d92125bda5a94ff3719169",
+  "bytes": 19320,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

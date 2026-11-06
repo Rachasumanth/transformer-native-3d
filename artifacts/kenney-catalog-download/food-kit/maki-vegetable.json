@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/maki-vegetable",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/maki-vegetable.glb",
+  "sha256": "ec1748f8975046a88046c407edbb691ce5e35e8874b00493b835e81aa3866b54",
+  "bytes": 16848,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

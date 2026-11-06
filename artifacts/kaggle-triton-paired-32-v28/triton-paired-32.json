@@ -1,0 +1,122 @@
+{
+  "scope": "One 32-cubed training asset and one validation asset; 30 steps, one training seed; teacher-forced losses; not a generation-quality benchmark",
+  "device": "Tesla T4",
+  "manifest_sha256": "71c951b5f8e401ba4aea615f8cc08eeb52b9babb74e9cdef1f8f3ddce0c8d6e0",
+  "train_voxels": 1991,
+  "validation_voxels": 1904,
+  "results": {
+    "reference": {
+      "validation_before": {
+        "total": 1.6865546703338623,
+        "attribute": 0.9902526140213013,
+        "occupancy": 0.696302056312561,
+        "kl": 0.0041417209431529045
+      },
+      "validation_after": {
+        "total": 1.6508299112319946,
+        "attribute": 0.95525723695755,
+        "occupancy": 0.6955726742744446,
+        "kl": 0.005105314776301384
+      },
+      "steps": 30,
+      "elapsed_seconds": 6.758473736000013,
+      "peak_extra_bytes": 36578304,
+      "history": [
+        {
+          "step": 1,
+          "metrics": {
+            "total": 3.3828325271606445,
+            "attribute": 2.671025276184082,
+            "occupancy": 0.7118073105812073,
+            "kl": 0.003808510024100542
+          }
+        },
+        {
+          "step": 10,
+          "metrics": {
+            "total": 2.865116596221924,
+            "attribute": 2.154761552810669,
+            "occupancy": 0.7103551626205444,
+            "kl": 0.004096067510545254
+          }
+        },
+        {
+          "step": 20,
+          "metrics": {
+            "total": 3.142005681991577,
+            "attribute": 2.4254345893859863,
+            "occupancy": 0.7165710926055908,
+            "kl": 0.004621411673724651
+          }
+        },
+        {
+          "step": 30,
+          "metrics": {
+            "total": 2.8826918601989746,
+            "attribute": 2.1681578159332275,
+            "occupancy": 0.7145339250564575,
+            "kl": 0.0056029497645795345
+          }
+        }
+      ],
+      "checkpoint_sha256": "3fd66bfc76ebcb02e2187a4d75b60431edfa99b8c2ec41cd5f6ffefbbf19ae6e"
+    },
+    "triton": {
+      "validation_before": {
+        "total": 1.6865546703338623,
+        "attribute": 0.9902526140213013,
+        "occupancy": 0.696302056312561,
+        "kl": 0.0041417209431529045
+      },
+      "validation_after": {
+        "total": 1.6508299112319946,
+        "attribute": 0.95525723695755,
+        "occupancy": 0.6955726742744446,
+        "kl": 0.005105313379317522
+      },
+      "steps": 30,
+      "elapsed_seconds": 6.668420009999977,
+      "peak_extra_bytes": 27665408,
+      "history": [
+        {
+          "step": 1,
+          "metrics": {
+            "total": 3.3828325271606445,
+            "attribute": 2.671025276184082,
+            "occupancy": 0.7118073105812073,
+            "kl": 0.003808510024100542
+          }
+        },
+        {
+          "step": 10,
+          "metrics": {
+            "total": 2.865116596221924,
+            "attribute": 2.154761552810669,
+            "occupancy": 0.7103551626205444,
+            "kl": 0.004096068441867828
+          }
+        },
+        {
+          "step": 20,
+          "metrics": {
+            "total": 3.142005443572998,
+            "attribute": 2.4254343509674072,
+            "occupancy": 0.7165710926055908,
+            "kl": 0.004621411673724651
+          }
+        },
+        {
+          "step": 30,
+          "metrics": {
+            "total": 2.8826918601989746,
+            "attribute": 2.1681578159332275,
+            "occupancy": 0.7145339250564575,
+            "kl": 0.005602950230240822
+          }
+        }
+      ],
+      "checkpoint_sha256": "03a4b6cfbbb9a923db38bba7b3ee5262e3238f579ce9c30a4ca4810e09a5dbd1"
+    }
+  },
+  "source_sha256": "c2d6ba8fbde9ed829924a11ad4095a652e183e8d03ef74c2c00eb89add6f43e5"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/rollingpin",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/rollingpin.glb",
+  "sha256": "04bfb08275071c83932b1ee4ce0a44b064b48d2f833a815ff6b8c24dc185021f",
+  "bytes": 25048,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

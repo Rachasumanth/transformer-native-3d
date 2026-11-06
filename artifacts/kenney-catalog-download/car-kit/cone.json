@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/cone",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/cone.glb",
+  "sha256": "714454e1a4bdb4204444d494b17f1f99553ec0ce29cba353443472047658c8b6",
+  "bytes": 29100,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

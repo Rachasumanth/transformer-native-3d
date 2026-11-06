@@ -1,0 +1,21 @@
+{
+  "fixture": "complete 8^3 grid, voxel units",
+  "curves": {
+    "z": {
+      "mean_adjacent_distance": 1.4363623548832611,
+      "max_adjacent_distance": 9.9498743710662
+    },
+    "tz": {
+      "mean_adjacent_distance": 1.4363623548832611,
+      "max_adjacent_distance": 9.9498743710662
+    },
+    "h": {
+      "mean_adjacent_distance": 1.0,
+      "max_adjacent_distance": 1.0
+    },
+    "th": {
+      "mean_adjacent_distance": 1.0,
+      "max_adjacent_distance": 1.0
+    }
+  }
+}

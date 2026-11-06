@@ -1,0 +1,9 @@
+{
+  "scope": "One CesiumMan training asset; 128-to-16 surface occupancy and sampled bind skeleton segments; no held-out data and no image/text conditioning",
+  "asset_sha256": "fa998a60b1b239e19785e5be83917643d43c20ff47606b831260326752d48363",
+  "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+  "data_sha256": "7c5321ee9080f447fa31928e47a5b7f1a8560fdd2917de0225de1ef521b2e387",
+  "shape_count": 226,
+  "skeleton_count": 39,
+  "grid": 16
+}

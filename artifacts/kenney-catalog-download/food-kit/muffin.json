@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/muffin",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/muffin.glb",
+  "sha256": "a41bdbe324c9fe1650b543f04157da5a32d406323733ece81e85d75f18358303",
+  "bytes": 20996,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

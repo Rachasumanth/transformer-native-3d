@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/can",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/can.glb",
+  "sha256": "25b1882feccd99ba82ad39334f2bdbc05e931d3f91de173f9b5a855fec4ecf5c",
+  "bytes": 24444,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

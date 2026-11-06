@@ -1,0 +1,278 @@
+[
+  {
+    "asset": "RiggedFigure",
+    "source_sha256": "d6be85417d3e256861ee733eea6916093a7af7c79c16366181fd8abcaeb38cf5",
+    "checkpoint": "artifacts/kaggle-skin-position-ablation-v3/loss-0.0/skin-pose-pilot-holdout-CesiumMan.pt",
+    "checkpoint_sha256": "3e695bcd6da26e5bcd82529eab4d1265a340ff3eb0b3794b6026dcae079c8a69",
+    "scope": "Held-out source bind weights encoded and decoded by SkinAE; actual LBS vertex error, not generated geometry or source-free rig prediction",
+    "weight_mae": 0.045167357509879665,
+    "poses": [
+      {
+        "clip": 0,
+        "time": 0.0,
+        "mean": 0.01612122435105005,
+        "p95": 0.05421552462275304,
+        "maximum": 0.16564439359403133
+      },
+      {
+        "clip": 0,
+        "time": 0.3125,
+        "mean": 0.012169593451976947,
+        "p95": 0.04108089266600779,
+        "maximum": 0.12551438160057565
+      },
+      {
+        "clip": 0,
+        "time": 0.625,
+        "mean": 0.00814115506632876,
+        "p95": 0.027587854533599486,
+        "maximum": 0.08428922817436443
+      },
+      {
+        "clip": 0,
+        "time": 0.9375,
+        "mean": 0.00407262854002846,
+        "p95": 0.013854106042528827,
+        "maximum": 0.04232853569127905
+      },
+      {
+        "clip": 0,
+        "time": 1.25,
+        "mean": 4.5271345360420016e-07,
+        "p95": 1.59073874917363e-06,
+        "maximum": 2.2337098000384264e-06
+      }
+    ],
+    "mean_vertex_error": 0.008101010824567564
+  },
+  {
+    "asset": "RiggedFigure",
+    "source_sha256": "d6be85417d3e256861ee733eea6916093a7af7c79c16366181fd8abcaeb38cf5",
+    "checkpoint": "artifacts/kaggle-skin-position-ablation-v3/loss-0.0/skin-pose-pilot-holdout-Fox.pt",
+    "checkpoint_sha256": "021717799f6e10d3560fbc356c22b3e325a3095d7d20802bd2285c32f873a999",
+    "scope": "Held-out source bind weights encoded and decoded by SkinAE; actual LBS vertex error, not generated geometry or source-free rig prediction",
+    "weight_mae": 0.02746056271550351,
+    "poses": [
+      {
+        "clip": 0,
+        "time": 0.0,
+        "mean": 0.006630113230075342,
+        "p95": 0.024422319553898016,
+        "maximum": 0.04269102234603136
+      },
+      {
+        "clip": 0,
+        "time": 0.3125,
+        "mean": 0.005000781412599662,
+        "p95": 0.01850118281215738,
+        "maximum": 0.03234062149420622
+      },
+      {
+        "clip": 0,
+        "time": 0.625,
+        "mean": 0.0033398364500744665,
+        "p95": 0.012422384016598034,
+        "maximum": 0.021714624172078933
+      },
+      {
+        "clip": 0,
+        "time": 0.9375,
+        "mean": 0.001666685503689602,
+        "p95": 0.006237725371526879,
+        "maximum": 0.01090358262095844
+      },
+      {
+        "clip": 0,
+        "time": 1.25,
+        "mean": 3.271597148188771e-07,
+        "p95": 1.3245769687503912e-06,
+        "maximum": 1.3956178577415525e-06
+      }
+    ],
+    "mean_vertex_error": 0.0033275487512307777
+  },
+  {
+    "asset": "RiggedFigure",
+    "source_sha256": "d6be85417d3e256861ee733eea6916093a7af7c79c16366181fd8abcaeb38cf5",
+    "checkpoint": "artifacts/kaggle-skin-position-ablation-v3/loss-0.0/skin-pose-pilot-holdout-RiggedSimple.pt",
+    "checkpoint_sha256": "7a6c3c24ecad28f22cfae0b25562f6a501fb037021b25773068fbdaeb914ddcf",
+    "scope": "Held-out source bind weights encoded and decoded by SkinAE; actual LBS vertex error, not generated geometry or source-free rig prediction",
+    "weight_mae": 0.04329892739444228,
+    "poses": [
+      {
+        "clip": 0,
+        "time": 0.0,
+        "mean": 0.05349288791547157,
+        "p95": 0.1685309776648254,
+        "maximum": 0.17339617672962118
+      },
+      {
+        "clip": 0,
+        "time": 0.3125,
+        "mean": 0.04046644588775877,
+        "p95": 0.12770106609806034,
+        "maximum": 0.13138626784850793
+      },
+      {
+        "clip": 0,
+        "time": 0.625,
+        "mean": 0.027118471429875897,
+        "p95": 0.08575728110593649,
+        "maximum": 0.08823164609335411
+      },
+      {
+        "clip": 0,
+        "time": 0.9375,
+        "mean": 0.013584843512512308,
+        "p95": 0.04306554177933166,
+        "maximum": 0.04430851692720134
+      },
+      {
+        "clip": 0,
+        "time": 1.25,
+        "mean": 6.65315781245632e-07,
+        "p95": 2.483865322905672e-06,
+        "maximum": 3.0438637911230652e-06
+      }
+    ],
+    "mean_vertex_error": 0.026932662812279955
+  },
+  {
+    "asset": "RiggedFigure",
+    "source_sha256": "d6be85417d3e256861ee733eea6916093a7af7c79c16366181fd8abcaeb38cf5",
+    "checkpoint": "artifacts/kaggle-skin-position-ablation-v3/loss-1.0/skin-pose-pilot-holdout-CesiumMan.pt",
+    "checkpoint_sha256": "b252aea57713efba096d2c9005bbc3b398662c462cac76ec37d6faf31899b1fe",
+    "scope": "Held-out source bind weights encoded and decoded by SkinAE; actual LBS vertex error, not generated geometry or source-free rig prediction",
+    "weight_mae": 0.04225164318029978,
+    "poses": [
+      {
+        "clip": 0,
+        "time": 0.0,
+        "mean": 0.017388725666637277,
+        "p95": 0.06094776461666915,
+        "maximum": 0.21955216973341785
+      },
+      {
+        "clip": 0,
+        "time": 0.3125,
+        "mean": 0.01316857140933544,
+        "p95": 0.04589779779495085,
+        "maximum": 0.16626056026577268
+      },
+      {
+        "clip": 0,
+        "time": 0.625,
+        "mean": 0.00884003548471314,
+        "p95": 0.030655976445683245,
+        "maximum": 0.11159864102630496
+      },
+      {
+        "clip": 0,
+        "time": 0.9375,
+        "mean": 0.004438290126535529,
+        "p95": 0.015326333104558013,
+        "maximum": 0.056023704441655955
+      },
+      {
+        "clip": 0,
+        "time": 1.25,
+        "mean": 4.861591550053038e-07,
+        "p95": 1.6386241946646737e-06,
+        "maximum": 2.4704732314481383e-06
+      }
+    ],
+    "mean_vertex_error": 0.008767221769275278
+  },
+  {
+    "asset": "RiggedFigure",
+    "source_sha256": "d6be85417d3e256861ee733eea6916093a7af7c79c16366181fd8abcaeb38cf5",
+    "checkpoint": "artifacts/kaggle-skin-position-ablation-v3/loss-1.0/skin-pose-pilot-holdout-Fox.pt",
+    "checkpoint_sha256": "4e8b07e08650206b1682230456b631374f0535951c1807100a9abf23bf9eb25e",
+    "scope": "Held-out source bind weights encoded and decoded by SkinAE; actual LBS vertex error, not generated geometry or source-free rig prediction",
+    "weight_mae": 0.031081504439448366,
+    "poses": [
+      {
+        "clip": 0,
+        "time": 0.0,
+        "mean": 0.0070606766428116755,
+        "p95": 0.02134912140294646,
+        "maximum": 0.13665482696654813
+      },
+      {
+        "clip": 0,
+        "time": 0.3125,
+        "mean": 0.005348172109662825,
+        "p95": 0.016176964908183735,
+        "maximum": 0.10352298067349237
+      },
+      {
+        "clip": 0,
+        "time": 0.625,
+        "mean": 0.0035890681154440965,
+        "p95": 0.010863643589032568,
+        "maximum": 0.06950894592034508
+      },
+      {
+        "clip": 0,
+        "time": 0.9375,
+        "mean": 0.0018005566690199692,
+        "p95": 0.0054555228069150495,
+        "maximum": 0.034902581814801596
+      },
+      {
+        "clip": 0,
+        "time": 1.25,
+        "mean": 3.4222339247254457e-07,
+        "p95": 1.3295404546339467e-06,
+        "maximum": 1.4720728239797245e-06
+      }
+    ],
+    "mean_vertex_error": 0.0035597631520662074
+  },
+  {
+    "asset": "RiggedFigure",
+    "source_sha256": "d6be85417d3e256861ee733eea6916093a7af7c79c16366181fd8abcaeb38cf5",
+    "checkpoint": "artifacts/kaggle-skin-position-ablation-v3/loss-1.0/skin-pose-pilot-holdout-RiggedSimple.pt",
+    "checkpoint_sha256": "a082a59c2d00b6070985e5b915041ff0db3f1ddc0fb5e282ad9ea6d877f63b15",
+    "scope": "Held-out source bind weights encoded and decoded by SkinAE; actual LBS vertex error, not generated geometry or source-free rig prediction",
+    "weight_mae": 0.04085242502130414,
+    "poses": [
+      {
+        "clip": 0,
+        "time": 0.0,
+        "mean": 0.05164374850475281,
+        "p95": 0.1600275843179824,
+        "maximum": 0.16651596168340574
+      },
+      {
+        "clip": 0,
+        "time": 0.3125,
+        "mean": 0.03907020110069825,
+        "p95": 0.12125483126628962,
+        "maximum": 0.12617754274269596
+      },
+      {
+        "clip": 0,
+        "time": 0.625,
+        "mean": 0.026188116512957806,
+        "p95": 0.0814264950035887,
+        "maximum": 0.08473619216229007
+      },
+      {
+        "clip": 0,
+        "time": 0.9375,
+        "mean": 0.013123566750050525,
+        "p95": 0.0408895989900313,
+        "maximum": 0.042554001578399434
+      },
+      {
+        "clip": 0,
+        "time": 1.25,
+        "mean": 6.566400458103791e-07,
+        "p95": 2.3976430511591974e-06,
+        "maximum": 2.997202996283194e-06
+      }
+    ],
+    "mean_vertex_error": 0.02600525790170104
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "source": "Poly Haven public API",
+  "asset_id": "WoodenChair_01",
+  "asset_name": "Wooden Chair 01",
+  "authors": [
+    "Jake Mobley"
+  ],
+  "polycount_reported": 19992,
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "asset_page": "https://polyhaven.com/a/WoodenChair_01",
+  "model_resolution": "1k glTF geometry/material references; included 1k textures",
+  "source_model_hash": "62044fc04038e8a8192783c6c0db8cb879935209",
+  "files": [
+    {
+      "path": "WoodenChair_01_1k.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/WoodenChair_01/WoodenChair_01_1k.gltf",
+      "size_bytes": 2705,
+      "api_md5": "a540903a19cd0fd5afaaa21c4b772204",
+      "sha256": "d7139c63be77bb91ceb25cb38733008156bf93d2299a6ca4673ea3c49f5fdec6"
+    },
+    {
+      "path": "textures/WoodenChair_01_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/WoodenChair_01/WoodenChair_01_nor_gl_1k.jpg",
+      "size_bytes": 213336,
+      "api_md5": "ff24ff3cd10f2ff20bea9bfd45bde7cb",
+      "sha256": "ddf8d239f1381a8c9407b1af5508b8b9b178b72228ff39f8dcc2feae5cb47e66"
+    },
+    {
+      "path": "textures/WoodenChair_01_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/WoodenChair_01/WoodenChair_01_arm_1k.jpg",
+      "size_bytes": 169084,
+      "api_md5": "a47f6e96d5aca408f8adc5638c51f46b",
+      "sha256": "ab1ef5b47cfe96cb11f380310d9b6efe458f14bccf4540a45c350919c0c1232c"
+    },
+    {
+      "path": "WoodenChair_01.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/WoodenChair_01/WoodenChair_01.bin",
+      "size_bytes": 546416,
+      "api_md5": "37afa90d1d47ab37dfd8edb72aaefb44",
+      "sha256": "d36a4fb77139769e17301904dd9fe45a19e29f01273e587bf4e7478d687a016e"
+    },
+    {
+      "path": "textures/WoodenChair_01_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/WoodenChair_01/WoodenChair_01_diff_1k.jpg",
+      "size_bytes": 147990,
+      "api_md5": "7de73aa8fef4c04d1e0d91acd3a8547d",
+      "sha256": "4deb2125ad6e7dc17597db40be4f01c09a4d7c3b991ea0c269836f864aa67301"
+    }
+  ]
+}

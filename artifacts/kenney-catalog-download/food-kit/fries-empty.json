@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/fries-empty",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/fries-empty.glb",
+  "sha256": "1c253e4d63be1831ce309c1c6bfaf5fcb138f3bb415700d78cece7ddb25c9486",
+  "bytes": 22116,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

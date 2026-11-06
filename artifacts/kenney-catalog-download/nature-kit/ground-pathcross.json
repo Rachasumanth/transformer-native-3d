@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/ground-pathcross",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/ground-pathcross.glb",
+  "sha256": "6638d277b1fa06912d7fe2617f25507c14dfa7a39b16211d73bf4ae6ca79bb2f",
+  "bytes": 6404,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

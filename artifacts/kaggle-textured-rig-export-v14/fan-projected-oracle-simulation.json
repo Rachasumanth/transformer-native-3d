@@ -1,0 +1,30 @@
+{
+  "scope": "Source-projected fan-center oracle, in memory only; needs source mesh; no UV, skin, normals or self-intersection guarantees",
+  "removed_faces": 66,
+  "loop_lengths": [
+    9,
+    9,
+    10
+  ],
+  "added_faces": 28,
+  "patch_probe_count": 112,
+  "patch_to_source_mean": 0.00024969291719900585,
+  "patch_to_source_max": 0.0034985931121996197,
+  "surface_comparison": {
+    "valid": true,
+    "samples": 512,
+    "tolerance": 0.01,
+    "seed": 0,
+    "mean_distance": 5.680893952325542e-05,
+    "reference_to_prediction": 5.84314274992738e-05,
+    "prediction_to_reference": 5.5186451547237044e-05,
+    "precision": 1.0,
+    "recall": 1.0,
+    "fscore": 1.0,
+    "triangles": 9256,
+    "boundary_edges": 0,
+    "boundary_edge_length": 0.0,
+    "mean_boundary_edge_length": 0.0,
+    "nonmanifold_edges": 0
+  }
+}

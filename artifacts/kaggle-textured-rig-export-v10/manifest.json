@@ -1,0 +1,525 @@
+{
+  "kaggle_kernel": "sumu143/transformer-native-3d-rigged-export-probe",
+  "kernel_version": 10,
+  "source_bundle_sha256": "e69f7378c4b831737c100cae90b7507beefa51a36a0b298f358b70e47241de6f",
+  "device": "Tesla T4",
+  "source_asset_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+  "skinae_checkpoint_sha256": "4e2ca11172898021c1cd99f7292d4b012f87b0d7b423879f1e65bb59aa29d84b",
+  "test_summaries": [
+    "Ran 8 tests in 0.108s",
+    "Ran 6 tests in 0.022s",
+    "Ran 2 tests in 0.003s",
+    "Ran 5 tests in 0.056s",
+    "Ran 7 tests in 0.032s",
+    "Ran 3 tests in 0.022s",
+    "Ran 3 tests in 2.188s"
+  ],
+  "artifacts": {
+    "export-build.log": {
+      "bytes": 943,
+      "sha256": "3d15eee0689101678a51f8eee6ae79b0e5010e1f728fd2723f83404a36460ae0"
+    },
+    "export-probe.json": {
+      "bytes": 20103,
+      "sha256": "ed7900fdb5c8c799227df73e516b1b641fdc94cf8a2c91062eef79ff1ad23b5a"
+    },
+    "export-real-rigged-container.glb": {
+      "bytes": 229768,
+      "sha256": "f0585c9ff3a2001893de59f041c475e6d1151ec47ba1dc5ef0a3a69e8c777488"
+    },
+    "export-real-rigged-container.glb.json": {
+      "bytes": 1351,
+      "sha256": "d30883a3ec6b874ac516430488abdabb21109ba5bebdfae7f9a29f61c745a036"
+    },
+    "export-real-rigged-container.glb.validator.json": {
+      "bytes": 36,
+      "sha256": "c0c9e579816a2d1801aa3a072862b2dd4b8724ec14b2323d74ea05b18099075a"
+    },
+    "export-real-rigged-input.t3d": {
+      "bytes": 46176,
+      "sha256": "e5b0971fa987cd5e1a4b31e9faf22fe1136a9b7f83aa8718d5f99450bc85c69f"
+    },
+    "export-real-rigged-strict.glb": {
+      "bytes": 350360,
+      "sha256": "0730f81ae704be16526c6bb2840242b1e2fa775434fe742b87dbfad7e33422d5"
+    },
+    "export-real-rigged-strict.glb.validator.json": {
+      "bytes": 36,
+      "sha256": "c0c9e579816a2d1801aa3a072862b2dd4b8724ec14b2323d74ea05b18099075a"
+    },
+    "export-real-rigged.glb": {
+      "bytes": 229624,
+      "sha256": "9136636e7fb051afa9f1ddf0ed2fadc2d344d65a456e5fcd16a89642a6c79448"
+    },
+    "export-real-rigged.glb.validator.json": {
+      "bytes": 36,
+      "sha256": "c0c9e579816a2d1801aa3a072862b2dd4b8724ec14b2323d74ea05b18099075a"
+    },
+    "rigged-export-tests.log": {
+      "bytes": 4967,
+      "sha256": "ca30d5dc665e344c7ea9e26fd37b592eb85c42764dc8be2fabfe5d4479f6a4bb"
+    },
+    "material-fidelity-audit-container.json": {
+      "bytes": 1478,
+      "sha256": "f48fc4ad0969a09c63e2884642499be99b84f488acb84c8d7865edd0837490b6"
+    },
+    "material-fidelity-audit-standard.json": {
+      "bytes": 1477,
+      "sha256": "906b1cbdd06cb35881d92e205cc9f00ea057d270348797963695709550a05cb4"
+    },
+    "material-fidelity-audit-strict.json": {
+      "bytes": 1479,
+      "sha256": "5d2c48308594ad5ef5e698f0f35bd3d1ffff9c2344ba4ab3612c9f648ee1203f"
+    },
+    "material-fidelity-multiseed-standard.json": {
+      "bytes": 718,
+      "sha256": "df54831eda3cacd553d06c850d9716ff7289e4173b16e1444ec61b569285d4e5"
+    }
+  },
+  "test_count": 34,
+  "texture_audits": {
+    "standard": {
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "output_sha256": "9136636e7fb051afa9f1ddf0ed2fadc2d344d65a456e5fcd16a89642a6c79448",
+      "source_face_count": 4672,
+      "output_face_count": 1818,
+      "source_materials": [
+        {
+          "base_color_factor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallic_factor": 0.0,
+          "roughness_factor": 1.0,
+          "alpha_mode": "OPAQUE",
+          "base_color_texture": {
+            "shape": [
+              1024,
+              1024,
+              4
+            ],
+            "min": 0.0,
+            "max": 1.0,
+            "channel_std": [
+              0.24789247861064154,
+              0.16102917439087516,
+              0.24131998903349658
+            ],
+            "unique_rgb_count": 16762
+          },
+          "metallic_roughness_texture": null
+        }
+      ],
+      "output_materials": [
+        {
+          "base_color_factor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallic_factor": 1.0,
+          "roughness_factor": 1.0,
+          "alpha_mode": "OPAQUE",
+          "base_color_texture": {
+            "shape": [
+              128,
+              128,
+              4
+            ],
+            "min": 0.13725490868091583,
+            "max": 1.0,
+            "channel_std": [
+              0.1512113934364133,
+              0.10147333736428923,
+              0.11864037791797494
+            ],
+            "unique_rgb_count": 5260
+          },
+          "metallic_roughness_texture": {
+            "shape": [
+              128,
+              128,
+              4
+            ],
+            "min": 0.0,
+            "max": 1.0,
+            "channel_std": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "unique_rgb_count": 1
+          }
+        }
+      ],
+      "source_face_material_ids": [
+        0
+      ],
+      "output_face_material_ids": [
+        0
+      ],
+      "scope": "Structural texture retention and variation only; not a rendered material-fidelity metric."
+    },
+    "strict": {
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "output_sha256": "0730f81ae704be16526c6bb2840242b1e2fa775434fe742b87dbfad7e33422d5",
+      "source_face_count": 4672,
+      "output_face_count": 3048,
+      "source_materials": [
+        {
+          "base_color_factor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallic_factor": 0.0,
+          "roughness_factor": 1.0,
+          "alpha_mode": "OPAQUE",
+          "base_color_texture": {
+            "shape": [
+              1024,
+              1024,
+              4
+            ],
+            "min": 0.0,
+            "max": 1.0,
+            "channel_std": [
+              0.24789247861064154,
+              0.16102917439087516,
+              0.24131998903349658
+            ],
+            "unique_rgb_count": 16762
+          },
+          "metallic_roughness_texture": null
+        }
+      ],
+      "output_materials": [
+        {
+          "base_color_factor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallic_factor": 1.0,
+          "roughness_factor": 1.0,
+          "alpha_mode": "OPAQUE",
+          "base_color_texture": {
+            "shape": [
+              128,
+              128,
+              4
+            ],
+            "min": 0.1411764770746231,
+            "max": 1.0,
+            "channel_std": [
+              0.15282847553498705,
+              0.1028911532352632,
+              0.12155253592536855
+            ],
+            "unique_rgb_count": 5162
+          },
+          "metallic_roughness_texture": {
+            "shape": [
+              128,
+              128,
+              4
+            ],
+            "min": 0.0,
+            "max": 1.0,
+            "channel_std": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "unique_rgb_count": 1
+          }
+        }
+      ],
+      "source_face_material_ids": [
+        0
+      ],
+      "output_face_material_ids": [
+        0
+      ],
+      "scope": "Structural texture retention and variation only; not a rendered material-fidelity metric."
+    },
+    "container_cli": {
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "output_sha256": "f0585c9ff3a2001893de59f041c475e6d1151ec47ba1dc5ef0a3a69e8c777488",
+      "source_face_count": 4672,
+      "output_face_count": 1818,
+      "source_materials": [
+        {
+          "base_color_factor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallic_factor": 0.0,
+          "roughness_factor": 1.0,
+          "alpha_mode": "OPAQUE",
+          "base_color_texture": {
+            "shape": [
+              1024,
+              1024,
+              4
+            ],
+            "min": 0.0,
+            "max": 1.0,
+            "channel_std": [
+              0.24789247861064154,
+              0.16102917439087516,
+              0.24131998903349658
+            ],
+            "unique_rgb_count": 16762
+          },
+          "metallic_roughness_texture": null
+        }
+      ],
+      "output_materials": [
+        {
+          "base_color_factor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallic_factor": 1.0,
+          "roughness_factor": 1.0,
+          "alpha_mode": "OPAQUE",
+          "base_color_texture": {
+            "shape": [
+              128,
+              128,
+              4
+            ],
+            "min": 0.1411764770746231,
+            "max": 1.0,
+            "channel_std": [
+              0.15230551697223688,
+              0.1022149404839634,
+              0.11982930681082338
+            ],
+            "unique_rgb_count": 5302
+          },
+          "metallic_roughness_texture": {
+            "shape": [
+              128,
+              128,
+              4
+            ],
+            "min": 0.0,
+            "max": 1.0,
+            "channel_std": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "unique_rgb_count": 1
+          }
+        }
+      ],
+      "source_face_material_ids": [
+        0
+      ],
+      "output_face_material_ids": [
+        0
+      ],
+      "scope": "Structural texture retention and variation only; not a rendered material-fidelity metric."
+    }
+  },
+  "validators": {
+    "export-real-rigged-container.glb.validator.json": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0
+    },
+    "export-real-rigged-strict.glb.validator.json": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0
+    },
+    "export-real-rigged.glb.validator.json": {
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0
+    }
+  },
+  "material_fidelity_audits": {
+    "material-fidelity-audit-container.json": {
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "output_sha256": "f0585c9ff3a2001893de59f041c475e6d1151ec47ba1dc5ef0a3a69e8c777488",
+      "samples": 4096,
+      "seed": 0,
+      "source_projection_distance_mean": 0.000909500692892685,
+      "source_projection_distance_p95": 0.0034886591370172746,
+      "linear_pbr": {
+        "base_r": {
+          "mae": 0.19949868512585325,
+          "rmse": 0.2978133915931498,
+          "p95_absolute_error": 0.6693719316914643,
+          "psnr_db_peak_1": 10.52111554979324
+        },
+        "base_g": {
+          "mae": 0.1515142808626442,
+          "rmse": 0.2293982452564778,
+          "p95_absolute_error": 0.5123221090012753,
+          "psnr_db_peak_1": 12.788198169701433
+        },
+        "base_b": {
+          "mae": 0.13839836315536955,
+          "rmse": 0.24441515847523756,
+          "p95_absolute_error": 0.616732213437401,
+          "psnr_db_peak_1": 12.237437258442267
+        },
+        "metallic": {
+          "mae": 0.0,
+          "rmse": 0.0,
+          "p95_absolute_error": 0.0,
+          "psnr_db_peak_1": null
+        },
+        "roughness": {
+          "mae": 1.6263032587282567e-18,
+          "rmse": 1.3437110265466432e-17,
+          "p95_absolute_error": 0.0,
+          "psnr_db_peak_1": 337.4338823796614
+        },
+        "alpha": {
+          "mae": 0.0,
+          "rmse": 0.0,
+          "p95_absolute_error": 0.0,
+          "psnr_db_peak_1": null
+        }
+      },
+      "scope": "Area-weighted output surface samples compared with source PBR at nearest source-surface points; attribute-space only, not rendered material fidelity."
+    },
+    "material-fidelity-audit-standard.json": {
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "output_sha256": "9136636e7fb051afa9f1ddf0ed2fadc2d344d65a456e5fcd16a89642a6c79448",
+      "samples": 4096,
+      "seed": 0,
+      "source_projection_distance_mean": 0.0009105162041581701,
+      "source_projection_distance_p95": 0.0035348553607409804,
+      "linear_pbr": {
+        "base_r": {
+          "mae": 0.19872728742404672,
+          "rmse": 0.2972782707991577,
+          "p95_absolute_error": 0.6706281919945829,
+          "psnr_db_peak_1": 10.53673667744864
+        },
+        "base_g": {
+          "mae": 0.1509159783200089,
+          "rmse": 0.22898286192523654,
+          "p95_absolute_error": 0.512148406932659,
+          "psnr_db_peak_1": 12.80394041868918
+        },
+        "base_b": {
+          "mae": 0.13804929433385707,
+          "rmse": 0.2441354447343598,
+          "p95_absolute_error": 0.6105771037220105,
+          "psnr_db_peak_1": 12.24738326171408
+        },
+        "metallic": {
+          "mae": 0.0,
+          "rmse": 0.0,
+          "p95_absolute_error": 0.0,
+          "psnr_db_peak_1": null
+        },
+        "roughness": {
+          "mae": 1.2739375526704677e-18,
+          "rmse": 1.1892664978504087e-17,
+          "p95_absolute_error": 0.0,
+          "psnr_db_peak_1": 338.4944163041406
+        },
+        "alpha": {
+          "mae": 0.0,
+          "rmse": 0.0,
+          "p95_absolute_error": 0.0,
+          "psnr_db_peak_1": null
+        }
+      },
+      "scope": "Area-weighted output surface samples compared with source PBR at nearest source-surface points; attribute-space only, not rendered material fidelity."
+    },
+    "material-fidelity-audit-strict.json": {
+      "source_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+      "output_sha256": "0730f81ae704be16526c6bb2840242b1e2fa775434fe742b87dbfad7e33422d5",
+      "samples": 4096,
+      "seed": 0,
+      "source_projection_distance_mean": 0.00727110098286551,
+      "source_projection_distance_p95": 0.024037076341673052,
+      "linear_pbr": {
+        "base_r": {
+          "mae": 0.19637153080002312,
+          "rmse": 0.2949053213310602,
+          "p95_absolute_error": 0.6603742066897701,
+          "psnr_db_peak_1": 10.606347817606602
+        },
+        "base_g": {
+          "mae": 0.14878163540773726,
+          "rmse": 0.22639930435759414,
+          "p95_absolute_error": 0.5084696331865475,
+          "psnr_db_peak_1": 12.902498238202035
+        },
+        "base_b": {
+          "mae": 0.13701151516466034,
+          "rmse": 0.24237227910287376,
+          "p95_absolute_error": 0.6186265992883734,
+          "psnr_db_peak_1": 12.310341066443456
+        },
+        "metallic": {
+          "mae": 0.0,
+          "rmse": 0.0,
+          "p95_absolute_error": 0.0,
+          "psnr_db_peak_1": null
+        },
+        "roughness": {
+          "mae": 2.303929616531697e-18,
+          "rmse": 1.5993360207877823e-17,
+          "p95_absolute_error": 0.0,
+          "psnr_db_peak_1": 335.9212056263549
+        },
+        "alpha": {
+          "mae": 0.0,
+          "rmse": 0.0,
+          "p95_absolute_error": 0.0,
+          "psnr_db_peak_1": null
+        }
+      },
+      "scope": "Area-weighted output surface samples compared with source PBR at nearest source-surface points; attribute-space only, not rendered material fidelity."
+    }
+  },
+  "material_fidelity_multiseed": {
+    "output": "artifacts/kaggle-textured-rig-export-v10/export-real-rigged.glb",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "samples_per_seed": 4096,
+    "channel_rmse": {
+      "base_r": {
+        "mean": 0.29776532066230527,
+        "stddev": 0.000743672013350297
+      },
+      "base_g": {
+        "mean": 0.22962535493647,
+        "stddev": 0.0010440550902263948
+      },
+      "base_b": {
+        "mean": 0.24732923228911813,
+        "stddev": 0.0025097885707585582
+      }
+    },
+    "source_projection_distance_mean": 0.0009063057300905256,
+    "source_projection_distance_p95_mean": 0.0035589825922431742,
+    "scope": "Five independent area-weighted sample seeds; source correspondence by nearest triangle; attribute-space only."
+  }
+}

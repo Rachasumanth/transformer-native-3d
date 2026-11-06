@@ -1,0 +1,24 @@
+{
+  "urls": {
+    "README.md": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/RiggedSimple/README.md",
+    "RiggedSimple.glb": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/RiggedSimple/glTF-Binary/RiggedSimple.glb"
+  },
+  "sha256": {
+    "README.md": "7fd42e0fee9302eaaac8dd9eb82cd16e7beb4699e1d08480c8fd4a19ad01c257",
+    "RiggedSimple.glb": "3a79dabb67bb0cd598a18d08b954d9d357c27c30672f82ef5d3f4e7fe6ca3401"
+  },
+  "bytes": 15104,
+  "joint_counts": [
+    2
+  ],
+  "animations": 1,
+  "primitive_attributes": [
+    [
+      "JOINTS_0",
+      "NORMAL",
+      "POSITION",
+      "WEIGHTS_0"
+    ]
+  ],
+  "extensions_required": []
+}

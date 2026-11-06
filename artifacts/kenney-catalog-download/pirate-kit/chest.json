@@ -1,0 +1,10 @@
+{
+  "id": "pirate-kit/chest",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/pirate-kit/chest.glb",
+  "sha256": "5a1b86b70889618656d3ba01230566241eb3eb49eb79ace03bff02ca88e4da09",
+  "bytes": 35244,
+  "group": "pirate-kit",
+  "split": "validation",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/pirate-kit"
+}

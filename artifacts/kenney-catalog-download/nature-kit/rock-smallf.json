@@ -1,0 +1,10 @@
+{
+  "id": "nature-kit/rock-smallf",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/nature-kit/rock-smallf.glb",
+  "sha256": "51099549e8dd6a68db2afe2e5c514a8601ee59e11766d5975c540314f9b7deb8",
+  "bytes": 5700,
+  "group": "nature-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/nature-kit"
+}

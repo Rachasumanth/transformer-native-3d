@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/cake-birthday",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/cake-birthday.glb",
+  "sha256": "bb55013b327e5f8de7b709c8c39907390b698f57accbd4d6ff0a4fdd54e48eb1",
+  "bytes": 125916,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}

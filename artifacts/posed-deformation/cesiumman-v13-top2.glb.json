@@ -1,0 +1,17 @@
+{
+  "max_influences": 2,
+  "max_influences_before": 16,
+  "max_influences_after": 2,
+  "truncated_rows": 5851,
+  "mean_discarded_mass": 0.3029121689670121,
+  "maximum_discarded_mass": 0.5550306737099185,
+  "maximum_row_sum_error": 2.220446049250313e-16,
+  "vertex_count": 5851,
+  "joint_count": 19,
+  "skin_attribute_sets_before": 4,
+  "skin_attribute_sets_after": 1,
+  "input": "artifacts/kaggle-textured-rig-export-v13/export-real-rigged.glb",
+  "input_sha256": "52bebe3dc8c2675e028124bbd43d62db294f9661e9015f3953833fce62f6bff3",
+  "output": "artifacts/posed-deformation/cesiumman-v13-top2.glb",
+  "output_sha256": "f3f690f6b212839f27724a2798122322c66a804a858aeeabf445321a75387f09"
+}

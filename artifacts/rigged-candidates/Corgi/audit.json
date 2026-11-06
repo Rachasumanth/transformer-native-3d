@@ -1,0 +1,13 @@
+{
+  "asset": "Corgi",
+  "sha256": "95cd2c4d53d70ee9dd2e1329dcb6de7d4a725301d504a4f2f00ecb34dc1a0851",
+  "bytes": 73516,
+  "source": "https://github.com/Ariescar/gobkit-free-assets/tree/main/animal",
+  "license": "CC0-1.0",
+  "skins": 1,
+  "animations": 1,
+  "vertices": 513,
+  "faces": 508,
+  "joints": 16,
+  "import": "ok"
+}

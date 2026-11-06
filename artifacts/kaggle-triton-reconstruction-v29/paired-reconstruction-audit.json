@@ -1,0 +1,136 @@
+{
+  "scope": "30-step paired shape-only VAE; teacher vs free occupancy, two previously inspected assets; no generated-asset or surface-distance benchmark",
+  "device": "Tesla T4",
+  "manifest_sha256": "71c951b5f8e401ba4aea615f8cc08eeb52b9babb74e9cdef1f8f3ddce0c8d6e0",
+  "rows": [
+    {
+      "backend": "reference",
+      "split": "train",
+      "support": "teacher",
+      "occupancy": {
+        "target": 1991,
+        "predicted": 1991,
+        "intersection": 1991,
+        "precision": 1.0,
+        "recall": 1.0,
+        "iou": 1.0
+      },
+      "mesh_vertices": 1991,
+      "mesh_triangles": 2012,
+      "reconstruction_sha256": "611a2203cf3bc61c309d2c0f911fb9cb81583ec50d8c3b6e5d63d3061c287175"
+    },
+    {
+      "backend": "reference",
+      "split": "train",
+      "support": "predicted",
+      "occupancy": {
+        "target": 1991,
+        "predicted": 2214,
+        "intersection": 122,
+        "precision": 0.05510388437217705,
+        "recall": 0.06127574083375188,
+        "iou": 0.0298799902032819
+      },
+      "mesh_vertices": 2214,
+      "mesh_triangles": 70,
+      "reconstruction_sha256": "5bb112135ef3de8cc8e38e6f24fcd61f11b3b6b9bff08167954900171e055a46"
+    },
+    {
+      "backend": "reference",
+      "split": "validation",
+      "support": "teacher",
+      "occupancy": {
+        "target": 1904,
+        "predicted": 1904,
+        "intersection": 1904,
+        "precision": 1.0,
+        "recall": 1.0,
+        "iou": 1.0
+      },
+      "mesh_vertices": 1904,
+      "mesh_triangles": 1894,
+      "reconstruction_sha256": "3bff719a524870591bfb116aee769b1b64fc691c89e4933c141b9559eba7da8d"
+    },
+    {
+      "backend": "reference",
+      "split": "validation",
+      "support": "predicted",
+      "occupancy": {
+        "target": 1904,
+        "predicted": 2206,
+        "intersection": 91,
+        "precision": 0.041251133272892114,
+        "recall": 0.04779411764705882,
+        "iou": 0.022642448370241354
+      },
+      "mesh_vertices": 2206,
+      "mesh_triangles": 92,
+      "reconstruction_sha256": "b0d3ad8e658b04530e833289c421a6ff6803ae30c6d0faf98acca3a30386d9e2"
+    },
+    {
+      "backend": "triton",
+      "split": "train",
+      "support": "teacher",
+      "occupancy": {
+        "target": 1991,
+        "predicted": 1991,
+        "intersection": 1991,
+        "precision": 1.0,
+        "recall": 1.0,
+        "iou": 1.0
+      },
+      "mesh_vertices": 1991,
+      "mesh_triangles": 2012,
+      "reconstruction_sha256": "995bc54dec97a6cb6959384047c56a028709e9e1957e2c624cb145d77a37c906"
+    },
+    {
+      "backend": "triton",
+      "split": "train",
+      "support": "predicted",
+      "occupancy": {
+        "target": 1991,
+        "predicted": 2214,
+        "intersection": 122,
+        "precision": 0.05510388437217705,
+        "recall": 0.06127574083375188,
+        "iou": 0.0298799902032819
+      },
+      "mesh_vertices": 2214,
+      "mesh_triangles": 70,
+      "reconstruction_sha256": "51121f80c9e27ed3f408faa8ad8c4752e632942e1e9d9f0f5981389f75e0361d"
+    },
+    {
+      "backend": "triton",
+      "split": "validation",
+      "support": "teacher",
+      "occupancy": {
+        "target": 1904,
+        "predicted": 1904,
+        "intersection": 1904,
+        "precision": 1.0,
+        "recall": 1.0,
+        "iou": 1.0
+      },
+      "mesh_vertices": 1904,
+      "mesh_triangles": 1894,
+      "reconstruction_sha256": "3bff719a524870591bfb116aee769b1b64fc691c89e4933c141b9559eba7da8d"
+    },
+    {
+      "backend": "triton",
+      "split": "validation",
+      "support": "predicted",
+      "occupancy": {
+        "target": 1904,
+        "predicted": 2206,
+        "intersection": 91,
+        "precision": 0.041251133272892114,
+        "recall": 0.04779411764705882,
+        "iou": 0.022642448370241354
+      },
+      "mesh_vertices": 2206,
+      "mesh_triangles": 92,
+      "reconstruction_sha256": "311ae23ee766f04d2614f7e260a9f229ce7eb0ac3ac5a4a954db7bfd16c60469"
+    }
+  ],
+  "source_sha256": "bf1ef6d60f1299be14e94395f97a783df3d448af0a6181078c34da217520e020"
+}

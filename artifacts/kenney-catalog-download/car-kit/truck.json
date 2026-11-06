@@ -1,0 +1,10 @@
+{
+  "id": "car-kit/truck",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/car-kit/truck.glb",
+  "sha256": "80454be69df2a50f32c225b5d6a29c62d9ce23bc446f26970a5e9a9e9ba99293",
+  "bytes": 188652,
+  "group": "car-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/car-kit"
+}

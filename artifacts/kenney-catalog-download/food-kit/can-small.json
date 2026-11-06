@@ -1,0 +1,10 @@
+{
+  "id": "food-kit/can-small",
+  "source_url": "https://raw.githubusercontent.com/Hidencod/tge-assets/ea2f2aa1ca8da0898330c97df8a5489976b051d0/packs/food-kit/can-small.glb",
+  "sha256": "f686a1e0fbafa9b8275a1646328411aa9f64e8d6aedbff2ad990517aae486168",
+  "bytes": 26672,
+  "group": "food-kit",
+  "split": "train",
+  "license": "CC0-1.0",
+  "creator_pack_url": "https://kenney.nl/assets/food-kit"
+}
