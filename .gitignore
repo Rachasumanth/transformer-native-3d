@@ -17,4 +17,5 @@ dist/
 *.npy
 *.exr
 *.zip
+*.tar.zst
 *.log

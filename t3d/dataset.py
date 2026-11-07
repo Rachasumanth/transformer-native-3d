@@ -18,22 +18,30 @@ class AssetRecord:
     license: str
     source_sha256: str | None = None
     source_group: str | None = None
+    curation: dict | None = None
+    has_pbr: bool | None = None
+    pbr_min: list | None = None
+    pbr_max: list | None = None
+    split_pbr: str | None = None
 
 
 class AssetDataset:
     def __init__(self, manifest, *, split, require_pbr=False):
         self.manifest = Path(manifest).resolve()
         document = json.loads(self.manifest.read_text())
-        if document.get('version') != 1 or not isinstance(document.get('assets'), list):
+        if document.get('version') not in (1, 2) or not isinstance(document.get('assets'), list):
             raise ValueError('Unsupported dataset manifest')
-        if split not in ('train', 'validation', 'test'):
+        valid_splits = ('train', 'validation', 'test', 'train_pbr', 'validation_pbr')
+        if split not in valid_splits:
             raise ValueError('Invalid dataset split')
         self.require_pbr = require_pbr
         self.fingerprint = hashlib.sha256(self.manifest.read_bytes()).hexdigest()
         records, ids, hashes, paths = [], set(), set(), set()
         source_splits, group_splits = {}, {}
         for value in document['assets']:
-            record = AssetRecord(**value)
+            # Filter kwargs to AssetRecord fields
+            record_kwargs = {k: v for k, v in value.items() if hasattr(AssetRecord, '__dataclass_fields__') and k in AssetRecord.__dataclass_fields__}
+            record = AssetRecord(**record_kwargs)
             if (not all(isinstance(getattr(record, key), str) and getattr(record, key).strip()
                         for key in ('asset_id', 'path', 'sha256', 'split', 'source', 'license'))
                     or record.split not in ('train', 'validation', 'test')
@@ -58,7 +66,7 @@ class AssetDataset:
             if record.asset_id in ids or record.sha256 in hashes or path in paths:
                 raise ValueError('Duplicate asset ID, content or path; split leakage is forbidden')
             ids.add(record.asset_id); hashes.add(record.sha256); paths.add(path)
-            if record.split == split:
+            if record.split == split or (split.endswith('_pbr') and record.split_pbr == split):
                 records.append(record)
         self.records = tuple(records)
 

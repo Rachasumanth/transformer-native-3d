@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "generated_at": "2026-11-07T13:26:00.401979+00:00",
+  "policy": {
+    "rule": "Only CC0, CC-BY-4.0 (with attribution), MIT, Apache-2.0, or CDLA-Permissive tiers permitted. All non-commercial (NC) or unverifiable tiers rejected.",
+    "tiers": {
+      "CC0-1.0": {
+        "tier": "Tier 1: Permissive",
+        "commercial_approved": true,
+        "rationale": "Public domain dedication"
+      },
+      "CC-BY-4.0": {
+        "tier": "Tier 1: Permissive",
+        "commercial_approved": true,
+        "rationale": "Permissive with attribution"
+      },
+      "MIT": {
+        "tier": "Tier 1: Permissive",
+        "commercial_approved": true,
+        "rationale": "Permissive open source"
+      },
+      "Apache-2.0": {
+        "tier": "Tier 1: Permissive",
+        "commercial_approved": true,
+        "rationale": "Permissive open source"
+      },
+      "CDLA-Permissive-1.0": {
+        "tier": "Tier 1: Permissive",
+        "commercial_approved": true,
+        "rationale": "Permissive community data license"
+      },
+      "CC-BY-NC-4.0": {
+        "tier": "Tier 2: Restricted",
+        "commercial_approved": false,
+        "rationale": "Non-commercial restriction prohibits production training without explicit owner waiver"
+      },
+      "CC-BY-NC-SA-4.0": {
+        "tier": "Tier 2: Restricted",
+        "commercial_approved": false,
+        "rationale": "Non-commercial share-alike viral encumbrance"
+      },
+      "Unknown": {
+        "tier": "Tier 3: Unverified",
+        "commercial_approved": false,
+        "rationale": "Missing or unverifiable licensing provenance"
+      }
+    }
+  },
+  "datasets": {
+    "kenney": {
+      "source_url": "https://kenney.nl",
+      "license": "CC0-1.0",
+      "tier": "Tier 1: Permissive",
+      "approved": true,
+      "target_count": 868,
+      "refuse_count": 0
+    },
+    "objaverse-xl-rigged": {
+      "source_url": "https://huggingface.co/datasets/Linzhan/Objaverse-XL-Rigged-Animated",
+      "license": "CC-BY-4.0",
+      "tier": "Tier 1: Permissive",
+      "approved": true,
+      "target_count": 7373,
+      "refuse_count": 0
+    },
+    "amazon-berkeley-objects": {
+      "source_url": "https://huggingface.co/datasets/Optikan112/abo-furniture-glb",
+      "license": "CC-BY-4.0",
+      "tier": "Tier 1: Permissive",
+      "approved": true,
+      "target_count": 15673,
+      "refuse_count": 0
+    },
+    "aether": {
+      "source_url": "https://huggingface.co/datasets/StarAtNyte1/aether-assets",
+      "license": "CC0-1.0; CC-BY-4.0",
+      "tier": "Tier 1: Permissive",
+      "approved": true,
+      "target_count": 5900,
+      "refuse_count": 0
+    },
+    "toys4k": {
+      "source_url": "https://huggingface.co/datasets/Yang2001/toys4k_meshes",
+      "license": "CC-BY-4.0",
+      "tier": "Tier 1: Permissive",
+      "approved": true,
+      "target_count": 3856,
+      "refuse_count": 0
+    },
+    "partnet-mobility": {
+      "source_url": "https://huggingface.co/datasets/sapien-sim/PartNetMobility",
+      "license": "CC-BY-4.0",
+      "tier": "Tier 1: Permissive",
+      "approved": true,
+      "target_count": 2892,
+      "refuse_count": 0
+    },
+    "articulation-xl": {
+      "source_url": "https://huggingface.co/datasets/Seed3D/Articulation-XL2.0",
+      "license": "CC-BY-4.0",
+      "tier": "Tier 1: Permissive",
+      "approved": true,
+      "target_count": 48000,
+      "refuse_count": 0
+    },
+    "hssd": {
+      "dataset": "hssd",
+      "repo_id": "hssd/hssd-models",
+      "license": "CC-BY-NC-4.0",
+      "tier": "Tier 2: Restricted",
+      "approved_for_production": false,
+      "refusal_rationale": "Non-commercial restriction prohibits production training without explicit owner waiver",
+      "surveyed_asset_count": 14267,
+      "refused_asset_count": 14267,
+      "accepted_asset_count": 0,
+      "status": "REJECTED_NON_COMMERCIAL_RESTRICTION"
+    },
+    "3d-future": {
+      "dataset": "3d-future",
+      "repo_id": "Futuremannn/MEAD_3D",
+      "license": "CC-BY-NC-SA-4.0",
+      "tier": "Tier 2: Restricted",
+      "approved_for_production": false,
+      "refusal_rationale": "Non-commercial share-alike viral encumbrance",
+      "surveyed_asset_count": 9992,
+      "refused_asset_count": 9992,
+      "accepted_asset_count": 0,
+      "status": "REJECTED_NON_COMMERCIAL_RESTRICTION"
+    }
+  },
+  "summary": {
+    "total_approved_sources": 7,
+    "total_refused_sources": 2,
+    "total_refused_assets": 24259
+  }
+}

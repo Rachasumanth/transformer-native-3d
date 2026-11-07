@@ -14,7 +14,9 @@ import logging
 import os
 from pathlib import Path
 import subprocess
+import sys
 import time
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from typing import Dict, Optional, Tuple, Union
 
 import numpy as np

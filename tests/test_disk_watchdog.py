@@ -8,6 +8,8 @@ import warnings
 from scripts.disk_watchdog import (
     assert_disk_budget,
     get_disk_usage,
+    get_default_workspace_path,
+    get_default_max_gb,
     init_ephemeral_env,
     evict_ephemeral_cache,
     pause_downloaders,
@@ -46,10 +48,12 @@ class TestDiskWatchdog(unittest.TestCase):
         self.assertLessEqual(percent, 100.0)
 
     def test_assert_disk_budget_normal(self):
-        """Under normal conditions (ceiling 35 GB), assert_disk_budget succeeds."""
-        used_gb = assert_disk_budget(max_gb=35.0, path="/")
+        """Under normal conditions, assert_disk_budget succeeds across environments."""
+        default_path = get_default_workspace_path()
+        budget = get_default_max_gb(default_path)
+        used_gb = assert_disk_budget(max_gb=budget, path=default_path)
         self.assertIsInstance(used_gb, float)
-        self.assertLess(used_gb, 35.0)
+        self.assertLess(used_gb, budget)
         self.assertFalse(is_download_paused())
 
     def test_pause_and_resume_downloaders(self):

@@ -1,0 +1,10 @@
+{
+  "manifest": "artifacts/corpus-v2/manifest.json",
+  "manifest_sha256": "90f563276618289c8086564948069a0d7eac4e57e15bbf1806fed1877bccd789",
+  "corpus_dir": "artifacts/corpus-v2",
+  "total_tested": 100,
+  "passed_count": 100,
+  "failed_count": 0,
+  "all_passed": true,
+  "failures": []
+}

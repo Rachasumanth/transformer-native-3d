@@ -1,0 +1,167 @@
+{
+  "total_candidates": 868,
+  "total_retained": 843,
+  "total_pruned_near_duplicates": 25,
+  "iou_threshold": 0.9,
+  "color_similarity_threshold": 0.95,
+  "clusters": [
+    {
+      "primary_asset_id": "kenney-car-kit-wheel-dark",
+      "source_group": "kenney-car-kit",
+      "near_duplicates": [
+        "kenney-car-kit-wheel-default",
+        "kenney-car-kit-wheel-racing",
+        "kenney-car-kit-wheel-tractor-dark-front",
+        "kenney-car-kit-wheel-tractor-front"
+      ],
+      "cluster_size": 5
+    },
+    {
+      "primary_asset_id": "kenney-car-kit-wheel-tractor-back",
+      "source_group": "kenney-car-kit",
+      "near_duplicates": [
+        "kenney-car-kit-wheel-tractor-dark-back"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-food-kit-burger",
+      "source_group": "kenney-food-kit",
+      "near_duplicates": [
+        "kenney-food-kit-burger-double"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-food-kit-burger-cheese",
+      "source_group": "kenney-food-kit",
+      "near_duplicates": [
+        "kenney-food-kit-burger-cheese-double"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-food-kit-maki-salmon",
+      "source_group": "kenney-food-kit",
+      "near_duplicates": [
+        "kenney-food-kit-maki-vegetable"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-furniture-kit-floorcorner",
+      "source_group": "kenney-furniture-kit",
+      "near_duplicates": [
+        "kenney-furniture-kit-floorcornerround"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-furniture-kit-tablecross",
+      "source_group": "kenney-furniture-kit",
+      "near_duplicates": [
+        "kenney-furniture-kit-tablecrosscloth"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-furniture-kit-wallcornerrond",
+      "source_group": "kenney-furniture-kit",
+      "near_duplicates": [
+        "kenney-furniture-kit-wallcorner"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-nature-kit-cliff-cornerinner-rock",
+      "source_group": "kenney-nature-kit",
+      "near_duplicates": [
+        "kenney-nature-kit-cliff-cornerinnertop-rock"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-nature-kit-ground-pathbend",
+      "source_group": "kenney-nature-kit",
+      "near_duplicates": [
+        "kenney-nature-kit-ground-pathbendbank"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-nature-kit-ground-pathend",
+      "source_group": "kenney-nature-kit",
+      "near_duplicates": [
+        "kenney-nature-kit-ground-pathendclosed"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-nature-kit-ground-pathstraight",
+      "source_group": "kenney-nature-kit",
+      "near_duplicates": [
+        "kenney-nature-kit-ground-pathrocks"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-nature-kit-ground-rivertile",
+      "source_group": "kenney-nature-kit",
+      "near_duplicates": [
+        "kenney-nature-kit-ground-pathtile"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-nature-kit-tree-pinedefaulta",
+      "source_group": "kenney-nature-kit",
+      "near_duplicates": [
+        "kenney-nature-kit-tree-pinedefaultb"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-nature-kit-tree-pinetallb-detailed",
+      "source_group": "kenney-nature-kit",
+      "near_duplicates": [
+        "kenney-nature-kit-tree-pinetallb"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-nature-kit-tree-pinetallc-detailed",
+      "source_group": "kenney-nature-kit",
+      "near_duplicates": [
+        "kenney-nature-kit-tree-pinetallc"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-nature-kit-tree-pinetalld-detailed",
+      "source_group": "kenney-nature-kit",
+      "near_duplicates": [
+        "kenney-nature-kit-tree-pinetalld"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-space-kit-corridor-window",
+      "source_group": "kenney-space-kit",
+      "near_duplicates": [
+        "kenney-space-kit-corridor-windowclosed"
+      ],
+      "cluster_size": 2
+    },
+    {
+      "primary_asset_id": "kenney-space-kit-terrain-roadsplit",
+      "source_group": "kenney-space-kit",
+      "near_duplicates": [
+        "kenney-space-kit-terrain-roadstraight",
+        "kenney-space-kit-terrain-roadcross",
+        "kenney-space-kit-terrain-roadend",
+        "kenney-space-kit-terrain-roadcorner"
+      ],
+      "cluster_size": 5
+    }
+  ]
+}

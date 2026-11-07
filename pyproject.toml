@@ -13,3 +13,8 @@ research = ["fast-simplification==0.2.0"]
 
 [tool.setuptools.packages.find]
 include = ["t3d*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+

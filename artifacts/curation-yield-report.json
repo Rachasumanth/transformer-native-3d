@@ -1,0 +1,81 @@
+{
+  "report": "t3d_curation_yield_funnel",
+  "timestamp": "2026-11-07T14:05:27Z",
+  "summary": {
+    "total_surveyed_assets": 42432,
+    "total_accepted_approved": 10651,
+    "total_refused_restricted": 24259
+  },
+  "sources": {
+    "kenney_cc0": {
+      "license": "CC0-1.0",
+      "tier": "Tier 1: Permissive (Approved)",
+      "funnel": {
+        "downloaded": 868,
+        "converted": 868,
+        "failed_conversion": 0,
+        "vlm_and_watertight_passed": 868,
+        "semantic_near_duplicates_pruned": 25,
+        "final_accepted": 843,
+        "pbr_population_rate": 1.0
+      },
+      "pruned_reason": "Voxel occupancy IoU >= 0.90 AND color histogram cosine similarity >= 0.95"
+    },
+    "objaverse_xl_rigged": {
+      "license": "CC-BY-4.0",
+      "tier": "Tier 1: Permissive (Approved)",
+      "funnel": {
+        "candidates_surveyed": 8000,
+        "target_accepted": 520,
+        "current_accepted": 503,
+        "skeleton_field_populated": true,
+        "skin_embedding_populated": true,
+        "zero_bone_count_assets": 0,
+        "invalid_parent_graphs": 0
+      },
+      "rejection_reasons": {
+        "high_poly_budget": "faces > 8000 (rejected for low-poly training budget)",
+        "bone_count_out_of_range": "joints < 2 or joints > 64",
+        "invalid_hierarchy": "missing root or cyclical joint parents"
+      }
+    },
+    "amazon_berkeley_objects": {
+      "license": "CC-BY-4.0",
+      "tier": "Tier 1: Permissive (Approved)",
+      "funnel": {
+        "surveyed": 7844,
+        "approved": 7844,
+        "pbr_textures": "Single-atlas PBR diffuse/roughness/metallic"
+      }
+    },
+    "aether_game_assets": {
+      "license": "CC0-1.0 / CC-BY-4.0",
+      "tier": "Tier 1: Permissive (Approved)",
+      "funnel": {
+        "surveyed": 1461,
+        "approved": 1461,
+        "geometry": "Game-ready low-poly GLB assets"
+      }
+    },
+    "hssd_models": {
+      "license": "CC-BY-NC-4.0",
+      "tier": "Tier 2: Restricted (Refused)",
+      "funnel": {
+        "surveyed": 14267,
+        "accepted": 0,
+        "refused": 14267
+      },
+      "refusal_reason_code": "LICENSE_NON_COMMERCIAL_RESTRICTION (CC-BY-NC-4.0 violates production permissive tier)"
+    },
+    "three_d_future": {
+      "license": "CC-BY-NC-SA-4.0",
+      "tier": "Tier 2: Restricted (Refused)",
+      "funnel": {
+        "surveyed": 9992,
+        "accepted": 0,
+        "refused": 9992
+      },
+      "refusal_reason_code": "LICENSE_NON_COMMERCIAL_RESTRICTION (CC-BY-NC-SA-4.0 violates production permissive tier)"
+    }
+  }
+}
