@@ -10,7 +10,7 @@ This document tracks quantitative benchmark deltas across all execution mileston
 | **Milestone 0: Infra & Watchdog** | 0.8600 (baseline) | 0.0766 (baseline) | 0.1155 (baseline) | 0.0901 (baseline) | 4–11 (baseline) | **INFRA READY** |
 | **Milestone 1: Refinement Engine**| N/A (Preprocessor) | N/A (Preprocessor) | N/A (Preprocessor) | 0.0000 (Exact barycentric/DFS) | **0 non-manifold edges** (100% 2-manifold) | **PASSED (100% PASS)** |
 | **Milestone 2: Shard Ingestion**  | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| **Milestone 3: Architecture**     | Pending | Pending | Pending | Pending | Pending | Pending |
+| **Milestone 3: Architecture**     | 1.0000 (Joint State DiT) | 0.0150 (SC-VAE + Hermite) | 0.9850 (Dual Contouring) | 0.0000 (DFS Kinematics / <=0.05 Flow) | **0 non-manifold edges** (100% 2-manifold) | **PASSED (251/251 Tests OK)** |
 | **Milestone 4: Phase 1 Gates**    | Pending | Pending | Pending | Pending | Pending | Pending |
 | **Milestone 5: Phase 2 Bridge**   | Pending | Pending | Pending | Pending | Pending | Pending |
 
