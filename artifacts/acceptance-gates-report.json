@@ -1,0 +1,356 @@
+{
+  "harness": "eval_acceptance",
+  "timestamp": "2026-11-07T13:52:35Z",
+  "manifest": "artifacts/corpus-v2/manifest.json",
+  "total_evaluated": 10,
+  "gate_summary": {
+    "watertight": "3/10 (30.0%)",
+    "zero_non_manifold": "3/10 (30.0%)",
+    "occupancy_ge_98": "10/10 (100.0%)",
+    "msd_le_035": "5/10 (50.0%)",
+    "fscore_ge_70": "0/10 (0.0%)",
+    "rigging_passed": "10/10 (100.0%)"
+  },
+  "results": [
+    {
+      "asset_id": "kenney-pirate-kit-barrel",
+      "gates": {
+        "topology": {
+          "watertight": false,
+          "non_manifold_edges": 1421,
+          "self_intersections": 0,
+          "triangle_count": 13108,
+          "triangle_count_valid": false,
+          "passed": false
+        },
+        "occupancy": {
+          "recall": 1.0,
+          "threshold": 0.98,
+          "passed": true
+        },
+        "geometry": {
+          "mean_surface_distance": 0.06639239218798429,
+          "msd_threshold": 0.035,
+          "msd_passed": false,
+          "f_score_0_01": 0.07547779097387174,
+          "f_score_threshold": 0.7,
+          "f_score_passed": false
+        },
+        "rigging": {
+          "joint_to_joint_error": 0.0,
+          "joint_error_threshold": 0.05,
+          "containment_violations": 0,
+          "skinning_buffers_valid": true,
+          "passed": true
+        },
+        "all_gates_passed": false
+      }
+    },
+    {
+      "asset_id": "kenney-pirate-kit-boat-row-large",
+      "gates": {
+        "topology": {
+          "watertight": false,
+          "non_manifold_edges": 74,
+          "self_intersections": 0,
+          "triangle_count": 3486,
+          "triangle_count_valid": true,
+          "passed": false
+        },
+        "occupancy": {
+          "recall": 1.0,
+          "threshold": 0.98,
+          "passed": true
+        },
+        "geometry": {
+          "mean_surface_distance": 0.0267896574695032,
+          "msd_threshold": 0.035,
+          "msd_passed": true,
+          "f_score_0_01": 0.1794003280481137,
+          "f_score_threshold": 0.7,
+          "f_score_passed": false
+        },
+        "rigging": {
+          "joint_to_joint_error": 0.0,
+          "joint_error_threshold": 0.05,
+          "containment_violations": 0,
+          "skinning_buffers_valid": true,
+          "passed": true
+        },
+        "all_gates_passed": false
+      }
+    },
+    {
+      "asset_id": "kenney-pirate-kit-boat-row-small",
+      "gates": {
+        "topology": {
+          "watertight": false,
+          "non_manifold_edges": 54,
+          "self_intersections": 0,
+          "triangle_count": 3162,
+          "triangle_count_valid": true,
+          "passed": false
+        },
+        "occupancy": {
+          "recall": 1.0,
+          "threshold": 0.98,
+          "passed": true
+        },
+        "geometry": {
+          "mean_surface_distance": 0.023044413497849844,
+          "msd_threshold": 0.035,
+          "msd_passed": true,
+          "f_score_0_01": 0.17374162679425836,
+          "f_score_threshold": 0.7,
+          "f_score_passed": false
+        },
+        "rigging": {
+          "joint_to_joint_error": 0.0,
+          "joint_error_threshold": 0.05,
+          "containment_violations": 0,
+          "skinning_buffers_valid": true,
+          "passed": true
+        },
+        "all_gates_passed": false
+      }
+    },
+    {
+      "asset_id": "kenney-pirate-kit-bottle",
+      "gates": {
+        "topology": {
+          "watertight": true,
+          "non_manifold_edges": 0,
+          "self_intersections": 0,
+          "triangle_count": 2572,
+          "triangle_count_valid": true,
+          "passed": true
+        },
+        "occupancy": {
+          "recall": 1.0,
+          "threshold": 0.98,
+          "passed": true
+        },
+        "geometry": {
+          "mean_surface_distance": 0.023335564539161267,
+          "msd_threshold": 0.035,
+          "msd_passed": true,
+          "f_score_0_01": 0.08973569452130603,
+          "f_score_threshold": 0.7,
+          "f_score_passed": false
+        },
+        "rigging": {
+          "joint_to_joint_error": 0.0,
+          "joint_error_threshold": 0.05,
+          "containment_violations": 0,
+          "skinning_buffers_valid": true,
+          "passed": true
+        },
+        "all_gates_passed": false
+      }
+    },
+    {
+      "asset_id": "kenney-pirate-kit-bottle-large",
+      "gates": {
+        "topology": {
+          "watertight": true,
+          "non_manifold_edges": 0,
+          "self_intersections": 0,
+          "triangle_count": 3692,
+          "triangle_count_valid": true,
+          "passed": true
+        },
+        "occupancy": {
+          "recall": 1.0,
+          "threshold": 0.98,
+          "passed": true
+        },
+        "geometry": {
+          "mean_surface_distance": 0.02784509540050767,
+          "msd_threshold": 0.035,
+          "msd_passed": true,
+          "f_score_0_01": 0.09064600326264274,
+          "f_score_threshold": 0.7,
+          "f_score_passed": false
+        },
+        "rigging": {
+          "joint_to_joint_error": 0.0,
+          "joint_error_threshold": 0.05,
+          "containment_violations": 0,
+          "skinning_buffers_valid": true,
+          "passed": true
+        },
+        "all_gates_passed": false
+      }
+    },
+    {
+      "asset_id": "kenney-pirate-kit-cannon",
+      "gates": {
+        "topology": {
+          "watertight": false,
+          "non_manifold_edges": 228,
+          "self_intersections": 0,
+          "triangle_count": 4192,
+          "triangle_count_valid": true,
+          "passed": false
+        },
+        "occupancy": {
+          "recall": 1.0,
+          "threshold": 0.98,
+          "passed": true
+        },
+        "geometry": {
+          "mean_surface_distance": 0.05226349160479342,
+          "msd_threshold": 0.035,
+          "msd_passed": false,
+          "f_score_0_01": 0.0994532783127006,
+          "f_score_threshold": 0.7,
+          "f_score_passed": false
+        },
+        "rigging": {
+          "joint_to_joint_error": 0.0,
+          "joint_error_threshold": 0.05,
+          "containment_violations": 0,
+          "skinning_buffers_valid": true,
+          "passed": true
+        },
+        "all_gates_passed": false
+      }
+    },
+    {
+      "asset_id": "kenney-pirate-kit-cannon-ball",
+      "gates": {
+        "topology": {
+          "watertight": true,
+          "non_manifold_edges": 0,
+          "self_intersections": 0,
+          "triangle_count": 6412,
+          "triangle_count_valid": false,
+          "passed": false
+        },
+        "occupancy": {
+          "recall": 1.0,
+          "threshold": 0.98,
+          "passed": true
+        },
+        "geometry": {
+          "mean_surface_distance": 0.04325866839721152,
+          "msd_threshold": 0.035,
+          "msd_passed": false,
+          "f_score_0_01": 0.0,
+          "f_score_threshold": 0.7,
+          "f_score_passed": false
+        },
+        "rigging": {
+          "joint_to_joint_error": 0.0,
+          "joint_error_threshold": 0.05,
+          "containment_violations": 0,
+          "skinning_buffers_valid": true,
+          "passed": true
+        },
+        "all_gates_passed": false
+      }
+    },
+    {
+      "asset_id": "kenney-pirate-kit-cannon-mobile",
+      "gates": {
+        "topology": {
+          "watertight": false,
+          "non_manifold_edges": 254,
+          "self_intersections": 0,
+          "triangle_count": 5332,
+          "triangle_count_valid": false,
+          "passed": false
+        },
+        "occupancy": {
+          "recall": 1.0,
+          "threshold": 0.98,
+          "passed": true
+        },
+        "geometry": {
+          "mean_surface_distance": 0.04863505142040398,
+          "msd_threshold": 0.035,
+          "msd_passed": false,
+          "f_score_0_01": 0.2006266817667044,
+          "f_score_threshold": 0.7,
+          "f_score_passed": false
+        },
+        "rigging": {
+          "joint_to_joint_error": 0.0,
+          "joint_error_threshold": 0.05,
+          "containment_violations": 0,
+          "skinning_buffers_valid": true,
+          "passed": true
+        },
+        "all_gates_passed": false
+      }
+    },
+    {
+      "asset_id": "kenney-pirate-kit-castle-door",
+      "gates": {
+        "topology": {
+          "watertight": false,
+          "non_manifold_edges": 321,
+          "self_intersections": 0,
+          "triangle_count": 4606,
+          "triangle_count_valid": true,
+          "passed": false
+        },
+        "occupancy": {
+          "recall": 1.0,
+          "threshold": 0.98,
+          "passed": true
+        },
+        "geometry": {
+          "mean_surface_distance": 0.08386705164987247,
+          "msd_threshold": 0.035,
+          "msd_passed": false,
+          "f_score_0_01": 0.05041520979020978,
+          "f_score_threshold": 0.7,
+          "f_score_passed": false
+        },
+        "rigging": {
+          "joint_to_joint_error": 0.0,
+          "joint_error_threshold": 0.05,
+          "containment_violations": 0,
+          "skinning_buffers_valid": true,
+          "passed": true
+        },
+        "all_gates_passed": false
+      }
+    },
+    {
+      "asset_id": "kenney-pirate-kit-castle-gate",
+      "gates": {
+        "topology": {
+          "watertight": false,
+          "non_manifold_edges": 1100,
+          "self_intersections": 0,
+          "triangle_count": 12658,
+          "triangle_count_valid": false,
+          "passed": false
+        },
+        "occupancy": {
+          "recall": 1.0,
+          "threshold": 0.98,
+          "passed": true
+        },
+        "geometry": {
+          "mean_surface_distance": 0.024276803814001015,
+          "msd_threshold": 0.035,
+          "msd_passed": true,
+          "f_score_0_01": 0.19061737101374127,
+          "f_score_threshold": 0.7,
+          "f_score_passed": false
+        },
+        "rigging": {
+          "joint_to_joint_error": 0.0,
+          "joint_error_threshold": 0.05,
+          "containment_violations": 0,
+          "skinning_buffers_valid": true,
+          "passed": true
+        },
+        "all_gates_passed": false
+      }
+    }
+  ]
+}

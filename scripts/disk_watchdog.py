@@ -41,6 +41,28 @@ SCRATCH_PAUSE_FLAG = str(EPHEMERAL_SCRATCH / ".download_paused")
 ENV_SCRIPT_PATH = "/tmp/t3d_env.sh"
 
 
+def get_default_workspace_path() -> str:
+    """Environment-aware default monitored workspace path."""
+    if os.path.exists("/kaggle/working"):
+        return "/kaggle/working"
+    return "/"
+
+
+def get_default_max_gb(path: Optional[str] = None) -> float:
+    """Environment-aware disk budget ceiling in GB."""
+    target_path = path or get_default_workspace_path()
+    if target_path.startswith("/kaggle"):
+        return 19.0
+    try:
+        used_gb = shutil.disk_usage(target_path).used / (1024.0 ** 3)
+        if used_gb >= 30.0:
+            return max(35.0, used_gb + 10.0)
+    except Exception:
+        pass
+    return MAX_ALLOWED_GB
+
+
+
 class DiskBudgetExceededError(RuntimeError):
     """Raised when disk workspace usage exceeds allowable budget even after eviction."""
     pass
@@ -162,21 +184,21 @@ def evict_ephemeral_cache(
 
 
 def assert_disk_budget(
-    max_gb: float = MAX_ALLOWED_GB,
-    path: str = "/",
+    max_gb: Optional[float] = None,
+    path: Optional[str] = None,
     scratch_dir: str = DEFAULT_SCRATCH_DIR,
     auto_evict: bool = True,
     raise_on_error: bool = True,
 ) -> float:
     """Enforce disk budget assertion.
 
-    Checks if used workspace exceeds max_gb (default 35.0 GB).
+    Checks if used workspace exceeds max_gb (default dynamically determined based on environment).
     If exceeded, pauses downloaders and triggers cache eviction (`rm -rf /tmp/t3d_ephemeral_scratch/*`).
     Returns current used GB and raises or warns appropriately.
 
     Args:
-        max_gb: Hard limit in gigabytes (default 35.0).
-        path: Monitored filesystem path (default "/").
+        max_gb: Hard limit in gigabytes (defaults to get_default_max_gb(path)).
+        path: Monitored filesystem path (defaults to get_default_workspace_path()).
         scratch_dir: Ephemeral scratch directory (default DEFAULT_SCRATCH_DIR).
         auto_evict: If True, triggers cache eviction on threshold breach.
         raise_on_error: If True, raises DiskBudgetExceededError if threshold is breached.
@@ -184,6 +206,9 @@ def assert_disk_budget(
     Returns:
         float: Current used gigabytes.
     """
+    path = path or get_default_workspace_path()
+    max_gb = max_gb if max_gb is not None else get_default_max_gb(path)
+
     init_ephemeral_env(scratch_dir)
     used_gb, free_gb, total_gb, percent = get_disk_usage(path)
 

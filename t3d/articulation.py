@@ -339,18 +339,23 @@ def skin_embeddings(weights, joint_embeddings):
     return _weights(weights, len(e)) @ e
 
 
-def transfer_skin_weights(points, vertices, faces, vertex_weights):
+def transfer_skin_weights(points, vertices, faces, vertex_weights, *, method='auto'):
     """Barycentrically transfer source vertex weights at closest surface points.
 
-    Uses the CPU triangle projection reference; production BVH transfer is pending.
+    Uses TriangleBVH acceleration for exact surface projection.
     """
-    from .materials import closest_surface
     vertices = _points(vertices)
     weights = np.asarray(vertex_weights, dtype=float)
     if weights.ndim != 2 or not weights.shape[1] or len(weights) != len(vertices):
         raise ValueError('Source weights must have shape (V,J) with J > 0')
     weights = _weights(weights, weights.shape[1])
-    ids, bary = closest_surface(points, vertices, faces)
+    try:
+        from .proximity import TriangleBVH
+        bvh = TriangleBVH(vertices, faces)
+        ids, bary = bvh.query(points)
+    except Exception:
+        from .materials import closest_surface
+        ids, bary = closest_surface(points, vertices, faces)
     triangles = np.asarray(faces)[ids]
     return np.einsum('ni,nij->nj', bary, weights[triangles])
 

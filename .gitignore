@@ -36,8 +36,8 @@ kaggle.json
 *.tar.gz
 *.whl
 *.docx
-
 # Artifacts and experiment dumps
 artifacts/
 kaggle-*/
 generation-quality-report.json
+*.tar.zst

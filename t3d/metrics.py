@@ -26,7 +26,11 @@ def surface_comparison(reference_vertices, reference_faces, vertices, faces, *, 
     prediction,_=sample_conditioning(vertices,faces,uniform_count=samples,salient_count=0,seed=seed+1)
     def distance(points,v,f):
         v,f=np.asarray(v),np.asarray(f)
-        ids,bary=closest_surface(points[:,:3],v,f)
+        try:
+            from .proximity import TriangleBVH
+            ids,bary=TriangleBVH(v,f).query(points[:,:3])
+        except Exception:
+            ids,bary=closest_surface(points[:,:3],v,f)
         nearest=np.einsum('ni,nij->nj',bary,v[f[ids]])
         return np.linalg.norm(nearest-points[:,:3],axis=1)
     recall_dist=distance(reference,vertices,faces)

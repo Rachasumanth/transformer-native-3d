@@ -269,3 +269,100 @@ def evaluate_asset(
         rigging_passed=rig_passed,
         all_gates_passed=all_passed,
     )
+
+
+def main():
+    import argparse
+    import time
+    from t3d.container import load
+    from t3d.extraction import voxels_to_mesh
+    from t3d.import_glb import load_glb_geometry
+    from t3d.normalization import normalize_asset
+
+    parser = argparse.ArgumentParser(description="Evaluate Production Acceptance Gates")
+    parser.add_argument("--corpus", default="artifacts/corpus-v2/manifest.json")
+    parser.add_argument("--cache-dir", default="/tmp/t3d_ephemeral_scratch/kenney_raw_glb")
+    parser.add_argument("--output", default="artifacts/acceptance-gates-report.json")
+    parser.add_argument("--limit", type=int, default=10)
+    args = parser.parse_args()
+
+    manifest_p = Path(args.corpus)
+    cache_dir = Path(args.cache_dir)
+    out_p = Path(args.output)
+    out_p.parent.mkdir(parents=True, exist_ok=True)
+
+    data = json.loads(manifest_p.read_text(encoding="utf-8"))
+    assets = [a for a in data.get("assets", []) if a["split"] == "validation"][:args.limit]
+
+    print("=" * 60)
+    print("T3D PRODUCTION ACCEPTANCE GATE EVALUATION HARNESS")
+    print("=" * 60)
+    print(f"Corpus Manifest: {manifest_p}")
+    print(f"Evaluating {len(assets)} validation assets...")
+    print("-" * 60)
+
+    results = []
+    gate_stats = {
+        "watertight": 0,
+        "zero_non_manifold": 0,
+        "occupancy_ge_98": 0,
+        "msd_le_035": 0,
+        "fscore_ge_70": 0,
+        "rigging_passed": 0,
+    }
+
+    for meta in assets:
+        aid = meta["asset_id"]
+        t3d_p = manifest_p.parent / meta["path"]
+        glb_p = cache_dir / f"{aid}.glb"
+
+        if not t3d_p.exists() or not glb_p.exists():
+            continue
+
+        raw_v, raw_f, _ = load_glb_geometry(glb_p)
+        norm_v, _, _ = normalize_asset(raw_v)
+        gt_mesh = trimesh.Trimesh(vertices=norm_v, faces=raw_f, process=False)
+
+        voxel_asset = load(t3d_p).asset
+        pred_v, pred_f = voxels_to_mesh(voxel_asset)
+        pred_mesh = trimesh.Trimesh(vertices=pred_v, faces=pred_f, process=False)
+
+        res = evaluate_asset(pred_mesh, gt_mesh)
+        results.append({"asset_id": aid, "gates": res.to_dict()})
+
+        if res.watertight:
+            gate_stats["watertight"] += 1
+        if res.non_manifold_edges == 0:
+            gate_stats["zero_non_manifold"] += 1
+        if res.occupancy_passed:
+            gate_stats["occupancy_ge_98"] += 1
+        if res.msd_passed:
+            gate_stats["msd_le_035"] += 1
+        if res.f_score_passed:
+            gate_stats["fscore_ge_70"] += 1
+        if res.rigging_passed:
+            gate_stats["rigging_passed"] += 1
+
+    total = max(1, len(results))
+    print(f"Gate 1 - Watertightness: {gate_stats['watertight']}/{total} ({(gate_stats['watertight']/total)*100:.1f}%) [Threshold: 100% 2-manifold]")
+    print(f"Gate 1 - Non-Manifold Edges = 0: {gate_stats['zero_non_manifold']}/{total} [Threshold: 0]")
+    print(f"Gate 2 - Coarse Occupancy Recall >= 0.98: {gate_stats['occupancy_ge_98']}/{total} [Threshold: >= 0.98]")
+    print(f"Gate 3 - Mean Surface Distance <= 0.035: {gate_stats['msd_le_035']}/{total} [Threshold: <= 0.035]")
+    print(f"Gate 4 - F-Score (@ 0.01) >= 0.70: {gate_stats['fscore_ge_70']}/{total} [Threshold: >= 0.70]")
+    print(f"Gate 5 - Rigging Joint Error <= 0.05: {gate_stats['rigging_passed']}/{total} [Threshold: <= 0.05]")
+    print("=" * 60)
+
+    report = {
+        "harness": "eval_acceptance",
+        "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "manifest": str(manifest_p),
+        "total_evaluated": total,
+        "gate_summary": {k: f"{v}/{total} ({(v/total)*100:.1f}%)" for k, v in gate_stats.items()},
+        "results": results,
+    }
+    out_p.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    print(f"Saved acceptance evaluation report to {out_p}")
+
+
+if __name__ == "__main__":
+    main()

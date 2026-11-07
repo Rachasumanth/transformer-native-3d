@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "milestone": "milestone_1_scaleout",
+  "timestamp": "2026-11-07T13:59:30Z",
+  "metrics": {
+    "total_unique_assets": 10250,
+    "pbr_populated_assets": 9747,
+    "pbr_ratio": 0.9509,
+    "rigged_assets": 503,
+    "rigged_ratio": 0.0491,
+    "source_families_count": 4,
+    "source_families": [
+      "abo",
+      "aether",
+      "kenney",
+      "objaverse"
+    ]
+  },
+  "acceptance_criteria": {
+    "total_ge_10000": true,
+    "pbr_ge_5000": true,
+    "rigged_ge_500": true,
+    "families_ge_2": true
+  }
+}

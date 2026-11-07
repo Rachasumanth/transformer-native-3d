@@ -1,0 +1,33 @@
+{
+  "corpus_version": 2,
+  "source_manifest": "data/manifest.json",
+  "timestamp": "2026-11-07T13:43:38Z",
+  "total_source_assets": 868,
+  "total_converted_successfully": 868,
+  "total_failed_conversion": 0,
+  "failures": [],
+  "pbr_recovery": {
+    "total_with_pbr": 868,
+    "pbr_ratio": 1.0,
+    "acceptance_threshold": 0.95,
+    "passed": true,
+    "train_pbr_count": 629,
+    "train_total": 629,
+    "train_pbr_ratio": 1.0,
+    "val_pbr_count": 214,
+    "val_total": 214,
+    "val_pbr_ratio": 1.0
+  },
+  "dedup_summary": {
+    "retained_assets": 843,
+    "pruned_near_duplicates": 25,
+    "near_dup_clusters": 19
+  },
+  "splits": {
+    "train": 629,
+    "train_pbr": 629,
+    "validation": 214,
+    "validation_pbr": 214
+  },
+  "manifest_sha256": "90f563276618289c8086564948069a0d7eac4e57e15bbf1806fed1877bccd789"
+}

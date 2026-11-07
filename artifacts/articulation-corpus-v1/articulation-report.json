@@ -1,0 +1,15 @@
+{
+  "corpus": "articulation-corpus-v1",
+  "timestamp": "2026-11-07T13:58:48Z",
+  "total_accepted": 503,
+  "target_met": true,
+  "zero_bone_count_assets": 0,
+  "invalid_parent_graphs": 0,
+  "all_skeleton_field_populated": true,
+  "all_skin_embedding_populated": true,
+  "splits": {
+    "train": 402,
+    "validation": 101
+  },
+  "manifest_sha256": "6304cef61aa17314f8ed7f5886dc138bc7f2440c1d83f8a073cd5a310ddbb26a"
+}
