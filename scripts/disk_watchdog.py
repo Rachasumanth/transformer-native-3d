@@ -127,18 +127,25 @@ def is_download_paused() -> bool:
     return os.path.exists(PAUSE_FLAG_FILE) or os.path.exists(SCRATCH_PAUSE_FLAG)
 
 
-def evict_ephemeral_cache(scratch_dir: str = DEFAULT_SCRATCH_DIR) -> int:
-    """Safely purge all contents in the ephemeral scratch directory.
+def evict_ephemeral_cache(
+    scratch_dir: str = DEFAULT_SCRATCH_DIR,
+    keep_subdirs: Optional[Iterable[str]] = ("ingestion", "ring_buffer"),
+) -> int:
+    """Safely purge cache contents in the ephemeral scratch directory.
 
-    Equivalent to `rm -rf /tmp/t3d_ephemeral_scratch/*`.
+    Retains active working directories (by default 'ingestion' and 'ring_buffer')
+    while wiping large cached artifacts like huggingface and torch download buffers.
     Returns the number of top-level items cleared.
     """
     logger.warning("Initiating emergency cache eviction in %s...", scratch_dir)
     scratch_path = Path(scratch_dir)
     removed_count = 0
+    protected = set(keep_subdirs) if keep_subdirs else set()
 
     if scratch_path.exists():
         for item in scratch_path.iterdir():
+            if item.name in protected:
+                continue
             try:
                 if item.is_dir() and not item.is_symlink():
                     shutil.rmtree(item, ignore_errors=True)
@@ -147,18 +154,6 @@ def evict_ephemeral_cache(scratch_dir: str = DEFAULT_SCRATCH_DIR) -> int:
                 removed_count += 1
             except Exception as e:
                 logger.error("Failed to remove %s: %s", item, e)
-
-    # Shell invocation fallback to guarantee full purge of hidden files / deep paths
-    try:
-        subprocess.run(
-            f"rm -rf {shlex.quote(scratch_dir)}/*",
-            shell=True,
-            check=False,
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL,
-        )
-    except Exception as e:
-        logger.debug(f"rm -rf fallback warning: {e}")
 
     init_ephemeral_env(scratch_dir)
     used_gb, _, _, _ = get_disk_usage("/")
@@ -169,6 +164,7 @@ def evict_ephemeral_cache(scratch_dir: str = DEFAULT_SCRATCH_DIR) -> int:
 def assert_disk_budget(
     max_gb: float = MAX_ALLOWED_GB,
     path: str = "/",
+    scratch_dir: str = DEFAULT_SCRATCH_DIR,
     auto_evict: bool = True,
     raise_on_error: bool = True,
 ) -> float:
@@ -181,13 +177,14 @@ def assert_disk_budget(
     Args:
         max_gb: Hard limit in gigabytes (default 35.0).
         path: Monitored filesystem path (default "/").
+        scratch_dir: Ephemeral scratch directory (default DEFAULT_SCRATCH_DIR).
         auto_evict: If True, triggers cache eviction on threshold breach.
         raise_on_error: If True, raises DiskBudgetExceededError if threshold is breached.
 
     Returns:
         float: Current used gigabytes.
     """
-    init_ephemeral_env()
+    init_ephemeral_env(scratch_dir)
     used_gb, free_gb, total_gb, percent = get_disk_usage(path)
 
     if used_gb >= max_gb:
@@ -197,7 +194,7 @@ def assert_disk_budget(
 
         if auto_evict:
             pause_downloaders()
-            evict_ephemeral_cache()
+            evict_ephemeral_cache(scratch_dir=scratch_dir)
             post_used_gb, _, _, _ = get_disk_usage(path)
 
             if post_used_gb >= max_gb:

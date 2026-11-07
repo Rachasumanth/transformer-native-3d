@@ -5,8 +5,8 @@ import random
 from pathlib import Path
 import tempfile
 import torch
-from .dataset import batch_arrays
-from .sc_vae import SparseCompressionVAE, reconstruction_loss
+from ..dataset import batch_arrays
+from ..sc_vae import SparseCompressionVAE, reconstruction_loss
 
 
 class VAETrainer:
@@ -90,7 +90,7 @@ class VAETrainer:
     def _render_fn(self,assets):
         if not self.render_weight:return None
         if len(assets)!=1:raise ValueError('render supervision currently requires batch size 1')
-        from .training_render import shape_supervision
+        from ..training_render import shape_supervision
         return lambda coords,target,raw:shape_supervision(assets[0],coords,target,raw)
 
     def save(self, path):
@@ -138,7 +138,7 @@ class VAETrainer:
 def main():
     import argparse
     import json
-    from .dataset import AssetDataset
+    from ..dataset import AssetDataset
     parser = argparse.ArgumentParser(description='Train a sparse VAE on prepared .t3d assets')
     parser.add_argument('--manifest', required=True)
     parser.add_argument('--mode', choices=['shape','material'], required=True)

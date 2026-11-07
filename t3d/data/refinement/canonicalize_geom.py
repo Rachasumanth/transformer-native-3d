@@ -4,7 +4,9 @@ Provides coordinate & margin normalization, 128^3 UDF + Outside-In Flood Fill
 remeshing, isosurface extraction (Dual Contouring / Marching Cubes), topology repair,
 and crease-preserving low-poly decimation targeting watertight 2-manifold meshes.
 """
+import os
 from pathlib import Path
+import shutil
 from typing import Union, Tuple, Optional
 import numpy as np
 import scipy.ndimage as ndi
@@ -236,6 +238,42 @@ def decimate_crease_preserving(
     return result
 
 
+def load_mesh_universal(mesh_or_path: Union[str, Path, trimesh.Trimesh, trimesh.Scene]) -> trimesh.Trimesh:
+    """Universally load a 3D mesh, supporting standard formats and meshopt-compressed GLB files."""
+    if isinstance(mesh_or_path, trimesh.Trimesh):
+        return mesh_or_path.copy()
+    if isinstance(mesh_or_path, trimesh.Scene):
+        return mesh_or_path.dump(concatenate=True)
+
+    path = Path(mesh_or_path)
+    if not path.is_file():
+        raise FileNotFoundError(f"Mesh file not found: {path}")
+
+    # Check for GLB with meshopt compression
+    if path.suffix.lower() == ".glb":
+        try:
+            return trimesh.load(str(path), force="mesh")
+        except Exception:
+            # Fallback using gltfpack decompression for EXT_meshopt_compression / Draco
+            import subprocess
+            import tempfile
+            with tempfile.NamedTemporaryFile(suffix=".glb", delete=False) as tmp_f:
+                tmp_unpacked = tmp_f.name
+            try:
+                gltfpack_bin = shutil.which("gltfpack") or str(Path.home() / ".local" / "bin" / "gltfpack")
+                res = subprocess.run([gltfpack_bin, "-i", str(path), "-o", tmp_unpacked], capture_output=True)
+                if res.returncode == 0 and os.path.exists(tmp_unpacked):
+                    mesh = trimesh.load(tmp_unpacked, force="mesh")
+                    return mesh
+            except Exception:
+                pass
+            finally:
+                if os.path.exists(tmp_unpacked):
+                    os.unlink(tmp_unpacked)
+
+    return trimesh.load(str(path), force="mesh")
+
+
 def canonicalize_geometry(
     mesh_or_path: Union[str, Path, trimesh.Trimesh, trimesh.Scene],
     target_faces: Union[int, Tuple[int, int]] = (1500, 5000),
@@ -268,14 +306,7 @@ def canonicalize_geometry(
         Watertight 2-manifold trimesh.Trimesh normalized inside [-0.45, 0.45]^3.
     """
     # 1. Load / Convert Input
-    if isinstance(mesh_or_path, (str, Path)):
-        loaded = trimesh.load(mesh_or_path, force="mesh")
-    elif isinstance(mesh_or_path, trimesh.Scene):
-        loaded = mesh_or_path.dump(concatenate=True)
-    elif isinstance(mesh_or_path, trimesh.Trimesh):
-        loaded = mesh_or_path.copy()
-    else:
-        raise TypeError(f"Unsupported mesh input type: {type(mesh_or_path)}")
+    loaded = load_mesh_universal(mesh_or_path)
 
     # 2. Coordinate & Margin Normalization
     norm_mesh = normalize_coordinates(loaded, target_half_extent=0.45, margin_domain=0.5)

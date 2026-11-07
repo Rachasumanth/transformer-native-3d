@@ -108,6 +108,15 @@ def synthesize_corrupted_mesh(
     # 32^3 quantization: snap coordinates to 32 discrete bins in [-0.5, 0.5]
     v = np.round(v * 32.0) / 32.0
 
+    # Filter out degenerate faces collapsed by quantization
+    if len(f) > 0:
+        e1 = v[f[:, 1]] - v[f[:, 0]]
+        e2 = v[f[:, 2]] - v[f[:, 0]]
+        areas = 0.5 * np.linalg.norm(np.cross(e1, e2), axis=1)
+        valid_f = areas > 1e-7
+        if np.any(valid_f):
+            f = f[valid_f]
+
     # 4. Floating Internal/External Distractor Triangles (3–8 triangles)
     n_distractors = int(rng.integers(3, 9))  # 3 to 8 inclusive
     current_v_count = len(v)
@@ -125,7 +134,12 @@ def synthesize_corrupted_mesh(
             # Internal floating distractor near object core
             center = rng.uniform(v_min * 0.7, v_max * 0.7, size=3)
 
-        offsets = rng.normal(0, 0.025, size=(3, 3))
+        # Ensure non-degenerate triangle with guaranteed minimum extent
+        offsets = np.array([
+            [-0.02, -0.01, 0.0],
+            [0.02, -0.01, 0.0],
+            [0.0, 0.02, 0.0],
+        ]) + rng.normal(0, 0.005, size=(3, 3))
         tri_pts = center + offsets
         base_idx = current_v_count + i * 3
 

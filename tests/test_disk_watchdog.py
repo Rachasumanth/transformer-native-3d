@@ -62,36 +62,42 @@ class TestDiskWatchdog(unittest.TestCase):
 
     def test_cache_eviction(self):
         """Verify eviction purges files within ephemeral scratch."""
-        test_file = EPHEMERAL_SCRATCH / "dummy_cache_file.dat"
-        test_dir = EPHEMERAL_SCRATCH / "dummy_subdir"
-        test_dir.mkdir(parents=True, exist_ok=True)
-        with open(test_file, "w") as f:
-            f.write("temporary cache content")
-        with open(test_dir / "nested.dat", "w") as f:
-            f.write("nested content")
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp_scratch:
+            test_file = Path(tmp_scratch) / "dummy_cache_file.dat"
+            test_dir = Path(tmp_scratch) / "dummy_subdir"
+            test_dir.mkdir(parents=True, exist_ok=True)
+            with open(test_file, "w") as f:
+                f.write("temporary cache content")
+            with open(test_dir / "nested.dat", "w") as f:
+                f.write("nested content")
 
-        self.assertTrue(test_file.exists())
-        self.assertTrue((test_dir / "nested.dat").exists())
+            self.assertTrue(test_file.exists())
+            self.assertTrue((test_dir / "nested.dat").exists())
 
-        evict_ephemeral_cache()
+            evict_ephemeral_cache(scratch_dir=tmp_scratch, keep_subdirs=())
 
-        self.assertFalse(test_file.exists())
-        self.assertFalse((test_dir / "nested.dat").exists())
-        self.assertTrue(EPHEMERAL_SCRATCH.exists())
+            self.assertFalse(test_file.exists())
+            self.assertFalse((test_dir / "nested.dat").exists())
+            self.assertTrue(Path(tmp_scratch).exists())
 
     def test_assert_disk_budget_exceeded_raises(self):
         """When budget is artificially set lower than current usage, an exception is raised."""
         # 1.0 GB limit is well below actual disk usage (~5 GB)
-        with self.assertRaises((DiskBudgetExceededError, RuntimeError)):
-            assert_disk_budget(max_gb=1.0, path="/", auto_evict=True, raise_on_error=True)
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp_scratch:
+            with self.assertRaises((DiskBudgetExceededError, RuntimeError)):
+                assert_disk_budget(max_gb=1.0, path="/", scratch_dir=tmp_scratch, auto_evict=True, raise_on_error=True)
 
     def test_assert_disk_budget_exceeded_warns(self):
         """When raise_on_error is False, warnings are emitted without crashing."""
-        with warnings.catch_warnings(record=True) as recorded_warnings:
-            warnings.simplefilter("always")
-            used = assert_disk_budget(max_gb=1.0, path="/", auto_evict=True, raise_on_error=False)
-            self.assertGreater(used, 1.0)
-            self.assertTrue(any(issubclass(w.category, RuntimeWarning) for w in recorded_warnings))
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp_scratch:
+            with warnings.catch_warnings(record=True) as recorded_warnings:
+                warnings.simplefilter("always")
+                used = assert_disk_budget(max_gb=1.0, path="/", scratch_dir=tmp_scratch, auto_evict=True, raise_on_error=False)
+                self.assertGreater(used, 1.0)
+                self.assertTrue(any(issubclass(w.category, RuntimeWarning) for w in recorded_warnings))
 
 
 if __name__ == "__main__":
