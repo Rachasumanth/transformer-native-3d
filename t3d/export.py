@@ -13,7 +13,13 @@ from .articulation import infer_skeleton_from_field, sample_sparse_embeddings
 
 def _decode_export_skin(asset, prepared, checkpoint_path, device, joint_tolerance, max_skin_influences):
     import torch
-    from .skin_ae import SkinAE
+    try:
+        from .skin_ae import SkinAE
+    except ImportError:
+        try:
+            from .models.rigging import SurfacePointToBoneSkinning as SkinAE
+        except ImportError:
+            raise RuntimeError('Legacy skin_ae is deprecated. Use t3d.models.rigging.')
     path=Path(checkpoint_path)
     if not path.is_file():raise ValueError(f'SkinAE checkpoint does not exist: {path}')
     if asset.skeleton_field is None or asset.skin_embedding is None:
