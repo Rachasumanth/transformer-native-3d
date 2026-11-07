@@ -29,6 +29,8 @@ jobs:
         run: PYTHONPATH=. python -m t3d.cli doctor --no-verify
       - name: Test
         run: PYTHONPATH=. python -m pytest -q
+      - name: Dual Production Canary Verification
+        run: PYTHONPATH=. python tools/run_canary_gates.py
 
   docker:
     runs-on: ubuntu-latest

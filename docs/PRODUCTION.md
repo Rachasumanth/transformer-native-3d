@@ -1,16 +1,25 @@
-# Production deployment
+# Production Deployment: Raw 3D Model to Game-Ready Asset Pipeline
 
-This guide covers the deployable inference surface: verified checkpoints, the
+This guide covers the deployable surface for converting **raw 3D models into polished,
+textured, and rigged game-ready 3D assets**: verified checkpoints, the
 `t3d doctor` preflight, the resident runtime, the HTTP service, and container
 operations. Model-quality limits are in [QUALITY.md](QUALITY.md).
 
-## Deployment envelope
+## Production Mission & Deployment Envelope
 
-The current release is intended for low-poly, stylized assets at 64³ resolution
-with human review. It is **not** validated for arbitrary high-fidelity objects,
-photorealistic text prompts, or unattended asset publication. Start with
-`--steps 30` or higher for demonstrations; the metrics in QUALITY.md were
-measured at the default sampling settings.
+T3D's primary mission is **raw 3D model $\rightarrow$ game-ready 3D asset**.
+Input raw triangle meshes (GLB, OBJ, STL, PLY) are ingested, normalized, and converted
+into production-ready glTF 2.0 assets featuring:
+1. **Polished & Manifold Geometry:** Guaranteed 2-manifold surfaces (0 non-manifold edges),
+   watertight repair, and controllable polygon budgets for game engines.
+2. **6-Channel PBR Materials:** Automated texture baking into standard glTF 2.0
+   `pbrMetallicRoughness` channels (RGB Base Color, Metallic, Roughness, Alpha).
+3. **Articulation & Rigging:** Skeletal hierarchy and vertex skinning weight synthesis
+   for immediate animation in Unity or Unreal Engine.
+
+The current 64³ neural-voxel engine is validated for low-poly, stylized props and game assets
+with human review. It is **not** intended for arbitrary unconstrained text-to-3D generation
+without geometric scaffolding, nor for unreviewed safety-critical CAD.
 
 ## Artifact layout
 

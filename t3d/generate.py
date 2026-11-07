@@ -466,8 +466,8 @@ def main():
         vertices, faces = voxels_to_mesh(asset, resolve_nonmanifold=True)
         skeleton = None
         weights = None
-        if has_rig and skinae_model is not None:
-            from .articulation import infer_skeleton_from_field, robust_infer_skeleton, sample_sparse_embeddings
+        if has_rig:
+            from .articulation import infer_skeleton_from_field, robust_infer_skeleton, sample_sparse_embeddings, compute_geometric_skin_weights, refine_joints_medial_axis
             from .glb import limit_skin_influences
             centers = asset.aabb[0] + (asset.coords.astype(float) + 0.5) * asset.voxel_size
             tolerance = max(0.08, float(np.min(asset.voxel_size)) * 2.5)
@@ -475,37 +475,42 @@ def main():
             if skeleton is None:
                 try:
                     skeleton = infer_skeleton_from_field(centers, asset.skeleton_field, tolerance=tolerance, max_joints=1024, min_votes=3)
+                    skeleton = refine_joints_medial_axis(skeleton, centers, asset.voxel_size)
                 except Exception:
                     skeleton = None
             if skeleton is not None:
-                j_t = torch.as_tensor(skeleton.joints, device=device, dtype=torch.float32)
-                p_t = torch.as_tensor(skeleton.parents, device=device, dtype=torch.int64)
-                with torch.no_grad():
-                    joint_embeddings = skinae_model.encode_joints(j_t, p_t)
-                    v_tensor = torch.as_tensor(vertices, device=device, dtype=torch.float32)
-                    vertex_embeddings, supported = sample_sparse_embeddings(
-                        v_tensor, asset.coords, asset.skin_embedding,
-                        grid_size=asset.grid_size, aabb=asset.aabb
-                    )
-                    if not bool(supported.all()):
-                        missing = ~supported
-                        missing_idx = missing.nonzero(as_tuple=False).squeeze(-1)
-                        c_np = asset.aabb[0] + (asset.coords.astype(float) + 0.5) * asset.voxel_size
-                        c_tensor = torch.as_tensor(c_np, device=device, dtype=torch.float32)
-                        v_missing = v_tensor[missing_idx]
-                        near_list = []
-                        chunk_size = 512
-                        for start in range(0, len(v_missing), chunk_size):
-                            chunk = v_missing[start:start + chunk_size]
-                            dist = torch.cdist(chunk, c_tensor)
-                            near_list.append(torch.argmin(dist, dim=1))
-                        near_idx = torch.cat(near_list).cpu().numpy()
-                        v_emb_np = vertex_embeddings.cpu().numpy()
-                        v_emb_np[missing.cpu().numpy()] = asset.skin_embedding[near_idx]
-                        vertex_embeddings = torch.as_tensor(v_emb_np, device=device, dtype=torch.float32)
-                    logits = skinae_model.decode_logits(vertex_embeddings, joint_embeddings)
-                    weights = torch.softmax(logits, dim=-1).cpu().numpy()
-                weights, _ = limit_skin_influences(weights, max_influences=16)
+                if skinae_model is not None and asset.skin_embedding is not None:
+                    j_t = torch.as_tensor(skeleton.joints, device=device, dtype=torch.float32)
+                    p_t = torch.as_tensor(skeleton.parents, device=device, dtype=torch.int64)
+                    with torch.no_grad():
+                        joint_embeddings = skinae_model.encode_joints(j_t, p_t)
+                        v_tensor = torch.as_tensor(vertices, device=device, dtype=torch.float32)
+                        vertex_embeddings, supported = sample_sparse_embeddings(
+                            v_tensor, asset.coords, asset.skin_embedding,
+                            grid_size=asset.grid_size, aabb=asset.aabb
+                        )
+                        if not bool(supported.all()):
+                            missing = ~supported
+                            missing_idx = missing.nonzero(as_tuple=False).squeeze(-1)
+                            c_np = asset.aabb[0] + (asset.coords.astype(float) + 0.5) * asset.voxel_size
+                            c_tensor = torch.as_tensor(c_np, device=device, dtype=torch.float32)
+                            v_missing = v_tensor[missing_idx]
+                            near_list = []
+                            chunk_size = 512
+                            for start in range(0, len(v_missing), chunk_size):
+                                chunk = v_missing[start:start + chunk_size]
+                                dist = torch.cdist(chunk, c_tensor)
+                                near_list.append(torch.argmin(dist, dim=1))
+                            near_idx = torch.cat(near_list).cpu().numpy()
+                            v_emb_np = vertex_embeddings.cpu().numpy()
+                            v_emb_np[missing.cpu().numpy()] = asset.skin_embedding[near_idx]
+                            vertex_embeddings = torch.as_tensor(v_emb_np, device=device, dtype=torch.float32)
+                        logits = skinae_model.decode_logits(vertex_embeddings, joint_embeddings)
+                        weights = torch.softmax(logits, dim=-1).cpu().numpy()
+                    weights, _ = limit_skin_influences(weights, max_influences=16)
+                else:
+                    weights = compute_geometric_skin_weights(vertices, faces, skeleton, max_influences=4)
+                    weights, _ = limit_skin_influences(weights, max_influences=16)
 
         from .glb import pack_static_glb, validate_glb_semantics
         glb_bytes = pack_static_glb(vertices, faces, pbr=asset.pbr, skin_weights=weights, skeleton=skeleton)
@@ -516,7 +521,7 @@ def main():
             print(f"Validated 6-channel PBR semantics (six_channels_preserved={validation_report['six_channels_preserved']})")
 
         desc_parts = []
-        if has_rig and skinae_model is not None:
+        if has_rig and skeleton is not None:
             desc_parts.append("rigged")
         if has_pbr:
             desc_parts.append("textured PBR")

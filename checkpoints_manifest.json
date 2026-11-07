@@ -13,7 +13,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "sumu143/transformer-native-3d-occupancy-dit-flow (v37)",
       "status": "VERIFIED",
-      "notes": "Trained for 600 steps on dual Tesla T4 GPUs. Euler sampling produces steerable spatial bounds."
+      "notes": "Trained for 600 steps on dual Tesla T4 GPUs. Euler sampling produces steerable spatial bounds.",
+      "tier": "legacy_quarantine"
     },
     {
       "name": "occupancy-dit-64-4000.pt",
@@ -24,7 +25,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-occupancy-dit (v4)",
       "status": "VERIFIED",
-      "notes": "Trained for 4,000 steps with width=144, heads=6, depth=6 (2.8M params), mini-batch size 4, and volume loss on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU. Mean validation occupancy IoU jumped to 0.5515 (+25.8% relative improvement), precision reached 0.8186, recall improved to 0.5973, and prompt steerability difference increased to 23.1 cells."
+      "notes": "Trained for 4,000 steps with width=144, heads=6, depth=6 (2.8M params), mini-batch size 4, and volume loss on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU. Mean validation occupancy IoU jumped to 0.5515 (+25.8% relative improvement), precision reached 0.8186, recall improved to 0.5973, and prompt steerability difference increased to 23.1 cells.",
+      "tier": "legacy_quarantine"
     },
     {
       "name": "occupancy-dit-64-3000.pt",
@@ -35,7 +37,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-occupancy-dit (v4)",
       "status": "VERIFIED",
-      "notes": "Trained for 3,000 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU."
+      "notes": "Trained for 3,000 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU.",
+      "tier": "legacy_quarantine"
     },
     {
       "name": "occupancy-dit-64-2000.pt",
@@ -46,7 +49,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-occupancy-dit (v4)",
       "status": "VERIFIED",
-      "notes": "Trained for 2,000 steps with width=144, heads=6, depth=6 (2.8M params), mini-batch size 4, and volume loss on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU."
+      "notes": "Trained for 2,000 steps with width=144, heads=6, depth=6 (2.8M params), mini-batch size 4, and volume loss on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU.",
+      "tier": "legacy_quarantine"
     },
     {
       "name": "occupancy-dit-64-1500.pt",
@@ -57,7 +61,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-occupancy-dit (v2)",
       "status": "VERIFIED",
-      "notes": "Trained for 1,500 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU."
+      "notes": "Trained for 1,500 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU.",
+      "tier": "legacy_quarantine"
     },
     {
       "name": "occupancy-dit-64-1000.pt",
@@ -68,7 +73,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-occupancy-dit (v4)",
       "status": "VERIFIED",
-      "notes": "Trained for 1,000 steps with width=144, heads=6, depth=6 (2.8M params), mini-batch size 4, and volume loss on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU."
+      "notes": "Trained for 1,000 steps with width=144, heads=6, depth=6 (2.8M params), mini-batch size 4, and volume loss on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU.",
+      "tier": "legacy_quarantine"
     },
     {
       "name": "occupancy-dit-64-500.pt",
@@ -79,7 +85,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-occupancy-dit (v2)",
       "status": "VERIFIED",
-      "notes": "Trained for 500 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU."
+      "notes": "Trained for 500 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU.",
+      "tier": "legacy_quarantine"
     },
     {
       "name": "geometry-dit-600.pt",
@@ -90,7 +97,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "sumu143/transformer-native-3d-geometry-dit-flow (v38)",
       "status": "VERIFIED",
-      "notes": "Trained for 600 steps on 649 Kenney train assets. Mean validation latent MSE = 2.2043 on 16 held-out models."
+      "notes": "Trained for 600 steps on 649 Kenney train assets. Mean validation latent MSE = 2.2043 on 16 held-out models.",
+      "tier": "optional_secondary"
     },
     {
       "name": "geometry-dit-64-4000.pt",
@@ -101,7 +109,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-geometry-dit (v6)",
       "status": "VERIFIED",
-      "notes": "Trained for 4,000 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU with 85% distractor background coordinate augmentation (target=0 latents), explicit zero-suppression penalty (2.0 * zero_loss), and CosineAnnealingLR. Achieves 87:1 latent norm suppression ratio (6.78 TP vs 0.078 FP). Drives end-to-end surface distance down to 0.05331 on held-out validation boat-row-large."
+      "notes": "Trained for 4,000 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU with 85% distractor background coordinate augmentation (target=0 latents), explicit zero-suppression penalty (2.0 * zero_loss), and CosineAnnealingLR. Achieves 87:1 latent norm suppression ratio (6.78 TP vs 0.078 FP). Drives end-to-end surface distance down to 0.05331 on held-out validation boat-row-large.",
+      "tier": "optional_secondary"
     },
     {
       "name": "geometry-dit-64-3000.pt",
@@ -112,7 +121,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-geometry-dit (v6)",
       "status": "VERIFIED",
-      "notes": "Trained for 3,000 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU with scaled 2.8M DiT."
+      "notes": "Trained for 3,000 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU with scaled 2.8M DiT.",
+      "tier": "optional_secondary"
     },
     {
       "name": "geometry-dit-64-2000.pt",
@@ -123,7 +133,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-geometry-dit (v6)",
       "status": "VERIFIED",
-      "notes": "Trained for 2,000 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU with scaled 2.8M DiT."
+      "notes": "Trained for 2,000 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU with scaled 2.8M DiT.",
+      "tier": "optional_secondary"
     },
     {
       "name": "geometry-dit-64-1000.pt",
@@ -134,7 +145,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-geometry-dit (v6)",
       "status": "VERIFIED",
-      "notes": "Trained for 1,000 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU with scaled 2.8M DiT."
+      "notes": "Trained for 1,000 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU with scaled 2.8M DiT.",
+      "tier": "optional_secondary"
     },
     {
       "name": "geometry-dit-64-4000-v5.pt",
@@ -145,7 +157,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-geometry-dit (v5)",
       "status": "VERIFIED",
-      "notes": "Historical v5 checkpoint preserved for regression auditing."
+      "notes": "Historical v5 checkpoint preserved for regression auditing.",
+      "tier": "optional_secondary"
     },
     {
       "name": "geometry-dit-64-500.pt",
@@ -156,7 +169,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-geometry-dit (v3)",
       "status": "VERIFIED",
-      "notes": "Trained for 500 steps on 649 Kenney train assets at 64\u00b3 resolution on Tesla T4 GPU."
+      "notes": "Trained for 500 steps on 649 Kenney train assets at 64\u00b3 resolution on Tesla T4 GPU.",
+      "tier": "optional_secondary"
     },
     {
       "name": "geometry-dit-64-600.pt",
@@ -167,7 +181,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-geometry-dit (v1)",
       "status": "VERIFIED",
-      "notes": "Trained for 600 steps on 649 Kenney train assets at 64\u00b3 resolution on Tesla T4 GPU. Mean validation latent MSE = 4.2965; mean decoded mesh triangles = 11,010.6 across 16 held-out models."
+      "notes": "Trained for 600 steps on 649 Kenney train assets at 64\u00b3 resolution on Tesla T4 GPU. Mean validation latent MSE = 4.2965; mean decoded mesh triangles = 11,010.6 across 16 held-out models.",
+      "tier": "optional_secondary"
     },
     {
       "name": "triton-kenney-corpus-64-1200.pt",
@@ -178,7 +193,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-corpus-training (v1)",
       "status": "VERIFIED",
-      "notes": "Trained for 1200 steps on 868 64\u00b3 Kenney assets (649 train, 219 validation) on Tesla T4 GPU. Validation Free IoU = 0.2359. Reconstructed surface distance reduced to 0.01532 (well below 0.035 threshold; 7.6\u00d7 error reduction)."
+      "notes": "Trained for 1200 steps on 868 64\u00b3 Kenney assets (649 train, 219 validation) on Tesla T4 GPU. Validation Free IoU = 0.2359. Reconstructed surface distance reduced to 0.01532 (well below 0.035 threshold; 7.6\u00d7 error reduction).",
+      "tier": "core_production"
     },
     {
       "name": "triton-kenney-corpus-1900.pt",
@@ -189,7 +205,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "sumu143/transformer-native-3d-kenney-corpus-training (v35)",
       "status": "VERIFIED",
-      "notes": "Trained for 1900 steps across 649 Kenney train models. Held-out validation free IoU = 0.2536."
+      "notes": "Trained for 1900 steps across 649 Kenney train models. Held-out validation free IoU = 0.2536.",
+      "tier": "core_production"
     },
     {
       "name": "material-flow-dit-300.pt",
@@ -200,7 +217,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-material-flow-dit (v1)",
       "status": "VERIFIED",
-      "notes": "Held-out validation PBR MAE = 0.1818 across 8 held-out assets from Lantern and BoomBox."
+      "notes": "Held-out validation PBR MAE = 0.1818 across 8 held-out assets from Lantern and BoomBox.",
+      "tier": "core_production"
     },
     {
       "name": "material-flow-dit-600.pt",
@@ -211,7 +229,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-material-flow-dit (v1)",
       "status": "VERIFIED",
-      "notes": "Held-out validation PBR MAE = 0.1879."
+      "notes": "Held-out validation PBR MAE = 0.1879.",
+      "tier": "core_production"
     },
     {
       "name": "material-multiasset-300.pt",
@@ -222,7 +241,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-material-multiasset-vae (v1)",
       "status": "VERIFIED",
-      "notes": "Held-out validation MAE = 0.1785 on 8 held-out assets from Lantern and BoomBox."
+      "notes": "Held-out validation MAE = 0.1785 on 8 held-out assets from Lantern and BoomBox.",
+      "tier": "core_production"
     },
     {
       "name": "rig-flow-dit-2500.pt",
@@ -233,7 +253,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-rig-multiasset-32",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-rig-flow-dit (v4)",
       "status": "VERIFIED_BEST",
-      "notes": "Trained for 2,500 steps on Tesla T4 GPU. Record best J2J Chamfer error dropped to 0.09014 (mean across all 8 validation assets); 0 bone containment violations across all validation assets (100% containment pass rate); mean skin MAE = 0.07695."
+      "notes": "Trained for 2,500 steps on Tesla T4 GPU. Record best J2J Chamfer error dropped to 0.09014 (mean across all 8 validation assets); 0 bone containment violations across all validation assets (100% containment pass rate); mean skin MAE = 0.07695.",
+      "tier": "core_production"
     },
     {
       "name": "rig-flow-dit-1500.pt",
@@ -244,7 +265,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-rig-multiasset-32",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-rig-flow-dit (v3)",
       "status": "VERIFIED",
-      "notes": "Trained for 1,500 steps with CosineAnnealingLR on Tesla T4. J2J Chamfer error dropped to 0.09415 (max across all validation assets: 0.09919); 0 bone containment violations across all validation assets (100% containment pass rate); mean skin MAE = 0.07985."
+      "notes": "Trained for 1,500 steps with CosineAnnealingLR on Tesla T4. J2J Chamfer error dropped to 0.09415 (max across all validation assets: 0.09919); 0 bone containment violations across all validation assets (100% containment pass rate); mean skin MAE = 0.07985.",
+      "tier": "core_production"
     },
     {
       "name": "rig-flow-dit-2000.pt",
@@ -255,7 +277,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-rig-multiasset-32",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-rig-flow-dit (v3)",
       "status": "VERIFIED",
-      "notes": "Trained for 2,000 steps on Tesla T4. J2J Chamfer = 0.10346, 0 bone containment violations across all validation models; mean skin MAE = 0.08038."
+      "notes": "Trained for 2,000 steps on Tesla T4. J2J Chamfer = 0.10346, 0 bone containment violations across all validation models; mean skin MAE = 0.08038.",
+      "tier": "core_production"
     },
     {
       "name": "rig-flow-dit-1000.pt",
@@ -266,7 +289,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-rig-multiasset-32",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-rig-flow-dit (v2)",
       "status": "PROTOTYPE_VALIDATED",
-      "notes": "Trained for 1000 steps on Tesla T4. J2J Chamfer error dropped to 0.11024 (down from 0.50 in v1); containment violations dropped to 1 (down from 8); mean skin MAE = 0.07871."
+      "notes": "Trained for 1000 steps on Tesla T4. J2J Chamfer error dropped to 0.11024 (down from 0.50 in v1); containment violations dropped to 1 (down from 8); mean skin MAE = 0.07871.",
+      "tier": "core_production"
     },
     {
       "name": "rig-flow-dit-250.pt",
@@ -277,7 +301,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-rig-multiasset-32",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-rig-flow-dit (v2)",
       "status": "PROTOTYPE_VALIDATED",
-      "notes": "Achieved 0 bone containment violations across all validation models; J2J Chamfer = 0.11559; mean skin MAE = 0.08032."
+      "notes": "Achieved 0 bone containment violations across all validation models; J2J Chamfer = 0.11559; mean skin MAE = 0.08032.",
+      "tier": "core_production"
     },
     {
       "name": "rig-flow-dit-600.pt",
@@ -288,7 +313,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-rig-multiasset-32",
       "origin_kernel": "dileepkumarchakali/transformer-native-3d-rig-flow-dit (v1)",
       "status": "SUPERSEDED",
-      "notes": "Superseded by v2 (rig-flow-dit-1000.pt / rig-flow-dit-250.pt). Initial run had J2J Chamfer = 0.1407 and 8 containment violations."
+      "notes": "Superseded by v2 (rig-flow-dit-1000.pt / rig-flow-dit-250.pt). Initial run had J2J Chamfer = 0.1407 and 8 containment violations.",
+      "tier": "core_production"
     },
     {
       "name": "skin-pose-pilot.pt",
@@ -299,7 +325,8 @@
       "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
       "origin_kernel": "kaggle-skin-pose-pilot",
       "status": "PILOT_ONLY",
-      "notes": "Trained on articulated synthetic pilot models."
+      "notes": "Trained on articulated synthetic pilot models.",
+      "tier": "legacy_quarantine"
     },
     {
       "name": "occupancy-dit-64-20000.pt",
@@ -313,7 +340,8 @@
       "kaggle_dataset": "shivakrishna846/t3d-kenney-64-expand-train",
       "origin_kernel": "shivakrishna846/t3d-64-expand-train (v1)",
       "status": "VERIFIED",
-      "notes": "Expanded 1648-asset Kenney corpus (19 kits) in-distribution holdout (1608 train / 40 val); 20,000 steps at batch 8, width 144, heads 6, depth 6 (2.8M params), composite flow + Tweedie + soft Dice + volume loss; origin kernel shivakrishna846/t3d-64-expand-train v1 on Tesla T4"
+      "notes": "Expanded 1648-asset Kenney corpus (19 kits) in-distribution holdout (1608 train / 40 val); 20,000 steps at batch 8, width 144, heads 6, depth 6 (2.8M params), composite flow + Tweedie + soft Dice + volume loss; origin kernel shivakrishna846/t3d-64-expand-train v1 on Tesla T4",
+      "tier": "legacy_quarantine"
     },
     {
       "name": "geometry-dit-64-20000.pt",
@@ -327,7 +355,8 @@
       "kaggle_dataset": "shivakrishna846/t3d-kenney-64-expand-train",
       "origin_kernel": "shivakrishna846/t3d-64-expand-train (v1)",
       "status": "VERIFIED",
-      "notes": "Expanded 1648-asset Kenney corpus (19 kits) in-distribution holdout (1608 train / 40 val); 20,000 steps, width 144, heads 6, depth 6 (2.8M params), composite flow + Tweedie loss + distractor zero-suppression; origin kernel shivakrishna846/t3d-64-expand-train v1 on Tesla T4"
+      "notes": "Expanded 1648-asset Kenney corpus (19 kits) in-distribution holdout (1608 train / 40 val); 20,000 steps, width 144, heads 6, depth 6 (2.8M params), composite flow + Tweedie loss + distractor zero-suppression; origin kernel shivakrishna846/t3d-64-expand-train v1 on Tesla T4",
+      "tier": "optional_secondary"
     },
     {
       "name": "unified-dit-64-12000.pt",
@@ -338,7 +367,8 @@
       "kaggle_dataset": "shivakrishna846/t3d-kenney-64-id-expanded",
       "origin_kernel": "shivakrishna846/t3d-64-unified-dit-train (v2)",
       "status": "VERIFIED",
-      "notes": "Trained for 12,000 steps with width=144, heads=6, depth=6 (2.8M params), Rectified Flow with Logit-Normal time sampling, standardized latents, Tweedie clean loss, and void geometry suppression on 1,608 Kenney assets on Tesla T4 GPU."
+      "notes": "Trained for 12,000 steps with width=144, heads=6, depth=6 (2.8M params), Rectified Flow with Logit-Normal time sampling, standardized latents, Tweedie clean loss, and void geometry suppression on 1,608 Kenney assets on Tesla T4 GPU.",
+      "tier": "optional_secondary"
     },
     {
       "name": "unified-dit-64-10000.pt",
@@ -349,7 +379,8 @@
       "kaggle_dataset": "shivakrishna846/t3d-kenney-64-id-expanded",
       "origin_kernel": "shivakrishna846/t3d-64-unified-dit-train (v2)",
       "status": "VERIFIED",
-      "notes": "Intermediate checkpoint at 10,000 steps."
+      "notes": "Intermediate checkpoint at 10,000 steps.",
+      "tier": "optional_secondary"
     },
     {
       "name": "unified-dit-64-5000.pt",
@@ -360,7 +391,8 @@
       "kaggle_dataset": "shivakrishna846/t3d-kenney-64-id-expanded",
       "origin_kernel": "shivakrishna846/t3d-64-unified-dit-train (v2)",
       "status": "VERIFIED",
-      "notes": "Intermediate checkpoint at 5,000 steps."
+      "notes": "Intermediate checkpoint at 5,000 steps.",
+      "tier": "optional_secondary"
     },
     {
       "name": "unified-dit-64-2500.pt",
@@ -371,7 +403,8 @@
       "kaggle_dataset": "shivakrishna846/t3d-kenney-64-id-expanded",
       "origin_kernel": "shivakrishna846/t3d-64-unified-dit-train (v2)",
       "status": "VERIFIED",
-      "notes": "Intermediate checkpoint at 2,500 steps."
+      "notes": "Intermediate checkpoint at 2,500 steps.",
+      "tier": "optional_secondary"
     }
   ]
 }

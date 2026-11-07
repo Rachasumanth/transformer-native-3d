@@ -74,6 +74,8 @@ def parse_args():
                         help='Optional subset of Kenney shape asset IDs to evaluate')
     parser.add_argument('--skip-fully-generated', action='store_true', default=False,
                         help='Skip end-to-end fully generated material pipeline evaluation')
+    parser.add_argument('--disable-unified', action='store_true', default=False,
+                        help='Disable Unified Single-Stage DiT and force 2-stage (Occupancy + Geometry) DiT pipeline')
     parser.add_argument('--occupancy-checkpoint', type=Path, default=None,
                         help='Path to Stage 1 Occupancy DiT checkpoint (auto-selected if omitted)')
     parser.add_argument('--geometry-checkpoint', type=Path, default=None,
@@ -129,7 +131,7 @@ def main():
     print(f"Loaded Stage 2 Geometry DiT from {geom_path}")
 
     # Load Unified Single-Stage Flow DiT if available
-    unified_path = resolve_optional('unified_64')
+    unified_path = None if args.disable_unified else resolve_optional('unified_64')
     unified_model = None
     unified_stats = None
     if unified_path is not None:

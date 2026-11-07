@@ -1,5 +1,12 @@
 # Three-stage latent flow orchestration
 
+> **Project Mission Clarification:** The primary aim of T3D is taking **raw 3D models and transforming
+> them into polished, rigged, and textured game-ready 3D assets**. The three-stage latent flow
+> described below represents our neural latent orchestration architecture (occupancy, shape/rig, and
+> material flow). In the raw-to-asset pipeline, the raw input model directly provides geometric bounds
+> and occupancy support, allowing the system to focus on surface refinement, PBR material synthesis,
+> and articulation.
+
 `t3d.generation.ThreeStageFlow` composes three independently parameterized sparse
 DiTs. Stage 1 flows a scalar occupancy value at every cell of a bounded coarse
 grid; thresholding selects the active support. Stage 2 generates shape and optional

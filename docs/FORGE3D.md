@@ -1,14 +1,14 @@
-# FORGE-3D: Raw Mesh -> Polished / Textured / Rigged Asset
+# FORGE-3D: Raw 3D Model -> Polished / Textured / Rigged Game-Ready Asset
 
-Status: design locked 2026-11-07. Owner: senior ML research (this repo).
-Companion to `docs/PRODUCTION.md` (text/image -> t3d track). FORGE-3D is a
-separate product track: **3D in, 3D out**. No text conditioning, no CLIP.
+Status: Core Production Blueprint for T3D (updated 2026-11-07).
+T3D Primary Mission: **Raw 3D In $\rightarrow$ Game-Ready Asset Out** (3D in, 3D out).
+No unconstrained text hallucinations; all processing is anchored to the input geometry.
 
 ## 1. Mission
 
 Input: any raw triangle mesh (GLB/OBJ/STL/PLY): low-poly, scanned, damaged,
-untextured, non-manifold, with holes.
-Output: a production asset:
+untextured, non-manifold, with holes, or unrigged CAD blockouts.
+Output: a production game-ready asset:
 
 1. **Polished geometry** - watertight-ish, smooth, consistent normals,
    uniform topology, detail recovered, decimated to a target budget.

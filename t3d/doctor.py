@@ -17,8 +17,8 @@ from pathlib import Path
 
 from .checkpoints import CheckpointError, release_report, repo_root, resolve_checkpoint, sha256_file
 
-REQUIRED_64 = ('occupancy_64', 'geometry_64', 'shape_vae_64')
-OPTIONAL = ('material_flow', 'material_vae', 'rig_flow', 'skin_ae')
+REQUIRED_64 = ('shape_vae_64', 'rig_flow', 'material_flow')
+OPTIONAL = ('material_vae', 'geometry_64', 'occupancy_64', 'skin_ae', 'unified_64')
 
 
 def _check(name: str, ok: bool, detail: str, *, required: bool = True) -> dict:
@@ -37,9 +37,35 @@ def _dependency_versions() -> dict:
 
 
 def run_doctor(*, artifacts: Path | str | None = None, require_gpu: bool = False,
-               check_output: Path | str | None = None, verify: bool = True) -> dict:
+               check_output: Path | str | None = None, verify: bool = True,
+               asset: Path | str | None = None, max_tris: int = 15000,
+               require_rig: bool = False) -> dict:
     checks: list[dict] = []
     warnings: list[str] = []
+
+    if asset is not None:
+        from .asset_validator import validate_production_asset
+        asset_path = Path(asset)
+        if not asset_path.exists():
+            checks.append(_check('asset_exists', False, f'Asset file not found: {asset_path}'))
+            return {
+                'ok': False,
+                'repo_root': str(repo_root()),
+                'checks': checks,
+                'warnings': warnings,
+            }
+        asset_bytes = asset_path.read_bytes()
+        asset_report = validate_production_asset(asset_bytes, max_tris=max_tris, require_rig=require_rig)
+        for gate_key, gate in asset_report['gates'].items():
+            checks.append(_check(gate['name'], gate['ok'], gate['detail'], required=True))
+        return {
+            'ok': asset_report['ok'],
+            'repo_root': str(repo_root()),
+            'asset': str(asset_path),
+            'asset_report': asset_report,
+            'checks': checks,
+            'warnings': warnings,
+        }
 
     major, minor = sys.version_info[:2]
     checks.append(_check(
@@ -135,13 +161,30 @@ def run_doctor(*, artifacts: Path | str | None = None, require_gpu: bool = False
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(prog='t3d doctor', description='Check T3D deployment prerequisites')
+    parser = argparse.ArgumentParser(prog='t3d doctor', description='Check T3D deployment prerequisites or validate production 3D assets')
     parser.add_argument('--artifacts', type=Path, default=None, help='Artifacts root override (default: T3D_ARTIFACTS or repo artifacts/)')
     parser.add_argument('--output', type=Path, default=None, help='Directory to probe for write access')
     parser.add_argument('--require-gpu', action='store_true', help='Fail when CUDA is unavailable')
     parser.add_argument('--no-verify', action='store_true', help='Skip checkpoint SHA-256 verification')
+    parser.add_argument('--asset', type=Path, default=None, help='Path to GLB asset to validate against the 10 production gates')
+    parser.add_argument('--max-tris', type=int, default=15000, help='Maximum triangles for asset validation (default: 15000)')
+    parser.add_argument('--require-rig', action='store_true', help='Enforce skinning and skeleton validation (fail if static mesh)')
     parser.add_argument('--json', action='store_true', help='Emit machine-readable JSON')
     args = parser.parse_args(argv)
+
+    if args.asset is not None:
+        report = run_doctor(asset=args.asset, max_tris=args.max_tris, require_rig=args.require_rig)
+        if args.json:
+            print(json.dumps(report, indent=2))
+        else:
+            print(f"Asset verification: {args.asset}")
+            for item in report['checks']:
+                status = 'PASS' if item['ok'] else 'FAIL'
+                print(f'[{status}] {item["name"]}: {item["detail"]}')
+            for warning in report['warnings']:
+                print(f'[WARN] {warning}')
+            print('PASS' if report['ok'] else 'FAIL')
+        return 0 if report['ok'] else 1
 
     report = run_doctor(artifacts=args.artifacts, require_gpu=args.require_gpu,
                         check_output=args.output, verify=not args.no_verify)
@@ -155,3 +198,8 @@ def main(argv: list[str] | None = None) -> int:
             print(f'[WARN] {warning}')
         print('READY' if report['ok'] else 'NOT READY')
     return 0 if report['ok'] else 1
+
+
+if __name__ == '__main__':
+    sys.exit(main())
+

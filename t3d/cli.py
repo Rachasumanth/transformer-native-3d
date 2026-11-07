@@ -71,16 +71,16 @@ def cmd_info(args):
 def main():
     parser = argparse.ArgumentParser(
         prog='t3d',
-        description='Transformer-Native 3D (.t3d) Model Format CLI'
+        description='Transformer-Native 3D (.t3d) Model Format CLI: Raw 3D Model to Game-Ready Polished, Rigged & Textured Asset Pipeline'
     )
     subparsers = parser.add_subparsers(dest='command', help='Sub-command to execute')
 
     # Subparsers with REMAINDER to pass through flags
-    subparsers.add_parser('generate', help='Generate 3D models from text prompts using flow DiT models')
-    subparsers.add_parser('export', help='Export raw T3D assets to production GLB via CUDA baking')
+    subparsers.add_parser('generate', help='Synthesize or refine game-ready 3D assets with trained flow DiT models')
+    subparsers.add_parser('export', help='Process raw 3D assets into polished, game-ready GLB meshes with PBR baking')
     subparsers.add_parser('migrate', help='Migrate legacy container to production sealed format')
     subparsers.add_parser('info', help='Inspect container metadata and voxel attributes')
-    subparsers.add_parser('doctor', help='Check deployment prerequisites and checkpoint integrity')
+    subparsers.add_parser('doctor', help='Check deployment prerequisites and checkpoint integrity', add_help=False)
     subparsers.add_parser('serve', help='Serve the HTTP generation API')
 
     parsed, unknown = parser.parse_known_args()

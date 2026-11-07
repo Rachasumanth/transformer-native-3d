@@ -1,4 +1,4 @@
-"""HTTP service for text-to-3D generation.
+"""HTTP service for game-ready 3D asset generation and processing.
 
 Endpoints
 ---------

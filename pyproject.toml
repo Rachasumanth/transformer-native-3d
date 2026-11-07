@@ -5,11 +5,11 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "transformer-native-t3d"
 version = "0.2.0"
-description = "Transformer-Native 3D: Diffusion Transformers for Watertight 3D Voxel Assets"
+description = "Transformer-Native 3D: AI Pipeline from Raw 3D Models to Polished, Rigged, and Textured Game-Ready Assets"
 readme = "README.md"
 license = "Apache-2.0"
 requires-python = ">=3.10"
-keywords = ["3d", "diffusion", "transformer", "mesh", "voxel", "glb"]
+keywords = ["3d", "retopology", "rigging", "pbr", "game-ready", "mesh", "voxel", "glb"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
@@ -21,6 +21,8 @@ classifiers = [
 ]
 dependencies = [
     "numpy>=1.24",
+    "scipy>=1.10",
+    "fast-simplification>=0.2.0",
     "hilbertcurve>=2,<3",
     "trimesh>=4,<5",
     "Pillow>=10",
@@ -40,3 +42,7 @@ dev = ["pytest>=8.0", "pytest-subtests>=0.12"]
 
 [tool.setuptools.packages.find]
 include = ["t3d*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

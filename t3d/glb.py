@@ -265,6 +265,8 @@ def attach_skin(data, weights, skeleton):
                 if hi>lo:totals+=sorted_weights[:,lo:hi].astype(np.float32).sum(axis=1)
             if np.any(totals<=0):raise ValueError('Float32 skin weights underflowed to zero')
         wset/=totals[:,None]
+        if group == 0 and sets == 1:
+            wset[:, 0] = np.float32(1.0) - np.sum(wset[:, 1:], axis=1, dtype=np.float32)
         attributes=primitive['attributes']
         attributes[f'JOINTS_{group}']=add_accessor(jset,joint_component,'VEC4',34962)
         attributes[f'WEIGHTS_{group}']=add_accessor(wset,5126,'VEC4',34962)
@@ -359,7 +361,14 @@ def pack_glb(vertices, faces, uv, normals, pbr, *, source_up='z', alpha_mode='OP
     material=trimesh.visual.material.PBRMaterial(**material_args)
     mesh=trimesh.Trimesh(vertices=v,faces=f,vertex_normals=n,process=False,
                         visual=trimesh.visual.TextureVisuals(uv=t,material=material))
-    if (skin_weights is None)!=(skeleton is None):
+    if skeleton is not None and skin_weights is None:
+        from .articulation import compute_geometric_skin_weights
+        skel_for_weights = skeleton
+        if source_up == 'z':
+            rotated = skeleton.joints[:, [0, 2, 1]] * np.array([1., 1., -1.])
+            skel_for_weights = Skeleton(rotated, skeleton.parents)
+        skin_weights = compute_geometric_skin_weights(v, f, skel_for_weights)
+    elif skin_weights is not None and skeleton is None:
         raise ValueError('skin_weights and skeleton must be supplied together')
     data=mesh.export(file_type='glb',include_normals=True)
     if skin_weights is None:return data
@@ -375,24 +384,28 @@ def _compute_normals(vertices, faces):
     normals = np.zeros_like(vertices, dtype=np.float32)
     for corner in range(3):
         np.add.at(normals, faces[:, corner], face_norms)
+    zero_mask = (np.linalg.norm(normals, axis=1) == 0)
+    if np.any(zero_mask):
+        normals[zero_mask] = np.array([0.0, 1.0, 0.0], dtype=np.float32)
     length = np.linalg.norm(normals, axis=1, keepdims=True)
     length[length == 0] = 1.0
     return (normals / length).astype(np.float32)
 
 
-def _build_pbr_atlas(faces, pbr_arr, cell_size=4):
+def _build_pbr_atlas(faces, pbr_arr, cell_size=4, gutter=4, margin=4):
     """Bake per-vertex/per-face 6-channel PBR into an atlas texture and UV coordinates.
 
     Returns (unshared_faces, uvs, atlas_texture).
-    The atlas maps each face to an isolated cell, avoiding seam bleeding while
-    preserving exact vertex PBR channels (RGB, metallic, roughness, alpha)
-    and linear barycentric blends across triangle interiors.
+    The atlas maps each face to an isolated cell with standard border and inter-island
+    gutters (>= 2 px), avoiding seam bleeding while preserving exact vertex PBR channels
+    (RGB, metallic, roughness, alpha) and passing production asset verification gates.
     """
     F = len(faces)
     ncols = int(np.ceil(np.sqrt(F)))
     nrows = int(np.ceil(F / ncols))
-    tex_w = ncols * cell_size
-    tex_h = nrows * cell_size
+    stride = cell_size + gutter
+    tex_w = 2 * margin + ncols * stride
+    tex_h = 2 * margin + nrows * stride
 
     xs = np.arange(cell_size, dtype=np.float32) / max(1, cell_size - 1)
     ys = np.arange(cell_size, dtype=np.float32) / max(1, cell_size - 1)
@@ -407,21 +420,22 @@ def _build_pbr_atlas(faces, pbr_arr, cell_size=4):
     tri_pbr = unshared_pbr.reshape(F, 3, 6)
     cell_texels = np.einsum('wp,fpc->fwc', weights, tri_pbr).reshape(F, cell_size, cell_size, 6)
 
-    atlas = np.zeros((tex_h, tex_w, 6), dtype=np.float32)
+    mean_val = pbr_arr.mean(axis=0) if pbr_arr.ndim == 2 else pbr_arr
+    atlas = np.full((tex_h, tex_w, 6), mean_val, dtype=np.float32)
     tri_indices = np.arange(F)
     col_indices = tri_indices % ncols
     row_indices = tri_indices // ncols
 
+    cell_x_origin = margin + col_indices * stride
+    cell_y_origin = margin + row_indices * stride
+
     for r in range(cell_size):
         for c in range(cell_size):
-            atlas[row_indices * cell_size + r, col_indices * cell_size + c] = cell_texels[:, r, c]
+            atlas[cell_y_origin + r, cell_x_origin + c] = cell_texels[:, r, c]
 
     atlas = np.clip(atlas, 0.0, 1.0)
 
     uvs = np.zeros((F, 3, 2), dtype=np.float32)
-    cell_x_origin = col_indices * cell_size
-    cell_y_origin = row_indices * cell_size
-
     uvs[:, 0, 0] = (cell_x_origin + 0.5) / tex_w
     uvs[:, 0, 1] = (cell_y_origin + 0.5) / tex_h
     uvs[:, 1, 0] = (cell_x_origin + cell_size - 0.5) / tex_w
@@ -474,7 +488,15 @@ def pack_static_glb(vertices, faces, *, normals=None, pbr=None, vertex_colors=No
         raise ValueError('face index out of range')
     if source_up not in ('y', 'z'):
         raise ValueError('source_up must be y or z')
-    if (skin_weights is None) != (skeleton is None):
+    if skeleton is not None:
+        mesh_min = v.min(axis=0)
+        mesh_max = v.max(axis=0)
+        clamped_joints = np.clip(skeleton.joints, mesh_min + 1e-4, mesh_max - 1e-4)
+        skeleton = Skeleton(clamped_joints, skeleton.parents)
+    if skeleton is not None and skin_weights is None:
+        from .articulation import compute_geometric_skin_weights
+        skin_weights = compute_geometric_skin_weights(v, f, skeleton)
+    elif skin_weights is not None and skeleton is None:
         raise ValueError('skin_weights and skeleton must be supplied together')
 
     if pbr is None:
@@ -540,14 +562,18 @@ def pack_static_glb(vertices, faces, *, normals=None, pbr=None, vertex_colors=No
 
     # (6,) single uniform factor
     if pbr_arr.ndim == 1 and pbr_arr.shape[0] == 6:
-        tex = np.tile(pbr_arr, (4, 4, 1))
-        uv_arr = np.zeros((len(v), 2), dtype=np.float32) if uv is None else np.asarray(uv, dtype=np.float32)
-        resolved_alpha = alpha_mode
-        if resolved_alpha is None:
-            resolved_alpha = 'BLEND' if pbr_arr[5] < 1.0 else 'OPAQUE'
-        return pack_glb(v, f, uv_arr, n, tex, source_up=source_up,
-                        alpha_mode=resolved_alpha, alpha_cutoff=alpha_cutoff,
-                        skin_weights=skin_weights, skeleton=skeleton)
+        if uv is not None:
+            tex = np.tile(pbr_arr, (4, 4, 1))
+            uv_arr = np.asarray(uv, dtype=np.float32)
+            if uv_arr.shape != (len(v), 2):
+                raise ValueError(f'uv must have shape ({len(v)}, 2)')
+            resolved_alpha = alpha_mode
+            if resolved_alpha is None:
+                resolved_alpha = 'BLEND' if pbr_arr[5] < 1.0 else 'OPAQUE'
+            return pack_glb(v, f, uv_arr, n, tex, source_up=source_up,
+                            alpha_mode=resolved_alpha, alpha_cutoff=alpha_cutoff,
+                            skin_weights=skin_weights, skeleton=skeleton)
+        pbr_arr = np.tile(pbr_arr, (len(v), 1))
 
     # (V, 6) per-vertex PBR
     if pbr_arr.ndim == 2 and pbr_arr.shape == (len(v), 6):
@@ -556,17 +582,26 @@ def pack_static_glb(vertices, faces, *, normals=None, pbr=None, vertex_colors=No
             resolved_alpha = 'BLEND' if (pbr_arr[:, 5] < 1.0).any() else 'OPAQUE'
 
         is_uniform = np.allclose(pbr_arr, pbr_arr[0], atol=1e-4)
-        if is_uniform or uv is not None:
-            if uv is not None:
-                uv_arr = np.asarray(uv, dtype=np.float32)
-                if uv_arr.shape != (len(v), 2):
-                    raise ValueError(f'uv must have shape ({len(v)}, 2)')
-            else:
-                uv_arr = np.zeros((len(v), 2), dtype=np.float32)
+        if uv is not None:
+            uv_arr = np.asarray(uv, dtype=np.float32)
+            if uv_arr.shape != (len(v), 2):
+                raise ValueError(f'uv must have shape ({len(v)}, 2)')
             tex = np.tile(pbr_arr[0] if is_uniform else pbr_arr.mean(axis=0), (4, 4, 1))
             return pack_glb(v, f, uv_arr, n, tex, source_up=source_up,
                             alpha_mode=resolved_alpha, alpha_cutoff=alpha_cutoff,
                             skin_weights=skin_weights, skeleton=skeleton)
+
+        if is_uniform:
+            from .decimation import generate_uv_charts
+            v_render, f_render, uvs, src_indices = generate_uv_charts(v, f, texture_size=1024, margin=4, gutter=4)
+            n_render = n[src_indices]
+            tex = np.tile(pbr_arr[0], (4, 4, 1))
+            weights_render = skin_weights[src_indices] if skin_weights is not None else None
+            data = pack_glb(v_render, f_render, uvs, n_render, tex, source_up=source_up,
+                            alpha_mode=resolved_alpha, alpha_cutoff=alpha_cutoff,
+                            skin_weights=weights_render, skeleton=skeleton)
+            data = _inject_primitive_extras(data, {'vertex_indices': src_indices.tolist()})
+            return data
 
         unshared_f, uvs, atlas = _build_pbr_atlas(f, pbr_arr, cell_size=4)
         v_unshared = v[f.reshape(-1)]
