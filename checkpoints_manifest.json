@@ -328,6 +328,50 @@
       "origin_kernel": "shivakrishna846/t3d-64-expand-train (v1)",
       "status": "VERIFIED",
       "notes": "Expanded 1648-asset Kenney corpus (19 kits) in-distribution holdout (1608 train / 40 val); 20,000 steps, width 144, heads 6, depth 6 (2.8M params), composite flow + Tweedie loss + distractor zero-suppression; origin kernel shivakrishna846/t3d-64-expand-train v1 on Tesla T4"
+    },
+    {
+      "name": "unified-dit-64-12000.pt",
+      "stage": "Unified Single-Stage Flow DiT (64\u00b3 - Step 12000 - Production)",
+      "description": "Unified Single-Stage Flow DiT jointly predicting occupancy and continuous SC-VAE geometry on all 64 coarse cells via Rectified Flow Matching with Logit-Normal time sampling, latent standardization, and Interval CFG",
+      "file_size_bytes": 11330589,
+      "sha256": "e32b25adab5e85877dc0fa3030aec0710add2b1bb3d954304377e4200b3286ab",
+      "kaggle_dataset": "shivakrishna846/t3d-kenney-64-id-expanded",
+      "origin_kernel": "shivakrishna846/t3d-64-unified-dit-train (v2)",
+      "status": "VERIFIED",
+      "notes": "Trained for 12,000 steps with width=144, heads=6, depth=6 (2.8M params), Rectified Flow with Logit-Normal time sampling, standardized latents, Tweedie clean loss, and void geometry suppression on 1,608 Kenney assets on Tesla T4 GPU."
+    },
+    {
+      "name": "unified-dit-64-10000.pt",
+      "stage": "Unified Single-Stage Flow DiT (64\u00b3 - Step 10000)",
+      "description": "Intermediate 10000-step checkpoint for Unified Single-Stage Flow DiT",
+      "file_size_bytes": 11330589,
+      "sha256": "0a35ec2ade307086d25a548169bdf246b9472372b7bc87131ad092f146e998bc",
+      "kaggle_dataset": "shivakrishna846/t3d-kenney-64-id-expanded",
+      "origin_kernel": "shivakrishna846/t3d-64-unified-dit-train (v2)",
+      "status": "VERIFIED",
+      "notes": "Intermediate checkpoint at 10,000 steps."
+    },
+    {
+      "name": "unified-dit-64-5000.pt",
+      "stage": "Unified Single-Stage Flow DiT (64\u00b3 - Step 5000)",
+      "description": "Intermediate 5000-step checkpoint for Unified Single-Stage Flow DiT",
+      "file_size_bytes": 11330471,
+      "sha256": "23d11052553ba5964c87eab1fccfea4b0b8b5b87fe178d28a83c87fe1be3633f",
+      "kaggle_dataset": "shivakrishna846/t3d-kenney-64-id-expanded",
+      "origin_kernel": "shivakrishna846/t3d-64-unified-dit-train (v2)",
+      "status": "VERIFIED",
+      "notes": "Intermediate checkpoint at 5,000 steps."
+    },
+    {
+      "name": "unified-dit-64-2500.pt",
+      "stage": "Unified Single-Stage Flow DiT (64\u00b3 - Step 2500)",
+      "description": "Intermediate 2500-step checkpoint for Unified Single-Stage Flow DiT",
+      "file_size_bytes": 11330471,
+      "sha256": "ba1a7d6ca15d14fc4b50ea1942a49cc2970804dd2e39efde29c45689d40b0485",
+      "kaggle_dataset": "shivakrishna846/t3d-kenney-64-id-expanded",
+      "origin_kernel": "shivakrishna846/t3d-64-unified-dit-train (v2)",
+      "status": "VERIFIED",
+      "notes": "Intermediate checkpoint at 2,500 steps."
     }
   ]
 }

@@ -200,6 +200,7 @@ def main():
     parser.add_argument('--prompt', type=str, required=True, help='Text prompt describing the desired 3D object')
     parser.add_argument('--occupancy-checkpoint', type=Path, default=None, help='Path to Stage 1 Occupancy DiT checkpoint (auto-selected if omitted)')
     parser.add_argument('--geometry-checkpoint', type=Path, default=None, help='Path to Stage 2 Geometry DiT checkpoint (auto-selected if omitted)')
+    parser.add_argument('--unified-checkpoint', type=Path, default=None, help='Path to Unified Single-Stage Flow DiT checkpoint')
     parser.add_argument('--material-flow-checkpoint', type=Path, default=None, help='Path to Stage 3 Material Flow DiT checkpoint')
     parser.add_argument('--rig-flow-checkpoint', type=Path, default=None, help='Path to Stage 2 Rig Flow DiT checkpoint')
     parser.add_argument('--vae-checkpoint', type=Path, default=None, help='Path to Shape SC-VAE checkpoint (auto-selected if omitted)')
@@ -264,6 +265,32 @@ def main():
     geom_heads = geom_data.get('heads', max(1, geom_width // 24))
     geom_model = SparseFlowDiT(channels=geom_channels, condition_channels=32, width=geom_width, heads=geom_heads, depth=geom_depth, patch_size=64).to(device)
     geom_model.load_state_dict(geom_data['model'])
+
+    # Load Unified Single-Stage Flow DiT if available
+    unified_path = (
+        resolve_checkpoint('unified_64', path=args.unified_checkpoint)
+        if args.unified_checkpoint is not None
+        else resolve_optional('unified_64')
+    )
+    unified_model = None
+    unified_stats = None
+    if unified_path is not None and resolution in (None, 64):
+        try:
+            from .unified_dit import UnifiedFlowDiT
+            u_data = torch.load(unified_path, map_location=device, weights_only=False)
+            u_channels = int(u_data.get('latent_channels', 16))
+            u_width = int(u_data.get('width', 144))
+            u_heads = int(u_data.get('heads', 6))
+            u_depth = int(u_data.get('depth', 6))
+            unified_model = UnifiedFlowDiT(
+                latent_channels=u_channels, condition_channels=32,
+                width=u_width, heads=u_heads, depth=u_depth, patch_size=64
+            ).to(device)
+            unified_model.load_state_dict(u_data['model'])
+            unified_stats = (u_data.get('latent_mean'), u_data.get('latent_std'))
+            print(f"Loaded Unified Single-Stage Flow DiT from {unified_path}")
+        except Exception as exc:
+            unified_model = None
 
     # Resolve Stage 3 material checkpoints only when requested. Explicit paths
     # are always verified; auto discovery is opt-in through --material.
@@ -395,18 +422,26 @@ def main():
     coarse_grid_size = int(occ_data.get('grid_size', 16 if resolution == 32 else latent_grid_size))
     print(f"Configured generation at {resolution}³ resolution (coarse_grid_size={coarse_grid_size}, latent_grid_size={latent_grid_size}, grid_size={grid_size})")
 
-    print(f"Generating 3D model for prompt: \"{args.prompt}\"...")
-    active_coords, shape_latents, mat_latents = generate_latents_from_prompt(
-        args.prompt, occ_model, geom_model, conditioner,
-        material_model=mat_flow_model,
-        coarse_grid_size=coarse_grid_size,
-        latent_grid_size=latent_grid_size,
-        occupancy_steps=args.steps, geometry_steps=args.steps, material_steps=args.steps,
-        guidance=args.guidance, occupancy_guidance=args.occupancy_guidance, occupancy_threshold=args.threshold,
-        device=device, seed=args.seed, return_material=True, method=args.method
-    )
+    if unified_model is not None:
+        print(f"Generating 3D model for prompt: \"{args.prompt}\" using Unified Flow DiT...")
+        active_coords, shape_latents, mat_latents = generate_latents_unified(
+            args.prompt, unified_model, conditioner,
+            steps=args.steps, guidance=args.guidance, method=args.method,
+            seed=args.seed, device=device, latent_stats=unified_stats,
+        )
+    else:
+        print(f"Generating 3D model for prompt: \"{args.prompt}\"...")
+        active_coords, shape_latents, mat_latents = generate_latents_from_prompt(
+            args.prompt, occ_model, geom_model, conditioner,
+            material_model=mat_flow_model,
+            coarse_grid_size=coarse_grid_size,
+            latent_grid_size=latent_grid_size,
+            occupancy_steps=args.steps, geometry_steps=args.steps, material_steps=args.steps,
+            guidance=args.guidance, occupancy_guidance=args.occupancy_guidance, occupancy_threshold=args.threshold,
+            device=device, seed=args.seed, return_material=True, method=args.method
+        )
     mat_desc = f"and {len(mat_latents)} material latents" if mat_latents is not None else ""
-    print(f"Stage 1, 2 & 3 generated {len(active_coords)} active coarse latents {mat_desc}")
+    print(f"Generated {len(active_coords)} active coarse latents {mat_desc}")
 
     tokens = conditioner.encode_text(args.prompt).to(device)
     decode_th = args.decode_threshold

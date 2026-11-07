@@ -343,12 +343,11 @@ def main():
             out_vox, raw_feats = out_vox[valid], raw_feats[valid]
 
             from t3d.schema import VoxelAsset
-            from t3d.reconstruction import dual_contouring
             pa = VoxelAsset(
                 coords=out_vox[:, 1:].cpu().numpy().astype(np.int32),
                 dual_vertices=raw_feats[:, :3].sigmoid().cpu().numpy(),
             )
-            pred_v, pred_f = dual_contouring(pa)
+            pred_v, pred_f = voxels_to_mesh(pa, resolve_nonmanifold=True)
 
             if len(pred_v) == 0 or len(pred_f) == 0:
                 benchmark_results.append(dict(asset_id=asset_id, error='empty mesh'))

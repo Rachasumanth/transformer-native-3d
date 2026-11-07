@@ -128,6 +128,28 @@ def main():
     geom_model.load_state_dict(geom_data['model'])
     print(f"Loaded Stage 2 Geometry DiT from {geom_path}")
 
+    # Load Unified Single-Stage Flow DiT if available
+    unified_path = resolve_optional('unified_64')
+    unified_model = None
+    unified_stats = None
+    if unified_path is not None:
+        try:
+            from t3d.unified_dit import UnifiedFlowDiT
+            u_data = torch.load(unified_path, map_location=device, weights_only=False)
+            unified_model = UnifiedFlowDiT(
+                latent_channels=int(u_data.get('latent_channels', 16)),
+                condition_channels=32,
+                width=int(u_data.get('width', 144)),
+                heads=int(u_data.get('heads', 6)),
+                depth=int(u_data.get('depth', 6)),
+                patch_size=64,
+            ).to(device)
+            unified_model.load_state_dict(u_data['model'])
+            unified_stats = (u_data.get('latent_mean'), u_data.get('latent_std'))
+            print(f"Loaded Unified Single-Stage Flow DiT from {unified_path}")
+        except Exception as exc:
+            unified_model = None
+
     # Determine resolution and latent grid size
     resolution = args.resolution
     if resolution is None:
@@ -237,13 +259,21 @@ def main():
         t0 = time.perf_counter()
 
         # Generate latents and decode
-        active_coords, shape_latents = generate_latents_from_prompt(
-            prompt, occ_model, geom_model, conditioner,
-            coarse_grid_size=coarse_grid_size, latent_grid_size=latent_grid_size,
-            occupancy_steps=args.occupancy_steps, geometry_steps=args.geometry_steps,
-            guidance=args.guidance, occupancy_guidance=args.occupancy_guidance, occupancy_threshold=args.occupancy_threshold,
-            device=device, seed=42, method=args.method
-        )
+        if unified_model is not None:
+            from t3d.generate import generate_latents_unified
+            active_coords, shape_latents, _ = generate_latents_unified(
+                prompt, unified_model, conditioner,
+                steps=args.geometry_steps, guidance=args.guidance, method=args.method,
+                seed=42, device=device, latent_stats=unified_stats,
+            )
+        else:
+            active_coords, shape_latents = generate_latents_from_prompt(
+                prompt, occ_model, geom_model, conditioner,
+                coarse_grid_size=coarse_grid_size, latent_grid_size=latent_grid_size,
+                occupancy_steps=args.occupancy_steps, geometry_steps=args.geometry_steps,
+                guidance=args.guidance, occupancy_guidance=args.occupancy_guidance, occupancy_threshold=args.occupancy_threshold,
+                device=device, seed=42, method=args.method
+            )
         pred_asset = generate_asset_from_latents(active_coords, shape_latents, vae_model, grid_size=grid_size, threshold=decode_threshold)
         pred_v, pred_f = voxels_to_mesh(pred_asset, resolve_nonmanifold=True)
         gen_time = time.perf_counter() - t0

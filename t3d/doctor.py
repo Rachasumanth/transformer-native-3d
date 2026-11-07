@@ -76,10 +76,12 @@ def run_doctor(*, artifacts: Path | str | None = None, require_gpu: bool = False
 
     from .checkpoints import manifest_entries
     entries = manifest_entries()
-    for role in REQUIRED_64:
+    for role in (*REQUIRED_64, 'unified_64'):
         found = report.get('roles', {}).get(role, {})
         path = found.get('path')
         if not path:
+            if role == 'unified_64':
+                continue
             checks.append(_check(f'checkpoint:{role}', False, 'not found'))
             continue
         expected = entries.get(Path(path).name)
