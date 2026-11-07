@@ -56,8 +56,28 @@ class ServiceState:
         self.generation_seconds_total = 0.0
         self.generation_count = 0
         self.generation_errors = 0
-        self.lock = asyncio.Lock()
-        self.semaphore = asyncio.Semaphore(max(1, int(os.environ.get('T3D_MAX_CONCURRENCY', '1'))))
+        self._locks: dict = {}
+        self._semaphores: dict = {}
+
+    @property
+    def lock(self) -> asyncio.Lock:
+        try:
+            loop = asyncio.get_running_loop()
+        except RuntimeError:
+            return asyncio.Lock()
+        if loop not in self._locks:
+            self._locks[loop] = asyncio.Lock()
+        return self._locks[loop]
+
+    @property
+    def semaphore(self) -> asyncio.Semaphore:
+        try:
+            loop = asyncio.get_running_loop()
+        except RuntimeError:
+            return asyncio.Semaphore(max(1, int(os.environ.get('T3D_MAX_CONCURRENCY', '1'))))
+        if loop not in self._semaphores:
+            self._semaphores[loop] = asyncio.Semaphore(max(1, int(os.environ.get('T3D_MAX_CONCURRENCY', '1'))))
+        return self._semaphores[loop]
 
     async def ensure_runtime(self) -> T3DRuntime:
         if self.runtime is not None:
