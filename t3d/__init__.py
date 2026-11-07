@@ -4,7 +4,10 @@ from .decimation import bake_tangent_normal_map, decimate_mesh
 from .models.unified_dit import UnifiedDiT
 from .pipeline import T3DOutput, T3DPipeline
 
+__version__ = "1.0.0"
+
 __all__ = [
+    "__version__",
     "UnifiedDiT",
     "T3DPipeline",
     "T3DOutput",
