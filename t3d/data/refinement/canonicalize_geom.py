@@ -231,6 +231,8 @@ def decimate_crease_preserving(
         v_final, f_final = v_simp, f_simp
 
     result = trimesh.Trimesh(vertices=v_final, faces=f_final, process=False)
+    result.update_faces(result.nondegenerate_faces())
+    result.update_faces(result.unique_faces())
     trimesh.repair.fix_winding(result)
     trimesh.repair.fix_inversion(result)
     trimesh.repair.fix_normals(result)

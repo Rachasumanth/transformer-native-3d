@@ -20,6 +20,7 @@ from typing import Dict, Optional, Tuple, Union
 import numpy as np
 import torch
 from torch import nn
+import torch.nn.functional as F
 from torch.optim import AdamW
 
 from t3d.models.unified_dit import UnifiedDiT, flow_pair as dit_flow_pair, flow_loss as dit_flow_loss
@@ -74,8 +75,8 @@ class UnifiedT3DTrainer:
 
         # 2. Rigging Skeleton & Skinning Module
         self.skeleton_flow = SkeletonFlowModel(
-            joint_dim=3,
-            cond_dim=dim,
+            joint_count=5,
+            cond_dim=latent_channels + 1,
             hidden_dim=dim,
             num_layers=2,
         ).to(self.device)
@@ -122,7 +123,7 @@ class UnifiedT3DTrainer:
         # 1. Geometry DiT Flow Loss (Optimal Transport Rectified Flow)
         t = sample_logit_normal(size=(B,), device=self.device)
         x_0_noise = torch.randn_like(x_1)
-        x_t, v_target = dit_flow_pair(clean=x_1, noise=x_0_noise, t=t)
+        x_t, v_target = dit_flow_pair(clean=x_1, noise=x_0_noise, time=t)
 
         v_pred = self.dit(x_t, t, c_raw=c_raw)
 
@@ -151,11 +152,11 @@ class UnifiedT3DTrainer:
         joints_t = (1.0 - t_rig.view(B, 1, 1)) * rig_noise + t_rig.view(B, 1, 1) * joints_clean
         v_rig_target = joints_clean - rig_noise
 
-        v_rig_pred = self.skeleton_flow(joints_t, t_rig, cond_emb, parents=parents)
+        v_rig_pred = self.skeleton_flow(joints_t, t_rig, cond_emb)
         loss_rig_flow = F.mse_loss(v_rig_pred, v_rig_target)
 
         # Containment penalty ensuring joints remain strictly inside [-0.45, 0.45]^3
-        mesh_bounds = (-0.45, 0.45, -0.45, 0.45, -0.45, 0.45)
+        mesh_bounds = ((-0.45, -0.45, -0.45), (0.45, 0.45, 0.45))
         loss_containment = containment_loss(joints_clean, mesh_bounds=mesh_bounds)
         loss_rig = loss_rig_flow + 0.5 * loss_containment
 
@@ -164,8 +165,8 @@ class UnifiedT3DTrainer:
         loss_pbr = pbr_flow_loss(
             self.pbr_flow,
             clean_textures=tex_clean,
-            geom_condition=c_raw.permute(0, 2, 1).unsqueeze(-1).expand(-1, -1, 32, 32)[..., :32],
-            device=self.device,
+            geom_cond=c_raw.mean(dim=1),
+            latent_cond=x_0_lat.mean(dim=1),
         )
 
         # Total multi-head loss
@@ -214,7 +215,7 @@ class UnifiedT3DTrainer:
             "--clobber",
         ]
         logger.info("Uploading checkpoint %s to %s release %s...", checkpoint_path.name, repo, tag)
-        res = subprocess.run(cmd, capture_output=True, text=True)
+        res = subprocess.run(cmd, capture_output=True, text=True, stdin=subprocess.DEVNULL, timeout=120)
         if res.returncode == 0:
             logger.info("GitHub upload verified for %s", checkpoint_path.name)
             return True

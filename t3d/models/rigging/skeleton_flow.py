@@ -330,8 +330,12 @@ def containment_loss(
 
     if mesh_bounds is not None:
         if isinstance(mesh_bounds, (tuple, list)):
-            b_min = torch.as_tensor(mesh_bounds[0], device=joints.device, dtype=joints.dtype)
-            b_max = torch.as_tensor(mesh_bounds[1], device=joints.device, dtype=joints.dtype)
+            if len(mesh_bounds) == 6:
+                b_min = torch.as_tensor([mesh_bounds[0], mesh_bounds[2], mesh_bounds[4]], device=joints.device, dtype=joints.dtype)
+                b_max = torch.as_tensor([mesh_bounds[1], mesh_bounds[3], mesh_bounds[5]], device=joints.device, dtype=joints.dtype)
+            else:
+                b_min = torch.as_tensor(mesh_bounds[0], device=joints.device, dtype=joints.dtype)
+                b_max = torch.as_tensor(mesh_bounds[1], device=joints.device, dtype=joints.dtype)
         else:
             b = torch.as_tensor(mesh_bounds, device=joints.device, dtype=joints.dtype)
             b_min, b_max = b[..., 0, :], b[..., 1, :]

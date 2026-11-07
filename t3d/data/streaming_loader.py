@@ -136,7 +136,7 @@ class LatentsRingBuffer:
                 "--clobber",
             ]
             logger.info("Downloading remote shard %s from %s release %s...", filename, target_repo, target_tag)
-            res = subprocess.run(cmd, capture_output=True, text=True)
+            res = subprocess.run(cmd, capture_output=True, text=True, stdin=subprocess.DEVNULL, timeout=60)
             if res.returncode != 0:
                 logger.error("Failed downloading %s: %s", filename, res.stderr)
                 raise FileNotFoundError(

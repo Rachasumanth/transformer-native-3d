@@ -133,20 +133,22 @@ def evaluate_surface_distance_and_fscore(
     """Evaluate Mean Surface Distance (MSD), precision, recall, and F-Score @ tolerance."""
     pred_mesh = trimesh.Trimesh(vertices=pred_vertices, faces=pred_faces, process=False)
     gt_mesh = trimesh.Trimesh(vertices=gt_vertices, faces=gt_faces, process=False)
+    pred_mesh.update_faces(pred_mesh.nondegenerate_faces())
+    gt_mesh.update_faces(gt_mesh.nondegenerate_faces())
 
     pred_samples, _ = trimesh.sample.sample_surface(pred_mesh, num_samples)
     gt_samples, _ = trimesh.sample.sample_surface(gt_mesh, num_samples)
 
-    pred_bvh = TriangleBVH(pred_vertices, pred_faces)
-    gt_bvh = TriangleBVH(gt_vertices, gt_faces)
+    pred_bvh = TriangleBVH(pred_mesh.vertices, pred_mesh.faces)
+    gt_bvh = TriangleBVH(gt_mesh.vertices, gt_mesh.faces)
 
     gt_ids, gt_bary = gt_bvh.query(pred_samples)
-    gt_tri_verts = gt_vertices[gt_faces[gt_ids]]
+    gt_tri_verts = gt_mesh.vertices[gt_mesh.faces[gt_ids]]
     gt_closest = np.sum(gt_tri_verts * gt_bary[:, :, None], axis=1)
     pred_to_gt_dists = np.linalg.norm(pred_samples - gt_closest, axis=1)
 
     pred_ids, pred_bary = pred_bvh.query(gt_samples)
-    pred_tri_verts = pred_vertices[pred_faces[pred_ids]]
+    pred_tri_verts = pred_mesh.vertices[pred_mesh.faces[pred_ids]]
     pred_closest = np.sum(pred_tri_verts * pred_bary[:, :, None], axis=1)
     gt_to_pred_dists = np.linalg.norm(gt_samples - pred_closest, axis=1)
 

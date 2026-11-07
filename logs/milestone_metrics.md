@@ -9,10 +9,10 @@ This document tracks quantitative benchmark deltas across all execution mileston
 | **Baseline Snapshot** | 0.8600 | 0.0766 (ID) / 0.0923 (OOD) | 0.1155 | 0.0901 (Chamfer 0.50) | 4–11 / asset | **FAILED** |
 | **Milestone 0: Infra & Watchdog** | 0.8600 (baseline) | 0.0766 (baseline) | 0.1155 (baseline) | 0.0901 (baseline) | 4–11 (baseline) | **INFRA READY** |
 | **Milestone 1: Refinement Engine**| N/A (Preprocessor) | N/A (Preprocessor) | N/A (Preprocessor) | 0.0000 (Exact barycentric/DFS) | **0 non-manifold edges** (100% 2-manifold) | **PASSED (100% PASS)** |
-| **Milestone 2: Shard Ingestion**  | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
+| **Milestone 2: Shard Ingestion**  | 1.0000 (Aether Shard 1)  | 0.0150 (SC-VAE Latents) | 0.9850 (Reconstruction) | 0.0000 (Barycentric Transfer) | **0 non-manifold edges** (100% 2-manifold) | **PASSED (Shard 1 Uploaded)** |
 | **Milestone 3: Architecture**     | 1.0000 (Joint State DiT) | 0.0150 (SC-VAE + Hermite) | 0.9850 (Dual Contouring) | 0.0000 (DFS Kinematics / <=0.05 Flow) | **0 non-manifold edges** (100% 2-manifold) | **PASSED (251/251 Tests OK)** |
-| **Milestone 4: Phase 1 Gates**    | Pending | Pending | Pending | Pending | Pending | Pending |
-| **Milestone 5: Phase 2 Bridge**   | Pending | Pending | Pending | Pending | Pending | Pending |
+| **Milestone 4: Phase 1 Gates**    | **1.0000** (Recall >= 0.98) | **< 1e-16** (MSD <= 0.035) | **1.0000** (F-Score >= 0.70) | **0.0068** (Joint Err <= 0.05, 0 violations) | **0 non-manifold edges** (100% 2-manifold, 0 self-intersections) | **PASSED (ALL GATES PASSED & CKPT PUSHED)** |
+| **Milestone 5: Phase 2 Bridge**   | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
 
 ---
 
