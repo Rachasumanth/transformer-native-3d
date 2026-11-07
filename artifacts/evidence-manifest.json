@@ -66,6 +66,10 @@
         "validation_count": 2336
       }
     },
+    "progress_md": {
+      "path": "PROGRESS.md",
+      "status": "UPDATED_WITH_REMEDIATION_GAP_TABLE"
+    },
     "verification_reports": {
       "rebuild_sample_100_report": {
         "path": "artifacts/rebuild-sample-100-report.json",

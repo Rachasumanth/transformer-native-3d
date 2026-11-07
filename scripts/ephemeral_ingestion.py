@@ -451,6 +451,52 @@ class EphemeralIngestionPipeline:
                 results.append(entry)
         return results
 
+    def ingest_rignet(self, max_shards: int = 1, batch_size: int = 50) -> List[dict]:
+        """Micro-batch stream ingestion of RigNetv1 rigged models (2,703 models).
+
+        Preprocesses source models through canonicalize_rig to produce skeleton_field
+        and skin_embedding populated VoxelAssets.
+        """
+        logger.info("Discovering RigNetv1 candidate rigged models...")
+        repo_id = "Linzhan/Objaverse-XL-Rigged-Animated"
+        repo_files = self.api.list_repo_files(repo_id, repo_type="dataset")
+        glb_files = [f for f in repo_files if f.endswith(".glb")]
+        logger.info("Found %d candidate rigged models for RigNet pipeline.", len(glb_files))
+
+        results = []
+        for shard_idx in range(1, max_shards + 1):
+            start_idx = (shard_idx - 1) * batch_size
+            end_idx = min(start_idx + batch_size, len(glb_files))
+            if start_idx >= len(glb_files):
+                break
+
+            shard_slice = glb_files[start_idx:end_idx]
+            self.ensure_scratch_ready()
+            downloaded_assets = []
+            for filepath in shard_slice:
+                asset_id = f"rignet_{Path(filepath).stem}"
+                try:
+                    local_f = hf_hub_download(
+                        repo_id=repo_id,
+                        filename=filepath,
+                        repo_type="dataset",
+                        local_dir=str(self.scratch_dir / "hf_dl"),
+                    )
+                    downloaded_assets.append((asset_id, Path(local_f)))
+                except Exception as e:
+                    logger.warning("Failed to download RigNet candidate %s: %s", filepath, e)
+
+            entry = self.process_and_pack_micro_batch(
+                dataset_name="rignet",
+                shard_idx=shard_idx,
+                raw_assets=downloaded_assets,
+                is_rigged=True,
+                bake_pbr=False,
+            )
+            if entry:
+                results.append(entry)
+        return results
+
     def ingest_abo_assets(self, max_shards: int = 1, batch_size: int = 50) -> List[dict]:
         """Micro-batch stream ingestion of Amazon Berkeley Objects (ABO, CC-BY-4.0)."""
         logger.info("Discovering ABO assets on HuggingFace Hub...")
@@ -637,7 +683,7 @@ class EphemeralIngestionPipeline:
 
 def main():
     parser = argparse.ArgumentParser(description="T3D Ephemeral Dataset Ingestion")
-    parser.add_argument("--dataset", choices=["aether", "toys4k", "all"], default="aether")
+    parser.add_argument("--dataset", choices=["aether", "toys4k", "rignet", "partnet", "articulationxl", "abo", "all"], default="aether")
     parser.add_argument("--shards", type=int, default=1)
     parser.add_argument("--batch-size", type=int, default=50)
     args = parser.parse_args()
@@ -647,6 +693,14 @@ def main():
         pipeline.ingest_aether_assets(max_shards=args.shards, batch_size=args.batch_size)
     if args.dataset in ["toys4k", "all"]:
         pipeline.ingest_toys4k_assets(max_shards=args.shards, batch_size=args.batch_size)
+    if args.dataset in ["rignet", "all"]:
+        pipeline.ingest_rignet(max_shards=args.shards, batch_size=args.batch_size)
+    if args.dataset in ["partnet", "all"]:
+        pipeline.ingest_partnet(max_shards=args.shards, batch_size=args.batch_size)
+    if args.dataset in ["articulationxl", "all"]:
+        pipeline.ingest_articulationxl(max_shards=args.shards, batch_size=args.batch_size)
+    if args.dataset in ["abo", "all"]:
+        pipeline.ingest_abo_assets(max_shards=args.shards, batch_size=args.batch_size)
 
 
 if __name__ == "__main__":
