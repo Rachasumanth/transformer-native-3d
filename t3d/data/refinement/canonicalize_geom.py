@@ -231,8 +231,13 @@ def decimate_crease_preserving(
         v_final, f_final = v_simp, f_simp
 
     result = trimesh.Trimesh(vertices=v_final, faces=f_final, process=False)
-    result.update_faces(result.nondegenerate_faces())
-    result.update_faces(result.unique_faces())
+    if not result.is_watertight:
+        cand = result.copy()
+        cand.update_faces(cand.nondegenerate_faces())
+        cand.update_faces(cand.unique_faces())
+        trimesh.repair.fill_holes(cand)
+        if cand.is_watertight:
+            result = cand
     trimesh.repair.fix_winding(result)
     trimesh.repair.fix_inversion(result)
     trimesh.repair.fix_normals(result)

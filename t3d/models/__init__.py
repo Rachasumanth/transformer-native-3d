@@ -28,6 +28,13 @@ from .pbr_flow import (
     pbr_flow_loss,
     sample_pbr_flow,
 )
+from .frontend_adapter import (
+    MultimodalFrontEndAdapter,
+    CoordinatePositionalEmbedding,
+    AdapterTransformerBlock,
+    adapter_loss,
+    compute_occupancy_metrics,
+)
 from . import rigging
 
 __all__ = [
@@ -54,5 +61,10 @@ __all__ = [
     "pbr_flow_pair",
     "pbr_flow_loss",
     "sample_pbr_flow",
+    "MultimodalFrontEndAdapter",
+    "CoordinatePositionalEmbedding",
+    "AdapterTransformerBlock",
+    "adapter_loss",
+    "compute_occupancy_metrics",
     "rigging",
 ]

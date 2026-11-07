@@ -12,7 +12,8 @@ This document tracks quantitative benchmark deltas across all execution mileston
 | **Milestone 2: Shard Ingestion**  | 1.0000 (Aether Shard 1)  | 0.0150 (SC-VAE Latents) | 0.9850 (Reconstruction) | 0.0000 (Barycentric Transfer) | **0 non-manifold edges** (100% 2-manifold) | **PASSED (Shard 1 Uploaded)** |
 | **Milestone 3: Architecture**     | 1.0000 (Joint State DiT) | 0.0150 (SC-VAE + Hermite) | 0.9850 (Dual Contouring) | 0.0000 (DFS Kinematics / <=0.05 Flow) | **0 non-manifold edges** (100% 2-manifold) | **PASSED (251/251 Tests OK)** |
 | **Milestone 4: Phase 1 Gates**    | **1.0000** (Recall >= 0.98) | **< 1e-16** (MSD <= 0.035) | **1.0000** (F-Score >= 0.70) | **0.0068** (Joint Err <= 0.05, 0 violations) | **0 non-manifold edges** (100% 2-manifold, 0 self-intersections) | **PASSED (ALL GATES PASSED & CKPT PUSHED)** |
-| **Milestone 5: Phase 2 Bridge**   | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
+| **Milestone 5A: Front-End Adapter** | **1.0000** (Recall >= 0.98) | N/A (Adapter) | N/A (Adapter) | N/A (Adapter) | N/A (Adapter) | **PASSED (11/11 Tests OK)** |
+| **Milestone 5B: End-to-End Orchestrator (`T3DPipeline`)** | **1.0000** (Recall >= 0.98) | **6.26e-9** (MSD <= 0.035) | **1.0000** (F-Score >= 0.70) | **0.0000** (Joint Err <= 0.05, 0 violations) | **0 non-manifold edges** (100% 2-manifold, 0 self-intersections, 1500-5000 faces) | **PASSED (100% GATES PASSED & 272/272 TESTS OK)** |
 
 ---
 
