@@ -42,8 +42,16 @@ def resolve_nonmanifold_faces(vertices: np.ndarray, faces: np.ndarray) -> np.nda
         e1 = np.sort(faces[:, [1, 2]], axis=1)
         e2 = np.sort(faces[:, [2, 0]], axis=1)
         edges = np.vstack([e0, e1, e2])
-        keys = (edges[:, 0].astype(np.int64) << 32) | edges[:, 1].astype(np.int64)
-        unique, inv, counts = np.unique(keys, return_inverse=True, return_counts=True)
+        order = np.lexsort((edges[:, 1], edges[:, 0]))
+        sorted_edges = edges[order]
+        change = np.ones(len(sorted_edges), dtype=bool)
+        if len(sorted_edges) > 1:
+            change[1:] = np.any(sorted_edges[1:] != sorted_edges[:-1], axis=1)
+        starts = np.flatnonzero(change)
+        counts = np.diff(np.append(starts, len(sorted_edges)))
+        edge_ids_sorted = np.cumsum(change) - 1
+        inv = np.empty(len(edges), dtype=np.int64)
+        inv[order] = edge_ids_sorted
         bad_mask = counts > 2
         if not np.any(bad_mask):
             break

@@ -106,6 +106,18 @@ class ExtractionTests(unittest.TestCase):
         self.assertTrue(all(count <= 2 for count in edges.values()))
         self.assertLess(len(cleaned), len(faces_nm))
 
+    def test_resolve_nonmanifold_faces_large_vertex_indices(self):
+        # Regression: packed edge keys with large vertex ids must not be used as
+        # array indices inside the cleanup loop.
+        rng = np.random.default_rng(0)
+        v = rng.random((200_000, 3))
+        faces = np.array([[16384, 71837, 5], *[[16384, 71837, i] for i in range(6, 14)]])
+        cleaned = resolve_nonmanifold_faces(v, faces)
+        edges = Counter(tuple(sorted((int(a), int(b)))) for tri in cleaned
+                        for a, b in zip(tri, np.roll(tri, -1)))
+        self.assertTrue(all(count <= 2 for count in edges.values()))
+        self.assertEqual(len(cleaned), 2)
+
     def test_resolve_nonmanifold_faces_preserves_clean_manifold(self):
         # Cube mesh is already 2-manifold
         v = np.array([[x, y, z] for x in (.2, .8) for y in (.2, .8) for z in (.2, .8)])

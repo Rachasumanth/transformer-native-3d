@@ -29,6 +29,9 @@ class AssetDataset:
         if split not in ('train', 'validation', 'test'):
             raise ValueError('Invalid dataset split')
         self.require_pbr = require_pbr
+        self.split_policy = document.get('split_policy', 'group_disjoint')
+        if self.split_policy not in ('group_disjoint', 'in_distribution_holdout'):
+            raise ValueError('Unsupported split policy')
         self.fingerprint = hashlib.sha256(self.manifest.read_bytes()).hexdigest()
         records, ids, hashes, paths = [], set(), set(), set()
         source_splits, group_splits = {}, {}
@@ -46,12 +49,13 @@ class AssetDataset:
             if (record.source_group is not None and
                     (not isinstance(record.source_group, str) or not record.source_group.strip())):
                 raise ValueError('Invalid source group')
-            for identity, seen in ((record.source_sha256, source_splits),
-                                   (record.source_group, group_splits)):
-                if identity is not None:
-                    if identity in seen and seen[identity] != record.split:
-                        raise ValueError('Source identity crosses dataset splits')
-                    seen[identity] = record.split
+            if self.split_policy == 'group_disjoint':
+                for identity, seen in ((record.source_sha256, source_splits),
+                                       (record.source_group, group_splits)):
+                    if identity is not None:
+                        if identity in seen and seen[identity] != record.split:
+                            raise ValueError('Source identity crosses dataset splits')
+                        seen[identity] = record.split
             path = (self.manifest.parent/record.path).resolve()
             if Path(record.path).is_absolute() or not path.is_relative_to(self.manifest.parent):
                 raise ValueError('Asset path must stay within the manifest directory')

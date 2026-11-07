@@ -1,5 +1,5 @@
 """Train Stage 1 text-conditioned coarse occupancy DiT on the 64³ Kenney corpus."""
-import hashlib, json, time
+import hashlib, json, os, time
 from pathlib import Path
 import numpy as np
 import torch
@@ -21,32 +21,42 @@ def build_latent_occupancy(asset, grid_dim=4):
 
 
 def main():
-    if not torch.cuda.is_available():
-        raise RuntimeError('CUDA required for DiT flow training')
-
-    device = 'cuda'
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
     torch.manual_seed(42)
-    torch.cuda.manual_seed_all(42)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(42)
+    else:
+        torch.set_num_threads(max(1, os.cpu_count() or 1))
 
     # Discover dataset
-    matches = list(Path('/kaggle/input').rglob('manifest.json'))
-    corpus_matches = [
-        p for p in matches
-        if 't3d-kenney-corpus-64' in str(p) or (p.parent / 'manifest.json').exists() and '64' in str(p)
-    ]
-    if not corpus_matches:
-        candidates = [
-            Path('artifacts/kenney-corpus-64/manifest.json'),
-            *list(Path('/kaggle/input').rglob('manifest.json'))
+    env_manifest = os.environ.get('T3D_MANIFEST')
+    if env_manifest:
+        manifest_path = Path(env_manifest)
+        if not manifest_path.exists():
+            raise FileNotFoundError(f'T3D_MANIFEST not found: {manifest_path}')
+    else:
+        matches = list(Path('/kaggle/input').rglob('manifest.json'))
+        corpus_matches = [
+            p for p in matches
+            if 't3d-kenney-corpus-64' in str(p) or (p.parent / 'manifest.json').exists() and '64' in str(p)
         ]
-        corpus_matches = [p for p in candidates if p.exists() and '64' in str(p)]
-    if not corpus_matches:
-        raise FileNotFoundError('Mounted t3d-kenney-corpus-64 dataset not found')
-    manifest_path = corpus_matches[0]
+        if not corpus_matches:
+            candidates = [
+                Path('artifacts/kenney-corpus-64/manifest.json'),
+                *list(Path('/kaggle/input').rglob('manifest.json'))
+            ]
+            corpus_matches = [p for p in candidates if p.exists() and '64' in str(p)]
+        if not corpus_matches:
+            raise FileNotFoundError('Mounted t3d-kenney-corpus-64 dataset not found')
+        manifest_path = corpus_matches[0]
     print(f'Using 64³ corpus manifest: {manifest_path}', flush=True)
 
     train_ds = AssetDataset(manifest_path, split='train')
     val_ds = AssetDataset(manifest_path, split='validation')
+    limit = int(os.environ.get('T3D_LIMIT', '0'))
+    if limit:
+        train_ds.records = train_ds.records[:limit]
+        val_ds.records = val_ds.records[:min(limit, len(val_ds.records))]
     print(f'Loaded {len(train_ds)} train, {len(val_ds)} validation assets (64³)', flush=True)
 
     grid_dim = 4
@@ -54,18 +64,14 @@ def main():
 
     cond_dim = 32
     print('Initializing CLIP prompt conditioner...', flush=True)
-    conditioner = PromptConditioner.from_pretrained(
-        image_model='facebook/dinov2-small',
-        image_revision='ed25f3a31f01632728cabb09d1542f84ab7b0056',
-        text_model='openai/clip-vit-base-patch32',
-        text_revision='3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268',
-        output_channels=cond_dim
-    ).to(device)
+    conditioner = PromptConditioner.from_env(output_channels=cond_dim).to(device)
 
     # DiT Flow Backbone (head_dim = width // heads = 144 // 6 = 24, divisible by 6 for 3D RoPE; 2.8M params)
     model = SparseFlowDiT(channels=1, condition_channels=cond_dim, width=144, heads=6, depth=6, patch_size=64).to(device)
+    total_steps = int(os.environ.get('T3D_STEPS', '4000'))
+    batch_size = int(os.environ.get('T3D_BATCH', '4'))
     optimizer = torch.optim.AdamW(list(model.parameters()) + list(conditioner.text_projection.parameters()), lr=1e-3, weight_decay=1e-4)
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=4000, eta_min=1e-4)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=total_steps, eta_min=1e-4)
 
     # Pre-cache raw text representations
     print('Extracting text embeddings for all 64³ corpus assets...', flush=True)
@@ -85,7 +91,7 @@ def main():
         for i, rec in enumerate(train_ds.records)
     }
 
-    print(f'Starting 64³ Occupancy DiT Flow training on {len(train_ds)} assets (4,000 steps, batch size 4, 2.8M params with composite Tweedie + soft Dice + volume loss)...', flush=True)
+    print(f'Starting 64³ Occupancy DiT Flow training on {len(train_ds)} assets ({total_steps} steps, batch size {batch_size}, 2.8M params with composite Tweedie + soft Dice + volume loss)...', flush=True)
     model.train()
     conditioner.train()
 
@@ -93,8 +99,10 @@ def main():
     history = []
     start = time.perf_counter()
 
-    batch_size = 4
-    for step in range(1, 4001):
+    checkpoint_steps = sorted({max(1, total_steps * k // 4) for k in (1, 2, 3, 4)})
+    out_dir = Path(os.environ.get('T3D_OUT', '/kaggle/working' if Path('/kaggle/working').exists() else 'artifacts/kaggle-kenney-64-occupancy-dit'))
+    out_dir.mkdir(parents=True, exist_ok=True)
+    for step in range(1, total_steps + 1):
         optimizer.zero_grad(set_to_none=True)
         acc_loss = 0.0
         acc_flow = 0.0
@@ -165,8 +173,7 @@ def main():
                 lr=round(float(scheduler.get_last_lr()[0]), 6)
             )), flush=True)
 
-        if step in (1000, 2000, 3000, 4000):
-            out_dir = Path('/kaggle/working')
+        if step in checkpoint_steps:
             torch.save(dict(
                 version=1,
                 model=model.state_dict(),
@@ -248,8 +255,7 @@ def main():
     mean_diff = sum(e['prompt_difference_cells'] for e in eval_results) / len(eval_results)
     print(json.dumps(dict(mean_val_occupancy_iou=round(mean_iou, 4), mean_val_precision=round(mean_prec, 4), mean_val_recall=round(mean_rec, 4), mean_prompt_diff_cells=round(mean_diff, 1))), flush=True)
 
-    out_dir = Path('/kaggle/working')
-    ckpt_path = out_dir / 'occupancy-dit-64-4000.pt'
+    ckpt_path = out_dir / f'occupancy-dit-64-{total_steps}.pt'
     ckpt_payload = dict(
         version=1,
         model=model.state_dict(),
@@ -260,17 +266,18 @@ def main():
         width=144,
         heads=6,
         depth=6,
-        step=4000,
+        step=total_steps,
         models=conditioner.model_provenance
     )
     torch.save(ckpt_payload, ckpt_path)
     # Also save as 2000 for compatibility if needed
-    if not (out_dir / 'occupancy-dit-64-2000.pt').exists():
-        torch.save(ckpt_payload, out_dir / 'occupancy-dit-64-2000.pt')
+    first_checkpoint = out_dir / f'occupancy-dit-64-{checkpoint_steps[0]}.pt'
+    if not first_checkpoint.exists():
+        torch.save(ckpt_payload, first_checkpoint)
 
     report = dict(
-        scope='Text-conditioned Stage 1 4³ latent occupancy DiT scaled to 2.8M params (width 144, heads 6, depth 6) trained on 649 Kenney 64³ train assets for 4,000 steps with mini-batching (batch size 4) and composite flow + Tweedie + soft Dice + volume loss; evaluated on 24 held-out assets with prompt sensitivity checks',
-        device=torch.cuda.get_device_name(0),
+        scope=f'Text-conditioned Stage 1 4³ latent occupancy DiT scaled to 2.8M params (width 144, heads 6, depth 6) trained on {len(train_ds)} Kenney 64³ train assets for {total_steps} steps with mini-batching (batch size {batch_size}) and composite flow + Tweedie + soft Dice + volume loss; evaluated on {len(eval_results)} held-out assets with prompt sensitivity checks',
+        device=torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'cpu',
         elapsed_seconds=time.perf_counter() - start,
         train_count=len(train_ds),
         validation_eval_count=len(eval_results),

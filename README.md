@@ -1,10 +1,21 @@
 # Transformer-native 3D format
 
+> **Production status:** the 64³ text-to-3D inference path is deployable with
+> manifest-verified checkpoints, a preflight doctor, a resident runtime, and an
+> HTTP API. Quality is limited to low-poly stylized assets with human review;
+> see [the quality envelope](docs/QUALITY.md) and
+> [deployment guide](docs/PRODUCTION.md).
+>
+> Quickstart: `make install && .venv/bin/python -m t3d.cli doctor`, then
+> `.venv/bin/python -m t3d.cli serve`. Generate with
+> `t3d generate --prompt "a bottle" --steps 30 --output bottle.glb`.
+
 Implementation of the supplied blueprint, with its complete Part 2 preserved in
 [plan.md](plan.md). See [PROGRESS.md](PROGRESS.md) for evidence and remaining work.
-An experimental Track A/Track B container implementation exists; production
-generators remain pending, while the CUDA export pipeline has passed small
-synthetic and one-real-rig integration pilots. Validated raw Track A
+An experimental Track A/Track B container implementation exists; the 64³
+text-to-3D generator is deployable within the documented quality envelope,
+while the CUDA export pipeline has passed small synthetic and one-real-rig
+integration pilots. Validated raw Track A
 tensors and Z/TZ/H/TH serialization mappings are available in
 `t3d.schema.VoxelAsset` and `t3d.serialization`. `VoxelAsset.canonical()` sorts
 all present geometry, material, and rig arrays together. `serialization_order()`

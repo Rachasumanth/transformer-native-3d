@@ -12,6 +12,7 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 
+from t3d.checkpoints import CheckpointError, resolve_checkpoint, resolve_optional
 from t3d.conditioning import PromptConditioner
 from t3d.container import load
 from t3d.dataset import AssetDataset, batch_arrays
@@ -106,22 +107,16 @@ def main():
     print(f"Initializing generation quality benchmark on {device}...", flush=True)
 
     # 1. Select and Load Stage 2 Geometry DiT to determine target resolution
-    geom_path = args.geometry_checkpoint
-    if geom_path is None:
-        cand_64_4000 = Path('artifacts/kaggle-kenney-64-geometry-dit/geometry-dit-64-4000.pt')
-        cand_64_3000 = Path('artifacts/kaggle-kenney-64-geometry-dit/geometry-dit-64-3000.pt')
-        cand_64_2000 = Path('artifacts/kaggle-kenney-64-geometry-dit/geometry-dit-64-2000.pt')
-        cand_64 = Path('artifacts/kaggle-kenney-64-geometry-dit/geometry-dit-64-600.pt')
-        if cand_64_4000.exists():
-            geom_path = cand_64_4000
-        elif cand_64_3000.exists():
-            geom_path = cand_64_3000
-        elif cand_64_2000.exists():
-            geom_path = cand_64_2000
-        elif cand_64.exists():
-            geom_path = cand_64
-        else:
-            geom_path = Path('artifacts/kaggle-kenney-geometry-dit-v38/geometry-dit-600.pt')
+    resolution = args.resolution
+    if args.geometry_checkpoint is not None:
+        geom_path = resolve_checkpoint('geometry', path=args.geometry_checkpoint)
+    elif resolution in (None, 64):
+        try:
+            geom_path = resolve_checkpoint('geometry', resolution=64)
+        except CheckpointError:
+            geom_path = resolve_checkpoint('geometry', resolution=32)
+    else:
+        geom_path = resolve_checkpoint('geometry', resolution=32)
 
     geom_data = torch.load(geom_path, map_location=device, weights_only=False)
     geom_channels = int(geom_data.get('latent_channels', 16))
@@ -145,31 +140,7 @@ def main():
     print(f"Evaluation resolution: {resolution}³ (latent_grid_size={latent_grid_size}, grid_size={grid_size}, decode_threshold={decode_threshold})")
 
     # 2. Select and Load Stage 1 Occupancy DiT
-    occ_path = args.occupancy_checkpoint
-    if occ_path is None:
-        if resolution == 64:
-            cand_occ_64_4000 = Path('artifacts/kaggle-kenney-64-occupancy-dit/occupancy-dit-64-4000.pt')
-            cand_occ_64_3000 = Path('artifacts/kaggle-kenney-64-occupancy-dit/occupancy-dit-64-3000.pt')
-            cand_occ_64_2000 = Path('artifacts/kaggle-kenney-64-occupancy-dit/occupancy-dit-64-2000.pt')
-            cand_occ_64_1500 = Path('artifacts/kaggle-kenney-64-occupancy-dit/occupancy-dit-64-1500.pt')
-            cand_occ_64 = Path('artifacts/kaggle-kenney-64-occupancy-dit/occupancy-dit-64-1000.pt')
-            cand_occ_64_500 = Path('artifacts/kaggle-kenney-64-occupancy-dit/occupancy-dit-64-500.pt')
-            if cand_occ_64_4000.exists():
-                occ_path = cand_occ_64_4000
-            elif cand_occ_64_3000.exists():
-                occ_path = cand_occ_64_3000
-            elif cand_occ_64_2000.exists():
-                occ_path = cand_occ_64_2000
-            elif cand_occ_64_1500.exists():
-                occ_path = cand_occ_64_1500
-            elif cand_occ_64.exists():
-                occ_path = cand_occ_64
-            elif cand_occ_64_500.exists():
-                occ_path = cand_occ_64_500
-            else:
-                occ_path = Path('artifacts/kaggle-kenney-occupancy-dit-v37/occupancy-dit-600.pt')
-        else:
-            occ_path = Path('artifacts/kaggle-kenney-occupancy-dit-v37/occupancy-dit-600.pt')
+    occ_path = resolve_checkpoint('occupancy', resolution=resolution, path=args.occupancy_checkpoint)
 
     occ_data = torch.load(occ_path, map_location=device, weights_only=False)
     conditioner = PromptConditioner.from_pretrained(
@@ -191,9 +162,9 @@ def main():
     print(f"Loaded Stage 1 Occupancy DiT from {occ_path} (coarse_grid_size={coarse_grid_size})")
 
     # 3. Load Stage 3 Material Flow DiT
-    mat_flow_path = Path('artifacts/kaggle-material-flow-dit-v1/material-flow-dit-300.pt')
+    mat_flow_path = resolve_optional('material_flow')
     mat_flow_model = None
-    if mat_flow_path.exists():
+    if mat_flow_path is not None:
         mat_flow_data = torch.load(mat_flow_path, map_location=device, weights_only=False)
         mat_flow_model = SparseFlowDiT(
             channels=int(mat_flow_data['config'].get('channels', 16)),
@@ -208,12 +179,7 @@ def main():
         print(f"Loaded Stage 3 Material Flow DiT from {mat_flow_path}")
 
     # 4. Load Shape SC-VAE
-    vae_path = args.vae_checkpoint
-    if vae_path is None:
-        if resolution == 64:
-            vae_path = Path('artifacts/kaggle-kenney-corpus-64-training/triton-kenney-corpus-64-1200.pt')
-        else:
-            vae_path = Path('artifacts/kaggle-kenney-corpus-training-v35/triton-kenney-corpus-1900.pt')
+    vae_path = resolve_checkpoint('shape_vae', resolution=resolution, path=args.vae_checkpoint)
 
     vae_data = torch.load(vae_path, map_location=device, weights_only=False)
     cfg = {k: v for k, v in vae_data['config'].items() if k in ('mode', 'channels', 'latent_channels', 'levels', 'downsample_block', 'upsample_block', 'convolution_backend')}
@@ -227,9 +193,9 @@ def main():
     print(f"Loaded Shape SC-VAE from {vae_path}")
 
     # 5. Load Material SC-VAE
-    mat_vae_path = Path('artifacts/kaggle-material-multiasset-32-v1/material-multiasset-300.pt')
+    mat_vae_path = resolve_optional('material_vae')
     mat_vae_model = None
-    if mat_vae_path.exists():
+    if mat_vae_path is not None:
         mat_data = torch.load(mat_vae_path, map_location=device, weights_only=False)
         mcfg = {k: v for k, v in mat_data['config'].items() if k in ('mode', 'channels', 'latent_channels', 'levels', 'downsample_block', 'upsample_block', 'convolution_backend')}
         mcfg['convolution_backend'] = 'reference'

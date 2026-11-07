@@ -31,3 +31,93 @@ under active development and is NOT yet production ready.
 4. **Quality**: Frozen held-out evaluation against justified thresholds. (FAILED: Mean Distance 0.09044 vs 0.035 target, min distance 0.03947 on boat-row-large; F-score 0.0948 vs 0.70; Topology Manifoldness: PASSED with 0 nonmanifold edges across all test assets, 100% 2-manifold pass rate; Teacher-assisted PBR MAE: 0.1828 PASSED [PROXY ONLY]; Fully-generated PBR MAE: 0.2134 PASSED).
 5. **Runtime**: End-to-end latency, peak VRAM, throughput on named GPU hardware. (PASSED: Standard 15-step latency 1.866s < 3.0s, High-fidelity 25-step latency 2.694s < 3.0s, Peak VRAM 0.417 GB < 4.0 GB on Tesla T4 with full 3-stage PBR pipeline).
 6. **Delivery**: Installable package, unified CLI, documentation, checkpoint manifest, clean test suite. (SUBMISSION CANDIDATE PROTOTYPE).
+
+## Production Delivery Update (2026-11-06)
+
+This update adds the operational layer and does **not** change the measured
+quality verdict above. The 64³ text-to-3D path is deployable for the documented
+low-poly, human-reviewed envelope in [docs/QUALITY.md](docs/QUALITY.md).
+
+Delivered:
+
+- Manifest-backed checkpoint registry (`t3d/checkpoints.py`) with SHA-256
+  verification, integrated into the CLI and quality benchmark.
+- Reconstructed 64³ corpus at `artifacts/kenney-corpus-64` (649 train / 219
+  validation; manifest SHA-256
+  `8cf26d83ddd2b65dfc9621eaf185cce11a6aca91adbbc02d3b1383ffc2d16a50`), and
+  rehosted under the active `sumu143` Kaggle account as
+  `sumu143/t3d-kenney-64-pipeline` because the documented
+  `dileepkumarchakali` resources return 403.
+- `t3d doctor` deployment preflight with JSON output and non-zero exit on
+  missing/corrupt required checkpoints.
+- Resident runtime (`t3d/runtime.py`) and FastAPI service (`t3d/service.py`)
+  with `/healthz`, `/readyz`, `/metrics`, `/v1/checkpoints`, and
+  `/v1/generate`; optional API key, request-size limits, serialized generation,
+  request IDs, and GLB semantic validation.
+- Container deployment (`Dockerfile`, `.dockerignore`,
+  `deploy/docker-compose.yml`), systemd unit (`deploy/t3d.service`), CI
+  workflow, Makefile, and deployment/quality guides.
+- Test suite: 206 passed, 7 skipped on Python 3.12 CPU (includes new doctor,
+  service, runtime, and checkpoint registry tests).
+
+Remaining quality work:
+
+- A full 4³-grid Stage 2 experiment
+  (`tools/train_kenney_64_geometry_dit_fullgrid.py`) is training locally to
+  remove the Stage 1 recall bottleneck. It is not part of this release until
+  its benchmark is verified and its checkpoint is added to the manifest.
+- The legacy Gate 4 thresholds remain failed. Production use is scoped to the
+  documented envelope, not to arbitrary text-to-3D fidelity.
+
+## Production Delivery Update (2026-11-07): Expanded 19-kit in-distribution release
+
+Corpus and splits:
+
+- 19-kit Kenney expansion (1,883 pinned catalog GLBs) converted locally to
+  64³ shape-only shards and merged with exact source/prepared dedupe:
+  1,648 unique assets in `artifacts/kenney-corpus-64-expanded-merged`
+  (1,883 candidates minus 187 rejected — mostly rigged/animated GLBs politely
+  excluded, plus exact duplicates; see shard conversion reports).
+- In-distribution holdout split (`split_policy=in_distribution_holdout` in
+  `artifacts/kenney-corpus-64-id-expanded/manifest.json`): 1,608 train /
+  40 validation (fixed 8 benchmark assets + 32 round-robin stratified extras,
+  seed 42). Dataset published as Kaggle `shivakrishna846/t3d-kenney-64-id-expanded`.
+- Pipeline ingredients published: `shivakrishna846/t3d-kenney-64-pipeline`
+  (checkpoints/VAE via dataset attach), `rahul09865/t3d-clip-text-base-patch32`
+  (CLIP text snapshot for offline Kaggle), and local-stage
+  `T3D_CLIP_DIR` env support in `t3d.conditioning.PromptConditioner.from_env`.
+
+Training (Tesla T4, kernel `shivakrishna846/t3d-64-expand-train` v1, 20,000
+steps per stage, batch 8):
+
+- Stage 1 occupancy: 1,608 train / 40 val, IoU 0.6895 (precision 0.7742,
+  recall 0.8630), prompt difference 25.6 cells; elapsed 9,353s.
+  Checkpoint `occupancy-dit-64-20000.pt` SHA-256
+  `f61cced93fbf8faf1e5c85745a0410332dfc0bbf5728e871361b28500ac3a4e7`.
+- Stage 2 geometry: latent MSE 3.2507, steerability delta 1.3837, val mean
+  surface distance 0.08611, F@0.01 0.1006; elapsed 2,362s.
+  Checkpoint `geometry-dit-64-20000.pt` SHA-256
+  `8bcf7bd0d767b9b259c2014e110f85b9db953dc8a7c2b88004f3df946d4d918e`
+  (source: kernel summary; re-verified locally).
+- Checkpoints are registered in `checkpoints_manifest.json` and hosted at
+  `shivakrishna846/t3d-kenney-64-expand-train` with origin kernel/hardware
+  metadata; `t3d/checkpoints.py` now prefers the 20k steps for both 64³ roles,
+  with the 4000-step v4 checkpoints retained as fallbacks.
+
+Verification:
+
+- `t3d doctor`: READY — checkpoint manifest 6/10 roles discoverable with the
+  20k occupancy/geometry checkpoints SHA-verified.
+- Full test suite: 208 passed, 7 skipped (27 subtests), Python 3.12 CPU.
+- Local quality benchmark on the 8 benchmark assets
+  (`artifacts/expanded-19kit-64-quality-report.json`): mean surface distance
+  0.07661, F@0.01 0.1155, 8/8 meshes 2-manifold (0 non-manifold edges),
+  trigger latency 22.6s/asset on CPU. Compare against the 6-kit ID result
+  (0.08523 dist / 0.0785 F) and OOD legacy benchmark (0.09234 dist /
+  0.1017 F): the expanded corpus and 20k schedule improve both ID metrics
+  while keeping topology perfect.
+
+Gate status unchanged on the failed legacy thresholds (0.035 distance /
+0.7 F-score): ID distance improved by ~15% over the 6-kit release but remains
+~2.2× the threshold. Full-grid Stage 2 experiments remain exploratory and are
+not part of this release.

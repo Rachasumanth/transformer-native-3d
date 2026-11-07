@@ -4,6 +4,7 @@ import math
 from pathlib import Path
 import numpy as np
 import torch
+from .checkpoints import CheckpointError, resolve_checkpoint, resolve_optional
 from .container import dumps
 from .dataset import batch_arrays
 from .export import export_raw
@@ -13,6 +14,48 @@ from .schema import VoxelAsset
 
 
 @torch.no_grad()
+
+
+def generate_latents_unified(
+    prompt: str,
+    unified_model,
+    conditioner,
+    *,
+    steps: int = 30,
+    guidance: float = 3.5,
+    method: str = 'midpoint',
+    cfg_min: float = 0.25,
+    cfg_max: float = 0.85,
+    occ_threshold: float = 0.0,
+    seed: int = 42,
+    device: str = 'cpu',
+    latent_stats: tuple | None = None,
+):
+    """Single-stage generation of active coordinates and shape latents using UnifiedFlowDiT."""
+    from .unified_dit import sample_unified_flow, unpack_unified_token
+
+    unified_model.eval()
+    conditioner.eval()
+
+    tokens = conditioner.encode_text(prompt).to(device)
+
+    mean_s, std_s = latent_stats if latent_stats is not None else (None, None)
+    if mean_s is not None and not torch.is_tensor(mean_s):
+        mean_s = torch.tensor(mean_s, device=device, dtype=torch.float32)
+    if std_s is not None and not torch.is_tensor(std_s):
+        std_s = torch.tensor(std_s, device=device, dtype=torch.float32)
+
+    pred_tokens = sample_unified_flow(
+        unified_model, tokens,
+        steps=steps, guidance=guidance, method=method,
+        cfg_min=cfg_min, cfg_max=cfg_max, seed=seed, device=torch.device(device),
+    )
+    bcoords, latents, active_mask = unpack_unified_token(
+        pred_tokens, mean_s, std_s, occ_threshold=occ_threshold
+    )
+    active_coords = bcoords[:, 1:]
+    return active_coords, latents, None
+
 def generate_latents_from_prompt(
     prompt: str,
     occupancy_model,
@@ -178,86 +221,31 @@ def main():
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-    # Auto-resolve checkpoints if not explicitly provided
-    geom_path = args.geometry_checkpoint
-    if geom_path is None:
-        cand_64_4000 = Path('artifacts/kaggle-kenney-64-geometry-dit/geometry-dit-64-4000.pt')
-        cand_64_3000 = Path('artifacts/kaggle-kenney-64-geometry-dit/geometry-dit-64-3000.pt')
-        cand_64_2000 = Path('artifacts/kaggle-kenney-64-geometry-dit/geometry-dit-64-2000.pt')
-        cand_64 = Path('artifacts/kaggle-kenney-64-geometry-dit/geometry-dit-64-600.pt')
-        if cand_64_4000.exists():
-            geom_path = cand_64_4000
-        elif cand_64_3000.exists():
-            geom_path = cand_64_3000
-        elif cand_64_2000.exists():
-            geom_path = cand_64_2000
-        elif cand_64.exists():
-            geom_path = cand_64
-        else:
-            geom_path = Path('artifacts/kaggle-kenney-geometry-dit-v38/geometry-dit-600.pt')
-
-    if not geom_path.exists():
-        raise FileNotFoundError(f"Stage 2 Geometry DiT checkpoint not found: {geom_path}")
-
+    # Resolve checkpoints through the manifest-backed registry. Explicit paths
+    # always win; otherwise prefer 64³ assets and fall back to 32³ when needed.
     resolution = args.resolution
-    if resolution is None:
-        resolution = 64 if '64' in geom_path.name else 32
+    if args.geometry_checkpoint is not None:
+        geom_path = resolve_checkpoint('geometry', path=args.geometry_checkpoint)
+        resolution = resolution or (64 if '64' in geom_path.name else 32)
+    elif resolution in (None, 64):
+        try:
+            geom_path = resolve_checkpoint('geometry', resolution=64)
+            resolution = 64
+        except CheckpointError:
+            geom_path = resolve_checkpoint('geometry', resolution=32)
+            resolution = 32
+    else:
+        geom_path = resolve_checkpoint('geometry', resolution=32)
 
-    occ_path = args.occupancy_checkpoint
-    if occ_path is None:
-        if resolution == 64:
-            cand_occ_64_4000 = Path('artifacts/kaggle-kenney-64-occupancy-dit/occupancy-dit-64-4000.pt')
-            cand_occ_64_3000 = Path('artifacts/kaggle-kenney-64-occupancy-dit/occupancy-dit-64-3000.pt')
-            cand_occ_64_2000 = Path('artifacts/kaggle-kenney-64-occupancy-dit/occupancy-dit-64-2000.pt')
-            cand_occ_64_1500 = Path('artifacts/kaggle-kenney-64-occupancy-dit/occupancy-dit-64-1500.pt')
-            cand_occ_64 = Path('artifacts/kaggle-kenney-64-occupancy-dit/occupancy-dit-64-1000.pt')
-            cand_occ_64_500 = Path('artifacts/kaggle-kenney-64-occupancy-dit/occupancy-dit-64-500.pt')
-            if cand_occ_64_4000.exists():
-                occ_path = cand_occ_64_4000
-            elif cand_occ_64_3000.exists():
-                occ_path = cand_occ_64_3000
-            elif cand_occ_64_2000.exists():
-                occ_path = cand_occ_64_2000
-            elif cand_occ_64_1500.exists():
-                occ_path = cand_occ_64_1500
-            elif cand_occ_64.exists():
-                occ_path = cand_occ_64
-            elif cand_occ_64_500.exists():
-                occ_path = cand_occ_64_500
-            else:
-                occ_path = Path('artifacts/kaggle-kenney-occupancy-dit-v37/occupancy-dit-600.pt')
-        else:
-            occ_path = Path('artifacts/kaggle-kenney-occupancy-dit-v37/occupancy-dit-600.pt')
-
-    if not occ_path.exists():
-        raise FileNotFoundError(f"Stage 1 Occupancy DiT checkpoint not found: {occ_path}")
-
-    vae_path = args.vae_checkpoint
-    if vae_path is None:
-        if resolution == 64:
-            cand_vae_64 = Path('artifacts/kaggle-kenney-corpus-64-training/triton-kenney-corpus-64-1200.pt')
-            if cand_vae_64.exists():
-                vae_path = cand_vae_64
-            else:
-                vae_path = Path('artifacts/kaggle-kenney-corpus-training-v35/triton-kenney-corpus-1900.pt')
-        else:
-            vae_path = Path('artifacts/kaggle-kenney-corpus-training-v35/triton-kenney-corpus-1900.pt')
-
-    if not vae_path.exists():
-        raise FileNotFoundError(f"Shape SC-VAE checkpoint not found: {vae_path}")
+    occ_path = resolve_checkpoint('occupancy', resolution=resolution, path=args.occupancy_checkpoint)
+    vae_path = resolve_checkpoint('shape_vae', resolution=resolution, path=args.vae_checkpoint)
 
     # Load Stage 1 Occupancy DiT
     occ_data = torch.load(occ_path, map_location=device, weights_only=False)
     from .flow import SparseFlowDiT
     from .conditioning import PromptConditioner
 
-    conditioner = PromptConditioner.from_pretrained(
-        image_model='facebook/dinov2-small',
-        image_revision='ed25f3a31f01632728cabb09d1542f84ab7b0056',
-        text_model='openai/clip-vit-base-patch32',
-        text_revision='3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268',
-        output_channels=32
-    ).to(device)
+    conditioner = PromptConditioner.from_env(output_channels=32).to(device)
     conditioner.text_projection.load_state_dict(occ_data['text_projection'])
 
     occ_blocks = [int(k.split('.')[1]) for k in occ_data['model'] if k.startswith('blocks.')]
@@ -277,25 +265,27 @@ def main():
     geom_model = SparseFlowDiT(channels=geom_channels, condition_channels=32, width=geom_width, heads=geom_heads, depth=geom_depth, patch_size=64).to(device)
     geom_model.load_state_dict(geom_data['model'])
 
-    # Auto-resolve Stage 3 Material checkpoints if requested or provided
-    mat_flow_path = args.material_flow_checkpoint
-    mat_vae_path = args.material_checkpoint
-    if args.material or mat_flow_path is not None or mat_vae_path is not None:
-        if mat_flow_path is None:
-            cand_mf_300 = Path('artifacts/kaggle-material-flow-dit-v1/material-flow-dit-300.pt')
-            cand_mf_600 = Path('artifacts/kaggle-material-flow-dit-v1/material-flow-dit-600.pt')
-            if cand_mf_300.exists():
-                mat_flow_path = cand_mf_300
-            elif cand_mf_600.exists():
-                mat_flow_path = cand_mf_600
-        if mat_vae_path is None:
-            cand_mvae = Path('artifacts/kaggle-material-multiasset-32-v1/material-multiasset-300.pt')
-            if cand_mvae.exists():
-                mat_vae_path = cand_mvae
+    # Resolve Stage 3 material checkpoints only when requested. Explicit paths
+    # are always verified; auto discovery is opt-in through --material.
+    want_material = args.material or args.material_flow_checkpoint is not None or args.material_checkpoint is not None
+    mat_flow_path = mat_vae_path = None
+    if want_material:
+        mat_flow_path = (
+            resolve_checkpoint('material_flow', path=args.material_flow_checkpoint)
+            if args.material_flow_checkpoint is not None
+            else resolve_optional('material_flow')
+        )
+        mat_vae_path = (
+            resolve_checkpoint('material_vae', path=args.material_checkpoint)
+            if args.material_checkpoint is not None
+            else resolve_optional('material_vae')
+        )
+        if args.material and (mat_flow_path is None or mat_vae_path is None):
+            raise CheckpointError('--material requires both material_flow and material_vae checkpoints')
 
     # Load Stage 3 Material Flow DiT if resolved
     mat_flow_model = None
-    if mat_flow_path is not None and mat_flow_path.exists():
+    if mat_flow_path is not None:
         mat_flow_data = torch.load(mat_flow_path, map_location=device, weights_only=False)
         m_channels = int(mat_flow_data['config'].get('channels', 16))
         m_cond_dim = int(mat_flow_data['config'].get('condition_channels', 32))
@@ -316,46 +306,26 @@ def main():
         mat_flow_model.load_state_dict(mat_flow_data['model'])
         print(f"Loaded Stage 3 Material Flow DiT from {mat_flow_path}")
 
-    # Auto-resolve Stage 2 Rig checkpoints if requested or provided
-    rig_flow_path = args.rig_flow_checkpoint
-    skinae_path = args.skinae_checkpoint
-    if args.rig or rig_flow_path is not None or skinae_path is not None:
-        if rig_flow_path is None:
-            cand_rf_v4_2500 = Path('artifacts/kaggle-rig-flow-dit-v4/rig-flow-dit-2500.pt')
-            cand_rf_v4_2000 = Path('artifacts/kaggle-rig-flow-dit-v4/rig-flow-dit-2000.pt')
-            cand_rf_v4_1500 = Path('artifacts/kaggle-rig-flow-dit-v4/rig-flow-dit-1500.pt')
-            cand_rf_v3_1500 = Path('artifacts/kaggle-rig-flow-dit-v3/rig-flow-dit-1500.pt')
-            cand_rf_v3_2000 = Path('artifacts/kaggle-rig-flow-dit-v3/rig-flow-dit-2000.pt')
-            cand_rf_v3_1000 = Path('artifacts/kaggle-rig-flow-dit-v3/rig-flow-dit-1000.pt')
-            cand_rf_1000 = Path('artifacts/kaggle-rig-flow-dit-v2/rig-flow-dit-1000.pt')
-            cand_rf_250 = Path('artifacts/kaggle-rig-flow-dit-v2/rig-flow-dit-250.pt')
-            if cand_rf_v4_2500.exists():
-                rig_flow_path = cand_rf_v4_2500
-            elif cand_rf_v4_2000.exists():
-                rig_flow_path = cand_rf_v4_2000
-            elif cand_rf_v4_1500.exists():
-                rig_flow_path = cand_rf_v4_1500
-            elif cand_rf_v3_1500.exists():
-                rig_flow_path = cand_rf_v3_1500
-            elif cand_rf_v3_2000.exists():
-                rig_flow_path = cand_rf_v3_2000
-            elif cand_rf_v3_1000.exists():
-                rig_flow_path = cand_rf_v3_1000
-            elif cand_rf_1000.exists():
-                rig_flow_path = cand_rf_1000
-            elif cand_rf_250.exists():
-                rig_flow_path = cand_rf_250
-        if skinae_path is None:
-            cand_skin = Path('artifacts/kaggle-skin-family-bind-select-v8/loss-1.0/skin-pose-pilot.pt')
-            cand_skin_v1 = Path('artifacts/kaggle-skin-pose-v1/skin-pose-pilot.pt')
-            if cand_skin.exists():
-                skinae_path = cand_skin
-            elif cand_skin_v1.exists():
-                skinae_path = cand_skin_v1
+    # Resolve Stage 2 rig checkpoints under the same opt-in policy.
+    want_rig = args.rig or args.rig_flow_checkpoint is not None or args.skinae_checkpoint is not None
+    rig_flow_path = skinae_path = None
+    if want_rig:
+        rig_flow_path = (
+            resolve_checkpoint('rig_flow', path=args.rig_flow_checkpoint)
+            if args.rig_flow_checkpoint is not None
+            else resolve_optional('rig_flow')
+        )
+        skinae_path = (
+            resolve_checkpoint('skin_ae', path=args.skinae_checkpoint)
+            if args.skinae_checkpoint is not None
+            else resolve_optional('skin_ae')
+        )
+        if args.rig and rig_flow_path is None:
+            raise CheckpointError('--rig requires a rig_flow checkpoint')
 
     # Load Stage 2 Rig Flow DiT if resolved
     rig_flow_model = None
-    if rig_flow_path is not None and rig_flow_path.exists():
+    if rig_flow_path is not None:
         rig_flow_data = torch.load(rig_flow_path, map_location=device, weights_only=False)
         r_channels = int(rig_flow_data['config'].get('channels', 10))
         r_cond_dim = int(rig_flow_data['config'].get('condition_channels', 32))

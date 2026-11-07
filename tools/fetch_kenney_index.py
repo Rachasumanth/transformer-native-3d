@@ -1,11 +1,12 @@
 """Resumable, bounded acquisition of pinned catalog candidates."""
-import concurrent.futures,hashlib,json,os,re,threading,time
+import argparse,concurrent.futures,hashlib,json,os,re,threading,time
 from pathlib import Path
 import requests
 
 
 def main():
- index_path=Path('artifacts/kenney-raw-pilot/candidate-index.json');index=json.loads(index_path.read_text());root=Path('artifacts/kenney-catalog-download');root.mkdir(parents=True,exist_ok=True);local=threading.local();pilot=Path('artifacts/kenney-raw-pilot');counts={'downloaded':0,'reused':0,'failed':0};lock=threading.Lock()
+ parser=argparse.ArgumentParser();parser.add_argument('--index',type=Path,default=Path('artifacts/kenney-raw-pilot/candidate-index.json'));parser.add_argument('--raw-root',type=Path,default=Path('artifacts/kenney-catalog-download'));args=parser.parse_args()
+ index_path=args.index;index=json.loads(index_path.read_text());root=args.raw_root;root.mkdir(parents=True,exist_ok=True);local=threading.local();pilot=index_path.parent;counts={'downloaded':0,'reused':0,'failed':0};lock=threading.Lock()
  def fetch(row):
   if not re.fullmatch(r'[a-z0-9-]+/[a-z0-9-]+',row['id']):raise ValueError('Unsafe candidate ID')
   pack,name=row['id'].split('/',1);expected_prefix='https://raw.githubusercontent.com/Hidencod/tge-assets/'+index['revision']+'/packs/'+pack+'/'

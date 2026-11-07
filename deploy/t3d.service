@@ -1,0 +1,30 @@
+[Unit]
+Description=T3D text-to-3D generation API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=t3d
+Group=t3d
+WorkingDirectory=/opt/t3d
+Environment=PYTHONUNBUFFERED=1
+Environment=T3D_ARTIFACTS=/models
+Environment=T3D_DEVICE=cpu
+Environment=HF_HOME=/var/cache/t3d/huggingface
+EnvironmentFile=-/etc/t3d.env
+ExecStart=/opt/t3d/.venv/bin/python -m t3d.cli serve --host 127.0.0.1 --port 8000
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=180
+TimeoutStopSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/cache/t3d
+LimitNOFILE=65536
+MemoryMax=8G
+
+[Install]
+WantedBy=multi-user.target

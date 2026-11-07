@@ -30,6 +30,21 @@ def cmd_migrate(args):
     print(f"Successfully migrated {parsed.input} -> {out_path} ({len(migrated)} bytes, sealed with SHA-256)")
 
 
+def cmd_doctor(args):
+    from .doctor import main as doctor_main
+    sys.exit(doctor_main(args))
+
+
+def cmd_serve(args):
+    parser = argparse.ArgumentParser(description='Serve the T3D generation API')
+    parser.add_argument('--host', default='0.0.0.0')
+    parser.add_argument('--port', type=int, default=8000)
+    parser.add_argument('--reload', action='store_true')
+    parsed = parser.parse_args(args)
+    import uvicorn
+    uvicorn.run('t3d.service:app', host=parsed.host, port=parsed.port, reload=parsed.reload)
+
+
 def cmd_info(args):
     from .container import load
     parser = argparse.ArgumentParser(description='Inspect a .t3d container file')
@@ -65,6 +80,8 @@ def main():
     subparsers.add_parser('export', help='Export raw T3D assets to production GLB via CUDA baking')
     subparsers.add_parser('migrate', help='Migrate legacy container to production sealed format')
     subparsers.add_parser('info', help='Inspect container metadata and voxel attributes')
+    subparsers.add_parser('doctor', help='Check deployment prerequisites and checkpoint integrity')
+    subparsers.add_parser('serve', help='Serve the HTTP generation API')
 
     parsed, unknown = parser.parse_known_args()
     if parsed.command is None:
@@ -79,6 +96,10 @@ def main():
         cmd_migrate(unknown)
     elif parsed.command == 'info':
         cmd_info(unknown)
+    elif parsed.command == 'doctor':
+        cmd_doctor(unknown)
+    elif parsed.command == 'serve':
+        cmd_serve(unknown)
     else:
         parser.print_help()
         sys.exit(1)

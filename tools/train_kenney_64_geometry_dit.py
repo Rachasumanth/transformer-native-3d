@@ -1,5 +1,5 @@
 """Train Stage 2 text-conditioned shape latent geometry DiT on the 64³ Kenney corpus."""
-import hashlib, json, time
+import hashlib, json, os, time
 from pathlib import Path
 import numpy as np
 import torch
@@ -14,36 +14,48 @@ from tools.generate_corpus_prompts import id_to_prompt
 
 
 def main():
-    if not torch.cuda.is_available():
-        raise RuntimeError('CUDA required for DiT geometry training')
-
-    device = 'cuda'
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
     torch.manual_seed(42)
-    torch.cuda.manual_seed_all(42)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(42)
+    else:
+        torch.set_num_threads(max(1, os.cpu_count() or 1))
 
     # Locate 64³ dataset
-    matches = list(Path('/kaggle/input').rglob('manifest.json'))
-    corpus_matches = [
-        p for p in matches
-        if 't3d-kenney-corpus-64' in str(p) or (p.parent / 'manifest.json').exists() and '64' in str(p)
-    ]
-    if not corpus_matches:
-        candidates = [
-            Path('artifacts/kenney-corpus-64/manifest.json'),
-            *list(Path('/kaggle/input').rglob('manifest.json'))
+    env_manifest = os.environ.get('T3D_MANIFEST')
+    if env_manifest:
+        manifest_path = Path(env_manifest)
+        if not manifest_path.exists():
+            raise FileNotFoundError(f'T3D_MANIFEST not found: {manifest_path}')
+    else:
+        matches = list(Path('/kaggle/input').rglob('manifest.json'))
+        corpus_matches = [
+            p for p in matches
+            if 't3d-kenney-corpus-64' in str(p) or (p.parent / 'manifest.json').exists() and '64' in str(p)
         ]
-        corpus_matches = [p for p in candidates if p.exists() and '64' in str(p)]
-    if not corpus_matches:
-        raise FileNotFoundError('Mounted t3d-kenney-corpus-64 dataset not found')
-    manifest_path = corpus_matches[0]
+        if not corpus_matches:
+            candidates = [
+                Path('artifacts/kenney-corpus-64/manifest.json'),
+                *list(Path('/kaggle/input').rglob('manifest.json'))
+            ]
+            corpus_matches = [p for p in candidates if p.exists() and '64' in str(p)]
+        if not corpus_matches:
+            raise FileNotFoundError('Mounted t3d-kenney-corpus-64 dataset not found')
+        manifest_path = corpus_matches[0]
     print(f'Using 64³ corpus manifest: {manifest_path}', flush=True)
 
     train_ds = AssetDataset(manifest_path, split='train')
     val_ds = AssetDataset(manifest_path, split='validation')
+    limit = int(os.environ.get('T3D_LIMIT', '0'))
+    if limit:
+        train_ds.records = train_ds.records[:limit]
+        val_ds.records = val_ds.records[:min(limit, len(val_ds.records))]
     print(f'Loaded {len(train_ds)} train, {len(val_ds)} validation assets (64³)', flush=True)
 
     # Locate trained 64³ SC-VAE checkpoint
+    env_vae = os.environ.get('T3D_VAE')
     ckroot_candidates = [
+        *([Path(env_vae)] if env_vae else []),
         *list(Path('/kaggle/input').rglob('triton-kenney-corpus-64-*.pt')),
         *list(Path('artifacts/kaggle-kenney-corpus-64-training').rglob('*.pt')),
         *list(Path('/kaggle/input').rglob('*.pt'))
@@ -66,6 +78,8 @@ def main():
     # Load frozen SC-VAE
     vae_data = torch.load(vae_ckpt_path, map_location=device, weights_only=False)
     cfg = {k: v for k, v in vae_data['config'].items() if k in ('mode', 'channels', 'latent_channels', 'levels', 'downsample_block', 'upsample_block', 'convolution_backend')}
+    if device != 'cuda':
+        cfg['convolution_backend'] = 'reference'
     # Infer true channels directly from model weights to guard against metadata discrepancy
     if 'input.weight' in vae_data['model']:
         enc_blocks = max(int(k.split('.')[1]) for k in vae_data['model'] if k.startswith('encoder_blocks.'))
@@ -79,13 +93,7 @@ def main():
 
     cond_dim = 32
     print('Initializing CLIP prompt conditioner...', flush=True)
-    conditioner = PromptConditioner.from_pretrained(
-        image_model='facebook/dinov2-small',
-        image_revision='ed25f3a31f01632728cabb09d1542f84ab7b0056',
-        text_model='openai/clip-vit-base-patch32',
-        text_revision='3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268',
-        output_channels=cond_dim
-    ).to(device)
+    conditioner = PromptConditioner.from_env(output_channels=cond_dim).to(device)
 
     # Stage 2 Geometry DiT (latent channels from SC-VAE, width 144, 6 heads -> head_dim 24 divisible by 6, depth 6 -> 2.8M params)
     latent_channels = int(vae_data['config']['latent_channels'])
@@ -94,7 +102,7 @@ def main():
     model_depth = 6
     model = SparseFlowDiT(channels=latent_channels, condition_channels=cond_dim, width=model_width, heads=model_heads, depth=model_depth, patch_size=64).to(device)
     optimizer = torch.optim.AdamW(list(model.parameters()) + list(conditioner.text_projection.parameters()), lr=1e-3, weight_decay=1e-4)
-    total_steps = 4000
+    total_steps = int(os.environ.get('T3D_STEPS', '4000'))
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=total_steps, eta_min=5e-5)
 
     # Pre-cache text tokens and pre-encode shape latents
@@ -127,9 +135,10 @@ def main():
     history = []
     start = time.perf_counter()
 
-    out_dir = Path('/kaggle/working') if Path('/kaggle/working').exists() else Path('artifacts/kaggle-kenney-64-geometry-dit')
+    out_dir = Path(os.environ.get('T3D_OUT', '/kaggle/working' if Path('/kaggle/working').exists() else 'artifacts/kaggle-kenney-64-geometry-dit'))
     out_dir.mkdir(parents=True, exist_ok=True)
     saved_checkpoints = {}
+    checkpoint_steps = sorted({max(1, total_steps * k // 4) for k in (1, 2, 3, 4)})
 
     for step in range(1, total_steps + 1):
         idx = int(rng.integers(len(train_ds)))
@@ -195,7 +204,7 @@ def main():
             history.append(dict(step=step, asset_id=rec.asset_id, loss=rec_loss, flow_loss=flow_l, tweedie_loss=tw_l, zero_loss=z_l))
             print(json.dumps(dict(step=step, asset=rec.asset_id, loss=round(rec_loss, 5), flow=round(flow_l, 5), tweedie=round(tw_l, 5), zero=round(z_l, 5), lr=round(scheduler.get_last_lr()[0], 6))), flush=True)
 
-        if step in (1000, 2000, 3000, 4000):
+        if step in checkpoint_steps:
             ckpt_path = out_dir / f'geometry-dit-64-{step}.pt'
             torch.save(dict(
                 version=1,
@@ -307,8 +316,8 @@ def main():
     final_sha = saved_checkpoints.get(final_ckpt.name, '')
 
     report = dict(
-        scope='Text-conditioned Stage 2 shape latent geometry DiT (2.8M param, width 144, heads 6, depth 6) trained on 649 Kenney train assets at 64³ with composite flow + Tweedie loss + distractor zero-suppression; evaluated on 16 held-out assets with latent MSE, steerability, and mesh extraction',
-        device=torch.cuda.get_device_name(0),
+        scope=f'Text-conditioned Stage 2 shape latent geometry DiT (2.8M param, width 144, heads 6, depth 6) trained on {len(train_ds)} Kenney train assets at 64³ with composite flow + Tweedie loss + distractor zero-suppression; evaluated on {len(eval_results)} held-out assets with latent MSE, steerability, and mesh extraction',
+        device=torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'cpu',
         elapsed_seconds=time.perf_counter() - start,
         total_steps=total_steps,
         model_parameters=sum(p.numel() for p in model.parameters()),
