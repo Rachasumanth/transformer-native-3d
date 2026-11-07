@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from t3d.articulation import Skeleton, skeleton_displacements, infer_skeleton_from_field, skin_embeddings, attach_articulation, linear_blend_skinning, joint_deformation_matrices, transfer_skin_weights
+from t3d.articulation import Skeleton, skeleton_displacements, infer_skeleton_from_field, skin_embeddings, attach_articulation, linear_blend_skinning, joint_deformation_matrices, transfer_skin_weights, check_bone_containment, robust_infer_skeleton
 from t3d.schema import VoxelAsset
 from t3d.container import dumps, loads
 
@@ -98,3 +98,31 @@ class ArticulationTests(unittest.TestCase):
         result = transfer_skin_weights([[.2, .3, 1], [0, 0, 0]], v, [[0, 1, 2]], weights)
         np.testing.assert_allclose(result, [[.5, .5], [1, 0]])
         np.testing.assert_allclose(result.sum(axis=1), 1)
+
+    def test_check_bone_containment(self):
+        # In-bounds skeleton
+        skel = Skeleton([[0.0, 0.0, 0.0], [0.2, 0.2, 0.2]], [-1, 0])
+        aabb = [[-0.5, -0.5, -0.5], [0.5, 0.5, 0.5]]
+        res = check_bone_containment(skel, aabb)
+        self.assertEqual(res['violations'], 0)
+        self.assertEqual(res['total_segments'], 1)
+        self.assertEqual(res['containment_rate'], 1.0)
+
+        # Out-of-bounds skeleton
+        skel_out = Skeleton([[0.0, 0.0, 0.0], [1.2, 0.0, 0.0]], [-1, 0])
+        res_out = check_bone_containment(skel_out, aabb)
+        self.assertEqual(res_out['violations'], 1)
+        self.assertEqual(res_out['containment_rate'], 0.0)
+
+    def test_robust_infer_skeleton(self):
+        expected = Skeleton([[0.2, 0.2, 0.2], [0.4, 0.4, 0.4]], [-1, 0])
+        points = np.array([[x, y, z] for x in [0.1, 0.3, 0.5] for y in [0.1, 0.3] for z in [0.1, 0.3]])
+        field, _ = skeleton_displacements(points, expected)
+        # Add slight noise to simulate neural field
+        noisy = field + np.random.default_rng(42).normal(0, 0.002, field.shape)
+        voxel_size = np.array([0.05, 0.05, 0.05])
+        aabb = [[0.0, 0.0, 0.0], [0.6, 0.6, 0.6]]
+        inferred = robust_infer_skeleton(points, noisy, voxel_size, aabb)
+        self.assertIsNotNone(inferred)
+        self.assertGreaterEqual(len(inferred.joints), 1)
+

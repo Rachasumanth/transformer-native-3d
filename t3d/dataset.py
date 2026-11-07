@@ -29,6 +29,9 @@ class AssetDataset:
         if split not in ('train', 'validation', 'test'):
             raise ValueError('Invalid dataset split')
         self.require_pbr = require_pbr
+        self.split_policy = document.get('split_policy', 'group_disjoint')
+        if self.split_policy not in ('group_disjoint', 'in_distribution_holdout'):
+            raise ValueError('Unsupported split policy')
         self.fingerprint = hashlib.sha256(self.manifest.read_bytes()).hexdigest()
         records, ids, hashes, paths = [], set(), set(), set()
         source_splits, group_splits = {}, {}
@@ -46,12 +49,13 @@ class AssetDataset:
             if (record.source_group is not None and
                     (not isinstance(record.source_group, str) or not record.source_group.strip())):
                 raise ValueError('Invalid source group')
-            for identity, seen in ((record.source_sha256, source_splits),
-                                   (record.source_group, group_splits)):
-                if identity is not None:
-                    if identity in seen and seen[identity] != record.split:
-                        raise ValueError('Source identity crosses dataset splits')
-                    seen[identity] = record.split
+            if self.split_policy == 'group_disjoint':
+                for identity, seen in ((record.source_sha256, source_splits),
+                                       (record.source_group, group_splits)):
+                    if identity is not None:
+                        if identity in seen and seen[identity] != record.split:
+                            raise ValueError('Source identity crosses dataset splits')
+                        seen[identity] = record.split
             path = (self.manifest.parent/record.path).resolve()
             if Path(record.path).is_absolute() or not path.is_relative_to(self.manifest.parent):
                 raise ValueError('Asset path must stay within the manifest directory')
@@ -78,8 +82,8 @@ class AssetDataset:
 
 def batch_arrays(assets, mode):
     """Build batch-indexed sparse arrays; never mix voxels across assets."""
-    if not assets or mode not in ('shape', 'material'):
-        raise ValueError('Batch needs assets and shape/material mode')
+    if not assets or mode not in ('shape', 'material', 'rig'):
+        raise ValueError('Batch needs assets and shape/material/rig mode')
     coords, features = [], []
     for i, asset in enumerate(assets):
         if not len(asset.coords):
@@ -88,8 +92,12 @@ def batch_arrays(assets, mode):
         if mode == 'shape':
             split = asset.split_weight if asset.split_weight is not None else np.zeros((len(asset.coords), 1))
             features.append(np.column_stack((asset.dual_vertices, asset.intersected_flag, split)))
-        else:
+        elif mode == 'material':
             if asset.pbr is None:
                 raise ValueError('Material training requires PBR on every asset')
             features.append(asset.pbr)
+        else:
+            if asset.skeleton_field is None or asset.skin_embedding is None:
+                raise ValueError('Rig training requires skeleton_field and skin_embedding on every asset')
+            features.append(np.column_stack((asset.skeleton_field, asset.skin_embedding)))
     return np.concatenate(coords).astype(np.int64), np.concatenate(features).astype(np.float32)

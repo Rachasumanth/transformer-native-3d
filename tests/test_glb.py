@@ -116,3 +116,145 @@ class GLBTests(unittest.TestCase):
             pack_glb(**args,skin_weights=weights)
         with self.assertRaisesRegex(ValueError,'normalized finite'):
             pack_glb(**args,skin_weights=np.full((3,1),.5),skeleton=Skeleton([[0,0,0]],[-1]))
+
+    def test_pack_static_glb_roundtrip_and_rejection(self):
+        from t3d.glb import pack_static_glb
+        verts = np.array([[0, 0, 0], [1, 0, 0], [0, 1, 0]], dtype=np.float32)
+        faces = np.array([[0, 1, 2]], dtype=np.int32)
+        glb = pack_static_glb(verts, faces, source_up='z')
+        self.assertEqual(glb[:4], b'glTF')
+        loaded = trimesh.load(trimesh.util.wrap_as_stream(glb), file_type='glb')
+        mesh = loaded.to_geometry() if hasattr(loaded, 'to_geometry') else loaded
+        if isinstance(mesh, list):
+            mesh = mesh[0]
+        self.assertEqual(len(mesh.vertices), 3)
+        self.assertEqual(len(mesh.faces), 1)
+
+        with self.assertRaises(ValueError):
+            pack_static_glb(np.zeros((0, 3)), faces)
+        with self.assertRaises(ValueError):
+            pack_static_glb(verts, np.array([[0, 1, 5]]))
+        with self.assertRaises(ValueError):
+            pack_static_glb(verts, faces, source_up='invalid')
+
+    def test_pack_static_glb_preserves_six_pbr_channels_in_materials_and_textures(self):
+        from t3d.glb import pack_static_glb, validate_glb_semantics
+        from t3d.import_glb import load_glb
+        verts = np.array([[-0.5, -0.5, 0], [0.5, -0.5, 0], [0, 0.5, 0]], dtype=np.float32)
+        faces = np.array([[0, 1, 2]], dtype=np.int32)
+
+        # 1. Uniform PBR preservation across all six channels
+        pbr_uniform = np.array([[0.2, 0.3, 0.4, 0.75, 0.25, 0.9]] * 3, dtype=np.float32)
+        glb_u = pack_static_glb(verts, faces, pbr=pbr_uniform, source_up='z')
+        audit_u = validate_glb_semantics(glb_u)
+        self.assertTrue(audit_u['valid'])
+        self.assertTrue(audit_u['six_channels_preserved'])
+        self.assertFalse(audit_u['has_color_0'])
+        self.assertTrue(audit_u['pbr_semantics']['has_base_color_texture'])
+        self.assertTrue(audit_u['pbr_semantics']['has_metallic_roughness_texture'])
+
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp) / 'uniform.glb'
+            p.write_bytes(glb_u)
+            imported = load_glb(p)
+            self.assertEqual(len(imported.materials), 1)
+            mat = imported.materials[0]
+            self.assertIsNotNone(mat.base_texture)
+            self.assertIsNotNone(mat.metallic_roughness_texture)
+            # Roughness is G (channel 1), Metallic is B (channel 2)
+            np.testing.assert_allclose(mat.metallic_roughness_texture[..., 1].mean(), 0.25, atol=0.05)
+            np.testing.assert_allclose(mat.metallic_roughness_texture[..., 2].mean(), 0.75, atol=0.05)
+            np.testing.assert_allclose(mat.base_texture[..., 3].mean(), 0.9, atol=0.05)
+
+        # 2. Spatially varying PBR preservation via per-triangle UV atlas
+        pbr_varying = np.array([
+            [0.9, 0.1, 0.2, 0.1, 0.9, 1.0],
+            [0.1, 0.9, 0.2, 0.5, 0.5, 1.0],
+            [0.2, 0.1, 0.9, 0.8, 0.2, 0.6]
+        ], dtype=np.float32)
+        glb_v = pack_static_glb(verts, faces, pbr=pbr_varying, source_up='z')
+        audit_v = validate_glb_semantics(glb_v)
+        self.assertTrue(audit_v['valid'])
+        self.assertTrue(audit_v['six_channels_preserved'])
+        self.assertFalse(audit_v['has_color_0'])
+        self.assertTrue(audit_v['has_uv'])
+        self.assertTrue(audit_v['pbr_semantics']['has_base_color_texture'])
+        self.assertTrue(audit_v['pbr_semantics']['has_metallic_roughness_texture'])
+
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp) / 'varying.glb'
+            p.write_bytes(glb_v)
+            imported_v = load_glb(p)
+            self.assertEqual(len(imported_v.materials), 1)
+            mat_v = imported_v.materials[0]
+            self.assertIsNotNone(mat_v.base_texture)
+            self.assertIsNotNone(mat_v.metallic_roughness_texture)
+            # Verify that metallic ranges across variation
+            mr_tex = mat_v.metallic_roughness_texture
+            self.assertGreater(mr_tex[..., 2].max(), 0.6)
+            self.assertLess(mr_tex[..., 2].min(), 0.3)
+            # Verify that roughness ranges across variation
+            self.assertGreater(mr_tex[..., 1].max(), 0.7)
+            self.assertLess(mr_tex[..., 1].min(), 0.4)
+
+    def test_pack_static_glb_with_rigging_and_attach_skin(self):
+        from t3d.glb import pack_static_glb, validate_glb_semantics, attach_skin
+        from t3d.import_rig import load_rig_glb
+        verts = np.array([[-0.5, -0.5, 0], [0.5, -0.5, 0], [0, 0.5, 0]], dtype=np.float32)
+        faces = np.array([[0, 1, 2]], dtype=np.int32)
+        pbr_varying = np.array([
+            [0.8, 0.1, 0.1, 0.2, 0.8, 1.0],
+            [0.1, 0.8, 0.1, 0.5, 0.5, 1.0],
+            [0.1, 0.1, 0.8, 0.9, 0.1, 1.0],
+        ], dtype=np.float32)
+        skel = Skeleton(np.array([[0, 0, 0], [0, 0.5, 0]], dtype=np.float32), np.array([-1, 0], dtype=np.int64))
+        weights = np.array([[1.0, 0.0], [0.5, 0.5], [0.0, 1.0]], dtype=np.float32)
+
+        # 1. Packaging with skin directly
+        glb_rigged = pack_static_glb(verts, faces, pbr=pbr_varying, skin_weights=weights, skeleton=skel, source_up='z')
+        audit = validate_glb_semantics(glb_rigged)
+        self.assertTrue(audit['valid'])
+        self.assertTrue(audit['skinning']['is_skinned'])
+        self.assertEqual(audit['skinning']['joint_count'], 2)
+        self.assertTrue(audit['six_channels_preserved'])
+
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp) / 'rigged.glb'
+            p.write_bytes(glb_rigged)
+            rig = load_rig_glb(p, include_pbr=True)
+            self.assertEqual(len(rig.skeleton.joints), 2)
+            self.assertEqual(len(rig.pbr_materials), 1)
+
+        # 2. Packaging static first, then attaching skin via attach_skin
+        glb_static = pack_static_glb(verts, faces, pbr=pbr_varying, source_up='z')
+        glb_attached = attach_skin(glb_static, weights, skel)
+        audit_att = validate_glb_semantics(glb_attached)
+        self.assertTrue(audit_att['valid'])
+        self.assertTrue(audit_att['skinning']['is_skinned'])
+
+    def test_validate_glb_semantics_comprehensive(self):
+        from t3d.glb import pack_static_glb, validate_glb_semantics
+        verts = np.array([[0, 0, 0], [1, 0, 0], [0, 1, 0]], dtype=np.float32)
+        faces = np.array([[0, 1, 2]], dtype=np.int32)
+        glb = pack_static_glb(verts, faces, source_up='z')
+        report = validate_glb_semantics(glb)
+        self.assertTrue(report['valid'])
+        self.assertEqual(report['vertex_count'], 3)
+        self.assertEqual(report['face_count'], 1)
+        self.assertFalse(report['skinning']['is_skinned'])
+
+        # Corrupt header rejection
+        with self.assertRaisesRegex(ValueError, 'complete binary glTF|Invalid GLB header'):
+            validate_glb_semantics(b'glTFcorrupt')
+
+        # Invalid PBR inputs rejection in pack_static_glb
+        with self.assertRaisesRegex(ValueError, 'finite'):
+            pack_static_glb(verts, faces, pbr=np.array([[np.nan]*6]*3))
+        with self.assertRaisesRegex(ValueError, 'finite'):
+            pack_static_glb(verts, faces, pbr=np.array([[-0.1]*6]*3))
+        with self.assertRaisesRegex(ValueError, 'shape'):
+            pack_static_glb(verts, faces, pbr=np.zeros((3, 5)))
+        with self.assertRaisesRegex(ValueError, 'shape'):
+            pack_static_glb(verts, faces, pbr=np.zeros((4, 6)))
+
+

@@ -1,0 +1,117 @@
+{
+  "format_version": "1.0-legacy",
+  "description": "Quarantined legacy Stage 1 text-to-occupancy and pilot checkpoints (non-core production)",
+  "checkpoints": [
+    {
+      "name": "occupancy-dit-600.pt",
+      "stage": "Stage 1 (Coarse Occupancy DiT Flow - 32\u00b3)",
+      "description": "Predicts coarse 16^3 active spatial occupancy from random Gaussian noise conditioned on CLIP text embeddings",
+      "file_size_bytes": 2633432,
+      "sha256": "1cce8fc76b1f6258ded81263dfbea021a3930807a86e4c15717e3ce944b185b5",
+      "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
+      "origin_kernel": "sumu143/transformer-native-3d-occupancy-dit-flow (v37)",
+      "status": "VERIFIED",
+      "notes": "Trained for 600 steps on dual Tesla T4 GPUs. Euler sampling produces steerable spatial bounds.",
+      "tier": "legacy_quarantine"
+    },
+    {
+      "name": "occupancy-dit-64-4000.pt",
+      "stage": "Stage 1 (Latent Occupancy DiT Flow - 64\u00b3 - Step 4000 - Scaled 2.8M)",
+      "description": "Scaled 2.8M parameter Stage 1 Occupancy DiT predicting 4\u00b3 active latent occupancy with mini-batching (batch size 4), CosineAnnealingLR, and explicit volume loss",
+      "file_size_bytes": 11311175,
+      "sha256": "2dcb9ef83bb54e2768441047911e3042b5f8b962a563f53f358eeecfe1826113",
+      "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
+      "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-occupancy-dit (v4)",
+      "status": "VERIFIED",
+      "notes": "Trained for 4,000 steps with width=144, heads=6, depth=6 (2.8M params), mini-batch size 4, and volume loss on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU. Mean validation occupancy IoU jumped to 0.5515 (+25.8% relative improvement), precision reached 0.8186, recall improved to 0.5973, and prompt steerability difference increased to 23.1 cells.",
+      "tier": "legacy_quarantine"
+    },
+    {
+      "name": "occupancy-dit-64-3000.pt",
+      "stage": "Stage 1 (Latent Occupancy DiT Flow - 64\u00b3 - Step 3000 - Scaled 2.8M)",
+      "description": "Intermediate 3000-step checkpoint for Scaled 2.8M Stage 1 4\u00b3 latent occupancy flow",
+      "file_size_bytes": 11311175,
+      "sha256": "f3188355984e8b6581d0eb33a3fee57150062a7c9497128782a2a0c74d255546",
+      "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
+      "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-occupancy-dit (v4)",
+      "status": "VERIFIED",
+      "notes": "Trained for 3,000 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU.",
+      "tier": "legacy_quarantine"
+    },
+    {
+      "name": "occupancy-dit-64-2000.pt",
+      "stage": "Stage 1 (Latent Occupancy DiT Flow - 64\u00b3 - Step 2000 - Scaled 2.8M)",
+      "description": "Intermediate 2000-step checkpoint for Scaled 2.8M Stage 1 4\u00b3 latent occupancy flow with mini-batching and volume loss",
+      "file_size_bytes": 11311175,
+      "sha256": "3b2e5550e0ea8f99a074661c492f3a8a1012a34ed55e8da16cd8ded766f94d04",
+      "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
+      "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-occupancy-dit (v4)",
+      "status": "VERIFIED",
+      "notes": "Trained for 2,000 steps with width=144, heads=6, depth=6 (2.8M params), mini-batch size 4, and volume loss on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU.",
+      "tier": "legacy_quarantine"
+    },
+    {
+      "name": "occupancy-dit-64-1500.pt",
+      "stage": "Stage 1 (Latent Occupancy DiT Flow - 64\u00b3 - Step 1500)",
+      "description": "Intermediate 1500-step checkpoint for Stage 1 4\u00b3 latent occupancy flow with composite Tweedie + soft Dice loss",
+      "file_size_bytes": 3457884,
+      "sha256": "659b581e7825e347460c93527e0983c90b25c0b440db3e0cd725de6da8b971cb",
+      "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
+      "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-occupancy-dit (v2)",
+      "status": "VERIFIED",
+      "notes": "Trained for 1,500 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU.",
+      "tier": "legacy_quarantine"
+    },
+    {
+      "name": "occupancy-dit-64-1000.pt",
+      "stage": "Stage 1 (Latent Occupancy DiT Flow - 64\u00b3 - Step 1000 - Scaled 2.8M)",
+      "description": "Intermediate 1000-step checkpoint for Scaled 2.8M Stage 1 4\u00b3 latent occupancy flow with mini-batching and volume loss",
+      "file_size_bytes": 11311175,
+      "sha256": "2a21d09d842e923b8f8cf379f5bd3d6985d23f4a54bd81513181e2c8a807d68b",
+      "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
+      "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-occupancy-dit (v4)",
+      "status": "VERIFIED",
+      "notes": "Trained for 1,000 steps with width=144, heads=6, depth=6 (2.8M params), mini-batch size 4, and volume loss on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU.",
+      "tier": "legacy_quarantine"
+    },
+    {
+      "name": "occupancy-dit-64-500.pt",
+      "stage": "Stage 1 (Latent Occupancy DiT Flow - 64\u00b3 - Step 500)",
+      "description": "Intermediate 500-step checkpoint for Stage 1 4\u00b3 latent occupancy flow with composite Tweedie + soft Dice loss",
+      "file_size_bytes": 3457799,
+      "sha256": "0e18108b50cab254e52e8fb7ca57544be2f8bbff1058907940ab8e4eb517ab86",
+      "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
+      "origin_kernel": "dileepkumarchakali/transformer-native-3d-kenney-64-occupancy-dit (v2)",
+      "status": "VERIFIED",
+      "notes": "Trained for 500 steps on 649 Kenney train assets at 64\u00b3 on Tesla T4 GPU.",
+      "tier": "legacy_quarantine"
+    },
+    {
+      "name": "skin-pose-pilot.pt",
+      "stage": "SkinAE Pilot Autoencoder",
+      "description": "4-channel vertex skinning weight autoencoder and MLP decoder",
+      "file_size_bytes": 470053,
+      "sha256": "820ba9d30a62ec4a9e3f49236227a4b80173a1ac670d141b047b4fa4d99a8c7f",
+      "kaggle_dataset": "dileepkumarchakali/t3d-trained-checkpoints",
+      "origin_kernel": "kaggle-skin-pose-pilot",
+      "status": "PILOT_ONLY",
+      "notes": "Trained on articulated synthetic pilot models.",
+      "tier": "legacy_quarantine"
+    },
+    {
+      "name": "occupancy-dit-64-20000.pt",
+      "stage": "Stage 1 (Latent Occupancy DiT Flow - 64\u00b3 - Step 20000 - Expanded 19-kit in-distribution)",
+      "description": [
+        "Stage 1 (Latent Occupancy DiT Flow - 64\u00b3 - Step 20000 - Expanded 19-kit in-distribution)",
+        "Expanded 1648-asset Kenney corpus (19 kits) in-distribution holdout (1608 train / 40 val); 20,000 steps at batch 8, width 144, heads 6, depth 6 (2.8M params), composite flow + Tweedie + soft Dice + volume loss; origin kernel shivakrishna846/t3d-64-expand-train v1 on Tesla T4"
+      ],
+      "file_size_bytes": 11311292,
+      "sha256": "f61cced93fbf8faf1e5c85745a0410332dfc0bbf5728e871361b28500ac3a4e7",
+      "kaggle_dataset": "shivakrishna846/t3d-kenney-64-expand-train",
+      "origin_kernel": "shivakrishna846/t3d-64-expand-train (v1)",
+      "status": "VERIFIED",
+      "notes": "Expanded 1648-asset Kenney corpus (19 kits) in-distribution holdout (1608 train / 40 val); 20,000 steps at batch 8, width 144, heads 6, depth 6 (2.8M params), composite flow + Tweedie + soft Dice + volume loss; origin kernel shivakrishna846/t3d-64-expand-train v1 on Tesla T4",
+      "tier": "legacy_quarantine"
+    }
+  ]
+}

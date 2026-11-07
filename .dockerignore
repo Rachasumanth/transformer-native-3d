@@ -1,0 +1,11 @@
+.git
+.venv
+artifacts
+__pycache__
+*.pyc
+.pytest_cache
+kaggle
+kaggle-*
+output
+*.glb
+*.t3d

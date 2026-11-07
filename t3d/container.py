@@ -77,12 +77,12 @@ def dumps(asset: VoxelAsset, *, bpt_tokens=None, curve='z'):
     return seal(bytes(data))
 
 
-def loads(data):
+def loads(data, *, allow_version_1=False):
     data = memoryview(data)
     if len(data) < 128:
         raise ValueError('Truncated T3DV header')
     fields = _HEADER.unpack(data[:128])
-    if fields[:2] != (b'T3DV', 2):
+    if fields[0] != b'T3DV' or (fields[1] != 2 and not (allow_version_1 and fields[1] == 1)):
         raise ValueError('Unsupported T3DV magic or version')
     bounds = np.array(fields[2:8]).reshape(2, 3)
     grid = tuple(fields[8:11])
@@ -91,6 +91,8 @@ def loads(data):
     layout = fields[18:]
     width = layout[18]
     profile = layout[19]
+    if fields[1] == 1 and profile != 1:
+        raise ValueError('Version 1 container must use legacy profile 1')
     if profile not in (1, 3):
         raise ValueError('Unsupported raw profile, curve, reserved fields or nonraw counts')
     if profile == 3:
@@ -164,3 +166,45 @@ def save(path, asset, *, bpt_tokens=None, curve='z'):
     data = dumps(asset, bpt_tokens=bpt_tokens, curve=curve)
     loads(data)
     atomic_write(path, data)
+
+
+def migrate_container(data: bytes | bytearray | memoryview) -> bytes:
+    """Migrate legacy v1 or unsealed v2 .t3d containers into verified v2 sealed format.
+
+    - Validates header magic and integrity.
+    - If input is raw v1 or unsealed raw v2 (profile 1), parses it and re-encodes as
+      v2 profile 3 with a SHA-256 integrity trailer.
+    - If input is latent v1 or unsealed latent v2 (profile 2), parses it and re-encodes
+      as v2 profile 4 with a SHA-256 integrity trailer.
+    - If input is already v2 profile 3 or 4, verifies its integrity and returns it.
+    - Rejects invalid, truncated or corrupted containers.
+    """
+    mv = memoryview(data)
+    if len(mv) < 128:
+        raise ValueError('Truncated T3DV container: minimum 128 bytes required')
+    fields = _HEADER.unpack(mv[:128])
+    if fields[0] != b'T3DV':
+        raise ValueError(f'Invalid container magic: expected b"T3DV", got {fields[0]}')
+    version = fields[1]
+    if version not in (1, 2):
+        raise ValueError(f'Unsupported container version {version}: supported versions are 1 and 2')
+    profile = fields[18 + 19]
+
+    if profile in (1, 3):
+        # Raw container
+        if version == 2 and profile == 3:
+            verify_and_strip(mv)
+            return bytes(mv)
+        raw = loads(mv, allow_version_1=True)
+        return dumps(raw.asset, bpt_tokens=raw.bpt_tokens, curve=raw.curve)
+    elif profile in (2, 4):
+        # Latent container
+        from .latent_container import dumps_latents, loads_latents
+        if version == 2 and profile == 4:
+            verify_and_strip(mv)
+            return bytes(mv)
+        lat = loads_latents(mv, allow_version_1=True)
+        return dumps_latents(lat)
+    else:
+        raise ValueError(f'Unsupported profile {profile}')
+

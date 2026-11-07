@@ -57,6 +57,17 @@ class SerializedAttention(nn.Module):
         n,width=x.shape
         q,k,v=self.qkv(x).reshape(n,3,self.heads,width//self.heads).permute(1,2,0,3).unbind(0)
         q,k=self.rope(q,coords),self.rope(k,coords)
+        if n % self.patch_size == 0 and n > 0:
+            num_patches = n // self.patch_size
+            head_dim = width // self.heads
+            q_ord = q[:, order].view(self.heads, num_patches, self.patch_size, head_dim).permute(1, 0, 2, 3)
+            k_ord = k[:, order].view(self.heads, num_patches, self.patch_size, head_dim).permute(1, 0, 2, 3)
+            v_ord = v[:, order].view(self.heads, num_patches, self.patch_size, head_dim).permute(1, 0, 2, 3)
+            attn_vec = F.scaled_dot_product_attention(q_ord, k_ord, v_ord)
+            res_vec = attn_vec.permute(0, 2, 1, 3).reshape(n, width)
+            inv_order = torch.empty_like(order)
+            inv_order[order] = torch.arange(n, device=order.device)
+            return self.output(res_vec[inv_order])
         chunks=[]
         for start in range(0,n,self.patch_size):
             index=order[start:start+self.patch_size]
@@ -135,12 +146,32 @@ def flow_loss(model,clean,coords,condition,*,orders=None,shape=None,drop_probabi
 
 
 @torch.no_grad()
-def sample_flow(model,noise,coords,condition,*,steps=50,guidance=3.,orders=None,shape=None):
+def sample_flow(model,noise,coords,condition,*,steps=50,guidance=3.,orders=None,shape=None,method='euler'):
     if steps<=0 or not math.isfinite(guidance):raise ValueError('Positive steps and finite guidance required')
+    if method not in ('euler', 'midpoint'):
+        raise ValueError(f"Unknown sampling method '{method}'; choose 'euler' or 'midpoint'")
     x=noise.clone()
-    for i in range(steps):
-        time=x.new_tensor(i/steps)
-        conditional=model(x,coords,time,condition,orders=orders,shape=shape)
-        unconditional=model(x,coords,time,None,orders=orders,shape=shape)
-        x=x+(unconditional+guidance*(conditional-unconditional))/steps
-    return x
+    dt = 1.0 / steps
+    if method == 'euler':
+        for i in range(steps):
+            time=x.new_tensor(i * dt)
+            conditional=model(x,coords,time,condition,orders=orders,shape=shape)
+            if guidance == 1.0:
+                x=x+conditional*dt
+            else:
+                unconditional=model(x,coords,time,None,orders=orders,shape=shape)
+                x=x+(unconditional+guidance*(conditional-unconditional))*dt
+        return x
+    elif method == 'midpoint':
+        for i in range(steps):
+            time=x.new_tensor(i * dt)
+            t_mid=x.new_tensor((i + 0.5) * dt)
+            conditional=model(x,coords,time,condition,orders=orders,shape=shape)
+            unconditional=model(x,coords,time,None,orders=orders,shape=shape) if guidance != 1.0 else conditional
+            v1=unconditional+guidance*(conditional-unconditional)
+            x_mid=x+0.5*dt*v1
+            cond_m=model(x_mid,coords,t_mid,condition,orders=orders,shape=shape)
+            uncond_m=model(x_mid,coords,t_mid,None,orders=orders,shape=shape) if guidance != 1.0 else cond_m
+            v_mid=uncond_m+guidance*(cond_m-uncond_m)
+            x=x+dt*v_mid
+        return x

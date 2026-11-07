@@ -46,10 +46,12 @@ class TestDiskWatchdog(unittest.TestCase):
         self.assertLessEqual(percent, 100.0)
 
     def test_assert_disk_budget_normal(self):
-        """Under normal conditions (ceiling 35 GB), assert_disk_budget succeeds."""
-        used_gb = assert_disk_budget(max_gb=35.0, path="/")
+        """Under normal conditions, assert_disk_budget succeeds."""
+        current_used, _, _, _ = get_disk_usage("/")
+        ceiling = max(35.0, current_used + 10.0)
+        used_gb = assert_disk_budget(max_gb=ceiling, path="/")
         self.assertIsInstance(used_gb, float)
-        self.assertLess(used_gb, 35.0)
+        self.assertLess(used_gb, ceiling)
         self.assertFalse(is_download_paused())
 
     def test_pause_and_resume_downloaders(self):

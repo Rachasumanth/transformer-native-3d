@@ -1,10 +1,27 @@
-# Transformer-native 3D format
+# Transformer-Native 3D (T3D): Raw 3D Model to Game-Ready Asset
+
+> **Production Mission:** T3D is an AI and neural-voxel processing pipeline designed
+> to convert **raw 3D models into polished, textured, and rigged game-ready 3D assets**.
+>
+> Rather than generating shapes from unconstrained text prompts, T3D's primary target
+> is ingesting raw 3D meshes (sculpts, photogrammetry scans, CAD blockouts, or messy CAD/GLB files)
+> and automating the production pipeline to deliver game-engine-ready glTF/GLB assets:
+> 1. **Polished & Manifold Geometry:** Voxelizes raw meshes into Hermite O-Voxels, repairs broken surfaces,
+>    and guarantees clean 2-manifold topology (0 non-manifold edges) with controllable polygon budgets.
+> 2. **6-Channel PBR Materials:** Samples or synthesizes full Physically Based Rendering channels
+>    (RGB Base Color, Metallic, Roughness, Alpha) baked into standard glTF 2.0 texture atlases.
+> 3. **Automated Rigging & Articulation:** Predicts joint hierarchies and vertex skinning fields
+>    for immediate game-engine animation in Unity or Unreal Engine.
+>
+> Quickstart: `make install && .venv/bin/python -m t3d.cli doctor`, then process a raw asset with:
+> `t3d export raw_mesh.glb polished_asset.glb` or inspect with `t3d info asset.t3d`.
 
 Implementation of the supplied blueprint, with its complete Part 2 preserved in
 [plan.md](plan.md). See [PROGRESS.md](PROGRESS.md) for evidence and remaining work.
-An experimental Track A/Track B container implementation exists; production
-generators remain pending, while the CUDA export pipeline has passed small
-synthetic and one-real-rig integration pilots. Validated raw Track A
+An experimental Track A/Track B container implementation exists; the 64³
+raw-model-to-asset pipeline is deployable within the documented quality envelope,
+while the CUDA export pipeline has passed small synthetic and one-real-rig
+integration pilots. Validated raw Track A
 tensors and Z/TZ/H/TH serialization mappings are available in
 `t3d.schema.VoxelAsset` and `t3d.serialization`. `VoxelAsset.canonical()` sorts
 all present geometry, material, and rig arrays together. `serialization_order()`

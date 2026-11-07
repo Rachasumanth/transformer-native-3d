@@ -3,7 +3,7 @@ from collections import Counter
 import numpy as np
 from t3d.schema import VoxelAsset
 from t3d.voxelize import mesh_to_voxels
-from t3d.extraction import voxels_to_mesh
+from t3d.extraction import voxels_to_mesh, resolve_nonmanifold_faces
 from t3d.topology import orient_faces
 
 
@@ -74,3 +74,59 @@ class ExtractionTests(unittest.TestCase):
         v, f = voxels_to_mesh(a)
         self.assertEqual(v.shape, (0, 3))
         self.assertEqual(f.shape, (0, 3))
+
+    def test_resolve_nonmanifold_faces_prunes_spurious_fin(self):
+        # 3 triangles sharing edge (0, 1): 2 form a quad, 1 is a tiny fin sticking out
+        v = np.array([
+            [0.0, 0.0, 0.0],
+            [1.0, 0.0, 0.0],
+            [1.0, 1.0, 0.0],
+            [0.0, 1.0, 0.0],
+            [0.5, 0.0, 0.1]   # fin vertex
+        ])
+        # Two main quad faces: [0, 1, 2] and [0, 2, 3] (edge (0, 2) is internal, edges on boundary)
+        # Add fin sharing edge (0, 1): [0, 1, 4]
+        faces = np.array([
+            [0, 1, 2],
+            [0, 2, 3],
+            [0, 1, 4]
+        ])
+        # Before: edge (0, 1) has 2 incident faces, but wait: edge (0, 1) is in [0, 1, 2] and [0, 1, 4] -> 2 faces.
+        # Let's add another face sharing edge (0, 1): e.g. [1, 0, 4] or another face to create >2 faces on edge (0, 1)
+        faces_nm = np.array([
+            [0, 1, 2],
+            [0, 2, 3],
+            [0, 1, 4],
+            [1, 0, 2]   # duplicate/triple on (0, 1) and (1, 2)
+        ])
+        cleaned = resolve_nonmanifold_faces(v, faces_nm)
+        # Check all edges in cleaned have at most 2 incident faces
+        edges = Counter(tuple(sorted((int(a), int(b)))) for tri in cleaned
+                        for a, b in zip(tri, np.roll(tri, -1)))
+        self.assertTrue(all(count <= 2 for count in edges.values()))
+        self.assertLess(len(cleaned), len(faces_nm))
+
+    def test_resolve_nonmanifold_faces_large_vertex_indices(self):
+        # Regression: packed edge keys with large vertex ids must not be used as
+        # array indices inside the cleanup loop.
+        rng = np.random.default_rng(0)
+        v = rng.random((200_000, 3))
+        faces = np.array([[16384, 71837, 5], *[[16384, 71837, i] for i in range(6, 14)]])
+        cleaned = resolve_nonmanifold_faces(v, faces)
+        edges = Counter(tuple(sorted((int(a), int(b)))) for tri in cleaned
+                        for a, b in zip(tri, np.roll(tri, -1)))
+        self.assertTrue(all(count <= 2 for count in edges.values()))
+        self.assertEqual(len(cleaned), 2)
+
+    def test_resolve_nonmanifold_faces_preserves_clean_manifold(self):
+        # Cube mesh is already 2-manifold
+        v = np.array([[x, y, z] for x in (.2, .8) for y in (.2, .8) for z in (.2, .8)])
+        faces = []
+        for axis in range(3):
+            for side in (.2, .8):
+                ids = np.flatnonzero(v[:, axis] == side)
+                a, b, c, d = ids
+                faces.extend([[a, b, d], [a, d, c]])
+        faces = np.array(faces)
+        cleaned = resolve_nonmanifold_faces(v, faces)
+        self.assertEqual(len(cleaned), len(faces))

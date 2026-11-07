@@ -15,12 +15,12 @@ def surface_comparison(reference_vertices, reference_faces, vertices, faces, *, 
     if samples<=0 or tolerance<=0 or not np.isfinite(tolerance):
         raise ValueError('Samples and tolerance must be positive')
     if len(reference_faces)==0 or len(faces)==0:
-        return dict(valid=False,reason='No reference or reconstructed triangles',samples=samples)
+        return dict(valid=False,valid_topology=False,reason='No reference or reconstructed triangles',samples=samples)
     for name,v,f in [('reference',reference_vertices,reference_faces),('prediction',vertices,faces)]:
         triangles=np.asarray(v)[np.asarray(f)]
         areas=np.linalg.norm(np.cross(triangles[:,1]-triangles[:,0],triangles[:,2]-triangles[:,0]),axis=1)
         if np.any(areas==0) or not np.isfinite(areas).all():
-            return dict(valid=False,reason=f'Degenerate or nonfinite {name} triangles',
+            return dict(valid=False,valid_topology=False,reason=f'Degenerate or nonfinite {name} triangles',
                         degenerate_triangles=int(np.count_nonzero(areas==0)),samples=samples)
     reference,_=sample_conditioning(reference_vertices,reference_faces,uniform_count=samples,salient_count=0,seed=seed)
     prediction,_=sample_conditioning(vertices,faces,uniform_count=samples,salient_count=0,seed=seed+1)
@@ -41,10 +41,11 @@ def surface_comparison(reference_vertices, reference_faces, vertices, faces, *, 
     boundary=[edge for edge,count in edges.items() if count==1]
     boundary_length=float(sum(np.linalg.norm(welded_vertices[a]-welded_vertices[b])
                               for a,b in boundary))
-    return dict(valid=True,samples=samples,tolerance=tolerance,seed=seed,
+    nonmanifold_count=sum(n>2 for n in edges.values())
+    return dict(valid=True,valid_topology=bool(nonmanifold_count==0),samples=samples,tolerance=tolerance,seed=seed,
                 mean_distance=float((recall_dist.mean()+precision_dist.mean())/2),
                 reference_to_prediction=float(recall_dist.mean()),prediction_to_reference=float(precision_dist.mean()),
                 precision=precision,recall=recall,fscore=2*precision*recall/(precision+recall) if precision+recall else 0.,
                 triangles=len(faces),boundary_edges=len(boundary),boundary_edge_length=boundary_length,
                 mean_boundary_edge_length=boundary_length/len(boundary) if boundary else 0.,
-                nonmanifold_edges=sum(n>2 for n in edges.values()))
+                nonmanifold_edges=nonmanifold_count)

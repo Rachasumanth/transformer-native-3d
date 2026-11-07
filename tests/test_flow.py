@@ -15,7 +15,10 @@ class FlowTests(unittest.TestCase):
         torch.testing.assert_close(x,torch.tensor([[1.5,1]],device=self.device))
         class Oracle:
             def __call__(self,*args,**kwargs):return v
-        torch.testing.assert_close(sample_flow(Oracle(),noise,None,None,steps=8),clean)
+        torch.testing.assert_close(sample_flow(Oracle(),noise,None,None,steps=8,method='euler'),clean)
+        torch.testing.assert_close(sample_flow(Oracle(),noise,None,None,steps=8,method='midpoint'),clean)
+        with self.assertRaises(ValueError):
+            sample_flow(Oracle(),noise,None,None,steps=8,method='rk4')
 
     def test_rope_rotation_and_norm(self):
         rope=GramSchmidtRoPE(2,12).to(self.device)
@@ -40,4 +43,6 @@ class FlowTests(unittest.TestCase):
             if p.grad is not None:self.assertTrue(torch.isfinite(p.grad).all())
         result=sample_flow(m,x,coords,prompt,steps=3,shape=shape,orders=[order])
         self.assertEqual(result.shape,x.shape);self.assertTrue(torch.isfinite(result).all())
+        result_mid=sample_flow(m,x,coords,prompt,steps=3,shape=shape,orders=[order],method='midpoint')
+        self.assertEqual(result_mid.shape,x.shape);self.assertTrue(torch.isfinite(result_mid).all())
         with self.assertRaises(ValueError):m(x,coords,.5,prompt,shape=shape,orders=[order*0])
