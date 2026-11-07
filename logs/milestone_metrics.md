@@ -8,8 +8,8 @@ This document tracks quantitative benchmark deltas across all execution mileston
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Baseline Snapshot** | 0.8600 | 0.0766 (ID) / 0.0923 (OOD) | 0.1155 | 0.0901 (Chamfer 0.50) | 4–11 / asset | **FAILED** |
 | **Milestone 0: Infra & Watchdog** | 0.8600 (baseline) | 0.0766 (baseline) | 0.1155 (baseline) | 0.0901 (baseline) | 4–11 (baseline) | **INFRA READY** |
-| **Milestone 1: Refinement Engine**| Pending | Pending | Pending | Pending | Pending | Pending |
-| **Milestone 2: Shard Ingestion**  | Pending | Pending | Pending | Pending | Pending | Pending |
+| **Milestone 1: Refinement Engine**| N/A (Preprocessor) | N/A (Preprocessor) | N/A (Preprocessor) | 0.0000 (Exact barycentric/DFS) | **0 non-manifold edges** (100% 2-manifold) | **PASSED (100% PASS)** |
+| **Milestone 2: Shard Ingestion**  | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
 | **Milestone 3: Architecture**     | Pending | Pending | Pending | Pending | Pending | Pending |
 | **Milestone 4: Phase 1 Gates**    | Pending | Pending | Pending | Pending | Pending | Pending |
 | **Milestone 5: Phase 2 Bridge**   | Pending | Pending | Pending | Pending | Pending | Pending |
