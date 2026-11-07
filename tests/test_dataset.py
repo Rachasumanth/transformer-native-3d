@@ -48,3 +48,17 @@ class DatasetTests(unittest.TestCase):
                 check([dict(first,source_sha256='bad')])
             with self.assertRaisesRegex(ValueError,'Invalid source group'):
                 check([dict(first,source_group=' ')])
+
+    def test_in_distribution_holdout_allows_group_overlap(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            manifest = Path(tmp) / 'manifest.json'
+            first = dict(asset_id='a', path='a.t3d', sha256='a' * 64, split='train',
+                         source='source', license='test', source_sha256='c' * 64, source_group='family')
+            second = dict(first, asset_id='b', path='b.t3d', sha256='b' * 64, split='validation')
+            manifest.write_text(json.dumps(dict(version=1, split_policy='in_distribution_holdout', assets=[first, second])))
+            train = AssetDataset(manifest, split='train')
+            validation = AssetDataset(manifest, split='validation')
+            self.assertEqual((len(train), len(validation), train.split_policy), (1, 1, 'in_distribution_holdout'))
+            manifest.write_text(json.dumps(dict(version=1, split_policy='unknown', assets=[first])))
+            with self.assertRaisesRegex(ValueError, 'Unsupported split policy'):
+                AssetDataset(manifest, split='train')

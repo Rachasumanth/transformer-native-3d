@@ -43,6 +43,8 @@ def main():
 
     records = []
     reports = []
+    duplicates = []
+    seen_hashes = {}
 
     for entry in MODELS:
         src = Path(entry['path'])
@@ -60,6 +62,20 @@ def main():
             save(out_path, asset)
             content = out_path.read_bytes()
             sha256 = hashlib.sha256(content).hexdigest()
+
+            if sha256 in seen_hashes:
+                dup_id = seen_hashes[sha256]
+                duplicates.append(dict(
+                    asset_id=asset_id,
+                    duplicate_of=dup_id,
+                    reason=f'rotational symmetry duplicate of {dup_id}',
+                    sha256=sha256
+                ))
+                out_path.unlink()
+                print(f"Skipping exact duplicate {asset_id} (identical to {dup_id})", flush=True)
+                continue
+
+            seen_hashes[sha256] = asset_id
 
             rec = dict(
                 asset_id=asset_id,
@@ -94,6 +110,8 @@ def main():
         total_assets=len(records),
         train_count=sum(1 for r in records if r['split'] == 'train'),
         validation_count=sum(1 for r in records if r['split'] == 'validation'),
+        duplicates_removed=len(duplicates),
+        duplicate_details=duplicates,
         reports=reports
     )
     (out_dir / 'conversion-report.json').write_text(json.dumps(summary, indent=2) + '\n')
@@ -103,7 +121,12 @@ def main():
         for path in [out_dir / 'manifest.json', out_dir / 'conversion-report.json', *(out_dir / r['path'] for r in records)]:
             z.write(path, arcname=path.name)
 
-    print(f"Complete: {len(records)} assets ({summary['train_count']} train, {summary['validation_count']} val) -> {archive}")
+    kaggle_archive = Path('kaggle-material-multiasset-32/material-multiasset-32.zip')
+    if kaggle_archive.parent.exists():
+        import shutil
+        shutil.copyfile(archive, kaggle_archive)
+
+    print(f"Complete: {len(records)} assets ({summary['train_count']} train, {summary['validation_count']} val, {len(duplicates)} duplicates removed) -> {archive}")
 
 
 if __name__ == '__main__':

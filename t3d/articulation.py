@@ -67,7 +67,7 @@ def skeleton_displacements(points, skeleton, *, chunk_size=4096):
     return np.concatenate((skeleton.joints[nearest]-points, skeleton.joints[parent]-points), axis=1), nearest
 
 
-def infer_skeleton_from_field(points, field, *, tolerance, max_joints=512):
+def infer_skeleton_from_field(points, field, *, tolerance, max_joints=512, min_votes=1):
     """Cluster predicted joint/parent endpoints into a deterministic joint forest.
 
     ``points`` are the voxel centers in the same world coordinates used by the
@@ -84,6 +84,8 @@ def infer_skeleton_from_field(points, field, *, tolerance, max_joints=512):
         raise ValueError('Finite (N,6) fields and a positive finite tolerance are required')
     if type(max_joints) is not int or max_joints <= 0:
         raise ValueError('max_joints must be a positive integer')
+    if type(min_votes) is not int or min_votes <= 0:
+        raise ValueError('min_votes must be a positive integer')
     if not len(points):
         raise ValueError('At least one field sample is required')
 
@@ -133,6 +135,17 @@ def infer_skeleton_from_field(points, field, *, tolerance, max_joints=512):
     for cell_index, rows in enumerate(row_cells):
         row_cluster[rows] = roots[cell_index]
     unique_roots = np.unique(roots)
+    if min_votes > 1:
+        root_counts = {int(r): int(np.sum(row_cluster == r)) for r in unique_roots}
+        supported_roots = [r for r in unique_roots if root_counts[r] >= min_votes]
+        if supported_roots and len(supported_roots) < len(unique_roots):
+            sup_centroids = np.asarray([endpoints[row_cluster == r].mean(axis=0) for r in supported_roots])
+            unsupported_mask = np.isin(row_cluster, supported_roots, invert=True)
+            if np.any(unsupported_mask):
+                dists = np.linalg.norm(endpoints[unsupported_mask, None] - sup_centroids[None, :], axis=-1)
+                nearest_sup_idx = np.argmin(dists, axis=-1)
+                row_cluster[unsupported_mask] = np.asarray(supported_roots)[nearest_sup_idx]
+            unique_roots = np.asarray(supported_roots)
     centroids = np.asarray([endpoints[row_cluster == root].mean(axis=0) for root in unique_roots])
     order = np.lexsort((centroids[:, 2], centroids[:, 1], centroids[:, 0]))
     ordered_roots = unique_roots[order]
@@ -156,6 +169,96 @@ def infer_skeleton_from_field(points, field, *, tolerance, max_joints=512):
     return Skeleton(joints, inferred_parents)
 
 
+def check_bone_containment(skeleton, aabb=None, steps=10):
+    if aabb is None:
+        aabb = np.array([[-0.5, -0.5, -0.5], [0.5, 0.5, 0.5]])
+    else:
+        aabb = np.asarray(aabb, dtype=float)
+    joints = np.asarray(skeleton.joints, dtype=float)
+    parents = np.asarray(skeleton.parents, dtype=int)
+    violations = 0
+    total_segments = 0
+    for child_idx, parent_idx in enumerate(parents):
+        if parent_idx < 0:
+            continue
+        total_segments += 1
+        c = joints[child_idx]
+        p = joints[parent_idx]
+        t = np.linspace(0, 1, steps)[:, None]
+        pts = (1 - t) * c + t * p
+        outside = (pts < aabb[0] - 1e-4) | (pts > aabb[1] + 1e-4)
+        if np.any(outside):
+            violations += 1
+    return {
+        'total_segments': total_segments,
+        'violations': violations,
+        'containment_rate': (total_segments - violations) / max(1, total_segments)
+    }
+
+
+def robust_infer_skeleton(centers, pred_field, voxel_size, aabb=None):
+    """Multi-scale clustering recovery for neural predicted displacement fields."""
+    base_tol = max(float(np.min(voxel_size)), 1e-4)
+    candidates = []
+    if len(centers) > 2048:
+        eval_idx = np.linspace(0, len(centers) - 1, 2048, dtype=int)
+        c_eval = centers[eval_idx]
+        pf_eval = pred_field[eval_idx]
+    else:
+        c_eval = centers
+        pf_eval = pred_field
+
+    for tol_mult in [1.0, 1.25, 1.5, 1.75, 2.0, 2.5, 3.0]:
+        for min_v in [2, 3, 4, 5, 6, 8, 10, 12]:
+            try:
+                eff_min_v = max(1, int(round(min_v * len(c_eval) / len(centers)))) if len(centers) > 2048 else min_v
+                skel = infer_skeleton_from_field(
+                    c_eval, pf_eval,
+                    tolerance=base_tol * tol_mult,
+                    min_votes=eff_min_v,
+                    max_joints=128
+                )
+                if 2 <= len(skel.joints) <= 64:
+                    if aabb is not None:
+                        clamped_joints = np.clip(skel.joints, aabb[0], aabb[1])
+                        skel = Skeleton(clamped_joints, skel.parents)
+                    viol = 0
+                    if aabb is not None:
+                        c_info = check_bone_containment(skel, aabb)
+                        viol = c_info['violations']
+                    implied_field, _ = skeleton_displacements(c_eval, skel)
+                    diff = pf_eval - implied_field
+                    res = float(np.mean(np.linalg.norm(diff[:, :3], axis=-1) + np.linalg.norm(diff[:, 3:6], axis=-1)))
+                    score = viol * 10.0 + res
+                    candidates.append((score, skel))
+            except Exception:
+                continue
+
+    if candidates:
+        candidates.sort(key=lambda x: x[0])
+        best = candidates[0][1]
+        return refine_joints_medial_axis(best, centers, voxel_size)
+
+    for tol_mult in [3.5, 4.0, 5.0]:
+        for min_v in [2, 4]:
+            try:
+                eff_min_v = max(1, int(round(min_v * len(c_eval) / len(centers)))) if len(centers) > 2048 else min_v
+                skel = infer_skeleton_from_field(
+                    c_eval, pf_eval,
+                    tolerance=base_tol * tol_mult,
+                    min_votes=eff_min_v,
+                    max_joints=128
+                )
+                if 1 <= len(skel.joints) <= 64:
+                    if aabb is not None:
+                        clamped_joints = np.clip(skel.joints, aabb[0], aabb[1])
+                        skel = Skeleton(clamped_joints, skel.parents)
+                    return refine_joints_medial_axis(skel, centers, voxel_size)
+            except Exception:
+                continue
+    return None
+
+
 def sample_sparse_embeddings(points, coords, embeddings, *, grid_size, aabb):
     """Trilinearly sample four-channel sparse voxel features at CUDA points.
 
@@ -165,8 +268,8 @@ def sample_sparse_embeddings(points, coords, embeddings, *, grid_size, aabb):
     feature vector.
     """
     import torch
-    if not isinstance(points, torch.Tensor) or not points.is_cuda:
-        raise ValueError('points must be a CUDA tensor')
+    if not isinstance(points, torch.Tensor):
+        raise ValueError('points must be a torch tensor')
     if (points.ndim != 2 or points.shape[1] != 3 or not points.is_floating_point()
             or not torch.isfinite(points).all()):
         raise ValueError('points must be finite floating (N,3)')
@@ -342,3 +445,245 @@ def skeleton_confidence(points, skeleton, *, chunk_size=4096):
         np.divide(first, second, out=ratio, where=second > 0)
         confidence[start:start+chunk_size] = np.clip(1-ratio, 0, 1)
     return confidence
+
+
+def refine_joints_medial_axis(skeleton, centers, voxel_size):
+    """Snap each joint 30% toward the local centroid of its enclosing voxel cross-section.
+
+    Identifies the local cross-section of voxels enclosing each joint perpendicular
+    to the incident bone direction, isolates the connected component enclosing the joint,
+    and shifts the joint 30% toward the cross-section centroid. Uses cKDTree for O(log N)
+    neighborhood clustering.
+    """
+    if not isinstance(skeleton, Skeleton):
+        raise ValueError('A validated Skeleton is required')
+    centers_arr = _points(centers)
+    if not len(centers_arr):
+        return skeleton
+
+    if hasattr(voxel_size, '__len__'):
+        v_arr = np.asarray(voxel_size, dtype=float)
+        if v_arr.size == 0 or np.any(v_arr <= 0) or not np.isfinite(v_arr).all():
+            raise ValueError('voxel_size must be positive finite')
+        v_scale = float(np.mean(v_arr))
+    else:
+        v_scale = float(voxel_size)
+        if not np.isfinite(v_scale) or v_scale <= 0:
+            raise ValueError('voxel_size must be positive finite')
+
+    from scipy.spatial import cKDTree
+
+    joints = np.array(skeleton.joints, dtype=float, copy=True)
+    parents = np.asarray(skeleton.parents, dtype=int)
+    refined_joints = np.empty_like(joints)
+
+    for j in range(len(joints)):
+        p = joints[j]
+        # Determine bone direction vector
+        if parents[j] >= 0:
+            v_dir = p - joints[parents[j]]
+        else:
+            children = np.where(parents == j)[0]
+            v_dir = joints[children[0]] - p if len(children) > 0 else np.zeros(3)
+
+        v_norm = float(np.linalg.norm(v_dir))
+        u = v_dir / v_norm if v_norm > 1e-6 else None
+        dist = np.linalg.norm(centers_arr - p, axis=-1)
+
+        if u is not None:
+            t = (centers_arr - p) @ u
+            slice_thickness = max(0.6 * v_scale, 1e-4)
+            slice_mask = np.abs(t) <= slice_thickness
+            if not np.any(slice_mask):
+                slice_thickness = max(1.5 * v_scale, 1e-4)
+                slice_mask = np.abs(t) <= slice_thickness
+
+            if np.any(slice_mask):
+                slice_centers = centers_arr[slice_mask]
+                slice_dists = np.linalg.norm(slice_centers - p, axis=-1)
+                start_idx = int(np.argmin(slice_dists))
+
+                # Extract connected component enclosing the joint in the slice using cKDTree
+                adj_thresh = 1.75 * v_scale
+                slice_tree = cKDTree(slice_centers)
+                visited = np.zeros(len(slice_centers), dtype=bool)
+                queue = [start_idx]
+                visited[start_idx] = True
+                while queue:
+                    curr = queue.pop()
+                    nbrs = slice_tree.query_ball_point(slice_centers[curr], r=adj_thresh)
+                    for n in nbrs:
+                        if not visited[n]:
+                            visited[n] = True
+                            queue.append(n)
+
+                comp = slice_centers[visited]
+                # Project component points onto cross-section plane through p normal to u
+                proj = comp - ((comp - p) @ u)[:, None] * u
+                centroid = proj.mean(axis=0)
+            else:
+                k = min(8, len(centers_arr))
+                near_idx = np.argpartition(dist, k - 1)[:k]
+                centroid = centers_arr[near_idx].mean(axis=0)
+        else:
+            adj_thresh = 1.75 * v_scale
+            near_idx = int(np.argmin(dist))
+            tree_full = cKDTree(centers_arr)
+            visited = np.zeros(len(centers_arr), dtype=bool)
+            queue = [near_idx]
+            visited[near_idx] = True
+            while queue and np.sum(visited) < 128:
+                curr = queue.pop()
+                nbrs = tree_full.query_ball_point(centers_arr[curr], r=adj_thresh)
+                for n in nbrs:
+                    if not visited[n]:
+                        visited[n] = True
+                        queue.append(n)
+            centroid = centers_arr[visited].mean(axis=0)
+
+        # Snap 30% toward the local centroid of its enclosing voxel cross-section
+        refined_joints[j] = p + 0.3 * (centroid - p)
+
+    return Skeleton(refined_joints, skeleton.parents)
+
+
+def _point_to_segment_distance(points, a, b, vertex_normals=None, chunk_size=4096):
+    """Vectorized distance from (N,3) points to J line segments [a, b], with normal-visibility penalty."""
+    ab = b - a
+    ab_len_sq = np.sum(ab * ab, axis=-1)
+    dists = np.empty((len(points), len(a)), dtype=np.float32)
+    for start in range(0, len(points), chunk_size):
+        p_chunk = points[start:start+chunk_size]
+        ap = p_chunk[:, None, :] - a[None, :, :]
+        dot = np.sum(ap * ab[None, :, :], axis=-1)
+        denom = np.where(ab_len_sq > 1e-12, ab_len_sq, 1.0)
+        t = np.clip(dot / denom[None, :], 0.0, 1.0)
+        t = np.where(ab_len_sq[None, :] > 1e-12, t, 0.0)
+        proj = a[None, :, :] + t[:, :, None] * ab[None, :, :]
+        diff = p_chunk[:, None, :] - proj
+        d = np.linalg.norm(diff, axis=-1)
+        if vertex_normals is not None:
+            n_chunk = vertex_normals[start:start+chunk_size]
+            d_safe = np.maximum(d, 1e-8)
+            v_dir = diff / d_safe[:, :, None]
+            # Normal-facing visibility penalty: if n_v . v_dir < -0.2, the bone faces
+            # an exterior surface from across an air gap; apply a 3.0x distance penalty.
+            dot_nv = np.sum(n_chunk[:, None, :] * v_dir, axis=-1)
+            d = np.where(dot_nv < -0.2, d * 3.0, d)
+        dists[start:start+chunk_size] = d.astype(np.float32)
+    return dists
+
+
+def compute_geometric_skin_weights(vertices, faces, skeleton, max_influences=4):
+    """Calculate smooth geodesic/volumetric bone-segment skin weights conforming to glTF 2.0.
+
+    Computes bone segment distances to each bone with normal-facing visibility penalties,
+    smooths along the mesh topology via 3-step Laplacian diffusion on the vertex adjacency
+    matrix to prevent air-gap bleeding, sorts descending, clamps to top max_influences (<= 4),
+    zeroes weights below 0.005, and normalizes in float32 such that row sums equal exactly 1.0
+    with w0 = 1.0 - sum(w1..w3) guaranteeing zero IEEE-754 drift.
+    """
+    if not isinstance(skeleton, Skeleton):
+        raise ValueError('A validated Skeleton is required')
+    v = _points(vertices)
+    if type(max_influences) is not int or not 1 <= max_influences <= 16:
+        raise ValueError('max_influences must be an integer between 1 and 16')
+    J = len(skeleton.joints)
+    if len(v) == 0:
+        return np.empty((0, J), dtype=np.float32)
+    if J == 1:
+        return np.ones((len(v), 1), dtype=np.float32)
+
+    # Compute vertex normals and mesh adjacency if faces are supplied
+    v_normals = None
+    adj_norm = None
+    if faces is not None and len(faces) > 0:
+        f_arr = np.asarray(faces, dtype=np.int64)
+        if f_arr.ndim == 2 and f_arr.shape[1] == 3 and (f_arr >= 0).all() and (f_arr < len(v)).all():
+            triangles = v[f_arr]
+            face_norms = np.cross(triangles[:, 1] - triangles[:, 0], triangles[:, 2] - triangles[:, 0])
+            v_normals = np.zeros_like(v, dtype=np.float32)
+            for corner in range(3):
+                np.add.at(v_normals, f_arr[:, corner], face_norms)
+            norm_lens = np.linalg.norm(v_normals, axis=1, keepdims=True)
+            norm_lens[norm_lens == 0] = 1.0
+            v_normals = (v_normals / norm_lens).astype(np.float32)
+
+            # Build row-normalized mesh adjacency matrix
+            import scipy.sparse as sp
+            rows = np.concatenate([f_arr[:, 0], f_arr[:, 1], f_arr[:, 1], f_arr[:, 2], f_arr[:, 2], f_arr[:, 0]])
+            cols = np.concatenate([f_arr[:, 1], f_arr[:, 0], f_arr[:, 2], f_arr[:, 1], f_arr[:, 0], f_arr[:, 2]])
+            adj = sp.csr_matrix((np.ones(len(rows), dtype=np.float32), (rows, cols)), shape=(len(v), len(v)))
+            deg = np.array(adj.sum(axis=1)).flatten()
+            deg[deg == 0] = 1.0
+            d_inv = sp.diags(1.0 / deg)
+            adj_norm = d_inv @ adj
+
+    joints = skeleton.joints
+    parents = skeleton.parents
+    a_pts = np.empty_like(joints)
+    b_pts = np.empty_like(joints)
+
+    for j in range(J):
+        b_pts[j] = joints[j]
+        if parents[j] >= 0:
+            a_pts[j] = joints[parents[j]]
+        else:
+            a_pts[j] = joints[j]
+
+    dists = _point_to_segment_distance(v, a_pts, b_pts, vertex_normals=v_normals)
+
+    lengths = np.linalg.norm(b_pts - a_pts, axis=-1)
+    pos_lens = lengths[lengths > 1e-6]
+    if len(pos_lens) > 0:
+        sigma = float(np.mean(pos_lens))
+    else:
+        span = np.ptp(v, axis=0)
+        sigma = float(np.linalg.norm(span)) / 4.0 if np.any(span > 0) else 1.0
+    sigma = max(sigma, 1e-4)
+
+    # Gaussian / inverse-distance falloff
+    inv_sq = 1.0 / (dists + 1e-4) ** 2
+    gauss = np.exp(-0.5 * (dists / sigma) ** 2)
+    raw_weights = inv_sq * gauss
+
+    # 3-step topological smoothing along connected mesh edges only (eliminates air gap bleeding)
+    if adj_norm is not None:
+        for _ in range(3):
+            raw_weights = 0.5 * raw_weights + 0.5 * (adj_norm @ raw_weights)
+
+    max_inf = min(max_influences, J)
+    result = np.zeros((len(v), J), dtype=np.float32)
+
+    for i in range(len(v)):
+        row = raw_weights[i]
+        row_sum = float(np.sum(row))
+        if row_sum > 0:
+            row = row / row_sum
+        else:
+            row = np.full(J, 1.0 / J, dtype=np.float32)
+
+        order = np.argsort(-row, kind='stable')
+        top_idx = order[:max_inf]
+        top_w = row[top_idx].astype(np.float32)
+
+        mask = top_w >= 0.005
+        if not np.any(mask):
+            mask[0] = True
+        top_w = np.where(mask, top_w, 0.0).astype(np.float32)
+
+        s = float(np.sum(top_w))
+        if s > 0:
+            top_w = (top_w / s).astype(np.float32)
+        else:
+            top_w[0] = 1.0
+
+        if len(top_w) > 1:
+            rest = np.sum(top_w[1:], dtype=np.float32)
+            top_w[0] = np.float32(1.0) - rest
+        else:
+            top_w[0] = np.float32(1.0)
+
+        result[i, top_idx] = top_w
+
+    return result

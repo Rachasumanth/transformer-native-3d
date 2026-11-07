@@ -3,7 +3,7 @@ import tempfile
 from pathlib import Path
 import unittest
 import numpy as np
-from t3d.container import dumps, load, loads, save
+from t3d.container import dumps, load, loads, save, migrate_container
 from t3d.schema import VoxelAsset
 
 
@@ -70,3 +70,35 @@ class ContainerTests(unittest.TestCase):
             save(path, self.asset())
             self.assertEqual(len(load(path).asset.coords), 2)
             self.assertEqual(sorted(p.name for p in Path(directory).iterdir()), ['asset.t3d'])
+
+    def test_migrate_container_v1_and_profile1(self):
+        source = self.asset().canonical()
+        v2_sealed = dumps(source, bpt_tokens=[10, 20, 30])
+        self.assertEqual(v2_sealed[:8], b'T3DV\x02\x00\x00\x00')
+
+        # Create synthetic v1 container (version=1, profile=1, no trailer)
+        v1_raw = bytearray(v2_sealed[:-32])
+        struct.pack_into('<I', v1_raw, 4, 1)  # version 1
+        struct.pack_into('<H', v1_raw, 110, 1)  # profile 1
+
+        # loads without flag should reject version 1
+        with self.assertRaisesRegex(ValueError, 'magic or version'):
+            loads(v1_raw)
+
+        # migrate_container should successfully upgrade v1 to v2 sealed
+        migrated = migrate_container(v1_raw)
+        self.assertEqual(migrated[:8], b'T3DV\x02\x00\x00\x00')
+        restored = loads(migrated)
+        np.testing.assert_allclose(restored.asset.coords, source.coords)
+        np.testing.assert_array_equal(restored.bpt_tokens, [10, 20, 30])
+
+        # Already sealed v2 container returns verified bytes
+        same = migrate_container(v2_sealed)
+        self.assertEqual(same, v2_sealed)
+
+        # Corrupt data raises ValueError
+        corrupt = bytearray(v2_sealed)
+        corrupt[150] ^= 0xFF
+        with self.assertRaises(ValueError):
+            migrate_container(corrupt)
+

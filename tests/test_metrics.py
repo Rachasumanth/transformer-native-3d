@@ -22,7 +22,21 @@ class MetricTests(unittest.TestCase):
         result=surface_comparison(vertices,faces,vertices,faces,samples=32)
         self.assertEqual(result['boundary_edges'],4)
         self.assertEqual(result['nonmanifold_edges'],0)
+        self.assertTrue(result['valid_topology'])
         self.assertAlmostEqual(result['boundary_edge_length'],4.)
 
     def test_empty_prediction_is_failure(self):
-        self.assertFalse(surface_comparison([],[],[],[])['valid'])
+        result = surface_comparison([],[],[],[])
+        self.assertFalse(result['valid'])
+        self.assertFalse(result['valid_topology'])
+
+    def test_nonmanifold_mesh_fails_topology_validation(self):
+        # Three triangles sharing the same edge (0, 1)
+        ref_v = np.array([[0., 0, 0], [1, 0, 0], [0, 1, 0]])
+        ref_f = np.array([[0, 1, 2]])
+        v = np.array([[0., 0, 0], [1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1]])
+        f = np.array([[0, 1, 2], [0, 1, 3], [0, 1, 4]])
+        result = surface_comparison(ref_v, ref_f, v, f, samples=32)
+        self.assertTrue(result['valid'])
+        self.assertEqual(result['nonmanifold_edges'], 1)
+        self.assertFalse(result['valid_topology'])

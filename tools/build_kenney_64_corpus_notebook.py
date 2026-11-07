@@ -34,11 +34,18 @@ def main():
         'assert len(matches)==1,"Expected exactly one mounted raw acquisition report"\n'
         'raw_root=matches[0].parent\n'
         f'out=pathlib.Path("/tmp/{label}")\n'
-        f'subprocess.run([sys.executable,"-m","tools.prepare_kenney_catalog","--index",str(root/"artifacts/kenney-raw-pilot/candidate-index.json"),"--raw-root",str(raw_root),"--output",str(out),"--grid-size","64","--start","{args.shard}","--stop","944","--stride","{args.shards}","--workers","2"],cwd=root,check=True)\n'
+        f'subprocess.run([sys.executable,"-m","tools.prepare_kenney_catalog","--index",str(root/"artifacts/kenney-raw-pilot/candidate-index.json"),"--raw-root",str(raw_root),"--output",str(out),"--grid-size","64","--start","{args.shard}","--stop","944","--stride","{args.shards}","--workers","4"],cwd=root,check=True)\n'
         'report=json.loads((out/"conversion-report.json").read_text())\n'
         f'report["source_sha256"]={digest!r};(pathlib.Path("/kaggle/working")/"{label}-report.json").write_text(json.dumps(report,indent=2)+"\\n")\n'
         f'shutil.copyfile(out.parent/(out.name+".zip"),pathlib.Path("/kaggle/working")/"{label}.zip")\n'
     )
+
+    # Active Kaggle username
+    try:
+        import kaggle
+        owner = kaggle.api.get_config_value('username') or 'dileepkumarchakali'
+    except Exception:
+        owner = 'dileepkumarchakali'
 
     out = root / f'kaggle-kenney-corpus-64-{args.shard}'
     out.mkdir(exist_ok=True)
@@ -52,7 +59,7 @@ def main():
     )
     (out / 'kernel-metadata.json').write_text(
         json.dumps({
-            'id': f'sumu143/t3d-kenney-corpus-64-conversion-shard-{args.shard}',
+            'id': f'{owner}/t3d-kenney-corpus-64-conversion-shard-{args.shard}',
             'title': f'T3D Kenney Corpus 64 Conversion Shard {args.shard}',
             'code_file': 'corpus.ipynb',
             'language': 'python',
@@ -60,13 +67,13 @@ def main():
             'is_private': True,
             'enable_gpu': False,
             'enable_internet': True,
-            'dataset_sources': ['sumu143/t3d-kenney-pinned-raw-catalog'],
+            'dataset_sources': [f'{owner}/t3d-kenney-pinned-raw-catalog'],
             'competition_sources': [],
             'kernel_sources': [],
             'model_sources': []
         }, indent=2) + '\n'
     )
-    print(f'Built shard {args.shard} with code bundle digest: {digest}')
+    print(f'Built shard {args.shard} for owner {owner} with code bundle digest: {digest}')
 
 
 if __name__ == '__main__':

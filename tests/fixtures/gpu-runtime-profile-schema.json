@@ -1,0 +1,20 @@
+{
+  "_fixture_note": "Synthetic schema fixture only. It is not hardware evidence. Real measurements live in artifacts/ and are validated by the release check.",
+  "hardware": "Synthetic Tesla T4 fixture",
+  "acceptance": {
+    "vram_threshold_passed": true,
+    "measured_peak_vram_gb": 0.5
+  },
+  "benchmarks": [
+    {
+      "steps": 10,
+      "mean_total_seconds": 2.0,
+      "runs": [
+        {"has_pbr": true, "mesh_vertices": 1, "mesh_triangles": 1, "glb_bytes": 2048},
+        {"has_pbr": true, "mesh_vertices": 1, "mesh_triangles": 1, "glb_bytes": 2048},
+        {"has_pbr": true, "mesh_vertices": 1, "mesh_triangles": 1, "glb_bytes": 2048},
+        {"has_pbr": true, "mesh_vertices": 1, "mesh_triangles": 1, "glb_bytes": 2048}
+      ]
+    }
+  ]
+}

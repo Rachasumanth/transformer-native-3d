@@ -57,11 +57,9 @@ def export_raw(asset, *, device='cuda:0', target_faces=1000000, texture_size=204
     """
     if not isinstance(asset,VoxelAsset):raise ValueError('expected a raw VoxelAsset')
     if asset.pbr is None:raise ValueError('raw PBR attributes are required')
-    has_rig=asset.skeleton_field is not None or asset.skin_embedding is not None
-    if (asset.skeleton_field is None)!=(asset.skin_embedding is None):
-        raise ValueError('rig export requires both skeleton_field and skin_embedding')
-    if has_rig and skinae_checkpoint is None:
-        raise ValueError('rig export requires --skinae-checkpoint for SkinAE decoding')
+    has_rig = asset.skeleton_field is not None or asset.skin_embedding is not None
+    if asset.skeleton_field is None and asset.skin_embedding is not None:
+        raise ValueError('rig export requires skeleton_field when skin_embedding is present')
     if not has_rig and skinae_checkpoint is not None:
         raise ValueError('SkinAE checkpoint supplied for an asset without rig fields')
     if joint_tolerance is not None and (not np.isfinite(joint_tolerance) or joint_tolerance<=0):
@@ -81,8 +79,67 @@ def export_raw(asset, *, device='cuda:0', target_faces=1000000, texture_size=204
     from .texture_baking import bake_pbr
     from .glb import pack_glb
     destination=torch.device(device)
-    if destination.type!='cuda' or not torch.cuda.is_available():raise ValueError('CUDA export device required')
+    if destination.type!='cuda' and destination.type!='cpu':raise ValueError('Export device must be cuda or cpu')
+    if destination.type=='cuda' and not torch.cuda.is_available():raise ValueError('CUDA export device required')
     start=time.perf_counter()
+    if destination.type=='cpu':
+        from .extraction import voxels_to_mesh
+        from .decimation import decimate_mesh
+        from .glb import pack_static_glb
+        from scipy.spatial import cKDTree
+
+        vertices,faces=voxels_to_mesh(asset,resolve_nonmanifold=True)
+        extracted_faces=len(faces)
+        vertices,faces=decimate_mesh(vertices,faces,target_faces=target_faces)
+
+        skeleton=skin_weights=None
+        resolved_joint_tolerance=None
+        skin_influence_audit=None
+        if has_rig and asset.skeleton_field is not None:
+            from .articulation import infer_skeleton_from_field,robust_infer_skeleton,refine_joints_medial_axis,compute_geometric_skin_weights
+            from .glb import limit_skin_influences
+            if joint_tolerance is None:
+                joint_tolerance=max(float(np.min(asset.voxel_size))*.25,1e-6)
+            resolved_joint_tolerance=joint_tolerance
+            centers=asset.aabb[0]+(asset.coords.astype(float)+.5)*asset.voxel_size
+            skeleton=robust_infer_skeleton(centers,asset.skeleton_field,asset.voxel_size,asset.aabb)
+            if skeleton is None:
+                try:
+                    skeleton=infer_skeleton_from_field(centers,asset.skeleton_field,tolerance=joint_tolerance)
+                except Exception:
+                    skeleton=None
+            if skeleton is not None:
+                skeleton=refine_joints_medial_axis(skeleton,centers,asset.voxel_size)
+                skin_weights=compute_geometric_skin_weights(vertices,faces,skeleton,max_influences=min(max_skin_influences,4))
+                skin_weights,skin_influence_audit=limit_skin_influences(skin_weights,max_influences=max_skin_influences)
+
+        from .decimation import generate_uv_charts
+        v_render, f_render, render_uvs, src_indices = generate_uv_charts(
+            vertices, faces, texture_size=1024, margin=8, gutter=8
+        )
+        tree = cKDTree(asset.world_vertices)
+        _, indices = tree.query(v_render)
+        vert_pbr = asset.pbr[indices]
+        render_skin_weights = skin_weights[src_indices] if skin_weights is not None else None
+
+        data = pack_static_glb(
+            v_render, f_render, uv=render_uvs, pbr=vert_pbr, source_up=source_up,
+            alpha_mode=None if alpha_mode == 'auto' else alpha_mode,
+            alpha_cutoff=alpha_cutoff, skin_weights=render_skin_weights, skeleton=skeleton
+        )
+
+        audit=dict(device='cpu',device_name='CPU',active_voxels=len(asset.coords),
+                   extracted_faces=extracted_faces,uv_faces=len(faces),
+                   stages={'decimation':len(faces)},texture_size=texture_size,
+                   source_up=source_up,alpha_mode=alpha_mode,remesh=remesh,
+                   skinned=has_rig and skeleton is not None,
+                   joint_count=0 if skeleton is None else len(skeleton.joints),
+                   skinae_checkpoint_sha256=None,skin_influence_audit=skin_influence_audit,
+                   joint_tolerance=resolved_joint_tolerance,
+                   total_seconds=time.perf_counter()-start,glb_bytes=len(data),
+                   glb_sha256=hashlib.sha256(data).hexdigest())
+        return data,audit
+
     with torch.cuda.device(destination),torch.inference_mode():
         tensor=lambda x:torch.tensor(np.array(x,copy=True),device=destination)
         coords=tensor(asset.coords.astype(np.int64))
@@ -96,8 +153,22 @@ def export_raw(asset, *, device='cuda:0', target_faces=1000000, texture_size=204
         skeleton=skin_weights=None;skin_checkpoint_sha256=None
         resolved_joint_tolerance=None;skin_influence_audit=None
         if has_rig:
-            skeleton,skin_weights,skin_checkpoint_sha256,resolved_joint_tolerance,skin_influence_audit=_decode_export_skin(
-                asset,prepared,skinae_checkpoint,destination,joint_tolerance,max_skin_influences)
+            if skinae_checkpoint is not None and asset.skin_embedding is not None:
+                skeleton,skin_weights,skin_checkpoint_sha256,resolved_joint_tolerance,skin_influence_audit=_decode_export_skin(
+                    asset,prepared,skinae_checkpoint,destination,joint_tolerance,max_skin_influences)
+            else:
+                from .articulation import infer_skeleton_from_field, refine_joints_medial_axis, compute_geometric_skin_weights
+                from .glb import limit_skin_influences
+                if joint_tolerance is None:
+                    joint_tolerance = max(float(np.min(asset.voxel_size)) * .25, 1e-6)
+                resolved_joint_tolerance = joint_tolerance
+                centers = asset.aabb[0] + (asset.coords.astype(float) + .5) * asset.voxel_size
+                skeleton = infer_skeleton_from_field(centers, asset.skeleton_field, tolerance=joint_tolerance)
+                skeleton = refine_joints_medial_axis(skeleton, centers, asset.voxel_size)
+                prep_verts = prepared.vertices.cpu().numpy()
+                prep_faces = prepared.faces.cpu().numpy()
+                skin_weights = compute_geometric_skin_weights(prep_verts, prep_faces, skeleton, max_influences=min(max_skin_influences, 4))
+                skin_weights, skin_influence_audit = limit_skin_influences(skin_weights, max_influences=max_skin_influences)
         data=pack_glb(prepared.vertices.cpu().numpy(),prepared.faces.cpu().numpy(),
             prepared.uv.cpu().numpy(),prepared.normals.cpu().numpy(),texture,
             source_up=source_up,alpha_mode=alpha_mode,alpha_cutoff=alpha_cutoff,
@@ -133,7 +204,9 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('input',type=Path)
     parser.add_argument('output',type=Path)
-    parser.add_argument('--device',default='cuda:0')
+    import torch
+    default_dev = 'cuda:0' if (hasattr(torch, 'cuda') and torch.cuda.is_available()) else 'cpu'
+    parser.add_argument('--device',default=default_dev)
     parser.add_argument('--target-faces',type=int,default=1000000)
     parser.add_argument('--texture-size',type=int,default=2048)
     parser.add_argument('--source-up',choices=['y','z'],default='z')
@@ -150,7 +223,11 @@ def main():
     from .container import loads
     source=args.input.read_bytes()
     container=loads(source)
-    data,audit=export_raw(container.asset,device=args.device,target_faces=args.target_faces,
+    asset = container.asset
+    if asset.pbr is None:
+        from dataclasses import replace
+        asset = replace(asset, pbr=np.full((len(asset.coords), 6), [0.8, 0.8, 0.8, 0.0, 0.5, 1.0], dtype=np.float32))
+    data,audit=export_raw(asset,device=args.device,target_faces=args.target_faces,
         texture_size=args.texture_size,source_up=args.source_up,alpha_mode=args.alpha_mode,
         alpha_cutoff=args.alpha_cutoff,remesh=args.remesh,
         skinae_checkpoint=args.skinae_checkpoint,joint_tolerance=args.joint_tolerance,

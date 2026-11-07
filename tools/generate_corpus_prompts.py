@@ -7,8 +7,14 @@ def id_to_prompt(asset_id: str) -> str:
     """Map a Kenney asset ID into an aligned natural English text prompt."""
     name = asset_id[len('kenney-'):] if asset_id.startswith('kenney-') else asset_id
     parts = name.split('-kit-')
-    pack = parts[0] if len(parts) > 1 else 'asset'
-    item = parts[1] if len(parts) > 1 else name
+    if len(parts) > 1:
+        pack, item = parts[0], parts[1]
+    else:
+        pack, item = 'asset', name
+        for prefix in ('blocky-characters', 'mini-characters', 'mini-dungeon', 'cube-pets'):
+            if name.startswith(prefix + '-'):
+                pack, item = prefix, name[len(prefix) + 1:]
+                break
 
     # Clean hyphenated words
     item_clean = item.replace('-', ' ')
@@ -20,7 +26,20 @@ def id_to_prompt(asset_id: str) -> str:
         'furniture': 'furniture piece',
         'nature': 'nature environment asset',
         'pirate': 'pirate theme asset',
-        'space': 'sci-fi space asset'
+        'space': 'sci-fi space asset',
+        'blaster': 'sci-fi weapon asset',
+        'blocky-characters': 'blocky character',
+        'castle': 'castle structure',
+        'city-commercial': 'commercial building',
+        'city-roads': 'road piece',
+        'city-suburban': 'suburban building',
+        'cube-pets': 'cube pet',
+        'graveyard': 'graveyard prop',
+        'mini-characters': 'miniature character',
+        'mini-dungeon': 'dungeon prop',
+        'platformer': 'platformer level piece',
+        'prototype': 'prototype prop',
+        'tower-defense': 'tower defense piece',
     }
     descriptor = pack_descriptors.get(pack, 'asset')
     return f"{article} {item_clean} {descriptor}"

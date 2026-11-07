@@ -97,14 +97,17 @@ def dumps_latents(asset, *, curve='z', bpt_tokens=None):
     return seal(bytes(result))
 
 
-def loads_latents(data, *, expected_models=None):
+def loads_latents(data, *, expected_models=None, allow_version_1=False):
     data=memoryview(data)
     if len(data)<128:raise ValueError('Truncated header')
     fields=_HEADER.unpack(data[:128])
-    if fields[:2]!=(b'T3DV',2):raise ValueError('Unsupported magic/version')
+    if fields[0]!=b'T3DV' or (fields[1]!=2 and not (allow_version_1 and fields[1]==1)):
+        raise ValueError('Unsupported magic/version')
     bounds=np.array(fields[2:8]).reshape(2,3);grid=tuple(fields[8:11]);size=np.array(fields[11:14])
     raw,n,bpt,j=fields[14:18];layout=fields[18:]
     profile=layout[19]
+    if fields[1]==1 and profile!=2:
+        raise ValueError('Version 1 latent container must use legacy profile 2')
     if (raw or layout[0]!=16 or profile not in (2,4) or layout[20] not in range(4) or layout[21]!=64
             or any(layout[4:19]) or any(layout[22:]) or not layout[1]):
         raise ValueError('Unsupported latent profile/layout')

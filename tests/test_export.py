@@ -13,11 +13,13 @@ class ExportContractTests(unittest.TestCase):
     def test_missing_material_and_incomplete_rig_rejected_before_gpu_allocation(self):
         with self.assertRaisesRegex(ValueError,'PBR'):
             export_raw(replace(self.asset,pbr=None))
-        for field,channels in (('skeleton_field',6),('skin_embedding',4)):
-            with self.assertRaisesRegex(ValueError,'both'):
-                export_raw(replace(self.asset,**{field:np.zeros((1,channels))}))
-        rigged=replace(self.asset,skeleton_field=np.zeros((1,6)),skin_embedding=np.zeros((1,4)))
-        with self.assertRaisesRegex(ValueError,'skinae-checkpoint'):
+        with self.assertRaisesRegex(ValueError,'skeleton_field'):
+            export_raw(replace(self.asset,skin_embedding=np.zeros((1,4))))
+        with self.assertRaisesRegex(ValueError,'SkinAE checkpoint'):
+            export_raw(self.asset,skinae_checkpoint='/tmp/fake.pt')
+        # Assets with skeleton_field proceed to GPU check without requiring skinae_checkpoint
+        rigged=replace(self.asset,skeleton_field=np.zeros((1,6)))
+        with self.assertRaisesRegex(ValueError,'CUDA export device required'):
             export_raw(rigged)
 
     def test_invalid_options_rejected_before_gpu_allocation(self):

@@ -10,8 +10,13 @@ from t3d.voxelize import mesh_to_voxels
 
 
 def convert(task):
- row,root,grid_size=task;start=time.monotonic();pack,name=row['id'].split('/',1);source=Path(root)/pack/(name+'.glb');metadata=source.with_suffix('.json');meta=json.loads(metadata.read_text());data=source.read_bytes()
+ row,root,grid_size,records_only,out_root=task;pack,name=row['id'].split('/',1);start=time.monotonic() if not records_only else 0;source=Path(root)/pack/(name+'.glb');metadata=source.with_suffix('.json');meta=json.loads(metadata.read_text());data=source.read_bytes()
  if meta['id']!=row['id'] or meta['source_url']!=row['source_url'] or hashlib.sha256(data).hexdigest()!=meta['sha256'] or len(data)!=row['expected_bytes']:raise ValueError('Raw provenance mismatch')
+ if records_only:
+  digest=meta['sha256'];asset_id='kenney-'+row['id'].replace('/','-');name_out=asset_id+'.t3d';prepared=Path(out_root)/name_out
+  if not prepared.exists():raise ValueError('Prepared shard missing for records-only rebuild')
+  content=prepared.read_bytes();record=dict(asset_id=asset_id,path=name_out,sha256=hashlib.sha256(content).hexdigest(),split=row['split'],source=row['source_url'],license='CC0-1.0; Kenney; '+row['creator_pack_url'],source_sha256=digest,source_group='kenney-'+row['group']);stats=dict(asset_id=asset_id,grid_size=grid_size,source_faces=0,removed_zero_or_grid_collapsed=0,active_voxels=0,triangles=0,seconds=0)
+  return record,stats,content
  vertices,faces,digest=load_glb_geometry(source)
  if digest!=meta['sha256']:raise ValueError('Importer source mismatch')
  vertices=np.clip(np.asarray(normalize_asset(vertices)[0]),-.5,.5);tri=vertices[faces];cross=np.linalg.norm(np.cross(tri[:,1]-tri[:,0],tri[:,2]-tri[:,0]),axis=1);grid=(vertices+.5)[faces]*grid_size;grid_cross=np.linalg.norm(np.cross(grid[:,1]-grid[:,0],grid[:,2]-grid[:,0]),axis=1)
@@ -27,13 +32,13 @@ def convert(task):
 
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--index',type=Path,required=True);p.add_argument('--raw-root',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--grid-size',type=int,default=32);p.add_argument('--start',type=int,default=0);p.add_argument('--stop',type=int,required=True);p.add_argument('--stride',type=int,default=1);p.add_argument('--workers',type=int,default=2);args=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--index',type=Path,required=True);p.add_argument('--raw-root',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--grid-size',type=int,default=32);p.add_argument('--start',type=int,default=0);p.add_argument('--stop',type=int,required=True);p.add_argument('--stride',type=int,default=1); p.add_argument('--workers',type=int,default=2);p.add_argument('--records-only',action='store_true',help='Rebuild manifest records from existing prepared .t3d files without re-voxelizing');args=p.parse_args()
  if args.start<0 or args.stop<=args.start or args.stride<=0 or not 1<=args.workers<=4 or args.grid_size not in (16,32,64,128):raise ValueError('Invalid range, grid size, or worker count')
  index_raw=args.index.read_bytes();index=json.loads(index_raw);candidates=index['candidates'][args.start:args.stop:args.stride]
  if not candidates:raise ValueError('Empty candidate shard')
  args.output.mkdir(parents=True,exist_ok=True);success=[];failures=[]
  with concurrent.futures.ProcessPoolExecutor(max_workers=args.workers) as pool:
-  futures={pool.submit(convert,(row,str(args.raw_root),args.grid_size)):row for row in candidates}
+  futures={pool.submit(convert,(row,str(args.raw_root),args.grid_size,args.records_only,str(args.output))):row for row in candidates}
   for future in concurrent.futures.as_completed(futures):
    row=futures[future]
    try:
@@ -63,7 +68,7 @@ def main():
   for i in indexes:
    if i not in selected:failures.append(dict(id=success[i][0]['asset_id'],error_type='ExactDuplicate',reason='Across split boundary' if len(splits)>1 else 'Repeated within split'))
  records=[x[0] for i,x in enumerate(success) if i in keep];stats=[x[1] for i,x in enumerate(success) if i in keep]
- report=dict(scope='Uncurated shape-only shard; only within-shard exact duplicates checked; cross-shard and semantic deduplication and quality filtering remain pending',index_sha256=hashlib.sha256(index_raw).hexdigest(),start=args.start,stop=args.stop,stride=args.stride,accepted=stats,rejected=sorted(failures,key=lambda x:x['id']))
+ report=dict(scope='Uncurated shape-only shard; only within-shard exact duplicates checked; cross-shard and semantic deduplication and quality filtering remain pending'+(' (records-only rebuild)' if args.records_only else ''),index_sha256=hashlib.sha256(index_raw).hexdigest(),start=args.start,stop=args.stop,stride=args.stride,records_only=args.records_only,accepted=stats,rejected=sorted(failures,key=lambda x:x['id']))
  (args.output/'manifest.json').write_text(json.dumps(dict(version=1,assets=records),indent=2)+'\n');(args.output/'conversion-report.json').write_text(json.dumps(report,indent=2)+'\n')
  archive=args.output.parent/(args.output.name+'.zip')
  with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED) as z:
